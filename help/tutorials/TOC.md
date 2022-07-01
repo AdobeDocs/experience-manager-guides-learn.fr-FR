@@ -2,9 +2,9 @@
 user-guide-title: Tutorials des guides AEM
 user-guide-description: Lisez notre collection de tutoriels pour les guides Adobe Experience Manager.
 breadcrumb-title: Tutorials de guides AEM
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 0502ab60d45ebac97415b4ae44afc2763380a7cd
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '103'
 ht-degree: 11%
 
 ---
@@ -24,6 +24,7 @@ ht-degree: 11%
          + [Notes de mise à jour de février](./release-info/release-notes-2022.2.0.md)
          + [Notes de mise à jour de janvier](./release-info/release-notes-2022.1.0.md)
       + On-premise/Managed Services {#on-prem-release-notes}
+         + [Notes de mise à jour 4.1](./release-info/release-notes-4.1.md)
          + [Notes de mise à jour 4.0.x](https://helpx.adobe.com/xml-documentation-for-experience-manager/release-note/release-notes-xml-documentation-solution-4-0.html)
          + [Notes de mise à jour de la version 3.8.x](https://helpx.adobe.com/xml-documentation-for-experience-manager/release-note/release-notes-xml-documentation-solution-3-8.html)
 + Architecture de contenu et cas d’utilisation {#content-arch}
