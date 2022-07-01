@@ -1,0 +1,42 @@
+---
+title: Versions des Guides d’AEM
+description: Dernières versions AEM Guides et versions AEM prérequises
+exl-id: 780697a9-bdc6-40c2-b258-64639fe30f88
+source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+workflow-type: tm+mt
+source-wordcount: '712'
+ht-degree: 1%
+
+---
+
+# [!DNL AEM Guides] Mises à jour
+
+[!DNL Adobe Experience Manager Guides] est une application déployée sur AEM. Il s’agit d’une puissante solution de gestion de contenu de composant (CCMS) de niveau entreprise qui permet la prise en charge native de DITA dans Adobe Experience Manager, ce qui permet à AEM de gérer la création et la diffusion de contenu basé sur DITA.
+
+## Explication de l’UUID et des non-UUID
+
+[!DNL AEM Guides] Les packages sont disponibles en deux modes : version UUID et version non UUID.
+
+Les clients devront choisir entre le mode UUID et le mode non UUID au moment de la première configuration (veuillez vous connecter à votre gestionnaire de succès client pour vous aider à prendre la décision en fonction de votre cas d’utilisation).
+
+Lors de la mise à niveau à partir d’une version de [!DNL AEM Guides] dans une version plus récente, les clients devront s’assurer qu’ils choisissent le même mode (UUID/non UUID) pour correspondre à leur mode existant. Un build non UUID ne doit pas être directement mis à niveau vers un build UUID. Le passage de la version non UUID à la version UUID nécessiterait une migration du contenu.
+
+**Versions de mise à niveau**
+
+Lorsque vous effectuez une mise à niveau d’une ancienne version vers une nouvelle version de [!DNL AEM Guides], vous devrez peut-être exécuter certains scripts de migration. Pour obtenir des instructions de mise à niveau, reportez-vous aux Notes de mise à jour et à la documentation spécifique à la version .
+
+Tous les chemins de mise à niveau ne sont pas directement pris en charge. Par exemple, la mise à niveau directe vers la version 4.0 n’est possible qu’à partir de la version 3.8. Si vous utilisez une version antérieure à la version 3.8, reportez-vous à la documentation spécifique à la version pour obtenir des instructions de mise à niveau. [Archive d’aide](https://helpx.adobe.com/xml-documentation-for-experience-manager/archive.html).
+Contactez votre gestionnaire de succès client pour valider le chemin de mise à niveau.
+
+**[!DNL AEM Guides]Versions**
+
+La liste suivante contient la dernière [!DNL AEM Guides] packages disponibles pour l’installation sur AMS ou On-Prem, versions d’AEM correspondantes (conditions préalables requises), liens de téléchargement des packages et autres informations utiles. Il est recommandé de n’utiliser que le dernier build de [!DNL AEM Guides]. Si, pour une raison quelconque, vous avez besoin d’accéder à des builds plus anciens, connectez-vous au responsable du succès client de votre compte.
+
+>[!NOTE]
+>
+>Contactez votre gestionnaire de succès client pour accéder à [!DNL AEM Guides] versions pour AEM as a Cloud Service.
+
+| [!DNL AEM Guides]Version  | Notes de mise à jour | AEM Conditions préalables | Création de liens de téléchargement |
+|---|---|---|---|
+| **AEM Guides 4.0** | [Notes de mise à jour 4.0.x](https://helpx.adobe.com/xml-documentation-for-experience-manager/release-note/release-notes-xml-documentation-solution-4-0.html) | **Non UUID et UUID 4.0.3**<br> AEM 6.5 SP12, SP11, SP10 ou SP9 <br>Java : 11 ou 8 <br><br> <br>**Non UUID et UUID 4.0.2** <br> AEM 6.5 SP12, SP11, SP10 ou SP9 <br>Java : 11 ou 8 <br><br> **Non UUID et UUID 4.0** <br> AEM 6.5 SP11, SP10 ou SP9 | **Non UUID**: <br> **AEM 6.5** <br>[4.0.3](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faemdox%2F4-0-3%2F4-0-2-non-uuid%2Fcom.adobe.fmdita-6.5-hotfix-4.0.3.1.zip)<br>[4.0.2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faemdox%2F4-0-2%2F4-0-2-non-uuid%2Fcom.adobe.fmdita-6.5-sp-4.0.2.10.zip)  <br> [4.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/aemdox/4-0/4-0-non-uuid/com.adobe.fmdita-6.5-4.0.70.zip)  <br><br> **UUID** <br>**AEM 6.5**  <br>[4.0.3](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faemdox%2F4-0-3%2F4-0-3-uuid%2Fcom.adobe.fmdita.uuid-6.5-hotfix-4.0.3.1.zip) <br>[4.0.2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faemdox%2F4-0-2%2F4-0-2-uuid%2Fcom.adobe.fmdita.uuid-6.5-sp-4.0.2.10.zip)<br> [4.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/aemdox/4-0/4-0-uuid/com.adobe.fmdita-6.5-uuid-4.0.70.zip) |
+| **AEM Guides 3.8.5** <br> 3.8.5 est une version SP supérieure à la version 3.8. <br>La version 3.8 ne doit pas être installée de manière autonome, car 3.8.5 SP contient un correctif critique. <br>Les clients doivent d’abord installer la version 3.8, puis SP 3.8.5. | [Notes de mise à jour de la version 3.8.x](https://helpx.adobe.com/xml-documentation-for-experience-manager/release-note/release-notes-xml-documentation-solution-3-8.html) | **Non UUID** <br> AEM 6.5 SP9 ou SP8 <br> AEM 6.4 SP8 <br> AEM 6.3 SP3 <br><br> **UUID** <br> AEM 6.5 SP9 ou SP8 | **Non UUID**: <br> **AEM 6.5** <br> [3.8.5 SP](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/aemdox/3-8-5/com.adobe.fmdita-6.5-hotfix-3.8.5.2.zip) <br>[3,8](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/aemdox/3-8/com.adobe.fmdita-6.5-3.8.166.zip)<br> **AEM 6.4** <br> [3.8.5 SP](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/aemdox/3-8-5/com.adobe.fmdita-6.4-hotfix-3.8.5.1.zip) <br>[3,8](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/aemdox/3-8/com.adobe.fmdita-6.4-3.8.166.zip) <br> **AEM 6.3** <br> [3.8.5 SP](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/aemdox/3-8-5/com.adobe.fmdita-6.3-hotfix-3.8.5.1.zip) <br>[3,8](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/aemdox/3-8/com.adobe.fmdita-6.3-3.8.166.zip) <br><br> **UUID** <br>**AEM 6.5** <br> [3.8.5 SP](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/aemdox/3-8-5uuid/com.adobe.fmdita.uuid-6.5-hotfix-3.8.5.2.zip) <br> [3,8](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/aemdox/3-8uuid/com.adobe.fmdita.uuid-6.5-3.8.168.zip) |
