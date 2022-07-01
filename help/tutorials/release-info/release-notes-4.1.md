@@ -1,9 +1,10 @@
 ---
 title: Notes de mise à jour | Adobe Experience Manager Guides version 4.1
-description: 'Dernière version des guides Adobe Experience Manager '
-source-git-commit: 714d335d95c54fb02b0fe02ad112fa36719dc970
+description: Dernière version des guides Adobe Experience Manager
+exl-id: c70b3bbc-3332-4626-bc30-641034f8fd06
+source-git-commit: 7fc8eb3ea46eee89eac4d5779f14d61aa6106505
 workflow-type: tm+mt
-source-wordcount: '2983'
+source-wordcount: '2973'
 ht-degree: 3%
 
 ---
@@ -18,7 +19,7 @@ Vous pouvez facilement mettre à niveau votre version actuelle des guides Adobe 
 * Si vous utilisez la version 3.8.5, vous devez effectuer la mise à niveau vers la version 4.0.x avant de passer à la version 4.1.
 * Si vous utilisez une version antérieure à 3.8.5, reportez-vous à la section Mise à niveau du guide d’installation spécifique au produit.
 
-Pour plus d’informations, voir [Instructions de mise à niveau](https://helpx.adobe.com/content/dam/help/en/xml-documentation-solution/4-1/Adobe-Experience-Manager-Guides_Upgrade-Instructions_EN.pdf).
+Pour plus d’informations, voir [Instructions de mise à niveau](assets/Adobe-Experience-Manager-Guides_Upgrade-Instructions_EN.pdf).
 
 ## Matrice de compatibilité
 
@@ -289,4 +290,3 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 * Images de SVG dont le rendu n’est pas correct dans les modes de création de l’éditeur XML. (9426)
 * La ligne de base n’est pas respectée lors de la publication via Salesforce. (8953)
 * Il n’est pas possible d’effacer le rootmap des paramètres des préférences de l’utilisateur. (8534)
-
