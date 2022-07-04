@@ -2,7 +2,7 @@
 title: Workflows de création de contenu simple
 description: Création de contenu dans AEM Guides
 exl-id: e4b8e512-0688-44f7-b981-78af33b57b08
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 92c269c4a5f73317345bbd0ab247951656426ff4
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 2%
@@ -37,13 +37,13 @@ Des images peuvent être ajoutées directement à partir d&#39;un disque local.
 
 3. Utilisation **Propriétés du contenu** dans le panneau de droite pour modifier le
 
-   ・ échelle
+   - scale
 
-   • position
+   - position
 
-   ・ alignement, ou
+   - alignement ou
 
-   ・ d&#39;autres attributs.
+   - autres attributs.
 
    ![Propriétés du contenu](images/lesson-15/content-properties.png)
 
@@ -98,7 +98,6 @@ Les utilisateurs peuvent télécharger un PDF de la rubrique actuelle à marquer
 3. Sélectionner **Localisez la page**.
 
 4. Choisissez l’une **Référentiel** ou **Carte** pour accéder à l’emplacement souhaité de la rubrique.
-
 
 ## Version d’une rubrique
 
@@ -183,7 +182,6 @@ Le numéro de version est mis à jour.
    - L’historique des versions avec les libellés s’affiche à gauche.
 
    ![Historique des versions](images/lesson-15/version-history.png)
-
 
 4. Cliquez sur une version pour accéder à des options telles que **Revenir à cette version** et **Aperçu de la version**.
 

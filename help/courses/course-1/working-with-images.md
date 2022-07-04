@@ -2,7 +2,7 @@
 title: Utilisation d’images dans AEM Guides
 description: Utilisation d’images dans les guides Adobe Experience Manager
 exl-id: 8b920a9a-bedb-434c-b6fb-3569ce4b7a81
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 1f8fe099be2b4123eec6f7c973668b415097ac45
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 1%
@@ -27,10 +27,10 @@ Vous pouvez télécharger l’exemple de fichier image à partir de [ici.](asset
 
    ![Télécharger les éléments](images/lesson-4/upload-assets.png)
 
-
 1. Sélectionnez l’image que vous souhaitez télécharger depuis votre système local, puis sélectionnez **Ouvrir**.
 
    Le [!UICONTROL Chargement de ressources] s’affiche.
+
 1. Sélectionnez **Télécharger**.
 
 ## Insérer une image dans une rubrique
@@ -52,7 +52,6 @@ Pour ce qui suit, assurez-vous que votre rubrique est ouverte dans l’éditeur 
 1. Sélectionnez la **Insérer une image** icône .
 
    ![Icône Insérer une image](images/lesson-4/insert-image.png)
-
 
    La boîte de dialogue Insérer une image s’affiche.
 
@@ -88,9 +87,11 @@ Comme vous avez apporté une modification importante à votre rubrique, il vous 
 1. Dans le champ Libellés de version , saisissez les libellés appropriés.
 
    Les libellés vous permettent de spécifier la version que vous souhaitez inclure lors de la publication.
+
    >[!NOTE]
    > 
    > Si votre programme est configuré avec des libellés prédéfinis, vous pouvez les sélectionner pour garantir un étiquetage cohérent.
+
 1. Sélectionnez **Enregistrer**.
 
    Vous avez créé une nouvelle version de votre rubrique et le numéro de version est mis à jour.

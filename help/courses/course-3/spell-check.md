@@ -2,7 +2,7 @@
 title: Vérifier l’orthographe et rechercher/remplacer
 description: Utilisation de la vérification orthographique et de la recherche/remplacement dans AEM Guides
 exl-id: 5f39618d-a919-4d3c-a4de-2896f2d1bf20
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 0b4326b02ef52f5de77c3f26c18feec84567cebb
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 3%
@@ -37,9 +37,9 @@ Vous pouvez utiliser un outil de vérification orthographique autre que le dicti
 
 3. Vous disposez de deux options :
 
-   ・ **Vérifier l’orthographe du navigateur** — le paramètre par défaut où la vérification orthographique utilise le dictionnaire intégré du navigateur.
+   - **Vérifier l’orthographe du navigateur** — le paramètre par défaut où la vérification orthographique utilise le dictionnaire intégré du navigateur.
 
-   ・ **Vérifier l’orthographe AEM** — utilisez cette option pour créer une liste de mots personnalisée à l’aide du dictionnaire personnalisé d’AEM.
+   - **Vérifier l’orthographe AEM** — utilisez cette option pour créer une liste de mots personnalisée à l’aide du dictionnaire personnalisé d’AEM.
 
 4. Choisir **Vérifier l’orthographe AEM**.
 
@@ -59,19 +59,17 @@ L’administrateur peut modifier les paramètres afin que le dictionnaire d’AE
 
    ![Noeud de configuration du CRXDE Lite](images/lesson-11/config-node.png)
 
-
 4. Créez un fichier.
 
    a. Cliquez avec le bouton droit sur le dossier de configuration.
-b. Choisir **Créer > Créer un fichier**.
+
+   b. Choisir **Créer > Créer un fichier**.
 
    ![Création d’un fichier de dictionnaire](images/lesson-11/new-dictionary-file.png)
-
 
    c. Nommez le fichier _**user_dictionary.txt**_.
 
    ![Texte du dictionnaire d’utilisateur](images/lesson-11/user-dictionary.png)
-
 
    d. Cliquez sur [!UICONTROL **OK**].
 
@@ -109,12 +107,11 @@ Les auteurs peuvent avoir besoin de redémarrer leur session de l’éditeur web
 
 4. Choisissez l’une
 
-   ・ **Extraction de fichier avant remplacement** — s’il est activé par un administrateur, le fichier est extrait automatiquement avant de remplacer les termes de recherche.
+   - **Extraction de fichier avant remplacement** — s’il est activé par un administrateur, le fichier est extrait automatiquement avant de remplacer les termes de recherche.
 
-   ・ **Mot entier uniquement** — limite la recherche pour renvoyer uniquement le mot ou l’expression exact saisi.
+   - **Mot entier uniquement** — limite la recherche pour renvoyer uniquement le mot ou l’expression exact saisi.
 
    ![Rechercher un remplacement dans le référentiel](images/lesson-11/repository-find-replace.png)
-
 
 5. Cliquez sur le bouton [!UICONTROL **Appliquer un filtre**] pour sélectionner le chemin d’accès dans le référentiel où vous souhaitez effectuer la recherche.
 

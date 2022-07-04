@@ -2,7 +2,7 @@
 title: Préférences utilisateur, paramètres de l’éditeur et barres d’outils de l’éditeur
 description: Modification des préférences de l’utilisateur et des paramètres de l’éditeur dans AEM Guides
 exl-id: 8cb099e4-d985-4eeb-b1a5-0e372b04d218
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 3d81727cdf4a58921724b0f1aa93b0700f821f60
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 2%
@@ -25,13 +25,13 @@ Les balises sont des repères visuels indiquant les limites d’un élément. Un
 
    Les balises s’affichent dans la rubrique. Avec la vue Balises, vous pouvez :
 
-   ・ Sélectionnez le contenu d’un élément en cliquant sur la balise d’ouverture ou de fermeture.
+   - Sélectionnez le contenu d’un élément en cliquant sur la balise d’ouverture ou de fermeture.
 
-   ・ Développez ou réduisez les balises en cliquant sur le signe + ou - dans la balise .
+   - Développez ou réduisez les balises en cliquant sur le signe + ou - dans la balise .
 
-   ・ Utilisez le menu contextuel pour couper, copier ou dépasser l’élément sélectionné.
+   - Utilisez le menu contextuel pour couper, copier ou dépasser l’élément sélectionné.
 
-   ・ Effectuez un glisser-déposer d’éléments en sélectionnant la balise et en déposant l’élément à un emplacement valide.
+   - Effectuez un glisser-déposer d’éléments en sélectionnant la balise et en déposant l’élément à un emplacement valide.
 
 2. Cliquez sur le bouton [!UICONTROL **Activer/désactiver la vue Balises**] pour masquer à nouveau les balises.
 
@@ -75,11 +75,11 @@ La barre d’outils située en haut à droite de l’écran vous permet de bascu
 
 ![Modes](images/lesson-2/modes.png)
 
-・ Sélectionner **Auteur** pour afficher la structure et le contenu au fur et à mesure que vous travaillez avec une rubrique.
+- Sélectionner **Auteur** pour afficher la structure et le contenu au fur et à mesure que vous travaillez avec une rubrique.
 
-・ Sélectionner **Source** pour afficher le code XML sous-jacent qui constitue la rubrique.
+- Sélectionner **Source** pour afficher le code XML sous-jacent qui constitue la rubrique.
 
-・ Sélectionner **Aperçu** pour afficher comment une rubrique s’affiche lorsqu’elle est affichée par un utilisateur dans son navigateur.
+- Sélectionner **Aperçu** pour afficher comment une rubrique s’affiche lorsqu’elle est affichée par un utilisateur dans son navigateur.
 
 ## Modification du thème avec les préférences utilisateur
 

@@ -2,7 +2,7 @@
 title: Suivi des modifications
 description: Suivi des modifications dans les guides AEM
 exl-id: 57779920-b3b4-44be-a1fb-89ea7c89eef7
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 7bc636b4aceee327d86cfa74a9f8e61e0ad0a1cf
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 1%
@@ -92,9 +92,9 @@ Lorsque vous travaillez dans un environnement de plusieurs auteurs, il peut êtr
 
 4. Dans les Options, choisissez :
 
-   ・ **Suivi des modifications à partir de la version sélectionnée**: Cette option affiche toutes les mises à jour de contenu sous la forme de modifications suivies. Vous pouvez ensuite choisir d’accepter ou de rejeter les modifications du document une par une ou toutes à la fois.
+   - **Suivi des modifications à partir de la version sélectionnée**: Cette option affiche toutes les mises à jour de contenu sous la forme de modifications suivies. Vous pouvez ensuite choisir d’accepter ou de rejeter les modifications du document une par une ou toutes à la fois.
 
-   ・ **Revenir à la version sélectionnée**: Cette option rétablit la version actuelle du document sur la version sélectionnée. Il ne vous donne aucun contrôle sur le contenu accepté ou rejeté.
+   - **Revenir à la version sélectionnée**: Cette option rétablit la version actuelle du document sur la version sélectionnée. Il ne vous donne aucun contrôle sur le contenu accepté ou rejeté.
 
 5. Cliquez sur [!UICONTROL **Terminé**].
 

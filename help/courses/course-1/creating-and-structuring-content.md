@@ -2,7 +2,7 @@
 title: Création de contenu dans [!DNL AEM Guides]
 description: Création de contenu dans [!DNL Adobe Experience Manager Guides]
 exl-id: f7cfc5c8-414f-4480-a9c9-b9920975a55d
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 6959927315c7afc62a7423e835a36895c76fdc6d
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 1%
@@ -24,6 +24,7 @@ Une fois que vous vous êtes familiarisé avec l’interface utilisateur, vous p
 1. Sélectionnez la **+** et **Dossier**.
 
    ![+ icône](images/lesson-3/+-icon.png)
+
 1. Attribuez un titre au dossier.
 1. Sélectionnez **Créer**.
 Vous avez créé un dossier qui s’affiche désormais dans le référentiel. Ce dossier sera votre maison pour tout le contenu du cours.
@@ -37,6 +38,7 @@ Nous pouvons maintenant créer un dossier dans votre nouveau dossier qui contien
    ![Icône Ellipse](images/lesson-3/ellipses-icon.png)
 
    Le menu Options s’affiche.
+
 1. Sélectionner **Créer un dossier \>**.
    ![Création d’un sous-dossier](images/lesson-3/create-subfolder-with-markings.png)
 
@@ -49,6 +51,7 @@ Nous pouvons maintenant créer un dossier dans votre nouveau dossier qui contien
    ![Icône Ellipse](images/lesson-3/ellipses-icon.png)
 
    Le menu Options s’affiche.
+
 1. Sélectionner **Créer une rubrique \>**.
 
    ![Création d’une rubrique](images/lesson-3/create-topic-with-markings.png)
@@ -93,6 +96,7 @@ Vous pouvez enregistrer votre travail à tout moment à l’aide de l’option E
    >[!NOTE]
    > 
    > Si votre programme est configuré avec des libellés prédéfinis, vous pouvez les sélectionner pour garantir un étiquetage cohérent.
+
 1. Sélectionnez **Enregistrer**.
 
    Vous avez créé une nouvelle version de votre rubrique et le numéro de version est mis à jour.

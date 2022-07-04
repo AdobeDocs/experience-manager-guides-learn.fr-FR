@@ -2,7 +2,7 @@
 title: Conditions
 description: Utilisation des conditions dans AEM Guids
 exl-id: 2cb670d9-1a22-47c6-8409-52d1d526010a
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 01083e771baced42146044bf319d3897a2c5f51b
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 3%
@@ -31,11 +31,11 @@ Des exemples de fichiers que vous pouvez choisir d’utiliser pour cette leçon 
 
 5. Renseignez les champs requis.
 
-   ・ Le Nom doit correspondre à un attribut utilisé pour le profilage.
+   - Le Nom doit correspondre à un attribut utilisé pour le profilage.
 
-   ・ La valeur est l’entrée exacte qui sera utilisée dans la source de code DITA.
+   - La valeur est l’entrée exacte qui sera utilisée dans la source de code DITA.
 
-   ・ Le libellé est le mot qui sera affiché par l’utilisateur qui saisit des attributs.
+   - Le libellé est le mot qui sera affiché par l’utilisateur qui saisit des attributs.
 
 6. Cliquez sur [!UICONTROL **Enregistrer**].
 
@@ -104,7 +104,6 @@ Les mappages de schéma d’objet sont une forme spécialisée de mappage aléat
    >[!IMPORTANT]
    >
    >Important : la carte racine sélectionnée doit être la carte qui contient le schéma d’objet.
-
 
    ![Préférences utilisateur](images/lesson-13/user-preferences-2.png)
 

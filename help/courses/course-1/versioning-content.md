@@ -2,7 +2,7 @@
 title: Contrôle de version du contenu dans [!DNL AEM Guides]
 description: Contrôle de version du contenu dans [!DNL Adobe Experience Manager Guides]
 exl-id: 766af002-d17b-4d27-b4d1-baaacc4579ca
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 97254946f5ee732fe3b93ff60dd9ef51a379b9f4
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 1%
@@ -29,8 +29,9 @@ La création de versions d’un document crée un instantané de son état actue
    Les libellés vous permettent de spécifier la version que vous souhaitez inclure lors de la publication.
 
    >[!NOTE]
-   > 
-   > Si votre programme est configuré avec des libellés prédéfinis, vous pouvez les sélectionner pour garantir un étiquetage cohérent.
+   >
+   >Si votre programme est configuré avec des libellés prédéfinis, vous pouvez les sélectionner pour garantir un étiquetage cohérent.
+
 1. Sélectionnez **Enregistrer**.
 
    Vous avez créé une nouvelle version de votre rubrique et le numéro de version est mis à jour. La première version d’un document sera la version 1.0.
