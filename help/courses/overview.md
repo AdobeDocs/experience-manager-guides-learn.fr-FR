@@ -2,16 +2,14 @@
 title: Cours d’apprentissage basés sur des vidéos pour [!DNL Adobe Experience Manager Guides]
 description: Regardez des tutoriels vidéo à propos de [!DNL Adobe Experience Manager Guides], AEM module complémentaire XML, AEM module externe XML, AEM DoX et Dox.
 exl-id: 4066431b-0838-45a6-b6b1-e366f210eb8d
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: b2c51539bbe49c6d5de601e319ceb5def99d9020
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '114'
 ht-degree: 1%
 
 ---
 
 # Cours vidéo pour [!DNL Adobe Experience Manager Guides] {#overview}
-
-Guides Adobe Experience Manager (appelés [!DNL AEM Guides] plus tard dans cet espace) est une puissante solution de gestion de contenu (CCMS) de composant de niveau entreprise.
 
 Consultez cet espace pour des cours basés sur des vidéos pour [!DNL Adobe Experience Manager Guides].
 
