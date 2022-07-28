@@ -4,7 +4,7 @@ description: Découvrez comment concevoir la mise en page afin de présenter des
 hide: true
 hidefromtoc: true
 exl-id: b4d3bdc4-0d01-46eb-b182-540380220485
-source-git-commit: 64e8ab1288674437f6182010ce4963b3780e98a9
+source-git-commit: 2607a02867765b8f78134ab4e37012e8b08e222c
 workflow-type: tm+mt
 source-wordcount: '3289'
 ht-degree: 0%
@@ -137,7 +137,7 @@ Dans l’exemple suivant, nous allons insérer un numéro de page et un titre de
 
    <img src="./assets/insert-page-number-field.svg" width="400">
 
-   <br>
+   <img src="./assets/transparent-background.png" width="30">
 
    >[!NOTE]
    >
@@ -175,7 +175,7 @@ Dans l’exemple suivant, nous allons insérer un numéro de page et un titre de
 
 | Developer corner : | <img src="./assets/developer-corner-icon.svg" width="25"> |
 |--- |--- |
-| Si vous souhaitez travailler directement avec le code CSS et de HTML, vous pouvez également y parvenir en accédant à la vue Source de la mise en page et en apportant des modifications au code. Le fragment de code suivant affiche le même paramètre de pied de page effectué via le code : |
+Si vous souhaitez travailler directement avec le code CSS et de HTML, vous pouvez également y parvenir en accédant à la vue Source de la mise en page et en apportant des modifications au code. Le fragment de code suivant affiche le même paramètre de pied de page effectué via le code :
 
 ```md
 …
@@ -206,6 +206,7 @@ Dans l&#39;exemple suivant, nous allons insérer une table des matières de chap
    La table des matières du chapitre par défaut est insérée dans la zone de contenu.
 
    <img src="./assets/chapter-toc-default.png" width="400">
+    <img src="./assets/transparent-background.png" width="30">
 
    >[!NOTE]
    >
@@ -221,7 +222,7 @@ Dans l&#39;exemple suivant, nous allons insérer une table des matières de chap
 
    <img src="./assets/chapter-toc-updated.png" width="400">
 
-   <br>
+   <img src="./assets/transparent-background.png" width="30">
 
    >[!NOTE]
    >
@@ -265,7 +266,7 @@ Pour créer une mise en page avec plusieurs colonnes, procédez comme suit :
 
    <img src="./assets/element-span-across-columns.png" width="400">
 
-   <br>
+   <img src="./assets/transparent-background.png" width="30">
 
    >[!IMPORTANT]
    Vous pouvez appliquer la propriété Span Column à n’importe quel élément DITA.
