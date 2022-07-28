@@ -1,14 +1,16 @@
 ---
 title: Fonction de publication native d’un PDF | Concevoir une mise en page
-description: 'Découvrez comment concevoir la mise en page afin de présenter des informations dans différentes sections de la sortie de votre PDF. '
+description: Découvrez comment concevoir la mise en page afin de présenter des informations dans différentes sections de la sortie de votre PDF.
 hide: true
 hidefromtoc: true
-source-git-commit: 97c7337684e4afb8352912e53d6a59939f7d182f
+exl-id: b4d3bdc4-0d01-46eb-b182-540380220485
+source-git-commit: 64e8ab1288674437f6182010ce4963b3780e98a9
 workflow-type: tm+mt
 source-wordcount: '3289'
 ht-degree: 0%
 
 ---
+
 
 # Concevoir une mise en page
 
@@ -85,7 +87,7 @@ Par exemple, si vous souhaitez insérer une image dans la zone d&#39;en-tête de
 
 1. Cliquez sur Modifier l’en-tête (<img src="./assets/header-icon.svg" width="25">) pour placer le curseur dans la zone d’en-tête.
 
-1. Cliquez sur Inert Image (<img src="./assets/insert-image-icon.svg" width="25"> ) icône.
+1. Cliquez sur Inert Image (<img src="./assets/insert-image-icon.svg" width="25">) icône.
 
    La fenêtre contextuelle Sélectionner le chemin s’affiche.
 
@@ -135,6 +137,8 @@ Dans l’exemple suivant, nous allons insérer un numéro de page et un titre de
 
    <img src="./assets/insert-page-number-field.svg" width="400">
 
+   <br>
+
    >[!NOTE]
    >
    >Vous pouvez également éditer le format de tous les champs, à l&#39;exception du format par défaut. Pour ce faire, cliquez sur l’icône Modifier en regard du format à modifier, apportez des modifications, puis cliquez sur OK.
@@ -169,9 +173,9 @@ Dans l’exemple suivant, nous allons insérer un numéro de page et un titre de
 
       <img src="./assets/topic-title-moved-right-footer.png" width="500">
 
-| Developer corner : | <img src="./assets/developer-corner-icon.svg" width="40"> |
+| Developer corner : | <img src="./assets/developer-corner-icon.svg" width="25"> |
 |--- |--- |
-Si vous souhaitez travailler directement avec le code CSS et de HTML, vous pouvez également y parvenir en accédant à la vue Source de la mise en page et en apportant des modifications au code. Le fragment de code suivant affiche le même paramètre de pied de page effectué via le code :
+| Si vous souhaitez travailler directement avec le code CSS et de HTML, vous pouvez également y parvenir en accédant à la vue Source de la mise en page et en apportant des modifications au code. Le fragment de code suivant affiche le même paramètre de pied de page effectué via le code : |
 
 ```md
 …
@@ -217,6 +221,8 @@ Dans l&#39;exemple suivant, nous allons insérer une table des matières de chap
 
    <img src="./assets/chapter-toc-updated.png" width="400">
 
+   <br>
+
    >[!NOTE]
    >
    >Le PDF publié final n’affichera que les entrées de la table des matières en fonction du contenu de vos chapitres. Si aucun titre de niveau 5 n’apparaît dans un chapitre, il ne sera pas affiché dans la sortie finale.
@@ -258,6 +264,8 @@ Pour créer une mise en page avec plusieurs colonnes, procédez comme suit :
    Comme illustré dans l’exemple suivant, la propriété Span Column du texte du titre est définie sur all. Ainsi, même si le document comporte plusieurs colonnes, l’en-tête s’étend sur plusieurs colonnes.
 
    <img src="./assets/element-span-across-columns.png" width="400">
+
+   <br>
 
    >[!IMPORTANT]
    Vous pouvez appliquer la propriété Span Column à n’importe quel élément DITA.
@@ -385,4 +393,3 @@ Pour plus d’informations sur l’utilisation de ces propriétés, consultez la
 * **Contexte**: Contient des propriétés pour inclure une image d’arrière-plan ou un nuage de couleur. Vous pouvez définir la Taille de l’image (en définissant la Hauteur ou la Largeur), la Répétition en arrière-plan (en répétition, sans répétition, arrondie ou plus) et la Position en arrière-plan (en haut à gauche, au centre, au centre en bas ou plus).
 
 * **Plusieurs colonnes**: Contient des propriétés permettant de configurer des propriétés à plusieurs colonnes pour la page ou tout élément spécifique, tel que la table des matières du chapitre. Pour plus d’informations sur les propriétés et leur utilisation, voir _Utilisation de la mise en page à plusieurs colonnes_.
-
