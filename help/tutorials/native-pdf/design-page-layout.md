@@ -3,9 +3,9 @@ title: Fonction de publication native d’un PDF | Concevoir une mise en page
 description: 'Découvrez comment concevoir la mise en page afin de présenter des informations dans différentes sections de la sortie de votre PDF. '
 hide: true
 hidefromtoc: true
-source-git-commit: 77256556d9222ffd096a599e5875c94108ebb8ed
+source-git-commit: 97c7337684e4afb8352912e53d6a59939f7d182f
 workflow-type: tm+mt
-source-wordcount: '3300'
+source-wordcount: '3289'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,10 @@ Les paramètres de mise en page sous **Modèle > Paramètres** vous permet de d�
 
 Il est possible de personnaliser davantage différentes mises en page de votre modèle de PDF en choisissant différentes mises en page de première, de droite ou de gauche. Vous pouvez concevoir ces pages différemment à l’aide du concepteur de mises en page.
 
-> **Remarque**: Si vous souhaitez qu’une seule mise en page d’une section de votre livre contienne une seule page, il n’est pas nécessaire de créer les mises en page Première, Droite ou Gauche.
+>[!NOTE]
+>
+>Si vous souhaitez qu’une seule mise en page d’une section de votre livre contienne une seule page, il n’est pas nécessaire de créer les mises en page Première, Droite ou Gauche.
+
 
 Tenez compte des points suivants lors de la création des mises en page :
 
@@ -56,7 +59,7 @@ L’exemple suivant vous guide tout au long du processus de création de variant
 
    Par défaut, lorsque vous créez une mise en page, elle est également ouverte pour modification. La capture d’écran suivante affiche une mise en page vierge (par défaut) :
 
-   <img src="./assets/default-blank-page-layout.png" height="400">
+   <img src="./assets/default-blank-page-layout.png" width="300">
 
    L’en-tête, le pied de page et la zone de contenu d’un modèle sont créés par défaut. Vous pouvez facilement personnaliser ces zones à l’aide des outils, des propriétés de page et des propriétés de contenu fournis dans l’interface utilisateur. Pour une configuration avancée, vous pouvez utiliser la vue Source et ajouter votre HTML personnalisé et votre code CSS.
 
@@ -76,7 +79,9 @@ Par exemple, si vous souhaitez insérer une image dans la zone d&#39;en-tête de
 
 1. Ouvrez la mise en page requise pour la modifier.
 
-   > **Remarque**: Voir _Personnalisation de la mise en page_ pour ouvrir une mise en page à des fins de personnalisation ou de modification.
+   >[!NOTE]
+   >
+   >Voir _Personnalisation de la mise en page_ pour ouvrir une mise en page à des fins de personnalisation ou de modification.
 
 1. Cliquez sur Modifier l’en-tête (<img src="./assets/header-icon.svg" width="25">) pour placer le curseur dans la zone d’en-tête.
 
@@ -114,7 +119,9 @@ Dans l’exemple suivant, nous allons insérer un numéro de page et un titre de
 
 1. Ouvrez la mise en page requise pour la modifier.
 
-   Remarque : Voir _Personnalisation de la mise en page_ pour ouvrir une mise en page à des fins de personnalisation ou de modification.
+   >[!NOTE]
+   >
+   >Voir _Personnalisation de la mise en page_ pour ouvrir une mise en page à des fins de personnalisation ou de modification.
 
 1. Cliquez sur Modifier le pied de page (![](./assets/footer-icon.svg)) pour placer le curseur dans la zone de pied de page.
 
@@ -128,7 +135,9 @@ Dans l’exemple suivant, nous allons insérer un numéro de page et un titre de
 
    <img src="./assets/insert-page-number-field.svg" width="400">
 
-   > **Remarque**: Vous pouvez également éditer le format de tous les champs, à l&#39;exception du format par défaut. Pour ce faire, cliquez sur l’icône Modifier en regard du format à modifier, apportez des modifications, puis cliquez sur OK.
+   >[!NOTE]
+   >
+   >Vous pouvez également éditer le format de tous les champs, à l&#39;exception du format par défaut. Pour ce faire, cliquez sur l’icône Modifier en regard du format à modifier, apportez des modifications, puis cliquez sur OK.
 
    Le champ du numéro de page par défaut est inséré dans la zone de pied de page de la mise en page.
 
@@ -160,8 +169,8 @@ Dans l’exemple suivant, nous allons insérer un numéro de page et un titre de
 
       <img src="./assets/topic-title-moved-right-footer.png" width="500">
 
-> **Developer corner :**  ![](./assets/developer-corner-icon.svg)
-
+| Developer corner : | <img src="./assets/developer-corner-icon.svg" width="40"> |
+|--- |--- |
 Si vous souhaitez travailler directement avec le code CSS et de HTML, vous pouvez également y parvenir en accédant à la vue Source de la mise en page et en apportant des modifications au code. Le fragment de code suivant affiche le même paramètre de pied de page effectué via le code :
 
 ```md
@@ -183,7 +192,9 @@ Dans l&#39;exemple suivant, nous allons insérer une table des matières de chap
 
 1. Ouvrez la mise en page requise pour la modifier.
 
-   Remarque : Voir _Personnalisation de la mise en page_ pour ouvrir une mise en page à des fins de personnalisation ou de modification.
+   >[!NOTE]
+   >
+   >Voir _Personnalisation de la mise en page_ pour ouvrir une mise en page à des fins de personnalisation ou de modification.
 
 1. Placez le curseur dans la zone de contenu de la mise en page.
 1. Cliquez sur la table des matières du chapitre (<img src="./assets/chapter-toc-icon.svg">) icône.
@@ -192,7 +203,9 @@ Dans l&#39;exemple suivant, nous allons insérer une table des matières de chap
 
    <img src="./assets/chapter-toc-default.png" width="400">
 
-   > **Remarque**: La table des matières du chapitre par défaut contient les en-têtes 1 à 4. Ici, En-tête 1 est le Titre du chapitre lui-même. Par conséquent, vous pouvez ne plus avoir le titre du chapitre dans la table des matières ou augmenter le niveau des en-têtes que vous souhaitez dans la table des matières. Vous pouvez personnaliser la table des matières en modifiant les propriétés.
+   >[!NOTE]
+   >
+   >La table des matières du chapitre par défaut contient les en-têtes 1 à 4. Ici, En-tête 1 est le Titre du chapitre lui-même. Par conséquent, vous pouvez ne plus avoir le titre du chapitre dans la table des matières ou augmenter le niveau des en-têtes que vous souhaitez dans la table des matières. Vous pouvez personnaliser la table des matières en modifiant les propriétés.
 
 1. Ouvrez le panneau Propriétés du contenu du HTML pour personnaliser les niveaux d’en-tête de la table des matières.
 
@@ -204,7 +217,9 @@ Dans l&#39;exemple suivant, nous allons insérer une table des matières de chap
 
    <img src="./assets/chapter-toc-updated.png" width="400">
 
-   > **Remarque**: Le PDF publié final n’affichera que les entrées de la table des matières en fonction du contenu de vos chapitres. Si aucun titre de niveau 5 n’apparaît dans un chapitre, il ne sera pas affiché dans la sortie finale.
+   >[!NOTE]
+   >
+   >Le PDF publié final n’affichera que les entrées de la table des matières en fonction du contenu de vos chapitres. Si aucun titre de niveau 5 n’apparaît dans un chapitre, il ne sera pas affiché dans la sortie finale.
 
 ## Utilisation de la mise en page à plusieurs colonnes
 
@@ -214,7 +229,9 @@ Pour créer une mise en page avec plusieurs colonnes, procédez comme suit :
 
 1. Ouvrez la mise en page requise pour la modifier.
 
-   > **Remarque**: Voir _Personnalisation de la mise en page_ pour ouvrir une mise en page à des fins de personnalisation ou de modification.
+   >[!NOTE]
+   >
+   >Voir _Personnalisation de la mise en page_ pour ouvrir une mise en page à des fins de personnalisation ou de modification.
 
 1. La mise en page à plusieurs colonnes étant appliquée au contenu, à l’exception de la zone d’en-tête et de pied de page, vous devez sélectionner l’élément de contenu dans le chemin de navigation.
 
@@ -228,7 +245,9 @@ Pour créer une mise en page avec plusieurs colonnes, procédez comme suit :
 
    * **Largeur de colonne :** Spécifiez la largeur d’une colonne dans une mise en page à plusieurs colonnes. Par défaut, la taille est définie en pixels (px), vous pouvez également la spécifier en pt, rem, em, % ou en unités.
 
-      >**Remarque :** Si vous ne spécifiez pas de taille, les colonnes sont automatiquement dimensionnées pour s’adapter aux marges de la page donnée.
+      >[!NOTE]
+      >
+      >Si vous ne spécifiez pas de taille, les colonnes sont automatiquement dimensionnées pour s’adapter aux marges de la page donnée.
 
    * **Intervalle entre les colonnes** : Spécifiez l’espace entre des colonnes individuelles.
 
@@ -240,7 +259,7 @@ Pour créer une mise en page avec plusieurs colonnes, procédez comme suit :
 
    <img src="./assets/element-span-across-columns.png" width="400">
 
-   >[**IMPORTANT**]
+   >[!IMPORTANT]
    Vous pouvez appliquer la propriété Span Column à n’importe quel élément DITA.
 
    * **Remplissage de colonne** : Indiquez le mode de remplissage des colonnes par le contenu. Par défaut, il est défini sur Équilibrage qui remplit chaque colonne avec un contenu égal.
@@ -248,7 +267,7 @@ Pour créer une mise en page avec plusieurs colonnes, procédez comme suit :
    * **Règle de colonne** : Si vous souhaitez qu’une ligne se trouve entre les colonnes, utilisez cette propriété pour définir les styles de ligne ou de règle. Spécifiez les valeurs des options Style, Couleur et Largeur de règle pour ajouter une ligne entre les colonnes.
 
 
-## Utilisation des propriétés de page pour différentes orientations de page**
+## Utilisation des propriétés de page pour une orientation de page différente
 
 Lors de la conception d’une mise en page, un contrôle sur les différentes propriétés de page est essentiel. La fonction PDF natif englobe toutes les propriétés principales de la page dans le panneau Propriétés de la page . Le panneau Propriétés de page permet d’accéder à diverses propriétés dans les sections suivantes :
 
@@ -268,7 +287,7 @@ Lors de la conception d’une mise en page, un contrôle sur les différentes pr
 
 Examinons un exemple dans lequel une combinaison de l’orientation portrait et paysage des pages et des propriétés de rotation des vues est utilisée. Dans cet exemple, nous allons créer un PDF avec une orientation portrait par défaut, mais un tableau sera rendu en orientation paysage avec du contenu dans une vue à 90 degrés dans le sens des aiguilles d’une montre. La sortie finale ressemble à ce qui suit :
 
-<img src="./assets/portrait-landscape-page-layouts.png" height="800">
+<img src="./assets/portrait-landscape-page-layouts.png" width="400">
 
 Dans la sortie ci-dessus, les informations de la liste de contacts sont présentées en mode paysage avec un contenu également pivoté de 90 degrés. Le contenu restant s’affiche en mode portrait normal.
 
@@ -338,7 +357,7 @@ Effectuez les étapes suivantes pour réaliser les tâches ci-dessus :
 
    1. Dans le **Propriétés du contenu** ajouter un nouveau panneau `outputclass` avec `landscape-style` comme valeur de propriété.
 
-      <img src="./assets/new-style-table-outputclass.png" height="400">
+      <img src="./assets/new-style-table-outputclass.png" width="300">
 
    1. Cliquez sur **Enregistrer tout** pour enregistrer le fichier mis à jour.
 
@@ -350,7 +369,8 @@ Le contenu du tableau est rendu en mode paysage dans le PDF final, comme indiqu�
 
 Le panneau Propriétés du contenu vous permet de mettre facilement à jour l’aspect des éléments de votre mise en page. Les propriétés du panneau Propriétés du contenu sont divisées en plusieurs sections :
 
->**Remarque**: Pour plus d’informations sur l’utilisation de ces propriétés, consultez la documentation du W3C CSS Page Media Standards .
+>[!NOTE]
+Pour plus d’informations sur l’utilisation de ces propriétés, consultez la documentation du W3C CSS Page Media Standards .
 
 * **Attributs**: Contient les propriétés ID, Class et Translate. Si vous définissez la propriété Traduire sur non, le contenu de cet élément spécifique n’est pas traduit.
 
