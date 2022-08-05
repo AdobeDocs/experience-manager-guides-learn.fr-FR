@@ -3,9 +3,10 @@ title: Fonction de publication native d’un PDF | Composants d’un modèle de 
 description: Découvrez les différents composants d’un modèle de PDF et comment les personnaliser et les configurer.
 hide: true
 hidefromtoc: true
-source-git-commit: 698469293e41558753ff6aada92f050f45be867a
+exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
+source-git-commit: e0602e325fec014fe5a9ebe231b0c62611a4e52d
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2295'
 ht-degree: 0%
 
 ---
@@ -39,6 +40,19 @@ Les paramètres du composant Mise en page vous permettent de concevoir la struct
 1. Cliquez sur **Terminé**.
 
    La nouvelle mise en page est créée et ajoutée sous Mises en page .
+
+### Dupliquer une mise en page
+
+1. Dans le **Modèles** du modèle à dupliquer, double-cliquez sur **Disposition de page** ou cliquez sur le bouton **>** avant **Disposition de page**.
+
+   Cette option affiche la liste des mises en page dans le modèle.
+
+1. Pointez sur la mise en page à dupliquer, puis cliquez sur (*Options* icon) **...** et sélectionnez **Dupliquer** dans le menu contextuel.
+
+1. Dans le _Dupliquer la mise en page_ , saisissez le nom de la mise en page.
+
+1. Cliquez sur **Terminé**.
+Une copie de la mise en page sélectionnée est créée et ajoutée sous Mises en page.
 
 ### Personnalisation de la mise en page
 
