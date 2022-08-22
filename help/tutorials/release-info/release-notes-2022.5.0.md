@@ -1,22 +1,22 @@
 ---
 title: Notes de mise à jour | Guides Adobe Experience Manager as a Cloud Service, version de mai 2022
-description: Dernière version des guides Adobe Experience Manager as a Cloud Service
+description: Version de mai des guides Adobe Experience Manager as a Cloud Service
 exl-id: 7928a300-5ec9-492c-b9be-02b6f87638c6
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 0f5c1cabdbda9fa2606f67faedbf9a38ca1ec0aa
 workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 4%
 
 ---
 
-# Dernière version des guides Adobe Experience Manager as a Cloud Service
+# Version de mai des guides Adobe Experience Manager as a Cloud Service
 
-## Mise à niveau vers la dernière version
+## Mise à niveau vers la version de mai
 
 Mettez à niveau vos guides Adobe Experience Manager actuels as a Cloud Service (plus tard appelés *AEM Guides as a Cloud Service*) en procédant comme suit :
 1. Extrayez le code Git des Cloud Services et passez à la branche configurée dans le pipeline Cloud Services correspondant à l’environnement que vous souhaitez mettre à niveau.
 2. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Services vers la version 2022.5.144.
-3. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la dernière version d’AEM Guides as a Cloud Service.
+3. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version de mai d’AEM Guides as a Cloud Service.
 
 ## Matrice de compatibilité
 
@@ -41,7 +41,7 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 
 ## Nouvelles fonctionnalités et améliorations
 
-AEM Guides as a Cloud Service contient de nombreuses améliorations et nouvelles fonctionnalités de la dernière version :
+AEM Guides as a Cloud Service comporte de nombreuses améliorations et nouvelles fonctionnalités dans la version de mai :
 
 ### Éditeur web amélioré
 
