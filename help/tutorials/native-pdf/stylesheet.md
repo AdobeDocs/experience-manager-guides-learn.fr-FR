@@ -3,9 +3,9 @@ title: Fonction de publication native d’un PDF | Utilisation des styles de con
 description: Découvrez comment créer des feuilles de style et créer des styles pour votre contenu.
 hide: true
 hidefromtoc: true
-source-git-commit: 563a301e4db20cd8076eaffd970d53b7a8743449
+source-git-commit: cbd5f4b0763bf4087d016f3d3c8d723518f0b8e7
 workflow-type: tm+mt
-source-wordcount: '3500'
+source-wordcount: '3496'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ L’éditeur de styles est un éditeur WYSIWYG qui masque toutes les complexité
 * Styles de page
 * Autres styles
 
-Lorsque vous utilisez du contenu DITA structuré, le mappage de style pour la plupart des éléments DITA est en place dans la feuille de style par défaut. Si vous travaillez avec des éléments DITA standard, vous pouvez modifier leur apparence en apportant directement des modifications à la définition de style. Ces définitions de style sont disponibles dans la catégorie Autre style . Pour plus d’informations, voir *Utilisation d’autres styles* plus loin dans cette rubrique.
+Lorsque vous utilisez du contenu DITA structuré, le mappage de style pour la plupart des éléments DITA est en place dans la feuille de style par défaut. Si vous travaillez avec des éléments DITA standard, vous pouvez modifier leur apparence en apportant directement des modifications à la définition de style. Ces définitions de style sont disponibles dans la catégorie Autre style . Pour plus d’informations, voir [Utilisation d’autres styles](#other-styles) plus loin dans cette rubrique.
 
 Les sections suivantes présentent les paramètres de style les plus couramment utilisés sous la forme d’exemples.
 
@@ -42,7 +42,7 @@ Les styles d’en-tête contiennent tous les styles de base pour les en-têtes u
 
 >[!NOTE]
 >
->Vous pouvez créer vos propres styles d’en-tête personnalisés qui peuvent être utilisés dans votre contenu à l’aide de la classe outputclass. Pour plus d’informations, voir l’étape 4 de la section *Utilisation de l’orientation de page et de la rotation des vues* par exemple.
+>Vous pouvez créer vos propres styles d’en-tête personnalisés qui peuvent être utilisés dans votre contenu à l’aide de la classe outputclass. Pour plus d’informations, voir l’étape 4 de la section [Utilisation de l’orientation de page et de la rotation des vues](design-page-layout.md#page-orientation-rotation) par exemple.
 
 ### Création d’en-têtes personnalisés au niveau du chapitre {#create-chapter-level-heading}
 
@@ -55,7 +55,7 @@ Dans cet exemple, nous allons créer un style d’en-tête de chapitre de deuxi�
 1. Ouvrez la feuille de style requise pour la modifier.
    >[!NOTE]
    >
-   >Voir *Personnalisation d’un style prédéfini ou nouveau* pour ouvrir une feuille de style à des fins de personnalisation ou de modification.
+   >Voir [Personnalisation d’un style prédéfini ou nouveau](components-pdf-template.md#customize-style) pour ouvrir une feuille de style à des fins de personnalisation ou de modification.
 
 1. Dans le **Styles** , développez la liste **Styles d’en-tête**.
 1. Cliquez avec le bouton droit de la souris sur **Styles d’en-tête** style et choisissez **Nouveau style**.
@@ -76,7 +76,7 @@ Dans cet exemple, nous allons personnaliser les en-têtes du niveau 1 au niveau 
 
    >[!NOTE]
    >
-   >Voir *Personnalisation d’un style prédéfini ou nouveau* pour ouvrir une feuille de style à des fins de personnalisation ou de modification.
+   >Voir [Personnalisation d’un style prédéfini ou nouveau](components-pdf-template.md#customize-style) pour ouvrir une feuille de style à des fins de personnalisation ou de modification.
 
 1. Dans le **Styles** , développez la liste **Styles d’en-tête**.
 
@@ -142,7 +142,7 @@ Dans l’exemple suivant, nous allons créer un style de casquette de dépôt :
 1. Ouvrez la feuille de style requise pour la modifier.
 
    >[!NOTE]
-   Voir *Personnalisation d’un style prédéfini ou nouveau* pour ouvrir une feuille de style à des fins de personnalisation ou de modification.
+   Voir [Personnalisation d’un style prédéfini ou nouveau](components-pdf-template.md#customize-style) pour ouvrir une feuille de style à des fins de personnalisation ou de modification.
 
 1. Dans le **Styles** , développez la liste **Styles de paragraphe**.
 
@@ -177,7 +177,7 @@ Dans l’exemple suivant, nous allons créer un style de caractères intégré :
 1. Ouvrez la feuille de style requise pour la modifier.
 
    >[!NOTE]
-   Voir *Personnalisation d’un style prédéfini ou nouveau* pour ouvrir une feuille de style à des fins de personnalisation ou de modification.
+   Voir [Personnalisation d’un style prédéfini ou nouveau](components-pdf-template.md#customize-style) pour ouvrir une feuille de style à des fins de personnalisation ou de modification.
 
 1. Dans le **Styles** , développez la liste **Styles de caractère**.
 
@@ -196,7 +196,7 @@ Dans l’exemple suivant, nous allons créer un style de caractères intégré :
    * **Police**: Toutes les propriétés liées aux polices peuvent être personnalisées à partir de cette section. Par défaut, certaines polices sont regroupées avec le produit. Vous pouvez choisir la police de votre choix pour le style de caractère. Dans notre exemple, définissez la famille de polices sur *Serif,* et sélectionnez *Gras* et *Italique* dans la propriété Font Style. Vous pouvez également personnaliser d’autres propriétés de police, telles que le poids de la police (comme le gras ou le briquet), la décoration du texte (comme le soulignement ou le surlignage), la taille de la police, la couleur de la police, l’alignement du texte, etc.
 
       >[!NOTE]
-      Vous pouvez également ajouter des polices à votre modèle, qui sont stockées dans la section Ressources de votre modèle. Pour plus d’informations sur l’ajout de polices et l’utilisation des ressources, voir **Ajouter un lien vers la section Ressources**.
+      Vous pouvez également ajouter des polices à votre modèle, qui sont stockées dans la section Ressources de votre modèle. Pour plus d’informations sur l’ajout de polices et l’utilisation des ressources, voir [Utilisation des ressources](components-pdf-template.md#work-with-resources).
 
    * **Disposition**: Vous pouvez définir les propriétés liées à la mise en page, telles que Hauteur et Largeur, Marge, Marge intérieure, Alignement, etc.
 
@@ -219,7 +219,7 @@ Dans l’exemple suivant, nous allons personnaliser le style de liste numéroté
 1. Ouvrez la feuille de style requise pour la modifier.
 
    >[!NOTE]
-   Voir *Personnalisation d’un style prédéfini ou nouveau* pour ouvrir une feuille de style à des fins de personnalisation ou de modification.
+   Voir [Personnalisation d’un style prédéfini ou nouveau](components-pdf-template.md#customize-style) pour ouvrir une feuille de style à des fins de personnalisation ou de modification.
 
 1. Dans le **Styles** , développez la liste **Styles de liste**.
 
@@ -278,7 +278,7 @@ Dans l’exemple suivant, nous voyons comment créer un style de tableau et les 
 1. Ouvrez la feuille de style requise pour la modifier.
 
    >[!NOTE]
-   Voir *Personnalisation d’un style prédéfini ou nouveau* pour ouvrir une feuille de style à des fins de personnalisation ou de modification.
+   Voir [Personnalisation d’un style prédéfini ou nouveau](components-pdf-template.md#customize-style) pour ouvrir une feuille de style à des fins de personnalisation ou de modification.
 
 1. Dans le **Styles** , cliquez avec le bouton droit de la souris sur la liste **Style de tableau** et choisissez **Nouveau style**.
 
@@ -331,7 +331,7 @@ Dans l’exemple suivant, nous allons créer un titre de fenêtre (`wintitle`) s
 1. Ouvrez la feuille de style requise pour la modifier.
 
    >[!NOTE]
-   Voir *Personnalisation d’un style prédéfini ou nouveau* pour ouvrir une feuille de style à des fins de personnalisation ou de modification.
+   Voir [Personnalisation d’un style prédéfini ou nouveau](components-pdf-template.md#customize-style) pour ouvrir une feuille de style à des fins de personnalisation ou de modification.
 
 1. Dans le **Styles** list, expand **Autres styles**.
 
