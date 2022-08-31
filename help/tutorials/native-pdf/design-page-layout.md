@@ -4,9 +4,9 @@ description: Découvrez comment concevoir la mise en page afin de présenter des
 hide: true
 hidefromtoc: true
 exl-id: b4d3bdc4-0d01-46eb-b182-540380220485
-source-git-commit: 563a301e4db20cd8076eaffd970d53b7a8743449
+source-git-commit: 7b96fe9e8fad0e017626be04f5c41c1e42e7469d
 workflow-type: tm+mt
-source-wordcount: '4686'
+source-wordcount: '4649'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Lors de la conception d’une mise en page, un contrôle sur les différentes pr
 >
 >Le panneau Propriétés de page encapsule les propriétés et suit les règles définies sous le [Normes de médias de page](https://www.w3.org/TR/css-page-3/).
 
-* **Format de page** : Spécifiez la taille de page à utiliser pour la mise en page. La liste déroulante Taille de page vous permet de choisir parmi plus de 15 formats de page. Vous pouvez également créer une mise en page à l’aide d’un format de page personnalisé. Voir [Définir la taille de page](design-page-layout.md#set-the-page-size) pour plus d’informations.
+* **Format de page** : Spécifiez la taille de page à utiliser pour la mise en page. La liste déroulante Taille de page vous permet de choisir parmi plus de 15 formats de page. Vous pouvez également créer une mise en page à l’aide d’un format de page personnalisé. Voir [Définir la taille de page](#set-page-size) pour plus d’informations.
 
 * **Orientation** : Spécifiez l’orientation de page à utiliser pour la mise en page. Vous pouvez choisir parmi les orientations de page Portrait ou Paysage. Notez que vous pouvez choisir d’appliquer différentes orientations à différentes variantes de page dans une mise en page. Par exemple, si votre contenu contient un tableau large ou une image volumineuse, vous pouvez créer une mise en page paysage et l’appliquer au tableau ou à l’image plus large.
 
@@ -341,7 +341,7 @@ La capture d’écran suivante présente un exemple d’image ajoutée à la zon
 
 <img src="./assets/image-in-header-area.png" width="500">
 
-Une fois qu’une image est insérée, vous pouvez modifier ses attributs pour lui donner l’apparence souhaitée. La méthode la plus simple pour modifier l’aspect d’une image ou de tout autre élément de votre mise en page consiste à utiliser le panneau Propriétés du contenu . Voir [Utilisation du panneau Propriétés du contenu](design-page-layout.md#work-with-content-properties-panel) pour les différentes propriétés disponibles par le biais de l’interface utilisateur à personnaliser.
+Une fois qu’une image est insérée, vous pouvez modifier ses attributs pour lui donner l’apparence souhaitée. La méthode la plus simple pour modifier l’aspect d’une image ou de tout autre élément de votre mise en page consiste à utiliser le panneau Propriétés du contenu . Voir [Utilisation du panneau Propriétés du contenu](#work-with-content-props) pour les différentes propriétés disponibles par le biais de l’interface utilisateur à personnaliser.
 
 ### Ajout de champs et de métadonnées {#add-fields-metadata}
 
@@ -361,7 +361,7 @@ Il existe les catégories suivantes pour les champs que vous pouvez insérer dan
 
 Chacune de ces catégories de champs contient différentes variantes dans lesquelles les informations du champ peuvent être insérées. Par exemple, un champ Date peut avoir différentes variantes, telles que `YYYY-MM-DD`, `MM/DD/YY`, `MM/DD/YYYY` etc. De même, le numéro de page peut avoir des variantes sous la forme de formats romains, décimaux ou même de paramètres régionaux, tels que _Arabe_, _Devanagari_, _Hébreu_, etc.
 
-Outre les champs prédéfinis, vous pouvez ajouter des informations de métadonnées sous la forme de variables ou de champs dans la mise en page. Ces métadonnées sont stockées dans le contenu du mappage DITA source et peuvent être facilement insérées dans la mise en page. Pour plus d’informations, voir [Ajout de champs et de métadonnées](design-page-layout.md#add-fields-and-metadata).
+Outre les champs prédéfinis, vous pouvez ajouter des informations de métadonnées sous la forme de variables ou de champs dans la mise en page. Ces métadonnées sont stockées dans le contenu du mappage DITA source et peuvent être facilement insérées dans la mise en page. <!--For more information, see [Add fields and metadata](design-page-layout.md#add-fields-and-metadata).-->
 
 Dans l’exemple suivant, nous allons insérer un numéro de page et un titre de chapitre dans la zone de pied de page d’une mise en page.
 
@@ -387,7 +387,7 @@ Dans l’exemple suivant, nous allons insérer un numéro de page et un titre de
 
    >[!NOTE]
    >
-   >Vous pouvez également éditer le format de tous les champs, à l&#39;exception du format par défaut. Pour ce faire, cliquez sur l’icône Modifier en regard du format à modifier, apportez des modifications, puis cliquez sur OK. Pour plus d’informations, voir [Ajout de champs et de métadonnées](design-page-layout.md#add-fields-and-metadata).
+   >Vous pouvez également éditer le format de tous les champs, à l&#39;exception du format par défaut. Pour ce faire, cliquez sur l’icône Modifier en regard du format à modifier, apportez des modifications, puis cliquez sur OK. Pour plus d’informations, voir [Ajout de champs et de métadonnées](#add-fields-metadata).
 
    Le champ du numéro de page par défaut est inséré dans la zone de pied de page de la mise en page.
 
@@ -449,7 +449,7 @@ Dans l&#39;exemple suivant, nous allons insérer une table des matières de chap
 
 >[!NOTE]
 >
->Pour cette procédure, on suppose que vous avez créé la variante Première page pour une mise en page de page de chapitre. Pour plus d’informations sur la création d’une variante de page, voir _Créer les premières variantes de mise en page de page droite ou gauche_.
+>Pour cette procédure, on suppose que vous avez créé la variante Première page pour une mise en page de page de chapitre. Pour plus d’informations sur la création d’une variante de page, voir [Créer les premières variantes de mise en page de page droite ou gauche](#page-layout-variants).
 
 1. Ouvrez la mise en page requise pour la modifier.
 
@@ -483,7 +483,7 @@ Dans l&#39;exemple suivant, nous allons insérer une table des matières de chap
    >
    >Le PDF publié final n’affichera que les entrées de la table des matières en fonction du contenu de vos chapitres. Si aucun titre de niveau 5 n’apparaît dans un chapitre, il ne sera pas affiché dans la sortie finale.
 
-L’aspect de la table des matières par défaut peut être personnalisé à l’aide des feuilles de style. Le style commençant par `chaptoc-level-#` (comme `chaptoc-level-1`, `chaptoc-level-2`, etc.) sont utilisés pour personnaliser les styles de la table des matières du chapitre. Pour plus d’informations sur les éléments de feuille de style utilisés dans la table des matières et sur la manière de les personnaliser, voir _Personnalisation de la table des matières des chapitres par défaut_.
+L’aspect de la table des matières par défaut peut être personnalisé à l’aide des feuilles de style. Le style commençant par `chaptoc-level-#` (comme `chaptoc-level-1`, `chaptoc-level-2`, etc.) sont utilisés pour personnaliser les styles de la table des matières du chapitre. <!--For more details on the stylesheet elements used in the TOC and how to customize them, see _Customize default chapter TOC_-->.
 
 >[!IMPORTANT]
 >
@@ -519,7 +519,7 @@ Pour créer une mise en page avec plusieurs colonnes, procédez comme suit :
 
    * **Intervalle entre les colonnes** : Spécifiez l’espace entre des colonnes individuelles.
 
-   * **Étendue de colonne** : Si vous souhaitez que l’un des éléments de votre mise en page s’étende sur plusieurs colonnes, vous devez utiliser cette propriété. Pour ce faire, modifiez le style de l’élément souhaité à l’aide des feuilles de style. Pour plus d’informations, voir _Section expliquant la personnalisation du style_.
+   * **Étendue de colonne** : Si vous souhaitez que l’un des éléments de votre mise en page s’étende sur plusieurs colonnes, vous devez utiliser cette propriété. Pour ce faire, modifiez le style de l’élément souhaité à l’aide des feuilles de style. <!--for more information see _Section explaining style customization_-->.
 
    Dans votre mise en page, si vous souhaitez qu’un certain texte apparaisse sur la première page de toutes les mises en page de page de chapitre, vous pouvez l’ajouter à la variante Première page de la mise en page de chapitre.
 
@@ -549,4 +549,4 @@ Le panneau Propriétés du contenu vous permet de mettre facilement à jour l’
 * **Disposition** : Contient des propriétés pour configurer la mise en page d’un élément dans la mise en page. Vous pouvez définir la hauteur, la largeur, les marges et la marge (pour le haut, le bas, la gauche ou la droite), l’alignement horizontal ou vertical, le flottement (comme gauche, la droite ou aucune), le effacement (comme gauche, droite, les deux ou aucune), la position de l’élément (comme absolu, fixe, relatif ou plus), l’affichage (comme bloc, contenu, fixe ou plus), l’index Z, la transparence, la transformation (par rotation ou ) et Transformer l’origine (en décalé X et Y).
 
 * **Contexte** : Contient des propriétés pour inclure une image d’arrière-plan ou un nuage de couleur. Vous pouvez définir la Taille de l’image (en définissant la Hauteur ou la Largeur), la Répétition en arrière-plan (en répétition, sans répétition, arrondie ou plus) et la Position en arrière-plan (en haut à gauche, au centre, au centre en bas ou plus).
-* **Plusieurs colonnes** : Contient des propriétés permettant de configurer des propriétés à plusieurs colonnes pour la page ou tout élément spécifique, tel que la table des matières du chapitre. Pour plus d’informations sur les propriétés et leur utilisation, voir _Utilisation de la mise en page à plusieurs colonnes_.
+* **Plusieurs colonnes** : Contient des propriétés permettant de configurer des propriétés à plusieurs colonnes pour la page ou tout élément spécifique, tel que la table des matières du chapitre. Pour plus d’informations sur les propriétés et leur utilisation, voir [Utilisation de la mise en page à plusieurs colonnes](#multi-column-layout).
