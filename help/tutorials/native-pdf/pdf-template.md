@@ -3,14 +3,15 @@ title: Fonction de publication native d’un PDF | Personnalisation et configura
 description: Découvrez comment personnaliser et configurer les différents composants de la fonction de PDF natif.
 hide: true
 hidefromtoc: true
-source-git-commit: 0f18d9f7d7967b6f25c5d05b54a22f65e9fc20f7
+exl-id: 7660da8e-8a1e-4493-b99b-9b5de9a7483f
+source-git-commit: 563a301e4db20cd8076eaffd970d53b7a8743449
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 0%
 
 ---
 
-# Modèle de PDF
+# Modèle de PDF {#PDF-template}
 
 L’utilisation d’un modèle garantit la cohérence de la disposition et de la structure du contenu. Lorsque les modèles sont prédéfinis, vous pouvez éviter de retravailler les problèmes de mise en forme qui se produisent pour chaque nouveau projet ou mise à jour. Les modèles vous permettent de concevoir des mises en page de page, de mettre en forme le contenu et d’appliquer divers paramètres pour personnaliser votre PDF.
 
@@ -31,7 +32,7 @@ Pour créer un modèle de PDF, procédez comme suit :
 
 Le nouveau modèle est créé et ajouté dans la variable *Modèles* du panneau.
 
-## Dupliquer un modèle de PDF
+## Dupliquer un modèle de PDF {#duplicate-pdf-template}
 
 Si vous souhaitez créer un modèle avec les mêmes mises en page et mises en forme que le modèle existant, vous pouvez en créer une copie. Une fois qu’un modèle a été dupliqué, vous pouvez personnaliser davantage ses composants, si nécessaire.
 
@@ -53,7 +54,7 @@ Pour dupliquer un modèle de PDF existant, procédez comme suit :
 
    Un modèle en double est créé et ajouté sous Modèles.
 
-## Personnalisation d’un modèle de PDF
+## Personnalisation d’un modèle de PDF {#customize-pdf-template}
 
 Vous pouvez personnaliser des modèles en ajustant les composants de modèle et en appliquant des formats de style à l’aide de feuilles de style.
 
@@ -71,13 +72,11 @@ Pour personnaliser un modèle de PDF, procédez comme suit :
    <img src="assets/customize-pdf-template.png" alt="Personnalisation du modèle de PDF" width="350">
 
    Les différents composants de modèle que vous pouvez personnaliser sont classés dans les sections suivantes :
-   * Mise en page : Un PDF type contient différentes pages, telles qu’une page de couverture ou de titre, la table des matières, le chapitre, l’index, etc. La section Mise en page vous permet de concevoir l’aspect des différentes pages qui constitueraient votre PDF. En plus de l’aspect, vous pouvez définir la disposition des éléments de page, tels que l’en-tête, le pied de page et les zones de contenu d’une page. Pour en savoir plus sur la personnalisation de la mise en page d’une page, voir ***Création et personnalisation de mises en page***.
-   * Feuilles de style : Les paramètres de la section Feuilles de style vous permettent de personnaliser l’aspect des composants de mise en page tels que la table des matières, l’index, le glossaire, etc. En outre, vous pouvez également personnaliser les styles du contenu DITA comme les en-têtes, les paragraphes, les listes, etc. Pour plus d’informations sur l’utilisation des feuilles de style, voir ***Utiliser des feuilles de style pour personnaliser PDF***.
-   * Ressources : Stocker les fichiers de ressources que vous devez personnaliser ou concevoir des modèles de PDF. Les ressources telles que les logos, les polices personnalisées, les images d’arrière-plan, etc., sont stockées dans les ressources. Pour en savoir plus sur l’utilisation des ressources, voir ***Utilisation des ressources***.
-   * Paramètres : Configurez les paramètres de sortie pour générer un PDF à l’aide du modèle. Cette section vous permet de définir le mappage de modèles pour différentes pages dans un PDF, une page de début de chapitre, des marqueurs d’impression, etc. Pour plus d’informations sur l’application des paramètres, voir ***Paramètres du PDF avancé***.
+   * Mise en page : Un PDF type contient différentes pages, telles qu’une page de couverture ou de titre, la table des matières, le chapitre, l’index, etc. La section Mise en page vous permet de concevoir l’aspect des différentes pages qui constitueraient votre PDF. En plus de l’aspect, vous pouvez définir la disposition des éléments de page, tels que l’en-tête, le pied de page et les zones de contenu d’une page. Pour en savoir plus sur la personnalisation de la mise en page d’une page, voir [Création et personnalisation de mises en page](components-pdf-template.md#create-customize-page-layout).
+   * Feuilles de style : Les paramètres de la section Feuilles de style vous permettent de personnaliser l’aspect des composants de mise en page tels que la table des matières, l’index, le glossaire, etc. En outre, vous pouvez également personnaliser les styles du contenu DITA comme les en-têtes, les paragraphes, les listes, etc. Pour plus d’informations sur l’utilisation des feuilles de style, voir [Utiliser des feuilles de style pour personnaliser PDF](components-pdf-template.md#stylesheet-customization).
+   * Ressources : Stocker les fichiers de ressources que vous devez personnaliser ou concevoir des modèles de PDF. Les ressources telles que les logos, les polices personnalisées, les images d’arrière-plan, etc., sont stockées dans les ressources. Pour en savoir plus sur l’utilisation des ressources, voir [Utilisation des ressources](components-pdf-template.md#work-with-resources).
+   * Paramètres : Configurez les paramètres de sortie pour générer un PDF à l’aide du modèle. Cette section vous permet de définir le mappage de modèles pour différentes pages dans un PDF, une page de début de chapitre, des marqueurs d’impression, etc. Pour plus d’informations sur l’application des paramètres, voir [Paramètres du PDF avancé](components-pdf-template.md#advanced-pdf-settings).
 1. Pour personnaliser un composant de modèle, double-cliquez sur un composant de modèle ou cliquez sur l’icône > en regard de celui-ci.
 
    Par exemple, double-cliquez sur *Disposition de page* ou cliquez sur le bouton *>* avant *Disposition de page* pour afficher les mises en page disponibles.
 1. Une fois que vous avez apporté les modifications souhaitées, cliquez sur *Enregistrer tout* (ou `Ctrl+S`).
-
-

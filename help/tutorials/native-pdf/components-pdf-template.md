@@ -4,30 +4,34 @@ description: Découvrez les différents composants d’un modèle de PDF et comm
 hide: true
 hidefromtoc: true
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: e0602e325fec014fe5a9ebe231b0c62611a4e52d
+source-git-commit: 563a301e4db20cd8076eaffd970d53b7a8743449
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2275'
 ht-degree: 0%
 
 ---
 
-# Composants d’un modèle de PDF
+# Composants d’un modèle de PDF {#components-pdf-template}
 
 Un modèle de PDF comporte quatre composants : Dispositions de pages, feuilles de style, ressources et paramètres. Vous pouvez créer un modèle en personnalisant ces composants individuels et en associant le modèle à un paramètre prédéfini de sortie lors de la génération d’une sortie de PDF. Les sections suivantes couvrent en détail ces composants et leur processus de personnalisation.
 
 
-## Création et personnalisation de mises en page
+## Création et personnalisation de mises en page {#create-customize-page-layout}
 
 Les paramètres du composant Mise en page vous permettent de concevoir la structure d’une page en définissant l’en-tête, le pied de page et la zone de contenu d’une page. L’éditeur de mise en page WYSIWYG vous permet de créer une mise en page pour différentes sections d’un PDF, telles que les pages de couverture recto et verso, le chapitre, la table des matières (table des matières), l’index, la page vierge, la liste des chiffres (LOF), la liste des tableaux (LOT), le glossaire ou de créer une mise en page pour une page personnalisée. Dans les paramètres du modèle de PDF, vous pouvez attribuer une mise en page avec différentes sections dans un PDF, qui sont ensuite utilisées pour générer la sortie du PDF.
 
-### Création d’une mise en page
+### Création d’une mise en page {#create-page-layout}
 
-> **Remarque**: Il existe des exemples de mise en page prêts à l’emploi. Vous pouvez les personnaliser ou créer de nouvelles mises en page.
+>[!NOTE]
+>
+>Il existe des exemples de mise en page prêts à l’emploi. Vous pouvez les personnaliser ou créer de nouvelles mises en page.
 
 1. Dans l’éditeur Web, accédez à la **Sortie** .
 1. Développez la barre latérale gauche et cliquez sur **Modèles**.
 1. Ouvrez le modèle que vous souhaitez utiliser.
-   > **Remarque**: Vous pouvez ouvrir un modèle en double-cliquant sur son nom ou en cliquant sur l’icône > située en regard de son nom.
+   >[!NOTE]
+   >
+   >Vous pouvez ouvrir un modèle en double-cliquant sur son nom ou en cliquant sur l’icône > située en regard de son nom.
 1. Pour créer une mise en page, effectuez l’une des opérations suivantes :
    * Survol **Disposition de page** et cliquez sur (*Options* icon) **...** et choisissez **Nouvelle mise en page**.
    * Dans le **Modèles** , cliquez sur le panneau **+** en regard de **Modèles** et choisissez **Disposition de page** dans le menu contextuel.
@@ -36,12 +40,14 @@ Les paramètres du composant Mise en page vous permettent de concevoir la struct
 
       <img src="assets/add-layout-2.png" alt="Boîte de dialogue Ajouter une mise en page" width="250">
 1. Attribuez un nom à la nouvelle mise en page.
-   > **Remarque :** Évitez d’utiliser des caractères spéciaux lors de l’attribution d’un nom à une mise en page. Un espace dans le nom est remplacé par un trait de soulignement &quot;_&quot;.
+   >[!NOTE]
+   >
+   >Évitez d’utiliser des caractères spéciaux lors de l’attribution d’un nom à une mise en page. Un espace dans le nom est remplacé par un trait de soulignement &quot;_&quot;.
 1. Cliquez sur **Terminé**.
 
    La nouvelle mise en page est créée et ajoutée sous Mises en page .
 
-### Dupliquer une mise en page
+### Dupliquer une mise en page {#duplicate-page-layout}
 
 1. Dans le **Modèles** du modèle à dupliquer, double-cliquez sur **Disposition de page** ou cliquez sur le bouton **>** avant **Disposition de page**.
 
@@ -54,7 +60,7 @@ Les paramètres du composant Mise en page vous permettent de concevoir la struct
 1. Cliquez sur **Terminé**.
 Une copie de la mise en page sélectionnée est créée et ajoutée sous Mises en page.
 
-### Personnalisation de la mise en page
+### Personnalisation de la mise en page {#customize-page-layout}
 
 1. Dans le **Modèles** du modèle à modifier, double-cliquez sur **Disposition de page** ou cliquez sur le bouton **>** avant **Disposition de page**.
 
@@ -66,13 +72,13 @@ Une copie de la mise en page sélectionnée est créée et ajoutée sous Mises e
    L’éditeur de mise en page s’ouvre alors pour une personnalisation.
 1. Une fois que vous avez apporté les modifications souhaitées, cliquez sur *Enregistrer tout* (ou `Crl+S`).
 
-   Pour plus d’informations sur la définition d’éléments de disposition individuels tels que l’en-tête, le pied de page, le numéro de page, le titre, etc., voir *Utilisation des éléments de mise en page*.
+   Pour plus d’informations sur la définition d’éléments de disposition individuels tels que l’en-tête, le pied de page, le numéro de page, le titre, etc., voir [Concevoir une mise en page](design-page-layout.md).
 
-## Utiliser des feuilles de style pour personnaliser PDF
+## Utiliser des feuilles de style pour personnaliser PDF {#stylesheet-customization}
 
 Les paramètres du composant Feuilles de style vous permettent de mettre en forme les composants de mise en page et le contenu DITA à l’aide de l’éditeur WYSIWYG ou de travailler directement avec le fichier CSS. Vous pouvez créer vos propres styles ou personnaliser les propriétés de style par défaut. L’éditeur WYSIWYG vous donne accès à la plupart des propriétés dont vous avez besoin pour mettre en forme votre mise en page ou votre contenu DITA. Pour les personnalisations avancées, vous pouvez travailler directement en mode Source.
 
-### Créer une nouvelle feuille de style
+### Créer une nouvelle feuille de style {#create-stylesheet}
 
 Bien que les fichiers CSS soient fournis pour le contenu et la mise en page, vous pouvez créer une feuille de style pour appliquer plusieurs personnalisations à un type de style spécifique qui peut ensuite être appliqué à un composant cible. Par défaut, les exemples de fichiers CSS sont regroupés dans le produit. Ces fichiers CSS ont pour but de vous aider à organiser vos informations de style dans le contenu et les mises en page. Vous pouvez choisir de fusionner ces styles dans un ou plusieurs fichiers CSS.
 
@@ -92,7 +98,7 @@ Pour créer une feuille de style, procédez comme suit :
 
    Une nouvelle feuille de style est créée et ajoutée sous la section Feuilles de style .
 
-### Création d’un style
+### Création d’un style {#create-style}
 
 Par défaut, les fichiers CSS contiennent des styles pour les styles d’en-tête, de paragraphe, de caractère, d’hyperlien, d’image, de tableau, de balise div, de page et d’autres styles. Vous pouvez remplacer le format de style par défaut ou créer un nouveau style.
 
@@ -114,7 +120,7 @@ Pour créer un style, procédez comme suit :
 
    Un nouveau style est créé et ajouté sous le style de base.
 
-### Personnalisation d’un style prédéfini ou nouveau
+### Personnalisation d’un style prédéfini ou nouveau {#customize-style}
 
 Une fois que vous avez créé un fichier CSS avec des styles par défaut ou que vous souhaitez personnaliser les styles dans un fichier CSS existant, vous pouvez utiliser l’éditeur de styles pour ce faire.
 
@@ -134,7 +140,9 @@ Pour personnaliser un style, procédez comme suit :
 
 1. Pour personnaliser un style, double-cliquez sur un style ou cliquez sur l’icône > devant un style pour l’afficher et le personnaliser à l’aide de l’éditeur de styles.
 
-## Utilisation des ressources
+pour plus d’informations sur l’utilisation des styles les plus courants, voir [Utilisation des styles de contenu communs](stylesheet.md)
+
+## Utilisation des ressources {#work-with-resources}
 
 Il s’agit d’un conteneur pour toutes les ressources utilisées pour concevoir un modèle. Vous pouvez le considérer comme un dossier contenant des ressources telles que des images d’arrière-plan, des polices personnalisées, des logos, etc. Chaque fois que vous ajoutez une ressource dans votre modèle, elle est chargée ou archivée dans le dossier de ressources. Vous pouvez ensuite utiliser ces ressources pour personnaliser ou concevoir vos modèles de PDF.
 
@@ -146,13 +154,16 @@ Pour ajouter un fichier de ressource au dossier Resources, procédez comme suit 
    <img src="assets/resources-import-assets.png" alt="Charger des ressources" width="300">
 
    Le chemin d’accès à l’emplacement où le fichier de ressource sera chargé est indiqué dans la variable **Sélectionner le dossier de ressources** champ .
-   > **Remarque :** Vous ne pouvez pas modifier le chemin d’accès pour le chargement de ressources. Par défaut, toutes les ressources sont stockées sous la variable `/content/dam/dita-templates/pdf/<PDF-template-name>` dossier.
+   >[!NOTE]
+   >
+   >Vous ne pouvez pas modifier le chemin d’accès pour le chargement de ressources. Par défaut, toutes les ressources sont stockées sous la variable `/content/dam/dita-templates/pdf/<PDF-template-name>` dossier.
 
 1. Cliquez sur **Choisir les fichiers** pour parcourir le fichier de ressources à partir de votre ordinateur local
+
 1. Cliquez sur **Charger**.
 Le fichier sélectionné est importé et répertorié sous le dossier Ressources .
 
-## Paramètres du PDF avancé
+## Paramètres du PDF avancé {#advanced-pdf-settings}
 
 Utilisez la section Paramètres pour configurer les paramètres avancés de la mise en page du PDF, du PDF de la page impaire ou paire, des formats pour les références croisées et de l’activation des marques d’impression dans le PDF final généré à l’aide du modèle.
 
@@ -181,10 +192,12 @@ Définissez les paramètres de configuration de base pour démarrer un chapitre 
    Vous pouvez constater ici que le premier chapitre Paramètres avancés du PDF ne reçoit aucun numéro de page, car il contient des rubriques imbriquées ou enfants. En revanche, un numéro de page s’il est affecté à l’Annexe et aux Mentions légales, car il s’agit de rubriques autonomes sans rubrique enfant.
 
 * **Format de filet**: Utilisez la liste déroulante pour sélectionner des lignes de filet de conduite en pointillé, Plein ou Espace afin de connecter les niveaux d’en-tête aux numéros de page correspondants.
-Pour appliquer la structure de table des matières et le style des niveaux d’en-tête, voir *Définition de la table des matières*.
+Pour appliquer la structure de table des matières et le style des niveaux d’en-tête, voir [Ajout d’une table des matières de chapitre](design-page-layout.md#add-chapter-toc).
 
-   > **Remarque**: Si vous êtes un développeur CSS, vous pouvez également définir le format de filet de conduite directement dans le fichier CSS.
-* **Marqueur de continuation de tableau**: Sélectionnez cette option pour définir des marqueurs pour les tables longues qui s’étendent sur plusieurs pages. Pour plus d’informations sur l’utilisation des marqueurs de continuation de tableau, voir Utilisation des marqueurs de continuation de tableau.
+   >[!NOTE]
+   >
+   >Si vous êtes un développeur CSS, vous pouvez également définir le format de filet de conduite directement dans le fichier CSS.
+* **Marqueur de continuation de tableau**: Sélectionnez cette option pour définir des marqueurs pour les tables longues qui s’étendent sur plusieurs pages. <!--For more information on using table continuation markers, see Use table continuation markers.-->
 
 **Disposition de page**
 
@@ -195,7 +208,7 @@ Si vous n’avez pas créé de mise en page pour une section spécifique de votr
 De même, si vous souhaitez une page de couverture et une page précédente, une mise en page doit être créée et appliquée dans les paramètres. Sinon, votre PDF ne contiendra pas les pages de couverture et d’arrière-plan.
 
 
-Pour plus d’informations sur les mises en page, voir *Définition de la mise en page*.
+Pour plus d’informations sur les mises en page, voir [Concevoir une mise en page](design-page-layout.md).
 
 **Imprimer**
 
@@ -212,10 +225,12 @@ Configurez les paramètres de production d’impression pour attribuer des repè
 * **Taille de la zone de média**: Il s’agit de la taille globale de la page, y compris la zone étendue occupée par les repères d’impression. Utilisez l’option de liste déroulante pour sélectionner la taille de page de votre sortie de PDF ou créer votre propre taille personnalisée.
 
 * **Espace colorimétrique**: Vous avez la possibilité de choisir parmi des espaces colorimétriques de RGB ou CMJN pour imprimer votre document de PDF. Sélectionnez RGB pour afficher le PDF généré numériquement et CMJN pour l’impression physique. Les couleurs définies dans le document sont converties dans l’espace colorimétrique choisi.
-   > **Remarque**: Un profil colorimétrique ICC est nécessaire pour la création du PDF/A en cas d’utilisation de l’espace colorimétrique CMJN.
+   >[!NOTE]
+   >
+   >Un profil colorimétrique ICC est nécessaire pour la création du PDF/A en cas d’utilisation de l’espace colorimétrique CMJN.
 
-   Pour plus d’informations sur l’application de ces paramètres d’impression, voir *Préférences d’impression*.
+   <!--For more information on applying these print settings, see *Printing preferences*.-->
 
 **Références croisées**
 
-Utilisez l’onglet Référence croisée pour définir la manière dont les références croisées sont publiées dans le PDF. Vous pouvez mettre en forme les références croisées pour le titre de la rubrique, les tableaux, les chiffres, etc. Pour plus d’informations, voir *Mise en forme de références croisées*.
+Utilisez l’onglet Référence croisée pour définir la manière dont les références croisées sont publiées dans le PDF. Vous pouvez mettre en forme les références croisées pour le titre de la rubrique, les tableaux, les chiffres, etc. <!--For more information, see *Format cross-references*.-->

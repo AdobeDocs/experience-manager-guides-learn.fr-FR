@@ -4,23 +4,23 @@ description: Découvrez comment concevoir la mise en page afin de présenter des
 hide: true
 hidefromtoc: true
 exl-id: b4d3bdc4-0d01-46eb-b182-540380220485
-source-git-commit: f8af7d7180b3d70d17e1410885017212dec721ef
+source-git-commit: 563a301e4db20cd8076eaffd970d53b7a8743449
 workflow-type: tm+mt
-source-wordcount: '4688'
+source-wordcount: '4686'
 ht-degree: 0%
 
 ---
 
 
-# Concevoir une mise en page
+# Concevoir une mise en page {#design-page-layout}
 
 Lors de la création d’un document de PDF, vous disposez de différentes sections pour présenter différents types d’informations. Par exemple, un document de PDF commence à partir d’une page d’accueil ou d’une page de couverture, qui contiendra le logo de votre entreprise, le titre du livre ou les informations sur la version. Ensuite, il y avait des chapitres, des annexes ou des pages de glossaire. Chaque section d’un document de PDF a un aspect différent. Pour ce faire, créez et personnalisez la mise en page.
 
 Lorsque vous concevez la mise en page, vous pouvez définir les différents éléments qui constituent une page. Par exemple, vous pouvez définir la taille, les marges, l’en-tête et le pied de page, l’orientation et d’autres spécifications de page sur une page. La fonction Publication de PDF natif vous permet de concevoir votre page conformément aux [Normes de médias de page](https://www.w3.org/TR/css-page-3/). La plupart des paramètres couverts par les normes de médias paginés peuvent être facilement personnalisés à l’aide de l’interface utilisateur de la fonction Publication de PDF natif . Pour une autre mise en forme de niveau avancé, vous pouvez utiliser la vue Source pour écrire votre propre code CSS.
 
-Une fois que vous avez conçu les mises en page, vous devez associer ces mises en page à leurs sections respectives dans les paramètres de mise en page de PDF. Voir _Création et personnalisation de mises en page_ pour plus d’informations sur la création et l’ouverture d’une mise en page à des fins de personnalisation.
+Une fois que vous avez conçu les mises en page, vous devez associer ces mises en page à leurs sections respectives dans les paramètres de mise en page de PDF. Voir [Création et personnalisation de mises en page](components-pdf-template.md#create-customize-page-layout) pour plus d’informations sur la création et l’ouverture d’une mise en page à des fins de personnalisation.
 
-## Types de mise en page
+## Types de mise en page {#types-of-page-layout}
 
 Un document PDF contient généralement les sections suivantes :
 
@@ -33,11 +33,11 @@ Un document PDF contient généralement les sections suivantes :
 * Index
 * Page précédente
 
-Ces sections doivent avoir une mise en page correspondante pour présenter les informations dans un format spécifique. En outre, vous pouvez également disposer d’une page vierge qui est utilisée comme remplissage pour commencer un nouveau chapitre à partir d’une page impaire ou paire. Dans ce cas, vous pouvez utiliser la mise en page par défaut ou créer une mise en page pour une page vierge. Voir _Création d’une mise en page_ pour plus d’informations.
+Ces sections doivent avoir une mise en page correspondante pour présenter les informations dans un format spécifique. En outre, vous pouvez également disposer d’une page vierge qui est utilisée comme remplissage pour commencer un nouveau chapitre à partir d’une page impaire ou paire. Dans ce cas, vous pouvez utiliser la mise en page par défaut ou créer une mise en page pour une page vierge. Voir [Création d’une mise en page](components-pdf-template.md#create-page-layout) pour plus d’informations.
 
 Les paramètres de mise en page sous **Modèle > Paramètres** vous permet de définir la mise en page à utiliser pour différentes sections de votre PDF. Chaque mise en page peut également comporter des variantes de première, de droite ou de gauche.
 
-### Créer les premières variantes de mise en page de page droite ou gauche
+### Créer les premières variantes de mise en page de page droite ou gauche {#page-layout-variants}
 
 Il est possible de personnaliser davantage différentes mises en page de votre modèle de PDF en proposant différentes variantes de mise en page de première, de droite ou de gauche. Vous pouvez concevoir ces pages différemment à l’aide du concepteur de mises en page.
 
@@ -61,7 +61,7 @@ Tenez compte des points suivants lors de la création des mises en page :
 
    >[!NOTE]
    >
-   >Si vous ne créez pas de mise en page vierge distincte, la mise en page par défaut est utilisée. Pour créer une mise en page, reportez-vous à la section _Création d’une mise en page_.
+   >Si vous ne créez pas de mise en page vierge distincte, la mise en page par défaut est utilisée. Pour créer une mise en page, reportez-vous à la section [Création d’une mise en page](components-pdf-template.md#create-page-layout).
 
 L’exemple suivant vous guide tout au long du processus de création de variantes d’une mise en page :
 
@@ -85,7 +85,7 @@ L’exemple suivant vous guide tout au long du processus de création de variant
 
 La mise en page sélectionnée est créée à l’aide d’une copie de la mise en page de chapitre de base. En d’autres termes, si vous avez apporté des modifications à la mise en page par défaut du chapitre, les mêmes modifications sont répliquées dans la mise en page des variantes au moment de la création de la mise en page.
 
-## Utilisation des propriétés de page d’une mise en page
+## Utilisation des propriétés de page d’une mise en page {#page-props-page-layout}
 
 Lors de la conception d’une mise en page, un contrôle sur les différentes propriétés de page est essentiel. La fonction Publication de PDF natif englobe toutes les propriétés principales de la page dans le panneau Propriétés de la page . Le panneau Propriétés de page permet d’accéder à diverses propriétés dans les sections suivantes :
 
@@ -93,7 +93,7 @@ Lors de la conception d’une mise en page, un contrôle sur les différentes pr
 >
 >Le panneau Propriétés de page encapsule les propriétés et suit les règles définies sous le [Normes de médias de page](https://www.w3.org/TR/css-page-3/).
 
-* **Format de page** : Spécifiez la taille de page à utiliser pour la mise en page. La liste déroulante Taille de page vous permet de choisir parmi plus de 15 formats de page. Vous pouvez également créer une mise en page à l’aide d’un format de page personnalisé. Voir **Définir la taille de page** pour plus d’informations.
+* **Format de page** : Spécifiez la taille de page à utiliser pour la mise en page. La liste déroulante Taille de page vous permet de choisir parmi plus de 15 formats de page. Vous pouvez également créer une mise en page à l’aide d’un format de page personnalisé. Voir [Définir la taille de page](design-page-layout.md#set-the-page-size) pour plus d’informations.
 
 * **Orientation** : Spécifiez l’orientation de page à utiliser pour la mise en page. Vous pouvez choisir parmi les orientations de page Portrait ou Paysage. Notez que vous pouvez choisir d’appliquer différentes orientations à différentes variantes de page dans une mise en page. Par exemple, si votre contenu contient un tableau large ou une image volumineuse, vous pouvez créer une mise en page paysage et l’appliquer au tableau ou à l’image plus large.
 
@@ -109,7 +109,7 @@ Lors de la conception d’une mise en page, un contrôle sur les différentes pr
 
 * **Note de bas de page** : Spécifiez les propriétés à afficher dans les notes de bas de page de la sortie. Vous pouvez choisir de spécifier les propriétés de marge et de marge intérieure avec un style de bordure.
 
-### Définir la taille de page
+### Définir la taille de page {#set-page-size}
 
 La première chose que vous devez définir dans une mise en page est la taille de la page. Dans les Propriétés de page, vous pouvez choisir plus de 15 formats de page pour une mise en page. Vous pouvez également créer une taille de page personnalisée en procédant comme suit :
 
@@ -117,7 +117,7 @@ La première chose que vous devez définir dans une mise en page est la taille d
 
    >[!NOTE]
    >
-   >Voir _Personnalisation de la mise en page_ pour ouvrir une mise en page à des fins de personnalisation ou de modification.
+   >Voir [Personnalisation de la mise en page](components-pdf-template.md#customize-page-layout) pour ouvrir une mise en page à des fins de personnalisation ou de modification.
 
 1. Dans le panneau de droite, cliquez sur **Propriétés de la page**.
 1. Dans le **Format de page** liste déroulante, sélectionnez **Personnalisé**.
@@ -130,7 +130,7 @@ La première chose que vous devez définir dans une mise en page est la taille d
    >
    >Certaines des unités les plus couramment utilisées sont px (pixels), pt (points), rem, em, % (pourcentage) et in (pouces).
 
-### Utilisation de l’orientation de page et de la rotation des vues
+### Utilisation de l’orientation de page et de la rotation des vues {#page-orientation-rotation}
 
 Examinons un exemple dans lequel une combinaison de l’orientation portrait et paysage des pages et des propriétés de rotation des vues est utilisée. Dans cet exemple, nous allons créer un PDF avec une orientation portrait par défaut, mais un tableau sera rendu en orientation paysage avec du contenu dans une vue à 90 degrés dans le sens des aiguilles d’une montre. La sortie finale ressemble à ce qui suit :
 
@@ -215,7 +215,7 @@ Effectuez les étapes suivantes pour réaliser les tâches ci-dessus :
 
 Le contenu du tableau est rendu en mode paysage dans le PDF final, comme indiqué au début de l’exemple.
 
-### Ajout d’une image d’arrière-plan
+### Ajout d’une image d’arrière-plan {#add-bg-image}
 
 Selon vos besoins, vous pouvez ajouter une image d’arrière-plan qui s’affiche sur chaque première page d’une sortie de chapitre (PDF). Les propriétés Arrière-plan sous Propriétés de la page vous permettent d’ajouter facilement une image d’arrière-plan. Vous pouvez choisir de répliquer cette image sur une page et de la positionner n’importe où dans la zone supérieure, inférieure ou centrale de la page.
 
@@ -225,7 +225,7 @@ Par exemple, pour insérer une image d’arrière-plan dans la partie centrale d
 
    >[!NOTE]
    >
-   >Voir _Personnalisation de la mise en page_ pour ouvrir une mise en page à des fins de personnalisation ou de modification.
+   >Voir [Personnalisation de la mise en page](components-pdf-template.md#customize-page-layout) pour ouvrir une mise en page à des fins de personnalisation ou de modification.
 
 1. Cliquez n’importe où dans la zone de contenu.
 
@@ -255,13 +255,13 @@ La capture d’écran suivante affiche l’image d’arrière-plan avec la propr
 
 <img src="./assets/background-image.png" width="500">
 
-## Utilisation de l’en-tête et du pied de page
+## Utilisation de l’en-tête et du pied de page {#work-header-footer}
 
 Lorsque vous incluez des informations dans un en-tête ou un pied de page dans une mise en page, ces informations sont répétées sur toutes les pages utilisant cette mise en page. En règle générale, la zone d’en-tête est utilisée pour le titre du chapitre ou de la rubrique et la zone de pied de page pour l’affichage des numéros de page.
 
 Lorsque vous créez une mise en page, la zone d’en-tête et de pied de page est créée par défaut. Vous pouvez effectuer de nombreuses personnalisations dans la zone d’en-tête et de pied de page d’une mise en page. Vous pouvez par exemple insérer une image (comme un logo), des variables (contenant des informations dynamiques) ou du contenu statique.
 
-### Modification des marges et des lignes de l’en-tête et du pied de page
+### Modification des marges et des lignes de l’en-tête et du pied de page {#header-footer-margins}
 
 Par défaut, les marges de l’en-tête et du pied de page sont définies sur 1 pouce. Vous pouvez modifier cette valeur par défaut en modifiant le paramètre Marge dans le panneau Propriétés de la page . Effectuez les étapes suivantes pour modifier la taille de l’en-tête et du pied de page :
 
@@ -269,7 +269,7 @@ Par défaut, les marges de l’en-tête et du pied de page sont définies sur 1 
 
    >[!NOTE]
    >
-   >Voir _Personnalisation de la mise en page_ pour ouvrir une mise en page à des fins de personnalisation ou de modification.
+   >Voir [Personnalisation de la mise en page](components-pdf-template.md#customize-page-layout) pour ouvrir une mise en page à des fins de personnalisation ou de modification.
 
 1. Dans le panneau de droite, cliquez sur **Propriétés de la page**.
 1. Développez l’objet **Disposition** .
@@ -301,7 +301,7 @@ Si vous souhaitez travailler directement avec le code CSS et HTML, vous pouvez m
 >
 >Dans l&#39;exemple ci-dessus, différentes unités sont utilisées pour spécifier les valeurs de marge.
 
-### Suppression de l’en-tête et du pied de page
+### Suppression de l’en-tête et du pied de page {#remove-header-footer}
 
 L’en-tête et le pied de page sont superposés dans les marges supérieure et inférieure. Techniquement, cela signifie que si vous souhaitez avoir un en-tête et un pied de page dans la mise en page, vous devez réserver l’espace nécessaire dans les marges supérieure et inférieure.
 
@@ -310,7 +310,7 @@ Si vous ne souhaitez pas qu’une mise en page comporte un en-tête et un pied d
 * Si vous souhaitez conserver les marges supérieure et inférieure, laissez la zone d’en-tête et de pied de page vide.
 * Si vous ne souhaitez pas conserver les marges supérieure et inférieure (comme la conception de la couverture avant et arrière d’un magazine), vous pouvez supprimer les marges en définissant les propriétés de marge supérieure et inférieure sur 0. L’en-tête et le pied de page n’ont alors plus d’espace.
 
-### Ajout d’une image ou d’un logo dans l’en-tête
+### Ajout d’une image ou d’un logo dans l’en-tête {#add-image-header}
 
 Selon vos besoins, vous pouvez ajouter une image qui s’affiche dans la zone d’en-tête (ou toute autre partie) de la mise en page. Vous pouvez ajouter une image dans la mise en page de deux façons :
 
@@ -327,7 +327,7 @@ Pour insérer une image telle que le logo de votre entreprise dans la zone d’e
 
 >[!NOTE]
 >
->Voir _Personnalisation de la mise en page_ pour ouvrir une mise en page à des fins de personnalisation ou de modification.
+>Voir [Personnalisation de la mise en page](components-pdf-template.md#customize-page-layout) pour ouvrir une mise en page à des fins de personnalisation ou de modification.
 
 1. Cliquez sur Modifier l’en-tête (<img src="./assets/header-icon.svg" width="25">) pour placer le curseur dans la zone d’en-tête.
 
@@ -341,9 +341,9 @@ La capture d’écran suivante présente un exemple d’image ajoutée à la zon
 
 <img src="./assets/image-in-header-area.png" width="500">
 
-Une fois qu’une image est insérée, vous pouvez modifier ses attributs pour lui donner l’apparence souhaitée. La méthode la plus simple pour modifier l’aspect d’une image ou de tout autre élément de votre mise en page consiste à utiliser le panneau Propriétés du contenu . Voir _Utilisation du panneau Propriétés du contenu_ pour les différentes propriétés disponibles par le biais de l’interface utilisateur à personnaliser.
+Une fois qu’une image est insérée, vous pouvez modifier ses attributs pour lui donner l’apparence souhaitée. La méthode la plus simple pour modifier l’aspect d’une image ou de tout autre élément de votre mise en page consiste à utiliser le panneau Propriétés du contenu . Voir [Utilisation du panneau Propriétés du contenu](design-page-layout.md#work-with-content-properties-panel) pour les différentes propriétés disponibles par le biais de l’interface utilisateur à personnaliser.
 
-### Ajout de champs et de métadonnées
+### Ajout de champs et de métadonnées {#add-fields-metadata}
 
 Les champs sont très utiles lorsque vous souhaitez insérer une information prédéfinie. Par exemple, vous pouvez inclure un champ Titre du chapitre dans la zone d’en-tête de votre chapitre qui est remplacé par le titre réel du chapitre une fois publié.
 
@@ -361,7 +361,7 @@ Il existe les catégories suivantes pour les champs que vous pouvez insérer dan
 
 Chacune de ces catégories de champs contient différentes variantes dans lesquelles les informations du champ peuvent être insérées. Par exemple, un champ Date peut avoir différentes variantes, telles que `YYYY-MM-DD`, `MM/DD/YY`, `MM/DD/YYYY` etc. De même, le numéro de page peut avoir des variantes sous la forme de formats romains, décimaux ou même de paramètres régionaux, tels que _Arabe_, _Devanagari_, _Hébreu_, etc.
 
-Outre les champs prédéfinis, vous pouvez ajouter des informations de métadonnées sous la forme de variables ou de champs dans la mise en page. Ces métadonnées sont stockées dans le contenu du mappage DITA source et peuvent être facilement insérées dans la mise en page. Pour plus d’informations, voir _Utilisation des champs et des métadonnées_.
+Outre les champs prédéfinis, vous pouvez ajouter des informations de métadonnées sous la forme de variables ou de champs dans la mise en page. Ces métadonnées sont stockées dans le contenu du mappage DITA source et peuvent être facilement insérées dans la mise en page. Pour plus d’informations, voir [Ajout de champs et de métadonnées](design-page-layout.md#add-fields-and-metadata).
 
 Dans l’exemple suivant, nous allons insérer un numéro de page et un titre de chapitre dans la zone de pied de page d’une mise en page.
 
@@ -369,7 +369,7 @@ Dans l’exemple suivant, nous allons insérer un numéro de page et un titre de
 
    >[!NOTE]
    >
-   >Voir _Personnalisation de la mise en page_ pour ouvrir une mise en page à des fins de personnalisation ou de modification.
+   >Voir [Personnalisation de la mise en page](components-pdf-template.md#customize-page-layout) pour ouvrir une mise en page à des fins de personnalisation ou de modification.
 
 1. Cliquez sur le bouton **Modifier le pied de page** (![](./assets/footer-icon.svg)) pour placer le curseur dans la zone de pied de page.
 
@@ -387,7 +387,7 @@ Dans l’exemple suivant, nous allons insérer un numéro de page et un titre de
 
    >[!NOTE]
    >
-   >Vous pouvez également éditer le format de tous les champs, à l&#39;exception du format par défaut. Pour ce faire, cliquez sur l’icône Modifier en regard du format à modifier, apportez des modifications, puis cliquez sur OK. Pour plus d’informations, voir _Utilisation des champs et des métadonnées_.
+   >Vous pouvez également éditer le format de tous les champs, à l&#39;exception du format par défaut. Pour ce faire, cliquez sur l’icône Modifier en regard du format à modifier, apportez des modifications, puis cliquez sur OK. Pour plus d’informations, voir [Ajout de champs et de métadonnées](design-page-layout.md#add-fields-and-metadata).
 
    Le champ du numéro de page par défaut est inséré dans la zone de pied de page de la mise en page.
 
@@ -433,7 +433,7 @@ Si vous souhaitez travailler directement avec le code CSS et de HTML, vous pouve
 …
 ```
 
-## Utilisation de la zone de contenu
+## Utilisation de la zone de contenu {#content-area}
 
 La zone de contenu est la plus grande zone en termes d’espace de contenu. La zone de contenu est renseignée avec le contenu de votre rubrique. Dans certains cas particuliers, vous pouvez ajouter du contenu standard dans la zone de contenu. Ce contenu est publié à l’emplacement spécifié dans la mise en page. Par exemple, l’en-tête de votre table des matières, de votre glossaire et de votre index peut être ajouté sous forme de contenu standard, publié &quot;en l’état&quot; dans la sortie finale. Autre exemple : la table des matières du chapitre, généralement ajoutée à la première page de chaque chapitre.
 
@@ -441,7 +441,7 @@ La mise en page à plusieurs colonnes est l’une des personnalisations les plus
 
 Dans les sections suivantes, nous aborderons différents scénarios de personnalisation de la zone de contenu.
 
-### Ajout d’une table des matières de chapitre
+### Ajout d’une table des matières de chapitre {#add-chapter-toc}
 
 Une table des matières de chapitre sert de référence rapide aux lecteurs pour savoir ce qu’il y a dans le chapitre. En règle générale, une table des matières de chapitre est ajoutée au tout début d’un chapitre. Ainsi, si vous souhaitez utiliser une table des matières de chapitre, vous pouvez l’ajouter dans la zone de contenu de la mise en page de chapitre principale ou de la première variante de mise en page d’un chapitre.
 
@@ -455,7 +455,7 @@ Dans l&#39;exemple suivant, nous allons insérer une table des matières de chap
 
    >[!NOTE]
    >
-   >Voir _Personnalisation de la mise en page_ pour ouvrir une mise en page à des fins de personnalisation ou de modification.
+   >Voir [Personnalisation de la mise en page](components-pdf-template.md#customize-a-page-layout) pour ouvrir une mise en page à des fins de personnalisation ou de modification.
 
 1. Placez le curseur dans la zone de contenu de la mise en page.
 
@@ -489,7 +489,7 @@ L’aspect de la table des matières par défaut peut être personnalisé à l�
 >
 >Actuellement, si vous effectuez des mises à jour de style dans une feuille de style, il se peut qu’elles ne soient pas répercutées dans l’aperçu du contenu. Toutefois, la sortie est générée avec les styles mis à jour.
 
-### Utilisation de la mise en page à plusieurs colonnes
+### Utilisation de la mise en page à plusieurs colonnes {#multi-column-layout}
 
 Les mises en page à plusieurs colonnes sont très courantes dans les magazines de publication ou les index d’un livre. La fonction Publication avec PDF natif vous permet de fractionner facilement votre document en plusieurs colonnes. En utilisant différentes mises en page, vous pouvez choisir de ne conserver qu’une section spécifique divisée en plusieurs colonnes, tout en conservant les autres sections dans une seule mise en page colonne (ou normale).
 
@@ -499,7 +499,7 @@ Pour créer une mise en page avec plusieurs colonnes, procédez comme suit :
 
    >[!NOTE]
    >
-   >Voir _Personnalisation de la mise en page_ pour ouvrir une mise en page à des fins de personnalisation ou de modification.
+   >Voir [Personnalisation de la mise en page](components-pdf-template.md#customize-a-page-layout) pour ouvrir une mise en page à des fins de personnalisation ou de modification.
 
 1. La mise en page à plusieurs colonnes étant appliquée au contenu, à l’exception de la zone d’en-tête et de pied de page, vous devez sélectionner l’élément de contenu dans le chemin de navigation.
 
@@ -536,7 +536,7 @@ Pour créer une mise en page avec plusieurs colonnes, procédez comme suit :
    * **Règle de colonne** : Si vous souhaitez qu’une ligne se trouve entre les colonnes, utilisez cette propriété pour définir les styles de ligne ou de règle. Spécifiez les valeurs des options Style, Couleur et Largeur de règle pour ajouter une ligne entre les colonnes.
 
 
-## Utilisation du panneau Propriétés du contenu
+## Utilisation du panneau Propriétés du contenu {#work-with-content-props}
 
 Le panneau Propriétés du contenu vous permet de mettre facilement à jour l’aspect des éléments de votre mise en page. Les propriétés du panneau Propriétés du contenu sont divisées en plusieurs sections :
 

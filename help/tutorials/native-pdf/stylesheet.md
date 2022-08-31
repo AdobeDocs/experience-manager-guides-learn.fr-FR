@@ -3,7 +3,7 @@ title: Fonction de publication native d’un PDF | Utilisation des styles de con
 description: Découvrez comment créer des feuilles de style et créer des styles pour votre contenu.
 hide: true
 hidefromtoc: true
-source-git-commit: 78db1486af3eb99b165a136d6bae6f7f15a1b527
+source-git-commit: 563a301e4db20cd8076eaffd970d53b7a8743449
 workflow-type: tm+mt
 source-wordcount: '3500'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Utilisation des styles de contenu communs
+# Utilisation des styles de contenu communs {#work-with-common-styles}
 
 Une feuille de style contient les définitions des styles pour les éléments utilisés dans la sortie de votre PDF. Vous pouvez choisir de travailler avec les exemples de feuilles de style ou en créer de nouvelles. Dans la plupart des cas, la création d&#39;une copie de la feuille de style d&#39;exemple prête à l&#39;emploi vous aidera à démarrer rapidement.
 
@@ -36,7 +36,7 @@ Les sections suivantes présentent les paramètres de style les plus couramment 
 >
 >Dans les exemples suivants, nous partons du principe que vous utilisez la feuille de style d’exemple fournie avec le produit.
 
-## Utilisation des styles d’en-tête
+## Utilisation des styles d’en-tête {#heading-styles}
 
 Les styles d’en-tête contiennent tous les styles de base pour les en-têtes utilisés dans votre contenu. Vous obtiendrez 6 styles d’en-tête de base et un style d’en-tête pour l’en-tête de rubrique/chapitre et de titre de l’annexe. Dans un document structuré, H1 représente le titre de la rubrique ou du chapitre et H2 à H6 sont utilisés pour les sous-rubriques ou les sections d’une rubrique/d’un chapitre. Cette hiérarchie d’en-têtes est automatiquement appliquée au contenu chaque fois que l’en-tête correspondant est trouvé.
 
@@ -44,7 +44,7 @@ Les styles d’en-tête contiennent tous les styles de base pour les en-têtes u
 >
 >Vous pouvez créer vos propres styles d’en-tête personnalisés qui peuvent être utilisés dans votre contenu à l’aide de la classe outputclass. Pour plus d’informations, voir l’étape 4 de la section *Utilisation de l’orientation de page et de la rotation des vues* par exemple.
 
-### Création d’en-têtes personnalisés au niveau du chapitre
+### Création d’en-têtes personnalisés au niveau du chapitre {#create-chapter-level-heading}
 
 Dans un livre (ou une carte-livre), vous travaillez avec Chapitres. Les styles d’en-tête de base sont conçus de telle sorte qu’ils soient appliqués à vos en-têtes au niveau du chapitre sans aucune personnalisation. Cependant, si vous souhaitez créer des en-têtes spécialisés pour votre contenu, vous devrez créer ces en-têtes. Par exemple, la valeur par défaut `h1.chapter` est appliqué au titre de votre chapitre. Si vous souhaitez que le titre du chapitre s’affiche dans un style différent, vous devez personnaliser la variable `h1.chapter` style. De même, vous pouvez créer des styles personnalisés pour les sous-titres de votre chapitre. Par exemple, si vous souhaitez créer un style personnalisé pour les 2<sup>nd</sup> et 3<sup>rd</sup> En-têtes de niveau dans votre chapitre, vous devez créer un style en tant que `h2.chatper` et `h3.chatper`.
 
@@ -66,7 +66,7 @@ Un nouveau style d’en-tête nommé `h2.chapter` est créé et ajouté sous la 
 
 Une fois que vous avez créé un style, vous pouvez personnaliser les propriétés requises du style à l’aide de l’éditeur de style.
 
-### Création d’en-têtes de numéro automatique
+### Création d’en-têtes de numéro automatique {#auto-number-heading}
 
 L’un des styles de sortie les plus couramment utilisés est les en-têtes numérotés automatiquement. Ces en-têtes représentent les numéros de chapitre, de rubrique et de sous-rubrique. Les en-têtes de numéro automatique diffèrent des styles de liste où des numéros automatiques sont attribués à une liste d’éléments dans une rubrique.
 
@@ -129,11 +129,11 @@ Les propriétés du style h1 sont affichées dans le panneau Propriétés avec s
 
    <img src="./assets/auto-number-output.png" width="500">
 
-## Utilisation des styles de paragraphe
+## Utilisation des styles de paragraphe {#paragraph-style}
 
 Un style de paragraphe peut être créé pour appliquer une mise en forme spéciale à un paragraphe entier. Cependant, en utilisant la pseudo-classe, vous pouvez appliquer un style à une partie spécifique du texte. Dans l’exemple suivant, nous allons créer un style de paragraphe pour utiliser le style de casquette déroulante.
 
-### Création du style de casquette de dépôt
+### Création du style de casquette de dépôt {#drop-cap-style}
 
 Un style de casquette (ou de majuscule perdue) est utilisé dans les magazines et les documents littéraires dans lesquels le premier caractère d’un paragraphe ou d’une section reçoit un style spécial. Vous pouvez obtenir le même effet à l’aide de la fonction Publication de PDF natif .
 
@@ -164,11 +164,11 @@ Comme la variable `p` est mappée avec la balise `<p>` dans DITA, vous n’avez 
 
 <img src="./assets/char-style-drop-cap.png" width="500">
 
-## Utilisation des styles de caractères
+## Utilisation des styles de caractères {#char-style}
 
 Les styles de caractères vous permettent de créer des styles pour mettre en forme les caractères ou les mots de votre contenu. Vous pouvez, par exemple, créer un style de caractère pour le code en ligne ou le nom de fichier, ou créer un style qui utilise plusieurs formats de style sur le contenu sélectionné.
 
-### Création d’un style de caractère intégré
+### Création d’un style de caractère intégré {#inline-char-style}
 
 La mise en forme de caractères ou de mots insérés dans un paragraphe est un style très courant. Le processus de création d’un style intégré implique deux tâches : d’abord, créer un style dans la feuille de style, puis appliquer le style dans votre contenu à l’aide de la fonction `outputclass` attribut.
 
@@ -210,7 +210,7 @@ L’exemple suivant illustre le format Gras italique appliqué à différents em
 
 <img src="./assets/char-format-applied.png" width="500">
 
-## Personnalisation du style de liste
+## Personnalisation du style de liste {#custom-list-style}
 
 Les styles de liste contiennent les paramètres de style par défaut pour les listes triées et non triées. Vous pouvez facilement personnaliser ces styles de liste pour répondre aux exigences de votre documentation.
 
@@ -269,7 +269,7 @@ Dans l’exemple suivant, nous allons personnaliser le style de liste numéroté
       <img src="./assets/list-number-format-final.png" width="500">
 
 
-## Utilisation du style de tableau
+## Utilisation du style de tableau {#table-styles}
 
 A l’aide des feuilles de style, vous pouvez concevoir des *n* Nombre de styles de tableau. Les styles du tableau vous permettent de concevoir la manière dont le tableau entier, une ligne ou une colonne particulière. Le contrôle au niveau des cellules permet de créer des styles de tableau très présentables.
 
@@ -320,7 +320,7 @@ Dans l’exemple suivant, nous voyons comment créer un style de tableau et les 
 
    <img src="./assets/table-final-design.png" width="500">
 
-## Utilisation d’autres styles
+## Utilisation d’autres styles {#other-styles}
 
 Si vous travaillez avec du contenu structuré (DITA), vous remarquerez que presque tous les éléments DITA ont un mappage de style dans la feuille de style par défaut. Par exemple, un `<shortdesc>` Le style de l’élément est défini sous **Autre style** > **.shortdesc** définition de style. Vous pouvez facilement personnaliser l’un de ces styles et ils sont automatiquement appliqués dans la sortie du PDF générée à partir de votre contenu structuré. Cela signifie que, contrairement aux autres styles personnalisés, vous n’avez pas besoin d’ajouter une `outputclass` sur le contenu pour ces styles.
 
