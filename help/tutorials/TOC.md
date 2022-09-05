@@ -2,10 +2,10 @@
 user-guide-title: Tutoriels pour AEM Guides
 user-guide-description: Lisez notre collection de tutoriels pour Adobe Experience Manager Guides.
 breadcrumb-title: Tutoriels AEM Guides
-source-git-commit: 78db1486af3eb99b165a136d6bae6f7f15a1b527
+source-git-commit: a1367a6915e760e533bb984705f4be37596b5477
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 23%
+source-wordcount: '127'
+ht-degree: 22%
 
 ---
 
@@ -32,15 +32,15 @@ ht-degree: 23%
    + [Utilisation de la sortie conditionnelle](./content-architecture/create-and-use-conditions.md)
    + [Création de clés globales](./content-architecture/create-global-keys.md)
 + Configuration {#configuring}
+   + Configuration de la fonction de publication native de PDF {#config-native-pdf-publish}
+      + [Modèle de PDF](./native-pdf/pdf-template.md)
+      + [Composants d’un modèle de PDF](./native-pdf/components-pdf-template.md)
+      + [Concevoir une mise en page](./native-pdf/design-page-layout.md)
+      + [Utilisation des styles de contenu communs](./native-pdf/stylesheet.md)
    + [Configuration d’un DITA-OT personnalisé](./configuring/setup-a-custom-dita-ot.md)
 + Traduction {#translation}
    + [Exclure les paragraphes de la traduction](./translation/exclude-paragraphs-from-translation.md)
 + Éditeur web {#web-editor}
-   + [Publier une sortie PDF](./web-editor/native-pdf-web-editor.md)
+   + [Sortie du PDF de publication](./web-editor/native-pdf-web-editor.md)
    + [Configuration de caractères spéciaux supplémentaires](./web-editor/configure-additional-special-characters.md)
 + Contrôle de version {#versioning}
-+ Articles PDF natifs en cours {#hidden}
-   + [Modèle de PDF masqué](./native-pdf/pdf-template.md)
-   + [Composants masqués d’un modèle de PDF](./native-pdf/components-pdf-template.md)
-   + [Conception masquée d’une mise en page](./native-pdf/design-page-layout.md)
-   + [Feuille de style masquée](./native-pdf/stylesheet.md)

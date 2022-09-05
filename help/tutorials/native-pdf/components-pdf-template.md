@@ -1,10 +1,8 @@
 ---
 title: Fonction de publication native d’un PDF | Composants d’un modèle de PDF
 description: Découvrez les différents composants d’un modèle de PDF et comment les personnaliser et les configurer.
-hide: true
-hidefromtoc: true
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: 563a301e4db20cd8076eaffd970d53b7a8743449
+source-git-commit: a1367a6915e760e533bb984705f4be37596b5477
 workflow-type: tm+mt
 source-wordcount: '2275'
 ht-degree: 0%
@@ -165,7 +163,7 @@ Le fichier sélectionné est importé et répertorié sous le dossier Ressources
 
 ## Paramètres du PDF avancé {#advanced-pdf-settings}
 
-Utilisez la section Paramètres pour configurer les paramètres avancés de la mise en page du PDF, du PDF de la page impaire ou paire, des formats pour les références croisées et de l’activation des marques d’impression dans le PDF final généré à l’aide du modèle.
+Utilisez la section Paramètres pour configurer les paramètres avancés de la mise en page du PDF, en commençant par une page impaire ou paire, des formats pour les références croisées et en activant les marques d’impression dans le PDF final généré à l’aide du modèle.
 
 Pour configurer, cliquez sur **Paramètres** dans le **Modèles** pour afficher les options suivantes :
 
