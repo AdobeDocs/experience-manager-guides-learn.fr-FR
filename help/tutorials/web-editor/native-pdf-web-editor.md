@@ -2,10 +2,10 @@
 title: PDF natif | Génération de sortie PDF
 description: Générer une sortie PDF dans Adobe Experience Manager Guides as a Cloud Service
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: 1b46f5e496e6c974abeba019a9d3174d5bc5315c
+source-git-commit: d832e78b690b533f44dc2205e9fea483d9213c58
 workflow-type: tm+mt
-source-wordcount: '2170'
-ht-degree: 0%
+source-wordcount: '2299'
+ht-degree: 1%
 
 ---
 
@@ -62,7 +62,7 @@ Le panneau Paramètre prédéfini s’ouvre.
    * Cliquez sur l’icône + pour **Paramètres prédéfinis** pour ajouter un nouveau paramètre prédéfini de sortie de **Type : PDF**
 3. Pour configurer les paramètres d’un paramètre prédéfini de PDF existant :
    * Cliquez sur le bouton  **Options** ![options](assets/options.svg) en regard du paramètre prédéfini de sortie souhaité, puis sélectionnez **Modifier**.
-Vous pouvez utiliser les paramètres suivants dans la variable **Général**, **Disposition**, **Sécurité**, et **Avancé** onglets pour configurer un paramètre prédéfini de sortie PDF :
+Vous pouvez utiliser les paramètres suivants dans la variable **Général**, **Métadonnées**, **Disposition**, **Sécurité**, et **Avancé** onglets pour configurer un paramètre prédéfini de sortie PDF :
 
 **Général**
 
@@ -74,6 +74,23 @@ Utilisez pour spécifier les paramètres de sortie de base, tels que le chemin d
 | **Fichier PDF** | Indiquez un nom de fichier pour l’enregistrement du PDF. Par défaut, le nom de fichier du PDF ajoute le nom du mappage DITA avec le nom du paramètre prédéfini. Par exemple, ditamap est &quot;TestMap&quot; et le nom du paramètre prédéfini est &quot;preset1&quot;. Le nom par défaut du pdf sera &quot;TestMap_preset1.pdf&quot;. |
 | **Appliquer les conditions à l’aide de** | Pour le contenu conditionnel, choisissez l’une des options ci-dessous afin de générer une sortie PDF basée sur ces conditions : <br>* **Aucun appliqué** Sélectionnez cette option si vous ne souhaitez appliquer aucune condition sur la carte et le contenu source. <br> * **Fichier Ditaval** Sélectionnez un fichier DITAVAL pour générer du contenu conditionnel. Pour sélectionner, cliquez sur paramètre prédéfini de condition et recherchez le fichier. <br> * **Paramètre prédéfini de condition** Sélectionnez un paramètre prédéfini de condition dans la liste déroulante pour appliquer une condition lors de la publication de la sortie. Cette option est visible si vous avez ajouté une condition pour le fichier de mappage DITA. Les paramètres conditionnels sont disponibles dans l’onglet Paramètres prédéfinis de condition de la console de mappage DITA. Pour en savoir plus sur le paramètre prédéfini de condition, voir [Utilisation des paramètres de condition prédéfinis](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Fgenerate-output-use-condition-presets.html). <br> |
 | **Utilisation de la ligne de base** | Si vous avez créé une ligne de base pour le mappage DITA sélectionné, sélectionnez cette option pour spécifier la version que vous souhaitez publier. Voir [Utilisation de la ligne de base](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Fgenerate-output-use-baseline-for-publishing.html) pour plus d’informations. |
+
+**Métadonnées**
+
+Les métadonnées sont la description ou la définition de votre contenu. Les métadonnées aident à la gestion de contenu et à la recherche de fichiers sur Internet.
+
+Utilisez l’onglet Métadonnées pour définir le titre, l’auteur, l’objet et les mots-clés de la sortie du PDF. Ces métadonnées sont mappées aux métadonnées dans l’onglet Description des propriétés du document de votre PDF de sortie.
+
+**Remarque**: Ces métadonnées remplacent les métadonnées définies au niveau du livre.
+
+![onglet de métadonnées](assets/pdf-metadata.png)
+
+| Configuration | Description |
+|---|---|
+| **Titre** | Spécifiez un titre court et clair pour définir le document. |
+| **Auteur** | Indiquez les noms du ou des auteurs qui ont créé le document. |
+| **Objet** | Définissez l’objet ou la collection auquel le document est associé. |
+| **Mots-clés** | Utilisez des mots-clés pertinents pour améliorer l’optimisation de votre moteur de recherche (SEO) et aider les utilisateurs à trouver le contenu associé. |
 
 **Mise en page**
 
