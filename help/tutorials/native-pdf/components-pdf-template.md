@@ -2,9 +2,9 @@
 title: Fonction de publication native d’un PDF | Composants d’un modèle de PDF
 description: Découvrez les différents composants d’un modèle de PDF et comment les personnaliser et les configurer.
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: a1367a6915e760e533bb984705f4be37596b5477
+source-git-commit: f693ebb6a96ed9898050a754e10a74db235299fe
 workflow-type: tm+mt
-source-wordcount: '2275'
+source-wordcount: '2516'
 ht-degree: 0%
 
 ---
@@ -149,7 +149,7 @@ Pour ajouter un fichier de ressource au dossier Resources, procédez comme suit 
 
    La boîte de dialogue Télécharger les ressources s’ouvre.
 
-   <img src="assets/resources-import-assets.png" alt="Charger des ressources" width="300">
+   <img src="assets/resources-import-assets.png" alt="Chargement de ressources" width="300">
 
    Le chemin d’accès à l’emplacement où le fichier de ressource sera chargé est indiqué dans la variable **Sélectionner le dossier de ressources** champ .
    >[!NOTE]
@@ -180,12 +180,13 @@ Définissez les paramètres de configuration de base pour démarrer un chapitre 
    * **Utilisation des en-têtes jusqu’au niveau**: Il vous permet d’ajuster le nombre de niveaux d’en-tête à afficher dans la structure de table des matières de votre PDF.
    * **N’affichez pas le numéro de page du premier niveau dans la table des matières**: Sélectionnez cette option pour masquer les numéros de page correspondants pour tous les chapitres contenant des rubriques imbriquées ou enfants. Examinez l’exemple suivant dans lequel une sortie est créée sans sélectionner cette option.
 
-   <img src="assets/page-number-in-toc.png" alt="Charger des ressources" width="250">
+   <img src="assets/page-number-in-toc.png" alt="Chargement de ressources" width="250">
 
    Dans l’exemple ci-dessus, Paramètres avancés du PDF, Annexe et Mentions légales sont les en-têtes de rubrique ou les titres de chapitre de premier niveau. Un numéro de page est affecté à tous ces en-têtes.
 
    Maintenant, si vous sélectionnez cette option et générez la sortie, vous obtiendrez la table des matières suivante :
-   <img src="assets/page-number-missing-in-toc.png" alt="Charger des ressources" width="250">
+
+   <img src="assets/page-number-missing-in-toc.png" alt="Chargement de ressources" width="250">
 
    Vous pouvez constater ici que le premier chapitre Paramètres avancés du PDF ne reçoit aucun numéro de page, car il contient des rubriques imbriquées ou enfants. En revanche, un numéro de page s’il est affecté à l’Annexe et aux Mentions légales, car il s’agit de rubriques autonomes sans rubrique enfant.
 
@@ -201,10 +202,35 @@ Pour appliquer la structure de table des matières et le style des niveaux d’e
 
 Les paramètres de mise en page vous permettent de contrôler entièrement la spécification de la mise en page à utiliser pour une section spécifique de votre document. Par exemple, pour sélectionner une mise en page pour la table des matières, cliquez sur le menu déroulant sous le champ Table des matières et sélectionnez la mise en page que vous avez conçue pour générer la table des matières.
 
-Si vous n’avez pas créé de mise en page pour une section spécifique de votre document, vous pouvez simplement choisir une mise en page qui sert de mise en page par défaut pour ces sections ou rubriques. La mise en page par défaut est ensuite appliquée à toutes les sections qui n’ont pas de mise en page dédiée.
+Les paramètres suivants sont disponibles sous la section Mise en page de page :
 
-De même, si vous souhaitez une page de couverture et une page précédente, une mise en page doit être créée et appliquée dans les paramètres. Sinon, votre PDF ne contiendra pas les pages de couverture et d’arrière-plan.
+<img src="assets/template-page-layout.png" alt="Dispositions de pages" width="550">
 
+
+**Disposition de page par défaut**: Sélectionnez une mise en page qui agit comme mise en page par défaut pour toutes les pages de votre PDF. Il s’agit de la mise en page de base appliquée aux sections ou rubriques pour lesquelles vous n’avez pas créé de mise en page dédiée.
+
+**Disposition des pages pour différentes sections**: Vous pouvez choisir de mettre en correspondance une mise en page avec les sections suivantes de la sortie de votre PDF :
+* Table des matières
+* Liste des figures
+* Liste des tableaux
+* Chapitres et rubriques
+* Index
+* Glossaire
+
+Si vous ne souhaitez pas afficher une section spécifique dans la sortie de votre PDF, vous pouvez la désactiver en activant le bouton d’activation/désactivation.
+
+**Chapitre et rubriques** la mise en page est toujours activée et **Glossaire** La mise en page est toujours désactivée par défaut. Vous ne pouvez pas les basculer.
+
+Vous pouvez également définir l’ordre dans lequel ces différentes sections ont été générées dans votre PDF. Si vous souhaitez modifier l’ordre par défaut de ces pages, passez la souris sur la gauche d’une mise en page, puis cliquez sur l’icône de barres en pointillés pour faire glisser la mise en page à l’emplacement souhaité.
+Votre PDF contiendra les mises en page activées dans l’ordre dans lequel vous les avez organisées.
+
+**Disposition de page pour les pages vides**: Vous pouvez également spécifier la mise en page des pages vides. La mise en page sélectionnée sera appliquée à toutes les pages vides. Par exemple, si vous avez conçu une mise en page vierge pour toutes les pages vides, sélectionnez **Vide** dans la liste déroulante, et toutes les pages vides de votre document auront une mise en page vierge.
+
+**Page de couverture et page de début**: Si vous avez conçu une mise en page de couverture, mappez-la à la page **Page de couverture** . De même, si vous disposez d’une mise en page de back-page, mappez-la à l’événement **Page précédente** . Si aucune mise en page de garde ou de sauvegarde n’a été créée, la mise en page par défaut est appliquée.
+
+>[!NOTE]
+>
+>Les paramètres de la mise en page ont la priorité sur ceux de la mise en page.
 
 Pour plus d’informations sur les mises en page, voir [Concevoir une mise en page](design-page-layout.md).
 

@@ -2,10 +2,10 @@
 title: Versions des Guides d’AEM
 description: Dernières versions AEM Guides et versions AEM prérequises
 exl-id: 780697a9-bdc6-40c2-b258-64639fe30f88
-source-git-commit: 4066b22849271f29b5339dbd2f1bfa0946cdbd8b
+source-git-commit: f693ebb6a96ed9898050a754e10a74db235299fe
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 1%
+source-wordcount: '1114'
+ht-degree: 0%
 
 ---
 
@@ -13,17 +13,39 @@ ht-degree: 1%
 
 [!DNL Adobe Experience Manager Guides] est une application déployée sur AEM. Il s’agit d’une puissante solution de gestion de contenu de composant (CCMS) de niveau entreprise qui permet la prise en charge native de DITA dans Adobe Experience Manager, ce qui permet à AEM de gérer la création et la diffusion de contenu basé sur DITA.
 
-## Explication de l’UUID et des non-UUID
+Les packages AEM Guides sont disponibles en deux variantes : UUID et Non UUID.
 
-[!DNL AEM Guides] Les packages sont disponibles en deux modes : version UUID et version non UUID.
+## Versions UUID et non UUID
 
-Les clients devront choisir entre le mode UUID et le mode non UUID au moment de la première configuration (veuillez vous connecter à votre gestionnaire de succès client pour vous aider à prendre la décision en fonction de votre cas d’utilisation).
+Les principales différences entre les versions UUID et non UUID sont les suivantes :
 
-Lors de la mise à niveau à partir d’une version de [!DNL AEM Guides] dans une version plus récente, les clients devront s’assurer qu’ils choisissent le même mode (UUID/non UUID) pour correspondre à leur mode existant. Un build non UUID ne doit pas être directement mis à niveau vers un build UUID. Le passage de la version non UUID à la version UUID nécessiterait une migration du contenu.
+|  | build UUID | Build non UUID |
+|---|---|---|
+| **Identification des ressources** | Toutes les ressources sont identifiées à l’aide du chemin d’accès de la ressource dans le référentiel. | Toutes les ressources sont identifiées à l’aide de leur UUID (identifiant unique généré par le système lors du premier chargement de la ressource). |
+| **Création de référence** | Toutes les références de contenu sont créées en fonction de leurs chemins d’accès. | Toutes les références de contenu sont créées en fonction de leur UUID. |
+
+### Avantages de la génération d’UUID
+
+* L’installation de l’UUID est plus performante :
+   * Les références sont indépendantes du chemin d’accès : Le système de gestion des références connaît les liens, car les références sont créées en fonction des UUID et non des chemins.
+   * Les opérations de déplacement/mise à jour sont efficaces : Les UUID restent identiques même si les ressources sont déplacées vers un autre chemin d’accès dans le référentiel. Par conséquent, aucun traitement n’est nécessaire pour corriger les références entre les ressources lors des opérations de déplacement/mise à jour.
+* La version UUID est prospective, car nous utilisons également cette structure pour la configuration cloud des AEM Guides.
+
+
+### Choisissez entre les deux versions
+
+* Si vous êtes un nouveau client, nous vous recommandons d’utiliser la version UUID.
+* Si vous êtes déjà client, vous pouvez choisir de passer à la version UUID, car la migration de la version Non UUID vers UUID est désormais possible. Pour plus d’informations, voir *Migration du contenu non UUID vers UUID* dans la section **Installez et configurez les guides Adobe Experience Manager.**
+
+>[!NOTE]
+>
+>* Les clients devront choisir entre le mode UUID et le mode non UUID au moment de la première configuration (si vous avez besoin d’aide, veuillez vous connecter au gestionnaire de succès client pour vous aider à prendre la décision en fonction de votre cas d’utilisation).
+>* Lors de la mise à niveau d’une version des AEM Guides vers une version plus récente, les clients devront s’assurer qu’ils choisissent le même mode (UUID/non UUID) pour correspondre à leur mode existant. Un build non UUID ne doit pas être directement mis à niveau vers un build UUID. Le passage de la version non UUID à la version UUID nécessiterait une migration du contenu.
+
 
 **Versions de mise à niveau**
 
-Lorsque vous effectuez une mise à niveau d’une ancienne version vers une nouvelle version de [!DNL AEM Guides], vous devrez peut-être exécuter certains scripts de migration. Pour obtenir des instructions de mise à niveau, reportez-vous aux Notes de mise à jour et à la documentation spécifique à la version .
+Lorsque vous effectuez une mise à niveau d’une ancienne version vers une nouvelle version de [!DNL AEM Guides], vous devrez peut-être exécuter des scripts de migration. Pour obtenir des instructions de mise à niveau, reportez-vous aux Notes de mise à jour et à la documentation spécifique à la version .
 
 Tous les chemins de mise à niveau ne sont pas directement pris en charge. Par exemple, la mise à niveau directe vers la version 4.0 n’est possible qu’à partir de la version 3.8. Si vous utilisez une version antérieure à la version 3.8, reportez-vous à la documentation spécifique à la version pour obtenir des instructions de mise à niveau. [Archive d’aide](https://helpx.adobe.com/xml-documentation-for-experience-manager/archive.html).
 Contactez votre gestionnaire de succès client pour valider le chemin de mise à niveau.

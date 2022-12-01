@@ -2,9 +2,9 @@
 title: PDF natif | Génération de sortie PDF
 description: Générer une sortie PDF dans Adobe Experience Manager Guides as a Cloud Service
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: e7fe44f6d0c0ce08d5f94140474212c280b41f52
+source-git-commit: e03ef8e99b2d60dc8d34a76d0a02180eab41e35f
 workflow-type: tm+mt
-source-wordcount: '2297'
+source-wordcount: '2663'
 ht-degree: 1%
 
 ---
@@ -56,11 +56,14 @@ Pour créer ou configurer un paramètre prédéfini de sortie de PDF :
 
 1. Dans l’onglet Sortie , cliquez sur **Paramètres prédéfinis** dans la barre latérale gauche.
 Le panneau Paramètre prédéfini s’ouvre.
-   ![panneau prédéfini](assets/preset-panel.png)
-2. Dans la sortie **Paramètres prédéfinis** effectuez l’une des opérations suivantes :
+
+<img src="assets/preset-panel.png" alt="panneau prédéfini" width="600">
+
+1. Dans la sortie **Paramètres prédéfinis** effectuez l’une des opérations suivantes :
    * Double-cliquez sur un paramètre prédéfini de sortie de PDF prédéfini pour l’afficher.
    * Cliquez sur l’icône + pour **Paramètres prédéfinis** pour ajouter un nouveau paramètre prédéfini de sortie de **Type : PDF**
-3. Pour configurer les paramètres d’un paramètre prédéfini de PDF existant :
+
+1. Pour configurer les paramètres d’un paramètre prédéfini de PDF existant :
    * Cliquez sur le bouton  **Options** ![options](assets/options.svg) en regard du paramètre prédéfini de sortie souhaité, puis sélectionnez **Modifier**.
 Vous pouvez utiliser les paramètres suivants dans la variable **Général**, **Métadonnées**, **Disposition**, **Sécurité**, et **Avancé** onglets pour configurer un paramètre prédéfini de sortie PDF :
 
@@ -70,10 +73,12 @@ Utilisez pour spécifier les paramètres de sortie de base, tels que le chemin d
 
 | Configuration | Description |
 | --- | --- |
-| **Chemin d’accès de sortie** | Chemin d’accès dans le référentiel AEM où est stockée la sortie du PDF. Assurez-vous que le chemin d’accès de sortie ne se trouve pas dans le dossier du projet. Si rien n’est indiqué, la sortie est générée à l’emplacement de sortie du mappage DITA par défaut. |
-| **Fichier PDF** | Indiquez un nom de fichier pour l’enregistrement du PDF. Par défaut, le nom de fichier du PDF ajoute le nom du mappage DITA avec le nom du paramètre prédéfini. Par exemple, ditamap est &quot;TestMap&quot; et le nom du paramètre prédéfini est &quot;preset1&quot;. Le nom par défaut du pdf sera &quot;TestMap_preset1.pdf&quot;. |
-| **Appliquer les conditions à l’aide de** | Pour le contenu conditionnel, choisissez l’une des options ci-dessous afin de générer une sortie PDF basée sur ces conditions : <br>* **Aucun appliqué** Sélectionnez cette option si vous ne souhaitez appliquer aucune condition sur la carte et le contenu source. <br> * **Fichier Ditaval** Sélectionnez un fichier DITAVAL pour générer du contenu conditionnel. Pour sélectionner, cliquez sur paramètre prédéfini de condition et recherchez le fichier. <br> * **Paramètre prédéfini de condition** Sélectionnez un paramètre prédéfini de condition dans la liste déroulante pour appliquer une condition lors de la publication de la sortie. Cette option est visible si vous avez ajouté une condition pour le fichier de mappage DITA. Les paramètres conditionnels sont disponibles dans l’onglet Paramètres prédéfinis de condition de la console de mappage DITA. Pour en savoir plus sur le paramètre prédéfini de condition, voir [Utilisation des paramètres de condition prédéfinis](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Fgenerate-output-use-condition-presets.html). <br> |
+| **Chemin d’accès de sortie** | Chemin d’accès dans le référentiel AEM où est stockée la sortie du PDF. Assurez-vous que le chemin d’accès de sortie ne se trouve pas dans le dossier du projet. Si rien n’est indiqué, la sortie est générée à l’emplacement de sortie du mappage DITA par défaut.<br>Vous pouvez également utiliser les variables d’usine suivantes pour définir le chemin d’accès à la sortie. Vous pouvez utiliser une seule ou une combinaison de variables pour définir cette option. <br> `${map_filename}`: Utilise le nom des fichiers de mappage DITA pour créer le chemin de destination. <br> `${map_title}`: Utilise le titre du mappage DITA pour créer le chemin de destination. <br>`${preset_name}`: Utilise le nom du paramètre prédéfini de sortie pour créer le chemin de destination. <br> `${language_code}`: Utilise le code de langue où se trouve le fichier de mappage pour créer le chemin d’accès de destination. <br> `${map_parentpath}`: Utilise le chemin d’accès complet du fichier de mappage pour créer le chemin d’accès de destination.  <br>`${path_after_langfolder}`: Utilise le chemin d’accès du fichier map après le dossier language pour créer le chemin d’accès de destination. |
+| **Fichier PDF** | Indiquez un nom de fichier pour l’enregistrement du PDF. Par défaut, le nom de fichier du PDF ajoute le nom du mappage DITA avec le nom du paramètre prédéfini. Par exemple, ditamap est &quot;TestMap&quot; et le nom du paramètre prédéfini est &quot;preset1&quot;. Le nom par défaut du pdf sera &quot;TestMap_preset1.pdf&quot;. <br>Vous pouvez également utiliser les variables d’usine suivantes pour définir le fichier du PDF. Vous pouvez utiliser une seule ou une combinaison de variables pour définir cette option. <br>`${map_filename}`<br>`${map_title}`<br>`${preset_name}` <br> `${language_code}`. |
+| **Appliquer les conditions à l’aide de** | Pour le contenu conditionnel, choisissez l’une des options ci-dessous afin de générer une sortie PDF basée sur ces conditions : <br>* **Aucun appliqué** Sélectionnez cette option si vous ne souhaitez appliquer aucune condition sur la carte et le contenu source. <br>* **Fichier Ditaval** Sélectionnez un fichier DITAVAL pour générer du contenu conditionnel. Pour sélectionner, cliquez sur paramètre prédéfini de condition et recherchez le fichier. <br> * **Paramètre prédéfini de condition** Sélectionnez un paramètre prédéfini de condition dans la liste déroulante pour appliquer une condition lors de la publication de la sortie. Cette option est visible si vous avez ajouté une condition pour le fichier de mappage DITA. Les paramètres conditionnels sont disponibles dans l’onglet Paramètres prédéfinis de condition de la console de mappage DITA. Pour en savoir plus sur le paramètre prédéfini de condition, voir [Utilisation des paramètres de condition prédéfinis](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Fgenerate-output-use-condition-presets.html). <br> |
 | **Utilisation de la ligne de base** | Si vous avez créé une ligne de base pour le mappage DITA sélectionné, sélectionnez cette option pour spécifier la version que vous souhaitez publier. Voir [Utilisation de la ligne de base](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Fgenerate-output-use-baseline-for-publishing.html) pour plus d’informations. |
+| **Création d’un PDF avec une barre de modification entre les versions publiées** | Utilisez les options suivantes pour créer un PDF affichant les différences de contenu entre deux versions à l’aide de barres de modification :   <br>* **Ligne de base de la version précédente** Sélectionnez la version de ligne de base à comparer à la version actuelle ou à une autre ligne de base. Une barre de modification s’affiche dans le PDF pour indiquer le contenu modifié. Une barre de modification est une ligne verticale qui identifie visuellement le contenu nouveau ou révisé. La barre de modification s’affiche à gauche du contenu qui a été inséré, modifié ou supprimé. <br> **Remarque**: Si vous sélectionnez **Utilisation de la ligne de base** et choisissez une ligne de base à publier. La comparaison sera effectuée entre les deux versions de ligne de base sélectionnées. Par exemple, si vous choisissez la version de base 1.3 sous **Utilisation de la ligne de base** et version 1.1 sous **Ligne de base de la version précédente**, la comparaison sera effectuée entre la version de base 1.1 et la version de base 1.3. <br>* **Afficher le texte ajouté** Sélectionnez cette option pour afficher le texte inséré en vert et souligné. Cette option est sélectionnée par défaut. <br> * **Afficher le texte supprimé** Sélectionnez cette option pour afficher le texte supprimé en rouge et barré d’une barre oblique. Cette option est sélectionnée par défaut. <br>**Remarque** Vous pouvez également personnaliser le style de la barre de modification, du contenu inséré ou du contenu supprimé à l’aide de la feuille de style.<br> |
+| **Processus de génération de publication** | Sélectionnez cette option pour afficher une liste déroulante contenant tous les workflows configurés dans AEM. Vous pouvez sélectionner le workflow à exécuter une fois le workflow de génération de PDF terminé. |
 
 **Métadonnées**
 
@@ -83,7 +88,8 @@ Utilisez l’onglet Métadonnées pour définir le titre, l’auteur, l’objet 
 
 **Remarque**: Ces métadonnées remplacent les métadonnées définies au niveau du livre.
 
-![onglet de métadonnées](assets/pdf-metadata.png)
+<img src="assets/pdf-metadata.png" alt="onglet de métadonnées" width="600">
+
 
 | Configuration | Description |
 |---|---|
@@ -147,6 +153,6 @@ Vous pouvez afficher une barre de progression en regard du paramètre prédéfin
 6. Une fois la génération de la sortie terminée, cliquez sur  **Afficher la sortie** ![sortie d’affichage](assets/view-output.svg) sur la barre supérieure pour afficher la sortie.\
    A **Succès** est visible dans le coin inférieur droit de l’écran.
 Si une sortie échoue, le message d’erreur ci-dessous s’affiche.
-   ![journal des erreurs](assets/error-log.png)
+<img src="assets/error-log.png" alt="journal des erreurs" width="250">
 
 Pour afficher le journal des erreurs, cliquez sur **Ignorer**, passez la souris sur l’onglet de paramètre prédéfini sélectionné, puis cliquez sur ![options](assets/options.svg) **Options** > **Afficher le journal**.
