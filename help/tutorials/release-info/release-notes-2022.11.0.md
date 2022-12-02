@@ -2,9 +2,9 @@
 title: Notes de mise à jour | Adobe Experience Manager Guides as a Cloud Service, version de novembre 2022
 description: Dernière version des guides Adobe Experience Manager as a Cloud Service
 exl-id: 9f329ec1-dd74-47cc-8567-3fadd962584a
-source-git-commit: 84ff7619722fbda2787ce4c27cc69b5f71e25927
+source-git-commit: 0663ed4434fdf583a9446891f944d94b85f375c6
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1372'
 ht-degree: 2%
 
 ---
@@ -101,9 +101,7 @@ Dans le tableau de bord de traduction, vous pouvez également voir la colonne Li
 <img src="assets/send-translation.png" alt="envoyer pour traduction" width="600">
 
 
-## Améliorations apportées à la publication des PDF natifs
-
-### PDF avec barre de modification affichant la différence entre les versions de document
+### PDF natif | PDF avec barre de modification affichant la différence entre les versions de document
 
 Vous pouvez maintenant créer un PDF qui affiche les différences de contenu entre deux versions à l’aide de la barre de modification. Vous pouvez choisir de comparer la version actuelle à une ligne de base de la version précédente ou de comparer les deux versions de ligne de base sélectionnées.
 
@@ -113,7 +111,7 @@ Une barre de modification s’affiche dans le PDF pour indiquer le contenu modif
 * Afficher le contenu inséré en vert et souligné
 * Afficher le contenu supprimé en rouge et marqué d’une barre oblique
 
-### Prise en charge des variables pour Output Path et PDF File Name
+### PDF natif | Prise en charge des variables pour Output Path et PDF File Name
 
 Vous pouvez désormais également utiliser les variables d’usine suivantes pour définir le Chemin de sortie et le Fichier de PDF. Vous pouvez utiliser une seule ou une combinaison de variables pour définir ces options :
 * `${map_filename}`
@@ -124,7 +122,7 @@ Vous pouvez désormais également utiliser les variables d’usine suivantes pou
 * `${path_after_langfolder}` (Uniquement pour le chemin de sortie)
 
 
-### Générer une table des matières pour les mappages DITA et réorganiser les mises en page
+### PDF natif | Générer la table des matières pour les mappages DITA et réorganiser les mises en page
 
 Vous pouvez désormais également générer la table des matières dans les mappages DITA à l’aide d’un paramètre de PDF avancé du modèle. Vous pouvez choisir d’activer ou de désactiver l’affichage des différentes mises en page et de réorganiser leur position.
 
