@@ -1,9 +1,10 @@
 ---
 title: Notes de mise à jour | Adobe Experience Manager Guides as a Cloud Service, version de novembre 2022
 description: Dernière version des guides Adobe Experience Manager as a Cloud Service
-source-git-commit: 549417d6a45508d0afe98574499f1694ae32e708
+exl-id: 9f329ec1-dd74-47cc-8567-3fadd962584a
+source-git-commit: 84ff7619722fbda2787ce4c27cc69b5f71e25927
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1370'
 ht-degree: 2%
 
 ---
@@ -131,7 +132,6 @@ Vous pouvez désormais également générer la table des matières dans les mapp
 
 Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 
-* PDF natif | Une note de bas de page dans l’en-tête du tableau génère un texte de note de bas de page gras aligné au centre dans le pied de page dans la sortie du PDF. (10610)
 * PDF natif | `conkeyref` n’est pas résolu dans la sortie de PDF générée. (10564)
 * PDF natif | Des problèmes se produisent lors de l’accès aux métadonnées d’une carte dans la sortie du PDF. (10556)
 * PDF natif | Les styles intégrés sont utilisés pour générer des balises à la place du nom de classe.  (10498)
@@ -141,7 +141,6 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 * Remarque à l’intérieur d’une balise para , qui est un conref, ne s’affiche pas dans l’aperçu. (10559)
 * Lorsque vous appuyez sur Retour arrière à la fin d’un élément de liste, toute la liste est supprimée. (10540)
 * Lors de l’utilisation d’un PDF natif pour exporter les données imbriquées `<indexterm>` ne sont pas imbriqués dans l’index. (10521)
-* Lors de l’utilisation de la publication de ligne de base incorrecte `cq:tags` sont sélectionnés (sélectionnés dans la copie de travail actuelle au lieu de la copie de version). (10494)
 * **Retrait automatique** est absent de la barre d’outils en mode Source. (10448)
 * Le premier caractère d’un élément de liste est perdu pendant la création de la liste dans l’éditeur. (10447)
 * Plusieurs fenêtres contextuelles s’affichent si une version de ressource DITA est modifiée et enregistrée dans la fenêtre d’édition de ligne de base. (10399)
@@ -150,7 +149,6 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 * Le post-traitement est bloqué pour l’ensemble du dossier linguistique dont les ressources sont présentes dans un principal projet de traduction. (10332)
 * L’onglet Modèle de l’éditeur XML n’est pas visible pour les administrateurs de profil de dossier. (10266)
 * Les problèmes de navigation se produisent dans l’éditeur web après la mise à niveau vers la version 4.0. (10159)
-* Le premier caractère est rompu en coréen lors de la création dans l’éditeur web. (10049)
 * Les fichiers du SVG ne s’affichent pas en mode Aperçu. (10010)
 * Si l’onglet Sortie de l’éditeur contient d’autres paramètres prédéfinis, la section Paramètres prédéfinis ne peut pas être défilée et tous les paramètres prédéfinis ne s’affichent pas. (9787)
 * **Modifier** et **Annoter** les options d’une image ne fonctionnent pas correctement en mode Colonnes. (8758)
