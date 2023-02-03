@@ -2,9 +2,9 @@
 title: PDF natif | Génération de sortie PDF
 description: Générer une sortie PDF dans Adobe Experience Manager Guides as a Cloud Service
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: e03ef8e99b2d60dc8d34a76d0a02180eab41e35f
+source-git-commit: 618030a32b6cc8d703e71d4eb91a340cb89a413b
 workflow-type: tm+mt
-source-wordcount: '2663'
+source-wordcount: '2666'
 ht-degree: 1%
 
 ---
@@ -124,7 +124,7 @@ Utilisez les options suivantes pour définir des paramètres avancés pour fusio
 | Configuration | Description |
 | --- | --- |
 | **Créer un PDF accessible (balisé)** | Sélectionnez cette option pour générer un PDF avec des balises. Un PDF balisé permet aux lecteurs d’écran de lire et de parcourir plus facilement le contenu, les liens hypertexte, les signets, etc. Par exemple, si un tableau est balisé, le lecteur d’écran sait qu’il lit le tableau et pas seulement les lignes et le texte. |
-| **Fusion des PDF inclus dans la table des matières** | Sélectionnez cette option pour fusionner des PDF existants dans votre sortie en les ajoutant à votre table des matières. Les PDF sont insérés à l’emplacement représenté dans la table des matières et les pages sont incrémentées en conséquence. |
+| **Fusion des PDF inclus dans la table des matières** | Sélectionnez cette option pour fusionner les PDF existants dans votre sortie en les ajoutant à votre mappage DITA en tant que fichier de ressource. Les PDF seront insérés à l’emplacement représenté dans la carte et les pages seront incrémentées en conséquence. |
 | **Incorporer les polices utilisées** | Sélectionnez cette option lors de l’utilisation de polices qui ne peuvent pas être installées sur l’ordinateur de l’utilisateur final. Lorsque cette option est sélectionnée, les polices utilisées sont incorporées dans le PDF, ce qui permet à l’utilisateur de voir le PDF comme prévu, même si les polices ne sont pas installées sur son ordinateur. <br> **Remarque**: Une police ne peut être incorporée que si elle contient un paramètre du fournisseur de police qui lui permet d’être incorporée. Assurez-vous de disposer du paramètre ou de la licence requis avant d’incorporer une police. |
 | **Utilisation de la césure automatique** | Lorsque la césure automatique est activée, les mots situés à la fin des lignes sont rompus dans des zones grammaticalement correctes avec un trait d’union. |
 | **Activation de JavaScript** | Activez cette option si vous disposez d’un code JavaScript que vous souhaitez utiliser pour transformer dynamiquement votre contenu avant de générer un PDF. |
