@@ -2,7 +2,7 @@
 title: Workflows de création de contenu simple
 description: Création de contenu dans AEM Guides
 exl-id: e4b8e512-0688-44f7-b981-78af33b57b08
-source-git-commit: 92c269c4a5f73317345bbd0ab247951656426ff4
+source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 L’éditeur de guides d’AEM comporte plusieurs raccourcis qui simplifient le processus de création de contenu. Ces raccourcis permettent aux utilisateurs d’ajouter et de modifier rapidement des images, de travailler simultanément sur plusieurs rubriques, de corriger les erreurs, de télécharger des PDF de rubrique et d’utiliser des versions et des étiquettes.
 
->[!VIDEO](https://video.tv.adobe.com/v/342770)
+>[!VIDEO](https://video.tv.adobe.com/v/342770?quality=12&learn=on)
 
 ## Ajouter une image
 

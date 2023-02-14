@@ -2,7 +2,7 @@
 title: Cartes et bookmaps
 description: Création et modification de cartes et de zones cliquables dans AEM Guides
 exl-id: 9c717e4b-017b-4f2b-b93e-f2c0e7525c55
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 L’éditeur de cartes d’Adobe Experience Manager Guides vous permet de créer et de modifier des fichiers de carte. À l’aide de l’éditeur de cartes, vous pouvez modifier deux types de fichiers : le mappage DITA et le signet. À notre avis, ces concepts sont en grande partie interchangeables.
 L’éditeur de cartes est disponible en deux modes : l’éditeur de cartes de base et l’éditeur de cartes avancé.
 
->[!VIDEO](https://video.tv.adobe.com/v/342766)
+>[!VIDEO](https://video.tv.adobe.com/v/342766?quality=12&learn=on)
 
 ## Création d’une carte
 
@@ -40,7 +40,7 @@ Effectuez les étapes suivantes pour créer un fichier map.
 
    ![Interface utilisateur de modification des rubriques](images/lesson-14/edit-topics.png)
 
-Ou
+OU
 
 1. Passez la souris sur l’icône de carte.
 
@@ -53,7 +53,7 @@ Ou
 
 2. Faites glisser et déposez du contenu de la vue Repository vers des emplacements valides dans la carte ou la carte d’applet.
 
-Ou
+OU
 
 1. Cliquez sur un emplacement valide dans la carte ou la carte d’utilisateur.
 
@@ -77,7 +77,7 @@ Utilisation **Flèches de la barre d’outils** pour promouvoir ou rétrograder 
 
 3. Enregistrez et modifiez la carte si nécessaire.
 
-Ou
+OU
 
 1. Faites glisser et déposez les éléments pour les réorganiser.
 

@@ -2,7 +2,7 @@
 title: Mode plan
 description: Utilisation de la vue de plan dans AEM guides
 exl-id: 300f550f-dc79-4971-b8ba-43fe8499ea02
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 La vue Plan offre un large éventail de fonctions pour l’utilisation d’un document structuré. Développez et réduisez la vue, naviguez dans la structure, utilisez les attributs (par exemple pour créer un ID), puis réorganisez, actualisez et restructurez les éléments en cliquant sur un bouton.
 
->[!VIDEO](https://video.tv.adobe.com/v/342767)
+>[!VIDEO](https://video.tv.adobe.com/v/342767?quality=12&learn=on)
 
 ## Développer et réduire la vue Contour
 
@@ -55,7 +55,7 @@ Les éléments peuvent être réorganisés dans la vue Ligne.
 
 2. Déposez l’élément au-dessus d’un autre élément pour le remplacer. Cette action est indiquée par un carré autour de l’élément à remplacer.
 
-   Ou
+   OU
 
    Déposez l’élément entre deux autres éléments pour en modifier l’emplacement. Cette action est indiquée par une ligne entre les éléments où le nouvel élément sera déposé.
 

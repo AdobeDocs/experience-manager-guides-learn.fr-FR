@@ -2,7 +2,7 @@
 title: Utilisation des rapports
 description: Utilisation des rapports dans [!DNL Adobe Experience Manager Guides]
 exl-id: 755506a6-c416-4a8c-8359-8db7e63a90a4
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 L’onglet Rapports du tableau de bord des cartes permet d’identifier et de résoudre les liens rompus, le contenu référencé et réutilisé (attributs), les références croisées ou d’autres informations manquantes.
 
->[!VIDEO](https://video.tv.adobe.com/v/339039)
+>[!VIDEO](https://video.tv.adobe.com/v/339039?quality=12&learn=on)
 
 ## Préparation de l’exercice
 

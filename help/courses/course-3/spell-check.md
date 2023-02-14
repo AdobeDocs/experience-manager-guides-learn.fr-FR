@@ -2,7 +2,7 @@
 title: Vérifier l’orthographe et rechercher/remplacer
 description: Utilisation de la vérification orthographique et de la recherche/remplacement dans AEM Guides
 exl-id: 5f39618d-a919-4d3c-a4de-2896f2d1bf20
-source-git-commit: 0b4326b02ef52f5de77c3f26c18feec84567cebb
+source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 L’éditeur de guides d’AEM dispose de puissantes fonctionnalités de vérification orthographique et de recherche et remplacement.
 
->[!VIDEO](https://video.tv.adobe.com/v/342768)
+>[!VIDEO](https://video.tv.adobe.com/v/342768?quality=12&learn=on)
 
 Correction d’une erreur d’orthographe
 
@@ -39,7 +39,7 @@ Vous pouvez utiliser un outil de vérification orthographique autre que le dicti
 
    - **Vérifier l’orthographe du navigateur** — le paramètre par défaut où la vérification orthographique utilise le dictionnaire intégré du navigateur.
 
-   - **Vérifier l’orthographe AEM** — utilisez cette option pour créer une liste de mots personnalisée à l’aide du dictionnaire personnalisé d’AEM.
+   - **Vérifier l’orthographe AEM** — utilisez cette option pour créer une liste de mots personnalisée à l’aide d’AEM dictionnaire personnalisé.
 
 4. Choisir **Vérifier l’orthographe AEM**.
 
@@ -73,7 +73,7 @@ L’administrateur peut modifier les paramètres afin que le dictionnaire d’AE
 
    d. Cliquez sur [!UICONTROL **OK**].
 
-5. Ouvrez le fichier.
+5. Ouvrez le fichier .
 
 6. Ajoutez une liste de mots à inclure dans votre dictionnaire personnalisé.
 

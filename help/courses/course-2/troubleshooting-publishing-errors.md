@@ -2,7 +2,7 @@
 title: Dépannage des erreurs de publication
 description: Dépannage des erreurs de publication dans [!DNL Adobe Experience Manager Guides]
 exl-id: b37ea3e7-59cf-4fc5-8fae-e1fadd26f8d8
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Dépannage des erreurs de publication
 
-La publication d’une carte est généralement simple. Ouvrez la carte, sélectionnez un paramètre prédéfini de sortie et générez la sortie. Cependant, si une carte ou ses rubriques comportent des erreurs, la génération de sortie peut échouer. Dans ce cas, il est important de savoir comment résoudre les problèmes.
+La publication d’une carte est généralement simple. Ouvrez la carte, sélectionnez un paramètre prédéfini de sortie et générez la sortie. Cependant, si une carte ou ses rubriques comportent des erreurs, la génération de sortie peut échouer. Lorsque cela se produit, il est important de savoir comment résoudre les problèmes.
 
->[!VIDEO](https://video.tv.adobe.com/v/338990)
+>[!VIDEO](https://video.tv.adobe.com/v/338990?quality=12&learn=on)
 
 ## Préparation de l’exercice
 

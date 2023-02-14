@@ -2,7 +2,7 @@
 title: Conditions
 description: Utilisation des conditions dans AEM Guids
 exl-id: 2cb670d9-1a22-47c6-8409-52d1d526010a
-source-git-commit: 01083e771baced42146044bf319d3897a2c5f51b
+source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 3%
@@ -15,7 +15,7 @@ Dans DITA, les conditions sont souvent pilotées par des attributs tels que Prod
 
 Des exemples de fichiers que vous pouvez choisir d’utiliser pour cette leçon sont fournis dans le fichier . [conditions.zip](assets/conditions.zip).
 
->[!VIDEO](https://video.tv.adobe.com/v/342755)
+>[!VIDEO](https://video.tv.adobe.com/v/342755?quality=12&learn=on)
 
 ## Affectation de conditions à un profil de dossier
 

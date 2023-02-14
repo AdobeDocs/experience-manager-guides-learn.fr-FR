@@ -2,7 +2,7 @@
 title: Suivi des modifications
 description: Suivi des modifications dans les guides AEM
 exl-id: 57779920-b3b4-44be-a1fb-89ea7c89eef7
-source-git-commit: 7bc636b4aceee327d86cfa74a9f8e61e0ad0a1cf
+source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Vous pouvez effectuer le suivi de toutes les mises à jour effectuées sur un document en activant le mode de suivi des modifications . Ce mode vous permet, ainsi qu’à votre équipe, de capturer toutes les insertions et les suppressions survenues pendant le processus de révision des documents.
 
->[!VIDEO](https://video.tv.adobe.com/v/342763)
+>[!VIDEO](https://video.tv.adobe.com/v/342763?quality=12&learn=on)
 
 ## Utilisation de la fonction de suivi des modifications
 
@@ -70,7 +70,7 @@ Les réviseurs et les experts du sujet peuvent accepter ou refuser les modificat
 
    ![Accepter/rejeter une seule interface utilisateur](images/lesson-12/accept-reject-single.png)
 
-   Ou
+   OU
 
    Cliquez sur le bouton [!UICONTROL **Pouces vers le haut**] ou [!UICONTROL **Menu déroulant**] au-dessus de la barre Recherche pour accepter ou refuser toutes les modifications.
 

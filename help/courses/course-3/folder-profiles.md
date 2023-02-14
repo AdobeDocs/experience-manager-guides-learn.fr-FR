@@ -2,7 +2,7 @@
 title: Profils de dossier
 description: Création et utilisation de profils de dossier pour AEM Guides
 exl-id: 5a0daa68-51ae-42d0-8320-6e8bdb1fe545
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 1%
@@ -15,7 +15,7 @@ AEM permet d’accéder rapidement aux outils de configuration. En personnalisan
 
 Des exemples de fichiers que vous pouvez choisir d’utiliser pour cette leçon sont fournis dans le fichier . [folderprofiles.zip](assets/folderprofiles.zip).
 
->[!VIDEO](https://video.tv.adobe.com/v/342758)
+>[!VIDEO](https://video.tv.adobe.com/v/342758?quality=12&learn=on)
 
 ## Accès aux profils de dossier
 

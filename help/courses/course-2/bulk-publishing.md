@@ -2,7 +2,7 @@
 title: Publication en bloc
 description: Publication en bloc dans [!DNL Adobe Experience Manager Guides]
 exl-id: b277e846-ef71-47ec-a66c-ac9d392d53e0
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 Lors de la publication, plusieurs types de documentation sont souvent nécessaires. À l’aide des collections de cartes, vous pouvez contrôler le nombre et les types de sorties qui seront assemblés et générés et déclencher la publication en bloc. Le tableau de bord de publication vous permet d’afficher les tâches de publication principales. Le tableau de bord Publication en bloc permet d’activer les collections en bloc.
 
->[!VIDEO](https://video.tv.adobe.com/v/338985)
+>[!VIDEO](https://video.tv.adobe.com/v/338985?quality=12&learn=on)
 
 ## Utilisation des collections de cartes
 
