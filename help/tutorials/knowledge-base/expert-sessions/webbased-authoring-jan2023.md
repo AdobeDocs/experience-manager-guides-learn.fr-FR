@@ -1,13 +1,13 @@
 ---
 title: Création de contenu web
 description: Découvrez comment créer du contenu structuré à l’aide de l’éditeur web.
-source-git-commit: 78d8834a3c5ba038f28289bd5c90755badb38d82
+exl-id: ab051c14-5c1e-4685-89e8-3c90dff9ea5e
+source-git-commit: 5b3ffb33619755b3a5bc6c541a07b3084e9154f1
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '227'
 ht-degree: 1%
 
 ---
-
 
 # Création de contenu web
 
@@ -19,7 +19,7 @@ Au cours de cette session, vous apprendrez à créer, publier et gérer du conte
 
 ## Enregistrement de session
 
->Afficher les enregistrements [video](https://video.tv.adobe.com/v/3414171/dita-authoring-ccms-web-author?quality=12&learn=on) session.
+>[vidéo](https://video.tv.adobe.com/v/3414171/dita-authoring-ccms-web-author?quality=12&learn=on)
 
 ## Tons clairs
 
@@ -51,11 +51,11 @@ Au cours de cette session, vous découvrirez les éléments suivants :
 > - Cloud Services 2211 et versions ultérieures
 
 
-## Autres sessions d&#39;experts
+## Prochaine session d&#39;experts
 
 - **Rubrique** - Publication de PDF natifs *(en fonction des résultats de l’enquête)*
 - **Planifié le** - 23 février 2023
 
 ## Contactez-nous
 
-Pour toute question, envoyez-nous un email à l&#39;adresse techcomm@adobe.com.
+Pour toute demande, envoyez-nous un email à l’adresse <techcomm@adobe.com>

@@ -1,9 +1,10 @@
 ---
 title: Gestion du contenu à l’aide des lignes de base
 description: Découvrez comment utiliser les lignes de base pour gérer efficacement votre contenu.
-source-git-commit: 34b373b5f2cdd082ea7b9f9c33bfb903bd8a493a
+exl-id: 3fc2e889-b255-4e8d-9750-ab61337107ae
+source-git-commit: 5b3ffb33619755b3a5bc6c541a07b3084e9154f1
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '211'
 ht-degree: 1%
 
 ---
@@ -18,7 +19,7 @@ Au cours de cette session, vous apprendrez à utiliser les lignes de base pour g
 
 ## Enregistrement de session
 
->Afficher les enregistrements [video](https://video.tv.adobe.com/v/3414172/version-management-release-management-baseline?quality=12&learn=on) session.
+>[vidéo](https://video.tv.adobe.com/v/3414172/version-management-release-management-baseline?quality=12&learn=on)
 
 ## Tons clairs
 
@@ -50,11 +51,11 @@ Au cours de cette session, vous découvrirez les éléments suivants :
 > - Cloud Services 2211 et versions ultérieures
 
 
-## Autres sessions d&#39;experts
+## Prochaine session d&#39;experts
 
 - **Rubrique** - [Création de contenu web](webbased-authoring-jan2023.md)
 - **Planifié le** - 19 janvier 2023
 
 ## Contactez-nous
 
-Pour toute question, envoyez-nous un email à l&#39;adresse techcomm@adobe.com.
+Pour toute demande, envoyez-nous un email à l’adresse <techcomm@adobe.com>

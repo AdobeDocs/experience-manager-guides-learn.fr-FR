@@ -1,10 +1,11 @@
 ---
 title: Traduction du contenu
 description: Découvrez comment traduire votre contenu dans plusieurs langues.
-source-git-commit: 78d8834a3c5ba038f28289bd5c90755badb38d82
+exl-id: c8dacbdc-4b0b-44ca-82d4-889cd83741ff
+source-git-commit: 5b3ffb33619755b3a5bc6c541a07b3084e9154f1
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 3%
+source-wordcount: '195'
+ht-degree: 4%
 
 ---
 
@@ -18,7 +19,7 @@ Au cours de cette session, vous découvrirez le processus de traduction, le méc
 
 ## Enregistrement de session
 
->Afficher les enregistrements [video](https://video.tv.adobe.com/v/3414140/translation-aem-guides?quality=12&learn=on) session.
+>[vidéo](https://video.tv.adobe.com/v/3414140/translation-aem-guides?quality=12&learn=on)
 
 ## Tons clairs
 
@@ -50,11 +51,11 @@ Au cours de cette session, vous découvrirez les éléments suivants :
 > - Cloud Services 2207 ou version ultérieure
 
 
-## Autres sessions d&#39;experts
+## Prochaine session d&#39;experts
 
 - **Rubrique** - [Gestion du contenu à l’aide des lignes de base](baselines-dec22.md)
 - **Planifié le** - 8 décembre 2022
 
 ## Contactez-nous
 
-Pour toute question, envoyez-nous un email à l&#39;adresse techcomm@adobe.com.
+Pour toute demande, envoyez-nous un email à l’adresse <techcomm@adobe.com>
