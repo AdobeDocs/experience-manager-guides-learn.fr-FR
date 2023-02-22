@@ -2,10 +2,10 @@
 user-guide-title: Tutoriels pour AEM Guides
 user-guide-description: Lisez notre collection de tutoriels pour Adobe Experience Manager Guides.
 breadcrumb-title: Tutoriels AEM Guides
-source-git-commit: 638bc7daa3bccfdb0334927ac277c4052cf2becb
+source-git-commit: ae85e78b428f1962945d3212f1b42839dbbe3096
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 20%
+source-wordcount: '175'
+ht-degree: 17%
 
 ---
 
@@ -28,6 +28,7 @@ ht-degree: 20%
          + [Notes de mise à jour de février](./release-info/release-notes-2022.2.0.md)
          + [Notes de mise à jour de janvier](./release-info/release-notes-2022.1.0.md)
       + On-premise/Managed Services {#on-prem-release-notes}
+         + [Notes de mise à jour 4.2](./release-info/release-notes-4.2.md)
          + [Notes de mise à jour 4.1.x](./release-info/release-notes-4.1.md)
          + [Notes de mise à jour 4.0.x](https://helpx.adobe.com/xml-documentation-for-experience-manager/release-note/release-notes-xml-documentation-solution-4-0.html)
          + [Notes de mise à jour de la version 3.8.x](https://helpx.adobe.com/xml-documentation-for-experience-manager/release-note/release-notes-xml-documentation-solution-3-8.html)
@@ -40,6 +41,9 @@ ht-degree: 20%
       + [Composants d’un modèle de PDF](./native-pdf/components-pdf-template.md)
       + [Concevoir une mise en page](./native-pdf/design-page-layout.md)
       + [Utilisation des styles de contenu communs](./native-pdf/stylesheet.md)
+      + [Application d’un style personnalisé aux entrées de la table des matières et au contenu de la rubrique](./native-pdf/custom-style-toc.md)
+      + [Ajout d’un signet personnalisé dans la sortie PDF](./native-pdf/add-custom-bookmark.md)
+      + [Utilisation de JavaScript pour utiliser du contenu ou du style](./native-pdf/use-javascript-content-style.md)
    + [Configuration d’un DITA-OT personnalisé](./configuring/setup-a-custom-dita-ot.md)
 + Traduction {#translation}
    + [Exclure les paragraphes de la traduction](./translation/exclude-paragraphs-from-translation.md)
