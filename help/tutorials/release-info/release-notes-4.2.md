@@ -1,9 +1,10 @@
 ---
 title: Notes de mise à jour | Adobe Experience Manager Guides version 4.2
 description: Dernière version des guides Adobe Experience Manager
-source-git-commit: 2fb46bdfb7f42fd9b3ef19343700009818c5b4f2
+exl-id: 8a7fef77-63af-462f-89c5-054ab31e079b
+source-git-commit: 890d64aed5f4005e3f4d3143bc35804e39036ad3
 workflow-type: tm+mt
-source-wordcount: '3681'
+source-wordcount: '3668'
 ht-degree: 2%
 
 ---
@@ -251,12 +252,12 @@ Une barre de modification s’affiche dans le PDF pour indiquer le contenu modif
 ### PDF natif | Prise en charge des variables pour Output Path et PDF File Name
 
 Vous pouvez désormais également utiliser les variables d’usine suivantes pour définir le Chemin de sortie et le Fichier de PDF. Vous pouvez utiliser une seule ou une combinaison de variables pour définir ces options :
-* ${map_filename}
-* ${map_title}
-* ${preset_name}
-* ${language_code}
-* ${map_parentpath} (Uniquement pour le chemin de sortie)
-* ${path_after_langfolder} (Uniquement pour le chemin de sortie)
+* `${map_filename}`
+* `${map_title}`
+* `${preset_name}`
+* `${language_code}`
+* `${map_parentpath}` (Uniquement pour le chemin de sortie)
+* `${path_after_langfolder}` (Uniquement pour le chemin de sortie)
 
 ### PDF natif | Générer la table des matières pour les mappages DITA et réorganiser les mises en page
 
