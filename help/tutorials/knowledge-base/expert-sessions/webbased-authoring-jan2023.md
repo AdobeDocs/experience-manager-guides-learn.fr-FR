@@ -2,9 +2,9 @@
 title: Création de contenu web
 description: Découvrez comment créer du contenu structuré à l’aide de l’éditeur web.
 exl-id: ab051c14-5c1e-4685-89e8-3c90dff9ea5e
-source-git-commit: cb7cb66eb4ba81120afb43582867e859661b434c
+source-git-commit: 285dbf9ea7eb5eb4288dfbdfc977d35b2feef111
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '223'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ Au cours de cette session, vous découvrirez les éléments suivants :
 
 ## Prochaine session d&#39;experts
 
-- **Rubrique** - Publication de PDF natifs *(en fonction des résultats de l’enquête)*
+- **Rubrique** - [Principes élémentaires de la publication par les PDF natifs](native-pdf-publishing-essentials-feb23.md)
 - **Planifié le** - 23 février 2023
 
 ## Contactez-nous

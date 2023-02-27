@@ -1,9 +1,9 @@
 ---
 title: Principes élémentaires de la publication par les PDF natifs
 description: Découvrez comment publier du PDF à l’aide du moteur PDF natif dans AEM Guides.
-source-git-commit: b79e7287cdf7eaff0a6fa47d94e12c8928a44b49
+source-git-commit: 285dbf9ea7eb5eb4288dfbdfc977d35b2feef111
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '233'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ Au cours de cette session, vous découvrirez les éléments suivants :
 
 - **Vidéos de présentation** -  [Experience League](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/videos/advanced-user-guide/overview.html?lang=en)
 
-- **Guide de l’utilisateur** - [Création de contenu](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/configuring/config-native-pdf-publish/pdf-template.html?lang=en)
+- **Guide de l’utilisateur** - [Publication de PDF natifs](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/configuring/config-native-pdf-publish/pdf-template.html?lang=en)
 
 - **Forum de la communauté** - Pour les interactions de communauté spécifiques à une session sur Experience League, rendez-vous sur la page  [Forum AEM Guides](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/bd-p/xml-documentation-discussions).
 
@@ -53,7 +53,7 @@ Au cours de cette session, vous découvrirez les éléments suivants :
 
 ## Prochaine session d&#39;experts
 
-- **Rubrique** - Publication et rapports *(en fonction des résultats de l’enquête)*
+- **Rubrique** - À déterminer *(en attente des résultats du questionnaire)*
 - **Planifié le** - 30 mars 2023
 
 ## Contactez-nous
