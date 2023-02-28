@@ -2,9 +2,9 @@
 user-guide-title: Tutoriels pour AEM Guides
 user-guide-description: Lisez notre collection de tutoriels pour Adobe Experience Manager Guides.
 breadcrumb-title: Tutoriels AEM Guides
-source-git-commit: fefff9510c94c1917da694e30ffaf90bb887b577
+source-git-commit: 9eb44211684c8a3af036acf12390dafb617fd24a
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '189'
 ht-degree: 17%
 
 ---
@@ -58,3 +58,10 @@ ht-degree: 17%
       + [Gestion du contenu à l’aide des lignes de base](./knowledge-base/expert-sessions/baselines-dec22.md)
       + [Création de contenu web](./knowledge-base/expert-sessions/webbased-authoring-jan2023.md)
       + [Principes élémentaires de la publication par les PDF natifs](./knowledge-base/expert-sessions/native-pdf-publishing-essentials-feb23.md)
+   + Articles {#kb-articles}
+      + Création {#authoring}
+         + Webeditor {#webeditor}
+            + Schéma {#schematron}
+               + [Validation du schéma](./knowledge-base/kb-articles/authoring/webeditor/schematron/vailidating-with-schematron.md)
+      + Workflows {#workflows}
+         + [Processus de génération de publication](./knowledge-base/kb-articles/workflows/using-post-generation-workflow.md)
