@@ -1,28 +1,28 @@
 ---
 title: Notes de mise à jour | Adobe Experience Manager Guides as a Cloud Service, version de novembre 2022
-description: Dernière version des guides Adobe Experience Manager as a Cloud Service
+description: Version de novembre des guides Adobe Experience Manager as a Cloud Service
 exl-id: 9f329ec1-dd74-47cc-8567-3fadd962584a
-source-git-commit: 0663ed4434fdf583a9446891f944d94b85f375c6
+source-git-commit: 715d5622c4cc59dfb24ac9a3442e61efdb10a797
 workflow-type: tm+mt
 source-wordcount: '1372'
 ht-degree: 2%
 
 ---
 
-# Dernière version des guides Adobe Experience Manager as a Cloud Service
+# Version de novembre des guides Adobe Experience Manager as a Cloud Service
 
-## Mise à niveau vers la dernière version
+## Mise à niveau vers la version de novembre
 
 Mettez à niveau vos guides Adobe Experience Manager actuels as a Cloud Service (plus tard appelés *AEM Guides as a Cloud Service*) en procédant comme suit :
 1. Extrayez le code Git des Cloud Services et passez à la branche configurée dans le pipeline Cloud Services correspondant à l’environnement que vous souhaitez mettre à niveau.
 2. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Services vers 2022.11.198.
-3. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la dernière version d’AEM Guides as a Cloud Service.
+3. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version de novembre d’AEM Guides as a Cloud Service.
 
 ## Étapes d’indexation du contenu existant (uniquement si vous utilisez une version antérieure à la version de septembre des AEM Guides as a Cloud Service)
 
 Effectuez les étapes suivantes pour indexer le contenu existant et utilisez le nouveau texte de recherche et de remplacement au niveau de la carte :
 
-* Exécutez une requête de POST sur le serveur (avec l’authentification correcte) - `http://<server:port>/bin/guides/map-find/indexin`.
+* Exécutez une requête de POST sur le serveur (avec l’authentification correcte) - `http://<server:port>/bin/guides/map-find/indexing`.
 (Facultatif) Vous pouvez transmettre des chemins d’accès spécifiques des cartes pour les indexer ; par défaut, toutes les cartes seront indexées. || Exemple : `https://<Server:port>/bin/guides/map-find/indexing?paths=<map_path_in_repository>`)
 
 * L’API renvoie un jobId. Pour vérifier l’état de la tâche, vous pouvez envoyer une demande de GET avec l’ID de la tâche au même point de terminaison : `http://<server:port>/bin/guides/map-find/indexing?jobId={jobId}`
@@ -48,13 +48,13 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 
 | AEM Guides as a Cloud | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
 | --- | --- | --- | --- | --- |
-| 2022.11.0 | 2,7.13 | 2,7.13 | 2.3 | 2,3 |
+| 2022.11.0 | 2.7.13 | 2.7.13 | 2.3 | 2.3 |
 |  |  |  |  |
 
 
 ## Nouvelles fonctionnalités et améliorations
 
-AEM Guides as a Cloud Service fournit des améliorations et de nouvelles fonctionnalités dans la dernière version :
+AEM Guides as a Cloud Service fournit des améliorations et de nouvelles fonctionnalités dans la version de novembre :
 
 
 ### Suppression de fichiers du panneau du référentiel

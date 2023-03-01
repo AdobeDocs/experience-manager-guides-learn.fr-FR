@@ -2,9 +2,9 @@
 user-guide-title: Tutoriels pour AEM Guides
 user-guide-description: Lisez notre collection de tutoriels pour Adobe Experience Manager Guides.
 breadcrumb-title: Tutoriels AEM Guides
-source-git-commit: 9eb44211684c8a3af036acf12390dafb617fd24a
+source-git-commit: d13a04448be357f37290dbd37317d82b5a8ea736
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '204'
 ht-degree: 17%
 
 ---
@@ -14,11 +14,12 @@ ht-degree: 17%
 
 + [Tutorials pour [!DNL AEM Guides]](overview.md)
 + Informations sur la version {#release-info}
-   + [[!DNL AEM Guides] versions](./release-info/latest-release-info.md)
+   + [[!DNL AEM Guides] releases](./release-info/latest-release-info.md)
    + Notes de mise à jour {#release-notes}
       + Cloud Services {#cloud-release-notes}
          + [Instructions de déploiement](./release-info/deploy-xml-on-aemaacs.md)
-         + [Notes de mise à jour de la version actuelle](./release-info/release-notes-2022.11.0.md)
+         + [Notes de mise à jour de la version actuelle](./release-info/release-notes-2023.2.0.md)
+         + [Notes de mise à jour de novembre](./release-info/release-notes-2022.11.0.md)
          + [Notes de mise à jour d’octobre](./release-info/release-notes-2022.10.0.md)
          + [Notes de mise à jour de septembre](./release-info/release-notes-2022.9.0.md)
          + [Notes de mise à jour d’août](./release-info/release-notes-2022.8.0.md)
@@ -58,6 +59,8 @@ ht-degree: 17%
       + [Gestion du contenu à l’aide des lignes de base](./knowledge-base/expert-sessions/baselines-dec22.md)
       + [Création de contenu web](./knowledge-base/expert-sessions/webbased-authoring-jan2023.md)
       + [Principes élémentaires de la publication par les PDF natifs](./knowledge-base/expert-sessions/native-pdf-publishing-essentials-feb23.md)
+   + Publication{#publishing}
+      + [Configuration de la nouvelle publication basée sur un microservice pour AEM Guides as a Cloud Service](./knowledge-base/publishing/configure-microservices.md)
    + Articles {#kb-articles}
       + Création {#authoring}
          + Webeditor {#webeditor}
