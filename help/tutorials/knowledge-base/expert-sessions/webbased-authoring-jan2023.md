@@ -2,9 +2,9 @@
 title: Création de contenu web
 description: Découvrez comment créer du contenu structuré à l’aide de l’éditeur web.
 exl-id: ab051c14-5c1e-4685-89e8-3c90dff9ea5e
-source-git-commit: 285dbf9ea7eb5eb4288dfbdfc977d35b2feef111
+source-git-commit: 3d12389dbd7458a74bb9b9ec488e83bf39c8c9bf
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '212'
 ht-degree: 1%
 
 ---
@@ -50,11 +50,6 @@ Au cours de cette session, vous découvrirez les éléments suivants :
 > - On-premise 4.1.3 ou version ultérieure
 > - Cloud Services 2211 et versions ultérieures
 
-
-## Prochaine session d&#39;experts
-
-- **Rubrique** - [Principes élémentaires de la publication par les PDF natifs](native-pdf-publishing-essentials-feb23.md)
-- **Planifié le** - 23 février 2023
 
 ## Contactez-nous
 

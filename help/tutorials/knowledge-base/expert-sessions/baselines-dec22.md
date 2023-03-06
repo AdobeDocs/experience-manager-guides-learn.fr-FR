@@ -2,9 +2,9 @@
 title: Gestion du contenu à l’aide des lignes de base
 description: Découvrez comment utiliser les lignes de base pour gérer efficacement votre contenu.
 exl-id: 3fc2e889-b255-4e8d-9750-ab61337107ae
-source-git-commit: cb7cb66eb4ba81120afb43582867e859661b434c
+source-git-commit: 3d12389dbd7458a74bb9b9ec488e83bf39c8c9bf
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '200'
 ht-degree: 1%
 
 ---
@@ -50,11 +50,6 @@ Au cours de cette session, vous découvrirez les éléments suivants :
 > - On-premise 4.1 et versions ultérieures
 > - Cloud Services 2211 et versions ultérieures
 
-
-## Prochaine session d&#39;experts
-
-- **Rubrique** - [Création de contenu web](webbased-authoring-jan2023.md)
-- **Planifié le** - 19 janvier 2023
 
 ## Contactez-nous
 

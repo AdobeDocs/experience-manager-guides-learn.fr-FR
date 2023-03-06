@@ -2,9 +2,9 @@
 title: Traduction du contenu
 description: Découvrez comment traduire votre contenu dans plusieurs langues.
 exl-id: c8dacbdc-4b0b-44ca-82d4-889cd83741ff
-source-git-commit: cb7cb66eb4ba81120afb43582867e859661b434c
+source-git-commit: 3d12389dbd7458a74bb9b9ec488e83bf39c8c9bf
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '183'
 ht-degree: 3%
 
 ---
@@ -50,11 +50,6 @@ Au cours de cette session, vous découvrirez les éléments suivants :
 > - On-premise 4.1 ou version ultérieure
 > - Cloud Services 2207 ou version ultérieure
 
-
-## Prochaine session d&#39;experts
-
-- **Rubrique** - [Gestion du contenu à l’aide des lignes de base](baselines-dec22.md)
-- **Planifié le** - 8 décembre 2022
 
 ## Contactez-nous
 
