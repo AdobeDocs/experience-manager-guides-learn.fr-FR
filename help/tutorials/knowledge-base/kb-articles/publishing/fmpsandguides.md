@@ -1,7 +1,7 @@
 ---
 title: FMPS et guides d’AEM
 description: Publication avec FMPS à l’aide des AEM Guides
-source-git-commit: 5c53f89a811571c2193769bb4821657df3212dc0
+source-git-commit: 82f010a97d0ed0e3c6351e6411e5955c79e0b01f
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Dans le menu &quot;Générer le PDF à l’aide de&quot;, sélectionnez FrameMak
 L’utilisateur peut fournir &quot;settings File(.sts)&quot; et &quot;ditaval&quot;. Le filtrage sera effectué à l’aide de ditaval en fonction des conditions que vous fournissez.
 
 - **définition du fichier**: Paramètre de publication FrameMaker/FMPS qui contient tous les paramètres que vous souhaitez que FMPS respecte lors de la publication. Par exemple : Générer une sortie avec le modèle personnalisé, Générer des marques et des fonds (PDF), Générer un PDF avec la table des matières, l’index, etc.
-- **FMPS présente :** Combinaison prédéfinie de fichier ditaval et settings. Au lieu de fournir des fichiers distincts ditaval et settings, l’utilisateur peut précréer un paramètre prédéfini FMPS qui peut être réutilisé pour les besoins de publication.
+- **Paramètre prédéfini FMPS :** Combinaison prédéfinie de fichier ditaval et settings. Au lieu de fournir des fichiers distincts ditaval et settings, l’utilisateur peut précréer un paramètre prédéfini FMPS qui peut être réutilisé pour les besoins de publication.
 
 **Remarque :** Si vous ne sélectionnez aucun des paramètres ou paramètre prédéfini FMPS, FMPS publiera avec le paramètre système par défaut.
 
