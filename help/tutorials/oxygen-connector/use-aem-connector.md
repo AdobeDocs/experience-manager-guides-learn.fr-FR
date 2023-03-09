@@ -1,5 +1,5 @@
 ---
-source-git-commit: f79a387de64a31dc62455992c54fc82dc6235ebc
+source-git-commit: 2e1f1644e5f22fc928ad813f46137a3f284df022
 workflow-type: tm+mt
 source-wordcount: '5800'
 ht-degree: 1%
@@ -645,21 +645,21 @@ Solution : Effectuez les étapes suivantes pour activer la fonction de générat
 
     1.  Accédez à l’emplacement d’installation de l’auteur XML Oxygen.
     
-    2.  Ouvrez le fichier oxygèneAuthor19.1.vmoptions dans un éditeur de texte.
+    1.  Ouvrez le fichier oxygèneAuthor19.1.vmoptions dans un éditeur de texte.
     
     **Remarque :**
     
     Le numéro de version du fichier peut varier en fonction du numéro de version de l’application installée sur votre système.
     
-    3.  Ajoutez la ligne suivante dans le fichier :
+    1.  Ajoutez la ligne suivante dans le fichier :
     
     &quot;
     -Djava.util.logging.config.file=./log.properties
     &quot;
     
-    4.  Enregistrez et fermez le fichier.
+    1.  Enregistrez et fermez le fichier.
     
-     5.  Au même emplacement, créez un fichier nommé log.properties avec le contenu suivant :
+    1.  Au même emplacement, créez un fichier nommé log.properties avec le contenu suivant :
     
     &quot;
     handlers=java.util.logging.FileHandler
@@ -671,9 +671,9 @@ Solution : Effectuez les étapes suivantes pour activer la fonction de générat
     java.util.logging.FileHandler.format=[%1$tF %1$tT] [%4$s] %5$s %n
     &quot;
     
-    6.  Enregistrez et fermez le fichier.
+    1.  Enregistrez et fermez le fichier.
     
-    7.  Démarrez Oxygen XML Author.
+    1.  Démarrez Oxygen XML Author.
     
     
     Le module externe crée désormais des journaux dans le répertoire racine de l’utilisateur avec le nom de fichier aem-pluginX.log \(*où X indique le numéro de rotation*\).
