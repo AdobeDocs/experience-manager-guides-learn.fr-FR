@@ -1,9 +1,9 @@
 ---
 title: Module externe Oxygen pour les guides Adobe Experience Manager
 description: Découvrez comment utiliser le module externe Oxygen pour les guides Adobe Experience Manager pour créer et gérer votre contenu.
-source-git-commit: 50b1b02c69ff81d4ee050d02ed945e88fac9dae0
+source-git-commit: c3d50c3fc9f12d98942b6cb68512e01559b47d93
 workflow-type: tm+mt
-source-wordcount: '5812'
+source-wordcount: '5792'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,9 @@ Le module externe Oxygen pour les guides Adobe Experience Manager \(appelé ult�
 
 Le module externe Oxygen pour AEM Guides est disponible via votre portail de distribution de logiciels Adobe. Recherchez &quot;oxygène&quot; dans l’onglet du Experience Manager, puis téléchargez le programme d’installation du module externe depuis votre [Portail de distribution de logiciels Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).
 
-**Remarque :** Vérifiez la compatibilité de la version du connecteur Oxygen dans les notes de mise à jour des Guides Adobe Experience Manager spécifiques.
+>[!NOTE]
+>
+>Vérifiez la compatibilité de la version du connecteur Oxygen dans les notes de mise à jour des Guides Adobe Experience Manager spécifiques.
 
 Une fois que vous avez installé le programme d’installation, installez-le sur votre ordinateur local sur lequel Oxygen XML Author est installé. Avant de commencer le processus d’installation, vous devez vous assurer que votre système répond aux exigences techniques d’installation du module externe Oxygen pour les AEM Guides.
 
@@ -36,9 +38,9 @@ Une fois que vous avez installé le programme d’installation, installez-le sur
 
 ### Installation du module externe sous Windows
 
-**Important :**
-
-Si une ancienne version du module externe est installée sur votre système, assurez-vous de la désinstaller avant de lancer le processus d’installation. Voir **Désinstallation des modules** dans la section [Utilisation de modules](https://helpx.adobe.com/fr/experience-manager/6-4/sites/administering/using/package-manager.html) article pour les instructions de désinstallation.
+>[!IMPORTANT]
+>
+>Si une ancienne version du module externe est installée sur votre système, assurez-vous de la désinstaller avant de lancer le processus d’installation. Voir **Désinstallation des modules** dans la section [Utilisation de modules](https://helpx.adobe.com/fr/experience-manager/6-4/sites/administering/using/package-manager.html) article pour les instructions de désinstallation.
 
 Effectuez les étapes suivantes sur le système où Oxygen XML Author est installé :
 
@@ -63,16 +65,16 @@ Effectuez les étapes suivantes sur le système où Oxygen XML Author est instal
 
    ![](images/oxygen-aem-connector.png)
 
-   **Remarque :**
-
-   Si vous ne voyez pas le panneau AEM Guides, reportez-vous aux solutions de contournement dans la section de dépannage—[Panneau Guides AEM manquants](#id192BH200ZAX).
+   >[!NOTE]
+   >
+   >Si vous ne voyez pas le panneau AEM Guides, reportez-vous aux solutions de contournement dans la section de dépannage—[Panneau Guides AEM manquants](#id192BH200ZAX).
 
 
 ### Installation du module externe sur Mac
 
-**Important :**
-
-Si une ancienne version du module externe est installée sur votre système, assurez-vous de la désinstaller avant de lancer le processus d’installation. Voir **Désinstallation des modules** dans la section [Utilisation de modules](https://helpx.adobe.com/fr/experience-manager/6-4/sites/administering/using/package-manager.html) instructions de désinstallation de l’article.
+>[!IMPORTANT]
+>
+>Si une ancienne version du module externe est installée sur votre système, assurez-vous de la désinstaller avant de lancer le processus d’installation. Voir **Désinstallation des modules** dans la section [Utilisation de modules](https://helpx.adobe.com/fr/experience-manager/6-4/sites/administering/using/package-manager.html) instructions de désinstallation de l’article.
 
 Effectuez les étapes suivantes sur le système où Oxygen XML Author est installé :
 
@@ -82,9 +84,9 @@ Effectuez les étapes suivantes sur le système où Oxygen XML Author est instal
 
    Le fichier .dmg contient un dossier aem-connector-x.x et un fichier aem-connector-x.x-setup .
 
-   **Remarque :**
-
-   x.x dans les noms de fichier est le numéro de version du module externe.
+   >[!NOTE]
+   >
+   >x.x dans les noms de fichier est le numéro de version du module externe.
 
 1. Copiez le dossier aem-connector-x.x dans le dossier plugins de Oxygen XML Author.
 1. Double-cliquez sur le fichier aem-connector-x.x-setup pour lancer le programme d’installation.
@@ -95,9 +97,9 @@ Effectuez les étapes suivantes sur le système où Oxygen XML Author est instal
 
    ![](images/oxygen-aem-connector-mac.png)
 
-   **Remarque :**
-
-   Si vous ne voyez pas le panneau AEM Guides, reportez-vous aux solutions de contournement dans la section de dépannage—[Panneau Guides AEM manquants](#id192BH200ZAX).
+   >[!NOTE]
+   >
+   >Si vous ne voyez pas le panneau AEM Guides, reportez-vous aux solutions de contournement dans la section de dépannage—[Panneau Guides AEM manquants](#id192BH200ZAX).
 
 
 ### Installez le package pour activer la fonction d’édition de documents à partir de l’interface web d’AEM {#id182CE0Q0TY4}
@@ -132,9 +134,9 @@ En tant qu’administrateur AEM, effectuez les étapes suivantes pour installer 
 
    **Modifier dans Oxygen** est disponible dans la barre d’outils. Pour plus d’informations sur l’utilisation de cette option, voir [Ouvrir la rubrique DITA dans l’auteur XML Oxygen à partir de l’interface web d’AEM](#id182CE0I905Z).
 
-   **Remarque :**
-
-   Le **Modifier dans Oxygen** est visible lorsque vous sélectionnez une rubrique DITA. Si vous sélectionnez plusieurs rubriques, l’option ne sera pas visible.
+   >[!NOTE]
+   >
+   >Le **Modifier dans Oxygen** est visible lorsque vous sélectionnez une rubrique DITA. Si vous sélectionnez plusieurs rubriques, l’option ne sera pas visible.
 
 
 ## Configuration du module externe Oxygen pour AEM Guides {#id1826KF00AHS}
@@ -151,7 +153,9 @@ JxBrowser est utilisé pour l’authentification SSO par le module externe du co
 
 Mettez à jour les fichiers donnés pour configurer les paramètres d’authentification web dans le module externe Oxygen pour AEM Guides :
 
-**Remarque :** Effectuez une sauvegarde du fichier avant de le mettre à jour.
+>[!NOTE]
+>
+>Effectuez une sauvegarde du fichier avant de le mettre à jour.
 
 **Pour Mac et Oxygen 24.1**
 
@@ -181,9 +185,9 @@ Ajoutez les lignes suivantes dans le fichier oxygèneAuthor.bat.
 -Djdk.module.illegalAccess=permit -Djava.ipc.external=true
 ```
 
-**Remarque :**
-
-Vous devez exécuter de l’oxygène à partir d’oxygèneAuthor.sh pour Mac et d’oxygèneAuthor.bat pour Windows en tant qu’administrateur.
+>[!NOTE]
+>
+>Vous devez exécuter de l’oxygène à partir d’oxygèneAuthor.sh pour Mac et d’oxygèneAuthor.bat pour Windows en tant qu’administrateur.
 
 ### Paramètres généraux
 
@@ -191,7 +195,7 @@ Effectuez les étapes suivantes pour configurer les paramètres de connexion dan
 
 1. Dans le panneau Guides d’AEM, cliquez sur l’icône de paramètres, puis sélectionnez **Paramètres**.
 
-   ![](images/Settings.png)
+   ![](images/settings.png)
 
 1. Indiquez les informations suivantes :
    - **URL du serveur**: URL du serveur AEM, par exemple :
@@ -202,9 +206,9 @@ Effectuez les étapes suivantes pour configurer les paramètres de connexion dan
 
       Dans l’URL ci-dessus, spécifiez le nom d’hôte et le port du serveur sur lequel AEM serveur est déployé.
 
-      **Important :**
-
-      Si votre serveur AEM est déployé sur le port 80 ou 443, vous n’avez pas besoin de le spécifier dans l’URL.
+      >[!IMPORTANT]
+      >
+      >Si votre serveur AEM est déployé sur le port 80 ou 443, vous n’avez pas besoin de le spécifier dans l’URL.
 
    - **Authentification :** Choisir parmi **De base \(Nom d’utilisateur/Mot de passe\)** ou **Authentification web**. Si vous sélectionnez **De base** l’authentification que vous devez renseigner dans la variable **Nom d’utilisateur** et **Mot de passe** dans la boîte de dialogue Préférences.
 
@@ -232,7 +236,7 @@ Effectuez les étapes suivantes pour configurer les attributs de profilage :
 
 1. Dans le **Classpath** sélectionnez com.adobe.o2.connector dans l’onglet **Utilisation du module externe de chargement de classe parent avec identifiant** menu déroulant.
 
-   ![](images/DITA%20Extension.png)
+   ![](images/dita-extension.png)
 
 1. Dans le **Extensions** effectuez les modifications suivantes :
 1. 
@@ -286,7 +290,9 @@ L’écran suivant affiche le panneau Guides d’AEM.
 - **Connexion**: Sélectionnez cette option pour vous connecter au serveur AEM. L’option est désactivée lorsque l’auteur XML Oxygen est connecté au serveur AEM.
 - **Actualiser**: Sélectionnez cette option pour obtenir le dernier état des fichiers et du dossier à partir du référentiel AEM.
 
-   **Remarque :** Assurez-vous d’enregistrer vos fichiers avant de les actualiser. Lorsque vous sélectionnez **Actualiser** , vous recevez un avertissement pour enregistrer vos fichiers avant de les actualiser. Si vous n’avez pas enregistré vos fichiers, vous pouvez cliquer sur **Annuler** et les sauver.
+   >[!NOTE]
+   >
+   >Assurez-vous d’enregistrer vos fichiers avant de les actualiser. Lorsque vous sélectionnez **Actualiser** , vous recevez un avertissement pour enregistrer vos fichiers avant de les actualiser. Si vous n’avez pas enregistré vos fichiers, vous pouvez cliquer sur **Annuler** et les sauver.
 
 - **Paramètres**: Vous pouvez utiliser cette option pour ouvrir la boîte de dialogue de préférences générales du module externe.
 - **Déconnexion**: Sélectionnez cette option pour fermer la connexion AEM serveur. Cette option est disponible uniquement si vous utilisez le mode Authentification Web .
@@ -331,9 +337,9 @@ Une fois que vous êtes connecté au référentiel AEM, vous pouvez ouvrir des f
 
 Si vous avez sélectionné la variable **Extraction automatique du fichier lorsqu’il est ouvert** Option \(dans la boîte de dialogue Préférences\), puis à l’ouverture d’un fichier, le fichier est automatiquement extrait et peut être modifié. Pour ouvrir un fichier, vous pouvez cliquer deux fois sur le nom d’un fichier ou cliquer avec le bouton droit sur celui-ci et choisir **Ouvrir** dans le menu contextuel. Si cette option n’est pas sélectionnée, le fichier est ouvert en mode lecture seule.
 
-**Remarque :**
-
-Vous pouvez également double-cliquer sur un fichier pour l’ouvrir.
+>[!NOTE]
+>
+>Vous pouvez également double-cliquer sur un fichier pour l’ouvrir.
 
 ### Ouvrir le fichier dans l’éditeur AEM Guides {#id195GH0V30KX}
 
@@ -370,9 +376,9 @@ Lorsqu’un fichier est extrait, l’icône du fichier change pour afficher son 
 
 Dans la capture d’écran ci-dessus, un fichier extrait par un autre utilisateur s’affiche avec une icône de verrouillage de couleur noire \(A\). Le fichier extrait par l’utilisateur actuel s’affiche avec un verrou de couleur verte \(B\).
 
-**Remarque :**
-
-Si le fichier extrait est supprimé ou déplacé dans un autre dossier d’AEM, un message d’erreur s’affiche lorsque vous archivez le fichier. Assurez-vous que le fichier extrait n’est pas déplacé ni supprimé à l’aide de l’interface web d’AEM.
+>[!NOTE]
+>
+>Si le fichier extrait est supprimé ou déplacé dans un autre dossier d’AEM, un message d’erreur s’affiche lorsque vous archivez le fichier. Assurez-vous que le fichier extrait n’est pas déplacé ni supprimé à l’aide de l’interface web d’AEM.
 
 ### Archivage d’un fichier {#id182CF0J0FHS}
 
@@ -397,15 +403,15 @@ Lorsque vous archivez un fichier, la copie locale du système est stockée dans 
 
 1. \(Facultatif\) Dans la boîte de dialogue Archiver, ajoutez un commentaire dans **Commentaires sur la version** zone de texte.
 
-   **Remarque :**
-
-   Ce commentaire s’affiche dans l’historique AEM version du fichier.
+   >[!NOTE]
+   >
+   >Ce commentaire s’affiche dans l’historique AEM version du fichier.
 
 1. Cliquez sur **OK**.
 
-**Remarque :**
-
-Si le fichier extrait est supprimé ou déplacé dans un autre dossier d’AEM, un message d’erreur s’affiche lorsque vous archivez le fichier. Assurez-vous que le fichier extrait n’est pas déplacé ni supprimé à l’aide de l’interface web d’AEM.
+>[!NOTE]
+>
+>Si le fichier extrait est supprimé ou déplacé dans un autre dossier d’AEM, un message d’erreur s’affiche lorsque vous archivez le fichier. Assurez-vous que le fichier extrait n’est pas déplacé ni supprimé à l’aide de l’interface web d’AEM.
 
 ### Fichiers extraits en mode AEM Guides
 
@@ -512,7 +518,7 @@ Effectuez les étapes suivantes pour rechercher des rubriques :
 
    Le résultat s’affiche dans l’onglet Résultats de la recherche sous la forme d’une liste avec le chemin d’accès au fichier. Si aucun résultat correspondant n’est trouvé pour votre requête, aucun résultat n’est trouvé dans &lt;path of=&quot;&quot; the=&quot;&quot; selected=&quot;&quot; folder=&quot;&quot;> s’affiche.
 
-   ![](images/Search.png)
+   ![](images/search.png)
 
 1. \(Facultatif\) Double-cliquez sur un fichier dans le résultat de recherche pour l’ouvrir dans l’auteur XML Oxygen.
 1. Pour revenir à la vue Repository d’AEM, effectuez l’une des opérations suivantes :
@@ -523,9 +529,9 @@ Effectuez les étapes suivantes pour rechercher des rubriques :
 
 Vous pouvez ouvrir et modifier votre rubrique DITA dans Auteur XML Oxygen à partir de l’interface web d’AEM. Vous devez installer un package dans AEM pour activer cette option. Pour plus d’informations sur l’installation des packages, voir [Installez le package pour activer la fonction d’édition de documents à partir de l’interface web d’AEM](#id182CE0Q0TY4).
 
-**Remarque :**
-
-Le **Modifier dans Oxygen** est accessible à partir de divers emplacements dans AEM : lorsqu’une rubrique est sélectionnée, lorsqu’une rubrique est prévisualisée ou dans l’onglet Sujets et rapports de la console de mappage DITA. Si vous sélectionnez plusieurs rubriques, l’option n’est pas visible dans la barre d’outils.
+>[!NOTE]
+>
+>Le **Modifier dans Oxygen** est accessible à partir de divers emplacements dans AEM : lorsqu’une rubrique est sélectionnée, lorsqu’une rubrique est prévisualisée ou dans l’onglet Sujets et rapports de la console de mappage DITA. Si vous sélectionnez plusieurs rubriques, l’option n’est pas visible dans la barre d’outils.
 
 **Ouvrir une rubrique DITA**
 
@@ -533,9 +539,9 @@ Effectuez les étapes suivantes pour ouvrir une rubrique DITA dans l’auteur XM
 
 1. Sélectionnez une rubrique dans vos ressources, puis cliquez sur **Modifier dans Oxygen** dans la barre d’outils.
 
-   **Remarque :**
-
-   Si la rubrique n’est pas extraite, elle est d’abord extraite, puis ouverte dans Oxygen en mode d’édition.
+   >[!NOTE]
+   >
+   >Si la rubrique n’est pas extraite, elle est d’abord extraite, puis ouverte dans Oxygen en mode d’édition.
 
 1. Sélectionnez Auteur XML Oxygen . *&lt;version>* dans le **Lancer l’application** boîte de message. Vous pouvez sélectionner **Mémoriser mon choix pour les liens AEM** pour enregistrer vos préférences.
 
@@ -546,9 +552,9 @@ Effectuez les étapes suivantes pour modifier une rubrique DITA dans Oxygen XML 
 1. Sélectionnez et extrayez une rubrique dans vos ressources.
 1. Cliquez sur **Modifier dans Oxygen** dans la barre d’outils.
 
-   **Remarque :**
-
-   Si la rubrique n’est pas extraite, elle est d’abord extraite, puis ouverte dans Oxygen en mode d’édition.
+   >[!NOTE]
+   >
+   >Si la rubrique n’est pas extraite, elle est d’abord extraite, puis ouverte dans Oxygen en mode d’édition.
 
 1. Sélectionnez Auteur XML Oxygen . *&lt;version>* dans le **Lancer l’application** boîte de message. Vous pouvez sélectionner **Mémoriser mon choix pour les liens AEM** pour enregistrer vos préférences.
 1. Modifiez la rubrique dans l’auteur XML Oxygen.
@@ -556,18 +562,18 @@ Effectuez les étapes suivantes pour modifier une rubrique DITA dans Oxygen XML 
 
    Pour plus d’informations sur l’archivage d’une rubrique à l’aide du module externe Oxygen pour AEM Guides, voir [Archivage d’un fichier](#id182CF0J0FHS).
 
-   **Remarque :**
-
-   Assurez-vous d’archiver la rubrique à l’aide du module externe Oxygen pour AEM Guides. Si vous archivez à partir de l’interface web d’AEM, les modifications que vous apportez dans l’auteur XML Oxygen ne sont pas enregistrées dans la version archivée de la rubrique.
+   >[!NOTE]
+   >
+   >Assurez-vous d’archiver la rubrique à l’aide du module externe Oxygen pour AEM Guides. Si vous archivez à partir de l’interface web d’AEM, les modifications que vous apportez dans l’auteur XML Oxygen ne sont pas enregistrées dans la version archivée de la rubrique.
 
 
 ## Utilisation des profils d’attribut {#id1827JA002YK}
 
 AEM Guides vous permet de créer et d’associer facilement des attributs conditionnels à l’aide des attributs DITA appropriés. Vous pouvez définir des attributs conditionnels au niveau global ou au niveau du dossier. Les conditions définies globalement sont visibles pour tous les projets et les conditions au niveau du dossier ne sont visibles que dans les projets créés dans le dossier spécifié. Les auteurs de contenu peuvent utiliser ces attributs conditionnels pour conditionner le contenu de leurs rubriques ou mappages DITA qu’ils créent ou utilisent. Pour en savoir plus sur la création d’attributs conditionnels dans AEM à l’aide des AEM Guides, voir *Configuration d’attributs conditionnels pour les profils globaux ou au niveau du dossier* dans les guides d’installation et de configuration d’Adobe Experience Manager.
 
-**Remarque :**
-
-Assurez-vous que vous avez ajouté les attributs conditionnels dans AEM et que vous avez défini [Préférences pour la personnalisation des attributs de profilage](#id1827K0D0OHT) avant d’ajouter des attributs conditionnels à votre contenu.
+>[!NOTE]
+>
+>Assurez-vous que vous avez ajouté les attributs conditionnels dans AEM et que vous avez défini [Préférences pour la personnalisation des attributs de profilage](#id1827K0D0OHT) avant d’ajouter des attributs conditionnels à votre contenu.
 
 Effectuez les étapes suivantes pour ajouter des attributs conditionnels à votre contenu dans l’auteur XML Oxygen :
 
@@ -651,9 +657,9 @@ Solution : Effectuez les étapes suivantes pour activer la fonction de générat
     
     1.  Ouvrez le fichier oxygèneAuthor19.1.vmoptions dans un éditeur de texte.
     
-    **Remarque :**
-    
-    Le numéro de version du fichier peut varier en fonction du numéro de version de l’application installée sur votre système.
+    >[!REMARQUE]
+    >
+    >Le numéro de version du fichier peut varier en fonction du numéro de version de l’application installée sur votre système.
     
     1.  Ajoutez la ligne suivante dans le fichier :
     
