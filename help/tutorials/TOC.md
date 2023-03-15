@@ -2,10 +2,10 @@
 user-guide-title: Tutoriels pour AEM Guides
 user-guide-description: Lisez notre collection de tutoriels pour Adobe Experience Manager Guides.
 breadcrumb-title: Tutoriels AEM Guides
-source-git-commit: 53a4917328626f589f2a9e8243d169fa10a6efff
+source-git-commit: f5591818f3b9479678026a578b29d7e56e55f506
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 18%
+source-wordcount: '214'
+ht-degree: 17%
 
 ---
 
@@ -41,10 +41,13 @@ ht-degree: 18%
       + [Modèle de PDF](./native-pdf/pdf-template.md)
       + [Composants d’un modèle de PDF](./native-pdf/components-pdf-template.md)
       + [Concevoir une mise en page](./native-pdf/design-page-layout.md)
-      + [Utilisation des styles de contenu communs](./native-pdf/stylesheet.md)
-      + [Application d’un style personnalisé aux entrées de la table des matières et au contenu de la rubrique](./native-pdf/custom-style-toc.md)
-      + [Ajout d’un signet personnalisé dans la sortie PDF](./native-pdf/add-custom-bookmark.md)
-      + [Utilisation de JavaScript pour utiliser du contenu ou du style](./native-pdf/use-javascript-content-style.md)
+      + Styles de contenu courants {#content-styles}
+         + [Utilisation des styles de contenu communs](./native-pdf/stylesheet.md)
+         + [Utilisation des styles de barres de modification personnalisés](./native-pdf/change-bar-style.md)
+         + [Application d’un style personnalisé aux entrées de la table des matières et au contenu de la rubrique](./native-pdf/custom-style-toc.md)
+         + [Ajout d’un signet personnalisé dans la sortie PDF](./native-pdf/add-custom-bookmark.md)
+         + [Utilisation de JavaScript pour utiliser du contenu ou du style](./native-pdf/use-javascript-content-style.md)
+         + [Utilisation de styles personnalisés dans les notes de bas de page](./native-pdf/footnote-number-style.md)
    + [Configuration d’un DITA-OT personnalisé](./configuring/setup-a-custom-dita-ot.md)
 + Traduction {#translation}
    + [Exclure les paragraphes de la traduction](./translation/exclude-paragraphs-from-translation.md)
