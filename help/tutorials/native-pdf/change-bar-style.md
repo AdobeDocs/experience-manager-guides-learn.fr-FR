@@ -1,7 +1,7 @@
 ---
 title: Fonction de publication native d’un PDF | Utilisation des styles de barres de modification personnalisés
 description: Découvrez comment appliquer des styles aux barres de modification.
-source-git-commit: 79de97e667bffae8d120deee68a0a82011047cf5
+source-git-commit: b6fd82fd09c04a3deefab51b1064a3b6aea73e47
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
@@ -12,8 +12,7 @@ ht-degree: 0%
 
 Une barre de modification est une ligne verticale qui identifie visuellement le contenu nouveau ou révisé. AEM Guides vous permet d’afficher une barre de modification à gauche du contenu modifié dans les rubriques, ainsi que les rubriques modifiées dans la table des matières de la sortie du PDF.
 
-Pour plus d’informations sur l’affichage de la barre de modifications, voir *Création d’un PDF avec une barre de modification entre les versions publiées* définition dans
-[Publier la sortie du PDF](../web-editor/native-pdf-web-editor.md).
+Pour plus d’informations sur l’affichage de la barre de modifications, voir *Création d’un PDF avec une barre de modification entre les versions publiées* définition dans [Publier la sortie du PDF](../web-editor/native-pdf-web-editor.md).
 
 ## Modification du contenu dans les rubriques
 
