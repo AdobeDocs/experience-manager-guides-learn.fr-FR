@@ -1,21 +1,22 @@
 ---
 title: Notes de mise à jour | Adobe Experience Manager Guides as a Cloud Service, version de février 2023
-description: Dernière version des guides Adobe Experience Manager as a Cloud Service
-source-git-commit: d56855bf9078482ec1676b0eeb7a13df05475d5c
+description: Version de février des guides Adobe Experience Manager as a Cloud Service
+exl-id: c639b136-11ed-4a8b-a595-4bb5da879747
+source-git-commit: ee520ab86ea41df7556a1f40d7bfc5e3617b34ae
 workflow-type: tm+mt
 source-wordcount: '2178'
 ht-degree: 2%
 
 ---
 
-# Dernière version des guides Adobe Experience Manager as a Cloud Service
+# Version de février des guides Adobe Experience Manager as a Cloud Service
 
-## Mise à niveau vers la dernière version
+## Mise à niveau vers la version de février
 
 Mettez à niveau vos guides Adobe Experience Manager actuels as a Cloud Service (plus tard appelés *AEM Guides as a Cloud Service*) en procédant comme suit :
 1. Extrayez le code Git des Cloud Services et passez à la branche configurée dans le pipeline Cloud Services correspondant à l’environnement que vous souhaitez mettre à niveau.
 2. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Services vers la version 2023.2.235.
-3. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la dernière version d’AEM Guides as a Cloud Service.
+3. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version de février d’AEM Guides as a Cloud Service.
 
 ## Étapes d’indexation du contenu existant (uniquement si vous utilisez une version antérieure à la version de septembre des AEM Guides as a Cloud Service)
 
@@ -53,7 +54,7 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 
 ## Nouvelles fonctionnalités et améliorations
 
-AEM Guides as a Cloud Service fournit des améliorations et de nouvelles fonctionnalités dans la dernière version :
+AEM Guides as a Cloud Service fournit des améliorations et de nouvelles fonctionnalités dans la version de février :
 
 ### Génération de rapports à partir de l’éditeur Web
 
