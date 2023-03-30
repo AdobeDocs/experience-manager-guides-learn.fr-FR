@@ -1,9 +1,10 @@
 ---
 title: Principes élémentaires de la publication par les PDF natifs
 description: Découvrez comment publier du PDF à l’aide du moteur PDF natif dans AEM Guides.
-source-git-commit: 285dbf9ea7eb5eb4288dfbdfc977d35b2feef111
+exl-id: e7ba6d2d-ebfb-4400-9b10-c4fb173123cf
+source-git-commit: 093cb6c3b3a523e56f401e813c2b51a414c725d2
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '222'
 ht-degree: 1%
 
 ---
@@ -50,11 +51,6 @@ Au cours de cette session, vous découvrirez les éléments suivants :
 > - On-premise 4.2 ou version ultérieure
 > - Cloud Services 2211 et versions ultérieures
 
-
-## Prochaine session d&#39;experts
-
-- **Rubrique** - À déterminer *(en attente des résultats du questionnaire)*
-- **Planifié le** - 30 mars 2023
 
 ## Contactez-nous
 
