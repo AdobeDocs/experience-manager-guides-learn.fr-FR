@@ -1,7 +1,7 @@
 ---
 title: Rapports dans les guides AEM
 description: Découvrez tous les rapports disponibles dans AEM pour aider les utilisateurs à améliorer la qualité du contenu.
-source-git-commit: 91afddedb73a54a3148afe13b456e9a83eeeb0f7
+source-git-commit: b1527db4ee7ee5847026b1ba12c668557c23766f
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 1%
@@ -38,10 +38,10 @@ Au cours de cette session, nous partagerons les rapports d’usine disponibles p
 
 ## Principales acquisitions
 
-Au cours de cette session, vous découvrirez les éléments suivants :
+Au cours de cette session, vous avez appris les éléments suivants :
 - Importance des rapports dans le CCMS
 - Quels rapports sont disponibles prêts à l’emploi ?
-- Comment étendre les fonctionnalités de reporting
+- Comment étendre les fonctionnalités de création de rapports ?
 - Exemples de reporting sur le contenu
 
 
