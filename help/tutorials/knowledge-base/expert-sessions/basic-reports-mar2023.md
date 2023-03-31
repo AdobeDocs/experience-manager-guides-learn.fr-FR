@@ -1,9 +1,9 @@
 ---
 title: Rapports dans les guides AEM
 description: Découvrez tous les rapports disponibles dans AEM pour aider les utilisateurs à améliorer la qualité du contenu.
-source-git-commit: aa5cbe2b8a8be8d7aa8b57d27f71e4a319dd5ccf
+source-git-commit: 98c81b20a5ae6347d7c06a98112564d5a5b3d81b
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '277'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Au cours de cette session, vous avez appris les éléments suivants :
 
 ## Ressources connexes
 
-- [PDF de téléchargement](./assets/aem-guides-expert-session-reports-documentation.pdf) pour créer des rapports similaires aux cas d’utilisation illustrés dans la session.
+- **[PDF de téléchargement](./assets/aem-guides-expert-session-reports-documentation.pdf)** pour comprendre les détails des rapports présentés dans la session.
 
 - **Vidéos de présentation** -  [Experience League](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/videos/output-generation/working-with-reports.html?lang=en)
 
