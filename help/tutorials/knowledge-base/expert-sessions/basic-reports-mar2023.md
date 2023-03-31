@@ -1,26 +1,26 @@
 ---
 title: Rapports dans les guides AEM
 description: Découvrez tous les rapports disponibles dans AEM pour aider les utilisateurs à améliorer la qualité du contenu.
-source-git-commit: b1527db4ee7ee5847026b1ba12c668557c23766f
+source-git-commit: aa5cbe2b8a8be8d7aa8b57d27f71e4a319dd5ccf
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '278'
 ht-degree: 1%
 
 ---
 
-# Création de contenu web
+# Rapports dans les guides AEM
 
 Dans une configuration organisationnelle, vous souhaitez vérifier l’exhaustivité globale de votre contenu avant de transférer les documents à des utilisateurs finaux. Un tel besoin devient encore plus essentiel dans les environnements multi-utilisateurs et à grande échelle où le contenu peut être réutilisé dans différents contextes. Il est donc nécessaire de valider votre contenu ou votre document. Dans le contexte du contenu structuré, certains types de rapports spécifiques sont généralement nécessaires.
 
 
 ## Présentation de la session
 
-Au cours de cette session, nous partagerons les rapports d’usine disponibles pour les utilisateurs. Nous aborderons dans l’ensemble les types de rapports suivants :
-- Fonctionnalité de création de rapports AEM ressources
+Au cours de cette session, nous avons présenté des rapports d’usine disponibles pour les utilisateurs. Nous avons abordé en détail les sujets suivants :
 - Rapports de document (map) et de rubrique
 - Rapports de métadonnées et options de gestion des métadonnées en masse
-- Affichage des statistiques de réutilisation du contenu
-- Complétude de l’importation de contenu
+- Rapports de réutilisation du contenu
+- Correction de l’importation de contenu
+- Utilisation de la fonctionnalité de création de rapports AEM Assets
 
 
 ## Enregistrement de session
@@ -40,14 +40,13 @@ Au cours de cette session, nous partagerons les rapports d’usine disponibles p
 
 Au cours de cette session, vous avez appris les éléments suivants :
 - Importance des rapports dans le CCMS
-- Quels rapports sont disponibles prêts à l’emploi ?
-- Comment étendre les fonctionnalités de création de rapports ?
-- Exemples de reporting sur le contenu
+- rapports prêts à l’emploi disponibles
+- exemples de reporting sur le contenu
 
 
 ## Ressources connexes
 
-- Au cours de cette session, nous avons présenté plusieurs rapports. Pour créer des rapports similaires, consultez les étapes décrites dans le document ci-joint. [Télécharger le PDF](./assets/aem-guides-expert-session-reports-documentation.pdf)
+- [PDF de téléchargement](./assets/aem-guides-expert-session-reports-documentation.pdf) pour créer des rapports similaires aux cas d’utilisation illustrés dans la session.
 
 - **Vidéos de présentation** -  [Experience League](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/videos/output-generation/working-with-reports.html?lang=en)
 
@@ -58,8 +57,8 @@ Au cours de cette session, vous avez appris les éléments suivants :
 >[!NOTE]
 >
 > Les fonctionnalités affichées dans cette session sont disponibles dans les versions suivantes des AEM Guides :
-> - On-premise 4.2 ou version ultérieure
-> - Cloud Services 2302 ou version ultérieure
+> - On-prem : 4.2 ou version ultérieure
+> - Cloud Services : 2302 ou version ultérieure
 
 
 
