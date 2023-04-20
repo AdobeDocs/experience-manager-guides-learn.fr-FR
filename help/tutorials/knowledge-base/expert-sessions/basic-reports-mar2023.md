@@ -1,7 +1,8 @@
 ---
 title: Rapports dans les guides AEM
 description: Découvrez tous les rapports disponibles dans AEM pour aider les utilisateurs à améliorer la qualité du contenu.
-source-git-commit: b909e6848c3f81e3350c1ce07165d5ea00564345
+exl-id: f0d761ff-efea-452c-bb8e-865f34a182fc
+source-git-commit: 7871a54f3181fd114e24e0e10cfc15351cefd761
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 1%
@@ -36,7 +37,7 @@ Au cours de cette session, nous avons présenté des rapports d’usine disponib
 - **Audience** - Clients, partenaires et employés d’Adobe
 
 
-## Principales acquisitions
+## Principaux points à retenir
 
 Au cours de cette session, vous avez appris les éléments suivants :
 - Importance des rapports dans le CCMS
@@ -64,7 +65,7 @@ Au cours de cette session, vous avez appris les éléments suivants :
 
 ## Prochaine session d&#39;experts
 
-- **Rubrique** - À déterminer *(en attente des résultats du questionnaire)*
+- **Rubrique** - Configuration du contenu et des modèles
 - **Planifié le** - 27 avril 2023
 
 
