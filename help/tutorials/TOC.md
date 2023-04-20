@@ -2,10 +2,10 @@
 user-guide-title: Tutoriels pour AEM Guides
 user-guide-description: Lisez notre collection de tutoriels pour Adobe Experience Manager Guides.
 breadcrumb-title: Tutoriels AEM Guides
-source-git-commit: f26b8f94e1d7a3c9dd0aaab2eb196a77119e47ac
+source-git-commit: 6351465954bc9ce38151cd0bec339cd0653027f2
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 16%
+source-wordcount: '240'
+ht-degree: 15%
 
 ---
 
@@ -66,15 +66,17 @@ ht-degree: 16%
       + [Création de contenu web](./knowledge-base/expert-sessions/webbased-authoring-jan2023.md)
       + [Principes élémentaires de la publication par les PDF natifs](./knowledge-base/expert-sessions/native-pdf-publishing-essentials-feb23.md)
       + [Rapports dans les guides AEM](./knowledge-base/expert-sessions/basic-reports-mar2023.md)
-   + Publication{#publishing}
-      + [Configuration de la publication basée sur un microservice](./knowledge-base/publishing/configure-microservices.md)
    + Articles {#kb-articles}
       + Création {#authoring}
          + Webeditor {#webeditor}
+            + Personnalisation {#customizing}
+               + [Ajout d’un bouton personnalisé à la barre d’outils](./knowledge-base/kb-articles/authoring/webeditor/customization/add-custom-button-to-webeditor-toolbar.md)
+               + [Ajout de styles personnalisés à webeditor](./knowledge-base/kb-articles/authoring/webeditor/customization/add-custom-styles-to-webeditor.md)
             + Schéma {#schematron}
                + [Validation du schéma](./knowledge-base/kb-articles/authoring/webeditor/schematron/vailidating-with-schematron.md)
       + Publication {#publishing}
          + [Configuration de l’environnement AEM pour la publication de PDF natifs](./knowledge-base/kb-articles/publishing/configuring-aem-environment-for-native-pdf-publishing.md)
          + [FMPS et guides](./knowledge-base/kb-articles/publishing/fmpsandguides.md)
+         + [Configuration de la publication basée sur un microservice](./knowledge-base/publishing/configure-microservices.md)
       + Workflows {#workflows}
          + [Processus de génération de publication](./knowledge-base/kb-articles/workflows/using-post-generation-workflow.md)
