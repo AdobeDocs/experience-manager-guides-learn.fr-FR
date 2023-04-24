@@ -1,9 +1,10 @@
 ---
 title: Configuration de la nouvelle publication basée sur un microservice pour AEM Guides as a Cloud Service
 description: Découvrez comment configurer une nouvelle publication basée sur un microservice pour AEM Guides.
-source-git-commit: c2981b5635353eb84c9e46a03de1b1ed07aa5bf3
+exl-id: 92e3091d-6337-4dc6-9609-12b1503684cd
+source-git-commit: 95c89acd02b798d42c817b52f6f8e0710a0abb76
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
@@ -13,6 +14,10 @@ ht-degree: 0%
 Le nouveau microservice de publication permet aux utilisateurs d’exécuter simultanément des charges de travail de publication volumineuses sur AEM Guides as a Cloud Service et d’exploiter la plate-forme Adobe I/O Runtime sans serveur de pointe.
 
 Pour chaque demande de publication AEM Guides as a Cloud Service exécute un conteneur distinct qui se met à l’échelle horizontalement en fonction des demandes de l’utilisateur. Cela permet aux utilisateurs d’exécuter plusieurs requêtes de publication et d’obtenir de meilleures performances que leurs serveurs d’AEM on-premise volumineux.
+
+>[!NOTE]
+>
+> Actuellement, la publication basée sur un microservice dans AEM Guides ne prend en charge que la sortie PDF à l’aide de la publication PDF native ou via DITA-OT. Dans les prochaines versions, nous ajouterons une prise en charge de la publication basée sur les microservices pour davantage de types de sortie.
 
 Comme le nouveau service de publication dans le cloud est sécurisé par l’authentification basée sur JWT d’Adobe IMS, les clients doivent suivre les étapes ci-dessous pour intégrer leurs environnements aux processus d’authentification par jeton sécurisés d’Adobe et commencer à utiliser la nouvelle solution de publication évolutive basée sur le cloud.
 
@@ -87,7 +92,7 @@ Une fois cela fait, vous devriez pouvoir utiliser la nouvelle publication cloud 
 
 ## Annexe {#appendix}
 
-**File**:
+**Fichier**:
 `com.adobe.aem.guides.eventing.ImsConfiguratorService.cfg.json`
 
 **Contenu**:
@@ -99,9 +104,11 @@ Une fois cela fait, vous devriez pouvoir utiliser la nouvelle publication cloud 
 }
 ```
 
-**File**: `com.adobe.fmdita.publishworkflow.PublishWorkflowConfigurationService.xml`
+**Fichier**: `com.adobe.fmdita.publishworkflow.PublishWorkflowConfigurationService.xml`
 
 **Contenu**:
+* `dxml.use.publish.microservice`: Basculez pour activer la publication de PDF reposant sur un microservice à l’aide de DITA-OT.
+* `dxml.use.publish.microservice.native.pdf`: Basculer pour activer la publication de PDF natifs en fonction du microservice
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -109,5 +116,6 @@ Une fois cela fait, vous devriez pouvoir utiliser la nouvelle publication cloud 
           jcr:primaryType="sling:OsgiConfig"
           dxml.publish.microservice.url="https://adobeioruntime.net/api/v1/web/543112-guidespublisher/default/publishercaller.json"
           dxml.use.publish.microservice="{Boolean}true"
+          dxml.use.publish.microservice.native.pdf="{Boolean}true"
 />
 ```
