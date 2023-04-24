@@ -2,10 +2,10 @@
 title: Vérifier l’orthographe et rechercher/remplacer
 description: Utilisation de la vérification orthographique et de la recherche/remplacement dans AEM Guides
 exl-id: 5f39618d-a919-4d3c-a4de-2896f2d1bf20
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -19,9 +19,9 @@ Correction d’une erreur d’orthographe
 
 1. Recherchez une erreur dans une rubrique ouverte, affichée avec un trait de soulignement rouge.
 
-2. Maintenez la touche Ctrl enfoncée et cliquez sur le bouton secondaire de la souris dans le mot.
+1. Maintenez la touche Ctrl enfoncée et cliquez sur le bouton secondaire de la souris dans le mot.
 
-3. Choisissez l’orthographe correcte parmi les suggestions.
+1. Choisissez l’orthographe correcte parmi les suggestions.
 
 Si l’orthographe correcte n’est pas suggérée, vous pouvez toujours modifier le mot manuellement.
 
@@ -31,19 +31,19 @@ Vous pouvez utiliser un outil de vérification orthographique autre que le dicti
 
 1. Accédez à **Paramètres de l’éditeur**.
 
-2. Sélectionnez la **Général** l’onglet paramètres .
+1. Sélectionnez la **Général** l’onglet paramètres .
 
    ![Configuration de la vérification orthographique](images/lesson-11/configure-dictionary.png)
 
-3. Vous disposez de deux options :
+1. Deux options sont disponibles :
 
    - **Vérifier l’orthographe du navigateur** — le paramètre par défaut où la vérification orthographique utilise le dictionnaire intégré du navigateur.
 
    - **Vérifier l’orthographe AEM** — utilisez cette option pour créer une liste de mots personnalisée à l’aide d’AEM dictionnaire personnalisé.
 
-4. Choisir **Vérifier l’orthographe AEM**.
+1. Choisir **Vérifier l’orthographe AEM**.
 
-5. Cliquez sur [!UICONTROL **Enregistrer**].
+1. Cliquez sur [!UICONTROL **Enregistrer**].
 
 Configuration d’un dictionnaire personnalisé
 
@@ -51,15 +51,15 @@ L’administrateur peut modifier les paramètres afin que le dictionnaire d’AE
 
 1. Accédez au **Outils** volet.
 
-2. Connectez-vous à **CRXDE Lite**.
+1. Connectez-vous à **CRXDE Lite**.
 
    ![Icône du CRXDE Lite de l’interface utilisateur AEM](images/lesson-11/crxde-lite.png)
 
-3. Accédez au **_Noeud /apps/fmdita/config_**.
+1. Accédez au **_Noeud /apps/fmdita/config_**.
 
    ![Noeud de configuration du CRXDE Lite](images/lesson-11/config-node.png)
 
-4. Créez un fichier.
+1. Créez un fichier.
 
    a. Cliquez avec le bouton droit sur le dossier de configuration.
 
@@ -73,13 +73,13 @@ L’administrateur peut modifier les paramètres afin que le dictionnaire d’AE
 
    d. Cliquez sur [!UICONTROL **OK**].
 
-5. Ouvrez le fichier .
+1. Ouvrez le fichier.
 
-6. Ajoutez une liste de mots à inclure dans votre dictionnaire personnalisé.
+1. Ajoutez une liste de mots à inclure dans votre dictionnaire personnalisé.
 
-7. Cliquez sur [!UICONTROL **Enregistrer tout**].
+1. Cliquez sur [!UICONTROL **Enregistrer tout**].
 
-8. Fermez le fichier.
+1. Fermez le fichier.
 
 Les auteurs peuvent avoir besoin de redémarrer leur session de l’éditeur web pour obtenir la liste de mots personnalisée mise à jour dans le dictionnaire d’AEM.
 
@@ -89,23 +89,23 @@ Les auteurs peuvent avoir besoin de redémarrer leur session de l’éditeur web
 
    ![Icône Rechercher un remplacement](images/lesson-11/find-replace-icon.png)
 
-2. Dans la barre d’outils inférieure, saisissez un mot ou une expression.
+1. Dans la barre d’outils inférieure, saisissez un mot ou une expression.
 
-3. Cliquez sur [!UICONTROL **Rechercher**].
+1. Cliquez sur [!UICONTROL **Rechercher**].
 
-4. Si nécessaire, saisissez un mot pour remplacer le mot trouvé.
+1. Si nécessaire, saisissez un mot pour remplacer le mot trouvé.
 
-5. Cliquez sur [!UICONTROL **Remplacer**].
+1. Cliquez sur [!UICONTROL **Remplacer**].
 
 ## Recherche et remplacement dans le référentiel
 
 1. Accédez au **Référentiel**.
 
-2. Cliquez sur le bouton [!UICONTROL **Rechercher et remplacer**] en bas à gauche de l’écran.
+1. Cliquez sur le bouton [!UICONTROL **Rechercher et remplacer**] en bas à gauche de l’écran.
 
-3. Cliquez sur le bouton [!UICONTROL **Afficher les paramètres**] icône .
+1. Cliquez sur le bouton [!UICONTROL **Afficher les paramètres**] icône .
 
-4. Choisissez l’une
+1. Choisissez l’une
 
    - **Extraction de fichier avant remplacement** — s’il est activé par un administrateur, le fichier est extrait automatiquement avant de remplacer les termes de recherche.
 
@@ -113,14 +113,14 @@ Les auteurs peuvent avoir besoin de redémarrer leur session de l’éditeur web
 
    ![Rechercher un remplacement dans le référentiel](images/lesson-11/repository-find-replace.png)
 
-5. Cliquez sur le bouton [!UICONTROL **Appliquer un filtre**] pour sélectionner le chemin d’accès dans le référentiel où vous souhaitez effectuer la recherche.
+1. Cliquez sur le bouton [!UICONTROL **Appliquer un filtre**] pour sélectionner le chemin d’accès dans le référentiel où vous souhaitez effectuer la recherche.
 
-6. Saisissez les termes à rechercher et à remplacer.
+1. Saisissez les termes à rechercher et à remplacer.
 
-7. Si nécessaire, sélectionnez **Créer une version après remplacement**.
+1. Si nécessaire, sélectionnez **Créer une version après remplacement**.
 
-8. Cliquez sur [!UICONTROL **Rechercher**].
+1. Cliquez sur [!UICONTROL **Rechercher**].
 
-9. Ouvrez le fichier souhaité et utilisez les flèches pour naviguer d’un résultat trouvé à l’autre.
+1. Ouvrez le fichier souhaité et utilisez les flèches pour naviguer d’un résultat trouvé à l’autre.
 
    ![Rechercher un remplacement de l’interface de navigation](images/lesson-11/find-replace-navigation.png)

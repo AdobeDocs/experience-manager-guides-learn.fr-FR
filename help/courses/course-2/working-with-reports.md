@@ -2,10 +2,10 @@
 title: Utilisation des rapports
 description: Utilisation des rapports dans [!DNL Adobe Experience Manager Guides]
 exl-id: 755506a6-c416-4a8c-8359-8db7e63a90a4
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '694'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -27,11 +27,11 @@ Vous pouvez télécharger des fichiers d’exemple pour l’exercice ici.
 
    ![ellipses-9.png](images/ellipses-9.png)
 
-2. Sélectionner **[!UICONTROL Chargement de ressources]**.
+1. Sélectionner **[!UICONTROL Chargement de ressources]**.
 
    ![upload-assets.png](images/upload-assets.png)
 
-3. Sélectionnez les fichiers que vous souhaitez charger dans le dossier, puis sélectionnez **Télécharger**.
+1. Sélectionnez les fichiers que vous souhaitez charger dans le dossier, puis sélectionnez **Télécharger**.
 
 Les fichiers DITA s’ouvrent et vous devez les examiner pour détecter des problèmes liés à un contenu manquant, à des références croisées ou des références croisées.
 
@@ -41,15 +41,15 @@ Les fichiers DITA s’ouvrent et vous devez les examiner pour détecter des prob
 
    ![ellipses-9.png](images/ellipses-9.png)
 
-2. Sélectionner **Créer > Carte**.
+1. Sélectionner **Créer > Carte**.
 
    ![create-map.png](images/create-map.png)
 
    La boîte de dialogue Créer une carte s’affiche.
 
-3. Dans le champ Modèle, sélectionnez **Bookmap** (ou **Carte** selon le type de contenu que vous créez) dans le menu déroulant et attribuez un titre à votre carte.
+1. Dans le champ Modèle, sélectionnez **Bookmap** (ou **Carte** selon le type de contenu que vous créez) dans le menu déroulant et attribuez un titre à votre carte.
 
-4. Sélectionnez **Créer**.
+1. Sélectionnez **Créer**.
 
 Votre carte est créée et le rail de gauche passe automatiquement de la vue Référentiel à la vue Carte.
 
@@ -60,22 +60,22 @@ Il s’agit de l’icône Modifier qui vous permet d’ouvrir la carte dans l’
 
    ![edit-map.png](images/edit-map.png)
 
-2. Revenez à la vue Repository en sélectionnant l’icône Repository .
+1. Revenez à la vue Repository en sélectionnant l’icône Repository .
 
    ![repository-button.png](images/repository-button.png)
 
-3. Ajoutez une rubrique au mappage en la faisant glisser du référentiel vers le mappage de l’éditeur.
+1. Ajoutez une rubrique au mappage en la faisant glisser du référentiel vers le mappage de l’éditeur.
 L’indicateur de ligne vous indique où sera placée votre rubrique.
 
-4. Continuez à ajouter des rubriques selon vos besoins.
+1. Continuez à ajouter des rubriques selon vos besoins.
 
-5. Lorsque vous avez terminé, sélectionnez **Enregistrer comme nouvelle version.**
+1. Lorsque vous avez terminé, sélectionnez **Enregistrer comme nouvelle version.**
 
    ![save-as-new-version.png](images/save-as-new-version.png)
 
-6. Dans le *Commentaires sur la nouvelle version* , saisissez un commentaire descriptif.
+1. Dans le *Commentaires sur la nouvelle version* , saisissez un commentaire descriptif.
 
-7. Sélectionnez **Enregistrer**.
+1. Sélectionnez **Enregistrer**.
 
 ## Génération d’une sortie de site AEM
 
@@ -84,16 +84,16 @@ L’indicateur de ligne vous indique où sera placée votre rubrique.
    ![open-map-dashboard.png](images/open-map-dashboard.png)
 
    Le tableau de bord des cartes s’ouvre dans un autre onglet.
-2. Dans l’onglet Paramètres prédéfinis de sortie, sélectionnez **AEM site**.
+1. Dans l’onglet Paramètres prédéfinis de sortie, sélectionnez **AEM site**.
 
    ![aem-site-checkbox](images/aem-site-checkbox.png)
 
-3. Sélectionner **Générer**.
+1. Sélectionner **Générer**.
 
-4. Accédez à la page Sorties pour afficher l’état des sorties générées.
+1. Accédez à la page Sorties pour afficher l’état des sorties générées.
 En cas d’erreur, l’onglet Sorties peut afficher un cercle orange sous la colonne Paramètre de génération au lieu de vert, ce qui indique que la génération est terminée.
 
-5. Sélectionnez le lien situé sous la colonne Paramètre de génération pour ouvrir la sortie générée.
+1. Sélectionnez le lien situé sous la colonne Paramètre de génération pour ouvrir la sortie générée.
 Vérifiez que le contenu est manquant dans la sortie.
 
 ## Onglet Rapports
@@ -114,9 +114,9 @@ Si des images sont manquantes dans vos fichiers, il est possible que le contenu 
 
    ![image-ellipsis.png](images/image-ellipsis.png)
 
-2. Sélectionner **[!UICONTROL Chargement de ressources]**, puis sélectionnez les images manquantes.
+1. Sélectionner **[!UICONTROL Chargement de ressources]**, puis sélectionnez les images manquantes.
 
-3. Sélectionnez **Télécharger**.
+1. Sélectionner **Télécharger**.
 
 Les images manquantes ont été téléchargées. Désormais, une nouvelle sortie de site AEM affichera ces images et l’onglet Rapports n’affichera plus les erreurs d’image manquantes.
 
@@ -132,11 +132,11 @@ En plus de la variable [!UICONTROL Chargement de ressources] vous pouvez téléc
 
    ![réutilisation-ellipsis.png](images/reuse-ellipsis.png)
 
-2. Sélectionner **Affichage dans l’interface utilisateur d’Assets**.
+1. Sélectionner **Affichage dans l’interface utilisateur d’Assets**.
 
    ![assets_ui.png](images/assets_ui.png)
 
-3. Faites glisser et déposez le fichier dans le dossier .
+1. Faites glisser et déposez le fichier dans le dossier .
 Le fichier est téléchargé et l’erreur conref est résolue.
 
 Toutes les erreurs ont maintenant été résolues. La page Rapports indique qu’il n’y a plus d’erreurs et la génération d’un site AEM entraîne une sortie complète sans composants manquants.

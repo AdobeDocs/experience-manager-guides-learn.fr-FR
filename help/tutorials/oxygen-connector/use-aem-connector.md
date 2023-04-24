@@ -1,9 +1,11 @@
 ---
 title: Module externe Oxygen pour les guides Adobe Experience Manager
 description: Découvrez comment utiliser le module externe Oxygen pour les guides Adobe Experience Manager pour créer et gérer votre contenu.
-source-git-commit: c3d50c3fc9f12d98942b6cb68512e01559b47d93
+hide: true
+hidefromtoc: true
+source-git-commit: 96347fed96979eb735dc55c32fcda90cc70ddcb4
 workflow-type: tm+mt
-source-wordcount: '5792'
+source-wordcount: '5762'
 ht-degree: 1%
 
 ---
@@ -111,11 +113,9 @@ En tant qu’administrateur AEM, effectuez les étapes suivantes pour installer 
 1. Récupérez le fichier .zip du module auprès de votre équipe informatique.
 1. Connectez-vous à votre instance AEM *\(en tant qu’administrateur\)* et accédez au gestionnaire de modules CRX. L’URL par défaut pour accéder au gestionnaire de modules est :
 
-   ```
-   http://<server name>:<port>/crx/packmgr/index.jsp
-   ```
+   `http://<server name>:<port>/crx/packmgr/index.jsp`
 
-   Le Gestionnaire de modules gère les modules dans l’installation locale d’AEM. Pour plus d’informations sur l’utilisation du gestionnaire de modules, voir [Utilisation de modules](https://docs.adobe.com/docs/en/aem/6-3/administer/content/package-manager.html) dans AEM documentation.
+   Le gestionnaire de modules gère les modules de votre installation AEM locale. Pour plus d’informations sur l’utilisation du gestionnaire de modules, voir [Utilisation de modules](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=en) dans AEM documentation.
 
    ![](images/package-manager.png)
 
@@ -161,13 +161,25 @@ Mettez à jour les fichiers donnés pour configurer les paramètres d’authenti
 
 Ajoutez les lignes suivantes dans env.sh.
 
-```
---illegal-access=permit\--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED\--add-exports=javafx.controls/com.sun.javafx.scene.control=ALL-UNNAMED\--add-exports=javafx.graphics/com.sun.javafx.stage=ALL-UNNAMED\--add-exports=javafx.graphics/com.sun.javafx.scene=ALL-UNNAMED\--add-exports=javafx.graphics/com.sun.javafx.scene.traversal=ALL-UNNAMED\--add-exports=javafx.graphics/com.sun.javafx.tk=ALL-UNNAMED\--add-exports=javafx.graphics/com.sun.glass.ui=ALL-UNNAMED\--add-opens=javafx.graphics/com.sun.glass.ui=ALL-UNNAMED\--add-opens=javafx.graphics/javafx.stage=ALL-UNNAMED\--add-opens=javafx.graphics/com.sun.javafx.tk.quantum=ALL-UNNAMED\--add-exports=java.desktop/sun.awt=ALL-UNNAMED\--add-opens javafx.swing/javafx.embed.swing=ALL-UNNAMED
+```java
+--illegal-access=permit\
+--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED\
+--add-exports=javafx.controls/com.sun.javafx.scene.control=ALL-UNNAMED\
+--add-exports=javafx.graphics/com.sun.javafx.stage=ALL-UNNAMED\
+--add-exports=javafx.graphics/com.sun.javafx.scene=ALL-UNNAMED\
+--add-exports=javafx.graphics/com.sun.javafx.scene.traversal=ALL-UNNAMED\
+--add-exports=javafx.graphics/com.sun.javafx.tk=ALL-UNNAMED\
+--add-exports=javafx.graphics/com.sun.glass.ui=ALL-UNNAMED\
+--add-opens=javafx.graphics/com.sun.glass.ui=ALL-UNNAMED\
+--add-opens=javafx.graphics/javafx.stage=ALL-UNNAMED\
+--add-opens=javafx.graphics/com.sun.javafx.tk.quantum=ALL-UNNAMED\
+--add-exports=java.desktop/sun.awt=ALL-UNNAMED\
+--add-opens javafx.swing/javafx.embed.swing=ALL-UNNAMED
 ```
 
 Ajoutez les lignes suivantes dans le fichier oxygèneAuthor.sh :
 
-```
+```java
 -Djdk.module.illegalAccess=permit\-Djava.ipc.external=true\
 ```
 
@@ -175,13 +187,13 @@ Ajoutez les lignes suivantes dans le fichier oxygèneAuthor.sh :
 
 Ajoutez les lignes suivantes dans env.bat.
 
-```
+```java
 --illegal-access=permit --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED --add-exports=javafx.controls/com.sun.javafx.scene.control=ALL-UNNAMED --add-exports=javafx.graphics/com.sun.javafx.stage=ALL-UNNAMED --add-exports=javafx.graphics/com.sun.javafx.scene=ALL-UNNAMED --add-exports=javafx.graphics/com.sun.javafx.scene.traversal=ALL-UNNAMED --add-exports=javafx.graphics/com.sun.javafx.tk=ALL-UNNAMED --add-exports=javafx.graphics/com.sun.glass.ui=ALL-UNNAMED --add-opens=javafx.graphics/com.sun.glass.ui=ALL-UNNAMED --add-opens=javafx.graphics/javafx.stage=ALL-UNNAMED --add-opens=javafx.graphics/com.sun.javafx.tk.quantum=ALL-UNNAMED --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-opens javafx.swing/javafx.embed.swing=ALL-UNNAMED
 ```
 
 Ajoutez les lignes suivantes dans le fichier oxygèneAuthor.bat.
 
-```
+```java
 -Djdk.module.illegalAccess=permit -Djava.ipc.external=true
 ```
 
@@ -200,7 +212,7 @@ Effectuez les étapes suivantes pour configurer les paramètres de connexion dan
 1. Indiquez les informations suivantes :
    - **URL du serveur**: URL du serveur AEM, par exemple :
 
-      ```
+      ```http
       http[s]://<host>:<port>
       ```
 
@@ -349,11 +361,11 @@ Si vous souhaitez utiliser les éditeurs disponibles dans AEM Guides, vous pouve
 
 1. Sélectionner **Ouvrir dans** dans le menu contextuel, sélectionnez l’une des options suivantes :
 
-- **Éditeur de rubrique web**: Si le fichier que vous ouvrez est un fichier .xml ou .dita, vous pouvez l’ouvrir pour le modifier dans l’éditeur web. Choisissez la **Éditeur de rubrique web** pour ouvrir le fichier sélectionné à modifier dans l’éditeur Web.
+   - **Éditeur de rubrique web**: Si le fichier que vous ouvrez est un fichier .xml ou .dita, vous pouvez l’ouvrir pour le modifier dans l’éditeur web. Choisissez la **Éditeur de rubrique web** pour ouvrir le fichier sélectionné à modifier dans l’éditeur Web.
 
-- **Tableau de bord des cartes**: Vous pouvez choisir de modifier un fichier .ditamap dans le tableau de bord de mappage, dans lequel vous pouvez effectuer diverses opérations sur le fichier de mappage. Ces opérations dépendent du rôle/groupe auquel vous appartenez.
+   - **Tableau de bord des cartes**: Vous pouvez choisir de modifier un fichier .ditamap dans le tableau de bord de mappage, dans lequel vous pouvez effectuer diverses opérations sur le fichier de mappage. Ces opérations dépendent du rôle/groupe auquel vous appartenez.
 
-- **Éditeur de mappage Web DITA**: Si vous souhaitez ouvrir le fichier .ditamap en vue de le modifier dans l’éditeur de cartes, sélectionnez cette option. À l’aide de l’option Éditeur de mappage DITA, vous pouvez ajouter ou supprimer des rubriques, ajouter des tableaux de relation et effectuer d’autres opérations sur votre carte.
+   - **Éditeur de mappage Web DITA**: Si vous souhaitez ouvrir le fichier .ditamap en vue de le modifier dans l’éditeur de cartes, sélectionnez cette option. À l’aide de l’option Éditeur de mappage DITA, vous pouvez ajouter ou supprimer des rubriques, ajouter des tableaux de relation et effectuer d’autres opérations sur votre carte.
 
 
 ### Extraction de fichiers {#id195HC020TS4}
@@ -361,7 +373,7 @@ Si vous souhaitez utiliser les éditeurs disponibles dans AEM Guides, vous pouve
 Lorsque vous extrayez un fichier, il est stocké localement sur votre système et verrouillé pour modification dans le référentiel AEM. Effectuez les étapes suivantes pour extraire un fichier :
 
 1. Cliquez avec le bouton droit de la souris sur un fichier dans le panneau AEM Guides.
-1. Sélectionnez l’une des options suivantes :
+1. Sélectionnez l’une des options suivantes :
    - **Extraction :** Extrait un fichier du référentiel AEM et le rend disponible pour modification.
    - **Extraction avec dépendances**: Extrait un fichier avec ses références directes. Vous pouvez apporter des modifications aux pages parents et enfants à l’aide de cette option. Le module externe Oxygen pour AEM Guides prend en charge l’extraction d’un niveau de dépendances. Par exemple, la carte A fait référence à la rubrique A et la rubrique A à la rubrique B. L’extraction de la carte A entraîne l’extraction de la rubrique A, quel que soit son niveau dans la hiérarchie de la table des matières. Cependant, il n’extrait pas la rubrique B, car elle n’est pas directement liée à partir de la carte A.
    - **Extraction avec dépendances en lecture seule**: Extrait un fichier et télécharge ses dépendances sur votre ordinateur local en tant que copies en lecture seule. Vous ne pouvez pas apporter de modifications aux fichiers dépendants.
@@ -391,15 +403,15 @@ Lorsque vous archivez un fichier, la copie locale du système est stockée dans 
    - **Archivage**: Archivez le fichier sélectionné de votre système local dans AEM référentiel.
    - **Archivage avec les personnes à charge :** Si vous avez extrait un fichier avec ses fichiers dépendants, utilisez cette option pour archiver tous les fichiers dépendants en une seule opération. Lorsque vous sélectionnez cette option, la boîte de dialogue d’archivage s’affiche avec tous les fichiers dépendants. Cliquez sur OK pour archiver tous les fichiers en même temps.
 
-      Si vous n’avez pas extrait les fichiers dépendants, puis que vous sélectionnez cette option, seuls les fichiers dépendants que vous avez \(séparément\) extraits seront archivés. La liste des fichiers n’ayant pas pu être archivés s’affiche :
+   Si vous n’avez pas extrait les fichiers dépendants, puis que vous sélectionnez cette option, seuls les fichiers dépendants que vous avez \(séparément\) extraits seront archivés. La liste des fichiers n’ayant pas pu être archivés s’affiche :
 
-      ![](images/check-in-error.png)
+   ![](images/check-in-error.png)
 
-      Il est vivement recommandé de ne pas déplacer un fichier extrait. Cependant, si un fichier extrait est déplacé vers un autre emplacement, vous devez annuler l’extraction sur ce fichier. Si vous souhaitez apporter des mises à jour à ce fichier, extrayez-le à nouveau, apportez des modifications, puis réarchivez-le. Si vous essayez d’archiver un fichier qui a été déplacé à partir de son emplacement d’origine, une erreur s’affiche.
+   Il est vivement recommandé de ne pas déplacer un fichier extrait. Cependant, si un fichier extrait est déplacé vers un autre emplacement, vous devez annuler l’extraction sur ce fichier. Si vous souhaitez apporter des mises à jour à ce fichier, extrayez-le à nouveau, apportez des modifications, puis réarchivez-le. Si vous essayez d’archiver un fichier qui a été déplacé à partir de son emplacement d’origine, une erreur s’affiche.
 
-      Si un fichier dépendant est extrait dans AEM, l’option Archiver avec les personnes à charge n’affiche pas le fichier dépendant dans la boîte de dialogue Archiver. Pour obtenir la liste des fichiers dépendants extraits dans AEM, vous devez effectuer une opération d’actualisation du dossier.
+   Si un fichier dépendant est extrait dans AEM, l’option Archiver avec les personnes à charge n’affiche pas le fichier dépendant dans la boîte de dialogue Archiver. Pour obtenir la liste des fichiers dépendants extraits dans AEM, vous devez effectuer une opération d’actualisation du dossier.
 
-      De même, si vous avez archivé un fichier dépendant via AEM, la liste de fichiers n’est pas actualisée dans l’auteur Oxygen tant que vous n’avez pas effectué l’opération Actualiser et actualiser les fichiers extraits. Si vous effectuez une Archivage avec des personnes à charge avec certains fichiers archivés par le biais d’AEM, une erreur répertoriant les fichiers qui n’ont pas pu être archivés s’affiche.
+   De même, si vous avez archivé un fichier dépendant via AEM, la liste de fichiers n’est pas actualisée dans l’auteur Oxygen tant que vous n’avez pas effectué l’opération Actualiser et actualiser les fichiers extraits. Si vous effectuez une Archivage avec des personnes à charge avec certains fichiers archivés par le biais d’AEM, une erreur répertoriant les fichiers qui n’ont pas pu être archivés s’affiche.
 
 1. \(Facultatif\) Dans la boîte de dialogue Archiver, ajoutez un commentaire dans **Commentaires sur la version** zone de texte.
 
@@ -447,7 +459,7 @@ Lorsque vous disposez de plusieurs dossiers, il n’est pas facile de détermine
 Effectuez les étapes suivantes pour charger des fichiers ou des dossiers :
 
 1. Cliquez avec le bouton droit de la souris sur un dossier dans le panneau AEM Guides.
-1. Sélectionnez l’une des options suivantes :
+1. Sélectionnez l’une des options suivantes :
    - **Télécharger le fichier\(s\)**: Sélectionnez cette option pour charger un ou plusieurs fichiers dans le dossier sélectionné du référentiel AEM. Dans la boîte de dialogue Sélectionner les fichiers à charger, sélectionnez les fichiers et cliquez sur **Ouvrir**.
    - **Chargement avec des dépendances**: Sélectionnez cette option pour charger un fichier DITA avec ses dépendances. Dans la boîte de dialogue Select file to upload (Sélectionner le fichier à charger), sélectionnez les fichiers, puis cliquez sur **Ouvrir**.
    - **Dossier de chargement**: Sélectionnez cette option pour charger un dossier dans le référentiel AEM. Dans la boîte de dialogue Choisir, sélectionnez le dossier et cliquez sur **Choisir**.
@@ -600,45 +612,47 @@ Cette rubrique aborde certains des problèmes les plus courants auxquels vous po
 
 ### Panneau Guides AEM manquants {#id192BH200ZAX}
 
-Problème : Si vous ne voyez pas le panneau Guides d’AEM dans l’auteur XML Oxygen, essayez les solutions suivantes :
+**Problème** - Si vous ne voyez pas le panneau Guides d’AEM dans l’auteur XML Oxygen, essayez les solutions suivantes :
 
-Solution 1 : : 1.  Dans Oxygen XML Author, activez le module externe.
+Solution 1 :
 
-    Cliquez sur **Options** \> **Preferences** \> **Plugins** et sélectionnez **Module externe Oxygen pour les guides Adobe Experience Manager.**
+1. Dans Oxygen XML Author, activez le module externe.
+
+   Cliquez sur **Options** \> **Préférences** \> **Modules externes** et sélectionnez **Module externe Oxygen pour les guides Adobe Experience Manager.**
 
 1. Relancez Oxygen XML Author.
 
 
-Solution 2 : : Si vous ne voyez toujours pas le panneau Guides AEM, activez AEM fenêtre Guides .
+Solution 2 :
 
-    Dans L’Auteur XML Oxygen, Cliquez Sur **Window** \> **Afficher La Vue** \> **AEM Guides**.
+1. Si vous ne voyez toujours pas le panneau Guides AEM, activez AEM fenêtre Guides .
 
-Solution 3 : : Désinstallez et réinstallez le module externe Oxygen pour les guides Adobe Experience Manager.
+   Dans Oxygen XML Author, cliquez sur **Fenêtre** \> **Afficher la vue** \> **Guides d’AEM**.
 
-    - Sous Windows, désinstallez le module externe de la liste **Ajout ou suppression de programmes**. Ensuite, réinstallez le module externe.
-    
-    - Sur Mac, accédez au dossier aem-connector-x.x dans le dossier plugins de Oxygen XML Author, puis déplacez-le vers **Corbeille**. Ensuite, videz le dossier **Corbeille**.
+Solution 3 :
+
+1. Désinstallez et réinstallez le module externe Oxygen pour les guides Adobe Experience Manager.
+
+   - Sous Windows, désinstallez le module externe de **Ajout ou suppression de programmes** liste. Ensuite, réinstallez le module externe.
+
+   - Sur Mac, accédez au dossier aem-connector-x.x dans le dossier plugins de l’auteur XML Oxygen, puis déplacez-le vers **Corbeille**. Ensuite, videz la variable **Corbeille** dossier.
 
 
 ### Configuration du port pour la transformation DITA-OT
 
-Problème : Lorsque vous exécutez une transformation DITA-OT sur des fichiers traités par le module externe, celle-ci échoue avec l’erreur suivante :
+**Problème** - Lorsque vous exécutez une transformation DITA-OT sur des fichiers qui sont traités par le module externe, la transformation échoue avec l’erreur suivante :
 
-    ![](images/proxy-server-path-error.png)
+![](images/proxy-server-path-error-new.png)
 
-Solution : Ce problème a été corrigé en ajoutant un serveur proxy entre DITA-OT et le module externe. Ce serveur proxy traite et partage tous les fichiers demandés par DITA-OT pour les transformations. Le port par défaut sur lequel ce serveur a été configuré est : `5972`. Si vous utilisez ce port pour un autre serveur, vous pouvez spécifier un autre port pour le serveur proxy.
+**Solution** - Ce problème a été corrigé en ajoutant un serveur proxy entre DITA-OT et le module externe. Ce serveur proxy traite et partage tous les fichiers demandés par DITA-OT pour les transformations. Le port par défaut sur lequel ce serveur a été configuré est : `5972`. Si vous utilisez ce port pour un autre serveur, vous pouvez spécifier un autre port pour le serveur proxy.
 
-    Effectuez les étapes suivantes pour modifier le port par défaut du serveur proxy :
-    
-    1.  Accédez à votre répertoire racine \(utilisateur\).
-    
-    2.  Créez un fichier nommé aem\_connector\_proxy.
-    
-    3.  Ouvrez le fichier dans n’importe quel éditeur de texte et ajoutez un numéro de port disponible dans la première ligne du fichier.
-    
-     4.  Enregistrez et fermez le fichier.
-    
-     5.  Redémarrez l’auteur XML Oxygen et exécutez la transformation DITA-OT.
+Effectuez les étapes suivantes pour modifier le port par défaut du serveur proxy :
+
+1. Accédez à votre répertoire racine \(utilisateur\).
+1. Créez un fichier nommé aem\_connector\_proxy.
+1. Ouvrez le fichier dans n’importe quel éditeur de texte et ajoutez un numéro de port disponible dans la première ligne du fichier.
+1. Enregistrez et fermez le fichier.
+1. Redémarrez l’auteur XML Oxygen et exécutez la transformation DITA-OT.
 
 
 ### AEM panneau Guides ne navigue pas jusqu’à l’emplacement du fichier ouvert
@@ -653,38 +667,36 @@ Problème : Par défaut, le module externe Oxygen pour AEM Guides ne génère au
 
 Solution : Effectuez les étapes suivantes pour activer la fonction de génération de journaux dans le module externe :
 
-    1.  Accédez à l’emplacement d’installation de l’auteur XML Oxygen.
-    
-    1.  Ouvrez le fichier oxygèneAuthor19.1.vmoptions dans un éditeur de texte.
-    
-    >[!REMARQUE]
-    >
-    >Le numéro de version du fichier peut varier en fonction du numéro de version de l’application installée sur votre système.
-    
-    1.  Ajoutez la ligne suivante dans le fichier :
-    
-    &quot;
-    -Djava.util.logging.config.file=./log.properties
-    &quot;
-    
-    1.  Enregistrez et fermez le fichier.
-    
-    1.  Au même emplacement, créez un fichier nommé log.properties avec le contenu suivant :
-    
-    &quot;
-    handlers=java.util.logging.FileHandler
-    java.util.logging.FileHandler.level = DEBUG
-    java.util.logging.FileHandler.limit = 1048576
-    java.util.logging.FileHandler.count = 5
-    java.util.logging.FileHandler.pattern = %h/aem-plugin%g.log
-    java.util.logging.FileHandler.formatter = java.util.logging.SimpleFormatter
-    java.util.logging.FileHandler.format=[%1$tF %1$tT] [%4$s] %5$s %n
-    &quot;
-    
-    1.  Enregistrez et fermez le fichier.
-    
-    1.  Démarrez Oxygen XML Author.
-    
-    
-    Le module externe crée désormais des journaux dans le répertoire racine de l’utilisateur avec le nom de fichier aem-pluginX.log \(*où X indique le numéro de rotation*\).
+1. Accédez à l’emplacement d’installation de l’auteur XML Oxygen.
 
+1. Ouvrez le fichier oxygèneAuthor19.1.vmoptions dans un éditeur de texte.
+
+   >[!NOTE]
+   >
+   >Le numéro de version du fichier peut varier en fonction du numéro de version de l’application installée sur votre système.
+
+1. Ajoutez la ligne suivante dans le fichier :
+
+   ```java
+   -Djava.util.logging.config.file=./log.properties
+   ```
+
+1. Enregistrez et fermez le fichier.
+
+1. Au même emplacement, créez un fichier nommé log.properties avec le contenu suivant :
+
+   ```java
+   handlers=java.util.logging.FileHandler
+   java.util.logging.FileHandler.level = DEBUG
+   java.util.logging.FileHandler.limit = 1048576
+   java.util.logging.FileHandler.count = 5
+   java.util.logging.FileHandler.pattern = %h/aem-plugin%g.log
+   java.util.logging.FileHandler.formatter = java.util.logging.SimpleFormatter
+   java.util.logging.FileHandler.format=[%1$tF %1$tT] [%4$s] %5$s %n
+   ```
+
+1. Enregistrez et fermez le fichier.
+1. Démarrez Oxygen XML Author.
+
+
+Le module externe crée désormais des journaux dans le répertoire racine de l’utilisateur avec le nom de fichier aem-pluginX.log \(*où X indique le numéro de rotation*\).

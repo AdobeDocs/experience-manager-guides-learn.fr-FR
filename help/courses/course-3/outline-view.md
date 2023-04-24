@@ -2,7 +2,7 @@
 title: Mode plan
 description: Utilisation de la vue de plan dans AEM guides
 exl-id: 300f550f-dc79-4971-b8ba-43fe8499ea02
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
@@ -31,7 +31,7 @@ La vue de contour bascule de développée à réduite.
 
 1. Cliquez sur un élément pour accéder à cet emplacement.
 
-2. Cliquez sur le bouton [!UICONTROL **Ellipse**] en regard d’un élément pour accéder aux options de raccourci.
+1. Cliquez sur le bouton [!UICONTROL **Ellipse**] en regard d’un élément pour accéder aux options de raccourci.
 
    ![Menu contextuel](images/lesson-6/shortcut-options.png)
 
@@ -41,7 +41,7 @@ Un nouvel ID peut être généré automatiquement en fonction de la configuratio
 
 1. Cliquez sur le bouton [!UICONTROL **Ellipse**] en regard d’un élément.
 
-2. Choisir **Générer des identifiants**.
+1. Choisir **Générer des identifiants**.
 
    ![Menu contextuel Ellipse](images/lesson-6/ellipsis-popup.png)
 
@@ -53,7 +53,7 @@ Les éléments peuvent être réorganisés dans la vue Ligne.
 
 1. Cliquez sur un élément et faites-le glisser vers un autre emplacement de la vue Ligne.
 
-2. Déposez l’élément au-dessus d’un autre élément pour le remplacer. Cette action est indiquée par un carré autour de l’élément à remplacer.
+1. Déposez l’élément au-dessus d’un autre élément pour le remplacer. Cette action est indiquée par un carré autour de l’élément à remplacer.
 
    OU
 
@@ -63,13 +63,13 @@ Les éléments peuvent être réorganisés dans la vue Ligne.
 
 1. Sélectionnez l’élément .
 
-2. Cliquez sur le bouton [!UICONTROL **Ellipse**].
+1. Cliquez sur le bouton [!UICONTROL **Ellipse**].
 
-3. Sélectionner **Renommer l’élément**.
+1. Sélectionner **Renommer l’élément**.
 
    ![Renommer le menu contextuel de l’élément](images/lesson-6/rename-before.png)
 
-4. Double-cliquez sur le nom d’un nouvel élément.
+1. Double-cliquez sur le nom d’un nouvel élément.
 
 L’élément a maintenant été renommé.
 
@@ -77,9 +77,9 @@ L’élément a maintenant été renommé.
 
 1. Sélectionnez l’élément que vous souhaitez renvoyer à la ligne.
 
-2. Cliquez sur le bouton [!UICONTROL **Ellipse**].
+1. Cliquez sur le bouton [!UICONTROL **Ellipse**].
 
-3. Sélectionner [!UICONTROL **Extraire l’élément**].
+1. Sélectionner [!UICONTROL **Extraire l’élément**].
 
 Le contenu reste mais la structure a été supprimée.
 
@@ -89,7 +89,7 @@ Le contenu reste mais la structure a été supprimée.
 
    ![Filtres](images/lesson-6/filter-icon.png)
 
-2. Choisissez l’une **Tous** pour afficher tous les éléments ou **Liens rompus** pour rechercher et corriger des références rompues.
+1. Choisissez l’une **Tous** pour afficher tous les éléments ou **Liens rompus** pour rechercher et corriger des références rompues.
 
 ## Recherche avec la vue Plan
 
@@ -99,4 +99,4 @@ Une recherche peut être limitée et renvoyer des résultats en fonction d’un 
 
    ![Barre de recherche](images/lesson-6/search-bar.png)
 
-2. Choisissez le résultat qui correspond le mieux à vos besoins.
+1. Choisissez le résultat qui correspond le mieux à vos besoins.

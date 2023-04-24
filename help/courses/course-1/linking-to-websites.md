@@ -2,7 +2,7 @@
 title: Liaison à des sites web dans [!DNL AEM Guides]
 description: Liaison à des sites web dans [!DNL Adobe Experience Manager Guides]
 exl-id: 6b89f52e-ac15-4604-8bac-ab0bb5b5a978
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 1%
@@ -18,18 +18,18 @@ Les liens Web redirigent les lecteurs vers des sites Web pour plus d’informati
 ## Insérer un lien
 
 1. Sélectionnez votre concept dans le référentiel et ouvrez-le dans l’éditeur.
-2. Ajoutez une chaîne de texte à votre concept et mettez-le en surbrillance ou mettez en surbrillance le texte existant de votre choix.
+1. Ajoutez une chaîne de texte à votre concept et mettez-le en surbrillance ou mettez en surbrillance le texte existant de votre choix.
 
    Le texte en surbrillance indique l’endroit où votre lien sera inséré.
-3. Sélectionnez la **Insérer une référence croisée** dans la barre d’outils.
+1. Sélectionnez la **Insérer une référence croisée** dans la barre d’outils.
 
    ![Icône Insérer une référence croisée](images/lesson-5/insert-crossref-icon.png)
 
    La boîte de dialogue Référence s’affiche.
 
 
-4. Sélectionner **Lien Web** dans le menu de gauche.
-5. Collez l’URL de votre choix, puis cliquez sur **Sélectionner**.
+1. Sélectionner **Lien Web** dans le menu de gauche.
+1. Collez l’URL de votre choix, puis cliquez sur **Sélectionner**.
 
    Le lien est fonctionnel et ouvre une page web dans un nouvel onglet du navigateur lorsque vous cliquez dessus.
 

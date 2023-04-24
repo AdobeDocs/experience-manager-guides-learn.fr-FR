@@ -2,7 +2,7 @@
 title: Préférences utilisateur, paramètres de l’éditeur et barres d’outils de l’éditeur
 description: Modification des préférences de l’utilisateur et des paramètres de l’éditeur dans AEM Guides
 exl-id: 8cb099e4-d985-4eeb-b1a5-0e372b04d218
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 2%
@@ -33,7 +33,7 @@ Les balises sont des repères visuels indiquant les limites d’un élément. Un
 
    - Effectuez un glisser-déposer d’éléments en sélectionnant la balise et en déposant l’élément à un emplacement valide.
 
-2. Cliquez sur le bouton [!UICONTROL **Activer/désactiver la vue Balises**] pour masquer à nouveau les balises.
+1. Cliquez sur le bouton [!UICONTROL **Activer/désactiver la vue Balises**] pour masquer à nouveau les balises.
 
 Les balises disparaissent pour vous permettre de vous concentrer sur le texte.
 
@@ -47,7 +47,7 @@ Le verrouillage (ou l’extraction) d’un fichier donne à l’utilisateur un a
 
    Le fichier a été extrait et une icône représentant un cadenas s’affiche en regard du nom du fichier dans le référentiel.
 
-2. Cliquez sur le bouton [!UICONTROL **Déverrouiller**] icône .
+1. Cliquez sur le bouton [!UICONTROL **Déverrouiller**] icône .
 
    ![Archivage](images/lesson-2/check-in-icon.png)
 
@@ -59,13 +59,13 @@ Le référentiel se met à jour pour indiquer que le fichier a été archivé.
 
    ![Spécial](images/lesson-2/special-icon.png)
 
-2. Dans la boîte de dialogue Insérer un caractère spécial, saisissez le nom du caractère dans la barre de recherche.
+1. Dans la boîte de dialogue Insérer un caractère spécial, saisissez le nom du caractère dans la barre de recherche.
 
    Vous pouvez également utiliser la liste déroulante Sélectionner une catégorie pour afficher tous les caractères d’une catégorie spécifique.
 
-3. Sélectionnez le caractère de votre choix.
+1. Sélectionnez le caractère de votre choix.
 
-4. Cliquez sur [!UICONTROL **Insérer**].
+1. Cliquez sur [!UICONTROL **Insérer**].
 
 Le caractère spécial est inséré dans le texte.
 
@@ -89,13 +89,13 @@ Vous pouvez choisir parmi des thèmes clairs ou sombres pour l’éditeur. À l�
 
    ![Préférences utilisateur](images/reuse/user-prefs-icon.png)
 
-2. Dans la boîte de dialogue Préférences utilisateur, cliquez sur le [!UICONTROL **Thème**] menu déroulant.
+1. Dans la boîte de dialogue Préférences utilisateur, cliquez sur le [!UICONTROL **Thème**] menu déroulant.
 
-3. Choisissez l’une des options disponibles.
+1. Choisissez l’une des options disponibles.
 
    ![Thèmes](images/lesson-2/themes.png)
 
-4. Cliquez sur [!UICONTROL **Enregistrer**].
+1. Cliquez sur [!UICONTROL **Enregistrer**].
 
 L’éditeur est mis à jour afin d’afficher le thème de votre choix.
 
@@ -107,13 +107,13 @@ Vous pouvez mettre à jour le chemin d’accès de base afin que la vue Reposito
 
    ![Préférences utilisateur](images/reuse/user-prefs-icon.png)
 
-2. Dans la boîte de dialogue Préférences utilisateur, cliquez sur le [!UICONTROL **Dossier**] en regard du chemin d’accès de base.
+1. Dans la boîte de dialogue Préférences utilisateur, cliquez sur le [!UICONTROL **Dossier**] en regard du chemin d’accès de base.
 
    ![Chemin du dossier de base](images/lesson-2/base-path-folder-icon.png)
 
-3. Dans la boîte de dialogue Sélectionner le chemin, cochez la case en regard d’un dossier spécifique.
+1. Dans la boîte de dialogue Sélectionner le chemin, cochez la case en regard d’un dossier spécifique.
 
-4. Cliquez sur [!UICONTROL **Sélectionner**].
+1. Cliquez sur [!UICONTROL **Sélectionner**].
 
 La prochaine fois que vous lancez l’éditeur, le référentiel affiche les fichiers qui ont été spécifiés dans le chemin d’accès de base.
 
@@ -125,13 +125,13 @@ Le profil global est une valeur par défaut du système. Les administrateurs peu
 
    ![Préférences utilisateur](images/reuse/user-prefs-icon.png)
 
-2. Dans la boîte de dialogue Préférences utilisateur, cliquez sur le [!UICONTROL **Profils de dossier**] menu déroulant.
+1. Dans la boîte de dialogue Préférences utilisateur, cliquez sur le [!UICONTROL **Profils de dossier**] menu déroulant.
 
    ![Liste des profils](images/lesson-2/folder-profiles-dropdown.png)
 
-3. Choisissez un profil parmi les options disponibles.
+1. Choisissez un profil parmi les options disponibles.
 
-4. Cliquez sur [!UICONTROL **Enregistrer**].
+1. Cliquez sur [!UICONTROL **Enregistrer**].
 
 Le nouveau profil de dossier est désormais attribué. Elle a modifié les options de la barre d’outils, les modes d’affichage et les conditions et les fragments de code dans le panneau de gauche. Il peut également modifier l’aspect visuel du contenu dans l’éditeur.
 
@@ -143,11 +143,11 @@ Les paramètres de l’éditeur sont disponibles pour les administrateurs. Ces p
 
    ![Paramètres de l’éditeur](images/lesson-2/editor-settings-icon.png)
 
-2. Dans la boîte de dialogue Paramètres de l’éditeur, cliquez sur [!UICONTROL **Général**] .
+1. Dans la boîte de dialogue Paramètres de l’éditeur, cliquez sur [!UICONTROL **Général**] .
 
-3. Sélectionnez le dictionnaire que vous souhaitez utiliser.
+1. Sélectionnez le dictionnaire que vous souhaitez utiliser.
 
-4. Cliquez sur [!UICONTROL **Enregistrer**].
+1. Cliquez sur [!UICONTROL **Enregistrer**].
 
 Le dictionnaire se met à jour. Notez que le passage à la vérification orthographique AEM vous permet d’utiliser une liste de mots personnalisée.
 
@@ -159,13 +159,13 @@ Les panneaux constituent l’une des fonctionnalités que vous pouvez personnali
 
    ![Paramètres de l’éditeur](images/lesson-2/editor-settings-icon.png)
 
-2. Dans la boîte de dialogue Paramètres de l’éditeur, cliquez sur [!UICONTROL **Panneaux**] .
+1. Dans la boîte de dialogue Paramètres de l’éditeur, cliquez sur [!UICONTROL **Panneaux**] .
 
-3. Activez/désactivez les panneaux disponibles pour les afficher ou les masquer selon les besoins.
+1. Activez/désactivez les panneaux disponibles pour les afficher ou les masquer selon les besoins.
 
    ![Activer/désactiver le panneau](images/lesson-2/toggle-panels.png)
 
-4. Cliquez sur [!UICONTROL **Enregistrer**].
+1. Cliquez sur [!UICONTROL **Enregistrer**].
 
 Le panneau de gauche est maintenant configuré pour afficher uniquement les panneaux activés sur Afficher.
 
@@ -177,15 +177,15 @@ La liste d’éléments vous permet de nommer un élément spécifique et de lui
 
    ![Paramètres de l’éditeur](images/lesson-2/editor-settings-icon.png)
 
-2. Dans la boîte de dialogue Paramètres de l’éditeur, cliquez sur [!UICONTROL **Liste des éléments**] .
+1. Dans la boîte de dialogue Paramètres de l’éditeur, cliquez sur [!UICONTROL **Liste des éléments**] .
 
-3. Saisissez un **Nom de l’élément** et un **Libellé** dans les champs respectifs.
+1. Saisissez un **Nom de l’élément** et un **Libellé** dans les champs respectifs.
 
-4. Cliquez sur le bouton [!UICONTROL **Plus**] pour ajouter d’autres éléments à la liste.
+1. Cliquez sur le bouton [!UICONTROL **Plus**] pour ajouter d’autres éléments à la liste.
 
    ![Liste des éléments](images/lesson-2/elements-list.png)
 
-5. Cliquez sur [!UICONTROL **Enregistrer**].
+1. Cliquez sur [!UICONTROL **Enregistrer**].
 
 Vous pouvez immédiatement voir la modification apportée à la liste des éléments dans les balises existantes de l’éditeur. Vous pouvez également les voir dans les options fournies lorsque vous ajoutez un nouvel élément.
 
@@ -197,11 +197,11 @@ La liste des attributs fonctionne de la même manière que la liste des élémen
 
    ![Paramètres de l’éditeur](images/lesson-2/editor-settings-icon.png)
 
-2. Dans la boîte de dialogue Paramètres de l’éditeur, cliquez sur [!UICONTROL **Liste d’attributs**] .
+1. Dans la boîte de dialogue Paramètres de l’éditeur, cliquez sur [!UICONTROL **Liste d’attributs**] .
 
-3. Saisissez un **Nom de l’attribut** et un **Libellé** dans les champs respectifs.
+1. Saisissez un **Nom de l’attribut** et un **Libellé** dans les champs respectifs.
 
-4. Cliquez sur le bouton [!UICONTROL **Plus**] pour ajouter d’autres attributs à la liste.
+1. Cliquez sur le bouton [!UICONTROL **Plus**] pour ajouter d’autres attributs à la liste.
 
 ## Configuration des conditions dans les paramètres de l’éditeur
 
@@ -211,13 +211,13 @@ L’onglet Condition vous permet de configurer plusieurs propriétés.
 
    ![Paramètres de l’éditeur](images/lesson-2/editor-settings-icon.png)
 
-2. Dans la boîte de dialogue Paramètres de l’éditeur, cliquez sur [!UICONTROL **Condition**] .
+1. Dans la boîte de dialogue Paramètres de l’éditeur, cliquez sur [!UICONTROL **Condition**] .
 
-3. Cochez les cases correspondant aux conditions à appliquer.
+1. Cochez les cases correspondant aux conditions à appliquer.
 
    ![Onglet Condition](images/lesson-2/condition.png)
 
-4. Cliquez sur [!UICONTROL **Enregistrer**].
+1. Cliquez sur [!UICONTROL **Enregistrer**].
 
 ## Création d’un profil de publication dans les paramètres de l’éditeur
 
@@ -227,12 +227,12 @@ Les profils de publication peuvent être utilisés pour publier la base de conna
 
    ![Paramètres de l’éditeur](images/lesson-2/editor-settings-icon.png)
 
-2. Dans la boîte de dialogue Paramètres de l’éditeur, cliquez sur [!UICONTROL **Profils**] .
+1. Dans la boîte de dialogue Paramètres de l’éditeur, cliquez sur [!UICONTROL **Profils**] .
 
-3. Cliquez sur le bouton [!UICONTROL **Plus**] en regard de Profils.
+1. Cliquez sur le bouton [!UICONTROL **Plus**] en regard de Profils.
 
-4. Renseignez les champs selon vos besoins.
+1. Renseignez les champs selon vos besoins.
 
-5. Cliquez sur [!UICONTROL **Enregistrer**].
+1. Cliquez sur [!UICONTROL **Enregistrer**].
 
 Un profil de publication a été créé.

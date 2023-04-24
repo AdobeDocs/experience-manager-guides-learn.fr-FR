@@ -2,7 +2,7 @@
 title: Clés
 description: Les clés vous permettent d’inclure des informations sur les variables lors de l’utilisation de DITA dans AEM Guides.
 exl-id: cb64e094-fe6d-4a5e-8f0e-25ae58aaa2c6
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Des exemples de fichiers que vous pouvez choisir d’utiliser pour cette leçon 
 
    h. Sélectionner [!UICONTROL **Extract**] en haut à droite de l’écran.
 
-2. Une fois l’extraction terminée, cliquez sur [!UICONTROL **Accédez au dossier cible**].
+1. Une fois l’extraction terminée, cliquez sur [!UICONTROL **Accédez au dossier cible**].
 
    ![Confirmation](images/lesson-9/go-to-target.png)
 
@@ -69,9 +69,9 @@ Pour utiliser correctement les clés, les préférences utilisateur doivent réf
 
    g. **Enregistrer** Préférences utilisateur.
 
-2. Accédez au **Vue Carte**.
+1. Accédez au **Vue Carte**.
 
-3. Ouvrez la carte spécifiée.
+1. Ouvrez la carte spécifiée.
 
 Les clés sont résolues.
 
@@ -79,11 +79,11 @@ Les clés sont résolues.
 
 1. Ouvrez une carte avec une carte racine spécifiée.
 
-2. Sélectionnez une clé.
+1. Sélectionnez une clé.
 
    ![Menu déroulant des clés](images/lesson-9/hybrid-key.png)
 
-3. Insérez une nouvelle clé.
+1. Insérez une nouvelle clé.
 
    a. Cliquez dans un emplacement valide de la carte.
 
@@ -95,7 +95,7 @@ Les clés sont résolues.
 
    d. Cliquez sur [!UICONTROL **Insérer**].
 
-4. Ajoutez topicmeta dans le fichier keydef.
+1. Ajoutez topicmeta dans le fichier keydef.
 
    a. Cliquez sur le bouton [!UICONTROL **Insérer un élément**] dans la barre d’outils supérieure.
 
@@ -103,7 +103,7 @@ Les clés sont résolues.
 
    b. Dans la boîte de dialogue Insérer un élément, recherchez et sélectionnez &quot;topicmeta&quot;.
 
-5. Ajoutez des mots-clés dans la topicmeta.
+1. Ajoutez des mots-clés dans la topicmeta.
 
    a. Cliquez sur le bouton [!UICONTROL **Insérer un élément**] dans la barre d’outils supérieure.
 
@@ -111,7 +111,7 @@ Les clés sont résolues.
 
    b. Dans la boîte de dialogue Insérer un élément, recherchez et sélectionnez &quot;mots-clés&quot;.
 
-6. Ajoutez un mot-clé dans la rubrique .
+1. Ajoutez un mot-clé dans la rubrique .
 
    a. Cliquez sur le bouton [!UICONTROL **Insérer un élément**] dans la barre d’outils supérieure.
 
@@ -119,7 +119,7 @@ Les clés sont résolues.
 
    b. Dans le **Insérer un élément** boîte de dialogue, recherchez et sélectionnez &quot;mot-clé&quot;.
 
-7. Saisissez la valeur de keydef dans le mot-clé.
+1. Saisissez la valeur de keydef dans le mot-clé.
 
 Sur la carte, votre clé de sécurité devrait maintenant ressembler à ceci :
 
@@ -131,16 +131,16 @@ Les fragments de code sont de petits fragments de contenu qui peuvent être réu
 
 1. Sélectionnez un élément keydef dans la carte.
 
-2. Dans le menu contextuel, cliquez sur [!UICONTROL **Créer un fragment de code**].
+1. Dans le menu contextuel, cliquez sur [!UICONTROL **Créer un fragment de code**].
 
-3. Dans la boîte de dialogue Nouveau fragment de code, ajoutez un titre et une description.
+1. Dans la boîte de dialogue Nouveau fragment de code, ajoutez un titre et une description.
 Vous pouvez également supprimer des clés ou des définitions de mots-clés existantes du contenu.
 
-4. Cliquez sur [!UICONTROL **Créer**].
+1. Cliquez sur [!UICONTROL **Créer**].
 
-5. Dans le panneau de gauche, sélectionnez **Fragments de code**.
+1. Dans le panneau de gauche, sélectionnez **Fragments de code**.
 
-6. Faites glisser le fragment que vous venez de créer du panneau Fragments de code vers la carte.
+1. Faites glisser le fragment que vous venez de créer du panneau Fragments de code vers la carte.
 
-7. Mettez à jour la clé keydef selon les besoins à l’aide des propriétés du contenu.
+1. Mettez à jour la clé keydef selon les besoins à l’aide des propriétés du contenu.
 Une fois enregistré et actualisé, cet ensemble de clés est disponible pour tous les utilisateurs qui ont défini une carte contenant la même carte racine.

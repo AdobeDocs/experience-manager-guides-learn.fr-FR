@@ -2,7 +2,7 @@
 title: Paramètres prédéfinis de sortie
 description: Un paramètre prédéfini de sortie est un ensemble de propriétés de publication qui ont été affectées à un mappage.
 exl-id: b0c64737-48a0-4337-8a7f-35d1deb03366
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 3%
@@ -29,13 +29,13 @@ Un paramètre prédéfini de sortie s’affiche lorsqu’une carte dans l’édi
 
 1. Sélectionnez un paramètre prédéfini de sortie de ligne de base. Par exemple, AEM ou PDF peut être sélectionné si le nouveau paramètre prédéfini à créer est destiné à un site ou à fournir du contenu Adobe PDF.
 
-2. Cliquez sur **Créer**.
+1. Cliquez sur **Créer**.
 
-3. Si nécessaire, sélectionnez un type de sortie.
+1. Si nécessaire, sélectionnez un type de sortie.
 
-4. Configurez les options en fonction du type de sortie.
+1. Configurez les options en fonction du type de sortie.
 
-5. Cliquez sur **Terminé**.
+1. Cliquez sur **Terminé**.
 
 ## Modification d’un paramètre prédéfini de sortie
 
@@ -43,14 +43,14 @@ Les paramètres prédéfinis de sortie sont prédéfinis, mais peuvent être per
 
 1. Ouvrez le tableau de bord des cartes.
 
-2. Sélectionnez la **Paramètres prédéfinis de sortie** .
+1. Sélectionnez la **Paramètres prédéfinis de sortie** .
 
-3. Sélectionnez un paramètre prédéfini de sortie.
+1. Sélectionnez un paramètre prédéfini de sortie.
 
-4. Cliquez sur **Modifier**.
+1. Cliquez sur **Modifier**.
 
-5. Modifiez les paramètres selon vos besoins.
+1. Modifiez les paramètres selon vos besoins.
 
    ![Edit-Output-Preset](images/edit-output-preset.png)
 
-6. Cliquez sur **Terminé**.
+1. Cliquez sur **Terminé**.

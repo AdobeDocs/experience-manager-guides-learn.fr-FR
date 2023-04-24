@@ -2,7 +2,7 @@
 title: Notes de mise à jour | Guides Adobe Experience Manager as a Cloud Service, version de mai 2022
 description: Version de mai des guides Adobe Experience Manager as a Cloud Service
 exl-id: 7928a300-5ec9-492c-b9be-02b6f87638c6
-source-git-commit: 0f5c1cabdbda9fa2606f67faedbf9a38ca1ec0aa
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 4%
@@ -15,8 +15,8 @@ ht-degree: 4%
 
 Mettez à niveau vos guides Adobe Experience Manager actuels as a Cloud Service (plus tard appelés *AEM Guides as a Cloud Service*) en procédant comme suit :
 1. Extrayez le code Git des Cloud Services et passez à la branche configurée dans le pipeline Cloud Services correspondant à l’environnement que vous souhaitez mettre à niveau.
-2. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Services vers la version 2022.5.144.
-3. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version de mai d’AEM Guides as a Cloud Service.
+1. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Services vers la version 2022.5.144.
+1. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version de mai d’AEM Guides as a Cloud Service.
 
 ## Matrice de compatibilité
 
@@ -61,7 +61,7 @@ Le modèle de carte personnalisé peut vous aider à répliquer très facilement
 
 ![mot-clé d&#39;insertion](assets/insert-keyword.png)
 
-* Désormais, les fichiers en mode Référentiel sont chargés par lots. 75 fichiers sont chargés à la fois. Ce chargement par lots est efficace et vous pouvez accéder aux fichiers plus rapidement par rapport au chargement de tous les fichiers existant dans un dossier.
+* Désormais, les fichiers en mode Référentiel sont chargés par lots. 75 fichiers sont chargés à la fois. Ce chargement par lots est efficace et vous pouvez accéder aux fichiers plus rapidement par rapport au chargement de tous les fichiers existants dans un dossier.
 
 ![charger plus de fichiers](assets/load-more-files.png)
 

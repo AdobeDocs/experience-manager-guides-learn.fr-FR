@@ -2,7 +2,7 @@
 title: Notes de mise à jour d’ [!DNL AEM Guides], version de janvier 2022
 description: Version de janvier [!DNL Adobe Experience Manager Guides] as a Cloud Service
 exl-id: b2da77fa-f17c-440b-be59-acaafcd9a57c
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '2429'
 ht-degree: 3%
@@ -15,8 +15,8 @@ ht-degree: 3%
 
 Mettre à niveau votre [!DNL Adobe Experience Manager Guides] as a Cloud Service (plus tard appelé [!DNL AEM Guides] as a Cloud Service) en procédant comme suit :
 1. Extrayez le code Git des Cloud Services et passez à la branche configurée dans le pipeline Cloud Services correspondant à l’environnement que vous souhaitez mettre à niveau.
-2. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Services vers la version 2022.1.78.
-3. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version de janvier de [!DNL AEM Guides] as a Cloud Service.
+1. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Services vers la version 2022.1.78.
+1. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version de janvier de [!DNL AEM Guides] as a Cloud Service.
 
 ## Matrice de compatibilité
 
@@ -34,7 +34,7 @@ Cette section répertorie la matrice de compatibilité des applications logiciel
 
 | [!DNL AEM Guides] Version cloud | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
 | --- | --- | --- | --- | --- |
-| 2022.1.0 | 2.4.0 | 2.4.0 | 2.2 | 2,2 |
+| 2022.1.0 | 2.4.0 | 2.4.0 | 2.2 | 2.2 |
 |  |  |  |  |  |
 
 
@@ -147,7 +147,7 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 * Les auteurs ne peuvent pas insérer d’image dans une rubrique à l’aide d’un chemin relatif. (8112)
 * Consultez la page de tâche qui n’affiche pas les fichiers multimédias si des espaces sont présents dans le nom du fichier. (8111)
 * Les références doctorales ajoutées dans la cellule du tableau sont affichées en rouge. (8083)
-* Les liens dans la tâche de révision ne sont pas mis à jour lorsque les fichiers en cours de révision sont déplacés. (8 080)
+* Les liens dans la tâche de révision ne sont pas mis à jour lorsque les fichiers en cours de révision sont déplacés. (8080)
 * L’éditeur web n’effectue pas correctement le rendu des images dont la propriété de mise à l’échelle est définie sur 75 % ou plus. (8073)
 * Les images de GIF sont rendues sous la forme d’images statiques dans l’éditeur web. (8024)
 * Un élément conkeyref dans une note ne s’affiche pas dans l’aperçu de l’éditeur web ni dans la sortie. (8006)
@@ -220,7 +220,7 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 * La régénération de rubrique ne fonctionne pas. (8091)
 * Il existe des problèmes lors de la publication des notes de bas de page dans les tableaux. (4709)
 
-### AEM Assets
+### AEM Assets
 
 * Problèmes de performances détectés lors de la sélection/suppression sur un jeu de contenu énorme dans l’interface utilisateur d’Assets. (8238)
 * La fonction de recherche enregistrée (collection dynamique) se brise si le prédicat DITA est ajouté aux filtres de recherche. (8048)

@@ -2,7 +2,7 @@
 title: Notes de mise à jour | Adobe Experience Manager Guides version 4.1
 description: Dernière version des guides Adobe Experience Manager
 exl-id: c70b3bbc-3332-4626-bc30-641034f8fd06
-source-git-commit: c7b147777a59d422e93d63118e84d806adaaad24
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '3532'
 ht-degree: 3%
@@ -54,8 +54,8 @@ Pour plus d’informations, reportez-vous à la section Exigences techniques du 
 
 | Mise à jour | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
 | --- | --- | --- |--- |--- |
-| 4.1.3 (non UUID) | 2,0 | 2,0 | 1,6 | 1,6 |
-| 4.1.3 (UUID) | 2.7 | 2,7 | 2.3 | 2,3 |
+| 4.1.3 (non UUID) | 2.0 | 2.0 | 1.6 | 1.6 |
+| 4.1.3 (UUID) | 2.7 | 2.7 | 2.3 | 2.3 |
 |  |  |  |
 
 
@@ -97,8 +97,8 @@ Pour plus d’informations, reportez-vous à la section Exigences techniques du 
 
 | Mise à jour | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
 | --- | --- | --- |--- |--- |
-| 4.1.2 (non UUID) | 2,0 | 2,0 | 1,6 | 1,6 |
-| 4.1.2 (UUID) | 2,7 | 2,7 | 2,3 | 2,3 |
+| 4.1.2 (non UUID) | 2.0 | 2.0 | 1.6 | 1.6 |
+| 4.1.2 (UUID) | 2.7 | 2.7 | 2.3 | 2.3 |
 |  |  |  |
 
 
@@ -154,8 +154,8 @@ Pour plus d’informations, reportez-vous à la section Exigences techniques du 
 
 | Mise à jour | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
 | --- | --- | --- |--- |--- |
-| 4.1 (non UUID) | 2,0 | 2,0 | 1,6 | 1,6 |
-| 4.1 (UUID) | 2,7 | 2,7 | 2,3 | 2,3 |
+| 4.1 (non UUID) | 2.0 | 2.0 | 1.6 | 1.6 |
+| 4.1 (UUID) | 2.7 | 2.7 | 2.3 | 2.3 |
 |  |  |  |
 
 
@@ -186,8 +186,8 @@ Une référence de clé de contenu DITA insère une partie du contenu d’une ru
 Désormais, les références clés sont résolues sur la base de la carte racine définie dans l’ordre de priorité suivant :
 
 1. Préférences utilisateur
-2. Panneau Vue Carte
-3. Profil de dossier
+1. Panneau Vue Carte
+1. Profil de dossier
 
 Pour plus d’informations, voir *Résoudre les références de clés* dans le guide d’utilisation des guides Adobe Experience Manager.
 
@@ -256,7 +256,7 @@ Markdown est un langage de balisage léger qui peut vous aider à ajouter des é
 * **Possibilité de configurer une vue de balises par défaut**
 Si un utilisateur active la vue Balises à partir de l’éditeur web, elle reste activée même au cours des sessions.  Cela signifie que vous n’avez pas à réactiver la vue Balises pour y accéder ultérieurement. Votre administrateur peut configurer l’état par défaut de la vue Balises dans l’éditeur web. La valeur par défaut de la vue Balises pour la session d’un nouvel utilisateur est déterminée par la propriété tagsView dans le fichier ui_config.json.
 
-* Désormais, les fichiers en mode Référentiel sont chargés par lots. Tous les fichiers présents dans la balise principale ou `/content/dam folder` sont répertoriées. Mais à partir du niveau suivant ou du dossier secondaire, 75 fichiers sont chargés à la fois. Ce chargement par lots est efficace et vous pouvez accéder aux fichiers plus rapidement par rapport au chargement de tous les fichiers existant dans un dossier.
+* Désormais, les fichiers en mode Référentiel sont chargés par lots. Tous les fichiers présents dans la balise principale ou `/content/dam folder` sont répertoriées. Mais à partir du niveau suivant ou du dossier secondaire, 75 fichiers sont chargés à la fois. Ce chargement par lots est efficace et vous pouvez accéder aux fichiers plus rapidement par rapport au chargement de tous les fichiers existants dans un dossier.
 
 ![charger plus de fichiers](assets/load-more-files.png)
 

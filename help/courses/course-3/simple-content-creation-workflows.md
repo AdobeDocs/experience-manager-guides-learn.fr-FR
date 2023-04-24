@@ -2,7 +2,7 @@
 title: Workflows de création de contenu simple
 description: Création de contenu dans AEM Guides
 exl-id: e4b8e512-0688-44f7-b981-78af33b57b08
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 2%
@@ -23,19 +23,19 @@ Des images peuvent être ajoutées directement à partir d&#39;un disque local.
 
    ![Boîte de dialogue Télécharger les ressources](images/lesson-15/upload-assets-dialog.png)
 
-2. Modifiez le chemin du dossier à l’emplacement de l’image de votre choix.
+1. Modifiez le chemin du dossier à l’emplacement de l’image de votre choix.
 
-3. Donnez au nom de l’image un nom représentatif de son objectif.
+1. Donnez au nom de l’image un nom représentatif de son objectif.
 
-4. Cliquez sur [!UICONTROL **Charger**].
+1. Cliquez sur [!UICONTROL **Charger**].
 
 ## Modification d’une image
 
 1. Redimensionnez une image en faisant glisser un coin.
 
-2. Déplacez une image vers un autre emplacement de la rubrique en la faisant glisser et en la déposant.
+1. Déplacez une image vers un autre emplacement de la rubrique en la faisant glisser et en la déposant.
 
-3. Utilisation **Propriétés du contenu** dans le panneau de droite pour modifier le
+1. Utilisation **Propriétés du contenu** dans le panneau de droite pour modifier le
 
    - scale
 
@@ -53,11 +53,11 @@ La vue fractionnée s’avère utile lors de la comparaison de rubriques, de la 
 
 1. Ouvrez plusieurs rubriques connexes.
 
-2. Cliquez sur l’onglet Titre d’un fichier pour ouvrir le menu contextuel.
+1. Cliquez sur l’onglet Titre d’un fichier pour ouvrir le menu contextuel.
 
-3. Sélectionner [!UICONTROL **Partage**].
+1. Sélectionner [!UICONTROL **Partage**].
 
-4. Choisir **Right**.
+1. Choisir **Right**.
 
    ![Mode partagé](images/lesson-15/split-view.png)
 
@@ -65,11 +65,11 @@ La vue fractionnée s’avère utile lors de la comparaison de rubriques, de la 
 
 1. Localisez le mot ou l’expression contenant l’erreur.
 
-2. Appuyez et maintenez la pression [!UICONTROL **Ctrl**].
+1. Appuyez et maintenez la pression [!UICONTROL **Ctrl**].
 
-3. Cliquez sur le bouton secondaire de la souris sur l’erreur.
+1. Cliquez sur le bouton secondaire de la souris sur l’erreur.
 
-4. Sélectionnez l’orthographe correcte.
+1. Sélectionnez l’orthographe correcte.
 
 L’erreur a été corrigée dans le texte de la rubrique.
 
@@ -79,41 +79,41 @@ Les utilisateurs peuvent télécharger un PDF de la rubrique actuelle à marquer
 
 1. Cliquez sur [!UICONTROL **Aperçu**] en haut à droite de l’écran.
 
-2. Cliquez sur le bouton [!UICONTROL **Icône PDF**] au-dessus de la rubrique . Une boîte de dialogue s’affiche.
+1. Cliquez sur le bouton [!UICONTROL **Icône PDF**] au-dessus de la rubrique . Une boîte de dialogue s’affiche.
 
    ![Exportation PDF](images/lesson-15/pdf-export.png)
 
-3. Renseignez les informations de l’une ou de l’autre **Nom de la transformation** ou **Arguments de ligne de commande DITA-OT** si nécessaire. Notez qu’un PDF est toujours généré si tous les champs sont laissés vides.
+1. Renseignez les informations de l’une ou de l’autre **Nom de la transformation** ou **Arguments de ligne de commande DITA-OT** si nécessaire. Notez qu’un PDF est toujours généré si tous les champs sont laissés vides.
 
-4. Cliquez sur [!UICONTROL **Télécharger**]. Le PDF est généré.
+1. Cliquez sur [!UICONTROL **Télécharger**]. Le PDF est généré.
 
-5. Utilisez les icônes disponibles pour configurer, télécharger ou partager la rubrique du PDF.
+1. Utilisez les icônes disponibles pour configurer, télécharger ou partager la rubrique du PDF.
 
 ## Recherche d’une rubrique dans le référentiel ou la carte
 
 1. Ouvrez la rubrique.
 
-2. Cliquez sur le bouton de la souris secondaire dans l’onglet Titre.
+1. Cliquez sur le bouton de la souris secondaire dans l’onglet Titre.
 
-3. Sélectionner **Localisez la page**.
+1. Sélectionner **Localisez la page**.
 
-4. Choisissez l’une **Référentiel** ou **Carte** pour accéder à l’emplacement souhaité de la rubrique.
+1. Choisissez l’une **Référentiel** ou **Carte** pour accéder à l’emplacement souhaité de la rubrique.
 
 ## Version d’une rubrique
 
 1. Apportez une modification à une rubrique.
 
-2. Enregistrez la rubrique.
+1. Enregistrez la rubrique.
 
-3. Cliquez sur le bouton **Référentiel** dans le menu supérieur gauche.
+1. Cliquez sur le bouton **Référentiel** dans le menu supérieur gauche.
 
    ![Icône Repository](images/lesson-15/repository-icon.png)
 
-4. Dans la boîte de dialogue, ajoutez **Commentaires pour la nouvelle version**.
+1. Dans la boîte de dialogue, ajoutez **Commentaires pour la nouvelle version**.
 
    ![Boîte de dialogue Nouvelle version](images/lesson-15/version-dialog.png)
 
-5. Cliquez sur [!UICONTROL **Enregistrer**].
+1. Cliquez sur [!UICONTROL **Enregistrer**].
 
 Le numéro de version est mis à jour.
 
@@ -123,7 +123,7 @@ Tenter de suivre l’état d’une rubrique en fonction du numéro de version pe
 
 1. Sélectionnez une **Profil de dossier**.
 
-2. Dans le profil du dossier, configurez l’éditeur XML.
+1. Dans le profil du dossier, configurez l’éditeur XML.
 
    a. Sélectionnez Modifier en haut à gauche de l’écran.
 
@@ -131,15 +131,15 @@ Tenter de suivre l’état d’une rubrique en fonction du numéro de version pe
 
    ![Étiquettes de version de contenu](images/lesson-15/version-labels.png)
 
-3. Sélectionnez [!UICONTROL **Télécharger**].
+1. Sélectionner [!UICONTROL **Télécharger**].
 
-4. Choisissez un fichier tel que ReviewLabels.json ou un fichier similaire. Les détails de la création d’un tel fichier sont présentés dans une autre vidéo.
+1. Choisissez un fichier tel que ReviewLabels.json ou un fichier similaire. Les détails de la création d’un tel fichier sont présentés dans une autre vidéo.
 
-5. Cliquez sur [!UICONTROL **Ouvrir**].
+1. Cliquez sur [!UICONTROL **Ouvrir**].
 
-6. Cliquez sur [!UICONTROL **Enregistrer**] en haut à gauche de l’écran Profil de dossier .
+1. Cliquez sur [!UICONTROL **Enregistrer**] en haut à gauche de l’écran Profil de dossier .
 
-7. Cliquez sur [!UICONTROL **Fermer**] en haut à droite.
+1. Cliquez sur [!UICONTROL **Fermer**] en haut à droite.
 
 Les libellés de version sont désormais chargés.
 
@@ -147,25 +147,25 @@ Les libellés de version sont désormais chargés.
 
 1. Chargement des libellés de version.
 
-2. Cliquez sur le bouton [!UICONTROL **Préférences utilisateur**] en haut à gauche de la rubrique active.
+1. Cliquez sur le bouton [!UICONTROL **Préférences utilisateur**] en haut à gauche de la rubrique active.
 
    ![Profil de dossier](images/lesson-15/folder-profile-icon.png)
 
-3. Sélectionnez le même profil de dossier où les libellés de version ont été précédemment chargés.
+1. Sélectionnez le même profil de dossier où les libellés de version ont été précédemment chargés.
 
-4. Dans la boîte de dialogue Préférences utilisateur, assurez-vous que le chemin d’accès de base référence les mêmes informations que celles auxquelles le profil de dossier a été appliqué.
+1. Dans la boîte de dialogue Préférences utilisateur, assurez-vous que le chemin d’accès de base référence les mêmes informations que celles auxquelles le profil de dossier a été appliqué.
 
    ![Préférences utilisateur](images/lesson-15/user-preferences.png)
 
-5. Cliquez sur [!UICONTROL **Enregistrer**].
+1. Cliquez sur [!UICONTROL **Enregistrer**].
 
-6. Version de la rubrique.
+1. Version de la rubrique.
 
-7. Ajoutez un commentaire et sélectionnez un libellé de version dans la liste déroulante.
+1. Ajoutez un commentaire et sélectionnez un libellé de version dans la liste déroulante.
 
    ![Boîte de dialogue Nouveau libellé de version](images/lesson-15/labels-dialog.png)
 
-8. Cliquez sur [!UICONTROL **Enregistrer**].
+1. Cliquez sur [!UICONTROL **Enregistrer**].
 
 Le numéro de version est mis à jour.
 
@@ -173,9 +173,9 @@ Le numéro de version est mis à jour.
 
 1. Dans le panneau de gauche, recherchez le titre de la rubrique active.
 
-2. Cliquez sur le titre pour ouvrir le menu contextuel.
+1. Cliquez sur le titre pour ouvrir le menu contextuel.
 
-3. Sélectionner [!UICONTROL **Affichage dans l’interface utilisateur d’Assets**].
+1. Sélectionner [!UICONTROL **Affichage dans l’interface utilisateur d’Assets**].
 
    ![Interface utilisateur des ressources](images/lesson-15/view-assets-ui.png)
 
@@ -183,7 +183,7 @@ Le numéro de version est mis à jour.
 
    ![Historique des versions](images/lesson-15/version-history.png)
 
-4. Cliquez sur une version pour accéder à des options telles que **Revenir à cette version** et **Aperçu de la version**.
+1. Cliquez sur une version pour accéder à des options telles que **Revenir à cette version** et **Aperçu de la version**.
 
 ## Créer un modèle
 
@@ -191,12 +191,12 @@ Il existe des modèles pour les rubriques et les mappages. Les administrateurs p
 
 1. Cliquez sur [!UICONTROL **Modèles**] dans le panneau de gauche.
 
-2. Sélectionnez Carte ou Rubrique pour ouvrir le menu contextuel associé.
+1. Sélectionnez Carte ou Rubrique pour ouvrir le menu contextuel associé.
 
-3. Cliquez sur pour ajouter le nouveau modèle.
+1. Cliquez sur pour ajouter le nouveau modèle.
 
    ![Nouveau modèle de rubrique](images/lesson-15/version-history.png)
 
-4. Renseignez les champs de la boîte de dialogue qui s’affiche.
+1. Renseignez les champs de la boîte de dialogue qui s’affiche.
 
 Le modèle shell s’affiche, contenant un exemple de contenu et une structure d’exemple.

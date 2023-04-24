@@ -2,7 +2,7 @@
 title: Profils de dossier
 description: Création et utilisation de profils de dossier pour AEM Guides
 exl-id: 5a0daa68-51ae-42d0-8320-6e8bdb1fe545
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 1%
@@ -25,13 +25,13 @@ Les configurations sont gérées via l’icône Profils de dossier .
 
    ![Icône Outils](images/reuse/tools-icon.png)
 
-2. Sélectionner **Guides** dans le panneau de gauche.
+1. Sélectionner **Guides** dans le panneau de gauche.
 
-3. Cliquez sur le bouton [!UICONTROL **Profils de dossier**] mosaïque.
+1. Cliquez sur le bouton [!UICONTROL **Profils de dossier**] mosaïque.
 
    ![Profils de dossier](images/reuse/folder-profiles-tile.png)
 
-4. Sélectionnez le profil souhaité. Par exemple, choisissez **Profil global**, qui est le profil par défaut.
+1. Sélectionnez le profil souhaité. Par exemple, choisissez **Profil global**, qui est le profil par défaut.
 
    ![Profil global](images/lesson-3/global-profile-tile.png)
 
@@ -41,17 +41,17 @@ Une fois que vous avez accédé au profil global, vous pouvez modifier sa config
 
 1. Dans le profil global, sélectionnez la variable **Attributs conditionnels** .
 
-2. Cliquez sur [!UICONTROL **Modifier**] dans le coin supérieur gauche de l’écran.
+1. Cliquez sur [!UICONTROL **Modifier**] dans le coin supérieur gauche de l’écran.
 
    ![Attributs conditionnels](images/lesson-3/edit-conditional-attributes.png)
 
-3. Cliquez sur [!UICONTROL **Ajouter**].
+1. Cliquez sur [!UICONTROL **Ajouter**].
 
-4. Renseignez la variable **Nom**, **Valeur**, et **Libellé** pour la nouvelle condition.
+1. Renseignez la variable **Nom**, **Valeur**, et **Libellé** pour la nouvelle condition.
 
    ![Nouvelle condition](images/lesson-3/new-condition.png)
 
-5. Cliquez sur [!UICONTROL **Enregistrer**] dans le coin supérieur gauche de l’écran.
+1. Cliquez sur [!UICONTROL **Enregistrer**] dans le coin supérieur gauche de l’écran.
 La nouvelle condition est désormais disponible pour tous les utilisateurs. Vous pouvez la sélectionner dans le panneau Propriétés du contenu et l’appliquer au contenu selon vos besoins.
 
 ## Création d’un profil de dossier
@@ -62,15 +62,15 @@ Outre le profil global par défaut, vous pouvez créer vos propres profils perso
 
    ![Icône Outils](images/reuse/tools-icon.png)
 
-2. Sélectionner **Guides** dans le panneau de gauche.
+1. Sélectionner **Guides** dans le panneau de gauche.
 
-3. Cliquez sur le bouton [!UICONTROL **Profils de dossier**] mosaïque.
+1. Cliquez sur le bouton [!UICONTROL **Profils de dossier**] mosaïque.
 
    ![Profils de dossier](images/reuse/folder-profiles-tile.png)
 
-4. Cliquez sur [!UICONTROL **Créer**].
+1. Cliquez sur [!UICONTROL **Créer**].
 
-5. Dans la boîte de dialogue Créer un profil de dossier .
+1. Dans la boîte de dialogue Créer un profil de dossier .
 
    a. Nommez le profil.
 
@@ -90,19 +90,19 @@ Les utilisateurs administratifs ont les droits de mettre à jour les attributs c
 
    ![Modifier le profil du dossier](images/lesson-3/edit-folder-profile.png)
 
-2. Sélectionnez la **Général** .
+1. Sélectionnez la **Général** .
 
-3. Cliquez sur [!UICONTROL **Modifier**] en haut à gauche de l’écran.
+1. Cliquez sur [!UICONTROL **Modifier**] en haut à gauche de l’écran.
 
-4. Sous Utilisateurs administrateurs, sélectionnez un utilisateur dans la liste déroulante ou saisissez son nom.
+1. Sous Utilisateurs administrateurs, sélectionnez un utilisateur dans la liste déroulante ou saisissez son nom.
 
-5. Cliquez sur [!UICONTROL **Ajouter**].
+1. Cliquez sur [!UICONTROL **Ajouter**].
 
    Si nécessaire, vous pouvez ajouter plusieurs utilisateurs administrateurs.
 
    ![Ajouter un administrateur](images/lesson-3/add-admin.png)
 
-6. Cliquez sur [!UICONTROL **Enregistrer**] dans le coin supérieur droit de l’écran lorsque tous les utilisateurs ont été ajoutés.
+1. Cliquez sur [!UICONTROL **Enregistrer**] dans le coin supérieur droit de l’écran lorsque tous les utilisateurs ont été ajoutés.
 
 Les utilisateurs administratifs sont désormais affectés à ce profil.
 
@@ -112,19 +112,19 @@ Une fois que vous avez accédé au profil global, vous pouvez modifier sa config
 
 1. Dans le profil de dossier souhaité, sélectionnez la variable **Attributs conditionnels** .
 
-2. Cliquez sur [!UICONTROL **Modifier**] dans le coin supérieur gauche de l’écran.
+1. Cliquez sur [!UICONTROL **Modifier**] dans le coin supérieur gauche de l’écran.
 
    ![Modification des attributs conditionnels 2](images/lesson-3/edit-conditional-attributes-2.png)
 
-3. Cliquez sur [!UICONTROL **Ajouter**].
+1. Cliquez sur [!UICONTROL **Ajouter**].
 
-4. Renseignez la variable **Nom**, **Valeur**, et **Libellé** pour la nouvelle condition.
+1. Renseignez la variable **Nom**, **Valeur**, et **Libellé** pour la nouvelle condition.
 
    Cliquez sur le bouton [!UICONTROL **Plus**] sign vous permet d’ajouter des paires Valeur et Libellé supplémentaires pour l’attribut nommé.
 
    ![Ajout de conditions](images/lesson-3/add-conditions.png)
 
-5. Cliquez sur [!UICONTROL **Enregistrer**] dans le coin supérieur gauche de l’écran.
+1. Cliquez sur [!UICONTROL **Enregistrer**] dans le coin supérieur gauche de l’écran.
 
 Les nouveaux attributs conditionnels ont été ajoutés à ce profil.
 
@@ -134,9 +134,9 @@ AEM Guides est fourni avec des modèles et des mappages de création prêts à l
 
 1. Dans le profil de dossier souhaité, sélectionnez l’onglet Modèles de création .
 
-2. Cliquez sur Modifier dans le coin supérieur gauche de l’écran.
+1. Cliquez sur Modifier dans le coin supérieur gauche de l’écran.
 
-3. Ajout d’un modèle de carte.
+1. Ajout d’un modèle de carte.
 
    a. Dans la **Modèles de mappage** , sélectionnez une option dans les cartes disponibles.
 
@@ -144,17 +144,17 @@ AEM Guides est fourni avec des modèles et des mappages de création prêts à l
 
    ![Modèles de mappage](images/lesson-3/map-templates.png)
 
-4. Ajout d’un modèle de rubrique.
+1. Ajout d’un modèle de rubrique.
 
    a. Dans la **Modèles de rubrique** , sélectionnez une option dans les modèles disponibles.
 
    ![Modèles de rubrique](images/lesson-3/topic-templates.png)
 
-5. Cliquez sur [!UICONTROL **Ajouter**].
+1. Cliquez sur [!UICONTROL **Ajouter**].
 
-6. Ajoutez d’autres modèles de rubrique selon les besoins.
+1. Ajoutez d’autres modèles de rubrique selon les besoins.
 
-7. Lorsque vous avez terminé, cliquez sur [!UICONTROL **Enregistrer**] en haut à gauche de l’écran.
+1. Lorsque vous avez terminé, cliquez sur [!UICONTROL **Enregistrer**] en haut à gauche de l’écran.
 
 Les nouveaux modèles de création ont été ajoutés à ce profil.
 
@@ -164,13 +164,13 @@ Vous pouvez configurer chaque paramètre prédéfini de sortie en fonction du pr
 
 1. Dans le profil de dossier souhaité, sélectionnez la variable **Paramètres prédéfinis de sortie** .
 
-2. Dans le panneau de gauche, cochez les cases des paramètres prédéfinis qui ne sont pas obligatoires.
+1. Dans le panneau de gauche, cochez les cases des paramètres prédéfinis qui ne sont pas obligatoires.
 
    ![Suppression de paramètres prédéfinis](images/lesson-3/delete-presets.png)
 
-3. Cliquez sur [!UICONTROL **Supprimer le paramètre prédéfini**] dans le coin supérieur gauche de l’écran.
+1. Cliquez sur [!UICONTROL **Supprimer le paramètre prédéfini**] dans le coin supérieur gauche de l’écran.
 
-4. Dans la boîte de dialogue Supprimer le paramètre prédéfini, cliquez sur [!UICONTROL **Supprimer**].
+1. Dans la boîte de dialogue Supprimer le paramètre prédéfini, cliquez sur [!UICONTROL **Supprimer**].
 
    ![Supprimer](images/lesson-3/delete.png)
 
@@ -180,15 +180,15 @@ Désormais, les seuls paramètres prédéfinis de sortie affichés sont ceux qui
 
 1. Dans le profil de dossier souhaité, sélectionnez la variable **Configuration de l’éditeur XML** .
 
-2. Sous Fragments de code de l’éditeur XML, cliquez sur [!UICONTROL **Télécharger**].
+1. Sous Fragments de code de l’éditeur XML, cliquez sur [!UICONTROL **Télécharger**].
 
    ![Transférer le fragment de code](images/lesson-3/upload-snippet.png)
 
-3. Accédez à un fragment de code créé précédemment.
+1. Accédez à un fragment de code créé précédemment.
 
-4. Cliquez sur [!UICONTROL **Ouvrir**].
+1. Cliquez sur [!UICONTROL **Ouvrir**].
 
-5. Cliquez sur [!UICONTROL **Enregistrer**] en haut à gauche de l’écran.
+1. Cliquez sur [!UICONTROL **Enregistrer**] en haut à gauche de l’écran.
 
 Vous avez modifié la configuration de l’éditeur pour inclure des fragments de code.
 
@@ -198,16 +198,16 @@ Dans l’éditeur, vous pouvez voir les résultats des modifications que vous av
 
 1. Accédez à **Repository View**.
 
-2. Cliquez sur le dossier du contenu que vous souhaitez utiliser.
+1. Cliquez sur le dossier du contenu que vous souhaitez utiliser.
 
-3. Cliquez sur le bouton [!UICONTROL **Préférences utilisateur**] dans la barre d’outils supérieure.
+1. Cliquez sur le bouton [!UICONTROL **Préférences utilisateur**] dans la barre d’outils supérieure.
 
    ![Préférences utilisateur](images/lesson-3/hr-user-prefs.png)
 
-4. Dans la boîte de dialogue Préférences utilisateur, sélectionnez le profil de dossier de votre choix dans la liste déroulante.
+1. Dans la boîte de dialogue Préférences utilisateur, sélectionnez le profil de dossier de votre choix dans la liste déroulante.
 
    ![Sélectionner les préférences utilisateur](images/lesson-3/select-user-pref.png)
 
-5. Cliquez sur [!UICONTROL **Enregistrer**].
+1. Cliquez sur [!UICONTROL **Enregistrer**].
 
 Vous avez appliqué le profil de dossier à votre contenu. Désormais, lorsque vous créez une rubrique DITA, une liste restreinte de types de rubrique est affichée en fonction du profil de dossier. La condition d’audience contient les paramètres globaux ainsi que ceux spécifiques au profil de dossier. Le fichier de fragments de code que vous avez chargé a créé un ensemble de fragments de code par défaut dans lequel vous pouvez effectuer votre choix. Le tableau de bord des cartes affiche les paramètres prédéfinis de sortie restreints.

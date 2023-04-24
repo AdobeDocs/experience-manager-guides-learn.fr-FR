@@ -2,7 +2,7 @@
 title: Dépannage des erreurs de publication
 description: Dépannage des erreurs de publication dans [!DNL Adobe Experience Manager Guides]
 exl-id: b37ea3e7-59cf-4fc5-8fae-e1fadd26f8d8
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Le fichier journal généré peut être ouvert pour révision.
 
    ![error-log](images/error-log.png)
 
-2. Faites défiler le journal des erreurs.
+1. Faites défiler le journal des erreurs.
 
 ## Affichage et masquage des types d’erreur
 
@@ -63,7 +63,7 @@ Le journal des erreurs affiche chaque type d’erreur dans une couleur unique.
 
 1. **Sélectionner** ou **désélectionner** tout type d’erreur pour afficher ou masquer la mise en surbrillance.
 
-2. Parcourez les erreurs à l’aide de la variable **next** ou **previous** boutons (flèches).
+1. Parcourez les erreurs à l’aide de la variable **next** ou **previous** boutons (flèches).
 
 ## Résolution des erreurs
 

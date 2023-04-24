@@ -2,9 +2,9 @@
 title: PDF natif | Génération de sortie PDF
 description: Générer une sortie PDF dans Adobe Experience Manager Guides as a Cloud Service
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: cc7ae2e5445cca11e169667d3af8aa9de93809b9
+source-git-commit: b9cf70ac957bfacbf9a6bf4c3b32d4f73c2b1287
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2755'
 ht-degree: 1%
 
 ---
@@ -84,19 +84,36 @@ Utilisez pour spécifier les paramètres de sortie de base, tels que le chemin d
 
 Les métadonnées sont la description ou la définition de votre contenu. Les métadonnées aident à la gestion de contenu et à la recherche de fichiers sur Internet.
 
-Utilisez l’onglet Métadonnées pour définir le titre, l’auteur, l’objet et les mots-clés de la sortie du PDF. Ces métadonnées sont mappées aux métadonnées dans l’onglet Description des propriétés du document de votre PDF de sortie.
+Utilisez l’onglet Métadonnées pour définir les champs de métadonnées tels que le nom de l’auteur, le titre du document, les mots-clés, les informations de copyright et d’autres champs de données pour la sortie du PDF. Vous pouvez également ajouter des métadonnées personnalisées pour la sortie de votre PDF.
+
+Ces métadonnées sont mappées aux métadonnées dans l’onglet Description des propriétés du document de votre PDF de sortie.
 
 **Remarque**: Ces métadonnées remplacent les métadonnées définies au niveau du livre.
 
 <img src="assets/pdf-metadata.png" alt="onglet de métadonnées" width="600">
 
+Dans les paramètres prédéfinis de sortie, **sélectionner PDF** > **Métadonnées** pour ajouter et personnaliser des options de métadonnées.
+* **Fournir un fichier XMP**
 
-| Configuration | Description |
-|---|---|
-| **Titre** | Spécifiez un titre court et clair pour définir le document. |
-| **Auteur** | Indiquez les noms du ou des auteurs qui ont créé le document. |
-| **Objet** | Définissez l’objet ou la collection auquel le document est associé. |
-| **Mots-clés** | Utilisez des mots-clés pertinents pour améliorer l’optimisation de votre moteur de recherche (SEO) et aider les utilisateurs à trouver le contenu associé. |
+   Les champs de métadonnées peuvent être directement renseignés en important [XMP](https://www.adobe.com/products/xmp.html) (Extensible Metadata Platform). Vous pouvez télécharger un exemple de fichier XMP ici.
+
+[Télécharger](assets/SampleXMP.xmp)
+
+   Vous pouvez également générer un fichier XMP à l’aide d’Adobe Acrobat.
+   1. Cliquez sur **Fichier** > **Propriétés** dans Acrobat.
+   1. Sous **Description**, cliquez sur **Métadonnées supplémentaires**.
+   1. Dans le panneau de gauche, sélectionnez **Avancé**.
+   1. Cliquez sur **Enregistrer**.
+
+   XMP fichier est enregistré sur l’appareil.
+
+* **Fournir des noms et des valeurs de métadonnées**
+
+   1. Ajoutez un nom en le sélectionnant dans la liste déroulante ou ajoutez une métadonnée personnalisée en saisissant directement dans le champ du nom.
+   1. Saisissez la valeur des métadonnées et cliquez sur l’icône &quot;+&quot;.
+Les métadonnées sont ajoutées à la liste des métadonnées du PDF.
+
+
 
 **Mise en page**
 
@@ -125,7 +142,7 @@ Utilisez les options suivantes pour définir des paramètres avancés pour fusio
 | --- | --- |
 | **Créer un PDF accessible (balisé)** | Sélectionnez cette option pour générer un PDF avec des balises. Un PDF balisé permet aux lecteurs d’écran de lire et de parcourir plus facilement le contenu, les liens hypertexte, les signets, etc. Par exemple, si un tableau est balisé, le lecteur d’écran sait qu’il lit le tableau et pas seulement les lignes et le texte. |
 | **Fusion des PDF inclus dans la table des matières** | Sélectionnez cette option pour fusionner les PDF existants dans votre sortie en les ajoutant à votre mappage DITA en tant que fichier de ressource. Les PDF seront insérés à l’emplacement représenté dans la carte et les pages seront incrémentées en conséquence. |
-| **Incorporer les polices utilisées** | Sélectionnez cette option lors de l’utilisation de polices qui ne peuvent pas être installées sur l’ordinateur de l’utilisateur final. Lorsque cette option est sélectionnée, les polices utilisées sont incorporées dans le PDF, ce qui permet à l’utilisateur de voir le PDF comme prévu, même si les polices ne sont pas installées sur son ordinateur. <br> **Remarque**: Une police ne peut être incorporée que si elle contient un paramètre du fournisseur de police qui lui permet d’être incorporée. Assurez-vous de disposer du paramètre ou de la licence requis avant d’incorporer une police. |
+| **Incorporer les polices utilisées** | Sélectionnez cette option lors de l’utilisation de polices qui peuvent ne pas être installées sur l’ordinateur de l’utilisateur final. Lorsque cette option est sélectionnée, les polices utilisées sont incorporées dans le PDF, ce qui permet à l’utilisateur de voir le PDF comme prévu, même si les polices ne sont pas installées sur son ordinateur. <br> **Remarque**: Une police ne peut être incorporée que si elle contient un paramètre du fournisseur de police qui lui permet d’être incorporée. Assurez-vous de disposer du paramètre ou de la licence requis avant d’incorporer une police. |
 | **Utilisation de la césure automatique** | Lorsque la césure automatique est activée, les mots situés à la fin des lignes sont rompus dans des zones grammaticalement correctes avec un trait d’union. |
 | **Activation de JavaScript** | Activez cette option si vous disposez d’un code JavaScript que vous souhaitez utiliser pour transformer dynamiquement votre contenu avant de générer un PDF. |
 | **Incorporer des fichiers multimédias** | Sélectionnez cette option pour inclure tout contenu audio, vidéo et interactif dans le PDF. |
@@ -143,14 +160,14 @@ Une fois que vous avez configuré le paramètre prédéfini de sortie, vous pouv
 1. Sous , **Auteur** , sélectionnez la variable **Référentiel** Afficher.\
    Le panneau Référentiel s’ouvre alors.
 
-2. Dans le panneau Repository, ouvrez le fichier de mappage DITA dans **Vue Carte**.
+1. Dans le panneau Repository, ouvrez le fichier de mappage DITA dans **Vue Carte**.
 
-3. Dans le **Sortie** , cliquez sur **Paramètres prédéfinis** pour afficher le panneau Paramètre prédéfini.
+1. Dans le **Sortie** , cliquez sur **Paramètres prédéfinis** pour afficher le panneau Paramètre prédéfini.
 Pour créer ou configurer un paramètre prédéfini de sortie, voir [Création d’un paramètre prédéfini de sortie PDF](#create-output-preset).
-4. Pour enregistrer vos paramètres, cliquez sur le bouton **Enregistrer tout** ![enregistrer tout](assets/SaveFloppy_icon.svg) dans le coin supérieur gauche de la barre d’outils standard de la vue Output.
-5. Cliquez sur le bouton **Générer un paramètre prédéfini** ![générer un paramètre prédéfini](assets/generate-output.svg) sur la barre supérieure.
+1. Pour enregistrer vos paramètres, cliquez sur le bouton **Enregistrer tout** ![enregistrer tout](assets/SaveFloppy_icon.svg) dans le coin supérieur gauche de la barre d’outils standard de la vue Output.
+1. Cliquez sur le bouton **Générer un paramètre prédéfini** ![générer un paramètre prédéfini](assets/generate-output.svg) sur la barre supérieure.
 Vous pouvez afficher une barre de progression en regard du paramètre prédéfini de sortie sélectionné dans le panneau Paramètres prédéfinis de sortie.
-6. Une fois la génération de la sortie terminée, cliquez sur  **Afficher la sortie** ![sortie d’affichage](assets/view-output.svg) sur la barre supérieure pour afficher la sortie.\
+1. Une fois la génération de la sortie terminée, cliquez sur  **Afficher la sortie** ![sortie d’affichage](assets/view-output.svg) sur la barre supérieure pour afficher la sortie.\
    A **Succès** est visible dans le coin inférieur droit de l’écran.
 Si une sortie échoue, le message d’erreur ci-dessous s’affiche.
 <img src="assets/error-log.png" alt="journal des erreurs" width="250">

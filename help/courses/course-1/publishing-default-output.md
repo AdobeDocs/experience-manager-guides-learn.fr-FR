@@ -2,7 +2,7 @@
 title: Publication de la sortie par défaut dans AEM Guides
 description: Publication de la sortie par défaut dans [!DNL Adobe Experience Manager Guides]
 exl-id: 97a259dd-4266-4a7b-8677-3fa261714687
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -25,13 +25,13 @@ Vous pouvez choisir un certain nombre de paramètres prédéfinis de sortie. Ce 
 
    Le tableau de bord des cartes s’ouvre dans un autre onglet.
 
-2. Dans l’onglet Paramètres prédéfinis de sortie, sélectionnez AEM Site et PDF.
+1. Dans l’onglet Paramètres prédéfinis de sortie, sélectionnez AEM Site et PDF.
 
    ![Paramètres prédéfinis de sortie](images/lesson-9/pdf-aem.png)
 
-3. Sélectionner **Générez.**
+1. Sélectionner **Générez.**
 
-4. Accédez à la page Sorties pour afficher l’état des sorties générées.
+1. Accédez à la page Sorties pour afficher l’état des sorties générées.
 
    Un cercle vert indique que la génération est terminée.
 

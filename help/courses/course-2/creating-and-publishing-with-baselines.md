@@ -2,7 +2,7 @@
 title: Création et publication avec des lignes de base
 description: Création et publication avec des lignes de base dans [!DNL Adobe Experience Manager Guides]
 exl-id: 3c229c30-f2e0-4fb0-b60c-7bae60ef1a5b
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 2%
@@ -24,7 +24,7 @@ Vous pouvez accéder à vos lignes de base dans le tableau de bord des cartes.
    ![ellipsis-map-dashboard.png](images/ellipsis-map-dashboard.png)
 Le tableau de bord des cartes s’ouvre dans un autre onglet.
 
-2. Sélectionner **Lignes de base**.
+1. Sélectionner **Lignes de base**.
 
    ![baseline-tab.png](images/baseline-tab.png)
 
@@ -38,18 +38,18 @@ L’onglet Lignes de base s’affiche.
 
    Les informations de la nouvelle ligne de base s’affichent. Son nom par défaut dépend de sa date de création.
 
-2. Si nécessaire, donnez un nouveau nom à votre ligne de base.
+1. Si nécessaire, donnez un nouveau nom à votre ligne de base.
 
-3. Sous l’en-tête &quot;Définir la version sur&quot;, sélectionnez le cercle correspondant au libellé.
+1. Sous l’en-tête &quot;Définir la version sur&quot;, sélectionnez le cercle correspondant au libellé.
    ![set-the-version.png](images/set-the-version.png)
 
    >[!NOTE]
    >
    >REMARQUE : Le *Utiliser la dernière version si l’étiquette n’est pas présente* est sélectionnée par défaut. Si cette option n’est pas sélectionnée et que des rubriques ou des fichiers multimédias sans le libellé choisi existent dans votre carte, le processus de création de ligne de base échoue.
 
-4. Saisissez le libellé que vous souhaitez utiliser.
+1. Saisissez le libellé que vous souhaitez utiliser.
 
-5. Sélectionnez **Enregistrer**.
+1. Sélectionnez **Enregistrer**.
 
 Votre ligne de base est créée. Un tableau de toutes les rubriques et des informations associées s’affiche.
 
@@ -67,17 +67,17 @@ Vous pouvez également créer des lignes de base qui sont un instantané dans le
 
    ![create-baseline.png](images/create-baseline.png)
 
-2. Sous l’en-tête &quot;Définir la version sur&quot;, sélectionnez le cercle correspondant à &quot;Version activée&quot;.
+1. Sous l’en-tête &quot;Définir la version sur&quot;, sélectionnez le cercle correspondant à &quot;Version activée&quot;.
 
    ![version-on.png](images/version-on.png)
 
-3. Sélectionnez l’icône du calendrier et indiquez la date et l’heure de votre choix.
+1. Sélectionnez l’icône du calendrier et indiquez la date et l’heure de votre choix.
 
    ![calendar.png](images/calendar.png)
 
-4. Si nécessaire, donnez un nouveau nom à votre ligne de base.
+1. Si nécessaire, donnez un nouveau nom à votre ligne de base.
 
-5. Sélectionnez **Enregistrer**.
+1. Sélectionnez **Enregistrer**.
 
 Votre ligne de base est créée. Un tableau de toutes les rubriques et des informations associées s’affiche.
 
@@ -87,13 +87,13 @@ Vous pouvez attribuer une nouvelle étiquette en bloc à tout le contenu de votr
 
 1. Sélectionnez la ligne de base pour laquelle vous souhaitez ajouter des libellés.
 
-2. Sélectionner **Ajouter des étiquettes**.
+1. Sélectionner **Ajouter des étiquettes**.
 
    ![add-libellés.png](images/add-labels.png)
 
    La boîte de dialogue Ajouter un libellé s’affiche.
 
-3. Saisissez le libellé à attribuer, puis sélectionnez **Ajouter**.
+1. Saisissez le libellé à attribuer, puis sélectionnez **Ajouter**.
 
 Le libellé a été ajouté à toutes les rubriques.
 
@@ -101,25 +101,25 @@ Le libellé a été ajouté à toutes les rubriques.
 
 1. Accédez à l’onglet Paramètres prédéfinis de sortie dans le tableau de bord des cartes.
 
-2. Cochez la case AEM site .
+1. Cochez la case AEM site .
 
    ![aem-site-checkbox.png](images/aem-site-checkbox.png)
 
-3. Sélectionnez **Modifier**.
+1. Sélectionnez **Modifier**.
 
    ![edit-aem.png](images/edit-aem.png)
 
    Une nouvelle page s’affiche.
 
-4. Cochez la case Utiliser la ligne de base , puis sélectionnez la ligne de base que vous souhaitez utiliser dans la liste déroulante.
+1. Cochez la case Utiliser la ligne de base , puis sélectionnez la ligne de base que vous souhaitez utiliser dans la liste déroulante.
 
    ![baseline.png](images/baseline.png)
 
-5. Sélectionnez **Terminé**.
+1. Sélectionnez **Terminé**.
 
    ![done.png](images/done.png)
 
-6. Sélectionner **Générer**.
+1. Sélectionner **Générer**.
 
    ![generate.png](images/generate.png)
 
@@ -129,20 +129,20 @@ Le libellé a été ajouté à toutes les rubriques.
 
 1. Accédez à l’onglet Sorties du tableau de bord des cartes.
 
-2. Sélectionnez le texte de la colonne Paramètre de génération pour ouvrir la sortie.
+1. Sélectionnez le texte de la colonne Paramètre de génération pour ouvrir la sortie.
    ![aem-site-link.png](images/aem-site-link.png)
 
 ## Suppression d’une ligne de base
 
 1. Dans l’onglet Lignes de base , sélectionnez la ligne de base à supprimer.
 
-2. Sélectionner **Supprimer**.
+1. Sélectionner **Supprimer**.
 
    ![remove-baseline.png](images/remove-baseline.png)
 
    La boîte de dialogue Supprimer la ligne de base s’affiche.
 
-3. Sélectionner **Supprimer**.
+1. Sélectionner **Supprimer**.
 
 La ligne de base est supprimée.
 
@@ -150,11 +150,11 @@ La ligne de base est supprimée.
 
 1. Dans l&#39;onglet Lignes de base , sélectionnez la ligne de base que vous souhaitez dupliquer.
 
-2. Sélectionner **Dupliquer**.
+1. Sélectionner **Dupliquer**.
 
    ![duplicate.png](images/duplicate.png)
 
-3. Sélectionnez **Enregistrer**.
+1. Sélectionnez **Enregistrer**.
 
    ![save.png](images/save.png)
 
@@ -165,21 +165,21 @@ La ligne de base en double est créée.
 Vous pouvez directement spécifier la version d’une rubrique utilisée dans une ligne de base.
 
 1. Dans l&#39;onglet Lignes de base , sélectionnez la ligne de base que vous souhaitez modifier.
-2. Sélectionnez **Modifier**.
+1. Sélectionnez **Modifier**.
 
    ![edit-aem.png](images/edit-aem.png)
 
-3. Sélectionner **Parcourir toutes les rubriques**.
+1. Sélectionner **Parcourir toutes les rubriques**.
 
    ![browse-all-topics.png](images/browse-all-topics.png)
 
    Un tableau des rubriques et des informations associées s’affiche.
 
-4. Pour les rubriques que vous souhaitez modifier, sélectionnez la version souhaitée dans la liste déroulante sous la colonne Version .
+1. Pour les rubriques que vous souhaitez modifier, sélectionnez la version souhaitée dans la liste déroulante sous la colonne Version .
 
    ![version-dropdown.png](images/version-dropdown.png)
 
-5. Sélectionnez **Enregistrer**.
+1. Sélectionnez **Enregistrer**.
 
 Vos modifications ont été enregistrées. Votre ligne de base utilise désormais les versions de la rubrique que vous avez spécifiée.
 
@@ -191,17 +191,17 @@ Dans ce cas, nous créons un paramètre prédéfini de sortie basé sur une lign
 
 1. Accédez à l’onglet Paramètres prédéfinis de sortie dans le tableau de bord des cartes.
 
-2. Sélectionnez **Créer**.
+1. Sélectionnez **Créer**.
 
    ![create-output-preset.png](images/create-output-preset.png)
 
    Une nouvelle page de paramètres prédéfinis de sortie s’affiche, appelée Nouvelle sortie.
-3. Dans le champ Nom du paramètre , saisissez un nom convivial.
+1. Dans le champ Nom du paramètre , saisissez un nom convivial.
 
-4. Cochez la case Utiliser la ligne de base , puis sélectionnez la ligne de base souhaitée dans le menu déroulant.
+1. Cochez la case Utiliser la ligne de base , puis sélectionnez la ligne de base souhaitée dans le menu déroulant.
 
    ![baseline.png](images/baseline.png)
 
-5. Sélectionnez **Terminé**.
+1. Sélectionnez **Terminé**.
 
 Votre nouveau paramètre prédéfini de sortie a été créé et s’affiche sur la page des paramètres prédéfinis de sortie.

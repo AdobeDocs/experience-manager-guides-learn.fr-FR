@@ -2,7 +2,7 @@
 title: Suivi des modifications
 description: Suivi des modifications dans les guides AEM
 exl-id: 57779920-b3b4-44be-a1fb-89ea7c89eef7
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 1%
@@ -21,19 +21,19 @@ Vous pouvez effectuer le suivi de toutes les mises à jour effectuées sur un do
 
    ![Suivi des modifications](images/lesson-12/track-changes-icon.png)
 
-2. Effectuez une modification dans la rubrique.
+1. Effectuez une modification dans la rubrique.
 
    Le contenu ajouté s’affiche désormais en vert avec une barre de modification. Le contenu supprimé s’affiche en rouge avec une barré.
 
-3. Sélectionnez la **Modifications suivies** sur la droite pour accéder au panneau Modifications suivies .
+1. Sélectionnez la **Modifications suivies** sur la droite pour accéder au panneau Modifications suivies .
 
    ![Accepter/Rejeter tout](images/lesson-12/accept-reject-all.png)
 
-4. Cliquez sur [!UICONTROL **Enregistrer**].
+1. Cliquez sur [!UICONTROL **Enregistrer**].
 
    ![Icône Enregistrer](images/lesson-12/save-icon.png)
 
-5. Fermez la rubrique.
+1. Fermez la rubrique.
 
 D’autres utilisateurs peuvent désormais ouvrir la rubrique et afficher les modifications suivies existantes. Ils peuvent accepter ou refuser les modifications et ajouter les leurs.
 
@@ -43,7 +43,7 @@ La fonction de recherche s’avère utile lorsque de nombreuses modifications fo
 
 1. Sélectionnez la **Modifications suivies** sur la droite pour accéder au panneau Modifications suivies .
 
-2. Saisissez un mot ou une expression dans le champ Rechercher .
+1. Saisissez un mot ou une expression dans le champ Rechercher .
 La recherche renvoie toutes les modifications qui correspondent aux mots recherchés.
 
 ## Filtrer les modifications suivies
@@ -52,11 +52,11 @@ Plusieurs modifications suivies peuvent également être filtrées par insertion
 
 1. Cliquez sur le bouton [!UICONTROL **Filtrer**] au bas du panneau Modifications suivies .
 
-2. Cochez les cases correspondant aux filtres souhaités.
+1. Cochez les cases correspondant aux filtres souhaités.
 
    ![Interface utilisateur des filtres](images/lesson-12/filter.png)
 
-3. Cliquez sur [!UICONTROL **Appliquer**].
+1. Cliquez sur [!UICONTROL **Appliquer**].
 
 ## Accepter ou rejeter les modifications suivies
 
@@ -64,9 +64,9 @@ Les réviseurs et les experts du sujet peuvent accepter ou refuser les modificat
 
 1. Cliquez sur le bouton [!UICONTROL **Modifications suivies**] sur la droite pour accéder au panneau Modifications suivies .
 
-2. Sélectionnez une modification spécifique.
+1. Sélectionnez une modification spécifique.
 
-3. Cliquez sur le bouton [!UICONTROL **Pouces vers le haut**] ou [!UICONTROL **Menu déroulant**] icône associée à la modification pour l’accepter ou la refuser.
+1. Cliquez sur le bouton [!UICONTROL **Pouces vers le haut**] ou [!UICONTROL **Menu déroulant**] icône associée à la modification pour l’accepter ou la refuser.
 
    ![Accepter/rejeter une seule interface utilisateur](images/lesson-12/accept-reject-single.png)
 
@@ -76,7 +76,7 @@ Les réviseurs et les experts du sujet peuvent accepter ou refuser les modificat
 
    ![Accepter/rejeter une seule interface utilisateur](images/lesson-12/accept-reject-single.png)
 
-4. [!UICONTROL **Enregistrer**] la rubrique .
+1. [!UICONTROL **Enregistrer**] la rubrique .
 
 ## Utilisation de la fonction de fusion
 
@@ -84,18 +84,18 @@ Lorsque vous travaillez dans un environnement de plusieurs auteurs, il peut êtr
 
 1. Ouvrez une rubrique dans l’éditeur web.
 
-2. Cliquez sur le bouton [!UICONTROL **Fusion**] dans la barre d’outils.
+1. Cliquez sur le bouton [!UICONTROL **Fusion**] dans la barre d’outils.
 
    ![Icône Fusionner](images/lesson-12/merge-icon.png)
 
-3. Dans la boîte de dialogue Fusionner , sélectionnez une version du fichier avec laquelle comparer la version actuelle du fichier.
+1. Dans la boîte de dialogue Fusionner , sélectionnez une version du fichier avec laquelle comparer la version actuelle du fichier.
 
-4. Dans les Options, choisissez :
+1. Dans les Options, choisissez :
 
    - **Suivi des modifications à partir de la version sélectionnée**: Cette option affiche toutes les mises à jour de contenu sous la forme de modifications suivies. Vous pouvez ensuite choisir d’accepter ou de rejeter les modifications du document une par une ou toutes à la fois.
 
    - **Revenir à la version sélectionnée**: Cette option rétablit la version actuelle du document sur la version sélectionnée. Il ne vous donne aucun contrôle sur le contenu accepté ou rejeté.
 
-5. Cliquez sur [!UICONTROL **Terminé**].
+1. Cliquez sur [!UICONTROL **Terminé**].
 
 Si vous avez sélectionné la variable **Option Suivi des modifications à partir de la version sélectionnée**, toutes les modifications de la version sélectionnée s’affichent dans l’onglet Modifications du panneau de droite.

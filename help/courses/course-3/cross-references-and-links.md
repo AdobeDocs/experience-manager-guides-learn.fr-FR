@@ -2,7 +2,7 @@
 title: Références croisées et liens
 description: Création de références croisées et de liens dans AEM Guides
 exl-id: bee7d50f-cbdd-4ac8-b15b-101febc4ae80
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Il est possible de créer une référence croisée externe en faisant glisser un
 
 1. Ouvrez un fichier dans lequel vous souhaitez insérer une référence croisée externe.
 
-2. Attribuez un identifiant à l’élément à référencer.
+1. Attribuez un identifiant à l’élément à référencer.
 
    a. Cliquez à l’intérieur de l’élément .
 
@@ -34,15 +34,15 @@ Il est possible de créer une référence croisée externe en faisant glisser un
 
    d. Afficher l’élément et sa valeur dans **Mode plan** si vous le souhaitez.
 
-3. **Enregistrer** Consultez la rubrique pour vous assurer que le référentiel dispose de l’identifiant mis à jour.
+1. **Enregistrer** Consultez la rubrique pour vous assurer que le référentiel dispose de l’identifiant mis à jour.
 
-4. Cliquez sur le bouton [!UICONTROL **Référence**] dans la barre d’outils supérieure.
+1. Cliquez sur le bouton [!UICONTROL **Référence**] dans la barre d’outils supérieure.
 
    ![Barre d’outils](images/lesson-7/references-icon.png)
 
-5. Dans la **Référence de contenu** , sélectionnez l’identifiant et l’association d’éléments à insérer comme référence croisée.
+1. Dans la **Référence de contenu** , sélectionnez l’identifiant et l’association d’éléments à insérer comme référence croisée.
 
-6. Cliquez sur [!UICONTROL **Sélectionner**].
+1. Cliquez sur [!UICONTROL **Sélectionner**].
 
 La référence croisée a été ajoutée à la rubrique.
 
@@ -57,9 +57,9 @@ Certaines modifications peuvent entraîner des références croisées rompues. I
 
 1. Accédez au **Mode plan** dans le panneau de gauche.
 
-2. Cliquez sur le bouton [!UICONTROL **Filtrer**] icône .
+1. Cliquez sur le bouton [!UICONTROL **Filtrer**] icône .
 
-3. Sélectionner **Liens rompus**.
+1. Sélectionner **Liens rompus**.
 
    ![Liste déroulante Filtre](images/lesson-7/broken-links.png)
 

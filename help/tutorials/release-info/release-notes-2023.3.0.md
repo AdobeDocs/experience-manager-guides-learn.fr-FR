@@ -1,7 +1,7 @@
 ---
 title: Notes de mise à jour | Adobe Experience Manager Guides as a Cloud Service, version de mars 2023
-description: Dernière version des guides Adobe Experience Manager as a Cloud Service
-source-git-commit: 07709048f560a77b923436d990c831a5f8b907e3
+description: Version de mars des guides Adobe Experience Manager as a Cloud Service
+source-git-commit: d762cccc4a8f89eb91a1a8eb2c1410a7e0358b85
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 2%
@@ -10,12 +10,12 @@ ht-degree: 2%
 
 # Version de mars des guides Adobe Experience Manager as a Cloud Service
 
-## Mise à niveau vers la dernière version
+## Mise à niveau vers la version de mars
 
 Mettez à niveau vos guides Adobe Experience Manager actuels as a Cloud Service (plus tard appelés *AEM Guides as a Cloud Service*) en procédant comme suit :
 1. Extrayez le code Git des Cloud Services et passez à la branche configurée dans le pipeline Cloud Services correspondant à l’environnement que vous souhaitez mettre à niveau.
 2. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Services vers la version 2023.3.242.
-3. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la dernière version d’AEM Guides as a Cloud Service.
+3. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version de mars d’AEM Guides as a Cloud Service.
 
 ## Étapes d’indexation du contenu existant (uniquement si vous utilisez une version antérieure à la version de septembre des AEM Guides as a Cloud Service)
 
@@ -52,7 +52,7 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 
 ## Nouvelles fonctionnalités et améliorations
 
-AEM Guides as a Cloud Service fournit des améliorations et de nouvelles fonctionnalités dans la dernière version :
+AEM Guides as a Cloud Service fournit des améliorations et de nouvelles fonctionnalités dans la version de mars 2023 :
 
 ### Ouverture et lecture de fichiers vidéo ou audio dans l’éditeur web
 

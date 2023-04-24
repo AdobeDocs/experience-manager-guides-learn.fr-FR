@@ -2,7 +2,7 @@
 title: Notes de mise à jour | Guides Adobe Experience Manager as a Cloud Service, version d’avril 2022
 description: Version d’avril des guides Adobe Experience Manager as a Cloud Service
 exl-id: c735ba24-a803-454b-8723-57dacf90061b
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 3%
@@ -15,8 +15,8 @@ ht-degree: 3%
 
 Mettre à niveau votre [!DNL Adobe Experience Manager Guides] as a Cloud Service (plus tard appelé *[!DNL AEM Guides]as a Cloud Service*) en procédant comme suit :
 1. Extrayez le code Git des Cloud Services et passez à la branche configurée dans le pipeline Cloud Services correspondant à l’environnement que vous souhaitez mettre à niveau.
-2. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Services vers la version 2022.4.133.
-3. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version d’avril de [!DNL AEM Guides] as a Cloud Service.
+1. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Services vers la version 2022.4.133.
+1. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version d’avril de [!DNL AEM Guides] as a Cloud Service.
 
 ## Matrice de compatibilité
 
@@ -52,8 +52,8 @@ Une référence de clé de contenu DITA insère une partie du contenu d’une ru
 Désormais, les références clés sont résolues sur la base de la carte racine définie dans l’ordre de priorité suivant :
 
 1. Préférences utilisateur
-2. Panneau Vue Carte
-3. Profil de dossier
+1. Panneau Vue Carte
+1. Profil de dossier
 
 Pour plus d’informations, voir *Résoudre les références de clés* dans le guide de l’utilisateur.
 

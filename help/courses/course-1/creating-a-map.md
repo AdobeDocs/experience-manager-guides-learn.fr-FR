@@ -2,7 +2,7 @@
 title: Création d’une carte dans [!DNL AEM Guides]
 description: Découvrez comment créer une carte dans [!DNL Adobe Experience Manager Guides]
 exl-id: e38a7fd5-2a29-4248-8e8f-e6a87e1eae9c
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 1%
@@ -82,7 +82,7 @@ Votre contenu s’ouvre dans [!UICONTROL Aperçu].
 Vous pouvez modifier la hiérarchie des rubriques dans la carte.
 
 1. Cliquez sur l’icône d’une rubrique pour la sélectionner.
-2. Utilisez les flèches pour rétrograder et promouvoir les éléments, respectivement.
+1. Utilisez les flèches pour rétrograder et promouvoir les éléments, respectivement.
 
    ![Icône Référentiel](images/lesson-8/left-right.png)
 

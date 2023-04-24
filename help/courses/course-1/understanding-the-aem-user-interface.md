@@ -2,7 +2,7 @@
 title: Présentation de l’interface utilisateur d’AEM dans [!DNL AEM Guides]
 description: Présentation de l’interface utilisateur d’AEM dans [!DNL Adobe Experience Manager Guides]
 exl-id: 955a05ed-92d3-480e-9c6b-a0ff362cc464
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 2%
@@ -18,7 +18,7 @@ Découvrez la gestion des ressources, des fichiers et des dossiers dans l’édi
 ## Accès à l’éditeur XML
 
 1. Dans l’écran de connexion, saisissez votre nom d’utilisateur et votre mot de passe, puis sélectionnez **[!UICONTROL Se connecter]**.
-2. Sélectionner **[!UICONTROL Éditeur XML]** sur la page de navigation AEM.
+1. Sélectionner **[!UICONTROL Éditeur XML]** sur la page de navigation AEM.
 
 ## Vues de l’éditeur XML
 
@@ -71,7 +71,7 @@ Vous pouvez choisir parmi plusieurs vues pour l’interface utilisateur d’Asse
 | --- | --- |
 | Mode Carte | Affiche chaque ressource sous forme d’icône |
 | Mode Colonnes | Affiche les ressources dans une structure de dossiers condensée et extensible |
-| Mode Liste | Affiche les ressources dans une liste, ainsi que leurs détails |
+| Vue Liste | Affiche les ressources dans une liste, ainsi que leurs détails |
 
 ## Retour à l’éditeur XML
 
@@ -81,7 +81,7 @@ Vous pouvez revenir à l’éditeur XML à partir de n’importe quelle vue de l
 
 1. Sélectionnez la rubrique à modifier dans la liste.
 La rubrique s’affiche dans l’interface utilisateur d’Assets.
-2. Sélectionner **Modifier** dans la barre d’outils supérieure.
+1. Sélectionner **Modifier** dans la barre d’outils supérieure.
 Vous êtes alors renvoyé à l’éditeur XML.
 
 ### Retour à partir du mode Carte

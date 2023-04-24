@@ -2,7 +2,7 @@
 title: Configuration de l’éditeur de guides AEM
 description: Configuration de l’éditeur pour AEM Guides
 exl-id: 437d9598-4afc-431f-81bd-6762e22656b7
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 0%
@@ -25,17 +25,17 @@ Vous pouvez toujours télécharger la configuration de l’interface utilisateur
 
    ![Icône Outils](images/reuse/tools-icon.png)
 
-2. Sélectionner **Guides** dans le panneau de gauche.
+1. Sélectionner **Guides** dans le panneau de gauche.
 
-3. Cliquez sur le bouton [!UICONTROL **Profils de dossier**] mosaïque.
+1. Cliquez sur le bouton [!UICONTROL **Profils de dossier**] mosaïque.
 
    ![Profils de dossier](images/reuse/folder-profiles-tile.png)
 
-4. Sélectionnez un profil de dossier.
+1. Sélectionnez un profil de dossier.
 
-5. Cliquez sur le bouton [!UICONTROL **Configuration de l’éditeur XML**] .
+1. Cliquez sur le bouton [!UICONTROL **Configuration de l’éditeur XML**] .
 
-6. Cliquez sur [!UICONTROL **Télécharger**] Valeur par défaut.
+1. Cliquez sur [!UICONTROL **Télécharger**] Valeur par défaut.
 
    ![Téléchargement par défaut](images/lesson-4/download-default.png)
 
@@ -47,15 +47,15 @@ Après avoir personnalisé la configuration de l’interface utilisateur, vous p
 
 1. Dans le profil du dossier, cliquez sur le bouton [!UICONTROL **Configuration de l’éditeur XML**] .
 
-2. Sous Configuration de l’interface utilisateur de l’éditeur XML, cliquez sur [!UICONTROL **Télécharger**].
+1. Sous Configuration de l’interface utilisateur de l’éditeur XML, cliquez sur [!UICONTROL **Télécharger**].
 
    ![Chargement](images/lesson-4/upload.png)
 
-3. Double-cliquez sur le fichier correspondant à votre configuration d’interface utilisateur modifiée ou, comme illustré ici, sur le fichier d’exemple fourni.
+1. Double-cliquez sur le fichier correspondant à votre configuration d’interface utilisateur modifiée ou, comme illustré ici, sur le fichier d’exemple fourni.
 
    ![Exemple de fichier de configuration](images/lesson-4/sample-config-file.png)
 
-4. Cliquez sur [!UICONTROL **Enregistrer**] dans le coin supérieur gauche de l’écran.
+1. Cliquez sur [!UICONTROL **Enregistrer**] dans le coin supérieur gauche de l’écran.
 
 Vous avez téléchargé avec succès la configuration de l’interface utilisateur modifiée.
 
@@ -67,17 +67,17 @@ Comme pour la configuration de l’interface utilisateur, vous pouvez téléchar
 
    ![Icône Outils](images/reuse/tools-icon.png)
 
-2. Sélectionner **Guides** dans le panneau de gauche.
+1. Sélectionner **Guides** dans le panneau de gauche.
 
-3. Cliquez sur le bouton [!UICONTROL **Profils de dossier**] mosaïque.
+1. Cliquez sur le bouton [!UICONTROL **Profils de dossier**] mosaïque.
 
    ![Profils de dossier](images/reuse/folder-profiles-tile.png)
 
-4. Sélectionnez un profil de dossier.
+1. Sélectionnez un profil de dossier.
 
-5. Cliquez sur le bouton [!UICONTROL **Configuration de l’éditeur XML**] .
+1. Cliquez sur le bouton [!UICONTROL **Configuration de l’éditeur XML**] .
 
-6. Sous Disposition Modèle CSS, cliquez sur [!UICONTROL **Télécharger**].
+1. Sous Disposition Modèle CSS, cliquez sur [!UICONTROL **Télécharger**].
 
    ![Télécharger CSS](images/lesson-4/download-css.png)
 
@@ -89,15 +89,15 @@ Après avoir personnalisé la mise en page du modèle CSS, vous pouvez la télé
 
 1. Dans le profil du dossier, cliquez sur le bouton [!UICONTROL **Configuration de l’éditeur XML**] .
 
-2. Sous Disposition Modèle CSS, cliquez sur [!UICONTROL **Télécharger**].
+1. Sous Disposition Modèle CSS, cliquez sur [!UICONTROL **Télécharger**].
 
    ![Télécharger CSS](images/lesson-4/upload-css.png)
 
-3. Double-cliquez sur le fichier correspondant à votre propre disposition CSS personnalisée ou au fichier d’exemple fourni illustré ici.
+1. Double-cliquez sur le fichier correspondant à votre propre disposition CSS personnalisée ou au fichier d’exemple fourni illustré ici.
 
    ![Exemple de fichier CSS](images/lesson-4/sample-css-file.png)
 
-4. Cliquez sur [!UICONTROL **Enregistrer**] dans le coin supérieur gauche de l’écran.
+1. Cliquez sur [!UICONTROL **Enregistrer**] dans le coin supérieur gauche de l’écran.
 Vous avez correctement téléchargé la mise en page de modèle CSS personnalisée.
 
 ## Modifier des fragments de code de l’éditeur XML
@@ -108,25 +108,25 @@ Les fragments de code sont des éléments de contenu réutilisables qui peuvent 
 
    ![Icône Outils](images/reuse/tools-icon.png)
 
-2. Sélectionner **Guides** dans le panneau de gauche.
+1. Sélectionner **Guides** dans le panneau de gauche.
 
-3. Cliquez sur le bouton [!UICONTROL **Profils de dossier**] mosaïque.
+1. Cliquez sur le bouton [!UICONTROL **Profils de dossier**] mosaïque.
 
    ![Profils de dossier](images/reuse/folder-profiles-tile.png)
 
-4. Sélectionnez un profil de dossier.
+1. Sélectionnez un profil de dossier.
 
-5. Cliquez sur le bouton [!UICONTROL **Configuration de l’éditeur XML**] .
+1. Cliquez sur le bouton [!UICONTROL **Configuration de l’éditeur XML**] .
 
-6. Sous Fragments de code de l’éditeur XML, cliquez sur **Télécharger**.
+1. Sous Fragments de code de l’éditeur XML, cliquez sur **Télécharger**.
 
    ![Chargement des fragments de code](images/lesson-4/upload-snippets.png)
 
-7. Choisissez vos propres fragments de code ou utilisez les exemples fournis.
+1. Choisissez vos propres fragments de code ou utilisez les exemples fournis.
 
    ![Extrait de code](images/lesson-4/sample-snippet.png)
 
-8. Cliquez sur [!UICONTROL **Enregistrer**] dans le coin supérieur gauche de l’écran.
+1. Cliquez sur [!UICONTROL **Enregistrer**] dans le coin supérieur gauche de l’écran.
 
 Vous avez ajouté de nouveaux fragments de code à l’éditeur.
 
@@ -138,17 +138,17 @@ Par défaut, les auteurs sont autorisés à créer des libellés de leur choix e
 
    ![Icône Outils](images/reuse/tools-icon.png)
 
-2. Sélectionner **Guides** dans le panneau de gauche.
+1. Sélectionner **Guides** dans le panneau de gauche.
 
-3. Cliquez sur le bouton [!UICONTROL **Profils de dossier**] mosaïque.
+1. Cliquez sur le bouton [!UICONTROL **Profils de dossier**] mosaïque.
 
    ![Profils de dossier](images/reuse/folder-profiles-tile.png)
 
-4. Sélectionnez un profil de dossier.
+1. Sélectionnez un profil de dossier.
 
-5. Cliquez sur le bouton [!UICONTROL **Configuration de l’éditeur XML**] .
+1. Cliquez sur le bouton [!UICONTROL **Configuration de l’éditeur XML**] .
 
-6. Sous Étiquettes de version de contenu XML, cliquez sur [!UICONTROL **Télécharger**].
+1. Sous Étiquettes de version de contenu XML, cliquez sur [!UICONTROL **Télécharger**].
 
    ![Télécharger des étiquettes](images/lesson-4/download-labels.png)
 
@@ -160,14 +160,14 @@ Une fois que vous avez téléchargé et modifié les libellés, vous pouvez char
 
 1. Dans le profil du dossier, cliquez sur le bouton [!UICONTROL **Configuration de l’éditeur XML**] .
 
-2. Sous Étiquettes de version de contenu XML, cliquez sur [!UICONTROL **Télécharger**].
+1. Sous Étiquettes de version de contenu XML, cliquez sur [!UICONTROL **Télécharger**].
 
    ![Télécharger des étiquettes](images/lesson-4/upload-labels.png)
 
-3. Double-cliquez sur le fichier correspondant à vos propres libellés personnalisés ou au fichier d’exemple fourni illustré ici.
+1. Double-cliquez sur le fichier correspondant à vos propres libellés personnalisés ou au fichier d’exemple fourni illustré ici.
 
    ![Exemple de fichier de libellés](images/lesson-4/sample-labels-file.png)
 
-4. Cliquez sur [!UICONTROL **Enregistrer**] dans le coin supérieur gauche de l’écran.
+1. Cliquez sur [!UICONTROL **Enregistrer**] dans le coin supérieur gauche de l’écran.
 
 Vous avez téléchargé avec succès des étiquettes de version de contenu XML personnalisées.
