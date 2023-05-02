@@ -1,9 +1,9 @@
 ---
 title: Architecture et performances du microservice de publication dans le cloud
 description: Découvrez comment le nouveau microservice permet une publication évolutive sur AEMaaCS.
-source-git-commit: c67cc61938b407c3b11c5f793c6becdc9e015670
+source-git-commit: a8466a16cea7df7757d15005baaf73a39c7952ea
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Architecture du microservice de publication dans le cloud et analyse des performances
 
-Cet article partage les informations sur l’architecture et certains numéros de performances du nouveau microservice de publication dans le cloud.
+Cet article partage les informations sur l’architecture et les performances du nouveau microservice de publication dans le cloud.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ Cette contrainte de ressources était la principale motivation pour proposer un 
 
 ## Présentation de la nouvelle architecture
 
-Le service utilise les solutions cloud de pointe d’Adobe telles que App Builder, IO Eventing, IMS pour créer une offre sans serveur. Ces services sont eux-mêmes basés sur les standards largement acceptés de l&#39;industrie comme Kubernetes, Docker.
+Le service utilise les solutions cloud de pointe d’Adobe telles que App Builder, IO Eventing, IMS pour créer une offre sans serveur. Ces services sont eux-mêmes basés sur les standards largement acceptés de l&#39;industrie comme Kubernetes et Docker.
 
 Chaque requête au nouveau microservice de publication est exécutée dans un conteneur Docker isolé qui exécute une seule requête de publication à la fois. Plusieurs nouveaux conteneurs sont automatiquement créés en cas de nouvelle demande de publication. Cette configuration de conteneur unique par requête permet au microservice de fournir les meilleures performances aux clients sans introduire de risques de sécurité. Ces conteneurs sont ignorés une fois la publication terminée, libérant ainsi toutes les ressources utilisées.
 
@@ -42,9 +42,9 @@ Toutes ces communications sont sécurisées par Adobe IMS à l’aide de l’aut
 
 ## Analyse des performances
 
-Cette section présente les performances du microservice. Notez que l’ancienne architecture cloud rencontrait des problèmes lors de la publication de cartes volumineuses ou de l’exécution de plusieurs publications simultanées. Par conséquent, cette section compare les performances du microservice à l’offre AEM Guides on-premise.
+Cette section présente les numéros de performances du microservice. Il compare les performances du microservice avec l’offre sur site d’AEM Guides, car l’ancienne architecture cloud présentait des problèmes lors de la publication simultanée ou de la publication de cartes très volumineuses.
 
-Si vous publiez une carte volumineuse sur le site, vous devrez peut-être ajuster les paramètres du tas Java, sinon vous risquez de rencontrer des erreurs de mémoire insuffisante. Sur le cloud, le microservice est déjà profilé et dispose d’un tas Java optimal et d’autres configurations prêtes à l’emploi.
+Si vous publiez une carte volumineuse sur le site, vous devrez peut-être ajuster les paramètres du tas Java, sinon vous pourrez rencontrer des erreurs de mémoire insuffisante. Sur le cloud, le microservice est déjà profilé et dispose d’un tas Java optimal et d’autres configurations prêtes à l’emploi.
 
 ### Exécution d’une publication sur le cloud par rapport à sur-site
 
@@ -70,12 +70,12 @@ Si vous publiez une carte volumineuse sur le site, vous devrez peut-être ajuste
 
 * On-prem
 
-   L’exécution de la publication simultanée sur le site entraîne une grave dégradation des performances. Cette baisse des performances est plus grave si les éditeurs publient encore plus de cartes simultanément.
+   L’exécution simultanée de la publication sur un serveur on-premise entraîne une grave dégradation des performances. Cette baisse des performances est plus grave si les éditeurs publient encore plus de cartes simultanément.
 
    <img src="assets/onprem_bulk_publish.png" alt="onglet projets" width="600">
 
 ## Avantages supplémentaires
 
-Un chemin d’accès de chaque requête de publication doit s’exécuter sur l’instance AEM pour récupérer le contenu de publication correct à envoyer au microservice. La nouvelle architecture cloud utilise AEM tâches au lieu de processus AEM, comme c’était le cas dans l’ancienne architecture. Cette modification permet aux administrateurs AEM Guides de configurer individuellement les paramètres de la file d’attente de publication dans le cloud sans affecter d’autres tâches AEM ou configurations de workflow.
+Une partie de chaque requête de publication doit s’exécuter sur l’instance AEM pour récupérer le contenu de publication correct à envoyer au microservice. La nouvelle architecture cloud utilise AEM tâches au lieu de processus AEM, comme c’était le cas dans l’ancienne architecture. Cette modification permet aux administrateurs AEM Guides de configurer individuellement les paramètres de la file d’attente de publication dans le cloud sans affecter d’autres tâches AEM ou configurations de workflow.
 
 Vous trouverez des informations détaillées sur la configuration du nouveau microservice de publication ici : [Configurer Microservice](configure-microservices.md)
