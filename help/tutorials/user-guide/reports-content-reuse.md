@@ -1,13 +1,13 @@
 ---
 title: Rapport Réutilisation du contenu
 description: Découvrez comment réutiliser le rapport Réutilisation du contenu
-source-git-commit: bb7a8d49e5425b7fc856277c054558c75394fcb2
+exl-id: 658ae0fd-9032-4480-b9e4-fe4fec261e72
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
 
 ---
-
 
 # Rapport Réutilisation du contenu {#id205BB900OQD}
 
@@ -31,7 +31,7 @@ Effectuez les étapes suivantes pour afficher le rapport Réutilisation du conte
 
 1. Cliquez sur **Générer un rapport** pour obtenir le rapport Réutilisation du contenu .
 
-   ![](images/content-reuse-uuid.png)
+   ![](images/content-reuse-uuid.png){width="800" align="left"}
 
    La page du rapport se divise en deux parties :
 
@@ -61,4 +61,3 @@ Effectuez les étapes suivantes pour afficher le rapport Réutilisation du conte
 > Vous pouvez également exporter le rapport Réutilisation du contenu au format CSV. Pour ce faire, cliquez sur le lien Exporter au format CSV dans le coin supérieur gauche de l’écran et choisissez l’emplacement d’enregistrement du fichier CSV. Vous pouvez ensuite ouvrir ce fichier CSV dans n’importe quel éditeur CSV.
 
 **Rubrique parente :**[ Rapports](reports-intro.md)
-

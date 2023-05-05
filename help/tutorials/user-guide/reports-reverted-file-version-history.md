@@ -1,13 +1,13 @@
 ---
 title: Rapport Historique des versions des fichiers restaurés
 description: Découvrez comment créer un rapport Historique des versions des fichiers restaurés
-source-git-commit: bb7a8d49e5425b7fc856277c054558c75394fcb2
+exl-id: fa90b373-742a-4102-b00f-07e4113fef98
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 0%
 
 ---
-
 
 # Rapport Historique des versions des fichiers restaurés {#id205BBC00PRK}
 
@@ -19,7 +19,7 @@ Vous pouvez accéder à ce rapport à partir des emplacements suivants :
 
 - **Interface utilisateur des ressources**: en sélectionnant un fichier et en ouvrant le **Historique des versions** dans le rail de gauche. Le **Historique des versions** La vue contient la variable **Rétablir les journaux de version** lien au bas du panneau. Lorsque vous cliquez sur ce lien, l’historique des versions rétablies du fichier sélectionné s’affiche.
 
-   ![](images/revert-log-from-assets-ui.png)
+   ![](images/revert-log-from-assets-ui.png){width="300" align="left"}
 
 - **Aperçu de la rubrique**: lorsque vous prévisualisez une rubrique, vous pouvez également afficher le **Historique des versions** du rail de gauche. Vous obtenez un panneau similaire à l’interface utilisateur d’Assets à partir duquel vous pouvez cliquer sur le bouton **Rétablir les journaux de version** pour accéder à l’historique de version rétabli du principal document.
 
@@ -38,7 +38,7 @@ Effectuez les étapes suivantes pour accéder au rapport Rétablir l’historiqu
 
 1. Cliquez sur **Afficher les journaux** pour générer le rapport pour le fichier ou le dossier sélectionné.
 
-   ![](images/revert-version-history-report.png)
+   ![](images/revert-version-history-report.png){width="800" align="left"}
 
    Le rapport contient les détails suivants :
 
@@ -56,4 +56,3 @@ Effectuez les étapes suivantes pour accéder au rapport Rétablir l’historiqu
 
 
 **Rubrique parente :**[ Rapports](reports-intro.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Bonnes pratiques relatives à la traduction de contenu
 description: Découvrez les bonnes pratiques en matière de traduction de contenu
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 4eff0f27-b3d1-4c6e-af88-bcb3f6d96990
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 2%
 
 ---
-
 
 # Bonnes pratiques relatives à la traduction de contenu {#id1678G0S702F}
 
@@ -29,7 +29,7 @@ Tenez compte du point suivant pour traduire du contenu :
 
 L’illustration suivante présente un exemple de structure de dossiers dans AEM lorsque vous avez utilisé du contenu global et trois copies de langue.
 
-![](images/aem-directory_structure.png)
+![](images/aem-directory_structure.png){width="800" align="left"}
 
 ## Configuration du service de traduction
 
@@ -129,4 +129,3 @@ Une fois la traduction terminée, l’état de la tâche de traduction devient *
 > Si vous rejetez la traduction d’une ou de plusieurs rubriques dans une tâche de traduction, la variable **En cours** l’état de traduction de toutes les rubriques rejetées revient à leur état d’origine. L’état des rubriques référencées est vérifié et rétabli en fonction de l’état de traduction le plus récent. En outre, les fichiers de traduction créés dans le projet de destination ne sont pas supprimés même si la traduction est refusée pour eux.
 
 **Rubrique parente :**[ Traduire le contenu](translation.md)
-

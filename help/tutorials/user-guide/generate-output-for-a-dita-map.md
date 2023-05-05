@@ -1,13 +1,13 @@
 ---
 title: Générer la sortie d’un mappage DITA à partir de la console de mappage
 description: Découvrez comment générer une sortie pour un mappage DITA à partir de la console de mappage
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 98afbdd2-56d7-44b0-ad2a-25e9143c88f3
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '1399'
 ht-degree: 0%
 
 ---
-
 
 # Générer la sortie d’un mappage DITA à partir de la console de mappage {#id1825FG00UHT}
 
@@ -19,7 +19,7 @@ Effectuez les étapes suivantes pour générer la sortie pour un mappage DITA :
 
 1. Sélectionnez un ou plusieurs paramètres prédéfinis de sortie à utiliser pour générer la sortie.
 
-   ![](images/generate-multiple-outputs-uuid.png)
+   ![](images/generate-multiple-outputs-uuid.png){width="800" align="left"}
 
    >[!NOTE]
    >
@@ -68,7 +68,7 @@ Effectuez les étapes suivantes pour générer à nouveau une sortie pour une ru
    >
    > Si vous avez ajouté de nouvelles rubriques au mappage DITA, vous ne pourrez pas générer ces nouvelles rubriques à partir de cet emplacement. Vous devez d’abord publier les rubriques nouvellement ajoutées à l’aide de la fonction de publication de mappage DITA.
 
-   ![](images/regenerate-topics.png)
+   ![](images/regenerate-topics.png){width="800" align="left"}
 
 1. Cliquez sur **Régénérer**.
 
@@ -95,7 +95,7 @@ Effectuez les étapes suivantes pour afficher la file d’attente de génératio
 
 1. Cliquez sur **Sorties**.
 
-   ![](images/output-queued.png)
+   ![](images/output-queued.png){width="800" align="left"}
 
    La page Sorties est divisée en deux parties :
 
@@ -132,17 +132,17 @@ Pour annuler une tâche de génération de sortie à partir de la console de map
 
 1. Cliquez sur le bouton *Annuler Cette Tâche* icône .
 
-   ![](images/cancel-publish-task-map-console.png)
+   ![](images/cancel-publish-task-map-console.png){width="800" align="left"}
 
 1. Cliquez sur **Oui** dans l’invite de message Confirmer l’annulation .
 
-   ![](images/confirm-cancel-output-map-condole.png)
+   ![](images/confirm-cancel-output-map-condole.png){width="800" align="left"}
 
    Si la tâche n’a pas encore commencé, la commande d’annulation est exécutée sur la tâche. Pour une tâche en cours d’annulation, l’état est défini sur Annuler.
 
    Une fois la tâche annulée, elle est déplacée vers la **Sorties générées** avec une **Annulé** statut. Lorsque vous passez la souris sur la tâche annulée, le nom de l’utilisateur qui a annulé la tâche s’affiche. Dans la capture d’écran suivante, la variable *HTML5* la tâche est annulée.
 
-   ![](images/cancelled-output-task.png)
+   ![](images/cancelled-output-task.png){width="800" align="left"}
 
 
 ## Suppression d’une tâche de sortie de la console de mappage DITA
@@ -159,7 +159,7 @@ Effectuez les étapes suivantes pour supprimer une tâche de sortie de la liste 
 
 1. Cliquez sur l’icône de suppression.
 
-   ![](images/delete-output-task.png)
+   ![](images/delete-output-task.png){width="800" align="left"}
 
 1. Cliquez sur **Oui** dans l’invite de message Confirmer la suppression .
 
@@ -167,4 +167,3 @@ Effectuez les étapes suivantes pour supprimer une tâche de sortie de la liste 
 
 
 **Rubrique parente :**[ Génération de sortie](generate-output.md)
-

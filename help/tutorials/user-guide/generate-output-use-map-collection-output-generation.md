@@ -1,13 +1,13 @@
 ---
 title: Utilisation de la collecte des cartes pour la génération de la sortie
 description: Découvrez comment utiliser la collecte de cartes pour la génération de sortie
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 32e3af6c-9670-42cc-8dbe-9f99fbc60adf
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 1%
 
 ---
-
 
 # Utilisation de la collecte des cartes pour la génération de la sortie {#id1723F20G0HS}
 
@@ -25,7 +25,7 @@ Pour créer une collection de mappages et ajouter des mappages DITA à la collec
 
    Si le lien Mapper les collections n’est pas disponible, sélectionnez la variable **Navigation** dans le rail de gauche, puis cliquez sur **Mappage de collections**.
 
-   ![](images/access-map-collection-left-rail.png)
+   ![](images/access-map-collection-left-rail.png){width="350" align="left"}
 
 1. Saisissez un titre pour votre collection de mappages.
 1. Cliquez sur **Créer**.
@@ -47,8 +47,7 @@ Pour créer une collection de mappages et ajouter des mappages DITA à la collec
 
    Les fichiers de mappage DITA sont ajoutés à votre collection de cartes.
 
-
-![](images/maps_presets_62_63.png)
+   ![](images/maps_presets_62_63.png){width="800" align="left"}
 
 Les options de filtrage et les détails de mappage suivants sont affichés sur la page de collection :
 
@@ -93,7 +92,6 @@ Pour configurer et générer la sortie à l’aide d’une collection de cartes,
 
 Semblable à la manière d’annuler une tâche de génération de sortie à partir de la fonction [Console de mappage DITA](generate-output-for-a-dita-map.md#id2061H100T5Z) ou le [Publier le tableau de bord](generate-output-publish-dashboard.md#), vous pouvez annuler une tâche de génération de sortie à partir d’une collection de cartes. Accédez à l’onglet Sorties d’une collection de cartes, accédez à la tâche de publication que vous souhaitez annuler, puis cliquez sur le bouton **Annuler Cette Tâche** pour annuler la tâche de publication.
 
-![](images/cancel-publish-task-map-collection.png)
+![](images/cancel-publish-task-map-collection.png){width="800" align="left"}
 
 **Rubrique parente :**[ Génération de sortie](generate-output.md)
-

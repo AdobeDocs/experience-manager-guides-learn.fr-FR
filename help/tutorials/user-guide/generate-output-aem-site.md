@@ -1,13 +1,13 @@
 ---
 title: AEM site
 description: Découvrez comment AEM site
-source-git-commit: 23d6c87b525f0763990166e46f4bd4ac2d6e7cd5
+exl-id: 8523ec55-d7f3-439d-96e8-163c7632f73c
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '2545'
 ht-degree: 0%
 
 ---
-
 
 # AEM site {#id205BE3008SW}
 
@@ -86,7 +86,7 @@ Pour simplifier la publication de cartes et de rubriques complexes qui renvoient
 
 Le contexte de publication vous permet de spécifier la rubrique à utiliser à partir de laquelle mapper la publication d’une sortie spécifique. Comprenons cela à l&#39;aide d&#39;un exemple — imaginons que vous ayez quatre dossiers : exemples a, b, c et d. Chaque dossier contient un mappage DITA — mappage DITA A, mappage DITA B, mappage DITA C et mappage DITA D. La liaison inter-mappage se produit lorsqu’une rubrique du mappage DITA A est liée à une rubrique dans les mappages DITA B, C ou D. Dans la capture d’écran suivante, un exemple de rubrique de concept contient des liens \(ou références\) vers des fichiers qui font partie d’autres mappages DITA.
 
-![](images/sample-concept-link-to-other.png){width="450" align="left"}
+![](images/sample-concept-link-to-other.png){width="350" align="left"}
 
 Désormais, lorsque vous configurez les paramètres de publication de site AEM pour le fichier de mappage qui contient cette rubrique, vous pouvez sélectionner le contexte de publication du contenu lié utilisé lors de la publication. Un contexte de publication est une combinaison de mappage DITA et de son paramètre prédéfini de sortie. Le paramètre prédéfini de sortie, à son tour, contient une version spécifique du contenu et des paramètres prédéfinis conditionnels. Cette combinaison complète de la carte DITA, du paramètre prédéfini de sortie, de la version \(files\) et des conditions définit le contexte de publication pour une carte liée.
 
@@ -143,8 +143,7 @@ Si vous utilisez `conref` dans votre contenu, il est publié en tant que contenu
 
 Vous pouvez rechercher une chaîne dans la sortie AEM Site. Par défaut, vous pouvez rechercher la chaîne uniquement dans les titres. Pour rechercher la chaîne dans le contenu ou le corps de la sortie AEM site, contactez votre administrateur système pour activer la propriété flattening.enabled .
 
-
-<img src="images/aem-output-search.png" alt="Recherche AEM sortie du site" width="800">
+![Recherche AEM sortie du site](images/aem-output-search.png){width="650" align="left"}
 
 Pour plus d’informations, voir *Configuration de l’aplatissement de AEM structure de noeuds Site* dans le guide d’installation et de configuration d’Adobe Experience Manager Guides.
 

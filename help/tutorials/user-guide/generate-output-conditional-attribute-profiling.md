@@ -1,13 +1,13 @@
 ---
 title: profilage conditionnel des attributs
 description: Découvrez comment profiler des attributs conditionnels
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 31b0ffe6-44e7-459d-a8df-a64ec868768c
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 1%
 
 ---
-
 
 # profilage conditionnel des attributs {#id1843I0HN0Y4}
 
@@ -43,7 +43,7 @@ Pour définir des attributs conditionnels, procédez comme suit :
 
    La capture d’écran suivante montre la définition de la variable `platform` avec la valeur de `unix` et un libellé de `Red Hat Linux`.
 
-   ![](images/add-profile.png)
+   ![](images/add-profile.png){width="800" align="left"}
 
 1. Si vous souhaitez ajouter d’autres valeurs pour le même attribut, cliquez sur le bouton **+** et saisissez une valeur et un libellé supplémentaires.
 
@@ -54,7 +54,6 @@ Pour définir des attributs conditionnels, procédez comme suit :
 
 Le `platform` est stocké dans le système. Lorsqu’un auteur décide d’utiliser la variable `platform` dans une rubrique DITA dans un dossier, les valeurs s’affichent dans l’onglet Propriétés de l’éditeur web.
 
-![](images/properties-tab.png)
+![](images/properties-tab.png){width="350" align="left"}
 
 **Rubrique parente :**[ Génération de sortie](generate-output.md)
-

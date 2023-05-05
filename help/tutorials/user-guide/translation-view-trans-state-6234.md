@@ -1,13 +1,13 @@
 ---
 title: Afficher le statut de traduction
 description: Découvrez comment afficher l’état de traduction
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 2662d86e-5ebd-4f41-a1e9-5bf4c96ffce2
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%
 
 ---
-
 
 # Afficher le statut de traduction {#id169SEK00KOW}
 
@@ -23,7 +23,7 @@ Effectuez les étapes suivantes pour afficher l’état de traduction d’un map
    >
    > Vous pouvez filtrer davantage le contenu en fonction de leur état de traduction \(en tant que Copie manquante de synchronisation, En cours ou Synchronisé\), Type source \(en tant que Tous, DITA, Carte DITA ou Ressource\), date de modification. Vous pouvez également entrer des mots-clés pour rechercher des rubriques spécifiques.
 
-   ![](images/status-translation-uuid.png)
+   ![](images/status-translation-uuid.png){width="800" align="left"}
 
 
 L’onglet Traduction comporte les sections suivantes :
@@ -32,4 +32,3 @@ L’onglet Traduction comporte les sections suivantes :
 - **Détails**: Affiche le titre de la rubrique, le type de rubrique, le code de langue de la rubrique, la langue source, la version de la rubrique source, le libellé ajouté à la rubrique et l’état de traduction.
 
 **Rubrique parente :**[ Traduire le contenu](translation.md)
-

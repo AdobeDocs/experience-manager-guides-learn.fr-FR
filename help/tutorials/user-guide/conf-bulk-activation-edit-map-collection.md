@@ -1,13 +1,13 @@
 ---
 title: Modification d’une collection de cartes d’activation en bloc
 description: Découvrez comment modifier une collection de cartes d’activation en bloc
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 110eba52-c886-4148-aff9-9c4e1d3d85bd
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 3%
 
 ---
-
 
 # Modification d’une collection de cartes d’activation en bloc {#id214GI40B0XA}
 
@@ -33,7 +33,7 @@ Vous pouvez modifier une collection de mappages d’activation en bloc en ajouta
 
 1. Cliquez sur **Supprimer**.
 
-   ![](images/bulk-activation-delete-map.png)
+   ![](images/bulk-activation-delete-map.png){width="800" align="left"}
 
    La carte sélectionnée est supprimée de la collection de cartes d’activation en bloc.
 
@@ -41,4 +41,3 @@ Vous pouvez modifier une collection de mappages d’activation en bloc en ajouta
 
 
 **Rubrique parente :**[ Activation en masse de contenu publié](conf-bulk-activation.md)
-

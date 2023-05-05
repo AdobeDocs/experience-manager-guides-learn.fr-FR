@@ -1,13 +1,13 @@
 ---
 title: Génération de sortie
 description: Découvrez comment générer une sortie
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 32fc32f8-16b1-4c3c-a6e2-abfb8fba9e66
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
-
 
 # Génération de sortie {#id1645H8040HD}
 
@@ -43,29 +43,4 @@ Les informations des sections suivantes s’adressent aux éditeurs qui utiliser
 >[!IMPORTANT]
 >
 > Les fonctionnalités décrites dans cette rubrique sont disponibles uniquement pour les utilisateurs disposant de droits d’éditeur ou d’administrateur.
-
-- **[Présentation des paramètres prédéfinis de sortie](generate-output-understand-presets.md)**
-
-- **[Utilisez des variables pour définir le chemin de destination, le nom du site ou le nom de fichier.](generate-output-use-variables.md)**
-
-- **[Créer, modifier, dupliquer ou supprimer un paramètre prédéfini de sortie](generate-output-create-edit-preset.md)**
-
-- **[Transmission des métadonnées à la sortie à l’aide de DITA-OT](pass-metadata-dita-ot.md)**
-
-- **[profilage conditionnel des attributs](generate-output-conditional-attribute-profiling.md)**
-
-- **[Utilisation des paramètres de condition prédéfinis](generate-output-use-condition-presets.md)**
-
-- **[Utilisation de la ligne de base](generate-output-use-baseline-for-publishing.md)**
-
-- **[Générer la sortie d’un mappage DITA à partir de la console de mappage](generate-output-for-a-dita-map.md)**
-
-- **[Utilisation de la collecte des cartes pour la génération de la sortie](generate-output-use-map-collection-output-generation.md)**
-
-- **[Gestion des tâches de publication à l’aide du tableau de bord de publication](generate-output-publish-dashboard.md)**
-
-- **[Résolution des problèmes de base](generate-output-basic-troubleshooting.md)**
-
-- **[Activation en masse de contenu publié](conf-bulk-activation.md)**
-
 

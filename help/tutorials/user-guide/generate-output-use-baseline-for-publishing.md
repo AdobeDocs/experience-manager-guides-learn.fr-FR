@@ -1,13 +1,13 @@
 ---
 title: Utilisation de la ligne de base
 description: Découvrez comment travailler avec la ligne de base
-source-git-commit: 8b6294425c6e60d1c5b37d98e99114014a104ee6
+exl-id: dcafab53-c388-48c3-9455-e4251cdda17d
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '1917'
 ht-degree: 0%
 
 ---
-
 
 # Utilisation de la ligne de base {#id1825FI0J0PF}
 
@@ -46,8 +46,7 @@ Effectuez les étapes suivantes pour créer une ligne de base :
 1. Dans **Définir la version basée sur**, sélectionnez l’une des options suivantes :
 
    - **Libellé**: Sélectionnez cette option pour sélectionner les rubriques en fonction du libellé qui leur est associé. Saisissez un libellé pour filtrer la liste selon la chaîne saisie. Dans la liste déroulante filtrée, vous pouvez choisir un libellé pour sélectionner les rubriques et autres ressources ayant le libellé spécifié.
-
-      Lorsque vous sélectionnez **Libellé**, vous disposez également d’une option supplémentaire pour utiliser la dernière version des rubriques pour lesquelles le libellé spécifié n’est pas appliqué. Si vous ne sélectionnez pas cette option et qu’il existe un fichier de rubrique ou de média qui ne comporte pas le libellé spécifié, le processus de création de ligne de base échoue. Pour plus d’informations sur l’ajout d’étiquettes, voir [Utilisation des libellés](web-editor-use-label.md#).
+   Lorsque vous sélectionnez **Libellé**, vous disposez également d’une option supplémentaire pour utiliser la dernière version des rubriques pour lesquelles le libellé spécifié n’est pas appliqué. Si vous ne sélectionnez pas cette option et qu’il existe un fichier de rubrique ou de média qui ne comporte pas le libellé spécifié, le processus de création de ligne de base échoue. Pour plus d’informations sur l’ajout d’étiquettes, voir [Utilisation des libellés](web-editor-use-label.md#).
 
    - **Version activée** &lt;*horodatage*\> : Permet de sélectionner la version des rubriques selon la date et l’heure spécifiées. Notez que l’heure que vous indiquez ici correspond au fuseau horaire de votre serveur AEM. Si votre serveur se trouve dans un fuseau horaire différent, les rubriques seront récupérées en fonction du fuseau horaire de votre serveur et non de votre fuseau horaire local.
 
@@ -55,7 +54,7 @@ Effectuez les étapes suivantes pour créer une ligne de base :
 
 1. Si vous souhaitez utiliser une autre version pour une ou plusieurs rubriques, vous pouvez le faire en sélectionnant manuellement ces rubriques. Cliquez sur **Parcourir la rubrique**, sélectionnez la rubrique pour laquelle vous souhaitez utiliser une autre version. Dans la liste déroulante Sélectionner une version pour la rubrique sélectionnée, sélectionnez une version de la rubrique que vous souhaitez utiliser dans la ligne de base, puis cliquez sur **OK**.
 
-   ![](images/baseline-select-version-drop-down.png)
+   ![](images/baseline-select-version-drop-down.png){width="800" align="left"}
 
    Les informations sur la rubrique et sa version sélectionnée sont stockées dans le serveur principal. Vous pouvez répéter cette étape pour modifier la version sélectionnée pour plusieurs rubriques.
 
@@ -133,7 +132,7 @@ Effectuez les étapes suivantes pour ajouter un libellé à plusieurs rubriques 
 
 1. Cliquez sur **Ajouter des étiquettes**.
 
-   ![](images/add-label-baseline-uuid.png)
+   ![](images/add-label-baseline-uuid.png){width="800" align="left"}
 
 1. Dans le **Ajouter un libellé** , spécifiez un libellé unique à associer à cette ligne de base.
 
@@ -144,7 +143,7 @@ Effectuez les étapes suivantes pour ajouter un libellé à plusieurs rubriques 
    - Cliquez sur **Ajouter**.
 Le libellé spécifié est ajouté au mappage DITA et aux rubriques et au contenu référencés.
 
-      ![](images/label-added-baseline-uuid.png)
+      ![](images/label-added-baseline-uuid.png){width="650" align="left"}
 
 
 ## Exporter la ligne de base traduite {#id196SE600GHS}
@@ -163,7 +162,7 @@ Effectuez les étapes suivantes pour exporter une ligne de base traduite :
 
 1. Dans le **Traduction** , développez l’onglet **Ligne de base** option disponible dans le rail de gauche.
 
-   ![](images/export-baseline.png)
+   ![](images/export-baseline.png){width="800" align="left"}
 
 1. Sélectionnez la **Utilisation de la ligne de base** et sélectionnez la ligne de base à exporter.
 
@@ -177,4 +176,3 @@ Effectuez les étapes suivantes pour exporter une ligne de base traduite :
 
 
 **Rubrique parente :**[ Génération de sortie](generate-output.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Rapport de mappage DITA à partir de l’éditeur web
 description: Découvrez comment mapper le rapport DITA à partir de l’éditeur web
-source-git-commit: 895d9bd3587c871d5223df5b71403d10bdc3d762
+exl-id: b1011cec-6374-4026-bf1c-54a1981c760e
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 0%
 
 ---
-
 
 # Rapport de mappage DITA à partir de l’éditeur web {#id231HF0Z0NXA}
 
@@ -25,9 +25,10 @@ Vous pouvez créer un rapport des rubriques en procédant comme suit :
 1. Cliquez sur le bouton **Gérer** .
 1. Double-cliquez **Liste des rubriques** sur la gauche. La liste des rubriques présentes dans le mappage DITA s’affiche.
 
-   ![](images/web-editor-topiclist-panel.png)
+   ![](images/web-editor-topiclist-panel.png){width="800" align="left"}
 
 1. Dans la **Filtres** Vous pouvez filtrer vos rubriques en fonction du panneau **Type de référence** \(direct ou indirect\), **État du document** \(état actuel de vos rubriques. Si, par exemple, vos rubriques sont à l’état Modifier, En révision ou Révisé, elles sont répertoriées\) ou la variable **Auteur** de la rubrique.
+
 1. Vous pouvez également utiliser les options de filtrage de rubrique suivantes pour choisir d’afficher les colonnes suivantes dans la liste :
 
    - **Rubrique** Le titre de la rubrique est spécifié dans le mappage DITA. Vous pouvez cliquer sur la rubrique pour la modifier.
@@ -57,7 +58,7 @@ Pour afficher les métadonnées de vos références dans le mappage DITA actuel,
 1. Cliquez sur le bouton **Gérer** .
 1. Double-cliquez **Métadonnées** sur la gauche. La liste des métadonnées de toutes les références du mappage DITA s’affiche. Cela inclut également les références aux médias.
 
-   ![](images/web-editor-metadata-panel.png)
+   ![](images/web-editor-metadata-panel.png){width="800" align="left"}
 
 1. Dans la **Filtres** vous pouvez filtrer vos rubriques en fonction des **État du document** \(état actuel de vos rubriques. Par exemple, si vos rubriques sont à l’état Modifier, En révision ou Révisé, elles sont répertoriées\), **Références** \(direct ou indirect\), **Type de fichier** \(Carte, Rubrique et Image\) de la référence.
 1. Vous pouvez également choisir de n’afficher que le **Fichiers sans balise** ou sélectionnez également des balises spécifiques dans la **Balises** filtre pour afficher les fichiers qui y sont associés.
@@ -92,7 +93,7 @@ Pour afficher les métadonnées de vos références dans le mappage DITA actuel,
 
 1. Sélectionner **Gérer** en haut.
 
-   ![](images/web-editor-manage-metadata.png)
+   ![](images/web-editor-manage-metadata.png){width="350" align="left"}
 
 1. Si vous souhaitez ajouter de nouvelles balises, sélectionnez-les dans la liste déroulante pour les appliquer à toutes les rubriques sélectionnées. Vous pouvez également supprimer une balise en cliquant sur l’icône croisée située près de la balise .
 
@@ -114,11 +115,11 @@ Le **Multimédia** Le rapport fournit des informations détaillées sur le conte
 
    - Lorsque vous commandez par **Multimédia**, le****nom du fichier multimédia s&#39;affiche dans la première colonne, puis le nom de toutes les références dans lesquelles il a été utilisé, s&#39;affiche dans une autre colonne sur la même ligne. Par exemple, la capture d’écran suivante montre le fichier multimédia WarmCoolForC.gif dans la première colonne et trois références dans lesquelles il est utilisé sont affichées dans la troisième colonne de la même ligne.
 
-      ![](images/multimedia-report-file-order.png)
+      ![](images/multimedia-report-file-order.png){width="650" align="left"}
 
    - Si vous commandez par **Utilisé dans** , vous verrez la vue transposée dans laquelle les noms des références dans lesquelles des éléments multimédias ont été utilisés sont répertoriés dans la première colonne tandis que les noms multimédias sont répertoriés dans une autre colonne sur des lignes distinctes. Par exemple, la capture d’écran suivante montre les noms de trois références \(Ajuster la température du siège, Modifier l’affichage de la température du siège et Zone d’équipage\) dans la première colonne et le fichier multimédia WarmCoolForC.gif est affiché dans la troisième colonne sur trois lignes distinctes.
 
-      ![](images/multimedia-report-used-in-order.png)
+      ![](images/multimedia-report-used-in-order.png){width="650" align="left"}
 
 1. Vous pouvez filtrer votre contenu multimédia en fonction des **Type de média multimédia**, et **Type de référence**. La liste des fichiers multimédia s’affiche en fonction de la sélection que vous avez effectuée dans la liste déroulante. Par exemple, vous pouvez choisir d’afficher uniquement les références audio dans votre carte DITA, et un fichier n’affiche que les références audio utilisées.
 
@@ -138,10 +139,11 @@ Le **Multimédia** Le rapport fournit des informations détaillées sur le conte
    >[!NOTE]
    >
    > Cliquez sur **Actualiser** pour obtenir une nouvelle liste de fichiers multimédias et voir toute modification dans votre fichier de carte ou si un fichier multimédia de votre carte DITA est mis à jour.
+
 1. Vous pouvez également cliquer et lire un fichier audio ou vidéo dans l’éditeur web. Vous pouvez modifier le volume ou l’affichage de la vidéo. Dans le menu contextuel, vous disposez également des options de téléchargement, de modification de la vitesse de lecture ou d’affichage de l’image.
-   ![](images/video-web-editor.png)
+
+   ![](images/video-web-editor.png){width="800" align="left"}
 
 1. Cliquez sur **Téléchargement de fichier CSV** pour télécharger l’instantané actuel du fichier multimédia dans la carte DITA. Le fichier CSV contient les colonnes sélectionnées et le fichier multimédia filtré dans la variable **Multimédia** vue. Vous pouvez ensuite ouvrir ce fichier CSV multimédia dans n’importe quel éditeur CSV.
 
 **Rubrique parente :**[ Rapports](reports-intro.md)
-

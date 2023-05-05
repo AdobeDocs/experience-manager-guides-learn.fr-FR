@@ -1,13 +1,13 @@
 ---
 title: Traduire les rubriques modifiées
 description: Découvrez comment traduire des rubriques modifiées
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 48b868c3-27ec-4641-b40d-17a641be7497
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 0%
 
 ---
-
 
 # Traduire les rubriques modifiées {#id16A5A0B6072}
 
@@ -29,7 +29,7 @@ Effectuez les étapes suivantes pour envoyer une rubrique modifiée à retraduir
 
    Cliquez sur la flèche pour afficher plus de détails. vous pouvez voir la copie de langue spécifique qui est obsolète.
 
-   ![](images/out-of-sync-uuid.png)
+   ![](images/out-of-sync-uuid.png){width="800" align="left"}
 
 1. Cochez la case pour sélectionner les rubriques que vous souhaitez envoyer pour retraduction.
 
@@ -51,7 +51,7 @@ Effectuez les étapes suivantes pour envoyer une rubrique modifiée à retraduir
 
 1. Accédez au projet de traduction dans la console Projet. Une nouvelle carte de tâche de traduction est créée dans le dossier . Cliquez sur les points de suspension pour afficher les ressources du dossier.
 
-   ![](images/incremental-job.PNG)
+   ![](images/incremental-job.PNG){width="300" align="left"}
 
 1. Pour commencer la traduction, cliquez sur la flèche de la carte de la tâche de traduction et sélectionnez **Début** dans la liste. Un message indique que la tâche a commencé.
 
@@ -76,4 +76,3 @@ Effectuez les étapes suivantes pour envoyer une rubrique modifiée à retraduir
 
 
 **Rubrique parente :**[ Traduire le contenu](translation.md)
-

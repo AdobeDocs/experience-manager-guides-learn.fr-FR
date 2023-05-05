@@ -1,13 +1,13 @@
 ---
 title: Rapport de mappage DITA à partir du tableau de bord de mappage
 description: Découvrez comment mapper le rapport DITA à partir du tableau de bord de mappage
-source-git-commit: 8a104cfe17778a71915e3700f49fc6892493ccd0
+exl-id: 8ba1dc83-fa96-4ae0-bfa8-89b5a8949f08
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 0%
 
 ---
-
 
 # Rapport de mappage DITA à partir du tableau de bord de mappage {#id205BB800EEN}
 
@@ -23,7 +23,7 @@ Effectuez les étapes suivantes pour afficher le rapport de mappage DITA :
 
 1. Cliquez sur **Rapports**.
 
-   ![](images/reports-page-uuid.png)
+   ![](images/reports-page-uuid.png){width="800" align="left"}
 
    La page Rapports est divisée en deux parties :
 
@@ -35,7 +35,7 @@ Effectuez les étapes suivantes pour afficher le rapport de mappage DITA :
 
       Lorsque vous cliquez sur une rubrique, un rapport détaillé de la rubrique sélectionnée s’affiche.
 
-      ![](images/detailed-report-uuid.png)
+      ![](images/detailed-report-uuid.png){width="800" align="left"}
 
       Éléments surlignés sous **A**, **B**, **C** et **D** sont décrites ci-dessous :
 
@@ -79,20 +79,19 @@ Effectuez les étapes suivantes pour générer le fichier CSV d’un rapport de 
 
 1. Cliquez sur **Générer un rapport** dans le coin supérieur gauche pour générer le rapport de mappage DITA.
 
-   ![](images/generate-DITA-map-report.png)
+   ![](images/generate-DITA-map-report.png){width="800" align="left"}
 
 1. Une fois le rapport prêt à être téléchargé, vous recevrez une notification. Cliquez sur **Télécharger** pour télécharger le fichier CSV du rapport généré.
 
-   ![](images/download-report-dialog.png)
+   ![](images/download-report-dialog.png){width="550" align="left"}
 
 
    Vous pouvez également télécharger le fichier CSV du rapport généré ultérieurement à partir de la boîte de réception de notification AEM.
 
    Cliquez sur le rapport généré dans la boîte de réception pour télécharger le rapport.
 
-   ![](images/report-inbox--notification.png)
+   ![](images/report-inbox--notification.png){width="300" align="left"}
 
 Une fois le rapport téléchargé dans la boîte de réception, vous pouvez également le sélectionner et utiliser l’icône Ouvrir dans la partie supérieure pour ouvrir le rapport sélectionné.
 
 **Rubrique parente :**[ Rapports](reports-intro.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Création d’une collection de cartes d’activation en bloc
 description: Découvrez comment créer une collection de cartes d’activation en bloc
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 7d17fb37-9486-4a3b-a421-08e279c95b6c
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 0%
 
 ---
-
 
 # Création d’une collection de cartes d’activation en bloc {#id214GG0E90EV}
 
@@ -43,7 +43,7 @@ Pour créer une collection de cartes d’activation en bloc, procédez comme sui
 
    Les fichiers de mappage DITA sont ajoutés à votre collecte de mappage d’activation en bloc.
 
-   ![](images/bulk-activation-collection-created.png)
+   ![](images/bulk-activation-collection-created.png){width="800" align="left"}
 
 
 L’onglet Cartes et paramètres prédéfinis présente des informations dans les colonnes suivantes :
@@ -70,4 +70,3 @@ Les options de filtrage disponibles dans le panneau de gauche sont les suivantes
 - **Cartes et paramètres prédéfinis** table : Le tableau Cartes et paramètres prédéfinis présente les colonnes suivantes :
 
 **Rubrique parente :**[ Activation en masse de contenu publié](conf-bulk-activation.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Gestion des tâches de publication à l’aide du tableau de bord de publication
 description: Découvrez comment gérer les tâches de publication à l’aide du tableau de bord de publication
-source-git-commit: 8b6294425c6e60d1c5b37d98e99114014a104ee6
+exl-id: 5ede608d-f905-44b7-9147-ab678ad68ee7
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
 
 ---
-
 
 # Gestion des tâches de publication à l’aide du tableau de bord de publication {#id205CC08305Z}
 
@@ -15,7 +15,7 @@ Lorsque vous disposez d’un grand ensemble de tâches de publication s’exécu
 
 Le tableau de bord de publication donne un aperçu complet de toutes les tâches de publication en cours d’exécution dans le système.
 
-![](images/publish-dashboard.png)
+![](images/publish-dashboard.png){width="800" align="left"}
 
 Le tableau de bord de publication contient les détails suivants :
 
@@ -37,7 +37,7 @@ Le panneau de gauche du tableau de bord de publication fournit les options de fi
 
 - **Paramètre prédéfini de sortie** - Sélectionnez un ou plusieurs paramètres prédéfinis de sortie pour lesquels vous souhaitez afficher les principales tâches de publication. Dans la capture d’écran suivante, les tâches de publication sont filtrées afin de n’afficher que les tâches qui utilisent le paramètre prédéfini de sortie AEM site :
 
-![](images/publish-dashboard-preset-filter.png)
+   ![](images/publish-dashboard-preset-filter.png){width="800" align="left"}
 
 - **Initié par** - Sélectionnez un nom d’utilisateur dans la liste pour afficher les tâches de publication initiées par l’utilisateur sélectionné.
 
@@ -61,7 +61,7 @@ Pour accéder au tableau de bord de publication, procédez comme suit :
 
    Si vous cliquez sur le lien Nom de fichier , la console de mappage DITA de la carte sélectionnée s’affiche.
 
-   ![](images/publish-dashboard-click-filename-link.png)
+   ![](images/publish-dashboard-click-filename-link.png){width="800" align="left"}
 
 
 >[!NOTE]
@@ -76,14 +76,13 @@ Pour annuler une tâche de génération de sortie à partir du tableau de bord d
 
 1. Dans la liste des principales tâches de publication, cliquez sur l’icône de suppression d’une tâche que vous souhaitez annuler.
 
-   ![](images/publish-dashboard-cancel-task.png)
+   ![](images/publish-dashboard-cancel-task.png){width="800" align="left"}
 
 1. Cliquez sur **Oui** dans l’invite de message Confirmer l’annulation .
 
    La commande d’annulation est acceptée et l’annulation est effectuée tant que la tâche reste principale. Une fois la tâche terminée, elle est supprimée de la liste des tâches actuellement principales. L’état de la tâche est également mis à jour dans la console de mappage DITA sous la forme Annulé. Dans la capture d’écran suivante, la variable *HTML5* La tâche est annulée à partir du tableau de bord de publication et son état est également modifié dans la console de mappage DITA.
 
-   ![](images/cancelled-output-task.png)
+   ![](images/cancelled-output-task.png){width="800" align="left"}
 
 
 **Rubrique parente :**[ Génération de sortie](generate-output.md)
-

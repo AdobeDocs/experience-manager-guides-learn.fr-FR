@@ -1,13 +1,13 @@
 ---
 title: Rapport d’état de conversion
 description: Découvrez comment générer un rapport d’état de conversion
-source-git-commit: bb7a8d49e5425b7fc856277c054558c75394fcb2
+exl-id: 41887af2-404f-41d7-b54c-ec49797200f0
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
 
 ---
-
 
 # Rapport d’état de conversion {#id205BBA00WZZ}
 
@@ -23,7 +23,7 @@ Pour afficher le rapport d’état de conversion, procédez comme suit :
 
    Le rapport d’état de conversion s’affiche pour toutes les tâches de conversion exécutées sur le système.
 
-   ![](images/conversion-status-report.png)
+   ![](images/conversion-status-report.png){width="800" align="left"}
 
 1. La page du rapport se divise en deux parties :
 
@@ -33,7 +33,7 @@ Pour afficher le rapport d’état de conversion, procédez comme suit :
 
       La capture d’écran suivante présente les données du rapport pour les tâches de conversion dont l’état est En échec, Principal et En file d’attente.
 
-      ![](images/conversion-report-failed-active-queued.png)
+      ![](images/conversion-report-failed-active-queued.png){width="800" align="left"}
 
    - **Données du rapport :**
 
@@ -55,4 +55,3 @@ Pour afficher le rapport d’état de conversion, procédez comme suit :
 
 
 **Rubrique parente :**[ Rapports](reports-intro.md)
-

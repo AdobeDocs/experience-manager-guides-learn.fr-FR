@@ -1,13 +1,13 @@
 ---
 title: Résolution des problèmes de base
 description: Découvrez comment résoudre les problèmes de base
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: b5ab2618-6f11-4aaa-8471-09521f8bb512
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 0%
 
 ---
-
 
 # Résolution des problèmes de base {#id1821I0Y0G0A}
 
@@ -21,7 +21,7 @@ Effectuez les étapes suivantes pour afficher et vérifier le fichier journal de
 
    Le **Général** de la colonne **Sorties générées** affiche les icônes pour donner un indice visuel sur la réussite ou l’échec de la génération de sortie.
 
-   ![](images/output-general-settings.png)
+   ![](images/output-general-settings.png){width="300" align="left"}
 
    Dans la capture d’écran ci-dessus, les première et troisième icônes affichent la génération de sortie ayant échoué. La seconde icône affiche une génération de sortie réussie, mais avec des messages. La dernière est une génération de sortie réussie sans message.
 
@@ -29,7 +29,7 @@ Effectuez les étapes suivantes pour afficher et vérifier le fichier journal de
 
    Le fichier journal s’ouvre dans un nouvel onglet.
 
-   ![](images/log-file.png)
+   ![](images/log-file.png){width="800" align="left"}
 
 1. Appliquez les filtres suivants pour mettre le texte en surbrillance dans le fichier journal :
    - Fatal : Met en évidence les erreurs fatales dans le fichier journal avec une couleur rose.
@@ -61,15 +61,15 @@ Effectuez les étapes suivantes pour copier et vérifier le fichier journal de g
 
    - *Erreur liée au fichier de mappage DITA*: En cas d’erreur dans le fichier de mappage DITA ou tout autre fichier contenu dans le mappage DITA, le fichier journal contiendra une chaîne &quot;BUILD FAILED&quot; (Échec de la création). Vous pouvez vérifier les informations données dans le fichier journal pour localiser le fichier en erreur et corriger le problème.
 
-      Dans l’exemple de fragment de code de fichier journal suivant, vous pouvez voir le `BUILD FAILED` ainsi que la raison de l’erreur.
+   Dans l’exemple de fragment de code de fichier journal suivant, vous pouvez voir le `BUILD FAILED` ainsi que la raison de l’erreur.
 
-      ![](images/dita-error-in-log-file.png)
+   ![](images/dita-error-in-log-file.png){width="650" align="left"}
 
-      - *Erreur AEM liée aux guides*: L’autre type d’erreur que vous pouvez identifier dans le fichier journal est lié au processus AEM Guides lui-même. Dans ce cas, le fichier de mappage DITA est analysé avec succès, mais le processus de génération de sortie échoue en raison d’une erreur interne dans AEM Guides. Pour ce type d&#39;erreurs, vous devez demander de l&#39;aide auprès de l&#39;équipe d&#39;assistance technique.
+   - *Erreur AEM liée aux guides*: L’autre type d’erreur que vous pouvez identifier dans le fichier journal est lié au processus AEM Guides lui-même. Dans ce cas, le fichier de mappage DITA est analysé avec succès, mais le processus de génération de sortie échoue en raison d’une erreur interne dans AEM Guides. Pour ce type d&#39;erreurs, vous devez demander de l&#39;aide auprès de l&#39;équipe d&#39;assistance technique.
 
-         Dans l’exemple de fragment de code de fichier journal suivant, vous pouvez voir le `BUILD SUCCESSFUL` , suivi d’une autre erreur technique.
+   Dans l’exemple de fragment de code de fichier journal suivant, vous pouvez voir le `BUILD SUCCESSFUL` , suivi d’une autre erreur technique.
 
-         ![](images/process-error-in-log-file.png)
+   ![](images/process-error-in-log-file.png){width="650" align="left"}
 
 
 ## Résolution de l’erreur de compilation JSP
@@ -90,4 +90,3 @@ Pour résoudre ce problème, procédez comme suit :
 
 
 **Rubrique parente :**[ Génération de sortie](generate-output.md)
-

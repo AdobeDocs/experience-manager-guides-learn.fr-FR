@@ -1,13 +1,13 @@
 ---
 title: Transmission des métadonnées à la sortie à l’aide de DITA-OT
 description: Découvrez comment transmettre des métadonnées à la sortie à l’aide de DITA-OT
-source-git-commit: 8b6294425c6e60d1c5b37d98e99114014a104ee6
+exl-id: 637895e5-aece-4827-a32e-f2ae3e3704ef
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
 
 ---
-
 
 # Transmission des métadonnées à la sortie à l’aide de DITA-OT {#id21BJ00QD0XA}
 
@@ -19,7 +19,7 @@ Effectuez les étapes suivantes pour transmettre les métadonnées à la sortie 
 1. Sélectionnez et modifiez un paramètre prédéfini de sortie auquel vous souhaitez transmettre les champs de métadonnées. Par exemple, sélectionnez le paramètre prédéfini de sortie du PDF.
 1. Sélectionner **DITA-OT** sous Générer &lt;output> Utilisation de l’option dans le paramètre prédéfini de sortie sélectionné.
 
-   ![](images/custom-meta-data-output-preset.png)
+   ![](images/custom-meta-data-output-preset.png){width="800" align="left"}
 
 1. Dans la liste déroulante Propriétés , sélectionnez les métadonnées à transmettre à la publication DITA-OT.
 
@@ -35,7 +35,7 @@ Effectuez les étapes suivantes pour transmettre les métadonnées à la sortie 
 
 1. Dans la **Propriétés** , sélectionnez les propriétés personnalisées et par défaut requises. Par exemple, sélectionnez `author`, `dc:title`, et `dc:description`. Il s’agit de la norme `metadata/properties` qui est créé une fois que nous avons créé un fichier. Les propriétés sélectionnées sont répertoriées sous la liste déroulante.
 
-   ![](images/selected-metadata-properties.png)
+   ![](images/selected-metadata-properties.png){width="300" align="left"}
 
 1. Cliquez sur **Terminé** en haut à gauche pour enregistrer les modifications.
 1. Générez la sortie.
@@ -43,4 +43,3 @@ Effectuez les étapes suivantes pour transmettre les métadonnées à la sortie 
 Les propriétés de métadonnées sélectionnées seront transmises à la sortie générée à l’aide de DITA-OT.
 
 **Rubrique parente :**[ Génération de sortie](generate-output.md)
-
