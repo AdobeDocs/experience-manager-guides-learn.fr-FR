@@ -1,13 +1,13 @@
 ---
 title: Création de contenu à l’aide des AEM Guides
 description: Découvrez comment créer du contenu à l’aide des AEM Guides
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 6a6354ce-29cc-4bd7-8235-579fe3647682
+source-git-commit: 3c3aef9f6beefad69c1bf13f55643a79992ac6f7
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 0%
 
 ---
-
 
 # Création de contenu à l’aide des AEM Guides {#id221EB0P0E20}
 
@@ -21,8 +21,7 @@ AEM Guides est fourni avec les trois éditeurs prêts à l’emploi. vous pouvez
 
 - **[Utilisation de l’éditeur de cartes](map-editor.md)**
 
-- **[Éditeur DITAVAL](id17C5E0U0OQE.md#)**
+- **[Éditeur DITAVAL](ditaval-editor.md)**
 
 
 **Rubrique parente :**[ Création de contenu](authoring-content.md)
-

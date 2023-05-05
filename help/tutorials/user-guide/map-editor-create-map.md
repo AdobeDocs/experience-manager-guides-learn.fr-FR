@@ -1,13 +1,13 @@
 ---
 title: Création d’une carte
 description: Découvrez comment créer une carte
-source-git-commit: 66915827a0b169069cc482763f0f50b9e9b6aa64
+exl-id: d35ee09f-f951-4866-a2b1-e4b19f76e7a1
+source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%
 
 ---
-
 
 # Création d’une carte {#id176FEN0D05Z}
 
@@ -25,7 +25,7 @@ Pour créer un fichier map, procédez comme suit :
    >
    > La manière dont les rubriques sont référencées dans un fichier map dépend du modèle map . Par exemple, si vous sélectionnez le modèle Carte , la rubrique fait référence à \(`topicref`\) sont utilisés pour faire référence aux rubriques. Dans le cas d’un mappage d’applet, les références de rubrique sont créées à l’aide de la variable `chapter` dans DITA.
 
-   ![](images/map-template.png)
+   ![](images/map-template.png){width="650" align="left"}
 
 1. Sur la page Propriétés, spécifiez la carte. **Titre**.
 
@@ -41,7 +41,7 @@ Pour créer un fichier map, procédez comme suit :
 
    Chaque nouveau fichier de mappage que vous créez à partir de l’interface utilisateur d’Assets **Créer** \> **Carte DITA** ou un identifiant de mappage unique est attribué à l’éditeur web. En outre, la nouvelle carte est enregistrée comme dernière copie de travail dans la gestion des ressources numériques. Tant que vous n’enregistrez pas de révision d’un nouveau mappage, vous ne verrez aucun numéro de version dans l’historique de versions. Si vous ouvrez la carte pour la modifier, les informations de version s’affichent dans le coin supérieur droit de l’onglet du fichier de carte :
 
-   ![](images/first-version-map-none.png)
+   ![](images/first-version-map-none.png){width="650" align="left"}
 
    Les informations de version d’une carte nouvellement créée s’affichent comme suit : *none*. Lorsque vous enregistrez une nouvelle version, un numéro de version 1.0 lui est affecté. Pour plus d’informations sur l’enregistrement d’une nouvelle version, voir [Enregistrer comme nouvelle version](web-editor-features.md#save-as-new-version-id209ME400GXA).
 
@@ -53,4 +53,3 @@ Pour créer un fichier map, procédez comme suit :
 
 
 **Rubrique parente :**[ Utilisation de l’éditeur de cartes](map-editor.md)
-

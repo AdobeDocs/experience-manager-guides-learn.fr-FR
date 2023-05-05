@@ -1,13 +1,13 @@
 ---
 title: Utilisation des libellés
 description: Découvrez comment utiliser les libellés
-source-git-commit: 331871308035441f047b1ed588215b586daf3d28
+exl-id: 3ea56d06-537f-4bfd-922d-df1f23e61a20
+source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
 
 ---
-
 
 # Utilisation des libellés {#id164JBG0M0T1}
 
@@ -33,8 +33,7 @@ Pour ajouter un libellé à votre rubrique, procédez comme suit :
 
    Les libellés s’affichent dans l’historique des versions de la rubrique sélectionnée. La capture d’écran suivante affiche les libellés *Version x.x* et *Guide de l’utilisateur* ajouté à la version mise en surbrillance de la rubrique.
 
-
-![](images/labels.png)
+   ![](images/labels.png){width="300" align="left"}
 
 >[!NOTE]
 >
@@ -49,12 +48,11 @@ Pour supprimer un libellé, procédez comme suit :
 
    Dans l’historique des versions, vous verrez toutes les versions d’une rubrique et les libellés qui y sont associés. L’image suivante présente un exemple de différentes versions d’une rubrique auxquelles sont ajoutés des libellés pour une version.
 
-   ![](images/labels.png)
+   ![](images/labels.png){width="300" align="left"}
 
 1. Cliquez sur le bouton de suppression \(**X**\) pour supprimer le libellé.
 
-   ![](images/delete-labels.png)
+   ![](images/delete-labels.png){width="300" align="left"}
 
 
 **Rubrique parente :**[ Utilisation de l’éditeur web](web-editor.md)
-

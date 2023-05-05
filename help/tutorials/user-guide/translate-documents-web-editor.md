@@ -1,13 +1,13 @@
 ---
 title: Traduire des documents à partir de l’éditeur Web
 description: Découvrez comment traduire des documents à partir de l’éditeur web
-source-git-commit: 331871308035441f047b1ed588215b586daf3d28
+exl-id: 02fc2b51-5b9a-4ad6-9e2e-726ab7602514
+source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
 workflow-type: tm+mt
 source-wordcount: '1517'
 ht-degree: 1%
 
 ---
-
 
 # Traduire des documents à partir de l’éditeur Web {#id21BKF0Z0YZF}
 
@@ -46,7 +46,7 @@ Avant d’exécuter les étapes de cette procédure, assurez-vous d’avoir cré
    >
    > La langue affiche uniquement les langues pour lesquelles un dossier de langues est créé parallèlement à la langue source. Un dossier de langue créé à un autre niveau, tel qu’un niveau inférieur du dossier de langue source, n’est pas non plus affiché. Veillez à créer tous vos dossiers de langue cible au même niveau que votre dossier de langue source.
 
-   ![](images/translation-languages.png)
+   ![](images/translation-languages.png){width="350" align="left"}
 
 1. Vous pouvez également utiliser les options suivantes :
 
@@ -72,11 +72,11 @@ Avant d’exécuter les étapes de cette procédure, assurez-vous d’avoir cré
    - **Libellé de la cible**: Libellé de la version sélectionnée du fichier cible
 1. Cliquez sur **Envoyer pour traduction** dans le coin supérieur droit.
 
-   ![](images/translation-send.png)
+   ![](images/translation-send.png){width="800" align="left"}
 
 1. Dans la liste déroulante, sélectionnez **Création d’un projet de traduction**.
 
-   ![](images/translation-project-types.png)
+   ![](images/translation-project-types.png){width="350" align="left"}
 
    Outre un nouveau projet de traduction, vous pouvez également sélectionner l’une des options suivantes :
 
@@ -107,7 +107,7 @@ Pour ajouter le libellé de la version source dans la copie cible, votre adminis
 
 Par exemple, si vous disposez de fichiers source avec le libellé de version `Release 1.0` qui leur sont appliquées, vous pouvez également transmettre l’étiquette source \(`Release 1.0`\) au fichier traduit.
 
-![](images/translation-pass-source-label.png)
+![](images/translation-pass-source-label.png){width="650" align="left"}
 
 >[!NOTE]
 >
@@ -117,7 +117,7 @@ Par exemple, si vous disposez de fichiers source avec le libellé de version `Re
 
 AEM Guides permet de vérifier les différences entre la version sélectionnée et la dernière version source traduite des rubriques. Vous pouvez choisir de traduire le **Désynchronisé** en fonction des modifications apportées.
 
-![](images/translation-version-diff.png)
+![](images/translation-version-diff.png){width="800" align="left"}
 
 Sélectionnez la **Afficher la différence** icon \(![](images/show-difference-icon.svg)\) pour une rubrique afin d’afficher les différences entre la dernière version traduite et la version actuelle du fichier sélectionné.
 
@@ -127,7 +127,7 @@ Sélectionnez la **Afficher la différence** icon \(![](images/show-difference-i
 
 Le **Différence entre les versions** s’affiche. Elle affiche la variable **Dernière version traduite** et le **Version sélectionnée** numéro à gauche. La fenêtre d’aperçu affiche les différences entre la dernière version traduite et la version sélectionnée de la rubrique.
 
-![](images/version-diff.png)
+![](images/version-diff.png){width="650" align="left"}
 
 ## Ignorer les ressources désynchronisées
 
@@ -138,7 +138,7 @@ Pour ignorer l’état de désynchronisation, procédez comme suit :
 1. Sélectionnez les ressources désynchronisées pour lesquelles vous souhaitez modifier l’état.
 1. Sélectionnez la **Marquer comme synchronisé** bouton \(![](images/translation-mark-in-sync-icon.svg)\) en haut. Le **Marquer comme synchronisé** s’affiche.
 
-   ![](images/translation-mark-in-sync.png)
+   ![](images/translation-mark-in-sync.png){width="550" align="left"}
 
 1. Cliquez sur **Synchronisation des forces**. Elle définit l’état sur En synchronisation pour les ressources désynchronisées sélectionnées.
 
@@ -156,7 +156,6 @@ Certaines des références de votre tableau de bord de traduction peuvent être 
 
 Cliquez sur le nom de la référence dans la boîte de dialogue pour l’ouvrir en mode aperçu. Vous pouvez également cliquer sur le projet de traduction pour commencer la traduction.
 
-![](images/translation-in-progress.png)
+![](images/translation-in-progress.png){width="550" align="left"}
 
 **Rubrique parente :**[ Utilisation de l’éditeur web](web-editor.md)
-

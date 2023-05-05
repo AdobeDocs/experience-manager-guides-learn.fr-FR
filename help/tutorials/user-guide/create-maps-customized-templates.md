@@ -1,13 +1,13 @@
 ---
 title: Création de cartes à partir de modèles personnalisés
 description: Découvrez comment créer des cartes à partir de modèles personnalisés
-source-git-commit: 66915827a0b169069cc482763f0f50b9e9b6aa64
+exl-id: 02513148-3876-4549-962a-9984f619030f
+source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
 workflow-type: tm+mt
 source-wordcount: '870'
 ht-degree: 0%
 
 ---
-
 
 # Création de cartes à partir de modèles personnalisés {#id225VF0808MP}
 
@@ -33,7 +33,7 @@ Pour créer un modèle de rubrique, procédez comme suit :
 
 1. Dans le **Interface utilisateur des ressources**, accédez au dossier dita-templates .
 
-   ![](images/dita-templates.png)
+   ![](images/dita-templates.png){width="800" align="left"}
 
 1. Cliquez sur **rubriques** pour l’ouvrir.Cliquez sur **Créer \> modèle DITA**.
 1. Sur la page Plan directeur, sélectionnez **Rubrique** puis cliquez sur **Suivant.**
@@ -55,7 +55,7 @@ Pour créer un modèle de carte, procédez comme suit :
 1. Cliquez sur **maps** pour l’ouvrir.
 1. Cliquez sur **Créez \> Modèle DITA.**
 
-   ![](images/create-dita-template.png)
+   ![](images/create-dita-template.png){width="300" align="left"}
 
 1. Sur la page Plan directeur, sélectionnez **Carte** et cliquez sur **Suivant**.
 1. Sur la page Propriétés , spécifiez le modèle de mappage. **Titre**.
@@ -104,7 +104,11 @@ Si vous n’utilisez pas de accolades autour du titre, seul le premier élément
 Exemple
 
 ```XML
-<title>	<sub>		<b>{title}</b>	</sub></title>
+<title>    
+    <sub>        
+        <b>{title}</b>    
+    </sub>
+</title>
 ```
 
 ## Utiliser le modèle de carte pour créer de nouvelles cartes
@@ -144,4 +148,3 @@ La carte génère toutes les ressources auxquelles il est fait référence dans 
 - Si un autre mappage ou une autre rubrique est créé au même niveau dans le dossier, les noms des ressources nouvellement créées sont ajoutés avec 0,1,2, etc. Vous pouvez choisir d’ouvrir le mappage pour modifier ou enregistrer le fichier de mappage dans le référentiel.
 
 **Rubrique parente :**[ Utilisation de l’éditeur de cartes](map-editor.md)
-

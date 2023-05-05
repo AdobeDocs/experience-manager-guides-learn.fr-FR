@@ -1,13 +1,13 @@
 ---
 title: Gestion des tâches de révision à l’aide du tableau de bord de révision
 description: Découvrez comment gérer les tâches de révision à l’aide du tableau de bord de révision
-source-git-commit: f3d747082103c73a365ee400cbd4dcdabd36eabf
+exl-id: 617017fe-59b6-4b38-b375-a126fa9dddf5
+source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
 workflow-type: tm+mt
 source-wordcount: '1282'
 ht-degree: 0%
 
 ---
-
 
 # Gestion des tâches de révision à l’aide du tableau de bord de révision {#id2056B0Y70X4}
 
@@ -23,13 +23,13 @@ Effectuez les étapes suivantes pour accéder au tableau de bord des révisions 
 
    Un panneau Projet avec des mosaïques de tâche s’affiche.
 
-   ![](images/review-management.png)
+   ![](images/review-management.png){width="800" align="left"}
 
 1. Cliquez sur les trois points du **Révisions** mosaïque.
 
    Le tableau de bord de révision s’affiche. Le tableau de bord répertorie toutes les tâches de révision que vous avez créées.
 
-   ![](images/review-dashboard.png)
+   ![](images/review-dashboard.png){width="800" align="left"}
 
    Le tableau de bord des révisions affiche les détails de la tâche de révision, tels que le nom de la tâche, le début de la révision, la date de début de la révision, l’échéance, l’état, le nombre de nouveaux commentaires qui n’ont pas été acceptés ou rejetés par l’auteur et le nom des réviseurs. Les tâches sont répertoriées dans l’ordre des tâches nouvellement créées par rapport aux tâches plus anciennes.
 
@@ -48,7 +48,7 @@ Effectuez les étapes suivantes pour accéder au tableau de bord des révisions 
 
 ## Onglet Tâche
 
-![](images/review-task-page.png)
+![](images/review-task-page.png){width="800" align="left"}
 
 Vous pouvez effectuer les actions suivantes sous le **Tâche** tab :
 
@@ -69,7 +69,7 @@ Vous pouvez effectuer les actions suivantes sous le **Tâche** tab :
 
 ## Onglet Contenu
 
-![](images/review-content-page.png)
+![](images/review-content-page.png){width="800" align="left"}
 
 Vous pouvez effectuer les actions suivantes sous le **Contenu** tab :
 
@@ -88,7 +88,7 @@ Vous pouvez effectuer les actions suivantes sous le **Contenu** tab :
 
 ## Onglet Réviseurs {#reviewer-tab-id199RF0N0MUI}
 
-![](images/reviewers-tab.png)
+![](images/reviewers-tab.png){width="800" align="left"}
 
 Vous pouvez effectuer les actions suivantes sous le **Réviseurs** tab :
 
@@ -109,7 +109,7 @@ Vous pouvez effectuer les actions suivantes sous le **Réviseurs** tab :
 
 Sur la page principale Tableau de bord des révisions , si vous sélectionnez une tâche de révision et cliquez sur **État**, le rapport d’état de la tâche de révision s’affiche :
 
-![](images/review-status-report.png)
+![](images/review-status-report.png){width="800" align="left"}
 
 Le rapport d’état de la tâche de révision contient les détails suivants :
 
@@ -123,4 +123,3 @@ Le rapport d’état de la tâche de révision contient les détails suivants :
 - Date à laquelle le réviseur a accédé à une rubrique pour la dernière fois.
 
 **Rubrique parente :**[ Révision de rubriques ou de mappages](review.md)
-

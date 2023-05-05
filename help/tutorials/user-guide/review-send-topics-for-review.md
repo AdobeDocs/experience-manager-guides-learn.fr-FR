@@ -1,13 +1,13 @@
 ---
 title: Envoi de rubriques en révision
 description: Découvrez comment envoyer des rubriques pour révision
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 7a9b36ad-44d4-4952-9906-d95feb95d0c6
+source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
 workflow-type: tm+mt
 source-wordcount: '2733'
 ht-degree: 0%
 
 ---
-
 
 # Envoi de rubriques en révision {#id199RD0S035Z}
 
@@ -43,7 +43,7 @@ Pour créer une tâche de révision et envoyer des rubriques à des fins de rév
 
 1. Cliquez sur l’icône Sélectionner dans l’action rapide et sélectionnez les rubriques que vous souhaitez envoyer pour révision.
 
-   ![](images/select-asset-62.png)
+   ![](images/select-asset-62.png){width="300" align="left"}
 
 1. Dans la barre d’outils, cliquez sur **Créer une tâche de révision**. La page de création de la tâche de révision s’affiche.
 
@@ -51,7 +51,7 @@ Pour créer une tâche de révision et envoyer des rubriques à des fins de rév
    >
    > Vous pouvez créer une tâche de révision uniquement pour les rubriques qui comportent une révision. Si la rubrique sélectionnée ne comporte pas de révision, une invite s’affiche.
 
-   ![](images/create-review-task-023.png)
+   ![](images/create-review-task-023.png){width="650" align="left"}
 
 1. Saisissez un **Titre** pour la tâche et sélectionnez un DITA **Projet** dans la liste déroulante.
 
@@ -91,7 +91,7 @@ Pour créer une tâche de révision et envoyer des rubriques à des fins de rév
 
    La page Contenu s’affiche.
 
-   ![](images/content_page_review.png)
+   ![](images/content_page_review.png){width="800" align="left"}
 
 1. Sur la page Contenu, sélectionnez une version de la rubrique que vous souhaitez partager en vue de la révision.
 
@@ -112,7 +112,7 @@ Pour créer une tâche de révision et envoyer des rubriques à des fins de rév
 
    La page Réviseurs s’affiche, dans laquelle vous pouvez ajouter ou supprimer des réviseurs. Par défaut, les réviseurs ajoutés dans le champ Attribuer à sont automatiquement ajoutés à chaque rubrique sélectionnée pour la révision.
 
-   ![](images/add-reviewers-topics.png)
+   ![](images/add-reviewers-topics.png){width="650" align="left"}
 
 1. Sur la page Réviseurs , vous pouvez ajouter ou supprimer des réviseurs. Les opérations suivantes sont disponibles sur la page Réviseurs :
 
@@ -208,7 +208,7 @@ Pour envoyer une ou plusieurs rubriques avec le fichier de mappage à des fins d
 
    La page Contenu s’affiche avec toutes les rubriques référencées à partir du fichier de mappage. Si votre mappage DITA contient des mappages imbriqués, les rubriques des mappages imbriqués sont également répertoriées ici.
 
-   ![](images/content-page-map-review.png)
+   ![](images/content-page-map-review.png){width="800" align="left"}
 
 1. Sur la page Contenu, sélectionnez une version de la rubrique que vous souhaitez partager en vue de la révision.
 
@@ -265,4 +265,3 @@ Pour envoyer une ou plusieurs rubriques avec le fichier de mappage à des fins d
 Un email est envoyé à tous les réviseurs, leur indiquant que des rubriques leur ont été affectées pour révision. L’email contient un lien direct sur lequel ils peuvent cliquer et accéder au sujet dans une fenêtre de navigateur. Les rubriques ainsi que le mappage DITA sont ouverts en mode de révision.
 
 **Rubrique parente :**[ Révision de rubriques ou de mappages](review.md)
-

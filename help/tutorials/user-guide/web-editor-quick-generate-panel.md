@@ -1,13 +1,13 @@
 ---
 title: Utilisation du panneau Génération rapide
 description: Découvrez comment utiliser le panneau Génération rapide
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: d48803d9-470c-4679-8def-72b45a85917b
+source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
 
 ---
-
 
 # Utilisation du panneau Génération rapide pour générer et afficher la sortie {#id22AKE050F5L}
 
@@ -17,7 +17,7 @@ AEM Guides fournit une **Génération rapide** intégré dans l’éditeur web. 
 >
 > Le **Génération rapide** s’affiche pour le mappage DITA ouvert dans le panneau Affichage des cartes .
 
-![](images/quick-generate-map-view.png)
+![](images/quick-generate-map-view.png){width="800" align="left"}
 
 Effectuez les étapes suivantes pour générer la sortie à partir du **Génération rapide** panel :
 
@@ -28,4 +28,3 @@ Effectuez les étapes suivantes pour générer la sortie à partir du **Généra
 1. Cliquez sur **Afficher la sortie** \( ![](images/view-output-icon.svg)\) icône d’un paramètre prédéfini spécifique pour afficher la sortie générée pour le paramètre prédéfini.
 
 **Rubrique parente :**[ Utilisation de l’éditeur web](web-editor.md)
-

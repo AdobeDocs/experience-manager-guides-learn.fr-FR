@@ -1,13 +1,13 @@
 ---
 title: Balisage intelligent
 description: Découvrez comment le balisage intelligent
-source-git-commit: 528dd5d33f38c29809e7e7dafd77d860daaba8db
+exl-id: 73d8d012-6bf0-416b-8180-0c90844e50cb
+source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 0%
 
 ---
-
 
 # Balisage intelligent {#id216KH0ID0Y8}
 
@@ -23,12 +23,12 @@ Pour créer des balises intelligentes, procédez comme suit :
 1. Ouvrez la rubrique en mode Aperçu et sélectionnez **Retraiter les ressources** dans la barre d’outils principale.
 1. Sélectionnez Extraction de mots-clés XML pour extraire les mots-clés appropriés.
 
-   ![](images/smart-tag-reprocess-asset.png)
+   ![](images/smart-tag-reprocess-asset.png){width="300" align="left"}
 
 1. Sélectionnez l’option Exécuter le post-traitement . Un message s’affiche lors du lancement réussi de l’outil.
 1. Les balises sont automatiquement extraites et sont visibles sur la page Propriétés de la rubrique sélectionnée.
 
-   ![](images/properties-smart-tags.png)
+   ![](images/properties-smart-tags.png){width="800" align="left"}
 
    >[!NOTE]
    >
@@ -38,4 +38,3 @@ Pour créer des balises intelligentes, procédez comme suit :
 *Contactez votre équipe de réussite client pour que cette fonctionnalité soit activée dans l’environnement. Cette option n’est pas activée dans le cadre de la prise en charge prête à l’emploi.*
 
 **Rubrique parente :**[ Gestion des métadonnées](manage-metadata.md)
-

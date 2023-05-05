@@ -1,13 +1,13 @@
 ---
 title: État du document
 description: Découvrez comment Document state
-source-git-commit: 13106cd1c7f6d38fecb67dd93eef66263eb29bae
+exl-id: 6ab85a63-02d2-4802-a6b8-99e6551a567b
+source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
 workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 0%
 
 ---
-
 
 # État du document {#id1821HC00URO}
 
@@ -69,11 +69,11 @@ Pour utiliser la fonction d’approbation de document, procédez comme suit :
 
 1. Si votre document doit être marqué comme approuvé, la boîte de dialogue suivante s’affiche :
 
-   ![](images/mark-approved-correct-state.png){width="550" align="left"}
+   ![](images/mark-approved-correct-state.png){width="300" align="left"}
 
    Si le document ne peut pas être marqué comme approuvé, le message suivant s’affiche :
 
-   ![](images/mark-approved-incorrect-state.png){width="550" align="left"}
+   ![](images/mark-approved-incorrect-state.png){width="300" align="left"}
 
 1. Si votre document est prêt à être marqué comme approuvé, sélectionnez un libellé dans la liste déroulante, puis cliquez sur **Approuver**.
 
@@ -102,4 +102,3 @@ Une fois qu’un document est marqué comme approuvé, il ne peut plus être mod
 
 
 **Rubrique parente :**[ Utilisation de l’éditeur web](web-editor.md)
-

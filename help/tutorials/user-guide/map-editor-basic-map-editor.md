@@ -1,13 +1,13 @@
 ---
 title: Utilisation de l’éditeur de cartes de base
 description: Découvrez comment utiliser l’éditeur de cartes de base
-source-git-commit: af5c64312a608affe95fd552b3dd1b2e05ea2b8e
+exl-id: 85194806-db3f-442b-a551-540d148d26ec
+source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
 workflow-type: tm+mt
 source-wordcount: '1394'
 ht-degree: 0%
 
 ---
-
 
 # Utilisation de l’éditeur de cartes de base {#id1942CM005Y4}
 
@@ -37,7 +37,7 @@ Effectuez les étapes suivantes pour créer votre fichier map :
 
    Le fichier map est ouvert pour modification dans l’éditeur de cartes. À l’aide de l’éditeur de cartes, vous créez un mappage à l’aide des rubriques actuellement disponibles qui s’affichent dans le rail Références .
 
-   ![](images/dita-map-01.png)
+   ![](images/dita-map-01.png){width="800" align="left"}
 
 1. En utilisant la variable **Références** , accédez au dossier contenant les rubriques ou sous-plans à ajouter.
 
@@ -66,13 +66,13 @@ Effectuez les étapes suivantes pour créer votre fichier map :
 
 La barre d’outils principale de l’éditeur de cartes de base vous permet d’effectuer les tâches suivantes :
 
-![](images/ditamap-toolbar-actions.png)
+![](images/ditamap-toolbar-actions.png){width="800" align="left"}
 
 **A : Rechercher**
 
 Vous pouvez rechercher et inclure les rubriques requises dans la gestion des ressources numériques. Cliquez sur cette icône pour afficher la boîte de dialogue Rechercher :
 
-![](images/search-dita-map.png)
+![](images/search-dita-map.png){width="800" align="left"}
 
 Saisissez les mots-clés à rechercher, ils correspondent dans le nom de fichier, le contenu et même les valeurs d’attribut de la rubrique. Une fois les résultats de recherche disponibles, sélectionnez la rubrique souhaitée\(s\) et cliquez sur le bouton Cocher pour ajouter les fichiers sélectionnés à la fin de la structure de votre carte. Vous pouvez filtrer les résultats de la recherche en spécifiant les paramètres Modifier la date .
 
@@ -100,19 +100,19 @@ Dans le **Mode par défaut**, un clic sur un lien de rubrique affiche l’aperç
 **Remarque :** En mode par défaut, vous pouvez utiliser les raccourcis clavier pour annuler \(`Ctrl+z`\) ou rétablir \(`Ctrl+y`\) la dernière action.
 
 
-![](images/dita-map-invalid-source.png)
+![](images/dita-map-invalid-source.png){width="650" align="left"}
 
 **G : Propriétés de la carte**
 
 Affichez la boîte de dialogue Propriétés de la carte dans laquelle vous pouvez définir les attributs et les informations de métadonnées de la carte. Pour ajouter un attribut, cliquez sur le bouton **Ajouter** dans le coin inférieur gauche de la boîte de dialogue pour obtenir le **Attribut** liste déroulante. Dans la liste, sélectionnez l’attribut à ajouter. Si l’attribut sélectionné a des valeurs prédéfinies spécifiées dans la DTD, ces valeurs seront présentées dans une nouvelle liste déroulante. Vous pouvez sélectionner la valeur souhaitée dans la liste déroulante. S’il n’existe pas de valeur prédéfinie, une zone de texte s’affiche pour vous permettre de saisir une valeur pour l’attribut sélectionné.
 
-![](images/map-properties.png)
+![](images/map-properties.png){width="300" align="left"}
 
 ## Fonctionnalités disponibles au niveau de la rubrique dans l’éditeur de carte de base
 
 Lorsque vous placez le pointeur de la souris sur une rubrique ou un fichier de sous-map dans l’éditeur de cartes de base, vous pouvez effectuer les tâches suivantes :
 
-![](images/ditamap-actions.png)
+![](images/ditamap-actions.png){width="650" align="left"}
 
 **A : Déplacer à gauche ou Déplacer à droite**
 
@@ -123,7 +123,7 @@ Cliquez sur les icônes de flèche gauche ou droite pour déplacer la rubrique v
 Cliquez sur l’icône Propriétés pour ouvrir la boîte de dialogue Propriétés de la référence de rubrique. Cette boîte de dialogue vous permet de définir les attributs de rubrique et les informations de métadonnées. Pour plus d’informations sur les métadonnées et les attributs de rubrique standard, reportez-vous à la section [topicref](https://docs.oasis-open.org/dita/v1.2/os/spec/langref/topicref.html) documentation dans la spécification du langage OASIS DITA.
 
 
-![](images/map-properties-metadata.png)
+![](images/map-properties-metadata.png){width="350" align="left"}
 
 **C : Ajouter une nouvelle référence**
 
@@ -155,7 +155,7 @@ Effectuez les étapes suivantes pour utiliser les tableaux de relation dans l’
 
 1. Sélectionner **Reltable** dans la barre d’outils.
 
-   ![](images/reltable.png)
+   ![](images/reltable.png){width="650" align="left"}
 
 1. Faites glisser des rubriques de la liste des rubriques vers l’éditeur de table des matières.
 
@@ -163,13 +163,13 @@ Effectuez les étapes suivantes pour utiliser les tableaux de relation dans l’
    >
    > Vous pouvez ajouter des rubriques à partir de n’importe quel dossier du rail Références .
 
-   ![](images/create-reltable.png)
+   ![](images/create-reltable.png){width="550" align="left"}
 
 1. Pour ajouter un en-tête à votre tableau de relation, cliquez sur **Ajouter Relheader**.
 
 1. Pour ajouter une colonne à votre tableau de relation, cliquez sur **Ajouter une colonne**.
 
-   ![](images/complete-reltable.png)
+   ![](images/complete-reltable.png){width="550" align="left"}
 
 1. Cliquez sur **Enregistrer**.
 
@@ -189,4 +189,3 @@ Si vous souhaitez supprimer une rubrique de votre tableau, cliquez sur l’icôn
 Si vous souhaitez supprimer le tableau de relation, cliquez n’importe où en dehors du tableau de relation, puis cliquez sur Supprimer.
 
 **Rubrique parente :**[ Utilisation de l’éditeur de cartes](map-editor.md)
-

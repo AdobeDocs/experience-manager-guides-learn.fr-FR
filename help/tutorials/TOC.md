@@ -2,7 +2,7 @@
 user-guide-title: Tutoriels pour AEM Guides
 user-guide-description: Lisez notre collection de tutoriels pour Adobe Experience Manager Guides.
 breadcrumb-title: Tutoriels AEM Guides
-source-git-commit: 01c84074bc31898d2a1481d0ed5ddda0a8dba2c0
+source-git-commit: 0cc1e12382fb90784ea78cb500bf0a24d6ec50df
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 8%
@@ -86,7 +86,7 @@ ht-degree: 8%
                + [Utilisation de l’éditeur de cartes de base](./user-guide/map-editor-basic-map-editor.md)
                + [Autres fonctionnalités des éditeurs de carte](./user-guide/map-editor-other-features.md)
             + Éditeur DITAVAL {#ditaval-editor}
-               + [Utilisation de l’éditeur DITAVAL](./user-guide/id17C5E0U0OQE.md)
+               + [Utilisation de l’éditeur DITAVAL](./user-guide/ditaval-editor.md)
          + Outils de bureau pour la création de contenu {#author-using-desktop-tools}
             + [Création de contenu à l’aide d’outils de bureau](./user-guide/author-desktop-tools.md)
             + [Utilisation de FrameMaker](./user-guide/author-desktop-framemaker.md)

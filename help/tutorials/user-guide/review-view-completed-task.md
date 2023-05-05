@@ -1,13 +1,13 @@
 ---
 title: Affichage d’une tâche de révision terminée
 description: Découvrez comment afficher une tâche de révision terminée
-source-git-commit: 176aee433300ce8d4d9cfbab2edb007acae4de87
+exl-id: 37f10fc3-e4ca-4e73-a887-65c7e9496f5e
+source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
-
 
 # Affichage d’une tâche de révision terminée
 
@@ -19,8 +19,7 @@ En tant que réviseur, vous pouvez voir un indicateur dans le panneau des commen
 
 Vous pouvez toutefois rechercher ou filtrer des commentaires. Vous pouvez également choisir d’afficher ou de masquer les conditions et d’afficher le contenu conditionnel en conséquence. Vous pouvez télécharger des pièces jointes, mais vous ne pouvez pas télécharger ni supprimer de pièces jointes pour les commentaires.
 
-<img src="images/complete-task-reviewer.png" alt="validant de tâche de révision terminé" width="800">
-
+![](images/complete-task-reviewer.png){width="800" align="left"}
 
 
 ## En tant qu’auteur
@@ -29,7 +28,6 @@ En tant qu’auteur, vous pouvez voir l’état comme fermé dans le panneau Ré
 
 Vous pouvez toutefois rechercher ou filtrer des commentaires. Vous pouvez télécharger des pièces jointes, mais vous ne pouvez pas télécharger ni supprimer de pièces jointes pour les commentaires.
 
-<img src="images/completed-task-author.png" alt=" auteur de la tâche de révision terminée" width="800">
+![](images/completed-task-author.png){width="800" align="left"}
 
 Ainsi, en tant que réviseur ou auteur, vous pouvez afficher le contenu révisé avec les commentaires, mais vous ne pouvez apporter aucune modification à une tâche de révision terminée.
-

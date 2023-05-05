@@ -1,5 +1,5 @@
 ---
-source-git-commit: 09a77f4acac6902935c587af9a0568cd8761810f
+source-git-commit: 834e67fa1f015b86082b42c4213976ee24a403d5
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 4%
@@ -43,7 +43,7 @@ ht-degree: 4%
          - [Utilisation de l’éditeur de mappage avancé](map-editor-advanced-map-editor.md)
          - [Utilisation de l’éditeur de cartes de base](map-editor-basic-map-editor.md)
          - [Autres fonctionnalités des éditeurs de carte](map-editor-other-features.md)
-      - [Éditeur DITAVAL](id17C5E0U0OQE.md#id17C5E0U0OQE)
+      - [Éditeur DITAVAL](ditaval-editor.md#ditaval-editor)
    - [Création de contenu à l’aide d’outils de bureau](author-desktop-tools.md)
       - [Utilisation de FrameMaker](author-desktop-framemaker.md)
       - [Travail avec Oxygen](author-desktop-oxygen.md)

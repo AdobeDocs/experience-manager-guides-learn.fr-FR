@@ -1,13 +1,13 @@
 ---
 title: Création de paramètres prédéfinis de sortie à partir de l’éditeur web
 description: Découvrez comment créer des paramètres prédéfinis de sortie à partir de l’éditeur web
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 7fde0057-06a5-428e-a91b-9e9386a56270
+source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%
 
 ---
-
 
 # Création de paramètres prédéfinis de sortie à partir de l’éditeur web {#id218CL400JW3}
 
@@ -27,7 +27,7 @@ Effectuez les étapes suivantes pour créer des paramètres prédéfinis de sort
 
 1. Dans le **Sortie** sélectionnez l’icône + pour créer un paramètre prédéfini de sortie pour votre mappage DITA.
 
-   ![](images/output-tab-preset_cs.png)
+   ![](images/output-tab-preset_cs.png){width="350" align="left"}
 
 1. Saisissez le nom du paramètre prédéfini dans la boîte de dialogue Ajouter un paramètre prédéfini , puis cliquez sur **Ajouter**.
 
@@ -43,20 +43,19 @@ Effectuez les étapes suivantes pour créer des paramètres prédéfinis de sort
    1. Dans la **Articles** , sélectionnez les rubriques pour lesquelles vous souhaitez générer la sortie.
 1. Sélectionnez la **Générer un paramètre prédéfini** dans la partie supérieure pour générer la sortie.
 
-   ![](images/add-preset-articles-tab_cs.png)
+   ![](images/add-preset-articles-tab_cs.png){width="800" align="left"}
 
 1. Vous verrez l’état du processus de génération de sortie. Le **Sujets** La colonne répertorie les rubriques pour lesquelles une sortie est générée pendant que la fonction **État** affiche l’état de publication de chaque rubrique.
 
    Pour afficher la sortie, placez le pointeur de la souris sur la rubrique et cliquez sur Afficher la sortie.
 
-   ![](images/add-preset-output-generated_cs.png)
+   ![](images/add-preset-output-generated_cs.png){width="800" align="left"}
 
 
 >[!NOTE]
 >
 > Vous pouvez également modifier, renommer, dupliquer ou supprimer un paramètre prédéfini de sortie existant dans le menu Options.
 
-![](images/edit-preset_cs.png)
+![](images/edit-preset_cs.png){width="550" align="left"}
 
 **Rubrique parente :**[ Publication basée sur des articles à partir de l’éditeur web](web-editor-article-publishing.md)
-

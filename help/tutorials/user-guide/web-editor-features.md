@@ -1,13 +1,13 @@
 ---
 title: Présentation des fonctionnalités de l’éditeur web
 description: Découvrez comment connaître les fonctionnalités de l’éditeur web
-source-git-commit: cc0fbca257d82cc82db5b5da8d263309fd71de55
+exl-id: 38b378ff-da24-4560-a17f-a2c547aea1b8
+source-git-commit: f7eea65f58927527dbd90138a653f75ee181d141
 workflow-type: tm+mt
 source-wordcount: '14387'
 ht-degree: 0%
 
 ---
-
 
 # Présentation des fonctionnalités de l’éditeur web {#id176NC500V5Z}
 
@@ -679,7 +679,7 @@ Pour ajouter un fichier à votre collection préférée, utilisez l’une des m�
 
 Lorsque vous cliquez sur l’icône Vue du référentiel, vous obtenez une liste de fichiers et de dossiers disponibles dans la gestion des ressources numériques.
 
-75 fichiers sont chargés à la fois. Chaque fois que vous cliquez sur **Charger plus**...75 fichiers sont chargés, et le bouton cesse d&#39;être affiché lorsque tous les fichiers sont répertoriés. Ce chargement par lots est efficace et vous pouvez accéder aux fichiers plus rapidement par rapport au chargement de tous les fichiers existants dans un dossier.
+75 fichiers sont chargés à la fois. Chaque fois que vous cliquez sur **Charger plus**...75 fichiers sont chargés, et le bouton cesse d&#39;être affiché lorsque tous les fichiers sont répertoriés. Ce chargement par lots est efficace et vous pouvez accéder aux fichiers plus rapidement par rapport au chargement de tous les fichiers existant dans un dossier.
 
 Vous pouvez facilement accéder au fichier requis dans la gestion des ressources numériques et l’ouvrir dans l’éditeur web. Si vous disposez des droits d’accès nécessaires pour modifier le fichier, vous pouvez le faire.
 

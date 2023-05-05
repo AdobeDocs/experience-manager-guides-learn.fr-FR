@@ -1,13 +1,13 @@
 ---
 title: Rubriques de révision
 description: Découvrez comment consulter les rubriques
-source-git-commit: 849985574a4d21334ac73be3e664ff5ea9a898c4
+exl-id: ca94ec2e-cd45-418d-9b35-73d587ba51ec
+source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
 workflow-type: tm+mt
 source-wordcount: '2271'
 ht-degree: 0%
 
 ---
-
 
 # Rubriques de révision {#id2056B0W0FBI}
 
@@ -37,7 +37,7 @@ Pour passer en revue une rubrique, procédez comme suit :
 
    L’écran suivant s’affiche lorsqu’un mappage DITA est utilisé pour lancer le processus de révision :
 
-   ![](images/multiple-topics-review.png)
+   ![](images/multiple-topics-review.png){width="800" align="left"}
 
    Les options suivantes sont disponibles dans cet écran :
 
@@ -57,13 +57,13 @@ Pour passer en revue une rubrique, procédez comme suit :
 
    Toutes les rubriques du mappage s’affichent sous la forme d’un document composite unique. Les rubriques que le réviseur est autorisé à réviser s’affichent normalement. Les rubriques que la révision n’est pas autorisée à réviser ne s’affichent pas.
 
-   ![](images/review-read-only.png)
+   ![](images/review-read-only.png){width="800" align="left"}
 
    Dans la capture d’écran ci-dessus, la rubrique Description générale est partagée pour la révision du réviseur actuel, qui s’affiche normalement. Cependant, la rubrique suivante, Historique du contenu du vol, n’est pas partagée pour révision et s’affiche en mode lecture seule. La rubrique actuellement en cours est également mise en évidence dans la table des matières.
 
    L’écran suivant s’affiche lorsqu’une ou plusieurs rubriques sont sélectionnées et partagées en vue de la révision :
 
-   ![](images/review-composite-view.png)
+   ![](images/review-composite-view.png){width="800" align="left"}
 
    >[!NOTE]
    >
@@ -85,15 +85,15 @@ Pour passer en revue une rubrique, procédez comme suit :
 
 Lorsque vous affichez une seule rubrique, vous disposez d’une option supplémentaire pour revenir à la vue de document. Dans la capture d’écran suivante, une rubrique particulière d’un fichier de mappage est ouverte pour révision. L’option mise en surbrillance — **Afficher la vue du document** permet à l’utilisateur de revenir à la vue de document du fichier map.
 
-![](images/switch-document-view.png)
+![](images/switch-document-view.png){width="800" align="left"}
 
 **Utilisation de différents types d’outils de commentaires** - Vous pouvez ajouter des commentaires insérés en mettant le texte en surbrillance, en frappant le texte, en insérant du texte ou en ajoutant une note de commentaire. Les différents types d’outils de commentaires fournis dans la barre d’outils Commentaires sont décrits ci-dessous :
 
-![](images/comments-toolbar.png)
+![](images/comments-toolbar.png){width="350" align="left"}
 
 - **Surligner** \(![](images/review-highlight-icon.svg)\) : Pour ajouter un commentaire en surbrillance, sélectionnez le texte et cliquez sur l’icône Mettre en surbrillance . Vous pouvez également cliquer sur l’icône Mettre en surbrillance et sélectionner le texte de votre choix :
 
-   ![](images/highlight-comment.png)
+   ![](images/highlight-comment.png){width="650" align="left"}
 
    Une fenêtre contextuelle s’affiche dans le panneau Commentaires, dans laquelle vous pouvez ajouter votre commentaire pour le contenu mis en surbrillance.
 
@@ -112,7 +112,7 @@ Vous pouvez également mettre rapidement le texte en surbrillance ou barré à l
 
 1. Sélectionnez le texte que vous souhaitez mettre en surbrillance ou percer. La barre d’outils contextuelle s’affiche.
 
-   ![](images/review-quick-launch-toolbar.png)
+   ![](images/review-quick-launch-toolbar.png){width="550" align="left"}
 
 1. Cliquez sur le bouton **Surligner** ou **Barré** icône .
 1. Vous pouvez ajouter des commentaires dans le panneau des commentaires pour l’action de surbrillance ou de barrage.
@@ -128,7 +128,7 @@ Les tâches que vous pouvez effectuer à l’aide du panneau Commentaires sont d
 - Vous pouvez modifier votre propre commentaire en cliquant sur le texte de votre commentaire dans le panneau Commentaires , puis en sélectionnant **Modifier** dans le menu Options.
 - Vous pouvez supprimer vos propres commentaires en cliquant sur le commentaire dans le panneau Commentaires , puis en sélectionnant **Supprimer** dans le menu Options.
 
-   ![](images/review-comment-options-menu.png)
+   ![](images/review-comment-options-menu.png){width="300" align="left"}
 
    >[!NOTE]
    >
@@ -142,17 +142,17 @@ Les tâches que vous pouvez effectuer à l’aide du panneau Commentaires sont d
 
 - La capture d’écran suivante affiche le contenu dans *Réviser* mode :
 
-![](images/review-author-mode.png)
+![](images/review-author-mode.png){width="550" align="left"}
 
 La capture d’écran suivante affiche le contenu dans *Aperçu* mode :
 
-![](images/review-preview-mode.png)
+![](images/review-preview-mode.png){width="550" align="left"}
 
 **Ajout de pièces jointes aux commentaires** - Si vous souhaitez compléter votre commentaire en fournissant des informations supplémentaires disponibles dans un autre fichier, vous pouvez le faire en le joignant à votre commentaire. En tant que réviseur, vous pouvez facilement ajouter un ou plusieurs fichiers de votre système local à votre commentaire. Un fichier peut être ajouté à tous les formulaires de commentaires pris en charge : Mise en surbrillance, Barré, Insérer du texte ou un commentaire.
 
 Lorsque vous insérez l’un des commentaires, la fenêtre contextuelle de commentaire s’affiche. Après avoir fourni des commentaires ou des informations supplémentaires dans la fenêtre contextuelle, vous pouvez les envoyer en appuyant sur Entrée. Une fois le commentaire ajouté, vous avez la possibilité d’ajouter une pièce jointe à ce commentaire.
 
-![](images/comment-pop-up-panel.png)
+![](images/comment-pop-up-panel.png){width="800" align="left"}
 
 Dans la capture d’écran ci-dessus, le document contient la fenêtre contextuelle du commentaire de surbrillance et le commentaire est également ajouté au panneau Commentaires . Icône de pièce jointe ![](images/file-attach-review.svg)est disponible avec le commentaire aux deux emplacements.
 
@@ -177,21 +177,21 @@ Effectuez les étapes suivantes pour ajouter une pièce jointe à votre commenta
 
 - Par défaut, seuls deux fichiers joints avec un commentaire s’affichent. S’il existe d’autres fichiers, alors **Afficher la pièce jointe** sur la droite affiche le nombre de toutes les pièces jointes \(qui sont plus de deux\) associées au commentaire. Vous pouvez cliquer sur le nombre pour afficher toutes les pièces jointes. Par exemple, si vous avez quatre pièces jointes avec un commentaire, le bouton affiche +2.
 
-![](images/review-view-attachment.png)
+![](images/review-view-attachment.png){width="550" align="left"}
 
 - Placer le pointeur de la souris sur une pièce jointe permet de télécharger ou de supprimer la pièce jointe. La suppression de la pièce jointe n&#39;est disponible que si le validant actuel a ajouté ce commentaire, comme illustré dans la capture d&#39;écran suivante :
 
-![](images/current-user-comment-options.png)
+![](images/current-user-comment-options.png){width="550" align="left"}
 
 Les autres réviseurs ou auteurs n’obtiennent que l’option de téléchargement de pièce jointe.
 
-![](images/other-reviewer-download.png)
+![](images/other-reviewer-download.png){width="550" align="left"}
 
 - Vous pouvez télécharger toutes les pièces jointes associées à un commentaire à partir du **Afficher les pièces jointes** boîte de dialogue. Sélectionnez les pièces jointes et cliquez sur le bouton **Télécharger** au niveau du commentaire.
 
 - Vous pouvez également supprimer les pièces jointes associées à un commentaire de la **Afficher les pièces jointes** boîte de dialogue. Sélectionnez les pièces jointes et cliquez sur le bouton **Supprimer** icône .
 
-![](images/attach-files-comments-panel.png)
+![](images/attach-files-comments-panel.png){width="550" align="left"}
 
 
 **Panneau Conditions** - Si votre rubrique comporte du contenu conditionnel, le **Conditions** \(![](images/conditions-icon.svg)\) à droite. Cliquez sur **Conditions** Cette icône ouvre le panneau Conditions qui vous permet de mettre en surbrillance le contenu en fonction des conditions disponibles dans la rubrique.
@@ -200,7 +200,7 @@ Les autres réviseurs ou auteurs n’obtiennent que l’option de téléchargeme
 
 : Vous pouvez désactiver **Mettre en surbrillance toutes les conditions** et afficher tout le contenu présent dans la rubrique sous la forme d’un texte normal sans mise en surbrillance.
 
-![](images/review-conditions-panel.png)
+![](images/review-conditions-panel.png){width="350" align="left"}
 
 Vous pouvez choisir de masquer ou d’afficher une condition spécifique.
 
@@ -208,7 +208,7 @@ Vous pouvez choisir de masquer ou d’afficher une condition spécifique.
 - Si vous affichez une condition, le contenu conditionnel est mis en surbrillance en mode de révision. Par exemple, dans la capture d’écran suivante, seul le contenu utilise deux conditions : `win` et `mac` est mise en surbrillance.
 
 
-![](images/review-condition-normal-mode.png)
+![](images/review-condition-normal-mode.png){width="650" align="left"}
 
 En mode aperçu, le contenu non conditionnel et le contenu conditionnel qui utilise les deux conditions affichées : `win` et `mac` s’affiche. Le contenu conditionnel restant pour lequel les conditions sont masquées ne s’affiche pas.
 
@@ -220,7 +220,7 @@ En mode aperçu, le contenu non conditionnel et le contenu conditionnel qui util
 
 - Cliquer sur l’icône Commentaire obsolète \(![](images/outdated-comment-icon.svg)\) affiche les différences entre la dernière version et la version commentée du document. Les numéros de version \(des versions comparées\) s’affichent en haut des documents.
 
-   ![](images/comments-page-review-mode.png)
+   ![](images/comments-page-review-mode.png){width="800" align="left"}
 
    >[!NOTE]
    >
@@ -244,4 +244,3 @@ Sélectionnez une ou plusieurs des options de filtrage suivantes dans le **Type 
 Pour supprimer le filtre et afficher tous les commentaires, désélectionnez tous les filtres de la **Type de filtre** puis cliquez sur **Appliquer**.
 
 **Rubrique parente :**[ Révision de rubriques ou de mappages](review.md)
-

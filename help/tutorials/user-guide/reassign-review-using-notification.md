@@ -1,13 +1,13 @@
 ---
 title: Réaffecter la tâche de révision à l’aide d’une notification
 description: Découvrez comment réaffecter la tâche de révision à l’aide de la notification
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: d20865a8-2c30-4bd7-8594-64e0ccdb665a
+source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 0%
 
 ---
-
 
 # Réaffecter la tâche de révision à l’aide d’une notification {#id21BNH03M0KS}
 
@@ -28,7 +28,7 @@ Effectuez les étapes suivantes pour réaffecter une tâche de révision à part
    >
    > Le réviseur doit disposer des autorisations nécessaires pour réaffecter et doit faire partie du groupe utilisateur-administrateur.
 
-   ![](images/reassign-user-inbox.png)
+   ![](images/reassign-user-inbox.png){width="800" align="left"}
 
 1. Sélectionner **Réaffecter**.
 
@@ -37,4 +37,3 @@ Une fois la tâche de révision réaffectée, la colonne Assignation affiche le 
 Le réviseur affecté reçoit une notification dans la boîte de réception pour la tâche de révision réaffectée.
 
 **Rubrique parente :**[ Révision de rubriques ou de mappages](review.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Création et gestion des lignes de base à partir de l’éditeur web
 description: Découvrez comment créer et gérer des lignes de base à partir de l’éditeur web
-source-git-commit: 873111892d5b479f80a40c0b18cda9b538f5a1de
+exl-id: 9e390489-16f5-4f9a-a821-5150a66c2ed4
+source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
 workflow-type: tm+mt
 source-wordcount: '1190'
 ht-degree: 0%
 
 ---
-
 
 # Création et gestion des lignes de base à partir de l’éditeur web {#id223MB0ZF043}
 
@@ -24,7 +24,7 @@ Vous pouvez créer une ligne de base à partir de l’éditeur Web en procédant
 1. Dans le panneau Repository, ouvrez le fichier de mappage DITA en mode Carte.
 1. Cliquez sur le bouton **Gérer** . Le **Ligne de base** affiche les lignes de base du mappage DITA.
 
-   ![](images/baseline-manage.png)
+   ![](images/baseline-manage.png){width="800" align="left"}
 
 1. Sur le **Ligne de base** , cliquez sur l’icône + en haut à droite. Vous pouvez créer une ligne de base avec une version spécifique des rubriques et du contenu référencé disponible à une date et une heure spécifiques, ou avec un libellé défini pour une version des rubriques.
 1. Saisissez un nom pour la ligne de base dans **Nom de la ligne de base**.
@@ -52,7 +52,7 @@ Vous pouvez créer une ligne de base à partir de l’éditeur Web en procédant
 
    Les lignes de base basées sur les libellés sont mises à jour dynamiquement. Si vous générez une ligne de base, téléchargez une ligne de base ou créez un projet de traduction à l’aide d’une ligne de base, les fichiers sont sélectionnés dynamiquement en fonction des étiquettes mises à jour. Par exemple, si vous avez utilisé la version 1.2 d’une rubrique avec la version 1.0 du libellé pour la ligne de base et la version 1.5 ultérieure mise à jour avec la version 1.0 du libellé, la ligne de base sera mise à jour dynamiquement et la version 1.5 sera utilisée.
 
-   ![](images/dynamic-baseline.png)
+   ![](images/dynamic-baseline.png){width="550" align="left"}
 
    - **Sélectionner des étiquettes**: Si des libellés sont spécifiés pour les rubriques, ils sont répertoriés dans la section **Sélectionner des étiquettes** menu déroulant. Vous pouvez choisir le ou les libellés\(s\) dans la liste. Les libellés sélectionnés en premier se voient accorder une priorité plus élevée que les libellés ultérieurs.
 1. **Références indirectes**: Pour les références indirectes dans le mappage DITA, les options suivantes sont proposées :
@@ -74,7 +74,7 @@ Vous pouvez gérer vos lignes de base existantes à l’aide des différentes fo
 - Vous pouvez afficher ou modifier le contenu d’une ligne de base existante en double-cliquant sur la ligne de base dans la liste du panneau Ligne de base . La fenêtre de modification de ligne de base au centre affiche le fichier de mappage DITA, le contenu ou les rubriques de la carte et le contenu référencé.
 
 
-![](images/baseline-options.png)
+![](images/baseline-options.png){width="550" align="left"}
 
 Vous pouvez également effectuer les opérations suivantes sur la ligne de base à partir du menu Options :
 
@@ -92,7 +92,7 @@ Vous pouvez également effectuer les opérations suivantes sur la ligne de base 
 
 Utilisation de l’icône Filtres dans la variable **Filtres de ligne de base** vous pouvez appliquer des filtres sur la ligne de base ouverte dans la fenêtre d’édition de ligne de base :
 
-![](images/baseline-filter.png)
+![](images/baseline-filter.png){width="350" align="left"}
 
 - Filtrez les fichiers en fonction de leur nom ou de leur emplacement.
 - Filtrez les fichiers en fonction des valeurs de différentes colonnes comme Type de fichier, Type de référence, etc.
@@ -107,4 +107,3 @@ Utilisation de l’icône Filtres dans la variable **Filtres de ligne de base** 
 Une fois que vous avez modifié la ligne de base, vous pouvez cliquer sur le bouton **Enregistrer** pour enregistrer les modifications apportées à la ligne de base. Vous pouvez cliquer sur le bouton **Réinitialiser** si vous ne souhaitez pas enregistrer la modification et réinitialiser la ligne de base. Lorsque vous cliquez sur le bouton **Réinitialiser** un avertissement s’affiche pour vous informer que vos modifications non enregistrées seront perdues.
 
 **Rubrique parente :**[ Utilisation de l’éditeur web](web-editor.md)
-

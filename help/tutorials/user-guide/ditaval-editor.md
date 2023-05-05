@@ -1,15 +1,15 @@
 ---
 title: Utilisation de l’éditeur DITAVAL
 description: Découvrez comment utiliser l’éditeur DITAVAL
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+source-git-commit: c6eceb8ea3ce41f12ea1f689dc8aeab2b4ba3d9c
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---
 
 
-# Éditeur DITAVAL {#id17C5E0U0OQE}
+# Éditeur DITAVAL {#ditaval-editor}
 
 Les fichiers DITAVAL sont utilisés pour générer une sortie conditionnelle. Dans une même rubrique, vous pouvez ajouter des conditions à l’aide d’attributs d’élément pour conditionner le contenu. Ensuite, vous créez un fichier DITAVAL dans lequel vous spécifiez les conditions à sélectionner pour générer le contenu et la condition à exclure de la sortie finale.
 
@@ -48,25 +48,25 @@ Effectuez les étapes suivantes pour modifier un fichier DITAVAL :
 
    L’éditeur DITAVAL vous permet d’effectuer les tâches suivantes :
 
-   A : Activer/désactiver le panneau de gauche : Active/désactive la vue du panneau de gauche. Si vous avez ouvert le fichier DITAVAL via le mappage DITA, le mappage et le référentiel sont affichés dans ce panneau. Pour plus d’informations sur l’ouverture d’un fichier via un mappage DITA, voir [Modification des rubriques à l’aide de la carte DITA](map-editor-advanced-map-editor.md#id17ACJ0F0FHS).
+   A : Activer/désactiver le panneau de gauche Active/désactive la vue du panneau de gauche. Si vous avez ouvert le fichier DITAVAL via le mappage DITA, le mappage et le référentiel sont affichés dans ce panneau. Pour plus d’informations sur l’ouverture d’un fichier via un mappage DITA, voir [Modification des rubriques à l’aide de la carte DITA](map-editor-advanced-map-editor.md#id17ACJ0F0FHS).
 
-   B : Enregistrer : Enregistre les modifications que vous avez apportées au fichier. Toutes vos modifications sont enregistrées dans la version actuelle de votre fichier.
+   B : Enregistrer Enregistre les modifications que vous avez apportées au fichier. Toutes vos modifications sont enregistrées dans la version actuelle de votre fichier.
 
-   C : Ajouter une propriété : Ajoutez une seule propriété dans votre fichier DITAVAL.
+   C : Ajouter une propriété Ajoutez une seule propriété dans votre fichier DITAVAL.
 
-       ![](images/ditaval-editor-props.png)
-       
-       La première liste déroulante répertorie les attributs DITA autorisés que vous pouvez utiliser dans le fichier DITAVAL. Il existe cinq attributs pris en charge : audience, plate-forme, produit, props et autres props.
-   
-   : La seconde liste déroulante affiche les valeurs configurées pour l’attribut sélectionné. La liste déroulante suivante répertorie ensuite les actions que vous pouvez configurer sur l’attribut sélectionné. Les valeurs autorisées dans la liste déroulante des actions sont - `include`, `exclude`, `passthrough`, et `flag`. Pour plus d’informations sur ces valeurs, voir la définition de [prop](http://docs.oasis-open.org/dita/dita/v1.3/errata01/os/complete/part3-all-inclusive/langRef/ditaval/ditaval-prop.html#ditaval-prop) élément de la documentation OASIS DITA
+   ![](images/ditaval-editor-props.png)
 
-   D : Ajouter toutes les propriétés : Si vous souhaitez ajouter en un seul clic toutes les propriétés ou attributs conditionnels définis dans votre système, utilisez la fonction Ajouter toutes les propriétés .
+   La première liste déroulante répertorie les attributs DITA autorisés que vous pouvez utiliser dans le fichier DITAVAL. Il existe cinq attributs pris en charge : `audience`, `platform`, `product`, `props`, et `otherprops`.
 
->[!NOTE]
->
-> Si toutes les propriétés conditionnelles définies existent déjà dans le fichier DITAVAL, vous ne pouvez pas ajouter d’autres propriétés. Vous recevez un message d’erreur dans ce scénario.
+   La seconde liste déroulante affiche les valeurs configurées pour l’attribut sélectionné. La liste déroulante suivante répertorie ensuite les actions que vous pouvez configurer sur l’attribut sélectionné. Les valeurs autorisées dans la liste déroulante des actions sont - `include`, `exclude`, `passthrough`, et `flag`. Pour plus d’informations sur ces valeurs, voir la définition de [prop](http://docs.oasis-open.org/dita/dita/v1.3/errata01/os/complete/part3-all-inclusive/langRef/ditaval/ditaval-prop.html#ditaval-prop) élément de la documentation OASIS DITA
 
-    ![](images/ditaval-all-props.png)
+   D : Ajouter toutes les propriétés Si vous souhaitez ajouter en un seul clic toutes les propriétés ou attributs conditionnels définis dans votre système, utilisez la fonction Ajouter toutes les propriétés .
+
+   >[!NOTE]
+   >
+   > Si toutes les propriétés conditionnelles définies existent déjà dans le fichier DITAVAL, vous ne pouvez pas ajouter d’autres propriétés. Vous recevez un message d’erreur dans ce scénario.
+
+   ![](images/ditaval-all-props.png)
 
 1. Une fois que vous avez terminé de modifier votre fichier DITAVAL, cliquez sur **Enregistrer**.
 
@@ -79,13 +79,13 @@ Effectuez les étapes suivantes pour modifier un fichier DITAVAL :
 
 L’éditeur DITAVAL des Guides d’AEM prend en charge l’affichage de fichiers DITAVAL dans deux modes ou vues différents :
 
-Auteur : Il s’agit d’une vue standard de ce que vous voyez est ce que vous obtenez \(WYSISYG\) de l’éditeur DITAVAL. Vous pouvez ajouter ou supprimer des propriétés à l’aide de l’interface utilisateur simple, qui présente les propriétés, leurs valeurs et les actions dans la liste déroulante. Dans la vue Auteur, vous avez la possibilité d’insérer une propriété individuelle et toutes les propriétés en un seul clic.
+**Auteur**: Il s’agit d’une vue standard de ce que vous voyez est ce que vous obtenez \(WYSISYG\) de l’éditeur DITAVAL. Vous pouvez ajouter ou supprimer des propriétés à l’aide de l’interface utilisateur simple, qui présente les propriétés, leurs valeurs et les actions dans la liste déroulante. Dans la vue Auteur, vous avez la possibilité d’insérer une propriété individuelle et toutes les propriétés en un seul clic.
 
-: Vous pouvez également trouver la version du fichier DITAVAL sur lequel vous travaillez actuellement en pointant le pointeur de la souris sur le nom du fichier.
+Vous pouvez également trouver la version du fichier DITAVAL sur lequel vous travaillez actuellement en pointant le pointeur de la souris sur le nom du fichier.
 
-Source : La vue Source affiche le code XML sous-jacent qui constitue le fichier DITAVAL. En plus d’apporter des modifications de texte standard dans cette vue, un auteur peut également ajouter ou modifier des propriétés à l’aide du catalogue dynamique.
+**Source**: La vue Source affiche le code XML sous-jacent qui constitue le fichier DITAVAL. En plus d’apporter des modifications de texte standard dans cette vue, un auteur peut également ajouter ou modifier des propriétés à l’aide du catalogue dynamique.
 
-    Pour appeler le catalogue dynamique, placez le curseur à la fin d’une définition de propriété et saisissez &quot;&lt;&quot;. L’éditeur affiche la liste de tous les éléments XML valides que vous pouvez insérer à cet emplacement.
-    
-    ![](images/ditaval-source-view.png)
+Pour appeler le catalogue dynamique, placez le curseur à la fin d’une définition de propriété et saisissez &quot;&lt;&quot;. L’éditeur affiche la liste de tous les éléments XML valides que vous pouvez insérer à cet emplacement.
+
+![](images/ditaval-source-view.png)
 

@@ -1,13 +1,13 @@
 ---
 title: Balisage en masse de contenu DITA
 description: Découvrez comment baliser le contenu DITA
-source-git-commit: 528dd5d33f38c29809e7e7dafd77d860daaba8db
+exl-id: 0e855575-e62f-4dc7-869c-7fd3ec61ffdb
+source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 0%
 
 ---
-
 
 # Balisage en masse de contenu DITA {#id179SG0TN05Z}
 
@@ -31,7 +31,7 @@ Utilisez la fonction de balisage en masse pour appliquer plusieurs balises à la
 
 1. Sélectionnez les rubriques ou sous-plans sur lesquels vous souhaitez appliquer des balises.
 
-   ![](images/apply-tags-uuid.png)
+   ![](images/apply-tags-uuid.png){width="650" align="left"}
 
 
    >[!NOTE]
@@ -106,4 +106,3 @@ Pour supprimer toutes les balises d’une ou de plusieurs rubriques, procédez c
 Si une longue liste de balises est appliquée à vos rubriques, il peut s’avérer un peu fastidieux de naviguer. Vous pouvez facilement masquer les balises dans à partir de la vue de la console de mappage DITA en cliquant sur l’icône Masquer les balises . De même, lorsque les balises ne sont pas visibles, cliquez sur Afficher les balises pour afficher toutes les balises.
 
 **Rubrique parente :**[ Gestion des métadonnées](manage-metadata.md)
-

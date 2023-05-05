@@ -1,13 +1,13 @@
 ---
 title: Commentaires sur la révision des adresses
 description: Découvrez comment traiter les commentaires de révision
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 04f6114d-601f-4e92-a303-18a6dd309a49
+source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 0%
 
 ---
-
 
 # Commentaires sur la révision des adresses {#id2056B0X0KBI}
 
@@ -19,7 +19,7 @@ Un auteur peut adresser des commentaires dans un document à partir de l’édit
 >
 > Lors de l’examen des commentaires de révision \(pour un principal document de révision\), assurez-vous que vous n’ouvrez pas la rubrique de révision dans plusieurs onglets avec l’affichage complet des balises activé, ne permutez pas entre les modes Auteur et Source.
 
-![](images/comments-page-web-editor_cs.png)
+![](images/comments-page-web-editor_cs.png){width="650" align="left"}
 
 En mode Éditeur Web, le panneau de droite contient les icônes Révision et modifications suivies . Le panneau Révision affiche tous les commentaires effectués dans votre document par les réviseurs. Le panneau Modifications suivies affiche l’état de tous les commentaires insérés et supprimés dans votre document.
 
@@ -41,11 +41,11 @@ En mode Éditeur Web, le panneau de droite contient les icônes Révision et mod
 
    Si vous souhaitez incorporer la modification suggérée \(insertion ou suppression\) une par une, il vous suffit de cliquer avec le bouton droit sur le commentaire dans le contenu et de sélectionner Accepter la modification ou Rejeter la modification. Selon votre choix, le commentaire est accepté ou rejeté. En cas de commentaire accepté, le contenu est ajouté dans le contenu ; et en cas de rejet, il est supprimé du contenu. En outre, l’état du commentaire est modifié dans le panneau Révision.
 
-   ![](images/import-comment-accept-web-editor_cs.png)
+   ![](images/import-comment-accept-web-editor_cs.png){width="800" align="left"}
 
    Vous pouvez également utiliser la fonction de révision dans le panneau de droite pour accepter ou refuser des commentaires. Le fait de cliquer sur un commentaire met en surbrillance le commentaire du document.
 
-   ![](images/changes-tab_cs.png)
+   ![](images/changes-tab_cs.png){width="800" align="left"}
 
    >[!IMPORTANT]
    >
@@ -61,4 +61,3 @@ En mode Éditeur Web, le panneau de droite contient les icônes Révision et mod
 
 
 **Rubrique parente :**[ Révision de rubriques ou de mappages](review.md)
-
