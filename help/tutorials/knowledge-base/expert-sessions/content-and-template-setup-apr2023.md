@@ -1,9 +1,9 @@
 ---
 title: Configuration du contenu et des modèles
 description: Découvrez toutes les considérations à prendre en compte pour configurer le contenu et les modèles dans AEM Guides.
-source-git-commit: a2f656c4f547e215a8bbb927f20f8e97d29ef29d
+source-git-commit: 87c92776f417aba49096b447baf81916dea5d57f
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '289'
 ht-degree: 1%
 
 ---
@@ -64,8 +64,8 @@ Au cours de cette session, vous avez appris les éléments suivants :
 
 ## Prochaine session d&#39;experts
 
-- **Rubrique** - À déterminer
-- **Planifié le** - 25 mai 2023
+- **Rubrique** - Publication de PDF natifs - Formation par exemple (partie 1)
+- **Planifié le** - 1er juin 2023
 
 
 ## Contactez-nous
