@@ -1,13 +1,13 @@
 ---
 title: Lancement de l’éditeur web
 description: Découvrez comment lancer l’éditeur web
-source-git-commit: cc0fbca257d82cc82db5b5da8d263309fd71de55
+exl-id: f02f9612-7aaa-42ea-bad3-c44d23b5d034
+source-git-commit: dce7b1c97f8f7f79b313b08ca0489e8e50b633ec
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
-
 
 # Lancement de l’éditeur web {#id2056B0140HS}
 
@@ -23,13 +23,34 @@ Les sections suivantes présentent les détails de la manière dont vous pouvez 
 
 Lorsque vous vous connectez à AEM, la page Navigation s’affiche :
 
-![](images/web-editor-from-navigation-page_cs.png){width="800" align="left"}
+![](images/web-editor-from-navigation-page.png){width="800" align="left"}
 
-Cliquez sur le **Éditeur XML** permet d’accéder directement à l’éditeur Web.
+Cliquez sur le bouton **Guides** permet d’accéder directement à l’éditeur Web.
 
 ![](images/web-editor-launch-page.png){width="800" align="left"}
 
 Comme vous avez lancé l’éditeur Web sans sélectionner de fichier, un écran d’éditeur Web vierge s’affiche. Vous pouvez ouvrir un fichier pour le modifier à partir du référentiel AEM ou de votre collection Favoris.
+
+- Cliquez sur le bouton **Guides** Icône (![](images/aem-guides-icon.png) ), pour revenir à la page de navigation AEM.
+
+- Le **Fermer** permet d’accéder à une destination en fonction de votre configuration :
+
+
+
+   <details>
+
+   <summary> Services cloud </summary>
+
+   Si vous utilisez des Cloud Services, cliquez sur le bouton **Fermer** pour revenir à la page de navigation AEM.
+   </details>
+
+   <details>
+
+   <summary> Logiciel On-Premise</summary>
+
+   Si vous utilisez AEM Guides du logiciel On-premise (4.2.1 et versions ultérieures), cliquez sur le bouton **Fermer** sur la droite pour revenir au chemin d’accès au fichier actif dans l’interface utilisateur d’Assets.
+
+   </details>
 
 ## Interface utilisateur d’AEM Assets {#id2056BG0307U}
 
@@ -80,7 +101,7 @@ L’interface utilisateur d’AEM Assets vous permet également de lancer l’é
 
 Pour ouvrir l’éditeur web à partir de la console de mappage DITA, procédez comme suit :
 
-1. Dans l’interface utilisateur d’Assets, accédez au fichier de mappage DITA qui contient la rubrique à modifier, puis cliquez dessus.
+1. Dans l’interface utilisateur d’Assets, accédez au fichier de mappage DITA contenant la rubrique à modifier, puis cliquez dessus.
 
    La console de mappage DITA s’affiche.
 
@@ -102,4 +123,3 @@ Pour ouvrir l’éditeur web à partir de la console de mappage DITA, procédez 
 
 
 **Rubrique parente :**[ Utilisation de l’éditeur web](web-editor.md)
-

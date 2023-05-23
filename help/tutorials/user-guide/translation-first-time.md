@@ -2,9 +2,9 @@
 title: Bonnes pratiques relatives à la traduction de contenu
 description: Découvrez les bonnes pratiques en matière de traduction de contenu
 exl-id: 4eff0f27-b3d1-4c6e-af88-bcb3f6d96990
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: d87a2e054310e3421dcbf347232a420638823b93
 workflow-type: tm+mt
-source-wordcount: '1237'
+source-wordcount: '1285'
 ht-degree: 2%
 
 ---
@@ -103,6 +103,16 @@ Effectuez les étapes suivantes pour créer un projet de traduction :
 1. Cliquez sur **Début** pour créer un projet de traduction.
 
    Un nouveau projet de traduction est créé avec la version sélectionnée des rubriques. À l’heure actuelle, un message contextuel s’affiche, confirmant que le projet de traduction a été créé. Une fois que toutes les copies de langue cible sont disponibles dans le projet de traduction, vous recevez une notification dans la boîte de réception. Une fois la zone des copies de langue cible disponible dans le projet de traduction, vous pouvez poursuivre et lancer la tâche de traduction.
+
+   ![](images/status-translation-uuid.png){width="800" align="left"}
+
+
+L’onglet Traduction comporte les sections suivantes :
+
+- **Résumé**: Affiche le nombre de rubriques référencées et la langue source, ainsi que son code.
+- **Détails**: Affiche le titre de la rubrique, le type de rubrique, le code de langue de la rubrique, la langue source, la version de la rubrique source, le libellé ajouté à la rubrique et l’état de traduction.
+
+
 
 
 ## Démarrage de la tâche de traduction {#id225IK030OE8}

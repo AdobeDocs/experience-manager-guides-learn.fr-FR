@@ -1,17 +1,19 @@
 ---
 title: Création de rubriques
 description: Découvrez comment créer des rubriques
-source-git-commit: cc0fbca257d82cc82db5b5da8d263309fd71de55
+exl-id: 336bbbff-f268-40be-ad3a-9c72923be71b
+source-git-commit: e69665f3c4a0db10365719ac671cbd3ac0c455ec
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
 
-
 # Création de rubriques {#id2056AL00O5Z}
 
-AEM Guides vous permet de créer des rubriques DITA de type : rubrique, tâche, concept, référence, glossaire, DITAVAL, etc. Outre la création de rubriques basées sur les modèles d’usine, vous pouvez également définir vos modèles personnalisés. Pour plus d’informations sur l’utilisation de vos modèles DITA personnalisés, voir *Configuration de modèles et de balises pour la création* dans Installer et configurer Adobe Experience Manager Guides as a Cloud Service.
+AEM Guides vous permet de créer des rubriques DITA de type : rubrique, tâche, concept, référence, glossaire, DITAVAL, etc. Outre la création de rubriques basées sur les modèles d’usine, vous pouvez également définir vos modèles personnalisés. Ces modèles doivent être ajoutés au profil de dossier pour s’afficher dans le plan directeur de sélection du modèle et dans l’éditeur web.
+
+Notez que la configuration Global et Profil de dossier n’est disponible que pour les utilisateurs administratifs au niveau du dossier. Pour plus d’informations sur la configuration des profils globaux et au niveau du dossier, voir *Configuration de modèles de création* dans Installation et configuration des guides Adobe Experience Manager pour votre configuration.
 
 Pour créer une rubrique, procédez comme suit :
 
@@ -23,7 +25,7 @@ Pour créer une rubrique, procédez comme suit :
 
    ![](images/create_dita_topic.png){width="800" align="left"}
 
-   Par défaut, AEM Guides fournit les modèles de rubriques DITA les plus couramment utilisés. Vous pouvez configurer d’autres modèles de rubrique en fonction des besoins de votre organisation, voir *Configuration de modèles et de balises pour la création* dans Installer et configurer Adobe Experience Manager Guides as a Cloud Service.
+   Par défaut, AEM Guides fournit les modèles de rubriques DITA les plus couramment utilisés. Vous pouvez configurer d’autres modèles de rubrique en fonction des besoins de votre organisation, voir *Configuration de modèles de création* dans Installation et configuration des guides Adobe Experience Manager pour votre configuration.
 
    >[!NOTE]
    >
@@ -57,4 +59,3 @@ Pour créer une rubrique, procédez comme suit :
 > Une fois que vous avez créé votre rubrique DITA, continuez à enregistrer les modifications dans votre copie de travail et créez une nouvelle version une fois les mises à jour apportées à votre rubrique.
 
 **Rubrique parente :**[ Création et prévisualisation des rubriques](create-preview-topics.md)
-
