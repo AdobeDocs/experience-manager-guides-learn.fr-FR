@@ -1,9 +1,9 @@
 ---
 title: Notes de mise à jour | Nouveautés de la version 4.2.1 des guides Adobe Experience Manager
 description: Découvrez les nouvelles fonctionnalités et les fonctionnalités améliorées des versions 4.2.1 des Guides Adobe Experience Manager
-source-git-commit: 66b83f940457c64dadc5b319e1274960ac0f6da8
+source-git-commit: 8ea7b6d80b94d24910ac00bf1fb1d40d6992a166
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,8 @@ Vous pouvez désormais facilement accéder à la page de navigation d’AEM à p
 
 * Cliquez sur le bouton **Guides** Icône (![](assets/aem-guides-icon.png) ), pour revenir à la page de navigation AEM.
 
+
+Pour plus d’informations, voir [Page de navigation AEM](../user-guide/web-editor-launch-editor.md#id2056BG00RZJ)
 
 ## Prise en charge avancée des métadonnées dans la publication dans PDF
 
@@ -45,7 +47,7 @@ La vue Plan comprend les améliorations suivantes :
 
 * La fonction de recherche vous permet de rechercher un élément par son nom, son identifiant, son texte ou sa valeur d’attribut.
 
-Pour plus d’informations, reportez-vous à la description de la fonction de la vue Plan dans la section [Panneau gauche](../user-guide/web-editor-features.md) .
+Pour plus d’informations, reportez-vous à la description de la fonction de la vue Plan dans la section [Panneau gauche](../user-guide/web-editor-features.md#id2051EA0M0HS) .
 
 ## Génération du rapport Multimédia à partir de l’éditeur web
 
@@ -80,4 +82,4 @@ AEM Guides fournit désormais la fonctionnalité permettant d’ouvrir et de lir
 
 <img src="assets/video-web-editor.png" alt="vidéo de lecture" width="600">
 
-Pour plus d’informations, voir la description de la fonctionnalité Repository View dans la section [Panneau gauche](../user-guide/web-editor-features.md) .
+Pour plus d’informations, voir la description de la fonctionnalité Repository View dans la section [Panneau gauche](../user-guide/web-editor-features.md#id2051EA0M0HS) .
