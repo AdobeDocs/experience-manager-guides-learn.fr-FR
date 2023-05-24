@@ -140,7 +140,7 @@ La requête XPath contient le nom de classe du type de document. La classe &quot
 |Type de document|Nom de classe|
 |---|---|
 |Rubrique|- rubrique/rubrique|
-|Tâche|- tâche/tâche de rubrique/de rubrique
+|Tâche|- tâche/tâche de rubrique/de rubrique|
 |Concept|- thème/sujet concept/concept|
 |Référence|- Référence/référence de rubrique/de rubrique|
 |Carte|- map/map|
