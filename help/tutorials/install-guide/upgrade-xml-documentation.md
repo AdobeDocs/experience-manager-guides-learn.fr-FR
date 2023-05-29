@@ -1,7 +1,7 @@
 ---
 title: Mise à niveau des guides Adobe Experience Manager
 description: Découvrez comment mettre à niveau les guides Adobe Experience Manager
-source-git-commit: 629a3714e7b75af609238a506688da2674bf31cc
+source-git-commit: 414ee8ae3b12bb40054ddbe9e1a008ebc6058f89
 workflow-type: tm+mt
 source-wordcount: '2750'
 ht-degree: 1%
@@ -68,16 +68,22 @@ Avant d’installer la version 4.0, procédez comme suit :
 
 Cette API est conçue pour évaluer l’état actuel du système et pour signaler si la mise à niveau est possible ou non. Pour exécuter ce script, déclenchez le point de terminaison ci-dessous :
 
-|Point de terminaison|/bin/dxml/upgrade/3xto4x/report| |Type de requête|**GET** Vous pouvez utiliser un navigateur web dans lequel vous êtes connecté en tant qu’administrateur à l’instance AEM.| |Réponse attendue| - Si tous les noeuds requis peuvent être déplacés, vous obtiendrez une vérification. <br>- Si un noeud est présent à l’emplacement cible, vous obtenez une erreur pertinente. Nettoyez le référentiel \(supprimez le noeud /var/dxml\), réinstallez le package de mise à niveau, puis déclenchez à nouveau ce point de terminaison. <br>**Remarque :** Il ne s’agit pas d’une erreur courante, car l’emplacement cible n’est pas utilisé précédemment par les AEM Guides 3.x. <br> - Si ce script échoue, ne continuez pas et signalez-le à votre équipe de réussite client.|
+| Point d’entrée | /bin/dxml/upgrade/3xto4x/report |
+| --- | --- |
+| Type de requête | **GET** Vous pouvez utiliser un navigateur web dans lequel vous êtes connecté en tant qu’administrateur à l’instance AEM. |
+| Réponse attendue | - Si tous les noeuds requis peuvent être déplacés, vous obtiendrez une vérification transmise. <br>- Si un noeud est présent à l’emplacement cible, vous obtenez une erreur pertinente. Nettoyez le référentiel \(supprimez le noeud /var/dxml\), réinstallez le package de mise à niveau, puis déclenchez à nouveau ce point de terminaison. <br>**Remarque :** Il ne s’agit pas d’une erreur courante, car l’emplacement cible n’est pas utilisé précédemment par les AEM Guides 3.x. <br> - Si ce script échoue, ne procédez pas et signalez-le à votre équipe de réussite client. |
 
 **API de migration des données système**
 
-Cette API est conçue pour migrer les données système comme indiqué dans la section [Mappage de migration](#id2244LE040XA) .
+Cette API est conçue pour migrer les données système comme indiqué dans la section **Mappage de migration** .
 
 1. N’exécutez pas ce script si l’API de vérification de la compatibilité de mise à niveau échoue \(ne procédez pas\).
 1. Une fois que l’API Vérifier la compatibilité de mise à niveau renvoie la réussite, vous pouvez exécuter le script de mise à niveau.
 
-|Point de terminaison|/bin/dxml/upgrade/3xto4x| |Type de requête|**POST** Ce script est une requête de POST qui doit donc être exécutée via des agents tels que Postman.| |Réponse attendue|- Une fois la migration réussie, vous pouvez installer la solution XML Documentation version 4.0.<br>- En cas d’erreur, restaurez au dernier point de contrôle et partagez les journaux d’erreur avec la sortie de l’API avec votre équipe de succès client.|
+| Point d’entrée | /bin/dxml/upgrade/3xto4x |
+| --- | --- |
+| Type de requête | **POST** Ce script est une requête de POST qui doit donc être exécutée via des agents tels que Postman. |
+| Réponse attendue | - Une fois la migration réussie, vous pouvez installer la solution XML Documentation version 4.0.<br>- En cas d’erreur, restaurez au dernier point de contrôle et partagez les journaux d’erreur avec la sortie de l’API avec votre équipe de succès client. |
 
 **Mappage de migration**: L’API ci-dessus migre toutes les données de l’emplacement source vers l’emplacement cible.
 
