@@ -1,7 +1,8 @@
 ---
 title: Notes de mise à jour | Instructions de mise à niveau et problèmes résolus dans la version 4.2.1 des guides Adobe Experience Manager
 description: Découvrez les correctifs de bogues et comment mettre à niveau vers les versions 4.2.1 des Guides Adobe Experience Manager.
-source-git-commit: 7fdbf99a1224124d63acaebc626e3b09475f3096
+exl-id: 19b23164-4a07-4748-a8c4-1760bfdb2ca6
+source-git-commit: 6d7b17709e7a17c30b544a7f3f3707328431aac0
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 5%
@@ -10,7 +11,7 @@ ht-degree: 5%
 
 # Version 4.2.1 des guides Adobe Experience Manager (mai 2023)
 
-Cette note de mise à jour couvre les instructions de mise à niveau, la matrice de compatibilité et les problèmes de version 4.2.1 des Guides Adobe Experience Manager (ultérieurement appelée *Guides d’AEM*).
+Cette note de mise à jour traite des instructions de mise à niveau, de la matrice de compatibilité et des problèmes résolus dans la version 4.2.1 des Guides Adobe Experience Manager (ultérieurement appelés *Guides d’AEM*).
 
 Pour plus d’informations sur les nouvelles fonctionnalités et améliorations, voir [Nouveautés de la version 4.2.1 des guides Adobe Experience Manager](whats-new-4.2.1-release.md).
 
@@ -110,5 +111,3 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 ### Révision
 
 * La révision terminée ne s’ouvre pas en mode lecture seule. (11387)
-
-

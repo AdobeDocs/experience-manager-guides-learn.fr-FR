@@ -2,9 +2,9 @@
 title: Fonction de publication native d’un PDF | Concevoir une mise en page
 description: Découvrez comment concevoir la mise en page afin de présenter des informations dans différentes sections de la sortie de votre PDF.
 exl-id: b4d3bdc4-0d01-46eb-b182-540380220485
-source-git-commit: a1367a6915e760e533bb984705f4be37596b5477
+source-git-commit: 6182455850fb14cc24ce6229f6e4cb2b547901b7
 workflow-type: tm+mt
-source-wordcount: '4649'
+source-wordcount: '4712'
 ht-degree: 0%
 
 ---
@@ -353,13 +353,22 @@ Il existe les catégories suivantes pour les champs que vous pouvez insérer dan
 * Titre du profil
 * Numéro de page
 * Page totale
-* Chapter Title
+* Titre du chapitre
 * Numéro de chapitre
 * Métadonnées
 
 Chacune de ces catégories de champs contient différentes variantes dans lesquelles les informations du champ peuvent être insérées. Par exemple, un champ Date peut avoir différentes variantes, telles que `YYYY-MM-DD`, `MM/DD/YY`, `MM/DD/YYYY` etc. De même, le numéro de page peut avoir des variantes sous la forme de formats romains, décimaux ou même de paramètres régionaux, tels que _Arabe_, _Devanagari_, _Hébreu_, etc.
 
-Outre les champs prédéfinis, vous pouvez ajouter des informations de métadonnées sous la forme de variables ou de champs dans la mise en page. Ces métadonnées sont stockées dans le contenu du mappage DITA source et peuvent être facilement insérées dans la mise en page. <!--For more information, see [Add fields and metadata](design-page-layout.md#add-fields-and-metadata).-->
+Outre les champs prédéfinis, vous pouvez ajouter des informations de métadonnées sous la forme de variables ou de champs dans la mise en page. Ces métadonnées sont stockées dans le contenu du mappage DITA source et peuvent être facilement insérées dans la mise en page.
+
+Vous pouvez également sélectionner les propriétés de métadonnées de vos ressources et les ajouter à la mise en page. Les métadonnées de la ressource sont ensuite publiées pour la sortie de votre PDF. Ces propriétés de métadonnées des ressources sont définies à partir de la propriété **Propriétés** page du mappage DITA ou du fichier bookmap.
+
+>[!NOTE]
+>
+> Les champs de métadonnées s’affichent en fonction de votre sélection de ressources ou de mappage dans la variable **De** menu déroulant.
+
+
+<!--For more information, see [Add fields and metadata](design-page-layout.md#add-fields-and-metadata).-->
 
 Dans l’exemple suivant, nous allons insérer un numéro de page et un titre de chapitre dans la zone de pied de page d’une mise en page.
 

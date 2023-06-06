@@ -1,13 +1,13 @@
 ---
 title: Fonction de publication native d’un PDF | Utilisation de JavaScript pour travailler avec du contenu ou du style
 description: Découvrez comment créer des feuilles de style et créer des styles pour votre contenu.
-source-git-commit: 09918abbdade934468dea1c55d0ca2cd60622b35
+exl-id: 2f301f6a-0d1c-4194-84c2-0fddaef8d3ec
+source-git-commit: 99ca14a816630f5f0ec1dc72ba77994ffa71dff6
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 1%
+source-wordcount: '519'
+ht-degree: 0%
 
 ---
-
 
 # Utilisation de JavaScript pour utiliser du contenu ou du style
 
@@ -24,7 +24,7 @@ Pour prendre en charge l’exécution JavaScript, la fonction Publication de PDF
 
 En fonction du type de contenu ou de modification de style que vous souhaitez effectuer, vous pouvez choisir la fonction de rappel à utiliser. Par exemple, si vous souhaitez ajouter du contenu, il est recommandé de le faire avant que la table des matières ne soit générée. De même, si vous souhaitez effectuer certaines mises à jour de style, celles-ci peuvent être effectuées avant ou après la pagination.
 
-Dans l&#39;exemple suivant, la position des titres des illustrations est changée de au-dessus des images en dessous des images. Pour cela, vous devez activer l’option Exécution JavaScript dans le paramètre prédéfini. Pour ce faire, procédez comme suit :
+Dans l&#39;exemple suivant, la position des titres des illustrations est changée de au-dessus des images en dessous des images. Pour cela, vous devez activer l’option Exécution JavaScript dans le paramètre prédéfini. Pour ce faire, procédez comme suit :
 
 1. Ouvrez le paramètre prédéfini à modifier.
 1. Accédez au **Avancé** .
@@ -69,3 +69,35 @@ Ensuite, ce script doit être appelé à partir d’un fichier de modèle utilis
 La sortie générée à l’aide de ce code et le modèle affiche le titre de la figure sous l’image :
 
 <img src="./assets/fig-title-below-image.png" width="500">
+
+## Ajout d’un filigrane à la sortie du PDF pour les brouillons de documents {#watermark-draft-document}
+
+Vous pouvez également utiliser JavaScript pour ajouter des filigranes conditionnels. Ces filigranes sont ajoutés à votre document lorsque la condition définie est remplie.\
+Par exemple, vous pouvez créer un fichier JavaScript avec le code suivant pour créer un filigrane vers la sortie PDF du document qui n’est pas encore approuvé. Ce filigrane n’apparaît pas si vous générez le PDF du document dans le docstate &quot;Approuvé&quot;.
+
+```css
+...
+/*
+* This file can be used to add a watermark to the PDF output
+* */
+
+window.addEventListener('DOMContentLoaded', function () {
+    var watermark = 'Draft'
+    var metaTag = document.getElementsByTagName('meta')
+    css = "@page {\n  @left-middle {\n    content: \"".concat(watermark, "\";\n    z-index: 100;\n    font-family: sans-serif;\n    font-size: 80pt;\n    font-weight: bold;\n    color: gray(0, 0.3);\n    text-align: center;\n    transform: rotate(-54.7deg);\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n  }\n}")
+    head = document.head || document.getElementsByTagName('head')[0], style = document.createElement('style');
+    style.appendChild(document.createTextNode(css));
+    window.pdfLayout.onBeforePagination(function () {
+        for (let i = 0; i < metaTag.length; i++) {
+            if (metaTag[i].getAttribute('name') === 'docstate' && metaTag[i].getAttribute('value') !== 'Approved') {
+                head.appendChild(style);
+            }
+        }
+    })
+});
+...
+```
+
+La sortie du PDF générée à l’aide de ce code affiche un filigrane. *Version préliminaire* sur la page de garde de votre document :
+
+<img src="./assets/draft-watermark.png" width="500">

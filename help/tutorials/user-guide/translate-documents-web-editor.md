@@ -2,10 +2,10 @@
 title: Traduire des documents à partir de l’éditeur Web
 description: Découvrez comment traduire des documents à partir de l’éditeur web
 exl-id: 02fc2b51-5b9a-4ad6-9e2e-726ab7602514
-source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
+source-git-commit: 4d37242019ac2db734f7054324b074c0e8bc60bd
 workflow-type: tm+mt
-source-wordcount: '1517'
-ht-degree: 1%
+source-wordcount: '1859'
+ht-degree: 0%
 
 ---
 
@@ -81,6 +81,14 @@ Avant d’exécuter les étapes de cette procédure, assurez-vous d’avoir cré
    Outre un nouveau projet de traduction, vous pouvez également sélectionner l’une des options suivantes :
 
    - Vous pouvez choisir de **Créer une structure** uniquement pour le projet de traduction.
+   - Vous pouvez choisir de **Création d’un projet de traduction XLIFF** pour convertir le contenu XML au format XLIFF (XML Localization Interchange File Format). XLIFF est un format XML ouvert utilisé pour normaliser le transfert de données entre différents outils utilisés dans le processus de traduction de contenu.
+Dans un projet XLIFF, le contenu est exporté au format XLIFF standard du secteur, qui peut être fourni aux fournisseurs de traduction. Le format XLIFF permet la réutilisation potentielle des segments que vous avez déjà traduits lors de la phase de traduction.\
+      Une fois le contenu XLIFF traduit, il peut être importé dans AEM Guides, créant ainsi une version traduite du projet DITA d’origine.
+
+      >[!NOTE]
+      >
+      > L’exportation XLIFF fonctionne uniquement avec la configuration de traduction humaine.
+
    - Vous pouvez sélectionner **Créer un projet de traduction multilingue** qui inclut les tâches de traduction pour toutes les langues que vous avez sélectionnées pour la traduction. Par exemple, si vous avez sélectionné le français, l’allemand et l’espagnol, un projet contenant des tâches de traduction pour les trois langues sera créé.
    - Si vous disposez déjà d’un projet de traduction, vous pouvez ajouter des rubriques à ce projet. Sélectionnez Ajouter à **Projet de traduction existant** dans la liste Projet , puis choisissez un projet dans la liste Projet de traduction existant . Vous pouvez trier ces projets par ordre croissant ou décroissant le plus récent.
 
@@ -98,6 +106,28 @@ Avant d’exécuter les étapes de cette procédure, assurez-vous d’avoir cré
    >
    > Si vous rejetez la traduction d’une ou de plusieurs rubriques dans une tâche de traduction, la variable **En cours** l’état de traduction de toutes les rubriques rejetées revient à leur état d’origine. L’état des rubriques référencées est vérifié et rétabli en fonction de l’état de traduction le plus récent. En outre, les fichiers de traduction créés dans le projet de destination ne sont pas supprimés même si la traduction est refusée pour eux.
 
+## Ajout de règles de traduction
+
+AEM Guides permet à vos administrateurs de configurer les règles de traduction. Le format SRX (Segmentation Rules eXchange) est une norme permettant d’échanger des règles de segmentation entre différents utilisateurs et différents environnements de traduction. Vous pouvez créer un dossier et y ajouter vos fichiers SRX personnalisés.
+
+Les fichiers SRX doivent être nommés comme `<language-code>.srx`. Par exemple, en-US ou ar-AE.
+
+>[Remarque]
+>Le titre n’est pas sensible à la casse. Vous pouvez donc avoir &quot;en-US&quot;, &quot;en-us&quot; ou &quot;EN-us&quot;. En outre, AEM guides peuvent résoudre &quot;-&quot; (trait d’union) ou &quot;_&quot; (trait de soulignement). Vous pouvez donc avoir &quot;en-US&quot; ou &quot;en_US&quot;.
+
+En outre, vous pouvez placer ces fichiers dans n’importe quel dossier sous AEM racine de ressources qui est `./content/dam`.
+
+
+
+Une fois que vous avez créé le dossier contenant les fichiers SRX, vous pouvez ajouter le chemin d’accès au dossier dans la configuration de l’emplacement de Traduction SRX dans votre profil de dossiers.
+
+Pour de meilleures performances, il est recommandé de ne conserver que les fichiers SRX dans le dossier configuré dans le profil de dossiers.
+
+
+AEM Guides sélectionne les règles SRX en fonction de la langue source du projet de traduction. Il recherche un fichier SRX personnalisé pour une langue. Si vous ne définissez pas de fichier SRX personnalisé, il sélectionne les règles conformément aux règles de traduction prêtes à l’emploi.
+
+
+Pour plus d’informations sur la configuration des profils globaux et au niveau du dossier, voir *Configuration de modèles de création* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
 
 ## Transmettre le libellé de la version à la version cible
 

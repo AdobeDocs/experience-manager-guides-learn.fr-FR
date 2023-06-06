@@ -1,21 +1,26 @@
 ---
 title: Notes de mise à jour | Adobe Experience Manager Guides as a Cloud Service, version de mars 2023
 description: Version de mars des guides Adobe Experience Manager as a Cloud Service
-source-git-commit: d762cccc4a8f89eb91a1a8eb2c1410a7e0358b85
+source-git-commit: 99ca14a816630f5f0ec1dc72ba77994ffa71dff6
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 2%
+source-wordcount: '378'
+ht-degree: 1%
 
 ---
 
-# Version de mars des guides Adobe Experience Manager as a Cloud Service
 
-## Mise à niveau vers la version de mars
+# Version de mars 2023 des Guides Adobe Experience Manager as a Cloud Service
 
-Mettez à niveau vos guides Adobe Experience Manager actuels as a Cloud Service (plus tard appelés *AEM Guides as a Cloud Service*) en procédant comme suit :
+Cette note de mise à jour traite des instructions de mise à niveau, de la matrice de compatibilité et des problèmes résolus dans la version de mars 2023 des Guides Adobe Experience Manager (appelée ultérieurement *AEM Guides as a Cloud Service*).
+
+Pour plus d’informations sur les nouvelles fonctionnalités et améliorations, voir [Nouveautés de la version de mars 2023 d’AEM Guides as a Cloud Service](whats-new-2023.3.0.md).
+
+## Mise à niveau vers la version de mars 2023
+
+Mettez à niveau votre configuration as a Cloud Service actuelle AEM Guides en procédant comme suit :
 1. Extrayez le code Git des Cloud Services et passez à la branche configurée dans le pipeline Cloud Services correspondant à l’environnement que vous souhaitez mettre à niveau.
 2. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Services vers la version 2023.3.242.
-3. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version de mars d’AEM Guides as a Cloud Service.
+3. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version de mars 2023 d’AEM Guides as a Cloud Service.
 
 ## Étapes d’indexation du contenu existant (uniquement si vous utilisez une version antérieure à la version de septembre des AEM Guides as a Cloud Service)
 
@@ -49,36 +54,4 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 | 2023.03.0 | 2.9-uuid-2 | 2.9-uuid-2 | 2.3 | 2.3 |
 |  |  |  |  |
 
-
-## Nouvelles fonctionnalités et améliorations
-
-AEM Guides as a Cloud Service fournit des améliorations et de nouvelles fonctionnalités dans la version de mars 2023 :
-
-### Ouverture et lecture de fichiers vidéo ou audio dans l’éditeur web
-
-AEM Guides fournit désormais la fonctionnalité permettant d’ouvrir et de lire les fichiers audio ou vidéo dans l’éditeur web. Vous pouvez modifier le volume ou l’affichage de la vidéo. Dans le menu contextuel, vous avez également la possibilité de **Télécharger**, modifier **Lecture de la vitesse** ou afficher **Image dans l’image**.
-
-<img src="assets/video-web-editor.png" alt="vidéo de lecture" width="600">
-
-
-## Problèmes résolus
-
-Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
-
-* Le processus du PDF de téléchargement ne fonctionne pas correctement dans l’éditeur web. (11496)
-* Sortie JSON | Métadonnées de carte dont la valeur de propriété est `"value in spaces and double quotes"` génère une erreur de publication. (11438)
-* L’insertion des fichiers multimédia audio et vidéo échoue au format YouTube sous le **Insérer du contenu multimédia** icône . (11320)
-* Une erreur de validation se produit lorsqu’une map est créée à l’aide du modèle qui comporte un élément de titre spécialisé. (11212)
-* PDF natif | La note de bas de page présente dans l’en-tête du tableau pour afficher le texte en gras aligné au centre dans le pied de page correspondant dans la sortie du PDF. (10610)
->[!NOTE]
->
->Pour refléter la modification du PDF natif, supprimez le dossier du PDF situé à l’emplacement /content/dam/dita-templates, puis effectuez la mise à niveau vers le dernier build. (10610)
-
-### Problème connu avec la solution de contournement
-
-Adobe a identifié le problème connu suivant pour AEM Guides version as a Cloud Service de mars 2023.
-
-* Les utilisateurs ne peuvent pas enregistrer ni créer de version d’une ressource dupliquée.
-
-**Solution**: Avant d’apporter des modifications à la ressource en double, retraitez-la à partir de l’interface utilisateur d’Assets.
 

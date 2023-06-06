@@ -2,9 +2,9 @@
 title: Rapport de mappage DITA à partir de l’éditeur web
 description: Découvrez comment mapper le rapport DITA à partir de l’éditeur web
 exl-id: b1011cec-6374-4026-bf1c-54a1981c760e
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 5670b4a8f34916c7ff415680c5ddcfab6e9618e6
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '2351'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Vous pouvez créer un rapport des rubriques en procédant comme suit :
 
    >[!NOTE]
    >
-   > Cliquez sur **Actualiser** pour obtenir une nouvelle liste des rubriques et voir toute modification dans votre fichier de mappage ou si une référence dans votre fichier de rubrique est mise à jour.
+   > Cliquez sur **Actualiser** pour obtenir une nouvelle liste des rubriques et afficher toute modification dans votre fichier map ou si une référence dans votre fichier de rubrique est mise à jour.
 
 1. Cliquez sur **Téléchargement de fichier CSV** pour télécharger l’instantané actuel des rubriques dans le mappage DITA. Le fichier CSV contient les colonnes sélectionnées et les rubriques filtrées dans la variable **Liste des rubriques** vue. Vous pouvez ensuite ouvrir ce fichier CSV de liste de rubriques dans n’importe quel éditeur CSV.
 
@@ -75,7 +75,7 @@ Pour afficher les métadonnées de vos références dans le mappage DITA actuel,
 
          >[!NOTE]
          >
-         > Par défaut, vous pouvez voir deux balises pour un fichier. Pour afficher d’autres balises, cliquez sur **Afficher plus**. Cliquez sur **Afficher moins** pour contracter à nouveau la liste.
+         > Par défaut, vous pouvez afficher deux balises pour un fichier. Pour afficher d’autres balises, cliquez sur **Afficher plus**. Cliquez sur **Afficher moins** pour contracter à nouveau la liste.
 
       - **Type de référence** Type de référence : directe ou indirecte
       - **État du document** \(sélectionné par défaut\) État actuel du fichier de référence.
@@ -101,7 +101,7 @@ Pour afficher les métadonnées de vos références dans le mappage DITA actuel,
    >
    > Les balises courantes appliquées à toutes les rubriques sélectionnées sont répertoriées.
 
-1. Sélectionnez un nouvel état de document si vous souhaitez modifier l’état du document de toutes les références sélectionnées. La liste déroulante affiche l’état possible commun pour toutes les rubriques sélectionnées. Par exemple, si l’état actuel de vos rubriques est En révision, vous pouvez voir l’état Version préliminaire, Approuvé ou Révisé.
+1. Sélectionnez un nouvel état de document si vous souhaitez modifier l’état du document de toutes les références sélectionnées. La liste déroulante affiche l’état possible commun pour toutes les rubriques sélectionnées. Par exemple, si l’état actuel de vos rubriques est En révision, vous pouvez afficher l’état Version préliminaire, Approuvé ou Révisé.
 1. Cliquez sur **Mettre à jour** pour mettre à jour les métadonnées. Un message de confirmation s’affiche pour les métadonnées, qu’elles aient été mises à jour avec succès ou qu’elles aient échoué. Vous pouvez également cliquer sur **Télécharger le rapport** pour télécharger le fichier CSV de métadonnées à partir de la boîte de dialogue de confirmation. Ce fichier CSV contient les détails de l’état de mise à jour des références sélectionnées.
 
 ## Génération d’un rapport multimédia
@@ -138,12 +138,59 @@ Le **Multimédia** Le rapport fournit des informations détaillées sur le conte
 
    >[!NOTE]
    >
-   > Cliquez sur **Actualiser** pour obtenir une nouvelle liste de fichiers multimédias et voir toute modification dans votre fichier de carte ou si un fichier multimédia de votre carte DITA est mis à jour.
+   > Cliquez sur **Actualiser** pour obtenir une nouvelle liste de fichiers multimédias et afficher toute modification dans votre fichier de carte ou si un fichier multimédia de votre carte DITA est mis à jour.
 
 1. Vous pouvez également cliquer et lire un fichier audio ou vidéo dans l’éditeur web. Vous pouvez modifier le volume ou l’affichage de la vidéo. Dans le menu contextuel, vous disposez également des options de téléchargement, de modification de la vitesse de lecture ou d’affichage de l’image.
 
    ![](images/video-web-editor.png){width="800" align="left"}
 
 1. Cliquez sur **Téléchargement de fichier CSV** pour télécharger l’instantané actuel du fichier multimédia dans la carte DITA. Le fichier CSV contient les colonnes sélectionnées et le fichier multimédia filtré dans la variable **Multimédia** vue. Vous pouvez ensuite ouvrir ce fichier CSV multimédia dans n’importe quel éditeur CSV.
+
+
+## Afficher et corriger les liens rompus{#report-broken-links}
+
+Le **Liens rompus** est un rapport utile qui vous fournit les détails des liens rompus présents dans votre carte actuelle. Vous pouvez afficher les liens rompus, qui peuvent être destinés aux rubriques DITA, aux références de fichiers multimédia, aux références de clés de contenu, etc. Vous avez aussi la possibilité de les réparer ici même.
+Le rapport fournit des informations détaillées telles que le lien rompu, le type de lien, les fichiers dans lesquels une référence est utilisée et le type de fichiers dans lesquels ils ont été utilisés.
+Vous pouvez afficher le rapport pour les liens rompus en procédant comme suit :
+1. Dans le **Référentiel** , ouvrez le fichier de mappage DITA en mode Carte.
+1. Cliquez sur le bouton **Gérer** .
+1. Double-cliquez **Liens rompus** sur la gauche. La liste des liens ou références rompus présents dans le mappage DITA s’affiche.
+1. Dans la **Filtres** vous pouvez classer la liste par liens ou par noms d’éléments utilisés dans les références.
+
+   - Lorsque vous commandez par **Lien rompu**, les chemins d’accès des liens rompus sont affichés dans la première colonne, puis les noms de toutes les références dans lesquelles ils ont été utilisés sont affichés dans une autre colonne sur des lignes distinctes. Si le même lien rompu est utilisé dans plusieurs fichiers, il s’affiche sur une ligne et s’affiche sous la forme de sous-lignes ou de groupes. Par exemple, la capture d&#39;écran suivante montre trois liens rompus dans la première colonne et la référence dans laquelle ils sont utilisés, `TestMap.ditamap` s’affiche dans la troisième colonne sur trois lignes distinctes.
+   ![](images/broken-link-report.png){width="800" align="left"}
+
+   - Si vous commandez par **Utilisé dans** , vous verrez la vue transposée dans laquelle les noms des références dans lesquelles les liens rompus ont été utilisés sont répertoriés dans la première colonne tandis que les liens rompus sont répertoriés dans une autre colonne sur la même ligne. Par exemple, la capture d’écran suivante montre la référence (dans laquelle le lien rompu est utilisé). `TestMap.ditamap` dans la première colonne et les liens rompus sont affichés dans la troisième colonne de la même ligne.
+   ![](images/broken-link-filter-usedin.png){width="800" align="left"}
+1. Vous pouvez filtrer vos liens rompus en fonction des **Type de fichier** et **Type de lien**. La liste des liens rompus s’affiche en fonction de votre sélection dans la liste déroulante. Par exemple, vous pouvez choisir d’afficher uniquement les références de contenu dans votre mappage DITA, et un fichier n’affiche que les références de contenu utilisées dans celui-ci.
+
+   Selon le type de références utilisé dans votre carte, la référence de fichier, la référence de clé, la référence de contenu, la référence de clé de contenu, la référence d’image et la référence de fichier multimédia sont répertoriées dans la liste **Type de lien** et **Rubrique DITA** ou **Carte DITA** sont répertoriées dans la variable **Type de fichier** menu déroulant.
+1. Vous pouvez également utiliser les options de filtrage suivantes pour choisir d&#39;afficher les colonnes suivantes dans la liste :
+
+   - **Lien rompu** (sélectionné par défaut) Le chemin d’accès du lien rompu est spécifié dans le mappage DITA.
+
+   - **Type de lien** (sélectionné par défaut) Type des liens. Les options disponibles sont Référence de clé de contenu, Référence de contenu, Rubrique DITA, Référence de fichier, Référence d’image, Référence de clé et Référence de fichier multimédia.
+
+   - **Utilisé dans** (sélectionné par défaut) Références dans lesquelles le lien rompu a été utilisé. Vous pouvez cliquer sur la référence pour l’afficher en mode création.
+
+   - **Type de fichier** (sélectionné par défaut) Type de référence : carte DITA ou rubrique DITA.
+Cliquez sur **Actualiser** pour obtenir une nouvelle liste des liens rompus et afficher toute modification dans votre fichier de mappage ou si un lien rompu dans votre mappage DITA est mis à jour.
+1. Vous pouvez cliquer sur le bouton **Lien de correction** Icône (![](images/fix-broken-link.svg)) pour corriger le lien rompu.
+
+   >[!NOTE]
+   >
+   > Passez la souris sur le chemin du lien rompu sous la colonne Lien rompu pour afficher le lien Correctif (![](images/fix-broken-link.svg)).
+
+   Vous pouvez corriger un lien dans les deux vues (lorsque vous avez ordonné la commande **Liens rompus** ou **Utilisé dans**.
+
+   >[!NOTE]
+   >
+   > Lorsque vous corrigez un lien rompu alors que vous avez trié par Liens rompus, le lien est corrigé dans tous les fichiers dans lesquels il est utilisé (qui sont regroupés dans une seule ligne).
+
+1. Vous devez mettre à jour les détails de référence requis dans la variable **Mettre à jour le lien** boîte de dialogue. Les détails requis dans **Mettre à jour le lien** La boîte de dialogue dépend du type de référence.\
+   Une fois un lien corrigé, il ne s’affiche pas sous la liste des liens rompus. Vous pouvez plutôt l’afficher sous Liste de rubriques ou Métadonnées.
+
+1. Cliquez sur **Téléchargement de fichier CSV** pour télécharger l’instantané actuel des liens rompus dans le mappage DITA. Le fichier CSV contient les colonnes sélectionnées et les liens rompus filtrés dans la vue Liens rompus. Vous pouvez ensuite ouvrir et afficher ce fichier CSV dans n’importe quel éditeur CSV.
+
 
 **Rubrique parente :**[ Rapports](reports-intro.md)

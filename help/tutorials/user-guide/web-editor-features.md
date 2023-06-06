@@ -2,9 +2,9 @@
 title: Présentation des fonctionnalités de l’éditeur web
 description: Découvrez comment connaître les fonctionnalités de l’éditeur web
 exl-id: 38b378ff-da24-4560-a17f-a2c547aea1b8
-source-git-commit: f7eea65f58927527dbd90138a653f75ee181d141
+source-git-commit: e7a34908b0e61d33469ef83683507f16ab12f0bd
 workflow-type: tm+mt
-source-wordcount: '14387'
+source-wordcount: '14919'
 ht-degree: 0%
 
 ---
@@ -161,6 +161,7 @@ Les préférences utilisateur sont disponibles pour tous les auteurs. À l’aid
 
 ![](images/user_preference_editor.PNG){width="550" align="left"}
 
+- **Utilisation du thème du périphérique**: Cochez cette case pour permettre à AEM Guides de basculer automatiquement entre les thèmes clairs et sombres en fonction du thème de votre appareil.
 - **Thème**: Vous pouvez choisir parmi les thèmes Clair, Lumineux, Foncé ou Plus sombre pour l’éditeur. Dans le cas d’un thème plus clair, les barres d’outils et les panneaux utilisent un arrière-plan de couleur grise plus clair. Dans le cas du thème Lumière, les barres d’outils et les panneaux utilisent l’arrière-plan en gris clair. Dans le cas du thème le plus sombre, les barres d’outils et les panneaux utilisent un arrière-plan de couleur noire plus foncé. En cas de thème sombre, les barres d’outils et les panneaux utilisent l’arrière-plan en couleur noire. Dans tous les thèmes, la zone d’édition du contenu s’affiche en arrière-plan de couleur blanche.
 
 - **Profils de dossier**: Le profil de dossier contrôle différentes configurations liées aux attributs conditionnels, aux modèles de création, aux paramètres prédéfinis de sortie et aux configurations de l’éditeur web. Le profil global s’affiche par défaut. En outre, si votre administrateur a configuré les profils de dossiers dans le système, ces derniers sont également affichés dans la liste Profils de dossiers .
@@ -671,9 +672,20 @@ Pour ajouter un fichier à votre collection préférée, utilisez l’une des m�
    ![](images/favorite-add-from-file-context-menu_cs.png){width="400" align="left"}
 
 
+** Menu Options de la collection Favroties**\
+Vous pouvez également effectuer de nombreuses actions à l’aide du menu Options disponible pour une collection Favoris :
+
+![](images/favorites-options.png){width="400" align="left"}
+- **Renommer**: Renommez la collection sélectionnée.
+- **Supprimer**: Supprimez le fichier sélectionné.
+- **Actualiser**: Obtenez une nouvelle liste de fichiers et de dossiers à partir du référentiel.
+- **Affichage dans l’interface utilisateur d’Assets**: Affichez le contenu du fichier ou du dossier dans l’interface utilisateur d’Assets.
+
+
 >[!NOTE]
 >
-> Pour supprimer un élément de la liste des favoris, cliquez sur l’icône Options en regard du fichier ou du dossier dans la liste Favoris et choisissez **Supprimer des favoris**.
+> Vous pouvez également actualiser la liste à l’aide de l’icône Actualiser située en haut.
+
 
 **Repository View** - ![](images/Repository_icon.svg)
 
@@ -761,6 +773,8 @@ Le menu Options propose différentes options selon que vous sélectionnez un fic
 - Dupliquer
 - Extraction/archivage
 - Prévisualisation
+- Déplacer vers
+- Renommer
 - Supprimer
 - Copier
 - Tout réduire
@@ -784,6 +798,41 @@ Les différentes options du menu Options sont expliquées ci-dessous :
 - **Aperçu**: Obtenez un aperçu rapide du fichier \(.dita/.xml\) sans l’ouvrir.
 
    ![](images/quick-preview_cs.png){width="800" align="left"}
+
+- **Renommer**: Utilisez cette option pour renommer le fichier sélectionné. Saisissez le nom du nouveau fichier dans le champ **Renommer la ressource** boîte de dialogue.
+   - Vous pouvez renommer un fichier de n’importe quel type.
+   - Vous ne pouvez pas modifier l’extension d’un fichier.
+   - Deux fichiers ne peuvent pas porter le même nom. Ainsi, vous ne pouvez pas renommer un fichier avec un nom existant. Une erreur s’affiche.
+
+- **Déplacer vers**: Utilisez cette option pour déplacer le fichier sélectionné vers un autre dossier.
+   - Vous pouvez saisir le nom du dossier de destination ou choisir **Sélectionner le chemin** pour sélectionner le dossier de destination.
+   - Vous pouvez déplacer un fichier de tout type vers n’importe quelle destination dans le dossier Contenu .
+   - Deux fichiers ne peuvent pas porter le même nom. Ainsi, vous ne pouvez pas déplacer un fichier vers un dossier dans lequel il existe déjà un fichier portant le même nom.
+
+   Si vous essayez de déplacer un fichier vers un dossier dans lequel il existe un fichier portant le même nom mais dont le titre est différent, la boîte de dialogue Renommer et déplacer le fichier s’affiche. Vous devez renommer le fichier avant de le déplacer. Le fichier déplacé dans le dossier de destination porte le nouveau nom de fichier.
+
+   ![](images/rename-move-asset.png){width="550" align="left"}
+
+   >[!NOTE]
+   > Vous pouvez également faire glisser un fichier vers un autre dossier de destination.
+
+   **Scénarios d’exclusion**
+
+   AEM Guides ne vous permet pas de renommer ou de déplacer un fichier dans les scénarios suivants :
+
+   - Vous ne pouvez pas déplacer ou renommer un fichier s’il fait partie d’un processus de révision ou de traduction.
+
+   - Si un autre utilisateur extrait le fichier, vous ne pouvez pas le renommer ni le déplacer, l’option Renommer ou Déplacer vers ne s’affiche pas pour le fichier.
+   >[!NOTE]
+   > Si votre administrateur vous a attribué des autorisations sur un dossier, alors seulement la variable **Renommer** ou **Déplacer vers** Les options s’affichent.
+
+   <details>
+    <summary> Services cloud </summary>
+
+   Le fait de renommer ou de déplacer un fichier n’interrompt aucune référence existante depuis ou vers le fichier, car chaque fichier comporte un UUID unique.
+   </details>
+
+
 
 - **Supprimer**: Utilisez cette option pour supprimer le fichier sélectionné. Une invite de confirmation s’affiche avant de supprimer le fichier.
 
@@ -1202,32 +1251,86 @@ L’exemple suivant illustre l’utilisation du modèle d’objet dans AEM Guide
 
    ![](images/subject-scheme-apply.png){width="650" align="left"}
 
+   **Gestion des définitions hiérarchiques des définitions de sujet et des énumérations**
 
-**Liste déroulante Attributs**
+   Outre la gestion des énumérations et des définitions de sujet présentes dans la même carte, AEM Guides fournit également la fonctionnalité permettant de définir des énumérations et des définitions de sujet dans deux mappages distincts. Vous pouvez définir la définition de l’objet dans un mappage et les définitions de l’énumération dans un autre mappage, puis ajouter la référence du mappage. Par exemple, le code XML suivant crée des définitions de sujet et des définitions d’énumération dans deux mappages distincts.
 
-Vous pouvez également modifier la valeur du modèle d’objet à l’aide de la liste déroulante Attribut du panneau Propriétés du contenu dans la vue Auteur. Pour modifier la valeur, sélectionnez une valeur dans la liste déroulante Attribut .
+   Les définitions de sujet sont définies dans la section `subject_scheme_map_1.ditamap`
 
-![](images/subject-scheme-attribute-dropdown.png){width="300" align="left"}
 
-Vous pouvez également appliquer des valeurs à un attribut en sélectionnant plusieurs valeurs dans la liste déroulante.
+   ```XML
+   <?xml version="1.0" encoding="UTF-8"?> 
+   <!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "../dtd/libs/fmdita/dita_resources/DITA-1.3/dtd/subjectScheme/dtd/subjectScheme.dtd"> 
+   <subjectScheme id="subject-scheme.ditamap_f0bfda58-377b-446f-bf49-e31bc87792b3"> 
+   <title>subject_scheme_map_1</title> 
+   <subjectdef keys="os" navtitle="Operating system"> 
+   <subjectdef keys="linux" navtitle="Linux"> 
+   <subjectdef keys="redhat" navtitle="RedHat Linux"/> 
+   <subjectdef keys="suse" navtitle="SuSE Linux"/> 
+   </subjectdef> 
+   <subjectdef keys="windows" navtitle="Windows"/> 
+   <subjectdef keys="zos" navtitle="z/OS"/> 
+   </subjectdef> 
+   </subjectScheme>  
+   ```
 
-**Vue source**
+   La définition d’énumération est présente dans subject_scheme_map_2.ditamap
 
-Vous pouvez également modifier les valeurs dans la liste déroulante de l’attribut dans la vue Source. La vue source vous empêche également d’ajouter une valeur incorrecte.
+   ```XML
+   <?xml version="1.0" encoding="UTF-8"?> 
+   <!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "../dtd/libs/fmdita/dita_resources/DITA-1.3/dtd/subjectScheme/dtd/subjectScheme.dtd"> 
+   <subjectScheme id="subject-scheme.ditamap_17c433d9-0558-44d4-826e-3a3373a4c5ae"> 
+   <title>subject_scheme_map_2</title> 
+   <mapref format="ditamap" href="subject_scheme_map_1.ditamap" type="subjectScheme"> 
+   </mapref> 
+   <enumerationdef> 
+   <attributedef name="platform"> 
+   </attributedef> 
+   <subjectdef keyref="os"> 
+   </subjectdef> 
+   </enumerationdef> 
+   </subjectScheme>  
+   ```
 
-![](images/subject-scheme-code-error.png){width="550" align="left"}
+   Ici, les définitions de sujet sont définies dans `subject_scheme_map_1.ditamap`  alors que le def de l&#39;énumération est présent dans `subject_scheme_map_2.ditamap`. La référence à `subject_scheme_map_1.ditamap` est également ajouté dans `subject_scheme_map_2.ditamap`.
 
-**Afficher et appliquer le modèle d’objet à partir du panneau Conditions**
+   >[!NOTE]
+   >
+   > Comme la variable `subject_scheme_map_1.ditamap` et `subject_scheme_map_2.ditamap` sont référencés les uns avec les autres, d’où la résolution des schémas de sujet.
 
-Vous pouvez également afficher et appliquer le modèle d’objet à partir du panneau Conditions.
+   Les références de l&#39;énumération objet sont résolues dans l&#39;ordre de priorité suivant :
 
-Pour afficher le modèle d’objet à partir du panneau Conditions, votre administrateur système doit sélectionner l’option . **Afficher le schéma d’objet dans le panneau Conditions** sous l’onglet Condition dans Paramètres de l’éditeur. Pour plus d’informations, voir [Onglet Condition](#id21BMNE0602V).
+   1. Même carte
+   1. Mappage référencé
 
-Le panneau Conditions affiche la structure verticale plate des définitions d’objet dans le modèle d’objet.
+   Les références ne sont pas résolues si l’énumération est introuvable dans la même carte et la carte référencée.
 
-![](images/subject-scheme-condtions-panel.png){width="300" align="left"}
 
-Vous pouvez ajouter des conditions à votre contenu en faisant glisser la condition souhaitée sur votre contenu. Le contenu conditionnel est mis en surbrillance à l’aide de la couleur définie pour la condition.
+   **Liste déroulante Attributs**
+
+   Vous pouvez également modifier la valeur du modèle d’objet à l’aide de la liste déroulante Attribut du panneau Propriétés du contenu dans la vue Auteur. Pour modifier la valeur, sélectionnez une valeur dans la liste déroulante Attribut .
+
+   ![](images/subject-scheme-attribute-dropdown.png){width="300" align="left"}
+
+   Vous pouvez également appliquer des valeurs à un attribut en sélectionnant plusieurs valeurs dans la liste déroulante.
+
+   **Vue source**
+
+   Vous pouvez également modifier les valeurs dans la liste déroulante de l’attribut dans la vue Source. La vue source vous empêche également d’ajouter une valeur incorrecte.
+
+   ![](images/subject-scheme-code-error.png){width="550" align="left"}
+
+   **Afficher et appliquer le modèle d’objet à partir du panneau Conditions**
+
+   Vous pouvez également afficher et appliquer le modèle d’objet à partir du panneau Conditions.
+
+   Pour afficher le modèle d’objet à partir du panneau Conditions, votre administrateur système doit sélectionner l’option . **Afficher le schéma d’objet dans le panneau Conditions** sous l’onglet Condition dans Paramètres de l’éditeur. Pour plus d’informations, voir [Onglet Condition](#id21BMNE0602V).
+
+   Le panneau Conditions affiche la structure verticale plate des définitions d’objet dans le modèle d’objet.
+
+   ![](images/subject-scheme-condtions-panel.png){width="300" align="left"}
+
+   Vous pouvez ajouter des conditions à votre contenu en faisant glisser la condition souhaitée sur votre contenu. Le contenu conditionnel est mis en surbrillance à l’aide de la couleur définie pour la condition.
 
 **Fragments de code** -  ![](images/insert-snippet-icon.svg)
 
