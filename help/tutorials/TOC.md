@@ -2,9 +2,9 @@
 user-guide-title: Tutoriels pour AEM Guides
 user-guide-description: Lisez notre collection de tutoriels pour Adobe Experience Manager Guides.
 breadcrumb-title: Tutoriels AEM Guides
-source-git-commit: fa8b9cf3af0443ff8a830b0393c66f5804593deb
+source-git-commit: ce65f05c61b81115d9032e429419265e4b4574fd
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1072'
 ht-degree: 8%
 
 ---
@@ -155,7 +155,7 @@ ht-degree: 8%
          + [Modification d’une collection de cartes d’activation en bloc](./user-guide/conf-bulk-activation-edit-map-collection.md)
          + [Suppression d’une collection de cartes d’activation en bloc](./user-guide/conf-bulk-activation-delete-map-collection.md)
    + Génération de sortie de documents FrameMaker {#generate-fm-output}
-      + [Génération d’une sortie de documents FrameMaker](./user-guide/fm-output-generatation.md)
+      + [Générer une sortie de documents de FrameMaker](./user-guide/fm-output-generatation.md)
       + Paramètres prédéfinis pris en charge {#fm-docs-generating-presets}
          + [Paramètres prédéfinis pour la génération de documents FrameMaker](./user-guide/fm-output-understand-presets.md)
          + [PDF](./user-guide/fm-output-pdf-preset.md)
@@ -272,6 +272,7 @@ ht-degree: 8%
          + [FMPS et guides](./knowledge-base/kb-articles/publishing/fmpsandguides.md)
          + [Architecture et performances des microservices](./knowledge-base/publishing/publish-microservice-architecture-and-performance.md)
          + [Configuration de la publication basée sur un microservice](./knowledge-base/publishing/configure-microservices.md)
+         + [Publication de références sur AEM cloud](./knowledge-base/publishing/publishing-benchmarks-on-cloud.md)
          + [Configuration d’un DITA-OT personnalisé](./knowledge-base/kb-articles/publishing/setup-a-custom-dita-ot.md)
       + Workflows {#workflows}
          + [Processus de génération de publication](./knowledge-base/kb-articles/workflows/using-post-generation-workflow.md)
