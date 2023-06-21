@@ -1,13 +1,13 @@
 ---
 title: Configuration d’un modèle de mappage DITA personnalisé
 description: Découvrez comment configurer le modèle de mappage DITA personnalisé
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+exl-id: 2ad0fc50-97fd-437e-94cc-db5f51f3bc3f
+source-git-commit: 0dea2f1d17e7d9b12d07b459a10a00c1dd7460a5
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '331'
 ht-degree: 1%
 
 ---
-
 
 # Configuration d’un modèle de mappage DITA personnalisé {#id1774F04F05Z}
 
@@ -50,7 +50,6 @@ La prochaine fois que vous créerez une carte, votre modèle s’affichera dans 
 
 >[!TIP]
 >
-> Voir [annexe.md\#](appendix.md#)la valeur *Modèles personnalisés* section du guide Bonnes pratiques pour connaître les bonnes pratiques relatives à l’utilisation de modèles de mappage personnalisés.
+> Voir *Modèles personnalisés* section du guide Bonnes pratiques pour connaître les bonnes pratiques relatives à l’utilisation de modèles de mappage personnalisés.
 
-**Rubrique parente :**[ Configuration des modèles de rubrique et de mappage](conf-template-tags.md)
-
+**Rubrique parente :** [Configuration des modèles de rubrique et de mappage](conf-template-tags.md)
