@@ -2,9 +2,9 @@
 title: Utilisation de la collecte des cartes pour la génération de la sortie
 description: Découvrez comment utiliser la collecte de cartes pour la génération de sortie
 exl-id: 32e3af6c-9670-42cc-8dbe-9f99fbc60adf
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 22f88ae4097a6067ed65a963ad6765f6f8c24f36
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '898'
 ht-degree: 1%
 
 ---
@@ -66,15 +66,26 @@ Les options de filtrage et les détails de mappage suivants sont affichés sur l
 
 Pour configurer et générer la sortie à l’aide d’une collection de cartes, procédez comme suit :
 
-1. Ouvrez la collection de cartes.
+1. Ouvrez la collection de cartes. Vous pouvez afficher les différents paramètres prédéfinis de sortie tels que le site AEM, le PDF (y compris le PDF natif), le HTML 5, l’EPUB et les paramètres prédéfinis personnalisés. Vous pouvez également afficher les paramètres prédéfinis de profil global et de dossier créés par votre administrateur.
+
+   Le ![](images/global-preset-icon.svg) indique un paramètre prédéfini au niveau du profil de dossier.
 1. \(Facultatif\) Effectuez l’une des opérations suivantes selon vos besoins :
    - Appliquez des filtres à partir du rail de gauche pour filtrer les mappages, le paramètre prédéfini de sortie ou la langue modifiés.
    - Si nécessaire, cliquez sur **Modifier** et modifiez la sortie souhaitée en activant ou en désactivant le bouton coulissant.
+
+
+
+     >[!NOTE]
+     >  
+     > Par défaut, tout nouveau paramètre prédéfini est désactivé.
+
+   - Vous pouvez sélectionner **Activation/désactivation de tous les paramètres prédéfinis de profil de dossier** pour un mappage DITA afin de sélectionner tous les profils de dossiers pour celui-ci en une seule fois.
+
+
 1. Utilisez l’une des méthodes suivantes :
 
    - Pour générer la sortie des mappages sélectionnés, sélectionnez les fichiers de mappage et cliquez sur **Générer la sélection**.
    - Pour générer une sortie de toutes les cartes DITA avec leurs paramètres prédéfinis configurés, cliquez sur **Générer tout**.
-
    >[!IMPORTANT]
    >
    > Si un processus de génération de sortie pour un paramètre prédéfini ou un mappage DITA se trouve dans la file d’attente ou en cours, vous ne pouvez pas lancer une autre tâche de génération de sortie pour le même paramètre prédéfini ou le même mappage.
@@ -85,7 +96,7 @@ Pour configurer et générer la sortie à l’aide d’une collection de cartes,
 - Pour supprimer une collection de mappages, sélectionnez-la dans la page Collection de mappages, puis cliquez sur **Supprimer**.
 - Pour supprimer un mappage DITA d’une collection de mappages, ouvrez la collection de mappages en mode d’édition, sélectionnez le fichier de mappage DITA, puis cliquez sur **Supprimer de la collection**.
 
-   Cela supprime également tous les paramètres prédéfinis ou paramètres régionaux associés au mappage DITA de la collection de cartes.
+  Cela supprime également tous les paramètres prédéfinis ou paramètres régionaux associés au mappage DITA de la collection de cartes.
 
 
 ## Annulation d’une tâche de génération de sortie à partir d’une collection de cartes

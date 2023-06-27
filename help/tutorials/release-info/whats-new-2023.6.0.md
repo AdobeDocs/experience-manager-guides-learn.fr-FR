@@ -1,9 +1,10 @@
 ---
 title: Notes de mise à jour | Nouveautés des guides Adobe Experience Manager, version de juin 2023
 description: Découvrez les nouvelles fonctionnalités et les fonctionnalités améliorées de la version de juin 2023 des Guides Adobe Experience Manager as a Cloud Service.
-source-git-commit: 5670b4a8f34916c7ff415680c5ddcfab6e9618e6
+exl-id: ff6ac4a4-76a3-4b41-9da7-6a888de0eca5
+source-git-commit: f6794078e760565f5934faf63a7cbfb919acce90
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1127'
 ht-degree: 0%
 
 ---
@@ -41,7 +42,13 @@ Pour plus d’informations, voir [Ajout d’un filigrane à la sortie du PDF pou
 
 ### Prise en charge des variables de langue dans les éléments DITA
 
-AEM Guides prend en charge les variables de langue. Ces variables sont très utiles pour générer des chaînes localisées pour des éléments tels que note, astuce, avertissement, avertissement. Par exemple, vous pouvez utiliser les méthodes suivantes pour présenter votre REMARQUE dans la sortie du PDF : Allemand : Notiz Espagnol : Remarque
+AEM Guides prend en charge les variables de langue. Ces variables sont très utiles pour générer des chaînes localisées pour des éléments tels que note, astuce, avertissement, avertissement.
+Par exemple, vous pouvez utiliser les méthodes suivantes pour présenter votre REMARQUE dans la sortie du PDF :
+
+Allemand : Notifier
+
+Espagnol : Remarque
+
 
 ### Prise en charge des variables de langue dans le pied de page
 
@@ -51,10 +58,13 @@ Vous pouvez également l’utiliser pour présenter les nombres dans différente
 ### Préfixes localisés pour votre table des matières
 
 Vous avez également la possibilité d’afficher les termes localisés à utiliser pour présenter les préfixes dans vos en-têtes.
-Par exemple, vous pouvez présenter votre préfixe &quot;Chapitre&quot; comme suit dans la sortie du PDF : Allemand : Kapitel Espagnol : Capítulo
+Par exemple, vous pouvez présenter votre préfixe &quot;Chapitre&quot; comme suit dans la sortie du PDF :
+
+Allemand : Kapitel
+
+Espagnol : Capítulo
 
 ### Possibilité d’utiliser des métadonnées AEM dans des mises en page PDF
-
 
 Les métadonnées sont la description ou la définition de votre contenu. Ces métadonnées sont stockées dans le contenu de votre mappage DITA source.
 
@@ -72,11 +82,11 @@ Pour plus d’informations, voir [Ajout de champs et de métadonnées](../native
 
 ## Améliorations des schémas
 
-### Utilisation d’instructions de rapport pour rechercher des règles dans le schéma
+### Utilisation d’instructions de rapport pour vérifier les règles dans le schéma
 
 AEM Guides prend désormais en charge les instructions de rapport avec le schéma. Une instruction de rapport génère un message lorsqu’une instruction de test est évaluée comme vraie. Par exemple, si vous souhaitez que la brève description soit inférieure ou égale à 150 caractères, vous pouvez définir une instruction de rapport afin de vérifier les rubriques dont la brève description comporte plus de 150 caractères.
 
-Pour plus d’informations, voir [Utilisation des instructions d’affirmation et de rapport pour rechercher des règles](../user-guide/support-schematron-file.md#schematron-assert-report).
+Pour plus d’informations, voir [Utilisez des instructions d’insertion et de rapport pour rechercher des règles.](../user-guide/support-schematron-file.md#schematron-assert-report).
 
 ### Utilisation d’expressions Regex
 

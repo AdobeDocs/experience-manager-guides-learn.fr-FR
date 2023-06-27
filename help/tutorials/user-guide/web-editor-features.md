@@ -2,9 +2,9 @@
 title: Présentation des fonctionnalités de l’éditeur web
 description: Découvrez comment connaître les fonctionnalités de l’éditeur web
 exl-id: 38b378ff-da24-4560-a17f-a2c547aea1b8
-source-git-commit: e7a34908b0e61d33469ef83683507f16ab12f0bd
+source-git-commit: b55b4aa572a680181388e24827daa7d045f1e406
 workflow-type: tm+mt
-source-wordcount: '14919'
+source-wordcount: '15310'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Les paramètres de l’éditeur ne sont disponibles que pour les utilisateurs ad
 
 - **Général**: Les paramètres Général vous permettent de configurer le dictionnaire à utiliser avec l’éditeur web. Cet onglet comprend trois sections : **Vérifier l’orthographe**, **Condition**, et **Création**.
 
-   ![](images/editor-setting-general.png){width="650" align="left"}
+  ![](images/editor-setting-general.png){width="650" align="left"}
 
    - **Vérifier l’orthographe**: Il existe deux options — **Vérifier l’orthographe AEM** et **Vérifier l’orthographe du navigateur**. Par défaut, l’éditeur utilise la fonction Vérifier l’orthographe du navigateur, dans laquelle la vérification orthographique est effectuée à l’aide du dictionnaire intégré du navigateur. Vous pouvez passer à la vérification orthographique AEM pour utiliser AEM dictionnaire, qui peut également être personnalisé pour ajouter votre liste de mots personnalisée. Pour plus d’informations sur la personnalisation du dictionnaire AEM, voir *Personnalisation AEM dictionnaire par défaut* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
 
@@ -108,13 +108,13 @@ Les paramètres de l’éditeur ne sont disponibles que pour les utilisateurs ad
 
       - **Afficher la clé avec le titre dans le panneau Schéma de l’objet**: Sélectionnez cette option pour afficher les clés avec les titres dans le schéma d’objet. Si vous ne sélectionnez pas cette option, seuls les titres s’affichent. Par exemple, ici, les clés &quot;os&quot;, &quot;audience&quot; et &quot;other&quot; s’affichent également avec les titres.
 
-         ![](images/subject-scheme-title.png){width="550" align="left"}
+        ![](images/subject-scheme-title.png){width="550" align="left"}
 
       - **Afficher le schéma d’objet dans le panneau Conditions**: Sélectionnez cette option pour afficher un modèle d’objet dans le panneau Conditions. Si vous la désélectionnez, les conditions définies s’affichent dans le panneau Conditions.
+
    - **Création**
 
       - **Activer Tout remplacer**: Sélectionnez cette option pour afficher l’icône Tout remplacer dans le panneau Rechercher et remplacer .
-
 
 **Panneaux**: Ce paramètre contrôle les panneaux affichés dans le panneau de gauche de l’éditeur. Vous pouvez activer ou désactiver le commutateur pour afficher ou masquer le panneau souhaité.
 
@@ -126,7 +126,7 @@ Les paramètres de l’éditeur ne sont disponibles que pour les utilisateurs ad
 
 - **Liste des éléments**: En tant qu’administrateur, vous pouvez contrôler la liste des éléments qu’un auteur peut insérer à l’aide du [Insérer un élément](#id204SG30105Z) et définissez également le nom d’affichage de l’élément. Le paramètre Liste d’éléments vous permet de spécifier le nom de l’élément conformément aux spécifications DITA et un libellé que vous souhaitez utiliser au lieu du nom d’élément défini par DITA :
 
-   ![](images/editor-setting-element-list.png){width="650" align="left"}
+  ![](images/editor-setting-element-list.png){width="650" align="left"}
 
 Dans la capture d’écran ci-dessus, la variable `b` a reçu une étiquette Gras, `codeblock` se voit attribuer un libellé Bloc de code avec d’autres éléments. Si vous sélectionnez la variable **Utiliser uniquement les éléments ci-dessus** , alors seuls les éléments valides \ (au point d’insertion actuel\) de cette liste s’affichent dans la fenêtre contextuelle Insérer l’élément .
 
@@ -152,7 +152,7 @@ Les attributs définis pour un élément sont affichés dans les vues Dispositio
 
    - **Propager les libellés de version source à la version cible**: Sélectionnez cette option pour transmettre le libellé de la version du fichier source au fichier traduit. Par défaut, cette option est désactivée.
 
-   ![](images/editor-setting-translation.png){width="550" align="left"}
+  ![](images/editor-setting-translation.png){width="550" align="left"}
 
 
 **Préférences utilisateur** - ![](images/user_preference_editor_icon.svg)
@@ -166,11 +166,11 @@ Les préférences utilisateur sont disponibles pour tous les auteurs. À l’aid
 
 - **Profils de dossier**: Le profil de dossier contrôle différentes configurations liées aux attributs conditionnels, aux modèles de création, aux paramètres prédéfinis de sortie et aux configurations de l’éditeur web. Le profil global s’affiche par défaut. En outre, si votre administrateur a configuré les profils de dossiers dans le système, ces derniers sont également affichés dans la liste Profils de dossiers .
 
-   Les configurations de l’éditeur web qu’un administrateur peut définir dans le profil de dossier sont les suivantes : personnalisation de l’interface utilisateur, y compris les icônes de la barre d’outils, la mise en page de l’éditeur web, les fragments de code et le mappage racine. Pour plus d’informations, voir *Configuration de profils globaux ou au niveau du dossier* dans l’as a Cloud Service Installer et configurer Adobe Experience Manager Guides.
+  Les configurations de l’éditeur web qu’un administrateur peut définir dans le profil de dossier sont les suivantes : personnalisation de l’interface utilisateur, y compris les icônes de la barre d’outils, la mise en page de l’éditeur web, les fragments de code et le mappage racine. Pour plus d’informations, voir *Configuration de profils globaux ou au niveau du dossier* dans l’as a Cloud Service Installer et configurer Adobe Experience Manager Guides.
 
-   >[!NOTE]
-   >
-   > Le nom du profil de dossier actif s’affiche sous forme de libellé pour l’icône Préférences utilisateur dans la barre d’outils principale.
+  >[!NOTE]
+  >
+  > Le nom du profil de dossier actif s’affiche sous forme de libellé pour l’icône Préférences utilisateur dans la barre d’outils principale.
 
 - **Chemin de base**: Par défaut, lorsque vous accédez au référentiel d’AEM à partir de l’éditeur web, les ressources de l’emplacement /content/dam s’affichent. Votre dossier de travail se composerait probablement de quelques dossiers dans le dossier /content/dam/ . Il vous faudrait quelques clics pour atteindre le dossier de travail à chaque fois. Vous pouvez définir le chemin d’accès de base sur votre dossier de travail et la vue Référentiel affiche ensuite le contenu de cet emplacement en amont. Cela réduit le temps d’accès à votre dossier de travail. En outre, lorsque vous insérez un fichier de référence ou multimédia dans votre rubrique, l’emplacement de navigation du fichier commence par le jeu de dossiers dans le chemin d’accès de base.
 
@@ -665,11 +665,11 @@ Pour ajouter un fichier à votre collection préférée, utilisez l’une des m�
 
 - Accédez au fichier ou au dossier requis en mode Référentiel, puis cliquez sur le bouton *Options* pour ouvrir le menu contextuel, puis choisissez **Ajouter aux Favoris**. Dans la boîte de dialogue Ajouter aux favoris , vous pouvez choisir d’ajouter le fichier/dossier à un favori existant ou d’en créer un nouveau.
 
-   ![](images/favorite-add-file-folder.png){width="300" align="left"}
+  ![](images/favorite-add-file-folder.png){width="300" align="left"}
 
 - Cliquez avec le bouton droit sur l’onglet d’un fichier dans l’éditeur pour ouvrir le menu contextuel. Choisir **Ajouter À \> Favoris** pour ajouter le fichier à votre liste de favoris.
 
-   ![](images/favorite-add-from-file-context-menu_cs.png){width="400" align="left"}
+  ![](images/favorite-add-from-file-context-menu_cs.png){width="400" align="left"}
 
 
 ** Menu Options de la collection Favroties**\
@@ -739,27 +739,27 @@ Vous pouvez effectuer les actions suivantes à l’aide du menu Options disponib
 
 - **Chargement de ressources**: Transférez un fichier de votre système local vers le dossier sélectionné dans le référentiel AEM. Vous pouvez également faire glisser des fichiers de votre système local vers votre rubrique de travail actuelle. Cela s’avère très utile si vous souhaitez insérer des images de votre système local dans votre rubrique.
 
-   ![](images/upload-assets.png){width="550" align="left"}
+  ![](images/upload-assets.png){width="550" align="left"}
 
-   Vous pouvez sélectionner un dossier dans lequel vous souhaitez charger le fichier et un aperçu de l’image s’affiche également. Si vous souhaitez renommer le fichier, vous pouvez le faire dans la zone de texte Nom du fichier . Cliquez sur Télécharger pour terminer le processus de téléchargement de fichier. Si vous avez fait glisser et déposé un fichier image sur une rubrique, le fichier image est ajouté à l’article et il est également téléchargé.
+  Vous pouvez sélectionner un dossier dans lequel vous souhaitez charger le fichier et un aperçu de l’image s’affiche également. Si vous souhaitez renommer le fichier, vous pouvez le faire dans la zone de texte Nom du fichier . Cliquez sur Télécharger pour terminer le processus de téléchargement de fichier. Si vous avez fait glisser et déposé un fichier image sur une rubrique, le fichier image est ajouté à l’article et il est également téléchargé.
 
-   Si votre administrateur a activé l’option UUID dans *XMLEditorConfig*, l’UUID de l’image chargée s’affiche dans la variable **Source** .
+  Si votre administrateur a activé l’option UUID dans *XMLEditorConfig*, l’UUID de l’image chargée s’affiche dans la variable **Source** .
 
-   ![](images/uuid-in-source-upload-image_cs.png){width="800" align="left"}
+  ![](images/uuid-in-source-upload-image_cs.png){width="800" align="left"}
 
 - **Recherche de fichiers dans le dossier**: Active la recherche dans le référentiel dans laquelle vous pouvez saisir le terme de recherche. La recherche est effectuée sous le dossier sélectionné dans le référentiel. Vous pouvez également appliquer un filtre pour renvoyer des fichiers DITA, des fichiers image ou les deux.
 
-   ![](images/find-files-in-folders-repo-view_cs.png){width="400" align="left"}
+  ![](images/find-files-in-folders-repo-view_cs.png){width="400" align="left"}
 
-   Vous pouvez également effectuer des recherches à l’aide de l’UUID d’un fichier. Dans ce cas, les résultats de recherche affichent le titre du fichier DITA/XML et, dans le cas où le fichier est un fichier image, l’UUID du fichier s’affiche. Dans l’exemple de recherche suivant, la recherche porte sur l’UUID d’un fichier image et les résultats de recherche affichent l’UUID du fichier image d’origine et le titre de la rubrique du fichier dans lequel cette image est référencée.
+  Vous pouvez également effectuer des recherches à l’aide de l’UUID d’un fichier. Dans ce cas, les résultats de recherche affichent le titre du fichier DITA/XML et, dans le cas où le fichier est un fichier image, l’UUID du fichier s’affiche. Dans l’exemple de recherche suivant, la recherche porte sur l’UUID d’un fichier image et les résultats de recherche affichent l’UUID du fichier image d’origine et le titre de la rubrique du fichier dans lequel cette image est référencée.
 
-   ![](images/uuid-repo-search-image-topic-file_cs.png){width="300" align="left"}
+  ![](images/uuid-repo-search-image-topic-file_cs.png){width="300" align="left"}
 
 - **Réduire tout**: Réduisez tous les dossiers ouverts dans le référentiel et affichez uniquement les dossiers de niveau racine.
 
-   >[!NOTE]
-   >
-   > Utilisez la variable **\>** en regard d’un dossier pour le développer.
+  >[!NOTE]
+  >
+  > Utilisez la variable **\>** en regard d’un dossier pour le développer.
 
 - **Ajouter aux Favoris**: Ajoute le dossier sélectionné aux favoris. Vous pouvez choisir de l’ajouter à une collection de favoris existante ou nouvelle.
 
@@ -791,13 +791,13 @@ Les différentes options du menu Options sont expliquées ci-dessous :
 - **Dupliquer**: Utilisez cette option pour créer un doublon ou une copie du fichier sélectionné. Vous avez également la possibilité de renommer le fichier dupliqué à l’invite Dupliquer la ressource . Par défaut, le fichier est créé avec un suffixe \(comme filename\_1.extension\). Le titre du fichier reste identique à celui du fichier source et le nouveau fichier commence avec la version 1.0. Toutes les références, balises et métadonnées sont copiées alors que les lignes de base ne sont pas copiées dans le fichier dupliqué.
 - **Extraire**: Verrouillez le fichier sélectionné pour le modifier. Pour un fichier verrouillé, cette option se transforme en **Archiver**.
 
-   >[!NOTE]
-   >
-   > Si un fichier est verrouillé ou extrait par un utilisateur, placez le pointeur de la souris sur l’icône de verrouillage pour afficher l’utilisateur \(nom\) qui a verrouillé le fichier.
+  >[!NOTE]
+  >
+  > Si un fichier est verrouillé ou extrait par un utilisateur, placez le pointeur de la souris sur l’icône de verrouillage pour afficher l’utilisateur \(nom\) qui a verrouillé le fichier.
 
 - **Aperçu**: Obtenez un aperçu rapide du fichier \(.dita/.xml\) sans l’ouvrir.
 
-   ![](images/quick-preview_cs.png){width="800" align="left"}
+  ![](images/quick-preview_cs.png){width="800" align="left"}
 
 - **Renommer**: Utilisez cette option pour renommer le fichier sélectionné. Saisissez le nom du nouveau fichier dans le champ **Renommer la ressource** boîte de dialogue.
    - Vous pouvez renommer un fichier de n’importe quel type.
@@ -809,28 +809,29 @@ Les différentes options du menu Options sont expliquées ci-dessous :
    - Vous pouvez déplacer un fichier de tout type vers n’importe quelle destination dans le dossier Contenu .
    - Deux fichiers ne peuvent pas porter le même nom. Ainsi, vous ne pouvez pas déplacer un fichier vers un dossier dans lequel il existe déjà un fichier portant le même nom.
 
-   Si vous essayez de déplacer un fichier vers un dossier dans lequel il existe un fichier portant le même nom mais dont le titre est différent, la boîte de dialogue Renommer et déplacer le fichier s’affiche. Vous devez renommer le fichier avant de le déplacer. Le fichier déplacé dans le dossier de destination porte le nouveau nom de fichier.
+  Si vous essayez de déplacer un fichier vers un dossier dans lequel il existe un fichier portant le même nom mais dont le titre est différent, la boîte de dialogue Renommer et déplacer le fichier s’affiche. Vous devez renommer le fichier avant de le déplacer. Le fichier déplacé dans le dossier de destination porte le nouveau nom de fichier.
 
-   ![](images/rename-move-asset.png){width="550" align="left"}
+  ![](images/rename-move-asset.png){width="550" align="left"}
 
-   >[!NOTE]
-   > Vous pouvez également faire glisser un fichier vers un autre dossier de destination.
+  >[!NOTE]
+  > Vous pouvez également faire glisser un fichier vers un autre dossier de destination.
 
-   **Scénarios d’exclusion**
+  **Scénarios d’exclusion**
 
-   AEM Guides ne vous permet pas de renommer ou de déplacer un fichier dans les scénarios suivants :
+  AEM Guides ne vous permet pas de renommer ou de déplacer un fichier dans les scénarios suivants :
 
    - Vous ne pouvez pas déplacer ou renommer un fichier s’il fait partie d’un processus de révision ou de traduction.
 
    - Si un autre utilisateur extrait le fichier, vous ne pouvez pas le renommer ni le déplacer, l’option Renommer ou Déplacer vers ne s’affiche pas pour le fichier.
-   >[!NOTE]
-   > Si votre administrateur vous a attribué des autorisations sur un dossier, alors seulement la variable **Renommer** ou **Déplacer vers** Les options s’affichent.
 
-   <details>
+  >[!NOTE]
+  > Si votre administrateur vous a attribué des autorisations sur un dossier, alors seulement la variable **Renommer** ou **Déplacer vers** Les options s’affichent.
+
+  <details>
     <summary> Services cloud </summary>
 
-   Le fait de renommer ou de déplacer un fichier n’interrompt aucune référence existante depuis ou vers le fichier, car chaque fichier comporte un UUID unique.
-   </details>
+  Le fait de renommer ou de déplacer un fichier n’interrompt aucune référence existante depuis ou vers le fichier, car chaque fichier comporte un UUID unique.
+  </details>
 
 
 
@@ -840,23 +841,24 @@ Les différentes options du menu Options sont expliquées ci-dessous :
    - Si le fichier n’est référencé dans aucun autre fichier, il est supprimé et un message de réussite s’affiche.
    - Si le fichier est extrait, vous ne pouvez pas le supprimer et un message d’erreur s’affiche.
 
-      >[!NOTE]
-      >
-      > Si votre administrateur a empêché la suppression des fichiers extraits, le message d’erreur s’affiche uniquement. Pour plus d’informations, voir *Empêcher la suppression des fichiers extraits* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
+     >[!NOTE]
+     >
+     > Si votre administrateur a empêché la suppression des fichiers extraits, le message d’erreur s’affiche uniquement. Pour plus d’informations, voir *Empêcher la suppression des fichiers extraits* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
 
    - Si le fichier est ajouté à une collection de favoris, la variable **Forcer la suppression** s’affiche et vous pouvez la supprimer de manière forcée.
    - Si le fichier est référencé à partir d’un autre fichier, **Forcer la suppression** La boîte de dialogue de confirmation s’affiche et vous pouvez supprimer le fichier de manière forcée :
 
-      ![](images/options-menu-force-delete.png){width="550" align="left"}
+     ![](images/options-menu-force-delete.png){width="550" align="left"}
 
-      >[!NOTE]
-      >
-      > Si votre administrateur a autorisé la suppression du fichier, **Forcer la suppression** est activée. Sinon, **Forcer la suppression** est désactivé et un message s’affiche indiquant que vous n’êtes pas autorisé à supprimer les fichiers référencés. Pour plus d’informations, voir *Empêcher la suppression des fichiers référencés* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
+     >[!NOTE]
+     >
+     > Si votre administrateur a autorisé la suppression du fichier, **Forcer la suppression** est activée. Sinon, **Forcer la suppression** est désactivé et un message s’affiche indiquant que vous n’êtes pas autorisé à supprimer les fichiers référencés. Pour plus d’informations, voir *Empêcher la suppression des fichiers référencés* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
 
    - Si vous supprimez une rubrique référencée et que vous avez ouvert le fichier contenant des références à modifier, le lien rompu du fichier référencé s’affiche.
-   >[!NOTE]
-   >
-   > Vous pouvez également supprimer le fichier sélectionné de la même manière à l’aide de la touche Suppr du clavier.
+
+  >[!NOTE]
+  >
+  > Vous pouvez également supprimer le fichier sélectionné de la même manière à l’aide de la touche Suppr du clavier.
 
 - **Copier**: Vous pouvez choisir parmi les options suivantes :
 
@@ -893,16 +895,16 @@ Dans le **Création d’une rubrique** , fournissez les détails suivants :
 
 - Un modèle sur lequel sera basé la rubrique. Par exemple, pour une configuration d’usine, vous pouvez choisir parmi les modèles vierges, Concept, DITAVAL, Référence, Tâche, Rubrique et Dépannage .
 
-   Si un profil de dossier est configuré sur votre dossier, vous ne verrez que les modèles de rubrique configurés sur le profil de dossier.
+  Si un profil de dossier est configuré sur votre dossier, vous ne verrez que les modèles de rubrique configurés sur le profil de dossier.
 
 - Chemin d’accès où vous souhaitez enregistrer le fichier de rubrique. Par défaut, le chemin d’accès au dossier actuellement sélectionné dans le référentiel s’affiche dans le champ Chemin .
 - Titre de la rubrique.
 
 - *\(Facultatif\)* Nom de fichier de la rubrique. Le nom de fichier est suggéré automatiquement en fonction du titre de la rubrique.
 
-   Si votre administrateur a activé les noms de fichiers automatiques en fonction du paramètre UUID , le champ Nom n’apparaît pas comme illustré dans la capture d’écran suivante :
+  Si votre administrateur a activé les noms de fichiers automatiques en fonction du paramètre UUID , le champ Nom n’apparaît pas comme illustré dans la capture d’écran suivante :
 
-   ![](images/new-topic-without-filename.PNG){width="300" align="left"}
+  ![](images/new-topic-without-filename.PNG){width="300" align="left"}
 
 
 Lorsque vous cliquez sur **Créer**, la rubrique est créée à l’emplacement spécifié. En outre, la rubrique est ouverte dans l’éditeur Web pour modification.
@@ -922,7 +924,7 @@ Dans le **Créer une carte** , fournissez les détails suivants :
 
 - *\(Facultatif\)* Nom de fichier de la carte. Le nom de fichier est suggéré automatiquement en fonction du titre de la carte.
 
-   Si votre administrateur a activé les noms de fichiers automatiques en fonction du paramètre UUID, le champ Nom ne s’affiche pas.
+  Si votre administrateur a activé les noms de fichiers automatiques en fonction du paramètre UUID, le champ Nom ne s’affiche pas.
 
 
 Lorsque vous cliquez sur **Créer**, la carte est créée et ajoutée dans le dossier spécifié dans le champ Chemin . En outre, la carte est ouverte dans la vue Carte. Vous pouvez ouvrir le fichier de mappage dans l’éditeur de mappage et y ajouter une rubrique. Pour plus d’informations sur l’ajout de rubriques à un fichier de mappage, voir [Création d’une carte](map-editor-create-map.md#).
@@ -987,9 +989,9 @@ Vous pouvez effectuer les actions suivantes à l’aide du menu Options :
 
 - **Extraire**: Extrayez le fichier sélectionné. Pour un fichier extrait, cette option se transforme en **Archiver**.
 
-   >[!NOTE]
-   >
-   > Si un fichier est verrouillé ou extrait par un utilisateur, placez le pointeur de la souris sur l’icône de verrouillage pour afficher l’utilisateur \(nom\) qui a verrouillé le fichier.
+  >[!NOTE]
+  >
+  > Si un fichier est verrouillé ou extrait par un utilisateur, placez le pointeur de la souris sur l’icône de verrouillage pour afficher l’utilisateur \(nom\) qui a verrouillé le fichier.
 
 - **Aperçu**: Obtenez un aperçu rapide du fichier \(.dita/.xml\) sans l’ouvrir.
 - **Copier**: Vous pouvez choisir parmi les options suivantes :
@@ -1034,15 +1036,15 @@ La vue Plan offre les fonctionnalités suivantes :
 
 - Cliquer sur un élément dans la vue Contour sélectionne le contenu de l’élément dans la vue Auteur ou Source. La vue Contour reste synchronisée avec la vue Auteur et Source. Si vous apportez des modifications dans n’importe quelle vue, vous pouvez les voir dans la vue Plan. Par exemple, si vous ajoutez un paragraphe ou mettez à jour un élément dans la vue Auteur, il s’affiche dans la vue Contour.
 
-   ![](images/select-element-content-outline-view_cs.png){width="650" align="left"}
+  ![](images/select-element-content-outline-view_cs.png){width="650" align="left"}
 
 - Effectuez un glisser-déposer d’éléments. Vous pouvez facilement remplacer un élément en y déposant un autre élément. Si vous faites glisser et déposez un élément sur un autre élément et qu’une case carrée s’affiche autour de l’élément, cela indique que l’élément sera remplacé. Il remplace l’élément sur lequel l’élément est déposé.
 
-   ![](images/replace-element-outline-view_cs.png){width="300" align="left"}
+  ![](images/replace-element-outline-view_cs.png){width="300" align="left"}
 
-   Si vous faites glisser et déposez un élément, un rectangle en pointillés indique que l’élément peut être placé à l’emplacement actuel. Si le glisser-déposer n’est pas valide, un message d’erreur s’affiche pour indiquer que l’opération n’est pas autorisée.
+  Si vous faites glisser et déposez un élément, un rectangle en pointillés indique que l’élément peut être placé à l’emplacement actuel. Si le glisser-déposer n’est pas valide, un message d’erreur s’affiche pour indiquer que l’opération n’est pas autorisée.
 
-   ![](images/drop-element-outline-view_cs.png){width="300" align="left"}
+  ![](images/drop-element-outline-view_cs.png){width="300" align="left"}
 
 - Le **Options** dans le menu *Mode plan* permet d’effectuer des opérations génériques telles que Couper, Copier, Supprimer, Générer un identifiant, Insérer un élément avant ou après l’élément actif, Renommer ou remplacer un élément, Déplacer un élément et créer un extrait de code à partir de l’élément sélectionné.
 
@@ -1086,7 +1088,7 @@ Pour ajouter un fichier DITA à votre panneau Contenu réutilisable , utilisez l
 
 - Cliquez sur l’icône + en regard de Contenu réutilisable pour ouvrir la boîte de dialogue Parcourir le fichier. Sélectionnez le fichier à ajouter, puis cliquez sur **Ajouter** pour terminer le processus.
 
-   ![](images/reuse-content-add-dita-file_cs.png){width="650" align="left"}
+  ![](images/reuse-content-add-dita-file_cs.png){width="650" align="left"}
 
 - Dans la vue Repository, cliquez sur l’icône Options du fichier souhaité, puis choisissez **Ajouter au contenu réutilisable** dans le menu contextuel.
 
@@ -1109,11 +1111,11 @@ Pour insérer du contenu à partir du panneau Contenu réutilisable , utilisez l
 
 - Placez le pointeur de la souris sur un élément à insérer, cliquez sur l’icône Options, puis choisissez **Insérer du contenu réutilisable**.
 
-   ![](images/insert-reusable-content_cs.png){width="400" align="left"}
+  ![](images/insert-reusable-content_cs.png){width="400" align="left"}
 
-   >[!NOTE]
-   >
-   > Remarque : Le **Aperçu** est également disponible dans le menu contextuel, qui vous permet de prévisualiser rapidement l’élément avant de l’insérer.
+  >[!NOTE]
+  >
+  > Remarque : Le **Aperçu** est également disponible dans le menu contextuel, qui vous permet de prévisualiser rapidement l’élément avant de l’insérer.
 
 - Faites glisser et déposez l’élément de contenu réutilisable du panneau à l’emplacement souhaité dans votre document.
 
@@ -1151,7 +1153,7 @@ Vous pouvez configurer les paramètres suivants de l’outil Zone réactive :
    - **Création d’une version après conversion**: Une nouvelle version de la rubrique est créée une fois la conversion des termes terminée.
 - **Suivant** s’affiche si vous sélectionnez **Manuellement pour chaque rubrique** . Cliquez sur **Suivant** pour convertir les termes de chaque rubrique en fonction des paramètres sélectionnés. Il demande la conversion des termes dans chaque rubrique et passe au fichier suivant. Vous pouvez choisir de convertir un terme ou de l’ignorer et passer au terme suivant.
 
-   ![](images/manual-convert-skip.png){width="300" align="left"}
+  ![](images/manual-convert-skip.png){width="300" align="left"}
 
 - **Convertir** s’affiche si vous sélectionnez **Automatiquement pour toutes les rubriques** . Sélectionner **Convertir** pour convertir tous les termes du document en abréviations du glossaire liées.
 
@@ -1303,6 +1305,7 @@ L’exemple suivant illustre l’utilisation du modèle d’objet dans AEM Guide
    1. Même carte
    1. Mappage référencé
 
+
    Les références ne sont pas résolues si l’énumération est introuvable dans la même carte et la carte référencée.
 
 
@@ -1346,17 +1349,17 @@ Pour ajouter un fragment de code, utilisez l’une des méthodes suivantes :
 
 - Cliquez sur l’icône + en regard de Fragments de code pour ouvrir la boîte de dialogue Nouveau fragment de code .
 
-   ![](images/snippet-new-dialog.png){width="550" align="left"}
+  ![](images/snippet-new-dialog.png){width="550" align="left"}
 
-   Dans la boîte de dialogue Nouveau fragment de code, fournissez un titre qui s’affiche dans le panneau Fragments de code, une description et un code XML du contenu du fragment de code que vous souhaitez créer. Cliquez sur **Créer** pour enregistrer et créer le fragment de code.
+  Dans la boîte de dialogue Nouveau fragment de code, fournissez un titre qui s’affiche dans le panneau Fragments de code, une description et un code XML du contenu du fragment de code que vous souhaitez créer. Cliquez sur **Créer** pour enregistrer et créer le fragment de code.
 
 - Dans la zone d’édition du contenu, cliquez avec le bouton droit sur le chemin de navigation de l’élément que vous souhaitez utiliser comme fragment de code et choisissez **Créer un fragment de code** dans le menu contextuel. La boîte de dialogue Nouveau fragment de code s’affiche avec le code XML de l’élément sélectionné renseigné dans le **Contenu** champ . Saisissez le **Titre** et **Description** pour le fragment de code et cliquez sur **Créer** pour enregistrer le fragment de code.
 
 - Dans la zone d’édition du contenu, cliquez avec le bouton droit de la souris sur le contenu que vous souhaitez utiliser comme fragment de code et choisissez **Créer un fragment de code** dans le menu contextuel. La boîte de dialogue Nouveau fragment de code s’affiche avec le code XML de l’élément sélectionné renseigné dans le **Contenu** champ . Saisissez le **Titre** et **Description** pour le fragment de code et cliquez sur **Créer** pour enregistrer le fragment de code.
 
-   La capture d’écran suivante met en évidence le chemin de navigation et la zone de contenu à partir de laquelle vous pouvez appeler le menu contextuel.
+  La capture d’écran suivante met en évidence le chemin de navigation et la zone de contenu à partir de laquelle vous pouvez appeler le menu contextuel.
 
-   ![](images/snippet-create-from-breadcrumb-content.png){width="350" align="left"}
+  ![](images/snippet-create-from-breadcrumb-content.png){width="350" align="left"}
 
 
 Pour insérer un fragment de code, utilisez l’une des méthodes suivantes :
@@ -1390,6 +1393,41 @@ Une fois le modèle créé, vous devez l’ajouter à votre profil global ou au 
 
 Dans le menu Options d’un modèle existant, vous pouvez choisir de **Modifier** ou **Dupliquer** c&#39;est le cas. En cas de duplication, la structure et le type \(du document\) du modèle sont conservés et vous pouvez le réutiliser pour créer un autre modèle à partir de celui-ci.
 
+**Révision** -  ![](images/active-review-tasklist-icon.svg)
+
+AEM Guides fournit la fonctionnalité permettant d’afficher toutes les tâches de révision dans vos projets. Vous pouvez afficher tous les projets de révision et les principales tâches de révision dans les projets de révision, dont vous faites partie depuis le **Réviser** du panneau.  Vous pouvez ensuite ouvrir les tâches de révision pour afficher les commentaires des différents réviseurs.
+Le panneau de révision affiche les tâches de révision. En tant qu’auteur, vous pouvez traiter les commentaires d’une rubrique à l’aide de l’éditeur Web.
+
+
+Pour afficher les commentaires de révision dans les principales tâches de révision présentes dans vos projets, procédez comme suit :
+
+1. Sélectionner une révision ![](images/active-review-tasklist-icon.svg)   dans le panneau de gauche. Le **Réviser** s’ouvre.  Tous les projets de révision et les principales tâches de révision des projets de révision dont vous faites partie s’affichent.
+
+   ![](images/web-editor-review-panel.png){width="300" align="left"}
+1. Sélectionnez un projet de révision, puis une tâche de révision dans la liste pour l’ouvrir.
+1. Vous pouvez également filtrer vos projets comme suit :
+
+   - Saisissez le terme ou le texte de recherche que vous souhaitez trouver dans le titre du projet. Appuyez ensuite sur Entrée pour effectuer la recherche. Par exemple, vous pouvez rechercher tous les projets dont le titre contient le terme &quot;espace&quot;.
+
+   - Sélectionner ![](images/filter-search-icon.svg)  pour ouvrir le **Filtrer** boîte de dialogue. Vous pouvez sélectionner tous les projets ou uniquement des projets spécifiques. Les projets sélectionnés sont répertoriés dans le **Réviser** du panneau.
+     ![](images/active-review-select-project.png){width="300" align="left"}
+
+     Le **Tâches lancées par moi** est activée par défaut. Il vous permet de n’afficher que les tâches que vous avez initiées.
+
+1. Par défaut, dans votre projet de révision, vous affichez une liste plate des rubriques auxquelles des commentaires sont associés. Appliquez les filtres requis depuis le rail de gauche pour filtrer les rubriques en fonction des commentaires de révision qu’elles contiennent :
+
+   - **Afficher toutes les rubriques**: Répertorie toutes les rubriques présentes dans les projets.
+   - **Afficher des rubriques avec des commentaires**: Liste uniquement des rubriques contenant des commentaires de révision.
+1. Vous pouvez également saisir le terme ou le texte de recherche que vous souhaitez trouver dans le titre ou le chemin d’accès au fichier de la rubrique. Les rubriques qui contiennent le terme dans le titre ou le chemin d’accès au fichier sont répertoriées.
+1. Double-cliquez sur une rubrique pour l’ouvrir dans la vue de création. Vous pouvez afficher les commentaires dans le **Commentaires** du panneau.
+   ![](images/active-review-task-comments.png){width="800" align="left"}
+
+
+   >[!NOTE]
+   > 
+   > Le **Réviser** et le panneau **Commentaires** sont synchronisés en permanence. Dans le panneau Commentaires , les commentaires sont chargés en fonction de la tâche de révision chargée dans le panneau Révision.
+   > Pour plus d’informations sur la manière de traiter les commentaires, voir [Commentaires sur la révision des adresses](review-address-review-comments.md#).
+
 **Rechercher et remplacer** -  ![](images/FindAndReplace_icon.svg)
 
 L’icône Rechercher et remplacer se trouve au bas du panneau de gauche. Le panneau Rechercher et remplacer vous permet de rechercher et de remplacer du texte dans des fichiers d’une carte ou d’un dossier de votre référentiel. Vous pouvez trouver et remplacer dans toutes les rubriques d’une carte ainsi que les rubriques présentes dans les sous-cartes de la carte.
@@ -1402,9 +1440,9 @@ Pour effectuer la recherche globale et la remplacer, procédez comme suit :
 1. Cliquez sur le bouton **Regarder dans** sélectionnez l’une des options suivantes pour effectuer la recherche.
    - **Carte actuelle**: Pour effectuer une recherche dans la carte actuellement ouverte
 
-      >[!NOTE]
-      >
-      > Cette option s’affiche si vous avez déjà ouvert une carte à modifier.
+     >[!NOTE]
+     >
+     > Cette option s’affiche si vous avez déjà ouvert une carte à modifier.
 
    - **Chemin**: Pour effectuer une recherche sur le chemin sélectionné
    - **Sélectionner une carte**: Pour effectuer une recherche dans la carte sélectionnée
@@ -1415,7 +1453,7 @@ Pour effectuer la recherche globale et la remplacer, procédez comme suit :
    - **Mot entier uniquement**: Sélectionnez cette option si vous souhaitez rechercher la chaîne de recherche entière. Par exemple, si vous saisissez dans la chaîne de recherche, le résultat de la recherche renvoie tous les fichiers contenant des mots tels que over et overview. Si vous souhaitez restreindre votre recherche pour renvoyer le terme exact saisi, sélectionnez cette option.
    - **Créer une version après remplacement**: Sélectionnez cette option si vous souhaitez créer une nouvelle version de la rubrique dans laquelle vous choisissez de remplacer le texte. Vous pouvez également fournir des commentaires de version qui seront ajoutés avec chaque fichier mis à jour.
 
-      Si vous ne sélectionnez pas cette option, les modifications sont enregistrées dans la version actuelle de la rubrique et aucune nouvelle version n’est créée.
+     Si vous ne sélectionnez pas cette option, les modifications sont enregistrées dans la version actuelle de la rubrique et aucune nouvelle version n’est créée.
 
    - **Inclure la référence indirecte**: Sélectionnez cette option si vous souhaitez rechercher la chaîne dans les références indirectes également dans le mappage DITA. Par défaut, cette option est désactivée. La recherche n’est donc effectuée que sur les références directes.
 
@@ -1428,9 +1466,9 @@ Pour effectuer la recherche globale et la remplacer, procédez comme suit :
 
    - **Carte actuelle**: Pour effectuer une recherche dans la carte actuellement ouverte
 
-      >[!NOTE]
-      >
-      > Cette option s’affiche si vous avez déjà ouvert une carte à modifier.
+     >[!NOTE]
+     >
+     > Cette option s’affiche si vous avez déjà ouvert une carte à modifier.
 
    - **Chemin**: Pour effectuer une recherche sur le chemin sélectionné
    - **Sélectionner une carte**: Pour effectuer une recherche dans la carte sélectionnée
@@ -1443,7 +1481,7 @@ Pour effectuer la recherche globale et la remplacer, procédez comme suit :
 
    - **Créer une version après remplacement**: Sélectionnez cette option si vous souhaitez créer une nouvelle version de la rubrique dans laquelle vous choisissez de remplacer le texte. Vous pouvez également fournir des commentaires de version qui seront ajoutés avec chaque fichier mis à jour.
 
-      Si vous ne sélectionnez pas cette option, les modifications sont enregistrées dans la version actuelle de la rubrique et aucune nouvelle version n’est créée.
+     Si vous ne sélectionnez pas cette option, les modifications sont enregistrées dans la version actuelle de la rubrique et aucune nouvelle version n’est créée.
 
    - **Inclure la référence indirecte**: Sélectionnez cette option si vous souhaitez rechercher la chaîne dans les références indirectes également dans le mappage DITA. Par défaut, cette option est désactivée. La recherche n’est donc effectuée que sur les références directes.
 

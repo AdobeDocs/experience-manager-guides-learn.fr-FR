@@ -3,13 +3,13 @@ title: Module externe Oxygen pour les guides Adobe Experience Manager
 description: Découvrez comment utiliser le module externe Oxygen pour les guides Adobe Experience Manager pour créer et gérer votre contenu.
 hide: true
 hidefromtoc: true
-source-git-commit: 96347fed96979eb735dc55c32fcda90cc70ddcb4
+exl-id: 2db9a34e-2efa-47ad-ba6b-02afc5197669
+source-git-commit: ee4722ed92d1b1a59e8baea583517a4470f558c9
 workflow-type: tm+mt
-source-wordcount: '5762'
+source-wordcount: '5885'
 ht-degree: 1%
 
 ---
-
 
 # Module externe Oxygen pour les guides Adobe Experience Manager {#id1645H6010Q5}
 
@@ -212,19 +212,19 @@ Effectuez les étapes suivantes pour configurer les paramètres de connexion dan
 1. Indiquez les informations suivantes :
    - **URL du serveur**: URL du serveur AEM, par exemple :
 
-      ```http
-      http[s]://<host>:<port>
-      ```
+     ```http
+     http[s]://<host>:<port>
+     ```
 
-      Dans l’URL ci-dessus, spécifiez le nom d’hôte et le port du serveur sur lequel AEM serveur est déployé.
+     Dans l’URL ci-dessus, spécifiez le nom d’hôte et le port du serveur sur lequel AEM serveur est déployé.
 
-      >[!IMPORTANT]
-      >
-      >Si votre serveur AEM est déployé sur le port 80 ou 443, vous n’avez pas besoin de le spécifier dans l’URL.
+     >[!IMPORTANT]
+     >
+     >Si votre serveur AEM est déployé sur le port 80 ou 443, vous n’avez pas besoin de le spécifier dans l’URL.
 
    - **Authentification :** Choisir parmi **De base \(Nom d’utilisateur/Mot de passe\)** ou **Authentification web**. Si vous sélectionnez **De base** l’authentification que vous devez renseigner dans la variable **Nom d’utilisateur** et **Mot de passe** dans la boîte de dialogue Préférences.
 
-      Si vous sélectionnez Authentification Web, l’écran AEM connexion s’affiche. Saisissez vos informations de connexion et cliquez sur **Se connecter** bouton . Une fois la connexion établie, l’écran AEM connexion se ferme et le panneau AEM Guides affiche la liste des fichiers du serveur AEM.
+     Si vous sélectionnez Authentification Web, l’écran AEM connexion s’affiche. Saisissez vos informations de connexion et cliquez sur **Se connecter** bouton . Une fois la connexion établie, l’écran AEM connexion se ferme et le panneau AEM Guides affiche la liste des fichiers du serveur AEM.
 
    - **Délai de connexion**: Spécifiez la durée en secondes pendant laquelle le client attend une réponse du serveur AEM. Si aucune réponse du serveur n’est reçue dans le délai spécifié, la requête est arrêtée. La valeur par défaut est de 20 secondes.
 
@@ -256,7 +256,7 @@ Effectuez les étapes suivantes pour configurer les attributs de profilage :
 - Cliquez sur **Choisir** en regard de **Éditeur de valeur d’attribut personnalisé de création** under **Extensions individuelles** et sélectionnez CustomValueEditor - com.adobe.o2.framework.extn dans la **Classe** liste. Cliquez sur **OK**.
 La capture d’écran suivante montre le **Extension** pour les rubriques DITA :
 
-   ![](images/dita-topic-extension-tab.png)
+  ![](images/dita-topic-extension-tab.png)
 
 1. Cliquez sur **OK** dans toutes les boîtes de dialogue pour enregistrer vos modifications.
 
@@ -275,11 +275,11 @@ Effectuez les étapes suivantes pour configurer l’extension de mappage DITA :
 - Cliquez sur **Choisir** en regard de **Éditeur de valeur d’attribut personnalisé de création** under **Extensions individuelles** et sélectionnez CustomValueEditor - com.adobe.o2.framework.extn dans la **Classe** liste. Cliquez sur **OK**.
 - *\(Facultatif\)* Si vous ne souhaitez pas résoudre les références lors de l’ouverture d’un fichier map, vous devez effectuer la configuration supplémentaire suivante :
 
-   Cliquez sur **Choisir** en regard de **Références Resolver** under **Extensions individuelles** et sélectionnez CustomDITAMapReferenceResolver - com.adobe.o2.framework.extn dans la **Classe** liste. Cliquez sur **OK**.
+  Cliquez sur **Choisir** en regard de **Références Resolver** under **Extensions individuelles** et sélectionnez CustomDITAMapReferenceResolver - com.adobe.o2.framework.extn dans la **Classe** liste. Cliquez sur **OK**.
 
-   La capture d’écran suivante montre le **Extension** tab :
+  La capture d’écran suivante montre le **Extension** tab :
 
-   ![](images/dita-map-extension-tab.png)
+  ![](images/dita-map-extension-tab.png)
 
 1. Cliquez sur **OK** dans toutes les boîtes de dialogue pour enregistrer vos modifications.
 
@@ -302,9 +302,9 @@ L’écran suivant affiche le panneau Guides d’AEM.
 - **Connexion**: Sélectionnez cette option pour vous connecter au serveur AEM. L’option est désactivée lorsque l’auteur XML Oxygen est connecté au serveur AEM.
 - **Actualiser**: Sélectionnez cette option pour obtenir le dernier état des fichiers et du dossier à partir du référentiel AEM.
 
-   >[!NOTE]
-   >
-   >Assurez-vous d’enregistrer vos fichiers avant de les actualiser. Lorsque vous sélectionnez **Actualiser** , vous recevez un avertissement pour enregistrer vos fichiers avant de les actualiser. Si vous n’avez pas enregistré vos fichiers, vous pouvez cliquer sur **Annuler** et les sauver.
+  >[!NOTE]
+  >
+  >Assurez-vous d’enregistrer vos fichiers avant de les actualiser. Lorsque vous sélectionnez **Actualiser** , vous recevez un avertissement pour enregistrer vos fichiers avant de les actualiser. Si vous n’avez pas enregistré vos fichiers, vous pouvez cliquer sur **Annuler** et les sauver.
 
 - **Paramètres**: Vous pouvez utiliser cette option pour ouvrir la boîte de dialogue de préférences générales du module externe.
 - **Déconnexion**: Sélectionnez cette option pour fermer la connexion AEM serveur. Cette option est disponible uniquement si vous utilisez le mode Authentification Web .
@@ -418,6 +418,16 @@ Lorsque vous archivez un fichier, la copie locale du système est stockée dans 
    >[!NOTE]
    >
    >Ce commentaire s’affiche dans l’historique AEM version du fichier.
+1. Ajoutez un ou plusieurs libellés dans le **Libellé** zone de texte. Saisissez un libellé et appuyez sur Entrée. Par exemple : *Version 2307*.
+Si votre administrateur a prédéfini une liste d’étiquettes et les a chargées dans la variable `label.json` puis ces libellés s’affichent sous la forme d’une liste déroulante. Vous pouvez choisir une ou plusieurs étiquettes dans la liste déroulante.
+   ![](images/checkin-dropdown-labels.png){width="300" align="left"}
+Vous pouvez ajouter plusieurs libellés (séparés par des virgules) à la même version d’une rubrique.  Par exemple : *Adobe*, *AEM*,*Guides*
+Cependant, vous ne pouvez pas ajouter le même libellé aux différentes versions d’une rubrique. Si vous ajoutez un libellé que vous avez déjà ajouté à une version antérieure, il est ajouté à la dernière version et supprimé de la version précédente.
+
+   >[!NOTE]
+   > 
+   > Ces libellés s’affichent dans l’historique AEM version du fichier.
+
 
 1. Cliquez sur **OK**.
 

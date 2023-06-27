@@ -1,13 +1,13 @@
 ---
 title: Prise en charge des fichiers de schéma
 description: Découvrez comment valider vos rubriques avec scehmatron
-source-git-commit: 5ad78d32cbfa1c913866fae5dafe97dc8f01139c
+exl-id: e5912fa1-af26-42f4-b5e5-a6d2afd45bc8
+source-git-commit: f6794078e760565f5934faf63a7cbfb919acce90
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
 
 ---
-
 
 # Prise en charge des fichiers de schéma
 
@@ -55,7 +55,7 @@ Lorsque vous ouvrez une rubrique dans l’éditeur web, un panneau Validation de
 
 La prise en charge des schémas dans l’éditeur web vous aide à valider les fichiers par rapport à un ensemble de règles et à maintenir la cohérence et l’exactitude dans les rubriques.
 
-## Utilisation des instructions d’affirmation et de rapport pour rechercher des règles{#schematron-assert-report}
+## Utilisez des instructions d’insertion et de rapport pour rechercher des règles.{#schematron-assert-report}
 
 AEM Guides prend également en charge les instructions d’insertion et de rapport dans le schéma. Ces instructions vous aident à valider vos rubriques DITA.
 
@@ -146,10 +146,3 @@ You have <sch:value-of select="$words"/> letters. This should be greater than <s
 
 </sch:pattern> 
 ```
-
-
-
-
-
-
-

@@ -2,9 +2,9 @@
 title: PDF natif | Génération de sortie PDF
 description: Générer une sortie PDF dans Adobe Experience Manager Guides as a Cloud Service
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: b9cf70ac957bfacbf9a6bf4c3b32d4f73c2b1287
+source-git-commit: 65a35f1c7530ed479e3bc584852fabc30ceecabb
 workflow-type: tm+mt
-source-wordcount: '2755'
+source-wordcount: '2904'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Pour plus d’informations sur la génération d’un PDF à l’aide de la mét
 
 Utilisez cette méthode pour générer une sortie de PDF à partir non seulement du contenu DITA, mais également des documents FrameMaker (.book et .fm) disponibles dans votre référentiel AEM. Le PDF peut être créé en configurant un paramètre prédéfini de sortie et publié à l’aide de FrameMaker Publishing Server (FMPS). Vous pouvez concevoir et configurer l’aspect de votre sortie pour les formats PDF et autres, puis les stocker dans un fichier de paramètres (.sts). Ce fichier de paramètres est ensuite utilisé par FMPS pour générer une sortie pour un mappage DITA ou un fichier .book. Pour créer ou modifier un paramètre prédéfini de sortie, voir  *Présentation des paramètres prédéfinis de sortie* dans la section [Guide de l’utilisateur d’AEM Guides as a Cloud Service](https://helpx.adobe.com/content/dam/help/en/xml-documentation-solution/cs-apr-22/XML-Documentation-for-Adobe-Experience-Manager_CS_User-Guide_EN.pdf).
 
-Pour plus d’informations sur la configuration de FMPS, voir [Génération d’une sortie à partir de documents FrameMaker](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Ffm-output-generatation.html).
+Pour plus d’informations sur la configuration de FMPS, voir [Générer une sortie à partir de documents de FrameMaker](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Ffm-output-generatation.html).
 
 * **Publication de PDF natifs**
 
@@ -56,7 +56,6 @@ Pour créer ou configurer un paramètre prédéfini de sortie de PDF :
 
 1. Dans l’onglet Sortie , cliquez sur **Paramètres prédéfinis** dans la barre latérale gauche.
 Le panneau Paramètre prédéfini s’ouvre. <br>
-
 <img src="assets/preset-panel.png" alt="panneau prédéfini" width="600">
 
 1. Dans la sortie **Paramètres prédéfinis** effectuez l’une des opérations suivantes :
@@ -95,17 +94,17 @@ Ces métadonnées sont mappées aux métadonnées dans l’onglet Description de
 Dans les paramètres prédéfinis de sortie, **sélectionner PDF** > **Métadonnées** pour ajouter et personnaliser des options de métadonnées.
 * **Fournir un fichier XMP**
 
-   Les champs de métadonnées peuvent être directement renseignés en important [XMP](https://www.adobe.com/products/xmp.html) (Extensible Metadata Platform). Vous pouvez télécharger un exemple de fichier XMP ici.
+  Les champs de métadonnées peuvent être directement renseignés en important [XMP](https://www.adobe.com/products/xmp.html) (Extensible Metadata Platform). Vous pouvez télécharger un exemple de fichier XMP ici.
 
 [Télécharger](assets/SampleXMP.xmp)
 
-   Vous pouvez également générer un fichier XMP à l’aide d’Adobe Acrobat.
+  Vous pouvez également générer un fichier XMP à l’aide d’Adobe Acrobat.
    1. Cliquez sur **Fichier** > **Propriétés** dans Acrobat.
    1. Sous **Description**, cliquez sur **Métadonnées supplémentaires**.
    1. Dans le panneau de gauche, sélectionnez **Avancé**.
    1. Cliquez sur **Enregistrer**.
 
-   XMP fichier est enregistré sur l’appareil.
+  XMP fichier est enregistré sur l’appareil.
 
 * **Fournir des noms et des valeurs de métadonnées**
 
@@ -152,6 +151,7 @@ Utilisez les options suivantes pour définir des paramètres avancés pour fusio
 | **Afficher le filigrane** | Sélectionnez cette option pour effectuer le rendu des équations MathML présentes dans votre contenu. Les équations seront ignorées dans le cas contraire. |
 | **Activation des équations MathML** | Sélectionnez cette option pour effectuer le rendu des équations MathML présentes dans votre contenu. Dans le cas contraire, les équations seront ignorées par défaut. |
 | **Conformité du PDF** | Il s’agit de la norme à laquelle vous envisagez d’enregistrer votre PDF pour vous assurer qu’il est conforme. Sélectionnez dans la liste déroulante pour effectuer un choix dans la liste des normes de PDF disponibles. Pour plus d’informations sur les normes prises en charge, voir [A propos des normes PDF](https://helpx.adobe.com/acrobat/using/pdf-conversion-settings.html#about_pdf_x_pdf_e_and_pdf_a_standards). |
+| **Téléchargement de fichiers temporaires** | Sélectionnez cette option si vous souhaitez télécharger les fichiers de HTML intermédiaires créés lors de la génération de la sortie du PDF natif. Vous pouvez ensuite télécharger les fichiers temporaires après avoir généré la sortie. |
 
 ## Génération d’une sortie de PDF {#generate-pdf-output}
 
@@ -173,3 +173,12 @@ Si une sortie échoue, le message d’erreur ci-dessous s’affiche.
 <img src="assets/error-log.png" alt="journal des erreurs" width="250">
 
 Pour afficher le journal des erreurs, cliquez sur **Ignorer**, passez la souris sur l’onglet de paramètre prédéfini sélectionné, puis cliquez sur ![options](assets/options.svg) **Options** > **Afficher le journal**.
+
+### Téléchargement de fichiers temporaires après génération de la sortie du PDF natif
+
+Si vous sélectionnez la variable **Téléchargement de fichiers temporaires** dans les paramètres avancés, vous pouvez également télécharger les fichiers de HTML intermédiaires créés lors de la génération de la sortie du PDF natif. Une fois que vous avez généré la sortie, vous pouvez télécharger les fichiers temporaires à l’aide de la fonction **Téléchargement de fichiers temporaires** ![télécharger des fichiers temporaires](assets/native-pdf-download-temporary-files-icon.svg)sur la barre supérieure. Cette fonctionnalité vous aide à afficher vos styles et mises en page de HTML intermédiaires et à corriger ou modifier vos styles CSS en fonction de vos besoins.
+
+
+>REMARQUE
+>
+> Le **Téléchargement de fichiers temporaires**  ![télécharger des fichiers temporaires](assets/native-pdf-download-temporary-files-icon.svg) s’affiche uniquement si vous avez généré la dernière sortie du PDF à l’aide du paramètre prédéfini dans lequel vous avez sélectionné l’option dans la variable **Avancé** .

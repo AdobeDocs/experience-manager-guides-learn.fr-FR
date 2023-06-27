@@ -1,24 +1,21 @@
 ---
 source-git-commit: e3b2fc8c96ce535bb91e7bce935720aa389a917a
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '230'
 ht-degree: 2%
 
 ---
-# Installation et configuration des guides Adobe Experience Manager 4.2
+# Installation et configuration des guides Adobe Experience Manager as a Cloud Service
 
 - [Clause de non-responsabilité](rebranding-disclaimer.md)
 - [À propos de ce guide](introduction.md)
 - [Télécharger et installer](download-install.md)
-   - [Exigences techniques](download-install-technical-requirements.md)
-   - [Installation d’Adobe Experience Manager](download-install-AEM.md)
-   - [Télécharger et installer AEM Guides pour la première fois](download-install-aemg-first-time.md)
+   - [Déploiement du module AEM Guides](download-install-dxml-first-time.md)
    - [La configuration de Dispatcher](download-install-configure-dispatcher.md)
-   - [Vérification de l’installation AEM Guides](download-install-verify-aemg-installation.md)
-   - [Mise à niveau des guides Adobe Experience Manager](upgrade-xml-documentation.md)
-   - [Désinstallation des AEM Guides](download-install-unistall-aemg.md)
+   - [Vérification de l’installation AEM Guides](download-install-verify-dxml-installation.md)
+   - [Mise à niveau AEM guides](download-install-upgrade-dxml.md)
+   - [Remplacements de configuration](download-install-additional-config-override.md)
    - [Recommendations pour l’optimisation des performances](download-install-recommend-perf-optimiz.md)
-- [Migration du contenu non UUID vers UUID](migrate-uuid-non-uuid.md)
 - [Administration et sécurité des utilisateurs](user-admin-sec.md)
 - [Utilisation de la spécialisation DITA-OT et DITA personnalisée](dita-ot-specialization.md)
 - [Configuration des états du document](customize-doc-state.md)
@@ -45,13 +42,14 @@ ht-degree: 2%
    - [Génération automatique des identifiants d’élément](auto-generate-ids.md)
    - [Personnalisation AEM dictionnaire par défaut](customize-aem-custom-dictionary.md)
    - [Configuration des filtres de texte](config-text-filters.md)
-   - [Configuration du nombre de LimitReads pour une requête](conf-query-limitreads.md)
+   - [Configuration des filtres pour la boîte de dialogue de navigation dans les fichiers](conf-custom-file-filters.md)
    - [Installation de packages pour la publication basée sur un article](configure-article-based-publishing.md)
-- [Définir l’éditeur de mappage avancé comme valeur par défaut](conf-map-editor.md)
-- [Inclure l’attribut @navtitle par défaut](auto-add-navtitle.md)
+   - [Configuration de la génération d’un PDF de rubrique unique](conf-pdf-generation-dita-ot.md)
+   - [Configuration de la fonction de traduction dans l’éditeur web](conf-translation-web-editor.md)
+   - [Définir l’éditeur de mappage avancé comme valeur par défaut](conf-map-editor.md)
+   - [Inclure l’attribut @navtitle par défaut](auto-add-navtitle.md)
 - [Configuration de profils globaux ou au niveau du dossier](conf-folder-level.md)
 - [Gestion des versions](version-management.md)
-- [Intégration d’éditeurs XML de bureau](integrate-desktop-editors.md)
 - [Configuration des paramètres de génération de sortie](conf-output-generation.md)
 - [Configuration et personnalisation des workflows](customize-workflows.md)
 - [Traduction du contenu](translation.md)
