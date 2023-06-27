@@ -1,7 +1,7 @@
 ---
 title: Insertion d’un fragment de contenu à partir de votre source de données
 description: Découvrez comment insérer un fragment de contenu de votre source de données
-source-git-commit: e4fcf6c7b7e69d83edb91e25081dae6e7cf1ae89
+source-git-commit: f01903fe9ae3d60a8b818e881fd3b1d626fcd2bc
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -31,7 +31,6 @@ Les modèles d’usine de la source de données sélectionnée s’affichent dan
    >[!NOTE]
    >  
    > Si votre administrateur a configuré des modèles personnalisés, ces modèles s’affichent également dans la liste déroulante (en fonction des configurations de chemin d’accès au modèle effectuées par votre administrateur).
-
 1. Cliquez sur **Récupérer** pour récupérer les données de la source de données et appliquer le modèle aux données qui résultent de la requête SQL.
 1. Vous pouvez afficher les données dans l’aperçu ou la vue source DITA.
 
