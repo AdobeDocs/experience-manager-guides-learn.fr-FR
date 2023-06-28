@@ -1,13 +1,13 @@
 ---
 title: Mise à niveau des guides Adobe Experience Manager
 description: Découvrez comment mettre à niveau les guides Adobe Experience Manager
-source-git-commit: 414ee8ae3b12bb40054ddbe9e1a008ebc6058f89
+exl-id: fdc395cf-a54f-4eca-b69f-52ef08d84a6e
+source-git-commit: a00484a6e0a900a568ae1f651e96dca31add1bd8
 workflow-type: tm+mt
 source-wordcount: '2750'
 ht-degree: 1%
 
 ---
-
 
 # Mise à niveau des guides Adobe Experience Manager {#id224MBE0M0XA}
 
@@ -214,11 +214,10 @@ Après avoir installé AEM Guides, vous pouvez fusionner les différentes config
 
    - &#39;excludeList&#39; doit avoir `"event-user-data:changedByWorkflowProcess"`.
    - Lanceur pour &quot;*Noeud modifié*&quot; pour **Processus Ressources de mise à jour de gestion des actifs numériques -** pour la condition &quot;`jcr:content/jcr:mimeType!=video`&quot;,
-   - 
-      - La valeur &quot;Globbing&quot; doit être :
+   - La valeur &quot;Globbing&quot; doit être :
 
    ```json
-   `"/content/dam(/((?!/subassets|/translation_output).)*/)renditions/original"`
+   /content/dam(/((?!/subassets|/translation_output).)*/)renditions/original
    ```
 
    - &#39;excludeList&#39; doit avoir `"event-user-data:changedByWorkflowProcess"`.
@@ -388,11 +387,10 @@ Après avoir installé AEM Guides, vous pouvez fusionner les différentes config
    - Lanceur pour &quot;*Noeud modifié*&quot; pour **Processus Ressources de mise à jour de gestion des actifs numériques -** pour la condition &quot;`jcr:content/jcr:mimeType!=video`&quot;, la valeur &quot;Globbing&quot; doit être :
 
    ```json
-   `"/content/dam(/((?!/subassets|/translation_output).)*/)renditions/original"`
+   /content/dam(/((?!/subassets|/translation_output).)*/)renditions/original
    ```
 
    - `excludeList` should `"event-user-data:changedByWorkflowProcess"`.
-
 
 1. Une fois la mise à niveau terminée, vérifiez que toutes les personnalisations/superpositions sont validées et mises à jour pour correspondre au nouveau code de l’application. Voici quelques exemples :
    - Tous les composants superposés à partir de/libs/mditator/libs doivent être comparés au nouveau code de produit et les mises à jour doivent être effectuées dans les fichiers superposés sous/apps.
@@ -408,7 +406,7 @@ Après avoir installé AEM Guides, vous pouvez fusionner les différentes config
 Effectuez les étapes suivantes pour indexer le contenu existant et utilisez le nouveau texte de recherche et de remplacement au niveau de la carte :
 
 - Assurez-vous que la variable `damAssetLucene` l’indexation est terminée. Selon la quantité de données présentes sur le serveur, cette opération peut prendre jusqu’à quelques heures. Vous pouvez confirmer que la réindexation est terminée en vérifiant que le champ de réindexation est défini sur false dans
-   `http://<server:port>/oak:index/damAssetLucene`.  En outre, si vous avez ajouté des personnalisations dans `damAssetLucene`, vous devrez peut-être les appliquer à nouveau.
+  `http://<server:port>/oak:index/damAssetLucene`.  En outre, si vous avez ajouté des personnalisations dans `damAssetLucene`, vous devrez peut-être les appliquer à nouveau.
 
 - Exécutez une requête de POST sur le serveur \(avec l’authentification correcte\) - `http://<server:port\>/bin/guides/map-find/indexing`. (Facultatif) Vous pouvez transmettre des chemins spécifiques des cartes pour les indexer. Par défaut, toutes les cartes seront indexées \|\| Par exemple : `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`)
 
@@ -420,4 +418,3 @@ Effectuez les étapes suivantes pour indexer le contenu existant et utilisez le 
 - Une fois la tâche terminée, la requête de GET ci-dessus répond avec succès et indique si une correspondance a échoué. Les mappages indexés avec succès peuvent être confirmés à partir des journaux du serveur.
 
 **Rubrique parente :**[ Télécharger et installer](download-install.md)
-
