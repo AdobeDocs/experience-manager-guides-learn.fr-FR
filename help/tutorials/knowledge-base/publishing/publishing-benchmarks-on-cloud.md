@@ -1,21 +1,22 @@
 ---
 title: Guides de publication Benchmarks sur AEMaaCS
 description: Découvrez les limites du système relatives à la publication sur AEM Cloud.
-source-git-commit: e64430bb968b18090c3981cc2d21ebe6593ba933
+exl-id: cc6e38b9-6276-4147-beda-93f66368e15d
+source-git-commit: 06a55ef933f9e7941cef2337212a830413a478af
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 7%
+source-wordcount: '233'
+ht-degree: 8%
 
 ---
-
 
 # AEM Guides de publication Benchmarks sur AEMaaCS
 
 Actuellement, le service cloud de Guides AEM certaines limites sur les tailles des cartes de publication que l’équipe de Guides s’efforce activement de résoudre.
 
-L’équipe de guides a déjà introduit une variable évolutive [Publication de microservice](publish-microservice-architecture-and-performance.md) pour prendre en charge les cartes volumineuses et la publication simultanée multiple. Pour l’instant, ce microservice prend en charge un sous-ensemble de types de sortie et la prise en charge d’autres types est en cours de développement principal.
+L’équipe Guides a mis en place un microservice de publication évolutif pour prendre en charge les cartes volumineuses et plusieurs publications simultanées. Pour en savoir plus sur le nouveau microservice de publication, reportez-vous à la section [publication de l’architecture du microservice](publish-microservice-architecture-and-performance.md)
 
-Pour configurer le nouveau service de publication pour tout environnement cloud AEM, reportez-vous à la section [Configuration de la nouvelle publication basée sur un microservice](configure-microservices.md)
+Pour configurer le nouveau service de publication pour tout environnement cloud AEM, reportez-vous à la section [configuration de la nouvelle publication basée sur microservice](configure-microservices.md)
+
 
 ## Environnement d’exécution
 

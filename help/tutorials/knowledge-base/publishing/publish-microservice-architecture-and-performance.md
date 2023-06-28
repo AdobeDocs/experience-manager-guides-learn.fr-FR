@@ -1,13 +1,13 @@
 ---
 title: Architecture et performances du microservice de publication dans le cloud
 description: Découvrez comment le nouveau microservice permet une publication évolutive sur AEMaaCS.
-source-git-commit: 2e45f132ced5ac29118a7301f104bedc03c93253
+exl-id: 963d8912-be10-4d79-8ddd-12481c0ae682
+source-git-commit: 862f086c4682e3efed06d142ddd099fecc9ca00e
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
-
 
 # Architecture du microservice de publication dans le cloud et analyse des performances
 
@@ -15,7 +15,7 @@ Cet article partage les informations sur l’architecture et les performances du
 
 >[!NOTE]
 >
-> Actuellement, la publication basée sur un microservice dans AEM Guides ne prend en charge que la sortie PDF à l’aide de la publication PDF native ou via DITA-OT. AEM Guides ajoutera une prise en charge de la publication basée sur les microservices pour plus de types de sortie dans les prochaines versions.
+> La publication basée sur les microservices dans AEM Guides prend en charge les types de paramètres prédéfinis de sortie PDF (natif et basé sur DITA-OT), HTML5 et PERSONNALISÉ.
 
 ## Problèmes liés aux workflows de publication existants sur le cloud
 
@@ -50,29 +50,29 @@ Si vous publiez une carte volumineuse sur le site, vous devrez peut-être ajuste
 
 * Cloud
 
-   Si vous exécutez une publication unique sur le cloud à l’aide du nouveau service, la publication peut prendre un peu plus de temps par rapport à la publication unique sur site. Ce léger temps élevé est dû à la nature répartie de la nouvelle architecture cloud.
+  Si vous exécutez une publication unique sur le cloud à l’aide du nouveau service, la publication peut prendre un peu plus de temps par rapport à la publication unique sur site. Ce léger temps élevé est dû à la nature répartie de la nouvelle architecture cloud.
 
-   <img src="assets/cloud_single_publish.png" alt="onglet projets" width="600">
+  <img src="assets/cloud_single_publish.png" alt="onglet projets" width="600">
 
 * On-prem
 
-   Les résultats de la publication unique sont meilleurs sur l’ancienne architecture cloud ou sur site, car la publication complète s’effectue sur le même module/ordinateur sur lequel AEM est exécuté.
+  Les résultats de la publication unique sont meilleurs sur l’ancienne architecture cloud ou sur site, car la publication complète s’effectue sur le même module/ordinateur sur lequel AEM est exécuté.
 
-   <img src="assets/onprem_single_publish.png" alt="onglet projets" width="600">
+  <img src="assets/onprem_single_publish.png" alt="onglet projets" width="600">
 
 ### Exécution de plusieurs publications sur le cloud et sur le site web
 
 * Cloud
 
-   Le nouveau microservice de publication apparaît dans ce scénario. Comme vous pouvez le voir sur l’image ci-dessous, avec l’augmentation des plusieurs tâches de publication simultanées, le cloud peut les publier sans augmentation significative du temps de publication.
+  Le nouveau microservice de publication apparaît dans ce scénario. Comme vous pouvez le voir sur l’image ci-dessous, avec l’augmentation des plusieurs tâches de publication simultanées, le cloud peut les publier sans augmentation significative du temps de publication.
 
-   <img src="assets/cloud_bulk_publish.png" alt="onglet projets" width="600">
+  <img src="assets/cloud_bulk_publish.png" alt="onglet projets" width="600">
 
 * On-prem
 
-   L’exécution simultanée de la publication sur un serveur on-premise entraîne une grave dégradation des performances. Cette baisse des performances est plus grave si les éditeurs publient encore plus de cartes simultanément.
+  L’exécution simultanée de la publication sur un serveur on-premise entraîne une grave dégradation des performances. Cette baisse des performances est plus grave si les éditeurs publient encore plus de cartes simultanément.
 
-   <img src="assets/onprem_bulk_publish.png" alt="onglet projets" width="600">
+  <img src="assets/onprem_bulk_publish.png" alt="onglet projets" width="600">
 
 ## Avantages supplémentaires
 
