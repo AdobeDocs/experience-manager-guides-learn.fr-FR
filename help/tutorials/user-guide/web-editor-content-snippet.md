@@ -1,7 +1,7 @@
 ---
 title: Insertion d’un fragment de contenu à partir de votre source de données
 description: Découvrez comment insérer un fragment de contenu de votre source de données
-source-git-commit: f01903fe9ae3d60a8b818e881fd3b1d626fcd2bc
+source-git-commit: 6061d35b86790e24c6f55e4ccac5dbb40c43aae8
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -16,6 +16,7 @@ AEM Guides fournit la fonctionnalité permettant de se connecter à votre source
 Effectuez les étapes suivantes pour créer un fragment de contenu à l’aide du générateur de fragments de contenu et l’insérer dans votre rubrique :
 
 1. Sélectionner **Sources de données** ![](images/data-source-icon.svg)   dans le panneau de gauche pour afficher les sources de données connectées. Le panneau Sources de données s’ouvre et affiche toutes les sources de données connectées. Pour plus d’informations, voir [Configuration d’un connecteur de source de données](../cs-install-guide/conf-data-source-connector.md).
+
    >[!NOTE]
    >
    > Vous verrez les sources de données pour lesquelles votre administrateur a configuré le connecteur.
@@ -31,7 +32,9 @@ Les modèles d’usine de la source de données sélectionnée s’affichent dan
    >[!NOTE]
    >  
    > Si votre administrateur a configuré des modèles personnalisés, ces modèles s’affichent également dans la liste déroulante (en fonction des configurations de chemin d’accès au modèle effectuées par votre administrateur).
+
 1. Cliquez sur **Récupérer** pour récupérer les données de la source de données et appliquer le modèle aux données qui résultent de la requête SQL.
+
 1. Vous pouvez afficher les données dans l’aperçu ou la vue source DITA.
 
    1. L&#39;aperçu montre comment les données seront affichées lorsqu&#39;elles seront insérées dans le contenu. L&#39;aperçu affiche une petite fraction des données au format du modèle sélectionné.
