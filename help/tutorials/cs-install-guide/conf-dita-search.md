@@ -131,15 +131,15 @@ Une règle se compose des éléments suivants :
 
 xpath : Il s’agit de la requête XPath qui récupère les éléments ou les attributs des fichiers DITA. La configuration par défaut de la règle d’élément récupère toutes les `prolog` éléments . Et la configuration par défaut de la règle d’attribut récupère tous les attributs de `prolog` éléments . Vous pouvez spécifier une requête XPath pour sérialiser les éléments ou attributs que vous souhaitez rechercher.
 
-    La requête XPath contient le nom de classe du type de document. La classe &quot;rubrique/rubrique&quot; est utilisée pour les documents DITA de type de rubrique. Si vous souhaitez créer une règle pour d’autres documents DITA, vous devez utiliser les noms de classe suivants :
-    
-    |Type de document|Nom de classe|
-    |—|—|
-    |Rubrique|- rubrique/rubrique|
-    |Tâche|- tâche/tâche de rubrique/de rubrique
-    |Concept|- thème/sujet concept/concept|
-    |Référence|- Référence/référence de rubrique/de rubrique|
-    |Carte|- map/map|
+La requête XPath contient le nom de classe du type de document. La classe &quot;rubrique/rubrique&quot; est utilisée pour les documents DITA de type de rubrique. Si vous souhaitez créer une règle pour d’autres documents DITA, vous devez utiliser les noms de classe suivants :
+
+|Type de document|Nom de classe|
+|-|-|
+|Rubrique|- rubrique/rubrique|
+|Tâche|- tâche/tâche de rubrique/de rubrique|
+|Concept|- thème/sujet concept/concept|
+|Référence|- Référence/référence de rubrique/de rubrique|
+|Carte|- map/map|
 
 text : Si vous souhaitez rechercher le texte dans l’élément spécifié, indiquez la valeur oui. Si vous spécifiez non comme valeur, seuls les attributs de l’élément sont sérialisés. Les attributs que vous souhaitez rechercher doivent être spécifiés dans la section du jeu d’attributs .
 
