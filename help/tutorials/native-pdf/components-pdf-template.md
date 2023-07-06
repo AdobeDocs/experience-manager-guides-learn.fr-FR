@@ -2,7 +2,7 @@
 title: Fonction de publication native d’un PDF | Composants d’un modèle de PDF
 description: Découvrez les différents composants d’un modèle de PDF et comment les personnaliser et les configurer.
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: 360bba8b5e6ab61314486497e9cc41348ff903c1
+source-git-commit: abeef67c07189d54e4adfb634c6094f3dc70e3eb
 workflow-type: tm+mt
 source-wordcount: '2938'
 ht-degree: 0%
@@ -27,23 +27,32 @@ Les paramètres du composant Mise en page vous permettent de concevoir la struct
 1. Dans l’éditeur Web, accédez à la **Sortie** .
 1. Développez la barre latérale gauche et cliquez sur **Modèles**.
 1. Ouvrez le modèle que vous souhaitez utiliser.
+
    >[!NOTE]
    >
    >Vous pouvez ouvrir un modèle en double-cliquant sur son nom ou en cliquant sur l’icône > située en regard de son nom.
+
 1. Pour créer une mise en page, effectuez l’une des opérations suivantes :
+
    * Survol **Disposition de page** et cliquez sur (*Options* icon) **...** et choisissez **Nouvelle mise en page**.
+
+
    * Dans le **Modèles** , cliquez sur le panneau **+** en regard de **Modèles** et choisissez **Disposition de page** dans le menu contextuel.
 
-     La boîte de dialogue Ajouter une mise en page s’ouvre alors.
+
+     Cela ouvre la fenêtre **Ajouter une mise en page** boîte de dialogue.
 
      <img src="assets/add-layout-2.png" alt="Boîte de dialogue Ajouter une mise en page" width="250">
+
 1. Attribuez un nom à la nouvelle mise en page.
    >[!NOTE]
    >
    >Évitez d’utiliser des caractères spéciaux lors de l’attribution d’un nom à une mise en page. Un espace dans le nom est remplacé par un trait de soulignement &quot;_&quot;.
+
 1. Cliquez sur **Terminé**.
 
    La nouvelle mise en page est créée et ajoutée sous Mises en page .
+
 
 ### Dupliquer une mise en page {#duplicate-page-layout}
 
