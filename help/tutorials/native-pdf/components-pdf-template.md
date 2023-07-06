@@ -2,9 +2,9 @@
 title: Fonction de publication native d’un PDF | Composants d’un modèle de PDF
 description: Découvrez les différents composants d’un modèle de PDF et comment les personnaliser et les configurer.
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: f693ebb6a96ed9898050a754e10a74db235299fe
+source-git-commit: 360bba8b5e6ab61314486497e9cc41348ff903c1
 workflow-type: tm+mt
-source-wordcount: '2516'
+source-wordcount: '2938'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Un modèle de PDF comporte quatre composants : Dispositions de pages, feuilles d
 
 ## Création et personnalisation de mises en page {#create-customize-page-layout}
 
-Les paramètres du composant Mise en page vous permettent de concevoir la structure d’une page en définissant l’en-tête, le pied de page et la zone de contenu d’une page. L’éditeur de mise en page WYSIWYG vous permet de créer une mise en page pour différentes sections d’un PDF, telles que les pages de couverture recto et verso, le chapitre, la table des matières (table des matières), l’index, la page vierge, la liste des chiffres (LOF), la liste des tableaux (LOT), le glossaire ou de créer une mise en page pour une page personnalisée. Dans les paramètres du modèle de PDF, vous pouvez attribuer une mise en page avec différentes sections dans un PDF, qui sont ensuite utilisées pour générer la sortie du PDF.
+Les paramètres du composant Mise en page vous permettent de concevoir la structure d’une page en définissant l’en-tête, le pied de page et la zone de contenu d’une page. L’éditeur de mise en page WYSIWYG vous permet de créer une mise en page pour différentes sections d’un PDF, telles que les pages de couverture recto et verso, le chapitre, la table des matières (table des matières), l’index, la page vierge, les pages de la matière première, les pages de la matière première, la liste des figures (LOT), le glossaire ou de créer une mise en page pour une page personnalisée. Dans les paramètres du modèle de PDF, vous pouvez attribuer une mise en page avec différentes sections dans un PDF, qui sont ensuite utilisées pour générer la sortie du PDF.
 
 ### Création d’une mise en page {#create-page-layout}
 
@@ -34,9 +34,9 @@ Les paramètres du composant Mise en page vous permettent de concevoir la struct
    * Survol **Disposition de page** et cliquez sur (*Options* icon) **...** et choisissez **Nouvelle mise en page**.
    * Dans le **Modèles** , cliquez sur le panneau **+** en regard de **Modèles** et choisissez **Disposition de page** dans le menu contextuel.
 
-      La boîte de dialogue Ajouter une mise en page s’ouvre alors.
+     La boîte de dialogue Ajouter une mise en page s’ouvre alors.
 
-      <img src="assets/add-layout-2.png" alt="Boîte de dialogue Ajouter une mise en page" width="250">
+     <img src="assets/add-layout-2.png" alt="Boîte de dialogue Ajouter une mise en page" width="250">
 1. Attribuez un nom à la nouvelle mise en page.
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ Les paramètres du composant Mise en page vous permettent de concevoir la struct
 
 ### Dupliquer une mise en page {#duplicate-page-layout}
 
-1. Dans le **Modèles** du modèle à dupliquer, double-cliquez sur **Disposition de page** ou cliquez sur le bouton **>** avant **Disposition de page**.
+1. Dans le **Modèles** du modèle à dupliquer, double-cliquez sur  **Disposition de page** ou cliquez sur le bouton **>** avant **Disposition de page**.
 
    Cette option affiche la liste des mises en page dans le modèle.
 
@@ -123,7 +123,7 @@ Pour créer un style, procédez comme suit :
 Une fois que vous avez créé un fichier CSS avec des styles par défaut ou que vous souhaitez personnaliser les styles dans un fichier CSS existant, vous pouvez utiliser l’éditeur de styles pour ce faire.
 
 Pour personnaliser un style, procédez comme suit :
-1. Double-cliquez sur **Feuilles de style** ou cliquez sur le bouton **>** avant **Feuilles de style**.
+1. Double-cliquez **Feuilles de style** ou cliquez sur le bouton **>** avant **Feuilles de style**.
 
    Il affiche les fichiers CSS par défaut (Contenu et mise en page) et personnalisés.
 1. Ouvrez une feuille de style à modifier.
@@ -138,7 +138,7 @@ Pour personnaliser un style, procédez comme suit :
 
 1. Pour personnaliser un style, double-cliquez sur un style ou cliquez sur l’icône > devant un style pour l’afficher et le personnaliser à l’aide de l’éditeur de styles.
 
-pour plus d’informations sur l’utilisation des styles les plus courants, voir [Utilisation des styles de contenu communs](stylesheet.md)
+Pour plus d’informations sur l’utilisation des styles les plus courants, voir [Utilisation des styles de contenu communs](stylesheet.md).
 
 ## Utilisation des ressources {#work-with-resources}
 
@@ -171,7 +171,7 @@ Pour configurer, cliquez sur **Paramètres** dans le **Modèles** pour afficher 
 
 Définissez les paramètres de configuration de base pour démarrer un chapitre à partir d’une page impaire ou pair, la structure de la table des matières et définissez le format de ligne de conduite pour les entrées de la table des matières. Vous pouvez définir les paramètres suivants :
 
-* **Toujours commencer le chapitre à partir de**: Permet de définir comment chaque chapitre est publié dans le PDF final. Vous pouvez choisir parmi **Nouvelle page**, **Page impaire** ou **Page paire** options. Si vous choisissez de commencer un nouveau chapitre à partir d’une page impaire, une page vierge est insérée après un chapitre qui se termine sur une page impaire. Par exemple, si votre chapitre se termine à la page 15, le processus de publication insère un 16 vide.<sup>th</sup> afin que le nouveau chapitre puisse commencer à partir du 17<sup>th</sup> page.
+* **Commencer tout nouveau chapitre à partir de**: Permet de définir comment chaque chapitre est publié dans le PDF final. Vous pouvez choisir parmi **Nouvelle page**, **Page impaire**, **Page paire** ou **Page en cours**  options. Si vous choisissez de commencer un nouveau chapitre à partir d’une page impaire, une page vierge est insérée après un chapitre qui se termine sur une page impaire. Par exemple, si votre chapitre se termine à la page 15, le processus de publication insère un 16 vide.<sup>th</sup> afin que le nouveau chapitre puisse commencer à partir du 17<sup>th</sup> page.  Si vous choisissez l’option **Page en cours** , tous les chapitres sont publiés dans la suite sans sauts de page. Par exemple, si un chapitre se termine au milieu de la page 15, le chapitre suivant est également démarré à partir de la 15e page elle-même.
 
 * **Démarrage de chaque rubrique à partir d’une nouvelle page**: Si vous souhaitez que chaque rubrique de votre chapitre commence à partir d’une nouvelle page, sélectionnez **Démarrage de chaque rubrique à partir d’une nouvelle page** . Si vous souhaitez que vos rubriques se poursuivent sans espaces de page, désélectionnez cette option.
 
@@ -180,27 +180,30 @@ Définissez les paramètres de configuration de base pour démarrer un chapitre 
    * **Utilisation des en-têtes jusqu’au niveau**: Il vous permet d’ajuster le nombre de niveaux d’en-tête à afficher dans la structure de table des matières de votre PDF.
    * **N’affichez pas le numéro de page du premier niveau dans la table des matières**: Sélectionnez cette option pour masquer les numéros de page correspondants pour tous les chapitres contenant des rubriques imbriquées ou enfants. Examinez l’exemple suivant dans lequel une sortie est créée sans sélectionner cette option.
 
-   <img src="assets/page-number-in-toc.png" alt="Chargement de ressources" width="250">
+  <img src="assets/page-number-in-toc.png" alt="Chargement de ressources" width="250">
 
-   Dans l’exemple ci-dessus, Paramètres avancés du PDF, Annexe et Mentions légales sont les en-têtes de rubrique ou les titres de chapitre de premier niveau. Un numéro de page est affecté à tous ces en-têtes.
+  Dans l’exemple ci-dessus, Paramètres avancés du PDF, Annexe et Mentions légales sont les en-têtes de rubrique ou les titres de chapitre de premier niveau. Un numéro de page est affecté à tous ces en-têtes.
 
-   Maintenant, si vous sélectionnez cette option et générez la sortie, vous obtiendrez la table des matières suivante :
+  Maintenant, si vous sélectionnez cette option et générez la sortie, vous obtiendrez la table des matières suivante :
 
-   <img src="assets/page-number-missing-in-toc.png" alt="Chargement de ressources" width="250">
+  <img src="assets/page-number-missing-in-toc.png" alt="Chargement de ressources" width="250">
 
-   Vous pouvez constater ici que le premier chapitre Paramètres avancés du PDF ne reçoit aucun numéro de page, car il contient des rubriques imbriquées ou enfants. En revanche, un numéro de page s’il est affecté à l’Annexe et aux Mentions légales, car il s’agit de rubriques autonomes sans rubrique enfant.
+  Vous pouvez constater ici que le premier chapitre Paramètres avancés du PDF ne reçoit aucun numéro de page, car il contient des rubriques imbriquées ou enfants. En revanche, un numéro de page s’il est affecté à l’Annexe et aux Mentions légales, car il s’agit de rubriques autonomes sans rubrique enfant.
 
 * **Format de filet**: Utilisez la liste déroulante pour sélectionner des lignes de filet de conduite en pointillé, Plein ou Espace afin de connecter les niveaux d’en-tête aux numéros de page correspondants.
 Pour appliquer la structure de table des matières et le style des niveaux d’en-tête, voir [Ajout d’une table des matières de chapitre](design-page-layout.md#add-chapter-toc).
 
-   >[!NOTE]
-   >
-   >Si vous êtes un développeur CSS, vous pouvez également définir le format de filet de conduite directement dans le fichier CSS.
+  >[!NOTE]
+  >
+  >Si vous êtes un développeur CSS, vous pouvez également définir le format de filet de conduite directement dans le fichier CSS.
+
 * **Marqueur de continuation de tableau**: Sélectionnez cette option pour définir des marqueurs pour les tables longues qui s’étendent sur plusieurs pages. <!--For more information on using table continuation markers, see Use table continuation markers.-->
 
 **Disposition de page**
 
 Les paramètres de mise en page vous permettent de contrôler entièrement la spécification de la mise en page à utiliser pour une section spécifique de votre document. Par exemple, pour sélectionner une mise en page pour la table des matières, cliquez sur le menu déroulant sous le champ Table des matières et sélectionnez la mise en page que vous avez conçue pour générer la table des matières.
+
+Il est important de noter que les paramètres de la mise en page ont la priorité sur ceux de la mise en page.
 
 Les paramètres suivants sont disponibles sous la section Mise en page de page :
 
@@ -209,32 +212,59 @@ Les paramètres suivants sont disponibles sous la section Mise en page de page :
 
 **Disposition de page par défaut**: Sélectionnez une mise en page qui agit comme mise en page par défaut pour toutes les pages de votre PDF. Il s’agit de la mise en page de base appliquée aux sections ou rubriques pour lesquelles vous n’avez pas créé de mise en page dédiée.
 
-**Disposition des pages pour différentes sections**: Vous pouvez choisir de mettre en correspondance une mise en page avec les sections suivantes de la sortie de votre PDF :
-* Table des matières
-* Liste des figures
-* Liste des tableaux
-* Chapitres et rubriques
-* Index
-* Glossaire
+**Disposition des pages pour différentes sections**: Vous pouvez mapper une mise en page avec les sections suivantes de la sortie de votre PDF. Si vous avez conçu une mise en page pour la section associée, sélectionnez-la dans la liste déroulante. Si aucune mise en page n’a été créée pour des sections spécifiques, la mise en page par défaut est appliquée.
 
-Si vous ne souhaitez pas afficher une section spécifique dans la sortie de votre PDF, vous pouvez la désactiver en activant le bouton d’activation/désactivation.
+* **Chapitres et rubriques**: Vous pouvez spécifier la disposition de la page pour le chapitre et les rubriques. La mise en page sélectionnée sera appliquée à tous les chapitres et rubriques.
 
-**Chapitre et rubriques** la mise en page est toujours activée et **Glossaire** La mise en page est toujours désactivée par défaut. Vous ne pouvez pas les basculer.
+* **Table des matières**: Si vous avez conçu la mise en page de la table des matières, sélectionnez **Table des matières** dans la liste déroulante, et toutes les pages de la table des matières de votre document auront la mise en page de la table des matières.
 
-Vous pouvez également définir l’ordre dans lequel ces différentes sections ont été générées dans votre PDF. Si vous souhaitez modifier l’ordre par défaut de ces pages, passez la souris sur la gauche d’une mise en page, puis cliquez sur l’icône de barres en pointillés pour faire glisser la mise en page à l’emplacement souhaité.
-Votre PDF contiendra les mises en page activées dans l’ordre dans lequel vous les avez organisées.
+* **Liste des figures et liste des tableaux**: Vous pouvez également spécifier la mise en page des chiffres et des tableaux. La mise en page sélectionnée sera appliquée à tous les tableaux et figures.
 
-**Disposition de page pour les pages vides**: Vous pouvez également spécifier la mise en page des pages vides. La mise en page sélectionnée sera appliquée à toutes les pages vides. Par exemple, si vous avez conçu une mise en page vierge pour toutes les pages vides, sélectionnez **Vide** dans la liste déroulante, et toutes les pages vides de votre document auront une mise en page vierge.
+* **Index et glossaire**: Si vous avez conçu une mise en page de page Index, mappez-la à l’option Index . Si vous disposez d’une mise en page de page Glossaire, mappez-la à l’option Glossaire .
 
-**Page de couverture et page de début**: Si vous avez conçu une mise en page de couverture, mappez-la à la page **Page de couverture** . De même, si vous disposez d’une mise en page de back-page, mappez-la à l’événement **Page précédente** . Si aucune mise en page de garde ou de sauvegarde n’a été créée, la mise en page par défaut est appliquée.
+* **Pages de premier plan et pages de premier plan**: Ces mises en page définissent la mise en forme des pages d’avant ou d’arrière-plan de votre livre. Si vous avez conçu la disposition du recto, mappez-la au **Pages de premier plan** . Lorsque vous sélectionnez la mise en page du recto dans la liste déroulante, la mise en page du recto s’applique à toutes les rubriques présentes dans le recto.
 
->[!NOTE]
->
->Les paramètres de la mise en page ont la priorité sur ceux de la mise en page.
+  Si vous avez conçu la mise en page de la matière recto, mappez-la à la **Pages de matière noire** . Lorsque vous sélectionnez la mise en page de la dernière page dans la liste déroulante, la mise en page de la dernière page est appliquée à toutes les rubriques présentes dans la dernière page.
+
+  **Pages de premier plan** est également utilisé comme disposition de secours pour la variable **Table des matières**, **Liste des figures** et Liste des tableaux.  De même, **Pages de matière noire** est également utilisé comme disposition de secours pour la variable **Index** et **Glossaire** mises en page. Si vous n’avez pas sélectionné la mise en page pour ces pages, la mise en page Page avant ou de fond sélectionnée est appliquée.  Si vous n’avez pas sélectionné la disposition Pages avant ou arrière, la mise en page par défaut leur est appliquée.
+
+* **Disposition de page pour les pages vides**: Vous pouvez également spécifier la mise en page des pages vides. La mise en page sélectionnée sera appliquée à toutes les pages vides. Par exemple, si vous avez conçu une mise en page vierge pour toutes les pages vides, sélectionnez **Vide** dans la liste déroulante, et toutes les pages vides de votre document auront une mise en page vierge.
+
+* **Page de couverture et page de début**: Si vous avez conçu une mise en page de couverture, mappez-la à la page **Page de couverture** . De même, si vous disposez d’une mise en page de back-page, mappez-la à l’événement **Page précédente** . Si aucune mise en page de garde ou de sauvegarde n’a été créée, la mise en page par défaut est appliquée.
+
+
 
 Pour plus d’informations sur les mises en page, voir [Concevoir une mise en page](design-page-layout.md).
 
-**Imprimer**
+**Ordre de page**
+
+Vous pouvez activer ou désactiver les sections suivantes dans votre PDF et organiser l’ordre dans lequel elles doivent apparaître dans la sortie finale du PDF :
+
+<img src="assets/page-order-advance-settings.png" alt="Dispositions de pages" width="550">
+
+* Table des matières
+* Chapitres et rubriques
+* Liste des figures
+* Liste des tableaux
+* Index
+* Glossaire
+
+Si vous ne souhaitez pas afficher une section spécifique dans la sortie de votre PDF, vous pouvez la désactiver en désactivant le bouton d’activation/désactivation.
+
+Vous pouvez également définir l’ordre dans lequel ces différentes sections ont été générées dans votre PDF. Pour modifier l’ordre par défaut de ces pages, sélectionnez les barres en pointillés pour faire glisser et déposer la mise en page à l’emplacement souhaité.
+
+>[!NOTE]
+>
+> Ces paramètres de commande et d’inclusion s’appliquent uniquement à un mappage DITA. Dans le cas d’une carte d’utilisateur, ces paramètres ne sont pas applicables. Les pages d’un bookmap sont affichées dans l’ordre des sections du bookmap.
+
+
+Votre PDF contiendra les mises en page activées dans l’ordre dans lequel vous les avez organisées.
+**Chapitre et rubriques** la mise en page est toujours activée et **Glossaire** La mise en page est toujours désactivée par défaut. Vous ne pouvez pas les basculer.
+
+
+
+
+**Impression**
 
 Configurez les paramètres de production d’impression pour attribuer des repères d’impression, sélectionner des modèles de couleur et spécifier les propriétés liées à l’impression de la sortie de votre PDF.
 
@@ -244,16 +274,16 @@ Configurez les paramètres de production d’impression pour attribuer des repè
    * **Marques d’enregistrement**: Sélectionnez cette option pour placer une marque en dehors de la zone de recadrage afin d’aligner les différentes séparations dans un document de couleur.
    * **Bars de couleurs**: Sélectionnez cette option pour ajouter une bande de couleurs en dehors de la zone de rognage afin de maintenir la cohérence des couleurs et d’ajuster la densité de l’encre lors de l’impression.
 
-   Définissez des dimensions pour les marques d’imprimante sélectionnées à l’aide du **Largeur de ligne**, **Couleur de ligne**, et **Largeur de la zone de fond perdu** options.
+  Définissez des dimensions pour les marques d’imprimante sélectionnées à l’aide du **Largeur de ligne**, **Couleur de ligne**, et **Largeur de la zone de fond perdu** options.
 
 * **Taille de la zone de média**: Il s’agit de la taille globale de la page, y compris la zone étendue occupée par les repères d’impression. Utilisez l’option de liste déroulante pour sélectionner la taille de page de votre sortie de PDF ou créer votre propre taille personnalisée.
 
 * **Espace colorimétrique**: Vous avez la possibilité de choisir parmi des espaces colorimétriques de RGB ou CMJN pour imprimer votre document de PDF. Sélectionnez RGB pour afficher le PDF généré numériquement et CMJN pour l’impression physique. Les couleurs définies dans le document sont converties dans l’espace colorimétrique choisi.
-   >[!NOTE]
-   >
-   >Un profil colorimétrique ICC est nécessaire pour la création du PDF/A en cas d’utilisation de l’espace colorimétrique CMJN.
+  >[!NOTE]
+  >
+  >Un profil colorimétrique ICC est nécessaire pour la création du PDF/A en cas d’utilisation de l’espace colorimétrique CMJN.
 
-   <!--For more information on applying these print settings, see *Printing preferences*.-->
+  <!--For more information on applying these print settings, see *Printing preferences*.-->
 
 **Références croisées**
 

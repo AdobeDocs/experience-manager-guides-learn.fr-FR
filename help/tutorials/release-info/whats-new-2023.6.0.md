@@ -2,9 +2,9 @@
 title: Notes de mise à jour | Nouveautés des guides Adobe Experience Manager, version de juin 2023
 description: Découvrez les nouvelles fonctionnalités et les fonctionnalités améliorées de la version de juin 2023 des Guides Adobe Experience Manager as a Cloud Service.
 exl-id: ff6ac4a4-76a3-4b41-9da7-6a888de0eca5
-source-git-commit: f6794078e760565f5934faf63a7cbfb919acce90
+source-git-commit: f1292c94d77b724467d9eede59687bf0041cbce5
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1205'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 Cet article couvre les nouvelles fonctionnalités et les fonctionnalités améliorées de la version de juin 2023 des Guides Adobe Experience Manager (ultérieurement appelée *AEM Guides as a Cloud Service*).
 
-Pour plus d’informations sur les instructions de mise à niveau, la matrice de compatibilité et les problèmes résolus dans cette version, voir la section [Notes de mise à jour](release-notes-2023.6.0.md) article.
+Pour plus d’informations sur les instructions de mise à niveau, la matrice de compatibilité et les problèmes résolus dans cette version, voir [Notes de mise à jour](release-notes-2023.6.0.md).
 
 ## Rapport Liens rompus dans l’éditeur web
 
-AEM Guides vous permet de vérifier l’exhaustivité globale de vos documents techniques et de générer des rapports à partir de l’éditeur web. La version de juin 2023 d’AEM Guides vous offre désormais la fonctionnalité d’affichage et de correction des liens rompus. Il s’agit d’un rapport très utile qui vous aide à gérer vos liens rompus. Vous pouvez facilement afficher les liens rompus présents dans votre carte DITA et les corriger.
+AEM Guides vous permet de vérifier l’exhaustivité globale de vos documents techniques et de générer des rapports à partir de l’éditeur web. La version de juin 2023 d’AEM Guides vous offre désormais la fonctionnalité d’affichage et de correction des liens rompus. Il s’agit d’un rapport utile qui vous aide à gérer vos liens rompus. Vous pouvez facilement afficher les liens rompus présents dans votre carte DITA et les corriger.
 ![](assets/broken-link-report.png){width="800" align="left"}
 
 Une fois un lien corrigé, il ne s’affiche pas sous la liste des liens rompus.
@@ -26,7 +26,7 @@ Pour plus d’informations, voir [Afficher et corriger les liens rompus](../user
 
 ## Renommer et déplacer des fichiers dans la vue Repository
 
-Vous pouvez désormais également renommer ou déplacer un fichier à partir du panneau du référentiel. Cette fonctionnalité est très pratique et permet de gérer facilement vos fichiers à partir du panneau Référentiel . Vous pouvez sélectionner un fichier et le renommer ou le déplacer à l’aide de la fonction **Options** pour le fichier sélectionné. AEM Guides affiche un message de réussite lorsque vous déplacez ou renommez un fichier.
+Vous pouvez désormais également renommer ou déplacer un fichier à partir du panneau du référentiel. Cette fonctionnalité est pratique et permet de gérer facilement vos fichiers à partir du panneau Référentiel . Vous pouvez sélectionner un fichier et le renommer ou le déplacer à l’aide de la fonction **Options** pour le fichier sélectionné. AEM Guides affiche un message de réussite lorsque vous déplacez ou renommez un fichier.
 
 ![](assets/rename-move-assets.png){width="650" align="left"}
 
@@ -40,29 +40,26 @@ Vous pouvez maintenant ajouter un filigrane à la sortie PDF du document qui n�
 
 Pour plus d’informations, voir [Ajout d’un filigrane à la sortie du PDF pour les brouillons de documents](../native-pdf/use-javascript-content-style.md#watermark-draft-document).
 
-### Prise en charge des variables de langue dans les éléments DITA
+### Prise en charge des variables de langue
 
-AEM Guides prend en charge les variables de langue. Ces variables sont très utiles pour générer des chaînes localisées pour des éléments tels que note, astuce, avertissement, avertissement.
-Par exemple, vous pouvez utiliser les méthodes suivantes pour présenter votre REMARQUE dans la sortie du PDF :
+AEM Guides prend en charge les variables de langue. Vous pouvez utiliser des variables de langue pour définir une version localisée des libellés prêts à l’emploi tels que Remarque, Attention et Avertissement ou texte statique dans la sortie du PDF.
+Vous pouvez ajouter les variables de langue ou la version localisée des étiquettes aux sections appropriées dans la sortie de votre PDF et dans les modèles de sortie.
 
-Allemand : Notifier
+#### Variables de langue dans la sortie du PDF
 
-Espagnol : Remarque
+Vous pouvez utiliser les variables de langue pour définir des libellés localisés pour des éléments tels que Remarque, Attention et Avertissement. Vous pouvez mettre à jour la valeur de ces variables dans une ou plusieurs langues, puis la valeur localisée est automatiquement sélectionnée dans la sortie du PDF.
+Par exemple, vous pouvez présenter le libellé Remarque dans la sortie de votre PDF de la manière suivante :
 
+* Anglais : Remarque
+* Français : Remarque
+* Allemand : Hinweis
 
-### Prise en charge des variables de langue dans le pied de page
+#### Variables de langue dans les modèles de sortie
 
-Vous pouvez ajouter une variable de langue à un en-tête ou un pied de page en cours d’exécution sur le gabarit d’un document. La variable s’affiche sur toutes les pages de contenu du document auxquelles ce gabarit est appliqué. Par exemple, 1 sur 1 page.
-Vous pouvez également l’utiliser pour présenter les nombres dans différentes langues.
+Si vous vouliez créer la sortie du PDF dans différentes langues, vous deviez créer différents modèles de PDF contenant du texte localisé pour chaque langue. Désormais, avec la fonction Variables de langue, vous n’avez besoin de créer le modèle qu’une seule fois. Ensuite, pour tout texte statique que vous devez localiser, vous pouvez créer les variables de langue correspondantes et les utiliser dans votre modèle.
+Vous pouvez créer des variables de langue pour du texte plus long, comme une phrase entière ou même un paragraphe. Vous pouvez également appliquer des styles et utiliser des balises de HTML pour formater ces variables de langue.
 
-### Préfixes localisés pour votre table des matières
-
-Vous avez également la possibilité d’afficher les termes localisés à utiliser pour présenter les préfixes dans vos en-têtes.
-Par exemple, vous pouvez présenter votre préfixe &quot;Chapitre&quot; comme suit dans la sortie du PDF :
-
-Allemand : Kapitel
-
-Espagnol : Capítulo
+Pour plus d’informations, voir [Prise en charge des variables de langue](../native-pdf/native-pdf-language-variables.md).
 
 ### Possibilité d’utiliser des métadonnées AEM dans des mises en page PDF
 

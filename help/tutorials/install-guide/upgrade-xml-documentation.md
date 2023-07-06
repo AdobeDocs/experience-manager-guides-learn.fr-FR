@@ -2,9 +2,9 @@
 title: Mise à niveau des guides Adobe Experience Manager
 description: Découvrez comment mettre à niveau les guides Adobe Experience Manager
 exl-id: fdc395cf-a54f-4eca-b69f-52ef08d84a6e
-source-git-commit: a00484a6e0a900a568ae1f651e96dca31add1bd8
+source-git-commit: 4c31580a7deb3e13931831c1888bbf0fd1bf9e14
 workflow-type: tm+mt
-source-wordcount: '2750'
+source-wordcount: '2896'
 ht-degree: 1%
 
 ---
@@ -236,9 +236,51 @@ Effectuez les étapes suivantes pour indexer le contenu existant et utilisez le 
 
 - Exécutez une requête de POST sur le serveur \(avec l’authentification correcte\) - `http://<server:port\>/bin/guides/map-find/indexing`. \(Facultatif) : Vous pouvez transmettre des chemins spécifiques des cartes pour les indexer. Par défaut, toutes les cartes seront indexées \|\| Par exemple : `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`\)
 
-- L’API renvoie un jobId. Pour vérifier l’état de la tâche, vous pouvez envoyer une demande de GET avec l’ID de la tâche au même point de terminaison : `http://<server:port\>/bin/guides/map-find/indexing?jobId=\{jobId\}`\(Par exemple : `http://localhost:8080/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42`\)
+- L’API renvoie un jobId. Pour vérifier l’état de la tâche, vous pouvez envoyer une demande de GET avec l’ID de la tâche au même point de terminaison :
+
+`http://<server:port\>/bin/guides/map-find/indexing?jobId=\{jobId\}`\(Par exemple: `http://localhost:8080/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42`\)
 
 - Une fois la tâche terminée, la requête de GET ci-dessus répond avec succès et indique si une correspondance a échoué. Les mappages indexés avec succès peuvent être confirmés à partir des journaux du serveur.
+
+Si la tâche de mise à niveau échoue et que le journal des erreurs affiche l’erreur suivante :
+
+&quot;Le *query* lecture ou traversée supérieure à *Noeuds 100000*. Pour éviter d’affecter d’autres tâches, le traitement a été arrêté.&quot;
+
+Cela peut se produire car l’index n’est pas correctement configuré pour la requête utilisée dans la mise à niveau. Vous pouvez essayer la solution suivante :
+
+1. Dans l’index oak damAssetLucene, ajoutez la propriété booléenne . `indexNodeName` as `true` dans le noeud .
+   `/oak:index/damAssetLucene/indexRules/dam:Asset`
+1. Ajoutez un nouveau noeud avec l’extrait de nom sous le noeud .
+
+   `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`
+et définissez les propriétés suivantes dans le noeud :
+
+   ```
+   name - rep:excerpt
+   propertyIndex - {Boolean}true
+   notNullCheckEnabled - {Boolean}true
+   ```
+
+   La structure de `damAssetLucene` doit ressembler à ce qui suit :
+
+   ```
+   <damAssetLucene compatVersion="{Long}2" async="async, nrt" jcr:primaryType="oak:QueryIndexDefinition" evaluatePathRestrictions="{Boolean}true" type="lucene">
+   <indexRules jcr:primaryType="nt:unstructured">
+     <dam:Asset indexNodeName="{Boolean}true" jcr:primaryType="nt:unstructured">
+       <properties jcr:primaryType="nt:unstructured">
+         <excerpt name="rep:excerpt" propertyIndex="{Boolean}true" jcr:primaryType="nt:unstructured" notNullCheckEnabled="{Boolean}true"/>
+       </properties>
+       </dam:Asset>
+     </indexRules>
+   </damAssetLucene>    
+   ```
+
+
+   (ainsi que d’autres noeuds et propriétés existants)
+
+1. Réindexez la variable `damAssetLucene` index (en définissant l’indicateur reindex comme `true` Sous et attendez qu’il soit `false` de nouveau (cela indique que la réindexation est terminée). Notez que cela peut prendre quelques heures en fonction de la taille de l’index.
+1. Exécutez à nouveau le script d’indexation en suivant les étapes précédentes.
+
 
 ## Mise à niveau vers la version 4.2.1 {#upgrade-version-4-2-1}
 

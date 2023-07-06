@@ -2,9 +2,9 @@
 user-guide-title: Tutoriels pour AEM Guides
 user-guide-description: Lisez notre collection de tutoriels pour Adobe Experience Manager Guides.
 breadcrumb-title: Tutoriels AEM Guides
-source-git-commit: f6794078e760565f5934faf63a7cbfb919acce90
+source-git-commit: cabb567088e8f118db5af614b64948f56dc1e25e
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1394'
 ht-degree: 7%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 7%
       + [Gestion des fichiers et des dossiers](./user-guide/authoring-file-management.md)
       + [Téléchargement de fichiers](./user-guide/authoring-download-assets.md)
    + Créer du contenu {#author-content}
-      + [Présentation](./user-guide/authoring-content.md)
+      + [Vue d’ensemble](./user-guide/authoring-content.md)
       + Création et aperçu de rubrique {#create-preview-topics}
          + [Création et prévisualisation des rubriques](./user-guide/create-preview-topics.md)
          + [Création de rubriques](./user-guide/web-editor-create-topics.md)
@@ -178,11 +178,11 @@ ht-degree: 7%
    + On-Premise {#on-prem-ig}
       + [À propos de ce guide](./install-guide/introduction.md)
       + Téléchargement, installation et mise à niveau {#download-install-upgrade-aemg}
-         + [Présentation](./install-guide/download-install.md)
+         + [Vue d’ensemble](./install-guide/download-install.md)
          + [Exigences techniques](./install-guide/download-install-technical-requirements.md)
          + [Installation d’Adobe Experience Manager](./install-guide/download-install-aem.md)
          + [Télécharger et installer AEM Guides pour la première fois](./install-guide/download-install-aemg-first-time.md)
-         + [La configuration de Dispatcher](./install-guide/download-install-configure-dispatcher.md)
+         + [Configuration du Dispatcher](./install-guide/download-install-configure-dispatcher.md)
          + [Vérification de l’installation AEM Guides](./install-guide/download-install-verify-aemg-installation.md)
          + [Mise à niveau AEM guides](./install-guide/upgrade-xml-documentation.md)
          + [Désinstallation des AEM Guides](./install-guide/download-install-unistall-aemg.md)
@@ -238,6 +238,7 @@ ht-degree: 7%
             + [Modèle de PDF](./native-pdf/pdf-template.md)
             + [Composants d’un modèle de PDF](./native-pdf/components-pdf-template.md)
             + [Concevoir une mise en page](./native-pdf/design-page-layout.md)
+            + [Prise en charge des variables de langue](./native-pdf/native-pdf-language-variables.md)
             + Styles de contenu courants {#content-styles}
                + [Utilisation des styles de contenu communs](./native-pdf/stylesheet.md)
                + [Utilisation des styles de barres de modification personnalisés](./native-pdf/change-bar-style.md)
@@ -257,7 +258,7 @@ ht-degree: 7%
       + Déploiement et configuration des AEM Guides en tant que Cloud Service {#deploy-conf-aemg-cs}
          + [Télécharger et installer](./cs-install-guide/download-install.md)
          + [Déploiement du module AEM Guides](./cs-install-guide/download-install-dxml-first-time.md)
-         + [La configuration de Dispatcher](./cs-install-guide/download-install-configure-dispatcher.md)
+         + [Configuration du Dispatcher](./cs-install-guide/download-install-configure-dispatcher.md)
          + [Vérification de l’installation AEM Guides](./cs-install-guide/download-install-verify-dxml-installation.md)
          + [Mise à niveau AEM guides](./cs-install-guide/download-install-upgrade-dxml.md)
          + [Remplacements de configuration](./cs-install-guide/download-install-additional-config-override.md)

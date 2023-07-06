@@ -2,9 +2,9 @@
 title: PDF natif | Génération de sortie PDF
 description: Générer une sortie PDF dans Adobe Experience Manager Guides as a Cloud Service
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: d8bc9e2673ce08fe5f71154e9d009d1847b0274d
+source-git-commit: 3ae7a2a5954b68da29d4268012be47cd2ac8df3e
 workflow-type: tm+mt
-source-wordcount: '2903'
+source-wordcount: '2951'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Pour plus d’informations sur la génération d’un PDF à l’aide de la mét
 
 * **FrameMaker Publishing Server (FMPS)**
 
-Utilisez cette méthode pour générer une sortie de PDF à partir non seulement du contenu DITA, mais également des documents de FrameMaker (.book et .fm) disponibles dans votre référentiel AEM. Le PDF peut être créé en configurant un paramètre prédéfini de sortie et publié à l’aide de FrameMaker Publishing Server (FMPS). Vous pouvez concevoir et configurer l’aspect de votre sortie pour les formats PDF et autres, puis les stocker dans un fichier de paramètres (.sts). Ce fichier de paramètres est ensuite utilisé par FMPS pour générer une sortie pour un mappage DITA ou un fichier .book. Pour créer ou modifier un paramètre prédéfini de sortie, voir  *Présentation des paramètres prédéfinis de sortie* dans la section [Guide de l’utilisateur d’AEM Guides as a Cloud Service](https://helpx.adobe.com/content/dam/help/en/xml-documentation-solution/cs-apr-22/XML-Documentation-for-Adobe-Experience-Manager_CS_User-Guide_EN.pdf).
+Utilisez cette méthode pour générer une sortie de PDF à partir non seulement du contenu DITA, mais également des documents FrameMaker (.book et .fm) disponibles dans votre référentiel AEM. Le PDF peut être créé en configurant un paramètre prédéfini de sortie et publié à l’aide de FrameMaker Publishing Server (FMPS). Vous pouvez concevoir et configurer l’aspect de votre sortie pour les formats PDF et autres, puis les stocker dans un fichier de paramètres (.sts). Ce fichier de paramètres est ensuite utilisé par FMPS pour générer une sortie pour un mappage DITA ou un fichier .book. Pour créer ou modifier un paramètre prédéfini de sortie, voir  *Présentation des paramètres prédéfinis de sortie* dans la section [Guide de l’utilisateur d’AEM Guides as a Cloud Service](https://helpx.adobe.com/content/dam/help/en/xml-documentation-solution/cs-apr-22/XML-Documentation-for-Adobe-Experience-Manager_CS_User-Guide_EN.pdf).
 
 Pour plus d’informations sur la configuration de FMPS, voir [Générer une sortie à partir de documents de FrameMaker](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Ffm-output-generatation.html).
 
@@ -182,3 +182,10 @@ Si vous sélectionnez la variable **Téléchargement de fichiers temporaires** d
 >[!NOTE]
 >
 > Le **Téléchargement de fichiers temporaires**  ![télécharger des fichiers temporaires](assets/native-pdf-download-temporary-files-icon.svg) s’affiche uniquement si vous avez généré la dernière sortie du PDF à l’aide du paramètre prédéfini dans lequel vous avez sélectionné l’option dans la variable **Avancé** .
+
+
+
+### Utilisation de variables de langue
+
+AEM Guides fournit également la prise en charge des variables de langue. Sélectionner **Variables de langue** <img src="./assets/language-variables.svg" width="25">  dans le panneau de gauche pour définir une version localisée des libellés prêts à l’emploi tels que Remarque, Attention et Avertissement ou texte statique dans la sortie du PDF. Pour plus d’informations, voir [Prise en charge des variables de langue](../native-pdf/native-pdf-language-variables.md).
+
