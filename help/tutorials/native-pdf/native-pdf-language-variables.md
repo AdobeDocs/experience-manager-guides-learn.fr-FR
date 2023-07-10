@@ -1,7 +1,7 @@
 ---
 title: PDF natif | Prise en charge des variables de langue
 description: Utiliser des variables de langue dans les modèles de sortie et de sortie du PDF
-source-git-commit: 7c7381d2d5a218de9c4ca1fbc0363eacd43947cd
+source-git-commit: 3e922ef7ed9af200aa8fcfb0cbe4489cf059e335
 workflow-type: tm+mt
 source-wordcount: '1221'
 ht-degree: 0%
@@ -105,18 +105,18 @@ Pour insérer une variable de langue comme le `copyright-label` dans la zone d�
 
 1. Ouvrez la mise en page requise pour la modifier.
 
->[!NOTE]
->
-> Affichage [Personnalisation de la mise en page](../native-pdf/components-pdf-template.md#customize-a-page-layout-customize-page-layout) pour ouvrir une mise en page à des fins de personnalisation ou de modification :
+   >[!NOTE]
+   >
+   > Affichage [Personnalisation de la mise en page](../native-pdf/components-pdf-template.md#customize-a-page-layout-customize-page-layout) pour ouvrir une mise en page à des fins de personnalisation ou de modification.
 
 1. Sélectionnez l’en-tête pour qu’il soit principal d’insérer une variable.
 1. Sélectionner **Insérer une variable**  <img src="./assets/insert-language-variable.svg" width="25"> dans la barre d’outils.
 1. Dans le **Insérer une variable** , sélectionnez le nom de la variable de langue à insérer, puis cliquez sur **Insérer** pour l’insérer dans la zone d’en-tête.
 
->[!NOTE]
->
-> Vous pouvez également saisir la chaîne de recherche dans la zone de texte. Les noms des variables contenant la chaîne donnée sont filtrés et affichés dans la liste.
-> La variable de langue sélectionnée est insérée dans la zone d’en-tête.
+   >[!NOTE]
+   >
+   > Vous pouvez également saisir la chaîne de recherche dans la zone de texte. Les noms des variables contenant la chaîne donnée sont filtrés et affichés dans la liste.
+   > La variable de langue sélectionnée est insérée dans la zone d’en-tête.
 
 La capture d’écran suivante montre la valeur de la variable `copyright-label` ajouté dans la zone d’en-tête.
 
