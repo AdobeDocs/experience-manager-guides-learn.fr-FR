@@ -2,9 +2,9 @@
 user-guide-title: Tutoriels pour AEM Guides
 user-guide-description: Lisez notre collection de tutoriels pour Adobe Experience Manager Guides.
 breadcrumb-title: Tutoriels AEM Guides
-source-git-commit: cabb567088e8f118db5af614b64948f56dc1e25e
+source-git-commit: 6adc8544c7ad64bc264465a56944d49949605414
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1392'
 ht-degree: 7%
 
 ---
@@ -159,9 +159,9 @@ ht-degree: 7%
          + [Modification d’une collection de cartes d’activation en bloc](./user-guide/conf-bulk-activation-edit-map-collection.md)
          + [Suppression d’une collection de cartes d’activation en bloc](./user-guide/conf-bulk-activation-delete-map-collection.md)
    + Génération de sorties de documents de FrameMaker {#generate-fm-output}
-      + [Génération d’une sortie de documents FrameMaker](./user-guide/fm-output-generatation.md)
+      + [Générer une sortie de documents de FrameMaker](./user-guide/fm-output-generatation.md)
       + Paramètres prédéfinis pris en charge {#fm-docs-generating-presets}
-         + [Paramètres prédéfinis pour la génération de documents de FrameMaker](./user-guide/fm-output-understand-presets.md)
+         + [Paramètres prédéfinis pour la génération de documents FrameMaker](./user-guide/fm-output-understand-presets.md)
          + [PDF](./user-guide/fm-output-pdf-preset.md)
          + [HTML 5](./user-guide/fm-output-html5-preset.md)
          + [EPUB](./user-guide/fm-output-epub-preset.md)
@@ -350,5 +350,4 @@ ht-degree: 7%
       + Cas d’utilisation {#use-cases}
          + [Utilisation de contenu conditionnel](./knowledge-base/kb-articles/content-architecture/working-with-conditional-content.md)
          + [Utilisation des clés](./knowledge-base/kb-articles/content-architecture/working-with-keys.md)
-+ Articles masqués {#hidden}
    + [Utiliser le connecteur Oxygen](./oxygen-connector/use-aem-connector.md)
