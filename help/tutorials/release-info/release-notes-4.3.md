@@ -1,9 +1,9 @@
 ---
 title: Notes de mise à jour | Instructions de mise à niveau et problèmes résolus dans la version 4.3.0 des guides Adobe Experience Manager
 description: Découvrez les correctifs de bogues et comment mettre à niveau vers les versions 4.3.0 des Guides Adobe Experience Manager
-source-git-commit: 756ba69360e1796e36f6cc1ef410443ef8cb4acb
+source-git-commit: 7581085859785c5b8b597ecfeb7dbe58c7c9e2bc
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '998'
 ht-degree: 5%
 
 ---
@@ -81,7 +81,6 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 - Les résultats de recherche sont désactivés dans le panneau Rechercher et remplacer après l’ouverture d’un fichier de recherche. (12142)
 - La touche numérique &quot;8&quot; du clavier latéral ne fonctionne pas dans l’éditeur AEM Guides. (12106)
 - Les attributs intégrés/affichés ne s’affichent pas dans la vue Disposition de l’éditeur web. (12498)
-- Le téléchargement de fichiers dans le module externe Oxygen pour AEM Guides ne fonctionne pas dans les services cloud si vous l’avez fait ! dans le nom du fichier. (12207)
 - La configuration de l’interface utilisateur du profil global ne correspond pas au profil du dossier. (11970)
 - Les références au contenu sont rompues lorsque les fichiers DITA sont copiés et collés. (11959)
 - Impossible de modifier le fragment de contenu en mode Colonne avec les AEM Guides installés. (7342)
@@ -93,7 +92,7 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 - `conref` balise h | La boîte de dialogue de navigation affichée est incorrecte. (9481)
 - Les liens locaux vers d’autres éléments ne sont pas résolus dans l’éditeur web. (8790)
 - La fonction Matches() ne fonctionne pas dans la fonction de schéma. (11224)
-- Dans le module externe Oxygen pour AEM Guides, l’option d’ouverture d’un mappage DITA dans l’éditeur de mappage Web DITA est proposée dans l’ancienne interface utilisateur. (12633)
+
 
 
 ### Gestion

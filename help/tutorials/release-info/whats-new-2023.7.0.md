@@ -1,9 +1,9 @@
 ---
 title: Notes de mise à jour | Nouveautés des guides Adobe Experience Manager, version de juillet 2023
 description: Découvrez les nouvelles fonctionnalités et les fonctionnalités améliorées de la version de juillet 2023 des Guides Adobe Experience Manager as a Cloud Service.
-source-git-commit: 06bff798d2e745fae1c666353045cb4c6b040207
+source-git-commit: 7581085859785c5b8b597ecfeb7dbe58c7c9e2bc
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '686'
 ht-degree: 0%
 
 ---
@@ -12,11 +12,11 @@ ht-degree: 0%
 
 Cet article couvre les nouvelles fonctionnalités et les fonctionnalités améliorées de la version de juillet 2023 des Guides Adobe Experience Manager (ultérieurement appelée *AEM Guides as a Cloud Service*).
 
-Pour plus d’informations sur les instructions de mise à niveau, la matrice de compatibilité et les problèmes résolus dans cette version, consultez la [Notes de mise à jour](release-notes-2023.7.0.md) article.
+Pour plus d’informations sur les instructions de mise à niveau, la matrice de compatibilité et les problèmes résolus dans cette version, voir [Notes de mise à jour](release-notes-2023.7.0.md).
 
 ## Connexion à une source de données et insertion de données dans vos rubriques
 
-Vous pouvez désormais vous connecter rapidement à vos sources de données à l’aide des connecteurs prêts à l’emploi des AEM Guides. La connexion à une source de données vous permet de maintenir vos informations synchronisées avec la source. Toute mise à jour des données est répercutée automatiquement, ce qui fait d’AEM Guides un véritable centre de contenu. Cette fonctionnalité vous permet de gagner du temps et vous évite d’ajouter ou de copier manuellement les données.
+Vous pouvez désormais vous connecter rapidement à vos sources de données à l’aide des connecteurs prêts à l’emploi des AEM Guides. La connexion à une source de données vous permet de maintenir vos informations synchronisées avec la source. Toute mise à jour des données est répercutée automatiquement, ce qui fait d’AEM Guides un véritable hub de contenu. Cette fonctionnalité vous permet de gagner du temps et vous évite d’ajouter ou de copier manuellement les données.
 
 Désormais, AEM Guides permet à votre administrateur de configurer les connecteurs prêts à l’emploi pour les bases de données JIRA et SQL (MySQL, PostgreSQL, SQL Server, SQLite). Ils peuvent également ajouter d’autres connecteurs en étendant les interfaces par défaut.
 
@@ -64,10 +64,10 @@ Pour plus d’informations, voir [Création d’un paramètre prédéfini de sor
 
 Le nouveau microservice de publication vous permet d’exécuter simultanément des charges de travail de publication volumineuses sur AEM Guides as a Cloud Service et d’exploiter la plate-forme sans serveur Adobe I/O Runtime de pointe. Désormais, vous pouvez également générer le HTML5 et la sortie personnalisée à l’aide du microservice.
 Vous pouvez exécuter plusieurs requêtes de publication et obtenir de meilleures performances pour générer ces formats de sortie.
-Pour plus d’informations, voir [Configuration de la publication basée sur un microservice pour AEM Guides as a Cloud Service](../knowledge-base/publishing/configure-microservices.md).
+Pour plus d’informations, voir [Configuration de la publication sur microservice pour AEM Guides as a Cloud Service](../knowledge-base/publishing/configure-microservices.md).
 
 ## Affichage des détails de version des Guides d’AEM dans A propos des informations
 
-Maintenant avec l’AEM **A propos** vous pouvez également afficher les détails de la version AEM Guides . Vous pouvez afficher les détails de la version actuelle dans le **A propos** de l’option **Aide** sur la page de navigation AEM.
+Maintenant avec l’AEM **A propos** vous pouvez également afficher les détails de la version AEM Guides . Vous pouvez afficher les détails de la version actuelle dans le **A propos** de l’ **Aide** sur la page de navigation d’AEM.
 
 ![](assets/about-aem-help.png)(width=&quot;800&quot; align=&quot;left&quot;)
