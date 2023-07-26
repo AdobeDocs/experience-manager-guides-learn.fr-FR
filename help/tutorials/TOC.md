@@ -2,10 +2,10 @@
 user-guide-title: Tutoriels pour AEM Guides
 user-guide-description: Lisez notre collection de tutoriels pour Adobe Experience Manager Guides.
 breadcrumb-title: Tutoriels AEM Guides
-source-git-commit: 6adc8544c7ad64bc264465a56944d49949605414
+source-git-commit: 33c4a7b452049ab130f7bcdf9e8a90ecead32170
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 7%
+source-wordcount: '1429'
+ht-degree: 6%
 
 ---
 
@@ -46,6 +46,11 @@ ht-degree: 7%
             + [Notes de mise à jour de février](./release-info/release-notes-2022.2.0.md)
             + [Notes de mise à jour de janvier](./release-info/release-notes-2022.1.0.md)
       + On-premise/Managed Services {#on-prem-release-notes}
+         + Version 4.3.0 {#43-release}
+            + Nouveautés {#43-whats-new}
+               + [4.3.0 Nouveautés](./release-info/whats-new-4.3-release.md)
+            + Notes de mise à jour {#43-release-notes}
+               + [Notes de mise à jour 4.3.0](./release-info/release-notes-4.3.md)
          + Version 4.2 {#42-release}
             + Nouveautés {#42-whats-new}
                + [4.2.1 Nouveautés](./release-info/whats-new-4.2.1-release.md)
@@ -85,7 +90,8 @@ ht-degree: 7%
                + [Affichages de l’éditeur web](./user-guide/web-editor-views.md)
                + [Prise en charge des fichiers de schéma](./user-guide/support-schematron-file.md)
                + [Création de documents Markdown à partir de l’éditeur web](./user-guide/web-editor-markdown-topic.md)
-               + [Insertion d’un fragment de contenu à partir de votre source de données](./user-guide/web-editor-content-snippet.md)
+               + [Ajout de citations à votre contenu](./user-guide/web-editor-apply-citations.md)
+               + [Utiliser les données de vos sources de données](./user-guide/web-editor-content-snippet.md)
                + [Gestion des paramètres prédéfinis de sortie de profil global et de dossier](./user-guide/web-editor-manage-output-presets.md)
                + Publication basée sur des articles {#article-based-pub}
                   + [Publication basée sur des articles à partir de l’éditeur web](./user-guide/web-editor-article-publishing.md)
@@ -107,7 +113,7 @@ ht-degree: 7%
                + [Utilisation de l’éditeur DITAVAL](./user-guide/ditaval-editor.md)
          + Outils de bureau pour la création de contenu {#author-using-desktop-tools}
             + [Création de contenu à l’aide d’outils de bureau](./user-guide/author-desktop-tools.md)
-            + [Utilisation de FrameMaker](./user-guide/author-desktop-framemaker.md)
+            + [Utilisation du FrameMaker](./user-guide/author-desktop-framemaker.md)
             + [Travail avec Oxygen](./user-guide/author-desktop-oxygen.md)
    + Vérifier le contenu {#review-topic-maps}
       + [Révision de rubriques ou de mappages](./user-guide/review.md)
@@ -161,13 +167,13 @@ ht-degree: 7%
    + Génération de sorties de documents de FrameMaker {#generate-fm-output}
       + [Générer une sortie de documents de FrameMaker](./user-guide/fm-output-generatation.md)
       + Paramètres prédéfinis pris en charge {#fm-docs-generating-presets}
-         + [Paramètres prédéfinis pour la génération de documents FrameMaker](./user-guide/fm-output-understand-presets.md)
+         + [Paramètres prédéfinis pour la génération de documents de FrameMaker](./user-guide/fm-output-understand-presets.md)
          + [PDF](./user-guide/fm-output-pdf-preset.md)
          + [HTML 5](./user-guide/fm-output-html5-preset.md)
          + [EPUB](./user-guide/fm-output-epub-preset.md)
       + [Générer la sortie des fichiers .book ou .fm](./user-guide/fm-output-generate.md)
       + [Afficher l&#39;état de la tâche de génération de sortie](./user-guide/fm-output-view-status.md)
-   + Rapports dans les guides AEM {#reports-aem-guide}
+   + Rapports dans les guides d’AEM {#reports-aem-guide}
       + [Présentation des rapports](./user-guide/reports-intro.md)
       + [Rapport de mappage DITA à partir de l’éditeur web](./user-guide/reports-web-editor.md)
       + [Rapport de mappage DITA à partir du tableau de bord de mappage](./user-guide/reports-ditamap.md)
@@ -185,7 +191,7 @@ ht-degree: 7%
          + [Configuration du Dispatcher](./install-guide/download-install-configure-dispatcher.md)
          + [Vérification de l’installation AEM Guides](./install-guide/download-install-verify-aemg-installation.md)
          + [Mise à niveau AEM guides](./install-guide/upgrade-xml-documentation.md)
-         + [Désinstallation des AEM Guides](./install-guide/download-install-unistall-aemg.md)
+         + [Désinstallation des guides d’AEM](./install-guide/download-install-unistall-aemg.md)
          + [Recommendations pour l’optimisation des performances](./install-guide/download-install-recommend-perf-optimiz.md)
       + Utilisation des groupes d’utilisateurs et sécurité {#user-group-sec}
          + [Administration et sécurité des utilisateurs](./install-guide/user-admin-sec.md)
@@ -203,17 +209,18 @@ ht-degree: 7%
          + [Configuration de noms de fichier valides pour AEM sortie Site](./install-guide/conf-file-names-valid-regx-aem-site-output.md)
       + Utilisation de modèles de rubrique et de mappage {#topic-map-template}
          + [Configuration des modèles de rubrique et de mappage](./install-guide/conf-template-tags.md)
-         + [Configuration d’un modèle de rubrique DITA personnalisé](./install-guide/conf-template-tags-custom-dita-topic-template.md)
-         + [Configuration d’un modèle de mappage DITA personnalisé](./install-guide/conf-template-tags-custom-dita-map-templates.md)
+         + [Configuration du modèle de rubrique DITA personnalisé](./install-guide/conf-template-tags-custom-dita-topic-template.md)
+         + [Configuration du modèle de mappage DITA personnalisé](./install-guide/conf-template-tags-custom-dita-map-templates.md)
       + Utilisation des états du document {#doc-state}
          + [Configuration des états du document](./install-guide/customize-doc-state.md)
       + Utilisation des configurations de l’éditeur web {#web-editor-configs}
          + [Personnalisation de l’éditeur web](./install-guide/conf-web-editor.md)
          + [Barre d’outils Personnaliser](./install-guide/conf-web-editor-customize-toolbar.md)
          + [Configuration de la valeur par défaut pour la vue Balises](./install-guide/configure-default-value-tags-view.md)
+         + [Configuration du titre des icônes d’archivage et d’extraction](./install-guide/conf-checkin-checkout-title.md)
          + [Configuration de l’affichage des liens basés sur l’UUID](./install-guide/conf-uuid-based-links.md)
          + [Ouvrir les fichiers de rubrique ou de mappage DITA dans le même onglet](./install-guide/open-dita-files-same-tab.md)
-         + [Configuration d’un panneau personnalisé dans le panneau de gauche](./install-guide/configure-custom-panel.md)
+         + [Configurer un panneau personnalisé dans le panneau de gauche](./install-guide/configure-custom-panel.md)
          + [Configuration de l’enregistrement automatique du fichier dans l’éditeur web](./install-guide/auto-save-in-editor.md)
          + [Configuration des filtres pour la boîte de dialogue de navigation dans les fichiers](./install-guide/conf-custom-file-filters.md)
          + [Configuration d’une invite pour l’enregistrement en tant que nouvelle version à la fermeture](./install-guide/conf-save-as-new-version-close.md)
@@ -224,6 +231,7 @@ ht-degree: 7%
          + [Configuration des filtres de texte](./install-guide/config-text-filters.md)
          + [Configuration du nombre de LimitReads pour une requête](./install-guide/conf-query-limitreads.md)
          + [Installation de packages pour la publication basée sur un article](./install-guide/configure-article-based-publishing.md)
+         + [Configuration d’un connecteur de source de données](./install-guide/conf-data-source-connector.md)
          + [Définir l’éditeur de mappage avancé comme valeur par défaut](./install-guide/conf-map-editor.md)
          + [Inclure l’attribut @navtitle par défaut](./install-guide/auto-add-navtitle.md)
       + Utilisation de profils globaux et au niveau des dossiers {#global-folder-profiles}
@@ -246,6 +254,7 @@ ht-degree: 7%
                + [Ajout d’un signet personnalisé dans la sortie PDF](./native-pdf/add-custom-bookmark.md)
                + [Utilisation de JavaScript pour utiliser du contenu ou du style](./native-pdf/use-javascript-content-style.md)
                + [Utilisation de styles personnalisés dans les notes de bas de page](./native-pdf/footnote-number-style.md)
+            + [Configuration des indicateurs JVM pour la publication native de PDF](./native-pdf/configure-jvm-flags.md)
       + Utilisation de workflows personnalisés {#custom-workflow}
          + [Configuration et personnalisation des workflows](./install-guide/customize-workflows.md)
       + Utilisation des configurations de traduction {#translate-config}
@@ -278,8 +287,8 @@ ht-degree: 7%
          + [Configuration de noms de fichier valides pour AEM sortie Site](./cs-install-guide/conf-file-names-valid-regx-aem-site-output.md)
       + Utilisation de modèles de rubrique et de mappage {#topic-map-template-cs}
          + [Configuration des modèles de rubrique et de mappage](./cs-install-guide/conf-template-tags.md)
-         + [Configuration d’un modèle de rubrique DITA personnalisé](./cs-install-guide/conf-template-tags-custom-dita-topic-template.md)
-         + [Configuration d’un modèle de mappage DITA personnalisé](./cs-install-guide/conf-template-tags-custom-dita-map-templates.md)
+         + [Configuration du modèle de rubrique DITA personnalisé](./cs-install-guide/conf-template-tags-custom-dita-topic-template.md)
+         + [Configuration du modèle de mappage DITA personnalisé](./cs-install-guide/conf-template-tags-custom-dita-map-templates.md)
       + Utilisation des états du document {#doc-state-cs}
          + [Configuration des états du document](./cs-install-guide/customize-doc-state.md)
       + Utilisation des configurations de l’éditeur web {#web-editor-configs-cs}
@@ -288,7 +297,7 @@ ht-degree: 7%
          + [Configuration de la valeur par défaut pour la vue Balises](./cs-install-guide/configure-default-value-tags-view.md)
          + [Configuration de l’affichage des liens basés sur l’UUID](./cs-install-guide/conf-uuid-based-links.md)
          + [Ouvrir les fichiers de rubrique ou de mappage DITA dans le même onglet](./cs-install-guide/open-dita-files-same-tab.md)
-         + [Configuration d’un panneau personnalisé dans le panneau de gauche](./cs-install-guide/configure-custom-panel.md)
+         + [Configurer un panneau personnalisé dans le panneau de gauche](./cs-install-guide/configure-custom-panel.md)
          + [Configuration de l’enregistrement automatique du fichier dans l’éditeur web](./cs-install-guide/auto-save-in-editor.md)
          + [Configuration d’une invite pour l’enregistrement en tant que nouvelle version à la fermeture](./cs-install-guide/conf-save-as-new-version-close.md)
          + [Configuration d’une invite pour archiver un fichier à la fermeture](./cs-install-guide/conf-checkin-file-close.md)
@@ -309,6 +318,7 @@ ht-degree: 7%
          + [Gestion des versions](./cs-install-guide/version-management.md)
       + Utilisation des paramètres de génération de sortie {#output-gen-config-cs}
          + [Configuration des paramètres de génération de sortie](./cs-install-guide/conf-output-generation.md)
+         + [Publication de PDF natifs](./cs-install-guide/native-pdf-publishing.md)
       + Utilisation de workflows personnalisés {#custom-workflow-cs}
          + [Configuration et personnalisation des workflows](./cs-install-guide/customize-workflows.md)
       + Utilisation des configurations de traduction {#translate-config-cs}
@@ -323,7 +333,7 @@ ht-degree: 7%
       + [Gestion du contenu à l’aide des lignes de base](./knowledge-base/expert-sessions/baselines-dec22.md)
       + [Création de contenu web](./knowledge-base/expert-sessions/webbased-authoring-jan2023.md)
       + [Principes élémentaires de la publication par les PDF natifs](./knowledge-base/expert-sessions/native-pdf-publishing-essentials-feb23.md)
-      + [Rapports dans les guides AEM](./knowledge-base/expert-sessions/basic-reports-mar2023.md)
+      + [Rapports dans les guides d’AEM](./knowledge-base/expert-sessions/basic-reports-mar2023.md)
       + [Configuration du contenu et des modèles](./knowledge-base/expert-sessions/content-and-template-setup-apr2023.md)
       + [Formation à la publication en PDF natif - partie 1](./knowledge-base/expert-sessions/native-pdf-publishing-eamples-part1-june2023.md)
    + Articles {#kb-articles}
@@ -351,3 +361,4 @@ ht-degree: 7%
          + [Utilisation de contenu conditionnel](./knowledge-base/kb-articles/content-architecture/working-with-conditional-content.md)
          + [Utilisation des clés](./knowledge-base/kb-articles/content-architecture/working-with-keys.md)
    + [Utiliser le connecteur Oxygen](./oxygen-connector/use-aem-connector.md)
+

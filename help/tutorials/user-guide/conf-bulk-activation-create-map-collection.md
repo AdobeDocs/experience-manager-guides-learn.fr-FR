@@ -2,16 +2,16 @@
 title: Création d’une collection de cartes d’activation en bloc
 description: Découvrez comment créer une collection de cartes d’activation en bloc
 exl-id: 7d17fb37-9486-4a3b-a421-08e279c95b6c
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: c13d5146f478ed9b9122986a01eaa8a790bc8212
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
 
 # Création d’une collection de cartes d’activation en bloc {#id214GG0E90EV}
 
-Pour créer une collection de cartes d’activation en bloc, procédez comme suit :
+Pour créer une collection de mappages d’activation en bloc, procédez comme suit :
 
 1. Sélectionner **Guides** dans la liste des outils.
 
@@ -48,25 +48,29 @@ Pour créer une collection de cartes d’activation en bloc, procédez comme sui
 
 L’onglet Cartes et paramètres prédéfinis présente des informations dans les colonnes suivantes :
 
-- **Carte**: Affiche le titre du fichier de mappage DITA.
-- **Chemin de mappage**: Affiche le chemin d’accès complet du fichier de mappage DITA.
+- **Carte**: affiche le titre du fichier de mappage DITA.
+- **Chemin de mappage**: affiche le chemin d’accès complet au fichier de mappage DITA.
 
-- **UUID**: Affiche l’identifiant unique associé au fichier.
+- **UUID**: affiche l’identifiant unique associé au fichier.
 
-- **Langue**: Affiche le code de langue du mappage DITA.
-- **Paramètre prédéfini**: Affiche le type de paramètre prédéfini de sortie configuré dans le fichier map.
-- **Modifié**: Indique si le mappage DITA est mis à jour après la dernière publication. En fonction de ces informations, vous pouvez décider si vous souhaitez activer ou non la sortie pour ce mappage DITA.
-- **Généré**: Affiche la date et l’heure de la dernière sortie générée.
-- **Publié**: Affiche la date et l’heure de la dernière sortie publiée \(ou activée\). Si vous cliquez sur le lien, la page Résultats de l’activation s’affiche avec des informations sur le chemin racine d’activation du contenu.
+- **Langue**: affiche le code de langue du mappage DITA.
+- **Prédéfinie**: affiche le titre du paramètre prédéfini de sortie configuré dans le fichier de mappage. Il affiche également l’icône en fonction du type de paramètre prédéfini de sortie.
+
+  >[!NOTE]
+  >
+  > Le petit ![](images/global-preset-icon.svg) indique un paramètre prédéfini au niveau du profil de dossier.
+- **Modifié**: indique si le mappage DITA est mis à jour après la dernière publication. En fonction de ces informations, vous pouvez décider si vous souhaitez activer ou non la sortie pour ce mappage DITA.
+- **Généré**: affiche la date et l’heure de la dernière sortie générée.
+- **Publié**: affiche la date et l’heure de la dernière sortie publiée \(ou activée\). Si vous cliquez sur le lien, la page Résultats de l’activation s’affiche avec des informations sur le chemin racine d’activation du contenu.
 
 
 Les options de filtrage disponibles dans le panneau de gauche sont les suivantes :
 
-- **Modifié**: Vous pouvez sélectionner Oui ou Non. Si vous sélectionnez oui, seules les cartes DITA modifiées s’affichent. Une carte modifiée est une carte qui a été générée depuis sa dernière publication.
-- **Paramètre prédéfini**: Sélectionnez un paramètre prédéfini pour lequel vous souhaitez filtrer les fichiers map. Par exemple, si vous choisissez *AEM site* prédéfini, alors seules les cartes qui comportent la variable *AEM site* paramètre prédéfini de sortie configuré dessus.
-- **Langue**: Vous pouvez sélectionner l’un des codes de langue disponibles et afficher uniquement la langue sélectionnée dans l’onglet Cartes et paramètres prédéfinis .
+- **Modifié**: vous pouvez sélectionner Oui ou Non. Si vous sélectionnez oui, seules les cartes DITA modifiées s’affichent. Une carte modifiée est une carte générée depuis sa dernière publication.
+- **Prédéfinie**: sélectionnez un paramètre prédéfini pour lequel vous souhaitez filtrer les fichiers map. Par exemple, si vous choisissez *AEM site* prédéfini, alors seules les cartes qui comportent la variable *AEM site* paramètre prédéfini de sortie configuré dessus.
+- **Langue**: vous pouvez sélectionner l’un des codes de langue disponibles et afficher uniquement la langue sélectionnée dans l’onglet Cartes et paramètres prédéfinis .
 
 - **Filtre :** Le dernier rail affiche les filtres suivants :
-- **Cartes et paramètres prédéfinis** table : Le tableau Cartes et paramètres prédéfinis présente les colonnes suivantes :
+- **Cartes et paramètres prédéfinis** tableau : le tableau Cartes et paramètres prédéfinis présente les colonnes suivantes :
 
 **Rubrique parente :**[ Activation en masse de contenu publié](conf-bulk-activation.md)

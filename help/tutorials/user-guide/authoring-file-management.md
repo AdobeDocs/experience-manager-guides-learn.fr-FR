@@ -1,13 +1,13 @@
 ---
 title: Gestion des fichiers et des dossiers
 description: Découvrez comment gérer des fichiers et des dossiers
-source-git-commit: cc0fbca257d82cc82db5b5da8d263309fd71de55
+exl-id: e7810b06-f49f-467a-b987-a5e6f731d4cf
+source-git-commit: d0b3ccb87901c54b86aa7d0dba14dc7201c072e9
 workflow-type: tm+mt
-source-wordcount: '2502'
+source-wordcount: '3079'
 ht-degree: 0%
 
 ---
-
 
 # Gestion des fichiers et des dossiers {#id2116G0L08XA}
 
@@ -17,74 +17,74 @@ Cette section explique comment AEM Guides gère les opérations de base sur les 
 
 **Si le fichier porte un nom de fichier lisible par l’utilisateur**
 
-- *Si le fichier portant le même nom n’existe pas dans le dossier de destination*: Une nouvelle copie du fichier est créée et un UUID lui est également affecté. Ici, le nom du fichier est identique à celui du fichier d’origine.
-- *Si le fichier portant le même nom existe déjà dans le dossier de destination*: Une nouvelle copie du fichier est créée avec un suffixe \(comme filename0.extension\). Un UUID est également affecté au fichier nouvellement créé.
+- *Si le fichier portant le même nom n’existe pas dans le dossier de destination*: une nouvelle copie du fichier est créée et un UUID lui est également affecté. Ici, le nom du fichier est identique à celui du fichier d’origine.
+- *Si le fichier portant le même nom existe déjà dans le dossier de destination*: une nouvelle copie du fichier est créée avec un suffixe \(comme filename0.extension\). Un UUID est également affecté au fichier nouvellement créé.
 
 
 **Si le nom de fichier est basé sur un modèle UID**
 
-- *Si le fichier portant le même nom n’existe pas dans le dossier de destination*: Une nouvelle copie du fichier est créée et un nouvel UID lui est également affecté au nouvel emplacement. Ici, le nom de fichier est identique à l’UUID.
-- *Si le fichier portant le même nom existe déjà dans le dossier de destination*: Une nouvelle copie du fichier est créée et un nouvel UID lui est également affecté. Le nom de fichier est identique à l’UUID.
+- *Si le fichier portant le même nom n’existe pas dans le dossier de destination*: une nouvelle copie du fichier est créée et un nouvel UUID lui est également affecté au nouvel emplacement. Ici, le nom de fichier est identique à l’UUID.
+- *Si le fichier portant le même nom existe déjà dans le dossier de destination*: une nouvelle copie du fichier est créée et un nouvel UUID lui est également affecté. Le nom de fichier est identique à l’UUID.
 
 
 ## Copier et coller des dossiers
 
 **Copier et coller le dossier au même emplacement**
 
-- *Le dossier contient des fichiers dont les noms sont lisibles par un utilisateur*: Une nouvelle copie du dossier est créée avec un suffixe \(comme foldername0\). Un nouvel UUID est également affecté aux fichiers du dossier. Toutefois, les noms de fichier ne changent pas.
+- *Le dossier contient des fichiers dont les noms sont lisibles par un utilisateur*: une nouvelle copie du dossier est créée avec un suffixe \(comme foldername0\). Un nouvel UUID est également affecté aux fichiers du dossier. Toutefois, les noms de fichier ne changent pas.
 
-- *Le dossier contient des fichiers dont les noms de fichier sont basés sur un modèle UUID.*: Une nouvelle copie du dossier est créée avec un suffixe \(comme foldername0\). Un nouvel UUID est également affecté à tous les fichiers du nouveau dossier. Les noms de fichier sont également modifiés ; les noms de fichier sont identiques au nouvel UID.
+- *Le dossier contient des fichiers dont les noms reposent sur un modèle UID.*: une nouvelle copie du dossier est créée avec un suffixe \(comme foldername0\). Un nouvel UUID est également affecté à tous les fichiers du nouveau dossier. Les noms de fichier sont également modifiés ; les noms de fichier sont identiques au nouvel UID.
 
 
 **Copier et coller un dossier à un autre emplacement**
 
-- *Le dossier contient des fichiers dont les noms sont lisibles par un utilisateur*: Une nouvelle copie du dossier est créée et un nouvel UID est également affecté à tous les fichiers du dossier au nouvel emplacement. Ici, les noms de dossier ou de fichier ne changent pas.
+- *Le dossier contient des fichiers dont les noms sont lisibles par un utilisateur*: une nouvelle copie du dossier est créée et un nouvel UUID est également affecté à tous les fichiers du dossier au nouvel emplacement. Ici, les noms de dossier ou de fichier ne changent pas.
 
-- *Le dossier contient des fichiers dont les noms de fichier sont basés sur un modèle UUID.*: Une nouvelle copie du dossier est créée avec le même nom que le dossier d’origine. Un nouvel UUID est également affecté à tous les fichiers du nouveau dossier. Les noms de fichier sont également modifiés ; les noms de fichier sont identiques au nouvel UID.
+- *Le dossier contient des fichiers dont les noms reposent sur un modèle UID.*: une nouvelle copie du dossier est créée avec le même nom que le dossier original. Un nouvel UUID est également affecté à tous les fichiers du nouveau dossier. Les noms de fichier sont également modifiés ; les noms de fichier sont identiques au nouvel UID.
 
 
 ## Glisser-déposer des fichiers
 
 **Glisser-déposer avec des noms de fichier lisibles par l’utilisateur**
 
-- *Glisser-déposer au même emplacement*: Vous disposez des options suivantes : **Remplacer le fichier existant\(s\)**, **Conserver les deux fichiers\(s\)** et une option pour créer une version de la copie de travail existante.
+- *Glisser-déposer au même emplacement*: les options de **Remplacer le fichier existant\(s\)**, **Conserver les deux fichiers\(s\)** et une option pour créer une version de la copie de travail existante.
 
-   ![](images/uuid-human-readable-drag-drop-same-location.PNG){width="650" align="center"}
+  ![](images/uuid-human-readable-drag-drop-same-location.PNG){width="650" align="center"}
 
-   Si vous choisissez l’option **Remplacer le fichier existant\(s\)** , puis le fichier en cours de chargement remplace la version de travail actuelle du fichier existant à l’emplacement d’origine. L’UUID n’est pas créé ni modifié.
+  Si vous choisissez l’option **Remplacer le fichier existant\(s\)** , puis le fichier en cours de chargement remplace la version de travail actuelle du fichier existant à l’emplacement d’origine. L’UUID n’est pas créé ni modifié.
 
-   Si vous choisissez l’option **Conserver les deux fichiers\(s\)** , une nouvelle copie du fichier est créée avec un suffixe \(comme filename0.extension\). Un nouvel UUID est également affecté au fichier nouvellement copié.
+  Si vous choisissez l’option **Conserver les deux fichiers\(s\)** , une nouvelle copie du fichier est créée avec un suffixe \(comme filename0.extension\). Un nouvel UUID est également affecté au fichier nouvellement copié.
 
-   Avec l’option Remplacer le fichier existant\(s\) , si vous choisissez de créer une version à partir de la copie de travail existante, une nouvelle version de la copie de travail du document est également créée.
+  Avec l’option Remplacer le fichier existant\(s\) , si vous choisissez de créer une version à partir de la copie de travail existante, une nouvelle version de la copie de travail du document est également créée.
 
-   >[!NOTE]
-   >
-   > **Créer une version pour le fichier téléchargé** doit être activée par votre administrateur. Si cette fonction est activée, une nouvelle version du fichier chargé est créée. Si cette option est désélectionnée, aucune version du fichier chargé n’est créée. Pour plus d’informations, voir *Créer une version pour le fichier téléchargé* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
+  >[!NOTE]
+  >
+  > **Créer une version pour le fichier téléchargé** doit être activée par votre administrateur. Si cette fonction est activée, une nouvelle version du fichier chargé est créée. Si cette option est désélectionnée, aucune version du fichier chargé n’est créée. Pour plus d’informations, voir *Créer une version pour le fichier téléchargé* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
 
-   Si un fichier est déjà extrait pour modification par un autre utilisateur et que vous tentez de charger et de remplacer le fichier existant, il échoue et affiche une erreur.
+  Si un fichier est déjà extrait pour modification par un autre utilisateur et que vous tentez de charger et de remplacer le fichier existant, il échoue et affiche une erreur.
 
-   >[!NOTE]
-   >
-   >Le **Remplacer le fichier extrait lors du téléchargement** doit être désactivée par votre administrateur. Si cette fonction est activée, vous pouvez remplacer les fichiers extraits. Si la fonction n’est pas activée, un fichier extrait ne peut pas être remplacé. Pour plus d’informations, voir *Remplacer le fichier extrait lors du téléchargement* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
+  >[!NOTE]
+  >
+  >La variable **Remplacer le fichier extrait lors du téléchargement** doit être désactivée par votre administrateur. Si cette fonction est activée, vous pouvez remplacer les fichiers extraits. Si la fonction n’est pas activée, un fichier extrait ne peut pas être remplacé. Pour plus d’informations, voir *Remplacer le fichier extrait lors du téléchargement* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
 
 
-- *Glisser-déposer des fichiers à différents emplacements*: Une nouvelle copie du fichier est créée et un nouvel UID lui est également affecté au nouvel emplacement. Ici, le nom du fichier est identique à celui du fichier d’origine.
+- *Glisser-déposer des fichiers à différents emplacements*: une nouvelle copie du fichier est créée et un nouvel UUID lui est également affecté au nouvel emplacement. Ici, le nom du fichier est identique à celui du fichier d’origine.
 
 
 **Glisser-déposer avec les noms de fichier selon un modèle UUID**
 
-*Glisser-déposer le fichier au même emplacement*: Vous disposez des options suivantes : **Remplacer le fichier existant\(s\)** ainsi que l’option permettant de créer une version de la copie de travail existante.
+*Glisser-déposer le fichier au même emplacement*: les options de **Remplacer le fichier existant\(s\)** ainsi que l’option de création d’une version de la copie de travail existante.
 
 ![](images/uuid-drag-drop-same-location.PNG){width="650" align="center"}
 
 Lorsque le fichier est remplacé, le nom du fichier ou son UUID ne change pas.
 
-Si vous sélectionnez la variable **Création d’une version pour la copie de travail existante** , puis une nouvelle version de la copie de travail du document est créée ; le nouveau fichier est téléchargé, une nouvelle version du fichier est également créée et il est créé en tant que copie de travail du document.
+Si vous sélectionnez l’option **Créer une version pour la copie de travail existante** , puis une nouvelle version de la copie de travail du document est créée ; le nouveau fichier est chargé, une nouvelle version du fichier est également créée et il est créé en tant que copie de travail du document.
 
 **Créer une version pour le fichier téléchargé** doit être activée par votre administrateur. Si cette fonction est activée, une nouvelle version du fichier chargé est créée. Si cette option est désélectionnée, aucune version du fichier chargé n’est créée. Pour plus d’informations, voir *Créer une version pour le fichier téléchargé* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
 
 
-*Glisser-déposer un fichier à un autre emplacement*: Vous disposez des options suivantes : **Remplacer le fichier existant\(s\)**, **Déplacer le fichier\(s\) vers un nouvel emplacement** et une option pour créer une version de la copie de travail existante.
+*Glisser-déposer un fichier à un autre emplacement*: les options de **Remplacer le fichier existant\(s\)**, **Déplacer le fichier\(s\) vers un nouvel emplacement** et une option pour créer une version de la copie de travail existante.
 
 ![](images/uuid-drag-drop-different-location.PNG){width="650" align="center"}
 
@@ -92,16 +92,16 @@ Si vous choisissez l’option **Remplacer le fichier existant\(s\)** , puis le f
 
 Si vous choisissez l’option **Déplacer le fichier\(s\) vers un nouvel emplacement** , le fichier existant est alors déplacé à l’emplacement actuel, puis remplacé par le fichier en cours de chargement. Le déplacement d’un fichier vers le nouvel emplacement ne rompt aucune référence existante depuis ou vers le fichier.
 
-Avec le remplacement ou le déplacement des fichiers, si vous choisissez l’option de création d’une version à partir de la copie existante, une nouvelle version à partir de la copie de travail du document est créée. le nouveau fichier est remplacé à l’emplacement existant ou déplacé vers le nouvel emplacement.
+Lorsque vous remplacez ou déplacez les fichiers, si vous choisissez de créer une version à partir de la copie existante, une nouvelle version de la copie de travail du document est créée. Le nouveau fichier est remplacé à l’emplacement existant ou déplacé vers le nouvel emplacement.
 
 
-## Déplacer des fichiers en masse
+## Déplacer des fichiers en masse {#move-files-bulk}
 
 AEM Guides est fourni avec l’outil de déplacement en masse qui permet à un administrateur de déplacer un dossier contenant un grand nombre de fichiers d’un emplacement à un autre. Cet outil peut facilement déplacer des fichiers dans un ou plusieurs dossiers dans un autre dossier de votre référentiel AEM. L’une des principales fonctionnalités de cet outil est qu’il déplace non seulement un grand nombre de fichiers, mais il conserve également les références vers et depuis les fichiers en cours de déplacement. Vous pouvez régler le nombre de fichiers que vous pouvez déplacer par lots sans entraver les tâches de création et de publication.
 
 >[!NOTE]
 >
-> L’outil de déplacement en masse fonctionne uniquement au niveau du dossier. Si vous souhaitez déplacer des fichiers de rubrique ou de mappage individuels, utilisez l’outil de déplacement standard de l’interface utilisateur d’AEM Assets.
+> L’outil de déplacement en masse fonctionne uniquement au niveau du dossier. Si vous souhaitez déplacer des fichiers de rubrique ou de mappage individuels, utilisez l’outil de déplacement standard à partir de l’interface utilisateur d’AEM Assets.
 
 Voici quelques-unes des fonctionnalités de l’outil de déplacement en masse :
 
@@ -125,27 +125,94 @@ Pour déplacer des fichiers en bloc, procédez comme suit :
 1. Cliquez sur le lien Adobe Experience Manager en haut de l’écran et choisissez **Outils**.
 1. Sélectionner **Guides** dans la liste des outils.
 1. Cliquez sur le bouton **Outil Déplacement en masse** mosaïque.
+1. La page Outil de déplacement en masse s’affiche en fonction de votre configuration. Fournissez les détails suivants sur la variable **Outil Déplacement en masse** page :
 
-   La page Outil de déplacement en masse s’affiche.
+   <details>
 
-   ![](images/bulk-move-tool_cs.PNG){width="550" align="center"}
+   <summary> Système de fichiers basé sur l’UUID sur site </summary>
 
-1. Fournissez les détails suivants sur la page Outil de déplacement en masse :
+   ![](images/bulk-move-tool-uuid.png){width="650" align="center"}
 
-   - **Ajouter un suffixe aux fichiers en double**: Si vous déplacez des dossiers portant le même nom, vous devez sélectionner cette option. Par exemple, dans la capture d’écran ci-dessus, la variable **Chemin source** contient le nom des dossiers à déplacer. Le dossier nommé rubrique existe à deux emplacements différents : test-A et test-B. Lorsque vous sélectionnez cette option, les dossiers se déplacent correctement. Le premier dossier déplacé sera nommé topic , tandis que le second sera topic0. L’opération de déplacement ajoute un suffixe dans les séries séquentielles \(0, 1, 2, etc.\) aux dossiers portant le même nom.
+   >[!TIP]
+   >
+   > Sélectionner <img src="images/info-icon.svg" width="25">   à proximité de n’importe quel champ pour en afficher plus de détails.
 
-      Si vous déplacez des dossiers portant le même nom sans sélectionner cette option, l’opération se termine avec un message.
 
-   - **Chemin source\(s\)**: Indiquez l’emplacement des dossiers à déplacer. En règle générale, vous devez copier et coller l’emplacement source dans la barre d’adresse du navigateur. Vous pouvez spécifier plusieurs emplacements de dossiers en cliquant sur le bouton **Ajouter** bouton .
+   - **Ajout d’un suffixe aux dossiers en double**: si vous déplacez des dossiers portant le même nom, vous devez sélectionner cette option. Par exemple, dans la capture d’écran précédente, la variable **Chemin source** contient le nom des dossiers à déplacer. Le dossier nommé rubrique existe à deux emplacements différents : test-A et test-B. Lorsque vous sélectionnez cette option, les dossiers se déplacent correctement. Le premier dossier déplacé sera nommé topic , tandis que le second sera topic0. L’opération de déplacement ajoute un suffixe dans les séries séquentielles \(0, 1, 2, etc.\) aux dossiers portant le même nom.
 
-   - **Chemin de destination**: Indiquez l’emplacement où déplacer les dossiers sources.
+     Si vous déplacez des dossiers portant le même nom sans sélectionner cette option, l’opération se termine avec un message.
 
-1. Cliquez sur **Déplacement en bloc**.
+   - **Chemin d’accès source\(s\)**: spécifiez l’emplacement des dossiers à déplacer.
 
-   Le système commence à déplacer les fichiers de la source vers l’emplacement de destination. Une fois le processus terminé, un résumé du processus de déplacement s’affiche au bas de la page.
+      - Sélectionner  **Parcourir le dossier**  <img src="images/browse-folder-icon.svg" width="25">    pour ouvrir la boîte de dialogue parcourir le fichier. Sélectionnez les dossiers à déplacer, puis cliquez sur **Sélectionner** pour terminer le processus.
 
-   ![](images/bulk-move-summary.PNG){width="650" align="center"}
+      - Vous pouvez également saisir ou copier et coller l’emplacement source. Appuyez sur Entrée pour ajouter le dossier à la liste.
 
+        Les dossiers sélectionnés sont répertoriés avec leur chemin d’accès. Passez la souris sur la balise de dossier pour afficher le chemin d’accès complet.
+      - Vous pouvez également supprimer tout dossier en cliquant sur **Supprimer** <img src="images/remove-folder.svg" width="25"> près du dossier .
+
+
+   - **Chemin de destination**: indiquez l’emplacement où déplacer les dossiers sources.
+
+      - Sélectionner  **Parcourir le dossier** <img src="images/browse-folder-icon.svg" width="25"> pour ouvrir la boîte de dialogue parcourir le fichier. Sélectionnez l’emplacement où déplacer les dossiers sources. et cliquez sur Sélectionner pour terminer le processus.
+      - Vous pouvez également saisir ou copier et coller le chemin de destination.
+
+     Le dossier sélectionné s’affiche avec son chemin dans la zone de texte.
+
+
+   - Cliquez sur **Déplacement en masse**.
+
+     Le système commence à déplacer les fichiers de la source vers l’emplacement de destination. Une fois le processus terminé, un résumé du processus de déplacement s’affiche à droite de la page.
+
+     ![](images/bulk-move-summary-uuid.png){width="650" align="center"}
+
+   </details>
+
+   <details>
+
+   <summary> Système de fichiers sur site non basé sur UUID </summary>
+
+   ![](images/bulk-move-tool-non-uuid.png){width="650" align="center"}
+
+   >[!TIP]
+   >
+   > Sélectionner <img src="images/info-icon.svg" width="25">   à proximité de n’importe quel champ pour en afficher plus de détails.
+
+   - **Taille du lot**: indiquez le nombre de fichiers à déplacer dans un seul lot. Valeurs par défaut si 50 fichiers.
+   - **Intervalle de sommeil**: spécifiez la durée (en secondes) d’attente du processus avant de démarrer le prochain lot. Pendant cet intervalle de temps de sommeil, le système corrige les références aux fichiers déplacés et aux fichiers déplacés. L’intervalle de sommeil par défaut est de 60 secondes.
+
+
+   - **Ajout d’un suffixe aux dossiers en double**: si vous déplacez des dossiers portant le même nom, vous devez sélectionner cette option. Par exemple, dans la capture d’écran précédente, la variable **Chemin source** contient le nom des dossiers à déplacer. Le dossier nommé rubrique existe à deux emplacements différents : test-A et test-B. Lorsque vous sélectionnez cette option, les dossiers se déplacent correctement. Le premier dossier déplacé sera nommé topic , tandis que le second sera topic0. L’opération de déplacement ajoute un suffixe dans les séries séquentielles \(0, 1, 2, etc.\) aux dossiers portant le même nom.
+
+     Si vous déplacez des dossiers portant le même nom sans sélectionner cette option, l’opération se termine avec un message.
+
+   - **Mise à jour des références des fichiers extraits**: si vous déplacez des dossiers contenant des fichiers extraits, il est recommandé de sélectionner cette option. Si vous sélectionnez cette option, tous les fichiers extraits seront enregistrés et archivés avec une nouvelle révision. Cette nouvelle révision est ensuite déplacée vers l’emplacement de destination.
+
+     Si vous ne sélectionnez pas cette option, les fichiers extraits sont déplacés vers le dossier de destination dans le même état d’extraction. Cependant, ce processus de déplacement peut entraîner une perte de données.
+
+
+   - **Chemin d’accès source\(s\)**: spécifiez l’emplacement des dossiers à déplacer.
+
+      - Sélectionner  **Parcourir le dossier**  <img src="images/browse-folder-icon.svg" width="25">    pour ouvrir la boîte de dialogue parcourir le fichier. Sélectionnez les dossiers à déplacer, puis cliquez sur **Sélectionner** pour terminer le processus.
+
+      - Vous pouvez également saisir ou copier et coller l’emplacement source. Appuyez sur Entrée pour ajouter le dossier à la liste.
+
+        Les dossiers sélectionnés sont répertoriés avec leur chemin d’accès. Passez la souris sur la balise de dossier pour afficher le chemin d’accès complet.
+      - Vous pouvez également supprimer tout dossier en cliquant sur **Supprimer** <img src="images/remove-folder.svg" width="25"> près du dossier .
+
+
+   - **Chemin de destination**: indiquez l’emplacement où déplacer les dossiers sources.
+
+      - Sélectionner  **Parcourir le dossier** <img src="images/browse-folder-icon.svg" width="25"> pour ouvrir la boîte de dialogue parcourir le fichier. Sélectionnez l’emplacement où déplacer les dossiers sources. et cliquez sur Sélectionner pour terminer le processus.
+      - Vous pouvez également saisir ou copier et coller le chemin de destination.
+
+        Le dossier sélectionné s’affiche avec son chemin dans la zone de texte.
+
+   - Cliquez sur **Déplacement en masse**.
+
+     Le système commence à déplacer les fichiers de la source vers l’emplacement de destination. Une fois le processus terminé, un résumé du processus de déplacement s’affiche à droite de la page.
+     ![](images/bulk-move-summary-non-uuid.png){width="650" align="center"}
+</details>
 
 ## Recherche de contenu DITA
 
@@ -179,7 +246,7 @@ Effectuez les étapes suivantes pour rechercher du contenu DITA dans AEM référ
 
    ![](images/search-params.png){width="650" align="center"}
 
-   Les critères de recherche saisis dans la variable **Elément DITA** s’affiche en haut de la barre de recherche. Les fichiers correspondant aux critères de recherche sont affichés dans la variable **Résultats de la recherche** zone.
+   Les critères de recherche saisis dans la variable **Elément DITA** s’affiche en haut de la barre de recherche. Les fichiers correspondant aux critères de recherche s’affichent dans la variable **Résultats de la recherche** zone.
 
    Tenez compte des points suivants lors de la spécification des critères de recherche :
 
@@ -190,7 +257,7 @@ Effectuez les étapes suivantes pour rechercher du contenu DITA dans AEM référ
 
 **Filtre d’état d’extraction dans la recherche**
 
-Outre le filtre d’élément DITA, AEM Guides vous permet de rechercher du contenu en fonction de leur état d’extraction. Cela s’avère utile lorsque vous souhaitez filtrer rapidement les fichiers actuellement extraits par vous et que vous souhaitez les réarchiver.
+Outre le filtre d’élément DITA, AEM Guides vous permet également de rechercher du contenu en fonction de leur état d’extraction. Cela s’avère utile lorsque vous souhaitez filtrer rapidement les fichiers actuellement extraits par vous et que vous souhaitez les réarchiver.
 
 Effectuez les étapes suivantes pour rechercher des fichiers en fonction de leur état d’extraction :
 
@@ -200,14 +267,14 @@ Effectuez les étapes suivantes pour rechercher des fichiers en fonction de leur
 1. Saisissez votre mot-clé de recherche dans la barre de recherche.
 1. Appliquez les filtres requis à partir du rail de gauche.
 
-   Par exemple, vous pouvez appliquer des **État d’extraction** filtre pour afficher les rubriques extraites ou archivées. Vous pouvez affiner davantage cette liste en sélectionnant l’utilisateur ou le groupe dans la liste Extraits par .
+   Par exemple, vous pouvez appliquer des **État de passage en caisse** filtre pour afficher les rubriques extraites ou archivées. Vous pouvez affiner davantage cette liste en sélectionnant l’utilisateur ou le groupe dans la liste Extraits par .
 
    Le résultat de la recherche s’affiche.
 
 
 ## Suppression de fichiers
 
-La suppression de fichiers du référentiel d’AEM est une fonctionnalité limitée, contrôlée par votre administrateur système. En fonction des configurations, la suppression de fichiers peut être limitée s’ils :
+La suppression de fichiers du référentiel d’AEM est une fonctionnalité limitée, qui est contrôlée par votre administrateur système. En fonction des configurations, la suppression de fichiers peut être limitée s’ils :
 
 - Extraits
 - contiennent des références entrantes ou sortantes ;
@@ -249,4 +316,3 @@ Si votre fichier multimédia a subi des modifications, vous pouvez rechercher et
 
 
 **Rubrique parente :**[ Gestion du contenu](authoring.md)
-

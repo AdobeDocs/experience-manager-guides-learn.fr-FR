@@ -2,9 +2,9 @@
 title: Rubriques de révision
 description: Découvrez comment consulter les rubriques
 exl-id: ca94ec2e-cd45-418d-9b35-73d587ba51ec
-source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
+source-git-commit: b9bf08ccbe2eb17ca8d4dac675155e0b4631f0a9
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2323'
 ht-degree: 0%
 
 ---
@@ -34,26 +34,30 @@ Pour passer en revue une rubrique, procédez comme suit :
 
 
 
-
    L’écran suivant s’affiche lorsqu’un mappage DITA est utilisé pour lancer le processus de révision :
 
    ![](images/multiple-topics-review.png){width="800" align="left"}
 
    Les options suivantes sont disponibles dans cet écran :
 
-   - **A**: Nom de la tâche de révision.
-   - **B**: Cliquez sur l’icône Mode Rubriques pour afficher ou masquer le panneau Rubriques.
+   - **A**: nom de la tâche de révision.
+   - **B**: cliquez sur l’icône Mode Rubriques pour afficher ou masquer le panneau Rubriques.
 
-   - **C**: Les nombres mis en évidence par ***F*** peut être filtré en sélectionnant l’option de filtre souhaitée à partir de cet emplacement. Vous pouvez filtrer les commentaires par type, statut, réviseur ou version. Par exemple, si vous souhaitez voir le nombre de commentaires de type Barré dans chaque rubrique de révision en cours, cliquez sur l’icône de filtre, puis choisissez **Type de révision** \> **Suppression**.
+   - **C**: vous pouvez rechercher la rubrique requise en saisissant une partie du texte du titre ou du chemin de fichier dans la barre de recherche.
 
-      >[!NOTE]
-      >
-      > Lorsque vous appliquez les filtres, seuls les commentaires correspondant aux filtres sélectionnés s’affichent dans le panneau des commentaires. Le nombre de commentaires filtrés s’affiche à gauche dans le panneau des rubriques.
+     Sélectionner  ![](images/view-options.svg) près de la barre de recherche pour afficher toutes les rubriques ou afficher les rubriques avec des commentaires. Par défaut, vous pouvez afficher toutes les rubriques présentes dans la tâche de révision.
 
-   - **D**: Une rubrique affectée à la révision au réviseur actuel s’affiche en noir et peut faire l’objet d’un clic. Lorsque le réviseur clique sur un lien de rubrique, cette rubrique est placée en haut de l’écran.
-   - **E**: Une rubrique qui n’est pas disponible pour révision est grisée. La rubrique s’affiche en lecture seule et vous n’êtes pas autorisé à ajouter des commentaires de révision sur ces rubriques.
 
-   - **F**: Nombre de commentaires reçus sur un sujet. Ce nombre change en fonction du filtre que vous appliquez.
+   - **D**: les nombres mis en surbrillance par ***F*** peut être filtré en sélectionnant l’option de filtre souhaitée à partir de cet emplacement. Vous pouvez filtrer les commentaires par type, statut, réviseur ou version. Par exemple, si vous souhaitez voir le nombre de commentaires de type Barré dans chaque rubrique de révision en cours, cliquez sur l’icône de filtre, puis choisissez **Type de révision** \> **Suppression**.
+
+     >[!NOTE]
+     >
+     > Lorsque vous appliquez les filtres, seuls les commentaires correspondant aux filtres sélectionnés s’affichent dans le panneau des commentaires. Le nombre de commentaires filtrés s’affiche à gauche dans le panneau des rubriques.
+
+   - **E**: une rubrique affectée à la révision au réviseur actuel s’affiche en noir et peut faire l’objet d’un clic. Lorsque le réviseur clique sur un lien de rubrique, cette rubrique est placée en haut de l’écran.
+   - **F**: une rubrique qui n’est pas disponible pour la révision est grisée. La rubrique s’affiche en lecture seule et vous n’êtes pas autorisé à ajouter des commentaires de révision sur ces rubriques.
+
+   - **G**: nombre de commentaires reçus sur un sujet. Ce nombre change en fonction du filtre que vous appliquez.
 
    Toutes les rubriques du mappage s’affichent sous la forme d’un document composite unique. Les rubriques que le réviseur est autorisé à réviser s’affichent normalement. Les rubriques que la révision n’est pas autorisée à réviser ne s’affichent pas.
 
@@ -91,19 +95,19 @@ Lorsque vous affichez une seule rubrique, vous disposez d’une option suppléme
 
 ![](images/comments-toolbar.png){width="350" align="left"}
 
-- **Surligner** \(![](images/review-highlight-icon.svg)\) : Pour ajouter un commentaire en surbrillance, sélectionnez le texte et cliquez sur l’icône Mettre en surbrillance . Vous pouvez également cliquer sur l’icône Mettre en surbrillance et sélectionner le texte de votre choix :
+- **Surligner** \(![](images/review-highlight-icon.svg)\) : pour ajouter un commentaire en surbrillance, sélectionnez le texte et cliquez sur l’icône Mettre en surbrillance . Vous pouvez également cliquer sur l’icône Mettre en surbrillance et sélectionner le texte de votre choix :
 
-   ![](images/highlight-comment.png){width="650" align="left"}
+  ![](images/highlight-comment.png){width="650" align="left"}
 
-   Une fenêtre contextuelle s’affiche dans le panneau Commentaires, dans laquelle vous pouvez ajouter votre commentaire pour le contenu mis en surbrillance.
+  Une fenêtre contextuelle s’affiche dans le panneau Commentaires, dans laquelle vous pouvez ajouter votre commentaire pour le contenu mis en surbrillance.
 
-- **Barré** \(![](images/review-text-strike-through-icon.svg)\) : Si vous souhaitez suggérer la suppression du contenu, vous pouvez le faire en sélectionnant le contenu et en cliquant sur l’icône Barrer . Vous pouvez également sélectionner le texte de votre choix et cliquer sur la touche Supprimer :
+- **Barré** \(![](images/review-text-strike-through-icon.svg)\) : si vous souhaitez suggérer la suppression du contenu, vous pouvez le faire en sélectionnant le contenu et en cliquant sur l’icône Barrer . Vous pouvez également sélectionner le texte de votre choix et cliquer sur la touche Supprimer :
 
-   Une fenêtre contextuelle s’affiche dans le panneau Commentaires, dans laquelle vous pouvez ajouter votre commentaire pour le contenu supprimé.
+  Une fenêtre contextuelle s’affiche dans le panneau Commentaires, dans laquelle vous pouvez ajouter votre commentaire pour le contenu supprimé.
 
-- **Insérer du texte** \(![](images/review-insert-text-icon.svg)\) : Si vous souhaitez insérer du texte, cliquez sur l&#39;icône Insérer du texte et placez le curseur à l&#39;endroit où vous souhaitez insérer le texte et saisissez les informations. Vous pouvez également placer le curseur à l’endroit où vous souhaitez insérer du texte et commencer à saisir du texte. Les informations ajoutées apparaissent en vert :
+- **Insérer du texte** \(![](images/review-insert-text-icon.svg)\) : si vous souhaitez insérer du texte, cliquez sur l’icône Insérer du texte et placez le curseur à l’endroit où vous souhaitez insérer le texte et saisissez les informations. Vous pouvez également placer le curseur à l’endroit où vous souhaitez insérer du texte et commencer à saisir du texte. Les informations ajoutées apparaissent en vert :
 
-- **Ajouter un commentaire**\(![](images/review-comment-icon.svg)\) : Si vous souhaitez ajouter un type de commentaire de post-it, cliquez sur l’icône Ajouter un commentaire et saisissez le commentaire dans la fenêtre contextuelle.
+- **Ajouter un commentaire**\(![](images/review-comment-icon.svg)\) : si vous souhaitez ajouter un type de commentaire de post-it, cliquez sur l’icône Ajouter un commentaire et saisissez le commentaire dans la fenêtre contextuelle.
 
 
 **Barre d’outils contextuelle**
@@ -114,7 +118,7 @@ Vous pouvez également mettre rapidement le texte en surbrillance ou barré à l
 
    ![](images/review-quick-launch-toolbar.png){width="550" align="left"}
 
-1. Cliquez sur le bouton **Surligner** ou **Barré** icône .
+1. Cliquez sur le bouton **Surligner** ou **Barré** Icône
 1. Vous pouvez ajouter des commentaires dans le panneau des commentaires pour l’action de surbrillance ou de barrage.
 
 **Révision à l’aide du panneau Commentaires** - Le panneau Commentaires affiche une liste des commentaires relatifs à la rubrique actuelle. Ce panneau répertorie également les commentaires des autres réviseurs si la rubrique est envoyée à plusieurs réviseurs. Chaque commentaire du panneau des commentaires est associé au texte correspondant dans la rubrique actuelle. Il permet d’identifier le texte commenté. Chaque commentaire affiche le nom du réviseur qui a ajouté le commentaire avec l’horodatage.
@@ -128,13 +132,13 @@ Les tâches que vous pouvez effectuer à l’aide du panneau Commentaires sont d
 - Vous pouvez modifier votre propre commentaire en cliquant sur le texte de votre commentaire dans le panneau Commentaires , puis en sélectionnant **Modifier** dans le menu Options.
 - Vous pouvez supprimer vos propres commentaires en cliquant sur le commentaire dans le panneau Commentaires , puis en sélectionnant **Supprimer** dans le menu Options.
 
-   ![](images/review-comment-options-menu.png){width="300" align="left"}
+  ![](images/review-comment-options-menu.png){width="300" align="left"}
 
-   >[!NOTE]
-   >
-   > Le menu Options s’affiche uniquement lorsque vous passez la souris sur vos propres commentaires. Il n&#39;est pas affiché pour les commentaires des autres réviseurs.
+  >[!NOTE]
+  >
+  > Le menu Options s’affiche uniquement lorsque vous passez la souris sur vos propres commentaires. Il n&#39;est pas affiché pour les commentaires des autres réviseurs.
 
-- Tous les utilisateurs participants peuvent répondre aux commentaires envoyés par d’autres utilisateurs. Sur un commentaire, cliquez sur **Répondre** et appuyez sur Entrée pour envoyer une réponse.
+- Tous les utilisateurs participants peuvent répondre aux commentaires des autres utilisateurs. Sur un commentaire, cliquez sur **Répondre** et appuyez sur Entrée pour envoyer une réponse.
 
 **Mode Aperçu**
 
@@ -166,7 +170,7 @@ Effectuez les étapes suivantes pour ajouter une pièce jointe à votre commenta
 
    Les fichiers sélectionnés s’affichent avec le commentaire dans le panneau Commentaires.
 
-   Dans le panneau Commentaires , vous pouvez voir le nom du fichier et sa taille. Vous avez également la possibilité de supprimer un fichier en cliquant sur l’icône Supprimer ![](images/Delete_icon.svg) associée au nom du fichier.
+   Dans le panneau Commentaires , vous pouvez voir le nom du fichier et sa taille. Vous pouvez également supprimer un fichier en cliquant sur l’icône Supprimer ![](images/Delete_icon.svg) associée au nom du fichier.
 
 1. Cliquez sur **Envoyer**.
 
@@ -189,16 +193,16 @@ Les autres réviseurs ou auteurs n’obtiennent que l’option de téléchargeme
 
 - Vous pouvez télécharger toutes les pièces jointes associées à un commentaire à partir du **Afficher les pièces jointes** boîte de dialogue. Sélectionnez les pièces jointes et cliquez sur le bouton **Télécharger** au niveau du commentaire.
 
-- Vous pouvez également supprimer les pièces jointes associées à un commentaire de la **Afficher les pièces jointes** boîte de dialogue. Sélectionnez les pièces jointes et cliquez sur le bouton **Supprimer** icône .
+- Vous pouvez également supprimer les pièces jointes associées à un commentaire de la **Afficher les pièces jointes** boîte de dialogue. Sélectionnez les pièces jointes et cliquez sur le bouton **Supprimer** Icône
 
 ![](images/attach-files-comments-panel.png){width="550" align="left"}
 
 
-**Panneau Conditions** - Si votre rubrique comporte du contenu conditionnel, le **Conditions** \(![](images/conditions-icon.svg)\) à droite. Cliquez sur **Conditions** Cette icône ouvre le panneau Conditions qui vous permet de mettre en surbrillance le contenu en fonction des conditions disponibles dans la rubrique.
+**Panneau Conditions** - Si votre rubrique comporte du contenu conditionnel, le **Conditions** \(![](images/conditions-icon.svg)\) à droite. Cliquer sur **Conditions** Cette icône ouvre le panneau Conditions qui vous permet de mettre en surbrillance le contenu en fonction des conditions disponibles dans la rubrique.
 
-: Par défaut **Mettre en surbrillance toutes les conditions** est activée, toutes les conditions sont sélectionnées, l’intégralité du contenu est affichée et le contenu conditionnel est affiché en surbrillance en mode de révision et d’aperçu.
+: par défaut **Mettre en surbrillance toutes les conditions** est activée, toutes les conditions sont sélectionnées, l’intégralité du contenu est affichée et le contenu conditionnel est affiché en surbrillance en mode de révision et d’aperçu.
 
-: Vous pouvez désactiver **Mettre en surbrillance toutes les conditions** et afficher tout le contenu présent dans la rubrique sous la forme d’un texte normal sans mise en surbrillance.
+: vous pouvez désactiver **Mettre en surbrillance toutes les conditions** et afficher tout le contenu présent dans la rubrique comme du texte normal sans mise en surbrillance.
 
 ![](images/review-conditions-panel.png){width="350" align="left"}
 
@@ -220,15 +224,15 @@ En mode aperçu, le contenu non conditionnel et le contenu conditionnel qui util
 
 - Cliquer sur l’icône Commentaire obsolète \(![](images/outdated-comment-icon.svg)\) affiche les différences entre la dernière version et la version commentée du document. Les numéros de version \(des versions comparées\) s’affichent en haut des documents.
 
-   ![](images/comments-page-review-mode.png){width="800" align="left"}
+  ![](images/comments-page-review-mode.png){width="800" align="left"}
 
-   >[!NOTE]
-   >
-   > Lorsque vous passez la souris sur l’icône Commentaire obsolète, le numéro de version de la rubrique sur laquelle le commentaire a été ajouté s’affiche. Par exemple, si un commentaire a été donné sur la version 1.0, le même commentaire s’affiche.
+  >[!NOTE]
+  >
+  > Pointez sur l’icône Commentaire obsolète pour afficher le numéro de version de la rubrique sur laquelle le commentaire a été ajouté. Par exemple, si un commentaire a été donné sur la version 1.0, le même commentaire s’affiche.
 
 - Cliquer sur un commentaire obsolète ouvre la version de ce commentaire dans le panneau de gauche. La version précédente s’affiche dans le panneau de gauche et la version actuelle dans le panneau de droite. Tous les commentaires sur la version obsolète sont importés sur le côté gauche. Vous pouvez comparer la version précédente à la version actuelle.
 
-**Filtrage des commentaires** - Vous pouvez filtrer les commentaires d’un document afin d’afficher des commentaires spécifiques selon vos besoins. Pour filtrer les commentaires, cliquez sur le bouton **Filtrer** icon \(![](images/filter-search-icon.svg)\) qui s’affiche dans le menu à droite de la zone de texte Rechercher des commentaires dans le panneau Commentaires .
+**Filtrage des commentaires** - Vous pouvez filtrer les commentaires d’un document afin d’afficher des commentaires spécifiques selon vos besoins. Pour filtrer les commentaires, cliquez sur le bouton **Filtrer** icon \(![](images/filter-search-icon.svg)\) qui s’affiche dans le menu à droite de la zone de texte Rechercher les commentaires dans le panneau Commentaires .
 
 Sélectionnez une ou plusieurs des options de filtrage suivantes dans le **Type de filtre** puis cliquez sur **Appliquer**.
 
@@ -238,7 +242,7 @@ Sélectionnez une ou plusieurs des options de filtrage suivantes dans le **Type 
 
 - **Versions** - Filtrez en fonction des commentaires reçus sur une version spécifique du sujet.
 
-   Lorsque vous utilisez les filtres, les commentaires sur le panneau de droite sont filtrés en fonction de la sélection et le nombre de commentaires dans le panneau de gauche est mis à jour en conséquence.
+  Lorsque vous utilisez les filtres, les commentaires sur le panneau de droite sont filtrés en fonction de la sélection et le nombre de commentaires dans le panneau de gauche est mis à jour en conséquence.
 
 
 Pour supprimer le filtre et afficher tous les commentaires, désélectionnez tous les filtres de la **Type de filtre** puis cliquez sur **Appliquer**.

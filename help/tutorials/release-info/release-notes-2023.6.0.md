@@ -2,7 +2,7 @@
 title: Notes de mise à jour | Instructions de mise à niveau et problèmes résolus dans les guides Adobe Experience Manager, version de juin 2023
 description: Découvrez les correctifs et comment mettre à niveau vers la version de juin 2023 des Guides Adobe Experience Manager as a Cloud Service
 exl-id: ea0ff27a-9c3a-49d7-b94a-d1b9d9e85dcf
-source-git-commit: f6794078e760565f5934faf63a7cbfb919acce90
+source-git-commit: 4359d857f3662ae29a55420c0fafc4a244258389
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 3%
@@ -69,7 +69,7 @@ Effectuez les étapes suivantes pour le post-traitement du contenu existant et l
 
      | PID | Clé de propriété | Valeur de la propriété |
      |---|---|---|
-     | org.apache.jackrabbit.oak.query.QueryEngineSettingsService | queryLimitReads | Valeur : 200000 Default Value : 100000 |
+     | org.apache.jackrabbit.oak.query.QueryEngineSettingsService | queryLimitReads | Valeur : 200000 Valeur par défaut : 100000 |
 
 1. Exécutez une requête de POST sur le serveur (avec l’authentification correcte) - `http://<server:port>//bin/guides/reports/upgrade`.
 
@@ -86,7 +86,7 @@ Effectuez les étapes suivantes pour le post-traitement du contenu existant et l
 
 Effectuez les étapes suivantes pour indexer le contenu existant et utilisez le nouveau texte de recherche et de remplacement au niveau de la carte et de la liste des rubriques sous l’onglet rapports :
 
-1. Exécutez une requête de POST sur le serveur \(avec l’authentification correcte\) - `http://<server:port\>/bin/guides/map-find/indexing`. (Facultatif) Vous pouvez transmettre des chemins spécifiques des cartes pour les indexer. Par défaut, toutes les cartes seront indexées \|\| Par exemple : `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`)
+1. Exécutez une requête de POST sur le serveur \(avec l’authentification correcte\) - `http://<server:port\>/bin/guides/map-find/indexing`. (Facultatif : vous pouvez transmettre des chemins spécifiques des cartes pour les indexer. Par défaut, toutes les cartes seront indexées \|\| Par exemple : `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`)
 
 1. Vous pouvez également transmettre un dossier racine pour indexer les mappages DITA d’un dossier spécifique (et de ses sous-dossiers). Par exemple, `http://<server:port\>/bin/guides/map-find/indexing?root=/content/dam/test`. Notez que si les paramètres paths et root sont transmis, seul le paramètre paths est pris en compte.
 
@@ -121,7 +121,7 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 
 ### Création
 
-- Navtitle est supprimé du contenu33 lors du passage de la vue de mise en page à la vue de l’auteur ou de la source. (12174)
+- Navtitle est supprimé du contenu33 lors du passage de la vue de mise en page à la vue de création ou source. (12174)
 - Parfois, une erreur d’application se produit lorsque vous cliquez sur un mappage DITA. (11842)
 - Éditeur web | Un espace insécable est ajouté dans l’éditeur XML lors de la modification d’une rubrique. (11786)
 - Interface utilisateur des ressources | En mode Liste, les colonnes disponibles superposées ne sont pas fusionnables. (11528)
@@ -152,7 +152,7 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 - PDF natif | Impossible d’enregistrer les paramètres du modèle de PDF. (10751)
 - PDF natif | Le texte s’étend au-delà de la largeur de colonne sur l’inclusion de plusieurs xrefs. (10876)
 - PDF natif | `<note>``</note>` ne génère pas de titre d’étendue supplémentaire de son type. (10549)
-- PDF natif | Les métadonnées de langue ne peuvent pas être définies dans le PDF généré pour être conformes à WCAG 2.0. (12407)
+- PDF natif | Les métadonnées de langue ne peuvent pas être définies dans le PDF généré pour être conformes à WCAG 2.0. (12296)
 
 
 

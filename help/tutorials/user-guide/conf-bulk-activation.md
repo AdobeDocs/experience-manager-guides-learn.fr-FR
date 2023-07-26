@@ -1,13 +1,13 @@
 ---
 title: Activation en masse de contenu publié
 description: Découvrez comment activer en bloc du contenu publié
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 66c454bb-f09e-442f-b863-60ee249a0e08
+source-git-commit: c4f383984501525527136773ce7ef556170e8ad3
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
-
 
 # Activation en masse de contenu publié {#id214GG080LE8}
 
@@ -21,9 +21,10 @@ Grâce à la fonctionnalité d’activation en bloc des Guides d’AEM, vous pou
 
 - Ajouter une ou plusieurs mappages \(à une collection de mappages\) à une seule tâche d’activation
 
-- Sélectionnez l’un des paramètres prédéfinis de sortie que vous souhaitez publier.
+- Sélectionnez un ou plusieurs paramètres prédéfinis de sortie que vous souhaitez publier. Vous pouvez ajouter AEM paramètres prédéfinis de sortie Site, PDF, PDF natif, HTML5, Personnalisé et JSON.
 
-- Définissez les paramètres régionaux dans lesquels la sortie doit être activée.
+
+- Définir les paramètres régionaux dans lesquels la sortie doit être activée
 
 - Accédez aux journaux d’audit pour vérifier si votre tâche d’activation s’est terminée avec succès ou si des problèmes sont survenus.
 
@@ -38,4 +39,3 @@ Grâce à la fonctionnalité d’activation en bloc des Guides d’AEM, vous pou
 
 
 **Rubrique parente :**[ Génération de sortie](generate-output.md)
-

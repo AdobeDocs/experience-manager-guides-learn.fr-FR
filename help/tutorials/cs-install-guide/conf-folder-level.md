@@ -1,7 +1,7 @@
 ---
 title: Configuration de profils globaux ou au niveau du dossier
 description: Découvrez comment configurer des profils globaux ou de niveau dossier
-source-git-commit: 6051181e243cf71919901093c1b5590f21832545
+source-git-commit: 6f4ab3baf0c0dd333035c3a7d131bd151b17de45
 workflow-type: tm+mt
 source-wordcount: '3962'
 ht-degree: 0%
@@ -19,13 +19,13 @@ Vous pouvez également déléguer les configurations spécifiques aux dossiers �
 
 À l’aide de la mosaïque Profils de dossier dans les paramètres des guides, vous pouvez configurer les paramètres sous les onglets suivants :
 
-![](assets/folder-profile-tabs.png)
+![](assets/folder-profile-tabs.png){width="800" align="left"}
 
-- **Général**: L’onglet général n’est disponible que lorsque vous configurez les paramètres au niveau du dossier \(ou projet/produit\). Vous pouvez configurer des paramètres tels que les chemins d’accès aux dossiers auxquels les paramètres s’appliqueront et les utilisateurs qui auront les droits d’administration pour créer ou mettre à jour des configurations.
+- **Général**: l’onglet général n’est disponible que lorsque vous configurez les paramètres au niveau du dossier \(ou projet/produit\). Vous pouvez configurer des paramètres tels que les chemins d’accès aux dossiers auxquels les paramètres s’appliqueront et les utilisateurs qui auront les droits d’administration pour créer ou mettre à jour des configurations.
 
-- **Attributs conditionnels**: Utilisez cet onglet pour configurer les attributs conditionnels au niveau global ou au niveau du dossier. Un attribut conditionnel est une combinaison du nom et de la valeur de l’attribut, et vous pouvez également définir un libellé pour celui-ci. Vous pouvez utiliser les attributs DITA standard ou vos propres attributs personnalisés. Les attributs conditionnels que vous définissez au niveau global sont mis à la disposition de tous les utilisateurs dans l’ensemble des projets. Si vous avez défini des attributs conditionnels au niveau du dossier, ils sont fusionnés avec les attributs conditionnels définis globalement.
+- **Attributs conditionnels**: utilisez cet onglet pour configurer les attributs conditionnels au niveau global ou au niveau du dossier. Un attribut conditionnel est une combinaison du nom et de la valeur de l’attribut, et vous pouvez également définir un libellé pour celui-ci. Vous pouvez utiliser les attributs DITA standard ou vos propres attributs personnalisés. Les attributs conditionnels que vous définissez au niveau global sont mis à la disposition de tous les utilisateurs dans l’ensemble des projets. Si vous avez défini des attributs conditionnels au niveau du dossier, ils sont fusionnés avec les attributs conditionnels définis globalement.
 
-- **Modèle de création**: Utilisez cet onglet pour configurer les modèles que vos auteurs utiliseront pour créer du contenu DITA. Les modèles de rubrique suivants sont disponibles prêts à l’emploi :
+- **Modèle de création**: utilisez cet onglet pour configurer les modèles que vos auteurs utiliseront pour créer du contenu DITA. Les modèles de rubrique suivants sont disponibles prêts à l’emploi :
 
    - Glossaire
 
@@ -53,7 +53,7 @@ Vous pouvez également déléguer les configurations spécifiques aux dossiers �
 
    - Bookmap
 
-- **Paramètre prédéfini de sortie**: Comme pour les modèles de création, il existe cinq paramètres prédéfinis de sortie préconfigurés :
+- **Paramètre prédéfini de sortie**: à l’instar des modèles de création, il existe cinq paramètres prédéfinis de sortie préconfigurés :
 
    - AEM site
 
@@ -65,9 +65,9 @@ Vous pouvez également déléguer les configurations spécifiques aux dossiers �
 
    - Personnalisé
 
-  Les éditeurs peuvent utiliser ces paramètres prédéfinis de sortie prêts à l’emploi pour publier du contenu. Ces paramètres prédéfinis peuvent être configurés par un administrateur du profil global ou au niveau du dossier. Une fois configurés, les paramètres prédéfinis de publication sont disponibles pour les éditeurs pour les mappages DITA nouvellement créés. Vous pouvez également appliquer des paramètres de publication prédéfinis aux mappages DITA existants, voir [Appliquer les modifications prédéfinies](#id18AGD0K0OHS) pour plus d’informations.
+  Les éditeurs peuvent utiliser ces paramètres prédéfinis de sortie prêts à l’emploi pour publier du contenu. Ces paramètres prédéfinis peuvent être configurés par un administrateur du profil global ou au niveau du dossier. Une fois configurés, les paramètres prédéfinis de publication sont disponibles pour les éditeurs pour les mappages DITA nouvellement créés. Vous pouvez également appliquer des paramètres prédéfinis de publication aux mappages DITA existants, voir [Appliquer les modifications prédéfinies](#id18AGD0K0OHS) pour plus d’informations.
 
-- **Configurations de l’éditeur XML**: Utilisez cet onglet pour personnaliser l’aspect et les différentes fonctionnalités de l’éditeur web. Les paramètres configurables suivants sont disponibles pour l’éditeur web :
+- **Configurations de l’éditeur XML**: utilisez cet onglet pour personnaliser l’aspect et les différentes fonctionnalités de l’éditeur web. Les paramètres configurables suivants sont disponibles pour l’éditeur web :
 
    - Configuration de l’interface utilisateur de l’éditeur XML
    - Disposition du modèle CSS
@@ -93,7 +93,7 @@ Effectuez les étapes suivantes pour configurer le profil global :
 
    Pour la première fois, la page Profils de dossier s’affiche avec uniquement la mosaïque Profil global .
 
-   ![](assets/folder-profile-global.png)
+   ![](assets/folder-profile-global.png){width="800" align="left"}
 
 1. Cliquez sur le bouton **Profil global** mosaïque.
 
@@ -108,7 +108,7 @@ Effectuez les étapes suivantes pour configurer le profil global :
 1. Après avoir effectué toutes les mises à jour requises, enregistrez et fermez la variable **Profil global**.
 
 
-## Création et configuration d’un profil au niveau du dossier
+## Créer et configurer un profil au niveau du dossier
 
 Effectuez les étapes suivantes pour configurer un profil au niveau du dossier :
 
@@ -122,7 +122,7 @@ Effectuez les étapes suivantes pour configurer un profil au niveau du dossier :
 
 1. Cliquez sur **Créer**.
 
-   ![](assets/create-folder-profile.png)
+   ![](assets/create-folder-profile.png){width="300" align="left"}
 
 1. Saisissez les informations suivantes dans la variable **Créer un profil de dossier** dialog :
    - Nom du profil de dossier.
@@ -146,7 +146,7 @@ Effectuez les étapes suivantes pour configurer un profil au niveau du dossier :
    >
    > Les utilisateurs que vous ajoutez ici auront les droits d’administration pour mettre à jour les attributs conditionnels, le modèle de création et les paramètres prédéfinis de sortie configurés pour ce profil de dossiers.
 
-1. Pour ajouter un dossier, cliquez sur l’icône Parcourir dans Chemin d’accès au dossier, recherchez et sélectionnez un dossier, puis cliquez sur Ajouter pour ajouter le dossier à ce profil.
+1. Pour ajouter un dossier, cliquez sur l’icône Parcourir dans Chemin d’accès au dossier et sélectionnez un dossier, puis cliquez sur Ajouter pour ajouter le dossier à ce profil.
 
    >[!NOTE]
    >
@@ -199,7 +199,7 @@ Effectuez les étapes suivantes pour configurer les attributs conditionnels stan
 
 1. Si vous souhaitez ajouter d’autres valeurs pour le même attribut, cliquez sur le bouton **+** et saisissez la valeur et le libellé supplémentaires.
 
-1. Si vous souhaitez ajouter d’autres attributs, cliquez sur **Ajouter**.
+1. Pour ajouter d’autres attributs, cliquez sur **Ajouter**.
 
 1. Cliquez sur **Enregistrer**.
 
@@ -212,7 +212,7 @@ Si vous utilisez un attribut personnalisé, il doit s’agir d’un attribut DIT
 
    >[!IMPORTANT]
    >
-   > Le fichier DTD spécialisé doit faire partie du déploiement de code personnalisé. Les DTD sous /apps font partie du déploiement du produit et sont donc remplacées par l’installation de toute nouvelle version. Il est recommandé d’ajouter une DTD spécialisée sous /var/dxml/dita\_resources dans le dossier du projet et d’inclure le chemin d’accès DTD/catalogue dans le profil DITA. Pour plus d’informations, voir [Intégration de la spécialisation DITA](dita-ot-specialization.md#id211MB0E00XA).
+   > Le fichier DTD spécialisé doit faire partie du déploiement de code personnalisé. Les DTD sous /apps font partie du déploiement du produit et sont donc remplacées par l’installation de toute nouvelle version. Il est recommandé d’ajouter une DTD spécialisée sous /var/dxml/dita\_resources dans le dossier du projet et d’inclure le chemin DTD/catalogue dans le profil DITA. Pour plus d’informations, voir [Intégration de la spécialisation DITA](dita-ot-specialization.md#id211MB0E00XA).
 
 1. Utilisez le gestionnaire de modules pour télécharger le fichier /libs/fmdita/config/condAttrList.xml :
 
@@ -252,7 +252,7 @@ Effectuez les étapes suivantes pour ajouter la rubrique ou mapper des modèles 
 
    >[!NOTE]
    >
-   > Par défaut, tous les modèles de création sont stockés dans le dossier /content/dam/dita-templates . Le `dita-templates` Le dossier contient `topics` et `maps` sous-dossiers pour stocker la rubrique et mapper des modèles. Vous pouvez ajouter vos modèles personnalisés \(.dita,.xml ou .ditamapfiles\) dans les dossiers de modèles par défaut. Une fois que vous avez ajouté votre modèle dans le dossier par défaut, vous pouvez le faire dans le profil global ou de dossier. Pour plus d’informations sur la création de modèles personnalisés à l’aide de l’éditeur web, voir [Créer un modèle de création personnalisé](#id1917D0EG0HJ).
+   > Par défaut, tous les modèles de création sont stockés dans le dossier /content/dam/dita-templates . La variable `dita-templates` Le dossier contient `topics` et `maps` sous-dossiers pour stocker la rubrique et mapper des modèles. Vous pouvez ajouter vos modèles personnalisés \(.dita,.xml ou .ditamapfiles\) dans les dossiers de modèles par défaut. Une fois que vous avez ajouté votre modèle dans le dossier par défaut, vous pouvez le faire dans le profil global ou de dossier. Pour plus d’informations sur la création de modèles personnalisés à l’aide de l’éditeur web, voir [Créer un modèle de création personnalisé](#id1917D0EG0HJ).
 
    ![](assets/search-author-temp.png)
 
@@ -278,7 +278,7 @@ Effectuez les étapes suivantes pour ajouter la rubrique ou mapper des modèles 
 
 1. Pour définir les règles de traduction, parcourez l’emplacement SRX pour trouver le dossier contenant les fichiers SRX. Le format SRX \(Segmentation Rules eXchange\) est une norme d’échange de règles de segmentation entre différents utilisateurs et différents environnements de traduction. Vous pouvez créer un dossier et y ajouter vos fichiers SRX personnalisés.
 
-   Une fois que vous avez créé le dossier contenant les fichiers SRX, vous pouvez ajouter le chemin du dossier dans le dossier **Emplacement de la SRX de traduction** dans votre profil de dossiers.
+   Une fois que vous avez créé le dossier contenant les fichiers SRX, vous pouvez ajouter le chemin du dossier dans le dossier **Emplacement de traduction SRX** dans votre profil de dossiers.
 
    AEM Guides sélectionne les règles SRX en fonction de la langue source du projet de traduction. Il recherche un fichier SRX personnalisé pour une langue. Si vous ne définissez pas de fichier SRX personnalisé, il sélectionne les règles conformément aux règles de traduction prêtes à l’emploi.
 
@@ -299,7 +299,7 @@ Pour créer un modèle de création personnalisé, procédez comme suit :
 
    >[!NOTE]
    >
-   > Pour configurer un emplacement personnalisé pour stocker des modèles de rubrique ou de mappage, reportez-vous à la section [Configuration du chemin d’accès au dossier de modèle DITA personnalisé](conf-template-tags-custom-dita-topic-template.md#id191LCF0095Z)
+   > Pour configurer un emplacement personnalisé pour stocker des modèles de rubrique ou de mappage, voir [Configuration du chemin d’accès au dossier de modèle DITA personnalisé](conf-template-tags-custom-dita-topic-template.md#id191LCF0095Z)
 
 1. Cliquez sur **Créer** \> **Modèle DITA**.
 
@@ -396,9 +396,9 @@ Si vous avez mis à jour un paramètre prédéfini de sortie existant ou si vous
 
 1. Dans la boîte de dialogue Appliquer les modifications prédéfinies , vous pouvez choisir parmi les options suivantes :
 
-   - **Sélection de l’option Remplacer les paramètres prédéfinis existants**: Si vous sélectionnez cette option, toutes les mises à jour effectuées dans les paramètres prédéfinis de sortie existants remplaceront les paramètres de toutes les cartes DITA existantes dans lesquelles ce paramètre prédéfini est utilisé. Toutefois, cela entraînera la perte de tout paramètre prédéfini conditionnel et des informations de base existants associés à la carte.
+   - **Sélection de l’option Remplacer les paramètres prédéfinis existants**: si vous sélectionnez cette option, toutes les mises à jour effectuées dans les paramètres prédéfinis de sortie existants remplaceront les paramètres de toutes les cartes DITA existantes dans lesquelles ce paramètre prédéfini est utilisé. Toutefois, cela entraînera la perte de tout paramètre prédéfini conditionnel et des informations de base existants associés à la carte.
 
-   - **Pas de sélection de l’option Remplacer les paramètres prédéfinis existants**: Si vous ne sélectionnez pas cette option, les mises à jour que vous avez effectuées dans les paramètres prédéfinis de sortie existants n’auront aucune incidence sur les mappages DITA existants. Seuls les nouveaux paramètres prédéfinis ajoutés sont ajoutés aux mappages DITA existants. Notez que le nouveau mappage DITA est récupéré : les paramètres prédéfinis de sortie mis à jour et les paramètres prédéfinis nouvellement ajoutés.
+   - **Pas de sélection de l’option Remplacer les paramètres prédéfinis existants**: si vous ne sélectionnez pas cette option, les mises à jour que vous avez effectuées dans les paramètres prédéfinis de sortie existants n’auront aucune incidence sur les mappages DITA existants. Seuls les nouveaux paramètres prédéfinis ajoutés sont ajoutés aux mappages DITA existants. Notez que le nouveau mappage DITA est obtenu à la fois : les paramètres prédéfinis de sortie mis à jour et les paramètres prédéfinis nouvellement ajoutés.
 
 1. Cliquez sur **OK** pour appliquer les modifications des paramètres prédéfinis de sortie sélectionnés sur tous les mappages DITA existants.
 
@@ -437,13 +437,13 @@ Enregistrez ce fichier et téléchargez-le dans la section Mise en page du modè
 
 Les détails suivants sont requis pour créer un fragment de code :
 
-fragmentID : Identifiant unique du fragment de code. Il peut s’agir d’une valeur alphanumérique.
+snippetID : identifiant unique du fragment de code. Il peut s’agir d’une valeur alphanumérique.
 
-name : Nom explicite permettant d’identifier le fragment de code. Ce nom apparaît dans le panneau Fragments de code.
+name : nom descriptif pour identifier le fragment de code. Ce nom apparaît dans le panneau Fragments de code.
 
-description : Ajoutez une information descriptive pour le fragment de code.
+description : ajoutez une information descriptive pour le fragment de code.
 
-value : Fournissez le code XML du fragment de code.
+value : saisissez le code XML du fragment de code.
 
 >[!NOTE]
 >
@@ -451,7 +451,7 @@ value : Fournissez le code XML du fragment de code.
 
 **Étiquettes de version de contenu XML**
 
-Par défaut, les auteurs sont autorisés à créer des libellés de leur choix et à les associer à leurs fichiers de rubrique. Cependant, cela peut entraîner de nombreuses variantes d’une même étiquette, par exemple, il peut y avoir des étiquettes &quot;Version 1.0&quot;, &quot;Version 1.0&quot;, &quot;Version 1&quot; pour identifier la même étape d’une rubrique. Pour éviter des libellés aussi incohérents dans le système, vous pouvez créer une liste prédéfinie d’libellés dans laquelle les auteurs pourront effectuer leur choix. L’utilisation d’étiquettes homogènes contribue à une meilleure gestion des fichiers dans votre système.
+Par défaut, les auteurs sont autorisés à créer des libellés de leur choix et à les associer à leurs fichiers de rubrique. Cependant, cela peut entraîner de nombreuses variantes d’une même étiquette, par exemple, il peut y avoir des étiquettes &quot;Version 1.0&quot;, &quot;Version 1.0&quot;, &quot;Version 1&quot; pour identifier la même étape d’une rubrique. Pour éviter des libellés aussi incohérents dans le système, vous pouvez créer une liste prédéfinie d’libellés dans laquelle les auteurs pourront effectuer leur choix. L’utilisation d’étiquettes cohérentes facilite la gestion des fichiers dans votre système.
 
 À l’aide de la configuration des étiquettes de version, vous pouvez charger une liste d’étiquettes valides pour votre organisation. Téléchargez le fichier label.json par défaut et modifiez-le comme illustré ci-dessous :
 

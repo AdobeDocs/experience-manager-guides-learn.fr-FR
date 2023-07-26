@@ -1,13 +1,13 @@
 ---
 title: Autres fonctionnalités de l’éditeur web
 description: Découvrez d’autres fonctionnalités de l’éditeur web
-source-git-commit: cc0fbca257d82cc82db5b5da8d263309fd71de55
+exl-id: dea19372-8a15-4b5d-aea4-47dc914d779e
+source-git-commit: dd744a8e5b7d60a0e5b4d0ad8f9201950e3ae1ce
 workflow-type: tm+mt
 source-wordcount: '2131'
 ht-degree: 0%
 
 ---
-
 
 # Autres fonctionnalités de l’éditeur web {#id2056B0B0YPF}
 
@@ -37,37 +37,37 @@ Lorsque plusieurs fichiers sont ouverts, vous obtenez d’autres options dans le
 
 Les différentes options du menu contextuel sont expliquées ci-dessous :
 
-***Enregistrer***: Vous pouvez choisir parmi les options suivantes :
+***Enregistrer***: vous pouvez choisir parmi les options suivantes :
 
-- **Enregistrer**: Pour enregistrer un fichier sans créer de version, sélectionnez **Enregistrer**. Chaque fois que vous créez une rubrique, une copie de travail sans version de la rubrique est créée dans la gestion des ressources numériques. L’enregistrement de votre document met à jour la copie de travail de votre document dans DAM. L’enregistrement simple de cette version ne crée pas de nouvelle version d’une rubrique. Si votre rubrique est en cours de révision, l’enregistrement d’une rubrique ne permet pas aux réviseurs d’accéder au contenu modifié de la rubrique.
+- **Enregistrer**: pour enregistrer un fichier sans créer de version, sélectionnez **Enregistrer**. Chaque fois que vous créez une rubrique, une copie de travail sans version de la rubrique est créée dans la gestion des ressources numériques. L’enregistrement de votre document met à jour la copie de travail de votre document dans DAM. L’enregistrement simple de cette version ne crée pas de nouvelle version d’une rubrique. Si votre rubrique est en cours de révision, l’enregistrement d’une rubrique ne permet pas aux réviseurs d’accéder au contenu modifié de la rubrique.
 
-- **Enregistrer tout**: Si plusieurs documents sont ouverts dans l’éditeur Web, vous avez également la possibilité de **Enregistrer tout** des documents ouverts.
+- **Enregistrer tout**: si plusieurs documents sont ouverts dans l’éditeur Web, vous avez également la possibilité de **Enregistrer tout** ont ouvert des documents.
 
 
 ***Enregistrer comme nouvelle version***
 
 Pour créer une version du fichier, sélectionnez **Enregistrer comme nouvelle version**. Pour plus d’informations sur **Enregistrer** et **Enregistrer comme nouvelle version**, voir [Présentation des fonctionnalités de l’éditeur web](web-editor-features.md#).
 
-***Copier***: Vous pouvez choisir parmi les options suivantes :
+***Copier***: vous pouvez choisir parmi les options suivantes :
 
-- **Copier UUID**: Pour copier l’UUID du fichier actuellement principal dans le Presse-papiers, sélectionnez **Copier \> Copier UUID**.
-- **Copier le chemin**: Pour copier le chemin d’accès complet du fichier actuellement principal dans le Presse-papiers, sélectionnez **Copier \> Copier le chemin**.
-
-
-***Localisez la page***: Vous pouvez choisir parmi les options suivantes :
-
-- **Carte**: Si vous avez ouvert un grand mappage DITA et que vous souhaitez trouver l’emplacement exact d’un fichier dans le mappage, sélectionnez **Localisation Dans La Carte \>**. Lorsque vous sélectionnez l’option Localiser dans la carte , le fichier \(à partir duquel l’option est appelée\) est situé et mis en surbrillance dans la hiérarchie de la carte. Pour pouvoir utiliser cette fonctionnalité, vous devez ouvrir le fichier map dans l’éditeur web. Si la vue Carte est masquée, l’appel de cette fonction affiche la vue Carte et le fichier est mis en surbrillance dans la hiérarchie de la carte.
-
-- **Référentiel**: Similaire à l’emplacement dans Map, la variable **Localisation Dans Le Référentiel \>** affiche l’emplacement du fichier dans le référentiel \(ou DAM\). La vue Repository est ouverte et le fichier sélectionné est mis en surbrillance dans le référentiel. Si le fichier se trouve dans un dossier, ce dossier est développé afin d’afficher l’emplacement du fichier sélectionné dans le référentiel.
+- **Copier UUID**: pour copier l’UUID du fichier actuellement principal dans le Presse-papiers, sélectionnez **Copier \> Copier UUID**.
+- **Copier le chemin**: pour copier le chemin d’accès complet au fichier actuellement principal dans le Presse-papiers, sélectionnez **Copier \> Copier le chemin**.
 
 
-***Ajouter à***: Vous pouvez choisir parmi les options suivantes :
+***Localisez la page***: vous pouvez choisir parmi les options suivantes :
 
-- **Favoris**: Pour ajouter le fichier sélectionné à la collection préférée, sélectionnez **Ajouter À \> Favoris**. Pour plus d’informations, voir **Favoris** description des fonctionnalités dans la [Panneau gauche](web-editor-features.md#id2051EA0M0HS) .
+- **Carte**: si vous avez ouvert un grand mappage DITA et que vous souhaitez trouver l’emplacement exact d’un fichier dans le mappage, sélectionnez **Localisation Dans La Carte \>**. Lorsque vous sélectionnez l’option Localiser dans la carte , le fichier \(à partir duquel l’option est appelée\) est situé et mis en surbrillance dans la hiérarchie de la carte. Pour pouvoir utiliser cette fonctionnalité, vous devez ouvrir le fichier map dans l’éditeur web. Si la vue Carte est masquée, l’appel de cette fonction affiche la vue Carte et le fichier est mis en surbrillance dans la hiérarchie de la carte.
+
+- **Référentiel**: similaire à l’emplacement dans Map, la variable **Localisation Dans Le Référentiel \>** affiche l’emplacement du fichier dans le référentiel \(ou DAM\). La vue Repository est ouverte et le fichier sélectionné est mis en surbrillance dans le référentiel. Si le fichier se trouve dans un dossier, ce dossier est développé afin d’afficher l’emplacement du fichier sélectionné dans le référentiel.
+
+
+***Ajouter à***: vous pouvez choisir parmi les options suivantes :
+
+- **Favoris**: pour ajouter le fichier sélectionné à la collection préférée, sélectionnez **Ajouter À \> Favoris**. Pour plus d’informations, voir **Favoris** description des fonctionnalités dans la section [Panneau gauche](web-editor-features.md#id2051EA0M0HS) .
 
 
 
-- **Contenu réutilisable**: Pour copier le fichier sélectionné dans la liste de contenu réutilisable, sélectionnez **Ajouter À \> Contenu Réutilisable**. Pour plus d’informations, voir **Contenu réutilisable** description des fonctionnalités dans la [Panneau gauche](web-editor-features.md#id2051EA0M0HS) .
+- **Contenu réutilisable**: pour copier le fichier sélectionné dans la liste des contenus réutilisables, sélectionnez **Ajouter À \> Contenu Réutilisable**. Pour plus d’informations, voir **Contenu réutilisable** description des fonctionnalités dans la section [Panneau gauche](web-editor-features.md#id2051EA0M0HS) .
 
 
 
@@ -76,11 +76,11 @@ Pour créer une version du fichier, sélectionnez **Enregistrer comme nouvelle v
 
 Pour afficher la page des propriétés AEM du fichier sélectionné, sélectionnez **Propriétés**.
 
-***Partage***: Vous pouvez choisir parmi les options suivantes :
+***Partage***: vous pouvez choisir parmi les options suivantes :
 
 **Monter, Bas, Gauche ou Droite**
 
-Par défaut, l’éditeur web vous permet d’afficher une rubrique à la fois. Il peut y avoir des cas où vous souhaitez voir deux rubriques ou plus en même temps. Le fractionnement de l’écran de l’éditeur vous permet d’afficher plusieurs rubriques en même temps. Par exemple, si vous avez deux rubriques - A et B ouvertes dans l’éditeur. Clic droit sur la rubrique B et choix **Partage \> vers le haut** divise la fenêtre de l’éditeur en deux parties. La rubrique B s’affiche dans la moitié supérieure et la rubrique A dans la moitié inférieure. De même, vous pouvez également fractionner l’écran horizontalement en sélectionnant **Partage \> Gauche** ou **Partage \> Droite**. La capture d’écran suivante de l’éditeur web affiche les rubriques divisées horizontalement et verticalement. Dans chaque partage, vous pouvez avoir une vue différente. Par exemple, dans la capture d’écran suivante, l’écran 1 est en mode Source, l’écran 2 comporte deux documents ouverts en mode Création et l’écran 3 en mode Aperçu. Vous pouvez déplacer vos documents d’un écran à l’autre en faisant glisser l’onglet Fichier vers l’écran où vous souhaitez les placer. De même, vous pouvez réorganiser les onglets des fichiers en les faisant glisser et en les déplaçant selon vos préférences.
+Par défaut, l’éditeur web vous permet d’afficher une rubrique à la fois. Il peut y avoir des cas où vous souhaitez voir deux rubriques ou plus en même temps. Le fractionnement de l’écran de l’éditeur vous permet d’afficher plusieurs rubriques en même temps. Par exemple, si vous avez deux rubriques - A et B ouvertes dans l’éditeur. Clic droit sur la rubrique B et choix **Fractionner \> vers le haut** divise la fenêtre de l’éditeur en deux parties. La rubrique B s’affiche dans la moitié supérieure et la rubrique A dans la moitié inférieure. De même, vous pouvez également fractionner l’écran horizontalement en sélectionnant **Partage \> Gauche** ou **Partage \> Droite**. La capture d’écran suivante de l’éditeur web affiche les rubriques divisées horizontalement et verticalement. Dans chaque partage, vous pouvez avoir une vue différente. Par exemple, dans la capture d’écran suivante, l’écran 1 est en mode Source, l’écran 2 comporte deux documents ouverts en mode Auteur et l’écran 3 en mode Aperçu. Vous pouvez déplacer vos documents d’un écran à l’autre en faisant glisser l’onglet Fichier et en le déposant à l’écran où vous souhaitez les placer. De même, vous pouvez réorganiser les onglets des fichiers en les faisant glisser et en les déplaçant selon vos préférences.
 
 ![](images/split-editor.png){width="800" align="left"}
 
@@ -88,11 +88,11 @@ Par défaut, l’éditeur web vous permet d’afficher une rubrique à la fois. 
 
 Générez la sortie du fichier sélectionné. La sortie ne peut être générée que pour les fichiers faisant partie d’un paramètre prédéfini de sortie. Pour plus d’informations, voir [Publication basée sur des articles à partir de l’éditeur web](web-editor-article-publishing.md#id218CK0U019I).
 
-***Fermer***: Vous pouvez choisir parmi les options suivantes :
+***Fermer***: vous pouvez choisir parmi les options suivantes :
 
-**Fermer**, **Fermer les autres** ou **Tout fermer**
+**Fermer**, **Fermer les autres**, ou **Tout fermer**
 
-Si vous souhaitez fermer le fichier à partir duquel vous avez appelé le menu contextuel, sélectionnez **Fermer \> Fermer**. Utilisation **Fermer > Fermer les autres** pour fermer tous les autres fichiers ouverts, à l’exception du fichier actuellement principal. Pour fermer tous les fichiers ouverts, sélectionnez l’option **Fermer tout > Fermer tout** dans le menu contextuel ou vous pouvez également choisir de fermer l’éditeur Web. Si votre session contient des fichiers non enregistrés, vous êtes invité à les enregistrer.
+Si vous souhaitez fermer le fichier à partir duquel vous avez appelé le menu contextuel, sélectionnez **Fermer \> Fermer**. Utilisation **Fermer \> Fermer les autres** pour fermer tous les autres fichiers ouverts, à l’exception du fichier actuellement principal. Pour fermer tous les fichiers ouverts, sélectionnez l’option **Fermer > Tout fermer** dans le menu contextuel ou vous pouvez également choisir de fermer l’éditeur Web. Si votre session contient des fichiers non enregistrés, vous êtes invité à les enregistrer.
 
 **Fermeture du fichier et enregistrement des scénarios**
 
@@ -101,7 +101,7 @@ Lorsque vous essayez de fermer un fichier ouvert dans l’éditeur Web à l’ai
 Les invites sont basées sur les configurations suivantes sélectionnées par votre administrateur :
 
 - **Demandez l’archivage à la fermeture :** Vous avez la possibilité d’archiver le fichier \(que vous avez extrait\) lorsque vous fermez l’éditeur.
-- **Demander la nouvelle version à fermeture**: Vous avez la possibilité d’enregistrer le fichier \(que vous avez modifié\) en tant que nouvelle version lorsque vous fermez l’éditeur.
+- **Demander la nouvelle version à fermeture**: vous avez la possibilité d’enregistrer le fichier \(que vous avez modifié\) en tant que nouvelle version lorsque vous fermez l’éditeur.
 
 Votre expérience d’enregistrement de fichier dépendra des trois scénarios suivants, selon lesquels vous aurez :
 
@@ -111,21 +111,21 @@ Votre expérience d’enregistrement de fichier dépendra des trois scénarios s
 
 Les options suivantes peuvent s’afficher selon que le fichier est verrouillé/déverrouillé et que des modifications ont été enregistrées ou non :
 
-- **Déverrouiller et fermer**: Le verrouillage sur le fichier est libéré et le fichier est fermé.
+- **Déverrouiller et fermer**: le verrouillage du fichier est libéré et le fichier est fermé.
 
-   ![](images/file-close-unlock-file.png){width="400" align="left"}
+  ![](images/file-close-unlock-file.png){width="400" align="left"}
 
-- **Enregistrer comme nouvelle version**: Les modifications que vous avez apportées à votre contenu seront alors enregistrées et vous créerez une nouvelle version de votre fichier. Vous pouvez également ajouter des libellés et des commentaires pour la nouvelle version enregistrée. Pour plus d’informations sur l’enregistrement d’une nouvelle version, voir [Enregistrer comme nouvelle version](web-editor-features.md#save-as-new-version-id209ME400GXA).
+- **Enregistrer comme nouvelle version**: les modifications que vous avez apportées à votre contenu seront alors enregistrées et vous créerez une nouvelle version de votre fichier. Vous pouvez également ajouter des libellés et des commentaires pour la nouvelle version enregistrée. Pour plus d’informations sur l’enregistrement d’une nouvelle version, voir [Enregistrer comme nouvelle version](web-editor-features.md#save-as-new-version-id209ME400GXA).
 
-- **Déverrouiller le fichier**: Si vous choisissez de déverrouiller un fichier, le verrouillage sera libéré sur votre fichier et les modifications seront enregistrées dans la version actuelle du fichier.
+- **Déverrouiller le fichier**: si vous choisissez de déverrouiller un fichier, le verrouillage sera libéré sur votre fichier et les modifications seront enregistrées dans la version actuelle du fichier.
 
->[!NOTE]
->
-> Si vous désélectionnez l’option de déverrouillage du fichier, vous avez également la possibilité de fermer le fichier sans enregistrer les modifications.
+  >[!NOTE]
+  >
+  > Si vous désélectionnez l’option de déverrouillage du fichier, vous avez également la possibilité de fermer le fichier sans enregistrer les modifications.
 
-Par exemple, l’une des invites s’affiche dans la capture d’écran suivante :
+  Par exemple, l’une des invites s’affiche dans la capture d’écran suivante :
 
-![](images/file-close-save-changes-unlock.png){width="400" align="left"}
+  ![](images/file-close-save-changes-unlock.png){width="400" align="left"}
 
 **Indications visuelles pour les références rompues**
 
@@ -155,7 +155,7 @@ Par exemple, l’une des invites s’affiche dans la capture d’écran suivante
 
 - L’éditeur web prend en charge les termes du glossaire DITA que vous pouvez insérer en ajoutant `term` ou `abbreviated-form` éléments .
 
-**Insertion d’équations MathML**
+**Insérer des équations MathML**
 
 - AEM Guides offre une prise en charge prête à l’emploi de l’insertion d’équations MathML par intégration à [Web MathType](https://docs.wiris.com/en/mathtype/mathtype_web/intro) application. Pour insérer une équation MathML, cliquez sur le bouton **Insérer un élément** et saisissez mathml. Lorsque vous sélectionnez un élément mathml dans la liste, la boîte de dialogue Insérer MathML s’affiche :
 
@@ -212,4 +212,3 @@ Pour générer automatiquement l’identifiant d’un ou de plusieurs éléments
 
 
 **Rubrique parente :**[ Utilisation de l’éditeur web](web-editor.md)
-

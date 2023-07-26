@@ -1,13 +1,13 @@
 ---
 title: Notes de mise à jour | Adobe Experience Manager Guides as a Cloud Service, version de mars 2023
 description: Version de mars des guides Adobe Experience Manager as a Cloud Service
-source-git-commit: 99ca14a816630f5f0ec1dc72ba77994ffa71dff6
+exl-id: c62a65fb-b52d-455d-b42c-f0b19b4d5f63
+source-git-commit: f419281cdecb570f9e5c7ce5cd4c831cae349e11
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 1%
+source-wordcount: '545'
+ht-degree: 2%
 
 ---
-
 
 # Version de mars 2023 des Guides Adobe Experience Manager as a Cloud Service
 
@@ -27,11 +27,10 @@ Mettez à niveau votre configuration as a Cloud Service actuelle AEM Guides en p
 Effectuez les étapes suivantes pour indexer le contenu existant et utiliser le nouveau texte de recherche et de remplacement au niveau de la carte :
 
 * Exécutez une requête de POST sur le serveur (avec l’authentification correcte) - `http://<server:port>/bin/guides/map-find/indexing`.
-(Facultatif) Vous pouvez transmettre des chemins d’accès spécifiques des cartes pour les indexer ; par défaut, toutes les cartes seront indexées. || Exemple : `https://<Server:port>/bin/guides/map-find/indexing?paths=<map_path_in_repository>`)
+(Facultatif : vous pouvez transmettre des chemins spécifiques des cartes pour les indexer ; par défaut, toutes les cartes seront indexées. || Exemple : `https://<Server:port>/bin/guides/map-find/indexing?paths=<map_path_in_repository>`)
 
 * L’API renvoie un jobId. Pour vérifier l’état de la tâche, vous pouvez envoyer une demande de GET avec l’ID de la tâche au même point de terminaison : `http://<server:port>/bin/guides/map-find/indexing?jobId={jobId}`
-(Par exemple : http://&lt;
-_localhost:8080_>/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42_678)
+(Par exemple : http://&lt;_localhost:8080_>/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42_678)
 
 * Une fois la tâche terminée, la requête de GET ci-dessus répond avec succès et indique si une correspondance a échoué. Les mappages indexés avec succès peuvent être confirmés à partir des journaux du serveur.
 
@@ -44,7 +43,7 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 | AEM Guides as a Cloud | FMPS | FrameMaker |
 | --- | --- | --- |
 | 2023.03.0 | Non compatible | 2022 ou version ultérieure |
-|  |  |  |
+| | | |
 
 
 ### Connecteur Oxygen
@@ -54,4 +53,23 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 | 2023.03.0 | 2.9-uuid-2 | 2.9-uuid-2 | 2.3 | 2.3 |
 |  |  |  |  |
 
+## Problèmes résolus
 
+Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
+
+* Le processus du PDF de téléchargement ne fonctionne pas correctement dans l’éditeur web. (11496)
+* Sortie JSON | Métadonnées de carte dont la valeur de propriété est `"value in spaces and double quotes"` génère une erreur de publication. (11438)
+* L’insertion pour les fichiers multimédia audio et vidéo échoue au format YouTube sous le **Insérer du contenu multimédia** Icône (11320)
+* Une erreur de validation se produit lorsqu’une map est créée à l’aide du modèle qui comporte un élément de titre spécialisé. (11212)
+* PDF natif | La note de bas de page présente dans l’en-tête du tableau pour afficher le texte en gras aligné au centre dans le pied de page correspondant dans la sortie du PDF. (10610)
+>[!NOTE]
+>
+>Pour refléter la modification du PDF natif, supprimez le dossier du PDF situé à l’emplacement /content/dam/dita-templates, puis effectuez la mise à niveau vers le dernier build. (10610)
+
+### Problème connu avec la solution de contournement
+
+Adobe a identifié le problème connu suivant pour AEM Guides version as a Cloud Service de mars 2023.
+
+* Les utilisateurs ne peuvent pas enregistrer ni créer de version d’une ressource dupliquée.
+
+**Solution**: avant d’apporter des modifications à la ressource en double, retraitez-la à partir de l’interface utilisateur d’Assets.

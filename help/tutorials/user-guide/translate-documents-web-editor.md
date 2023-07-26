@@ -2,9 +2,9 @@
 title: Traduire des documents à partir de l’éditeur Web
 description: Découvrez comment traduire des documents à partir de l’éditeur web
 exl-id: 02fc2b51-5b9a-4ad6-9e2e-726ab7602514
-source-git-commit: 4d37242019ac2db734f7054324b074c0e8bc60bd
+source-git-commit: 7df3024578ad289d9c6e0ab8b93f9fc6b9ff0bfe
 workflow-type: tm+mt
-source-wordcount: '1859'
+source-wordcount: '1864'
 ht-degree: 0%
 
 ---
@@ -50,26 +50,26 @@ Avant d’exécuter les étapes de cette procédure, assurez-vous d’avoir cré
 
 1. Vous pouvez également utiliser les options suivantes :
 
-   **Utiliser la ligne de base :** Vous pouvez sélectionner une ligne de base pour traduire votre projet. Cliquez sur Utiliser la ligne de base et choisissez une ligne de base créée sur la carte. Tous les fichiers qui font partie de la ligne de base sélectionnée sont affichés dans la page Traduction. Une fois votre contenu traduit, vous pouvez exporter la ligne de base traduite. Pour plus d’informations sur l’exportation de la ligne de base traduite, voir [Exporter la ligne de base traduite](generate-output-use-baseline-for-publishing.md#id196SE600GHS).
+   **Utiliser la ligne de base :** Vous pouvez sélectionner une référence pour traduire votre projet. Cliquez sur Utiliser la ligne de base et choisissez une ligne de base créée sur la carte. Tous les fichiers qui font partie de la ligne de base sélectionnée sont affichés dans la page Traduction. Une fois votre contenu traduit, vous pouvez exporter la ligne de base traduite. Pour plus d’informations sur l’exportation de la ligne de base traduite, voir [Exporter la ligne de base traduite](generate-output-use-baseline-for-publishing.md#id196SE600GHS).
 
-   **Utiliser la dernière version telle quelle**: Choisissez de filtrer la version des rubriques en fonction de leur date et heure de création. Lorsque vous sélectionnez une date et une heure, seule la dernière version des fichiers créés avant ou après la date et l’heure sélectionnées s’affiche.
+   **Utiliser la dernière version telle quelle**: choisissez de filtrer la version des rubriques en fonction de leur date et heure de création. Lorsque vous sélectionnez une date et une heure, seule la dernière version des fichiers créés avant ou après la date et l’heure sélectionnées s’affiche.
 
 1. Cliquez sur **Appliquer**. Une liste contenant les détails des rubriques et des ressources associées s’affiche.
 1. Sélectionnez les rubriques que vous souhaitez envoyer pour traduction.
 
    Vous pouvez également utiliser les options de filtrage de rubrique suivantes :
 
-   - **Titre**: Titre du fichier source
-   - **Nom du fichier**: Nom du fichier source
-   - **Type de fichier**: Type du fichier source. Les options disponibles sont Carte, Rubrique et Image.
-   - **Type de référence**: Références directes ou indirectes
-   - **Version**: Numéro de version du fichier source
-   - **Libellé de version**: Libellé de la version sélectionnée du fichier source
-   - **Version cible**: Numéro de version du fichier cible
-   - **État du document**: État du fichier source. Les options disponibles sont Version préliminaire, In-Review et Review.
-   - **Langue cible**: La langue dans laquelle vous souhaitez traduire le fichier source
-   - **État de traduction**: Les options disponibles sont les suivantes : Désynchronisé, Copie manquante, En cours et Synchronisé.
-   - **Libellé de la cible**: Libellé de la version sélectionnée du fichier cible
+   - **Titre**: titre du fichier source
+   - **Nom du fichier**: nom du fichier source
+   - **Type de fichier**: type du fichier source. Les options disponibles sont Carte, Rubrique et Image.
+   - **Type de référence**: références directes ou indirectes
+   - **Version**: numéro de version du fichier source
+   - **Libellé de version**: libellé de la version sélectionnée du fichier source.
+   - **Version cible**: numéro de version du fichier cible
+   - **État du document**: état du fichier source. Les options disponibles sont Version préliminaire, In-Review et Review.
+   - **Langue cible**: la langue dans laquelle vous souhaitez traduire le fichier source
+   - **État de traduction**: les options disponibles sont : Désynchronisé, Copie manquante, En cours et Synchronisé.
+   - **Libellé de la cible**: libellé de la version sélectionnée du fichier cible.
 1. Cliquez sur **Envoyer pour traduction** dans le coin supérieur droit.
 
    ![](images/translation-send.png){width="800" align="left"}
@@ -80,23 +80,22 @@ Avant d’exécuter les étapes de cette procédure, assurez-vous d’avoir cré
 
    Outre un nouveau projet de traduction, vous pouvez également sélectionner l’une des options suivantes :
 
-   - Vous pouvez choisir de **Créer une structure** uniquement pour le projet de traduction.
-   - Vous pouvez choisir de **Création d’un projet de traduction XLIFF** pour convertir le contenu XML au format XLIFF (XML Localization Interchange File Format). XLIFF est un format XML ouvert utilisé pour normaliser le transfert de données entre différents outils utilisés dans le processus de traduction de contenu.
-Dans un projet XLIFF, le contenu est exporté au format XLIFF standard du secteur, qui peut être fourni aux fournisseurs de traduction. Le format XLIFF permet la réutilisation potentielle des segments que vous avez déjà traduits lors de la phase de traduction.\
-      Une fois le contenu XLIFF traduit, il peut être importé dans AEM Guides, créant ainsi une version traduite du projet DITA d’origine.
+   - Vous pouvez choisir de **Création d’une structure** uniquement pour le projet de traduction.
+   - Vous pouvez choisir de **Créer un projet de traduction XLIFF** pour convertir le contenu XML au format XLIFF (XML Localization Interchange File Format). XLIFF est un format XML ouvert utilisé pour normaliser le transfert de données entre différents outils utilisés dans le processus de traduction de contenu. AEM Guides prend en charge XLIFF version 1.2. Dans un projet XLIFF, le contenu est exporté au format XLIFF standard du secteur, qui peut être fourni aux fournisseurs de traduction. Le format XLIFF permet la réutilisation potentielle des segments que vous avez déjà traduits lors de la phase de traduction.\
+     Une fois le contenu XLIFF traduit, il peut être importé dans AEM Guides, créant ainsi une version traduite du projet DITA d’origine.
 
-      >[!NOTE]
-      >
-      > L’exportation XLIFF fonctionne uniquement avec la configuration de traduction humaine.
+     >[!NOTE]
+     >
+     > L’exportation XLIFF fonctionne uniquement avec la configuration de traduction humaine.
 
    - Vous pouvez sélectionner **Créer un projet de traduction multilingue** qui inclut les tâches de traduction pour toutes les langues que vous avez sélectionnées pour la traduction. Par exemple, si vous avez sélectionné le français, l’allemand et l’espagnol, un projet contenant des tâches de traduction pour les trois langues sera créé.
    - Si vous disposez déjà d’un projet de traduction, vous pouvez ajouter des rubriques à ce projet. Sélectionnez Ajouter à **Projet de traduction existant** dans la liste Projet , puis choisissez un projet dans la liste Projet de traduction existant . Vous pouvez trier ces projets par ordre croissant ou décroissant le plus récent.
 
-      >[!NOTE]
-      >
-      > Si votre projet existant est un projet de définition de la portée, &quot;\(Portée\)&quot; est ajouté dans son nom.
+     >[!NOTE]
+     >
+     > Si votre projet existant est un projet de définition de la portée, &quot;\(Portée\)&quot; est ajouté dans son nom.
 
-   - Si vous devez créer la portée d’un projet à traduire, vous pouvez sélectionner **Création d’un projet de traduction de définition de la portée**. Cela n’enverra pas les copies à traduire et l’état de traduction d’origine des fichiers est conservé. Il n’y a aucun impact sur la copie de langue de destination des rubriques référencées qui sont envoyées pour la définition de la portée.
+   - Si vous devez créer la portée d’un projet à traduire, vous pouvez sélectionner **Création d’un projet de traduction d’étendue**. Cela n’enverra pas les copies à traduire et l’état de traduction d’origine des fichiers est conservé. Il n’y a aucun impact sur la copie de langue de destination des rubriques référencées qui sont envoyées pour la définition de la portée.
 1. Dans le champ **Titre du projet**, saisissez un titre pour le projet.
 1. Cliquez sur **Créer** pour créer un projet de traduction.
 
@@ -149,13 +148,13 @@ AEM Guides permet de vérifier les différences entre la version sélectionnée 
 
 ![](images/translation-version-diff.png){width="800" align="left"}
 
-Sélectionnez la **Afficher la différence** icon \(![](images/show-difference-icon.svg)\) pour une rubrique afin d’afficher les différences entre la dernière version traduite et la version actuelle du fichier sélectionné.
+Sélectionnez la variable **Afficher la différence** icon \(![](images/show-difference-icon.svg)\) pour une rubrique afin d’afficher les différences entre la dernière version traduite et la version actuelle du fichier sélectionné.
 
 >[!NOTE]
 >
-> **Afficher la différence** icon \(![](images/show-difference-icon.svg)\) s’affiche uniquement pour les fichiers DITA dont l’état de traduction est **Désynchronisé**.
+> **Afficher la différence** icon \(![](images/show-difference-icon.svg)\) apparaît uniquement pour les fichiers DITA dont l’état de traduction est **Désynchronisé**.
 
-Le **Différence entre les versions** s’affiche. Elle affiche la variable **Dernière version traduite** et le **Version sélectionnée** numéro à gauche. La fenêtre d’aperçu affiche les différences entre la dernière version traduite et la version sélectionnée de la rubrique.
+La variable **Différence entre les versions** s’affiche. Elle affiche la variable **Dernière version traduite** et la variable **Version sélectionnée** numéro à gauche. La fenêtre d’aperçu affiche les différences entre la dernière version traduite et la version sélectionnée de la rubrique.
 
 ![](images/version-diff.png){width="650" align="left"}
 
@@ -166,7 +165,7 @@ Si vous apportez des modifications à certaines ressources, celles-ci deviennent
 Pour ignorer l’état de désynchronisation, procédez comme suit :
 
 1. Sélectionnez les ressources désynchronisées pour lesquelles vous souhaitez modifier l’état.
-1. Sélectionnez la **Marquer comme synchronisé** bouton \(![](images/translation-mark-in-sync-icon.svg)\) en haut. Le **Marquer comme synchronisé** s’affiche.
+1. Sélectionnez la variable **Marquer comme synchronisé** bouton \(![](images/translation-mark-in-sync-icon.svg)\) en haut. La variable **Marquer comme synchronisé** s’affiche.
 
    ![](images/translation-mark-in-sync.png){width="550" align="left"}
 

@@ -1,13 +1,13 @@
 ---
 title: Configuration de profils globaux ou au niveau du dossier
 description: Découvrez comment configurer des profils globaux ou de niveau dossier
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+exl-id: 3370e22c-b996-4261-b250-8b8f8667c2a0
+source-git-commit: 192d807d0020193f39e8340fb6c0b6a50c6489f8
 workflow-type: tm+mt
-source-wordcount: '3890'
+source-wordcount: '3891'
 ht-degree: 0%
 
 ---
-
 
 # Configuration de profils globaux ou au niveau du dossier {#id181AH2003PF}
 
@@ -19,11 +19,13 @@ Vous pouvez également déléguer les configurations spécifiques aux dossiers �
 
 À l’aide de la mosaïque Profils de dossier dans les paramètres des guides, vous pouvez configurer les paramètres sous les onglets suivants :
 
-- **Général**: L’onglet général est disponible lorsque vous configurez les paramètres au niveau du dossier \(ou projet/produit\). Vous pouvez configurer des paramètres tels que les chemins d’accès aux dossiers auxquels les paramètres s’appliqueront et les utilisateurs qui disposent des droits d’administration pour créer ou mettre à jour des configurations.
+![](assets/folder-profile-tabs.png){width="800" align="left"}
 
-- **Attributs conditionnels**: Utilisez cet onglet pour configurer les attributs conditionnels au niveau global ou au niveau du dossier. Un attribut conditionnel est une combinaison du nom et de la valeur de l’attribut, et vous pouvez également définir un libellé pour celui-ci. Vous pouvez utiliser les attributs DITA standard ou vos propres attributs personnalisés. Les attributs conditionnels que vous définissez au niveau global sont mis à la disposition de tous les utilisateurs dans l’ensemble des projets. Si vous avez défini des attributs conditionnels au niveau du dossier, ils sont fusionnés avec les attributs conditionnels définis globalement.
+- **Général**: l’onglet général n’est disponible que lorsque vous configurez les paramètres au niveau du dossier \(ou projet/produit\). Vous pouvez configurer des paramètres tels que les chemins d’accès aux dossiers auxquels les paramètres s’appliqueront et les utilisateurs qui auront les droits d’administration pour créer ou mettre à jour des configurations.
 
-- **Modèle de création**: Utilisez cet onglet pour configurer les modèles que vos auteurs utiliseront pour créer du contenu DITA. Les modèles de rubrique suivants sont disponibles prêts à l’emploi :
+- **Attributs conditionnels**: utilisez cet onglet pour configurer les attributs conditionnels au niveau global ou au niveau du dossier. Un attribut conditionnel est une combinaison du nom et de la valeur de l’attribut, et vous pouvez également définir un libellé pour celui-ci. Vous pouvez utiliser les attributs DITA standard ou vos propres attributs personnalisés. Les attributs conditionnels que vous définissez au niveau global sont mis à la disposition de tous les utilisateurs dans l’ensemble des projets. Si vous avez défini des attributs conditionnels au niveau du dossier, ils sont fusionnés avec les attributs conditionnels définis globalement.
+
+- **Modèle de création**: utilisez cet onglet pour configurer les modèles que vos auteurs utiliseront pour créer du contenu DITA. Les modèles de rubrique suivants sont disponibles prêts à l’emploi :
 
    - Glossaire
 
@@ -40,18 +42,18 @@ Vous pouvez également déléguer les configurations spécifiques aux dossiers �
    - Vide
 
    - DITAVAL
-   >[!NOTE]
-   >
-   > Vous pouvez utiliser n’importe lequel des modèles existants comme base pour créer de nouveaux modèles. Le modèle DITA vierge ne contient aucune structure ni aucun élément comme les autres modèles. Vous pouvez utiliser n’importe quel modèle DITA prêt à l’emploi comme base, y apporter des modifications et l’enregistrer sous un autre nom. Après avoir apporté les modifications requises, ajoutez le modèle mis à jour à la configuration de modèles de création globale ou au niveau du dossier, puis rendez-le disponible pour la création.
 
-   Avec les modèles de rubrique, vous pouvez également définir les modèles de mappage qui seront mis à la disposition des auteurs. Les modèles de mappage suivants sont disponibles prêts à l’emploi :
+  >[!NOTE]
+  >
+  > Vous pouvez utiliser n’importe lequel des modèles existants comme base pour créer de nouveaux modèles. Le modèle DITA vierge ne contient aucune structure ni aucun élément comme les autres modèles. Vous pouvez utiliser n’importe quel modèle DITA prêt à l’emploi comme base, y apporter des modifications et l’enregistrer sous un autre nom. Après avoir apporté les modifications requises, ajoutez le modèle mis à jour à la configuration de modèles de création globale ou au niveau du dossier, puis rendez-le disponible pour la création.
+
+  Avec les modèles de rubrique, vous pouvez également définir les modèles de mappage qui seront mis à la disposition des auteurs. Les modèles de mappage suivants sont disponibles prêts à l’emploi :
 
    - Map
 
    - Bookmap
 
-
-- **Paramètre prédéfini de sortie**: Comme pour les modèles de création, il existe cinq paramètres prédéfinis de sortie préconfigurés :
+- **Paramètre prédéfini de sortie**: à l’instar des modèles de création, il existe cinq paramètres prédéfinis de sortie préconfigurés :
 
    - AEM site
 
@@ -62,9 +64,10 @@ Vous pouvez également déléguer les configurations spécifiques aux dossiers �
    - EPUB
 
    - Personnalisé
-   Les éditeurs peuvent utiliser ces paramètres prédéfinis de sortie prêts à l’emploi pour publier du contenu. Ces paramètres prédéfinis peuvent être configurés par un administrateur du profil global ou au niveau du dossier. Une fois configurés, les paramètres prédéfinis de publication sont disponibles pour les éditeurs pour les mappages DITA nouvellement créés. Vous pouvez également appliquer des paramètres de publication prédéfinis aux mappages DITA existants, voir [Appliquer les modifications prédéfinies](#id18AGD0K0OHS) pour plus d’informations.
 
-- **Configurations de l’éditeur XML**: Utilisez cet onglet pour personnaliser l’aspect et les différentes fonctionnalités de l’éditeur web. Les paramètres configurables suivants sont disponibles pour l’éditeur web :
+  Les éditeurs peuvent utiliser ces paramètres prédéfinis de sortie prêts à l’emploi pour publier du contenu. Ces paramètres prédéfinis peuvent être configurés par un administrateur du profil global ou au niveau du dossier. Une fois configurés, les paramètres prédéfinis de publication sont disponibles pour les éditeurs pour les mappages DITA nouvellement créés. Vous pouvez également appliquer des paramètres prédéfinis de publication aux mappages DITA existants, voir [Appliquer les modifications prédéfinies](#id18AGD0K0OHS) pour plus d’informations.
+
+- **Configurations de l’éditeur XML**: utilisez cet onglet pour personnaliser l’aspect et les différentes fonctionnalités de l’éditeur web. Les paramètres configurables suivants sont disponibles pour l’éditeur web :
 
    - Configuration de l’interface utilisateur de l’éditeur XML
    - Disposition du modèle CSS
@@ -90,6 +93,8 @@ Effectuez les étapes suivantes pour configurer le profil global :
 
    Pour la première fois, la page Profils de dossier s’affiche avec uniquement la mosaïque Profil global .
 
+   ![](assets/folder-profile-global.png){width="800" align="left"}
+
 1. Cliquez sur le bouton **Profil global** mosaïque.
 
 1. Pour configurer **Attributs conditionnels**, voir [Configuration d’attributs conditionnels pour les profils globaux ou au niveau du dossier](#id1889D0I305Z).
@@ -103,7 +108,7 @@ Effectuez les étapes suivantes pour configurer le profil global :
 1. Après avoir effectué toutes les mises à jour requises, enregistrez et fermez la variable **Profil global**.
 
 
-## Création et configuration d’un profil au niveau du dossier
+## Créer et configurer un profil au niveau du dossier
 
 Effectuez les étapes suivantes pour configurer un profil au niveau du dossier :
 
@@ -117,13 +122,15 @@ Effectuez les étapes suivantes pour configurer un profil au niveau du dossier :
 
 1. Cliquez sur **Créer**.
 
+   ![](assets/create-folder-profile.png){width="300" align="left"}
+
 1. Saisissez les informations suivantes dans la variable **Créer un profil de dossier** dialog :
    - Nom du profil de dossier.
    - Chemin du dossier dans lequel le profil sera applicable.
 
-      >[!NOTE]
-      >
-      > Vous ne pouvez pas appliquer plusieurs profils de dossier à un dossier. Assurez-vous que le dossier que vous sélectionnez ici ne comporte aucun autre profil. Si un dossier parent-enfant possède ses propres profils spécifiques, le dossier enfant utilise les configurations de son propre profil. Les configurations du dossier parent ne remplacent pas celles d’un dossier enfant.
+     >[!NOTE]
+     >
+     > Vous ne pouvez pas appliquer plusieurs profils de dossier à un dossier. Assurez-vous que le dossier que vous sélectionnez ici ne comporte aucun autre profil. Si un dossier parent-enfant possède ses propres profils spécifiques, le dossier enfant utilise les configurations de son propre profil. Les configurations du dossier parent ne remplacent pas celles d’un dossier enfant.
 
 1. Cliquez sur **Créer**.
 
@@ -139,7 +146,7 @@ Effectuez les étapes suivantes pour configurer un profil au niveau du dossier :
    >
    > Les utilisateurs que vous ajoutez ici auront les droits d’administration pour mettre à jour les attributs conditionnels, le modèle de création et les paramètres prédéfinis de sortie configurés pour ce profil de dossiers.
 
-1. Pour ajouter un dossier, cliquez sur l’icône Parcourir dans Chemin d’accès au dossier, recherchez et sélectionnez un dossier, puis cliquez sur Ajouter pour ajouter le dossier à ce profil.
+1. Pour ajouter un dossier, cliquez sur l’icône Parcourir dans Chemin d’accès au dossier et sélectionnez un dossier, puis cliquez sur Ajouter pour ajouter le dossier à ce profil.
 
    >[!NOTE]
    >
@@ -192,7 +199,7 @@ Effectuez les étapes suivantes pour configurer les attributs conditionnels stan
 
 1. Si vous souhaitez ajouter d’autres valeurs pour le même attribut, cliquez sur le bouton **+** et saisissez la valeur et le libellé supplémentaires.
 
-1. Si vous souhaitez ajouter d’autres attributs, cliquez sur **Ajouter**.
+1. Pour ajouter d’autres attributs, cliquez sur **Ajouter**.
 
 1. Cliquez sur **Enregistrer**.
 
@@ -211,7 +218,7 @@ Si vous utilisez un attribut personnalisé, il doit s’agir d’un attribut DIT
 
 1. Ouvrez la page de configuration de la console web Adobe Experience Manager .
 
-1. Recherchez et cliquez sur le bouton *com.adobe.fmdita.config.ConfigManager* du lot.
+1. Recherchez et cliquez sur le bouton *com.adobe.config.ConfigManager* du lot.
 
 1. Enregistrez la configuration.
 
@@ -221,7 +228,7 @@ Si vous utilisez un attribut personnalisé, il doit s’agir d’un attribut DIT
 
    /libs/fmdita/config/condAttrList.xml
 
-1. Créez un noeud de recouvrement de la propriété `config` dans le dossier `apps` noeud .
+1. Créez un noeud de recouvrement du `config` dans le dossier `apps` noeud .
 
 1. Accédez au fichier condAttrList.xml et ajoutez-y les attributs personnalisés dans le `apps` node:
 
@@ -259,7 +266,7 @@ Effectuez les étapes suivantes pour ajouter la rubrique ou mapper des modèles 
 
    >[!NOTE]
    >
-   > Par défaut, tous les modèles de création sont stockés dans le dossier /content/dam/dita-templates . Le `dita-templates` Le dossier contient `topics` et `maps` sous-dossiers pour stocker la rubrique et mapper des modèles. Vous pouvez ajouter vos modèles personnalisés \(.dita,.xml ou .ditamapfiles\) dans les dossiers de modèles par défaut. Une fois que vous avez ajouté votre modèle dans le dossier par défaut, vous pouvez le faire dans le profil global ou de dossier. Pour plus d’informations sur la création de modèles personnalisés à l’aide de l’éditeur web, voir [Créer un modèle de création personnalisé](#id1917D0EG0HJ).
+   > Par défaut, tous les modèles de création sont stockés dans le dossier /content/dam/dita-templates . La variable `dita-templates` Le dossier contient `topics` et `maps` sous-dossiers pour stocker la rubrique et mapper des modèles. Vous pouvez ajouter vos modèles personnalisés \(.dita,.xml ou .ditamapfiles\) dans les dossiers de modèles par défaut. Une fois que vous avez ajouté votre modèle dans le dossier par défaut, vous pouvez le faire dans le profil global ou de dossier. Pour plus d’informations sur la création de modèles personnalisés à l’aide de l’éditeur web, voir [Créer un modèle de création personnalisé](#id1917D0EG0HJ).
 
    ![](assets/search-author-temp.png){width="550" align="left"}
 
@@ -269,7 +276,7 @@ Effectuez les étapes suivantes pour ajouter la rubrique ou mapper des modèles 
 
    - Choisir **Recherche ou type** et saisissez ou sélectionnez le nom d’un modèle dans la liste déroulante. La liste déroulante se compose de tous les modèles par défaut et de tout nouveau modèle que vous avez créé.
 
-      ![](assets/default-template-list.png){width="350" align="left"}
+     ![](assets/default-template-list.png){width="350" align="left"}
 
    - Cliquez sur **Parcourir** et sélectionnez un modèle dans DAM.
 
@@ -300,7 +307,7 @@ Pour créer un modèle de création personnalisé, procédez comme suit :
 
    >[!NOTE]
    >
-   > Pour configurer un emplacement personnalisé pour stocker des modèles de rubrique ou de mappage, reportez-vous à la section [Configuration du chemin d’accès au dossier de modèle DITA personnalisé](conf-template-tags-custom-dita-topic-template.md#id191LCF0095Z)
+   > Pour configurer un emplacement personnalisé pour stocker des modèles de rubrique ou de mappage, voir [Configuration du chemin d’accès au dossier de modèle DITA personnalisé](conf-template-tags-custom-dita-topic-template.md#id191LCF0095Z)
 
 1. Cliquez sur **Créer** \> **Modèle DITA**.
 
@@ -362,7 +369,7 @@ Effectuez les étapes suivantes pour configurer des paramètres prédéfinis de 
 
    - Cliquez sur **Modifier** pour ouvrir la configuration du paramètre prédéfini sélectionné à des fins de modification.
 
-      Pour plus d’informations sur les paramètres prédéfinis de sortie, voir *Présentation des paramètres prédéfinis de sortie* dans les guides Utilisation d’Adobe Experience Manager .
+     Pour plus d’informations sur les paramètres prédéfinis de sortie, voir *Présentation des paramètres prédéfinis de sortie* dans les guides Utilisation d’Adobe Experience Manager .
 
 1. Cliquez sur **Enregistrer** pour enregistrer les paramètres prédéfinis.
 
@@ -397,9 +404,9 @@ Si vous avez mis à jour un paramètre prédéfini de sortie existant ou si vous
 
 1. Dans la boîte de dialogue Appliquer les modifications prédéfinies , vous pouvez choisir parmi les options suivantes :
 
-   - **Sélection de l’option Remplacer les paramètres prédéfinis existants**: Si vous sélectionnez cette option, toutes les mises à jour effectuées dans les paramètres prédéfinis de sortie existants remplaceront les paramètres de toutes les cartes DITA existantes dans lesquelles ce paramètre prédéfini est utilisé. Toutefois, cela entraînera la perte de tout paramètre prédéfini conditionnel et des informations de base existants associés à la carte.
+   - **Sélection de l’option Remplacer les paramètres prédéfinis existants**: si vous sélectionnez cette option, toutes les mises à jour effectuées dans les paramètres prédéfinis de sortie existants remplaceront les paramètres de toutes les cartes DITA existantes dans lesquelles ce paramètre prédéfini est utilisé. Toutefois, cela entraînera la perte de tout paramètre prédéfini conditionnel et des informations de base existants associés à la carte.
 
-   - **Pas de sélection de l’option Remplacer les paramètres prédéfinis existants**: Si vous ne sélectionnez pas cette option, les mises à jour que vous avez effectuées dans les paramètres prédéfinis de sortie existants n’auront aucune incidence sur les mappages DITA existants. Seuls les nouveaux paramètres prédéfinis ajoutés sont ajoutés aux mappages DITA existants. Notez que le nouveau mappage DITA est récupéré : les paramètres prédéfinis de sortie mis à jour et les paramètres prédéfinis nouvellement ajoutés.
+   - **Pas de sélection de l’option Remplacer les paramètres prédéfinis existants**: si vous ne sélectionnez pas cette option, les mises à jour que vous avez effectuées dans les paramètres prédéfinis de sortie existants n’auront aucune incidence sur les mappages DITA existants. Seuls les nouveaux paramètres prédéfinis ajoutés sont ajoutés aux mappages DITA existants. Notez que le nouveau mappage DITA est obtenu à la fois : les paramètres prédéfinis de sortie mis à jour et les paramètres prédéfinis nouvellement ajoutés.
 
 1. Cliquez sur **OK** pour appliquer les modifications des paramètres prédéfinis de sortie sélectionnés sur tous les mappages DITA existants.
 
@@ -440,7 +447,7 @@ Les détails suivants sont requis pour créer un fragment de code :
 
 - **fragmentID :**   Identifiant unique du fragment de code. Il peut s’agir d’une valeur alphanumérique.
 
-- **name:**   Nom explicite permettant d’identifier le fragment de code. Ce nom apparaît dans le panneau Fragments de code.
+- **name:**   Nom descriptif pour identifier le fragment de code. Ce nom apparaît dans le panneau Fragments de code.
 
 - **description:**   Ajoutez une information descriptive pour le fragment de code.
 
@@ -452,7 +459,7 @@ Les détails suivants sont requis pour créer un fragment de code :
 
 **Étiquettes de version de contenu XML**
 
-Par défaut, les auteurs sont autorisés à créer des libellés de leur choix et à les associer à leurs fichiers de rubrique. Cependant, cela peut entraîner de nombreuses variantes d’une même étiquette, par exemple, il peut y avoir des étiquettes &quot;Version 1.0&quot;, &quot;Version 1.0&quot;, &quot;Version 1&quot; pour identifier la même étape d’une rubrique. Pour éviter des libellés aussi incohérents dans le système, vous pouvez créer une liste prédéfinie d’libellés dans laquelle les auteurs pourront effectuer leur choix. L’utilisation d’étiquettes homogènes contribue à une meilleure gestion des fichiers dans votre système.
+Par défaut, les auteurs sont autorisés à créer des libellés de leur choix et à les associer à leurs fichiers de rubrique. Cependant, cela peut entraîner de nombreuses variantes d’une même étiquette, par exemple, il peut y avoir des étiquettes &quot;Version 1.0&quot;, &quot;Version 1.0&quot;, &quot;Version 1&quot; pour identifier la même étape d’une rubrique. Pour éviter des libellés aussi incohérents dans le système, vous pouvez créer une liste prédéfinie d’libellés dans laquelle les auteurs pourront effectuer leur choix. L’utilisation d’étiquettes cohérentes facilite la gestion des fichiers dans votre système.
 
 À l’aide de la configuration des étiquettes de version, vous pouvez charger une liste d’étiquettes valides pour votre organisation. Téléchargez le fichier label.json par défaut et modifiez-le comme illustré ci-dessous :
 
@@ -476,4 +483,3 @@ Dans l’exemple ci-dessus, &quot;label1&quot; est l’identifiant de la séquen
 **Rootmap**
 
 Si vos auteurs travaillent sur une carte racine spécifique, vous pouvez rechercher et sélectionner cette carte racine ici. Notez que vous ne pouvez définir le rootmap que pour un profil au niveau du dossier.
-

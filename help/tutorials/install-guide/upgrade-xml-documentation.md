@@ -2,9 +2,9 @@
 title: Mise à niveau des guides Adobe Experience Manager
 description: Découvrez comment mettre à niveau les guides Adobe Experience Manager
 exl-id: fdc395cf-a54f-4eca-b69f-52ef08d84a6e
-source-git-commit: 4c31580a7deb3e13931831c1888bbf0fd1bf9e14
+source-git-commit: ec67a3b959f9ee5b90a53134c1fe9aff8760cb6f
 workflow-type: tm+mt
-source-wordcount: '2896'
+source-wordcount: '3216'
 ht-degree: 1%
 
 ---
@@ -15,11 +15,13 @@ ht-degree: 1%
 >
 > Suivez les instructions de mise à niveau spécifiques à la version sous licence de votre produit.
 
-Vous pouvez mettre à niveau votre version actuelle des AEM Guides vers la version 4.2.1.
-- Si vous utilisez la version 4.1, 4.1.x ou 4.2, vous pouvez directement effectuer la mise à niveau vers la version 4.2.1.
-- Si vous utilisez la version 4.0, vous devez effectuer la mise à niveau vers la version 4.2 avant de passer à la version 4.2.1.
+Vous pouvez mettre à niveau votre version actuelle des AEM Guides vers la version 4.3.0.
+- Si vous utilisez la version 4.2 ou 4.2.x, vous pouvez directement effectuer la mise à niveau vers la version 4.3.0.
+- Si vous utilisez la version 4.1, 4.1.x ou 4.2, vous devez effectuer la mise à niveau vers la version 4.2.1. avant de passer à la version 4.3.0.
+- Si vous utilisez la version 4.0, vous devez effectuer la mise à niveau vers la version 4.2 avant de passer à la version 4.3.0.
 - Si vous utilisez la version 3.8.5, vous devez effectuer la mise à niveau vers la version 4.0 avant de passer à la version 4.2.
 - Si vous utilisez une version antérieure à 3.8.5, reportez-vous à la section Guides d’AEM de mise à niveau du guide d’installation spécifique au produit.
+
 
 >[!NOTE]
 >
@@ -27,9 +29,10 @@ Vous pouvez mettre à niveau votre version actuelle des AEM Guides vers la versi
 
 Pour plus de détails, consultez les procédures suivantes :
 
-- [Mise à niveau de la version 3.8.5 vers la version 4.0](#id2256DK003E1)
-- [Mise à niveau vers la version 4.2](#id22A3F500SXA)
+- [Mise à niveau de 3.8.5 vers la version 4.0](#id2256DK003E1)
+- [Upgrade vers la version 4.2](#id22A3F500SXA)
 - [Mise à niveau vers la version 4.2.1](#upgrade-version-4-2-1)
+- [Mise à niveau vers la version 4.3.0](#upgrade-version-4-3)
 
 
 >[!IMPORTANT]
@@ -44,7 +47,7 @@ Avant d’exécuter le processus, vous devez effectuer certaines tâches. Les so
 
 >[!NOTE]
 >
-> Ce processus de mise à niveau ne s’applique qu’à partir de la version 3.8.5 vers la version 4.0. Pour que le processus de mise à niveau de la version 3.4 ou ultérieure vers la version 3.8.5, reportez-vous à la section *Mise à niveau AEM guides* dans le guide d’installation spécifique au produit disponible dans la section [Page d’aide archivée](https://helpx.adobe.com/xml-documentation-for-experience-manager/archive.html).
+> Ce processus de mise à niveau s’applique uniquement de la version 3.8.5 à la version 4.0. Pour le processus de mise à niveau de la version 3.4 ou ultérieure vers la version 3.8.5, reportez-vous à la section *Mise à niveau AEM guides* dans le guide d’installation spécifique au produit disponible dans la section [Page d’aide archivée](https://helpx.adobe.com/xml-documentation-for-experience-manager/archive.html).
 
 ****Conditions préalables****
 
@@ -52,7 +55,7 @@ Avant de lancer le processus de mise à niveau AEM Guides, vérifiez que vous di
 
 1. Importation des commentaires de révision dans les rubriques ouvertes pour révision.
 1. Fermeture de toutes les principales critiques.
-1. Fermeture de toutes les tâches de traduction.
+1. Fermeture de toutes les tâches de traduction
 1. Désinstallez tous les correctifs AEM Guides installés en haut de la version précédente \(version majeure ou version de correctif\) d’AEM Guides.
 
 **Avant d’installer la version 4.0**
@@ -85,9 +88,9 @@ Cette API est conçue pour migrer les données système comme indiqué dans la s
 | Type de requête | **POST** Ce script est une requête de POST qui doit donc être exécutée via des agents tels que Postman. |
 | Réponse attendue | - Une fois la migration réussie, vous pouvez installer la solution XML Documentation version 4.0.<br>- En cas d’erreur, restaurez au dernier point de contrôle et partagez les journaux d’erreur avec la sortie de l’API avec votre équipe de succès client. |
 
-**Mappage de migration**: L’API ci-dessus migre toutes les données de l’emplacement source vers l’emplacement cible.
+**Mappage de migration**: l’API ci-dessus migre toutes les données de l’emplacement source vers l’emplacement cible.
 
-| Source | Target |
+| Source | Prochain objectif |
 |------|------|
 | /content/fmdita | /var/dxml |
 | /content/dxml | /var/dxml |
@@ -113,18 +116,18 @@ Téléchargez le package sur l’instance de serveur AEM existante à l’aide d
    - Le modèle d’URL /libs/cq/security/userinfo.json n’est pas mis en cache.
 1. Effacer le cache du Dispatcher \(pour effacer tout `clientlibs` mis en cache\).
 
-## Mise à niveau vers la version 4.2 {#id22A3F500SXA}
+## Upgrade vers la version 4.2 {#id22A3F500SXA}
 
 La mise à niveau vers la version 4.2 dépend de la version actuelle des AEM Guides.
 
-Si vous utilisez la version 4.0, 4.1 ou 4.1.x, vous pouvez directement effectuer la mise à niveau vers la version 4.2.
+Si vous utilisez la version 4.0, 4.1 ou 4.1.x, vous pouvez directement mettre à niveau vers la version 4.2.
 
 ****Conditions préalables****
 
 Avant de lancer le processus de mise à niveau vers AEM Guides 4.2, vérifiez que vous disposez des éléments suivants :
 
 1. Mise à niveau vers AEM Guides version 4.0, 4.1 ou 4.1.x.
-1. Fermeture de toutes les tâches de traduction.
+1. Fermeture de toutes les tâches de traduction
 1. Modification du niveau de journal en **INFO** pour `com.adobe.fmdita.translationservices.TranslationMapUpgradeScript` et ajoutez ces journaux dans un nouveau fichier journal, par exemple : `logs/translation_upgrade.log.`
 
 >[!NOTE]
@@ -154,7 +157,7 @@ Avant de lancer le processus de mise à niveau vers AEM Guides 4.2, vérifiez qu
 
 >[!IMPORTANT]
 >
-> Le modèle high-tech n’est pas affiché sur le serveur mis à niveau. Pour inclure le modèle high-tech sur votre serveur, vous pouvez le copier : Source : /libs/fmdita/pdf/Hi-Tech Destination : /content/dam/dita-templates/pdf
+> Le modèle high-tech n’est pas affiché sur le serveur mis à niveau. Pour inclure le modèle high-tech sur votre serveur, vous pouvez le copier : Source : /libs/fmdita/pdf/Hi-Tech Destination: /content/dam/dita-templates/pdf
 
 Après avoir installé AEM Guides, vous pouvez fusionner les différentes configurations applicables de la version nouvellement installée à votre configuration.
 
@@ -182,7 +185,7 @@ Après avoir installé AEM Guides, vous pouvez fusionner les différentes config
 
    **Titre :** Initiateur de post-traitement DXML
 
-   **Description**: Étape de l’initiateur de post-traitement DXML qui déclenche une tâche Sling pour le post-traitement DXML de la ressource modifiée/créée
+   **Description**: étape de l’initiateur de post-processus DXML qui déclenchera une tâche Sling pour le post-traitement DXML de la ressource modifiée/créée.
 
    **Onglet Processus**
 
@@ -206,7 +209,7 @@ Après avoir installé AEM Guides, vous pouvez fusionner les différentes config
 
    Recherchez et apportez des modifications \(si nécessaire\) aux deux lanceurs suivants \(qui doit être principal\) correspondant à **Workflow Ressources de mise à jour de gestion des actifs numériques**:
 
-1. Lanceur pour &quot;*Noeud créé*&quot; pour **Workflow Ressources de mise à jour de gestion des actifs numériques**- pour la condition `"jcr:content/jcr:mimeType!=video"`, la valeur &quot;Globbing&quot; doit être :
+1. Lanceur pour &quot;*Noeud créé*&quot; pour **Workflow Ressources de mise à jour de gestion des actifs numériques**: condition `"jcr:content/jcr:mimeType!=video"`, la valeur &quot;Globbing&quot; doit être :
 
    ```json
    /content/dam(/((?!/subassets|/translation_output).)*/)renditions/original
@@ -228,13 +231,13 @@ Après avoir installé AEM Guides, vous pouvez fusionner les différentes config
    - ui\_config.json\(peut avoir été défini dans les profils de dossier\)
    - modified `com.adobe.fmdita.config.ConfigManager`
    - Vérifiez si l’un des codes personnalisés utilisait d’anciens chemins d’accès \(comme indiqué dans la section [Mappage de migration](#id2244LE040XA) section\) - doit être mis à jour vers les nouveaux chemins afin que les personnalisations fonctionnent également comme prévu.
-1. Découvrez toutes les nouvelles configurations apportées à la version actuelle \(vérifier) [Notes de mise à jour](../release-info/release-notes-4.2.md)\) et voir si une fonctionnalité est affectée, puis prendre les mesures appropriées. Un exemple peut être l’utilisation de l’option &quot;Amélioration de la gestion des fichiers et des versions&quot; introduite dans la version 4.0, pour laquelle vous devez activer une configuration.
+1. Découvrez toutes les nouvelles configurations apportées à la version actuelle \(vérifier) [Notes de mise à jour](../release-info/release-notes-4.3.md)\) et voir si une fonctionnalité est affectée, puis prendre les mesures appropriées. Un exemple peut être l’utilisation de l’option &quot;Amélioration de la gestion des fichiers et des versions&quot; introduite dans la version 4.0, pour laquelle vous devez activer une configuration.
 
-## Étapes d’indexation du contenu existant pour utiliser la nouvelle recherche et le remplacement :
+## Étapes d’indexation du contenu existant pour utiliser la nouvelle recherche et remplacement :
 
 Effectuez les étapes suivantes pour indexer le contenu existant et utilisez le nouveau texte de recherche et de remplacement au niveau de la carte :
 
-- Exécutez une requête de POST sur le serveur \(avec l’authentification correcte\) - `http://<server:port\>/bin/guides/map-find/indexing`. \(Facultatif) : Vous pouvez transmettre des chemins spécifiques des cartes pour les indexer. Par défaut, toutes les cartes seront indexées \|\| Par exemple : `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`\)
+- Exécutez une requête de POST sur le serveur \(avec l’authentification correcte\) - `http://<server:port\>/bin/guides/map-find/indexing`. \(Facultatif : vous pouvez transmettre des chemins spécifiques des cartes pour les indexer. Par défaut, toutes les cartes seront indexées \|\| Par exemple : `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`\)
 
 - L’API renvoie un jobId. Pour vérifier l’état de la tâche, vous pouvez envoyer une demande de GET avec l’ID de la tâche au même point de terminaison :
 
@@ -297,7 +300,7 @@ Si vous utilisez la version 4.1, 4.1.x ou 4.2, vous pouvez directement effectuer
 Avant de démarrer le processus de mise à niveau vers AEM Guides 4.2.1, vérifiez que vous disposez des éléments suivants :
 
 1. Mise à niveau vers AEM Guides version 4.1, 4.1.x ou 4.2.
-1. Fermeture de toutes les tâches de traduction.
+1. Fermeture de toutes les tâches de traduction
 1. Modification du niveau de journal en **INFO** pour `com.adobe.fmdita.translationservices.TranslationMapUpgradeScript` et ajoutez ces journaux dans un nouveau fichier journal, par exemple : `logs/translation_upgrade.log.`
 
 >[!NOTE]
@@ -346,7 +349,7 @@ Réponse:
 
 Dans la réponse JSON ci-dessus, la clé `lockNodePath` contient le chemin d’accès au noeud créé dans le référentiel pointant vers la tâche envoyée. Il sera automatiquement supprimé une fois la tâche terminée. Vous pourrez alors vous référer à ce noeud pour connaître l’état actuel de la tâche.
 
-Exemple de journal : Voici un exemple de journaux qui s’afficheront dans le fichier journal après le déclenchement du script.
+Exemple de journal : voici un exemple de journaux qui s’afficheront dans le fichier journal après le déclenchement du script.
 
 ```
 04.05.2023 14:17:12.876 *INFO* [[0:0:0:0:0:0:0:1] [1683190032736] POST /bin/guides/script/start HTTP/1.1] com.adobe.dxml.common.executor.RunnableSynchronizedOTS Acquiring lock for job : translation-map-upgrade
@@ -359,7 +362,7 @@ Exemple de journal : Voici un exemple de journaux qui s’afficheront dans le fi
 04.05.2023 14:17:12.909 *INFO* [pool-59-thread-1] com.adobe.fmdita.xmltranslation.ots.TranslationMapUpgradeOTS Completed the thread to upgrade translation map from V1 to V2
 ```
 
-Rechercher `com.adobe.fmdita.translationservices.TranslationMapUpgradeScript Completed porting of translation map from V1 to V2` et `com.adobe.fmdita.xmltranslation.ots.TranslationMapUpgradeOTS Completed the thread to upgrade translation map from V1 to V2` avant de passer aux étapes suivantes.
+Recherchez `com.adobe.fmdita.translationservices.TranslationMapUpgradeScript Completed porting of translation map from V1 to V2` et `com.adobe.fmdita.xmltranslation.ots.TranslationMapUpgradeOTS Completed the thread to upgrade translation map from V1 to V2` avant de passer aux étapes suivantes.
 
 
 
@@ -367,7 +370,7 @@ Rechercher `com.adobe.fmdita.translationservices.TranslationMapUpgradeScript Com
 
 >[!IMPORTANT]
 >
-> Le modèle high-tech n’est pas affiché sur le serveur mis à niveau. Pour inclure le modèle high-tech sur votre serveur, vous pouvez le copier : Source : /libs/fmdita/pdf/Hi-Tech Destination : /content/dam/dita-templates/pdf
+> Le modèle high-tech n’est pas affiché sur le serveur mis à niveau. Pour inclure le modèle high-tech sur votre serveur, vous pouvez le copier : Source : /libs/fmdita/pdf/Hi-Tech Destination: /content/dam/dita-templates/pdf
 
 Après avoir installé AEM Guides, vous pouvez fusionner les différentes configurations applicables de la version nouvellement installée à votre configuration.
 
@@ -395,7 +398,7 @@ Après avoir installé AEM Guides, vous pouvez fusionner les différentes config
 
    **Titre :** Initiateur de post-traitement DXML
 
-   **Description**: Étape de l’initiateur de post-traitement DXML qui déclenche une tâche Sling pour le post-traitement DXML de la ressource modifiée/créée
+   **Description**: étape de l’initiateur de post-processus DXML qui déclenchera une tâche Sling pour le post-traitement DXML de la ressource modifiée/créée.
 
    **Onglet Processus**
 
@@ -419,7 +422,7 @@ Après avoir installé AEM Guides, vous pouvez fusionner les différentes config
 
    Recherchez et apportez des modifications \(si nécessaire\) aux deux lanceurs suivants \(qui doit être principal\) correspondant à **Workflow Ressources de mise à jour de gestion des actifs numériques**:
 
-1. Lanceur pour &quot;*Noeud créé*&quot; pour **Workflow Ressources de mise à jour de gestion des actifs numériques**- pour la condition `"jcr:content/jcr:mimeType!=video"`, la valeur &quot;Globbing&quot; doit être :
+1. Lanceur pour &quot;*Noeud créé*&quot; pour **Workflow Ressources de mise à jour de gestion des actifs numériques**: condition `"jcr:content/jcr:mimeType!=video"`, la valeur &quot;Globbing&quot; doit être :
 
    ```json
    /content/dam(/((?!/subassets|/translation_output).)*/)renditions/original
@@ -443,14 +446,14 @@ Après avoir installé AEM Guides, vous pouvez fusionner les différentes config
    - Vérifiez si l’un des codes personnalisés utilisait d’anciens chemins d’accès \(comme indiqué dans la section [Mappage de migration](#id2244LE040XA) section\) - doit être mis à jour vers les nouveaux chemins afin que les personnalisations fonctionnent également comme prévu.
 1. Découvrez toutes les nouvelles configurations apportées à la version actuelle \(vérifier) [Notes de mise à jour](../release-info/release-notes-4.2.1.md)\) et voir si une fonctionnalité est affectée, puis prendre les mesures appropriées. Un exemple peut être l’utilisation de l’option &quot;Amélioration de la gestion des fichiers et des versions&quot; introduite dans la version 4.0, pour laquelle vous devez activer une configuration.
 
-## Étapes d’indexation du contenu existant pour utiliser la nouvelle recherche et le remplacement :
+## Étapes d’indexation du contenu existant pour utiliser la nouvelle recherche et remplacement :
 
 Effectuez les étapes suivantes pour indexer le contenu existant et utilisez le nouveau texte de recherche et de remplacement au niveau de la carte :
 
 - Assurez-vous que la variable `damAssetLucene` l’indexation est terminée. Selon la quantité de données présentes sur le serveur, cette opération peut prendre jusqu’à quelques heures. Vous pouvez confirmer que la réindexation est terminée en vérifiant que le champ de réindexation est défini sur false dans
   `http://<server:port>/oak:index/damAssetLucene`.  En outre, si vous avez ajouté des personnalisations dans `damAssetLucene`, vous devrez peut-être les appliquer à nouveau.
 
-- Exécutez une requête de POST sur le serveur \(avec l’authentification correcte\) - `http://<server:port\>/bin/guides/map-find/indexing`. (Facultatif) Vous pouvez transmettre des chemins spécifiques des cartes pour les indexer. Par défaut, toutes les cartes seront indexées \|\| Par exemple : `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`)
+- Exécutez une requête de POST sur le serveur \(avec l’authentification correcte\) - `http://<server:port\>/bin/guides/map-find/indexing`. (Facultatif : vous pouvez transmettre des chemins spécifiques des cartes pour les indexer. Par défaut, toutes les cartes seront indexées \|\| Par exemple : `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`)
 
 - Vous pouvez également transmettre un dossier racine pour indexer les mappages DITA d’un dossier spécifique (et de ses sous-dossiers). Par exemple, `http://<server:port\>/bin/guides/map-find/indexing?root=/content/dam/test`. Notez que si les paramètres paths et root sont transmis, seul le paramètre paths est pris en compte.
 
@@ -459,4 +462,55 @@ Effectuez les étapes suivantes pour indexer le contenu existant et utilisez le 
 
 - Une fois la tâche terminée, la requête de GET ci-dessus répond avec succès et indique si une correspondance a échoué. Les mappages indexés avec succès peuvent être confirmés à partir des journaux du serveur.
 
+
+## Mise à niveau vers la version 4.3.0 {#upgrade-version-4-3}
+
+La mise à niveau vers la version 4.3.0 dépend de la version actuelle des AEM Guides. Si vous utilisez la version 4.2 ou 4.2.x, vous pouvez directement effectuer la mise à niveau vers la version 4.3.0.
+
+>[!NOTE]
+>
+>Le post-traitement et l’indexation peuvent prendre quelques heures. Nous vous recommandons de lancer le processus de mise à niveau aux heures creuses.
+
+****Conditions préalables****
+
+Avant de lancer le processus de mise à niveau vers AEM Guides 4.3.0, vérifiez que vous disposez des éléments suivants :
+
+1. Mise à niveau vers AEM Guides version 4.2 ou 4.2.x et exécution de l’étape d’installation correspondante.
+1. Fermeture de toutes les tâches de traduction
+
+
+
+## Installation de la version 4.3.0
+
+1. Télécharger le package de version 4.3.0 depuis [Portail de distribution de logiciels Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+1. Installez le package version 4.3.0.
+1. Effacez le cache du navigateur après l’installation du package.
+1. Mettre à niveau `ui_config.json` du fichier **Configuration de l’éditeur XML** dans le profil du dossier.
+
+
+## Après avoir installé la version 4.3.0
+
+Après avoir installé AEM Guides, vous pouvez fusionner les différentes configurations applicables de la version nouvellement installée à votre configuration.
+
+## Étapes de post-traitement du contenu existant pour utiliser le rapport de lien rompu
+
+
+Effectuez les étapes suivantes pour le post-traitement du contenu existant et l’utilisation du nouveau rapport de lien rompu :
+
+1. (Facultatif) Si le système contient plus de 100 000 fichiers dita, mettez à jour la variable `queryLimitReads` under `org.apache.jackrabbit.oak.query.QueryEngineSettingsService` à une valeur plus élevée (toute valeur supérieure au nombre de ressources présentes, par exemple 200 000), puis redéployez.
+
+   | PID | Clé de propriété | Valeur de la propriété |
+   |---|---|---|
+   | org.apache.jackrabbit.oak.query.QueryEngineSettingsService | queryLimitReads | Valeur : 200000 <br> Valeur par défaut : 100000 |
+
+1. Exécutez une requête de POST sur le serveur (avec l’authentification correcte) - `http://<server:port>//bin/guides/reports/upgrade`.
+
+1. L’API renvoie un jobId. Pour vérifier l’état de la tâche, vous pouvez envoyer une demande de GET avec l’ID de la tâche au même point de terminaison : `http://<server:port>/bin/guides/reports/upgrade?jobId= {jobId}`
+(Par exemple : `http://localhost:8080/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42_678`)
+
+1. Une fois la tâche terminée, la requête de GET précédente répond avec succès. Si la tâche échoue pour une raison quelconque, l’échec peut être visible à partir des journaux du serveur.
+
+1. Revenir à la valeur par défaut ou à la valeur existante précédente de `queryLimitReads` si vous l’avez modifié à l’étape 1.
+
 **Rubrique parente :**[ Télécharger et installer](download-install.md)
+
