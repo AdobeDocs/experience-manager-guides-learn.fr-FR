@@ -2,9 +2,9 @@
 title: Mise à niveau des guides Adobe Experience Manager
 description: Découvrez comment mettre à niveau les guides Adobe Experience Manager
 exl-id: fdc395cf-a54f-4eca-b69f-52ef08d84a6e
-source-git-commit: ec67a3b959f9ee5b90a53134c1fe9aff8760cb6f
+source-git-commit: bb7e9ae6f02021354285aa4ca6b435bbea2e4cc0
 workflow-type: tm+mt
-source-wordcount: '3216'
+source-wordcount: '3270'
 ht-degree: 1%
 
 ---
@@ -16,8 +16,9 @@ ht-degree: 1%
 > Suivez les instructions de mise à niveau spécifiques à la version sous licence de votre produit.
 
 Vous pouvez mettre à niveau votre version actuelle des AEM Guides vers la version 4.3.0.
+
 - Si vous utilisez la version 4.2 ou 4.2.x, vous pouvez directement effectuer la mise à niveau vers la version 4.3.0.
-- Si vous utilisez la version 4.1, 4.1.x ou 4.2, vous devez effectuer la mise à niveau vers la version 4.2.1. avant de passer à la version 4.3.0.
+- Si vous utilisez la version 4.1 ou 4.1.x, vous devez effectuer la mise à niveau vers la version 4.2 ou 4.2.x avant de passer à la version 4.3.0.
 - Si vous utilisez la version 4.0, vous devez effectuer la mise à niveau vers la version 4.2 avant de passer à la version 4.3.0.
 - Si vous utilisez la version 3.8.5, vous devez effectuer la mise à niveau vers la version 4.0 avant de passer à la version 4.2.
 - Si vous utilisez une version antérieure à 3.8.5, reportez-vous à la section Guides d’AEM de mise à niveau du guide d’installation spécifique au produit.
@@ -503,12 +504,19 @@ Effectuez les étapes suivantes pour le post-traitement du contenu existant et l
    |---|---|---|
    | org.apache.jackrabbit.oak.query.QueryEngineSettingsService | queryLimitReads | Valeur : 200000 <br> Valeur par défaut : 100000 |
 
-1. Exécutez une requête de POST sur le serveur (avec l’authentification correcte) - `http://<server:port>//bin/guides/reports/upgrade`.
+1. Exécutez les API suivantes pour exécuter le post-traitement sur tous les fichiers :
 
-1. L’API renvoie un jobId. Pour vérifier l’état de la tâche, vous pouvez envoyer une demande de GET avec l’ID de la tâche au même point de terminaison : `http://<server:port>/bin/guides/reports/upgrade?jobId= {jobId}`
-(Par exemple : `http://localhost:8080/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42_678`)
+   | Point d’entrée | /bin/guides/reports/upgrade |
+   |---|---|
+   | Type de requête | **POST**  Ce script est une requête de POST qui doit donc être exécutée via des agents tels que Postman. |
+   | Réponse attendue | L’API renvoie un jobId. Pour vérifier l’état de la tâche, vous pouvez envoyer une demande de GET avec l’ID de la tâche au même point de terminaison.<br> Exemple d’URL : `http://<server:port>/bin/guides/reports/upgrade` |
 
-1. Une fois la tâche terminée, la requête de GET précédente répond avec succès. Si la tâche échoue pour une raison quelconque, l’échec peut être visible à partir des journaux du serveur.
+   | Point d’entrée | /bin/guides/reports/upgrade |
+   |---|---|
+   | Type de requête | **GET** |
+   | Param | jobId : transmettez le jobId reçu de la requête de publication précédente. |
+   | Réponse attendue | - Une fois la tâche terminée, la requête de GET répond avec succès. <br> - En cas d’erreur, partagez les journaux d’erreur avec la sortie de l’API avec votre équipe de succès client.  <br>Exemple d’URL : `http://<server:port>/bin/guides/reports/upgrade?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42_678` |
+
 
 1. Revenir à la valeur par défaut ou à la valeur existante précédente de `queryLimitReads` si vous l’avez modifié à l’étape 1.
 

@@ -1,7 +1,7 @@
 ---
 title: Ajouter et gérer des citations dans votre contenu
 description: Découvrez comment implémenter des références en ajoutant et en appliquant des citations à votre contenu.
-source-git-commit: f59ed1ffe8567bef48c6772a68361eacb1c7c15f
+source-git-commit: 85eb0228908134080f3f1e2644f3f7c37b8d7497
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 1%
@@ -45,7 +45,7 @@ La variable **Ajouter une citation** s’ouvre.
 
 1. Renseignez les champs du **Ajouter une citation** de la boîte de dialogue
 
-   >
+   >[!NOTE]
    >
    >Vous pouvez également ajouter l&#39;ISBN, le DOI ou le PubMed ID. AEM Guides renseigne automatiquement les autres champs.
 
