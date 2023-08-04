@@ -1,13 +1,13 @@
 ---
 title: Configuration de l’environnement AEM pour la publication de PDF natifs
 description: Configuration de l’environnement AEM pour la publication de PDF natifs
-source-git-commit: f26b8f94e1d7a3c9dd0aaab2eb196a77119e47ac
+exl-id: 40266ca0-0b0b-4418-b606-f70270addbaa
+source-git-commit: 45dfe6078039001327e91ae85ea2a5beeacb2d59
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '906'
 ht-degree: 1%
 
 ---
-
 
 # Configuration de l’environnement AEM pour la publication de PDF natifs
 
@@ -17,9 +17,9 @@ Il permet de créer différentes mises en page, modèles CSS et de concevoir les
 
 Les étapes de configuration de cet PDF natif dans les Guides d’AEM diffèrent selon le système d’exploitation. Suivez les étapes de configuration ci-dessous en fonction du système d’exploitation sur lequel AEM est installé.
 
-## Prérequis
+## Conditions préalables
 
-Configuration minimale requise pour l’PDF natif :
+Configuration de l’PDF natif :
 
 - Installation de Java Platform, Standard Edition 8 ou 11 JDK (Java SE Development Kit) et JRE (Java SE Runtime Environment)
 - AEM 6.5 SP13, SP12, SP11 ou SP10
@@ -51,7 +51,7 @@ Le moteur de publication de PDF natif a besoin d’un JDK d’Oracle pour géné
 
    C:\Program Files\JAVA\ jdk1.8.0_144
 
-8. Ajoutez select Path (Chemin) à partir des variables système et cliquez sur Edit (Modifier).
+8. Ajoutez sélectionnez Chemin dans les variables système et cliquez sur Modifier.
 
 9. Désormais, dans les variables Path , indiquez la valeur du chemin du serveur et cliquez sur OK.
 
@@ -90,11 +90,10 @@ Le moteur de publication de PDF natif a besoin d’un JDK d’Oracle pour géné
    1. export JAVA\_HOME=/usr/lib/jvm/java-11.0.15.1
    2. export PATH=$PATH : $JAVA\_HOME/bin
 
-
-5. Redémarrer AEM serveur
+5. Redémarrez AEM serveur et passez à l’étape 12, si vous utilisez les Guides version 4.2 et ultérieure.
 6. Copiez le _node_modules.zip_&quot; joint au bas de cet article au répertoire crx-quickstart/profiles/nodejs—b1aad0a7-9079-e56c-1ed8-6fcababe8166/.
 7. Ouvrez le terminal à l’emplacement crx-quickstart/profiles/nodejs—b1aad0a7-9079-e56c-1ed8-6fcababe8166/ .
-8. Supprimez le répertoire node_modules à l’aide de la commande ci-dessous
+8. Supprimez le répertoire node_modules en utilisant la commande ci-dessous
 
    **rm -rf node_modules**
 
@@ -110,9 +109,9 @@ Le moteur de publication de PDF natif a besoin d’un JDK d’Oracle pour géné
 Commande : yum install fontconfig
 12. Générez un PDF natif à partir des paramètres prédéfinis dans l’éditeur web.
 
-**REMARQUE** : Le package node_modules.zip peut être téléchargé. [here](https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:295d8f03-41e1-429b-8465-2761ce3c2fb3).
+**REMARQUE** : le package node_modules.zip peut être téléchargé [here](https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:295d8f03-41e1-429b-8465-2761ce3c2fb3).
 
-L’importation manuelle des modules de noeud téléchargés pour le système d’exploitation Linux est une solution de contournement pour les utilisateurs qui utilisent les Guides 4.1 ou les versions antérieures.
+L’importation manuelle des modules de noeud téléchargés pour le système d’exploitation Linux est une solution de contournement pour les utilisateurs qui utilisent les guides 4.1 ou les versions antérieures (Étape 6-12).
 
 ## Étapes de configuration de la machine Mac (JAVA 11/8)
 
@@ -141,9 +140,9 @@ L’importation manuelle des modules de noeud téléchargés pour le système d�
 
    C:/{aem-installation-folder}/crx-quickstart/profiles/nodejs—b1aad0a7-9079-e56c-1ed8-6fcababe8166
 
-   i) find . -type d -exec chmod 0755 {} \; ii) find . -type f -exec chmod 0755 {} \; iii) ./node-darwin/bin/node node-darwin/lib/node_modules/npm/bin/npm-cli.js —prefix . install —unsafe-perm —scripts-prepend-node-path
+   i) find . -type d -exec chmod 0755 {} \; ii) rechercher . -type f -exec chmod 0755 {} \; iii) ./node-darwin/bin/node node-darwin/lib/node_modules/npm/bin/npm-cli.js —prefix . install —unsafe-perm —scripts-prepend-node-path
 
-8. Vérifiez si Java est installé à l’aide de la commande ci-dessous.
+8. Vérifiez si Java est installé à l’aide de la commande ci-dessous
 
    i) Exécuter **./node-darwin/bin/node** à partir du dossier /crx-quickstart/profiles/nodejs—b1aad0a 7-9079-e56c-1ed8-6fcababe8166
 
@@ -164,8 +163,22 @@ Vous trouverez ci-dessous les erreurs courantes qui peuvent se produire pendant 
 
 ![exception de pointeur nul](../assets/publishing/null-pointer-exception.png)
 
+Si le problème persiste même après la correction des paramètres de l’environnement Java, veuillez revalider les éléments suivants :
+
+1. Vérifiez si le paramètre prédéfini de sortie est défini correctement ou créez un nouveau paramètre prédéfini de sortie sans espaces.
+
+2. Vérifiez le répertoire des ressources de noeud dans /libs/fmdta/node_resources pour vous assurer que toutes les bibliothèques requises sont installées pendant l’installation.
+
 ### Bibliothèques manquantes dans RHEL 7 Linux OS
 
 ![bibliothèques manquantes](../assets/publishing/missing-libraries.png)
+
+### Timeout du processus de publication. Le processus ne s’est pas terminé pendant une période donnée de 0 ms
+
+![délai du processus de publication](../assets/publishing/publish-process-timeout.png)
+
+Validez la valeur de la propriété timeout pour le noeud nodejs dans /var/dxml/profiles/b1aad0a7-9079-e56c-1ed8-6fcababe8166/nodejs dans le référentiel CRX. La valeur par défaut est 300.
+
+
 
 Si vous rencontrez des problèmes lors de l’exécution de l’une des étapes ci-dessus, publiez votre question dans la communauté AEM Guides. [forum](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/ct-p/aem-xml-documentation) pour obtenir de l’aide.
