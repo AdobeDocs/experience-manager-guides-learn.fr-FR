@@ -2,9 +2,9 @@
 title: Présentation des fonctionnalités de l’éditeur web
 description: Découvrez comment connaître les fonctionnalités de l’éditeur web
 exl-id: 38b378ff-da24-4560-a17f-a2c547aea1b8
-source-git-commit: 48845ffcc530baad6689c8bca8847c57bbe9bf5d
+source-git-commit: 3ae28dc4266d418e5730e2036c8eee2a804dc847
 workflow-type: tm+mt
-source-wordcount: '15744'
+source-wordcount: '15745'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ La sous-section suivante décrit en détail les différentes sections de l’éd
 
 ## Barre d’outils principale {#id2051EA0G05Z}
 
-La barre d’outils principale se trouve dans la partie supérieure de l’interface de l’éditeur Web. Elle fournit des fonctions au niveau du fichier et divers modes de création disponibles dans l’éditeur Web. Les fonctionnalités disponibles dans la barre d’outils supérieure sont expliquées comme suit :
+La barre d’outils principale se trouve dans la partie supérieure de l’interface de l’éditeur Web. Elle fournit des fonctions au niveau du fichier et divers modes de création disponibles dans l’éditeur Web. Les fonctions disponibles dans la barre d’outils supérieure sont expliquées comme suit :
 
 **Enregistrer tout** - ![](images/SaveFloppy_icon.svg)
 

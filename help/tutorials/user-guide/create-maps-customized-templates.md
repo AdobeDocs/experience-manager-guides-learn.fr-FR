@@ -2,7 +2,7 @@
 title: Création de cartes à partir de modèles personnalisés
 description: Découvrez comment créer des cartes à partir de modèles personnalisés
 exl-id: 02513148-3876-4549-962a-9984f619030f
-source-git-commit: ca96cafa214d2dd03a9933024a195ec4995ee4dc
+source-git-commit: 3ae28dc4266d418e5730e2036c8eee2a804dc847
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 1%
@@ -61,7 +61,7 @@ Effectuez les étapes suivantes pour créer un modèle de mappage :
 
 1. Dans le **Interface utilisateur des ressources**, accédez au dossier dita-templates .
 1. Cliquez sur **maps** pour l’ouvrir.
-1. Cliquez sur **Créez \> Modèle DITA.**
+1. Cliquez sur **Créer** > **Modèle DITA.**
 
    ![](images/create-dita-template.png){width="300" align="left"}
 
