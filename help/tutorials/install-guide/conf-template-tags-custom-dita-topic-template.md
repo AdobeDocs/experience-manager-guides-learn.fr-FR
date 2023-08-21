@@ -1,15 +1,15 @@
 ---
-title: Configuration d’un modèle de rubrique DITA personnalisé
+title: Configuration du modèle de rubrique DITA personnalisé
 description: Découvrez comment configurer le modèle de rubrique DITA personnalisé
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+exl-id: f79165ef-5118-4574-815d-c4ecb2f7d58b
+source-git-commit: 20980cd289a306fc73146ec3550ae31f15e91591
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 2%
 
 ---
 
-
-# Configuration d’un modèle de rubrique DITA personnalisé {#id16A7G0O02TD}
+# Configuration du modèle de rubrique DITA personnalisé {#id16A7G0O02TD}
 
 Les Guides d’AEM sont fournis avec les modèles de rubrique DITA suivants :
 
@@ -45,9 +45,7 @@ AEM Guides vous permet de configurer un dossier pour stocker vos modèles et map
 
 `/content/dam/dita-templates/`
 
-Pour gérer les fichiers de modèle de rubrique et de mappage, il existe des dossiers dédiés pour stocker les modèles de rubrique et de mappage. Par défaut, tous les modèles de rubrique sont stockés sous le `/content/dam/dita-templates/topics`
-
-dossier. Tous les modèles de mappage sont stockés sous `/content/dam/dita-templates/maps` dossier.
+Pour gérer les fichiers de modèle de rubrique et de mappage, il existe des dossiers dédiés pour stocker les modèles de rubrique et de mappage. Par défaut, tous les modèles de rubrique sont stockés sous le `/content/dam/dita-templates/topics` dossier. Tous les modèles de mappage sont stockés sous `/content/dam/dita-templates/maps` dossier.
 
 En tant qu’administrateur, vous pouvez choisir de créer une carte personnalisée ou des modèles de rubrique dans le dossier par défaut ou de créer votre propre dossier pour stocker des modèles personnalisés. Si vous prévoyez d’utiliser le dossier par défaut, vous pouvez ignorer ce processus.
 
@@ -57,7 +55,7 @@ Pour configurer un dossier pour vos modèles de rubrique DITA personnalisés, pr
 >
 > Vous pouvez ignorer ce processus si vous souhaitez utiliser le dossier par défaut pour stocker des modèles personnalisés.
 
-1. Ouvrez la page Configuration de la console web Adobe Experience Manager .
+1. Ouvrez la page de configuration de la console web Adobe Experience Manager .
 
    L&#39;URL par défaut pour accéder à la page de configuration est :
 
@@ -65,7 +63,7 @@ Pour configurer un dossier pour vos modèles de rubrique DITA personnalisés, pr
    http://<server name>:<port>/system/console/configMgr
    ```
 
-1. Recherchez et cliquez sur le bouton *com.adobe.fmdita.config.ConfigManager* du lot.
+1. Recherchez et cliquez sur le bouton *com.adobe.config.ConfigManager* du lot.
 
 1. Dans le **Emplacement des modèles** , spécifiez un emplacement pour stocker les modèles personnalisés.
 
@@ -75,4 +73,3 @@ Pour configurer un dossier pour vos modèles de rubrique DITA personnalisés, pr
 Si l’emplacement spécifié existe dans la gestion des ressources numériques, tous les modèles de mappage et de rubrique par défaut sont copiés dans ce dossier. Si l’emplacement n’existe pas, le dossier est créé avec tous les modèles de mappage et de rubrique par défaut.
 
 **Rubrique parente :**[ Configuration des modèles de rubrique et de mappage](conf-template-tags.md)
-

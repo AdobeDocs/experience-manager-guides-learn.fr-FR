@@ -2,10 +2,10 @@
 title: Utilisation de la collecte des cartes pour la génération de la sortie
 description: Découvrez comment utiliser la collecte de cartes pour la génération de sortie
 exl-id: 32e3af6c-9670-42cc-8dbe-9f99fbc60adf
-source-git-commit: 22f88ae4097a6067ed65a963ad6765f6f8c24f36
+source-git-commit: 2e39580aa8417641d8b2ac7eab4ba4805cb68f0f
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 1%
+source-wordcount: '941'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ Collection de cartes vous offre la possibilité de voir si une modification est 
 
 Pour créer une collection de mappages et ajouter des mappages DITA à la collection, procédez comme suit :
 
-1. Dans l’interface utilisateur d’Assets, cliquez sur **Mappage de collections**.
+1. Dans l’interface utilisateur Assets, cliquez sur **Mappage de collections**.
 
    Si le lien Mapper les collections n’est pas disponible, sélectionnez la variable **Navigation** dans le rail de gauche, puis cliquez sur **Mappage de collections**.
 
@@ -52,15 +52,15 @@ Pour créer une collection de mappages et ajouter des mappages DITA à la collec
 Les options de filtrage et les détails de mappage suivants sont affichés sur la page de collection :
 
 - **Filtre :** Le dernier rail affiche les filtres suivants :
-   - **Modifié**: Vous pouvez sélectionner Oui ou Non. Si vous sélectionnez l’option Oui, seules les cartes DITA modifiées s’affichent dans le tableau Cartes et paramètres prédéfinis .
-   - **Paramètre prédéfini**: Sélectionnez un paramètre prédéfini pour lequel vous souhaitez filtrer les fichiers map. Par exemple, si vous choisissez *AEM site* prédéfini, alors seules les cartes qui comportent la variable *AEM site* paramètre prédéfini de sortie configuré dessus.
-   - **Langue**: Vous pouvez sélectionner l’un des codes de langue disponibles et afficher uniquement la langue sélectionnée dans le tableau Cartes et paramètres prédéfinis .
-- **Cartes et paramètres prédéfinis** table : Le tableau Cartes et paramètres prédéfinis présente des informations dans les colonnes suivantes :
-   - **Carte**: Affiche le titre du fichier de mappage DITA.
-   - **Langue**: Affiche la langue du mappage DITA.
-   - **Paramètre prédéfini**: Affiche le type de paramètre prédéfini de sortie configuré dans le fichier map.
-   - **Modifié**: Indique si le mappage DITA est mis à jour après la dernière publication. En fonction de ces informations, vous pouvez décider si vous souhaitez republier la sortie pour ce mappage DITA ou non.
-   - **Dernière génération**: Affiche la date et l’heure de la dernière sortie générée.
+   - **Modifié**: vous pouvez sélectionner Oui ou Non. Si vous sélectionnez l’option Oui, seules les cartes DITA modifiées s’affichent dans le tableau Cartes et paramètres prédéfinis .
+   - **Prédéfinie**: sélectionnez un paramètre prédéfini pour lequel vous souhaitez filtrer les fichiers map. Par exemple, si vous choisissez *AEM site* prédéfini, alors seules les cartes qui comportent la variable *AEM site* paramètre prédéfini de sortie configuré dessus.
+   - **Langue**: vous pouvez sélectionner l’un des codes de langue disponibles et afficher uniquement la langue sélectionnée dans le tableau Cartes et paramètres prédéfinis .
+- **Cartes et paramètres prédéfinis** tableau : le tableau Cartes et paramètres prédéfinis présente des informations dans les colonnes suivantes :
+   - **Carte**: affiche le titre du fichier de mappage DITA.
+   - **Langue**: affiche la langue du mappage DITA.
+   - **Prédéfinie**: affiche le type de paramètre prédéfini de sortie configuré dans le fichier de mappage.
+   - **Modifié**: indique si le mappage DITA est mis à jour après la dernière publication. En fonction de ces informations, vous pouvez décider si vous souhaitez republier la sortie pour ce mappage DITA ou non.
+   - **Dernière génération**: affiche la date et l’heure de la dernière sortie générée.
 
 ## Configuration et génération de la sortie à l’aide d’une collection de cartes
 
@@ -68,7 +68,7 @@ Pour configurer et générer la sortie à l’aide d’une collection de cartes,
 
 1. Ouvrez la collection de cartes. Vous pouvez afficher les différents paramètres prédéfinis de sortie tels que le site AEM, le PDF (y compris le PDF natif), le HTML 5, l’EPUB et les paramètres prédéfinis personnalisés. Vous pouvez également afficher les paramètres prédéfinis de profil global et de dossier créés par votre administrateur.
 
-   Le ![](images/global-preset-icon.svg) indique un paramètre prédéfini au niveau du profil de dossier.
+   La variable ![](images/global-preset-icon.svg) indique un paramètre prédéfini au niveau du profil de dossier.
 1. \(Facultatif\) Effectuez l’une des opérations suivantes selon vos besoins :
    - Appliquez des filtres à partir du rail de gauche pour filtrer les mappages, le paramètre prédéfini de sortie ou la langue modifiés.
    - Si nécessaire, cliquez sur **Modifier** et modifiez la sortie souhaitée en activant ou en désactivant le bouton coulissant.
@@ -79,7 +79,13 @@ Pour configurer et générer la sortie à l’aide d’une collection de cartes,
      >  
      > Par défaut, tout nouveau paramètre prédéfini est désactivé.
 
-   - Vous pouvez sélectionner **Activation/désactivation de tous les paramètres prédéfinis de profil de dossier** pour un mappage DITA afin de sélectionner tous les profils de dossiers pour celui-ci en une seule fois.
+1. Vous pouvez activer les paramètres prédéfinis pour un mappage DITA de la manière suivante :
+
+   - Activez n’importe quel paramètre prédéfini.
+   - Activer **Tous les paramètres prédéfinis** pour qu’un mappage DITA sélectionne tous les paramètres prédéfinis en une seule fois. Cette option est désactivée par défaut.
+   - Activer **Paramètres prédéfinis de profil de dossier** pour un mappage DITA, sélectionnez tous les paramètres prédéfinis de profil de dossier pour celui-ci. Cette option est désactivée par défaut.
+     ![modification d’une collection map sur les services cloud](images/edit-map-collection-cs.png){width="800" align="left"}
+
 
 
 1. Utilisez l’une des méthodes suivantes :
@@ -96,7 +102,7 @@ Pour configurer et générer la sortie à l’aide d’une collection de cartes,
 - Pour supprimer une collection de mappages, sélectionnez-la dans la page Collection de mappages, puis cliquez sur **Supprimer**.
 - Pour supprimer un mappage DITA d’une collection de mappages, ouvrez la collection de mappages en mode d’édition, sélectionnez le fichier de mappage DITA, puis cliquez sur **Supprimer de la collection**.
 
-  Cela supprime également tous les paramètres prédéfinis ou paramètres régionaux associés au mappage DITA de la collection de cartes.
+  Cela supprime également tous les paramètres prédéfinis ou les paramètres régionaux associés au mappage DITA de la collection de cartes.
 
 
 ## Annulation d’une tâche de génération de sortie à partir d’une collection de cartes

@@ -2,10 +2,10 @@
 title: Création de cartes à partir de modèles personnalisés
 description: Découvrez comment créer des cartes à partir de modèles personnalisés
 exl-id: 02513148-3876-4549-962a-9984f619030f
-source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
+source-git-commit: ca96cafa214d2dd03a9933024a195ec4995ee4dc
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 0%
+source-wordcount: '1084'
+ht-degree: 1%
 
 ---
 
@@ -26,6 +26,14 @@ AEM Guides vous permet de créer des cartes et des rubriques personnalisées à 
 >[!NOTE]
 >
 > Toutes les ressources qui doivent uniquement être référencées et gérées doivent être conservées en dehors du dossier des modèles.
+
+
+Vous pouvez créer des modèles de mappage et de rubrique de la manière suivante :
+1. Volet Modèles de [Panneau gauche](./web-editor-features.md#left-panel-id2051ea0m0hs)
+1. [Modèles dans l’interface utilisateur d’Assets](#templates-assets-ui)
+1. [Menu Options](#templates-in-assets-ui)
+
+### Modèles dans l’interface utilisateur d’Assets {#templates-assets-ui}
 
 **Modèle de rubrique**
 
@@ -49,7 +57,7 @@ Pour créer un modèle de rubrique, procédez comme suit :
 
 **Modèle de carte**
 
-Pour créer un modèle de carte, procédez comme suit :
+Effectuez les étapes suivantes pour créer un modèle de mappage :
 
 1. Dans le **Interface utilisateur des ressources**, accédez au dossier dita-templates .
 1. Cliquez sur **maps** pour l’ouvrir.
@@ -66,6 +74,35 @@ Pour créer un modèle de carte, procédez comme suit :
    > Le nom de fichier doit avoir l’extension .ditamap .
 
 1. (Facultatif\) Ajoutez une description. Cliquez sur **Créer**. Le message relatif au modèle de carte créé s’affiche. Vous pouvez ensuite ouvrir le modèle de carte et le modifier. Vous pouvez ajouter les références des modèles de rubrique, des modèles de mappage et d’autres ressources dans le modèle de mappage.
+
+### Menu Options {#options-menu}
+
+Pour créer un mappage ou un modèle de rubrique, procédez comme suit :
+
+1. Sélectionnez la variable **Carte** ou **Rubrique** dans le dossier des modèles actuels. Par exemple, le dossier `dita-templates`.
+1. Dans la **Options** menu, sélectionnez **Créer un modèle de carte** ou **Créer un modèle de rubrique**.
+
+   La variable **Créer un modèle de carte** ou le **Créer un modèle de rubrique** s’ouvre.
+1. Saisissez le titre et le nom du nouveau modèle.
+1. Choisissez le type de modèle que vous souhaitez créer à partir du **Modèle** liste déroulante.
+
+Le message relatif au modèle de carte créé s’affiche. Vous pouvez ajouter le modèle à votre profil global ou au niveau du dossier. Le nouveau modèle apparaît ensuite dans la rubrique ou le processus de création de mappage, et vous pouvez créer des mappages ou des rubriques à l’aide de celui-ci.
+
+
+Votre administrateur peut également créer un dossier et le configurer pour qu’il soit le dossier dans lequel vous pouvez créer et enregistrer les modèles.
+
+Selon votre configuration, apprenez à configurer le chemin d’accès au dossier de modèle DITA personnalisé :
+<details>
+    <summary> Services cloud </summary>
+
+Découvrez comment [configuration du chemin d’accès au dossier de modèle DITA personnalisé](../install-guide/conf-template-tags-custom-dita-topic-template.md#configure-custom-dita-template-folder-path-id191lcf0095z) dans le Guide d&#39;installation et de configuration de Cloud Service.
+</details>
+
+<details>
+    <summary> Logiciel On-Premise</summary>
+
+Découvrez comment [configuration du chemin d’accès au dossier de modèle DITA personnalisé](../cs-install-guide/conf-template-tags-custom-dita-topic-template.md#configure-custom-dita-template-folder-path-id191lcf0095z) dans le Guide d&#39;installation et de configuration On-premise.
+</details>
 
 ## Transmettre le titre défini dans les modèles
 
@@ -111,11 +148,14 @@ Exemple
 </title>
 ```
 
+
+
+
 ## Utiliser le modèle de carte pour créer de nouvelles cartes
 
 >[!NOTE]
 >
-> Le modèle de carte doit être configuré et rendu disponible pour la création par votre administrateur. Pour plus d’informations, voir *Configuration de modèles de création* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
+> Le modèle de carte doit être configuré et rendu disponible pour la création par votre administrateur. Pour plus d’informations, voir *Configuration de modèles de création* dans la section Installation et configuration de Adobe Experience Manager Guides as a Cloud Service.
 
 Pour créer une carte à l’aide du modèle de carte personnalisé, procédez comme suit :
 
@@ -136,14 +176,14 @@ La carte génère toutes les ressources auxquelles il est fait référence dans 
 
 - Si le mappage contient la référence à un modèle de rubrique, une copie de celui-ci est créée dans le dossier, dans la même hiérarchie que dans le dossier de rubriques du `dita-templates` dossier.
 - Si le mappage contient la référence à un modèle de mappage, une copie de celui-ci est créée dans le dossier, dans la même hiérarchie que dans le dossier des mappages dans la variable `dita-templates` dossier.
-- Si la carte contient la référence générique à une rubrique ou à un mappage en dehors de la variable `dita-templates/topics` ou `dita-templates/maps` , la même référence est uniquement utilisée et aucune copie n’est créée.
+- Si la carte contient la référence générique à une rubrique ou à un mappage en dehors de la variable `dita-templates/topics` ou `dita-templates/maps` , il en est de même uniquement pour les références et aucune copie n’est créée.
 
-   >[!NOTE]
-   >
-   > `dita-templates/topics` et `dita-templates/maps` sont les chemins par défaut dans les guides et peuvent être configurés.
+  >[!NOTE]
+  >
+  > `dita-templates/topics` et `dita-templates/maps` sont les chemins par défaut dans les guides et peuvent être configurés.
 
 
-   S’il existe une définition de clé de modèle de rubrique dans le modèle de mappage, une nouvelle clé \(par conséquent, nouvelle rubrique\) est créée et référencée dans le mappage.
+  S’il existe une définition de clé de modèle de rubrique dans le modèle de mappage, une nouvelle clé \(par conséquent, nouvelle rubrique\) est créée et référencée dans le mappage.
 
 - Si un autre mappage ou une autre rubrique est créé au même niveau dans le dossier, les noms des ressources nouvellement créées sont ajoutés avec 0,1,2, etc. Vous pouvez choisir d’ouvrir le mappage pour modifier ou enregistrer le fichier de mappage dans le référentiel.
 

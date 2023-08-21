@@ -2,9 +2,9 @@
 title: Présentation des fonctionnalités de l’éditeur web
 description: Découvrez comment connaître les fonctionnalités de l’éditeur web
 exl-id: 38b378ff-da24-4560-a17f-a2c547aea1b8
-source-git-commit: 270b94f0c1e29237c4bdad891c41446de897fddb
+source-git-commit: 48845ffcc530baad6689c8bca8847c57bbe9bf5d
 workflow-type: tm+mt
-source-wordcount: '15461'
+source-wordcount: '15744'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Lorsque vous choisissez d’enregistrer une rubrique ou un mappage à l’aide d
 
 Saisissez les commentaires et les libellés de version pour identifier les modifications, puis cliquez sur **Enregistrer** pour créer une version de votre fichier.
 
-Lorsque vous choisissez l’option *Enregistrer comme nouvelle version*, la première version de la rubrique est créée dans la gestion des ressources numériques, qui devient également la version actuellement principale de votre rubrique. Par la suite, si vous revenez à une ancienne version de la rubrique, cela devient votre principale version actuelle de la rubrique.
+Lorsque vous choisissez l’option *Enregistrer comme nouvelle version*, la première version de la rubrique est créée dans la gestion des ressources numériques, qui devient également la version actuellement active de votre rubrique. Par la suite, si vous revenez à une ancienne version de la rubrique, cela devient votre version active actuelle de la rubrique.
 
 Si votre administrateur dispose d’étiquettes de version préconfigurées, ces étiquettes s’affichent dans une liste déroulante. Vous pouvez choisir un libellé dans la liste des libellés disponibles et enregistrer votre document.
 
@@ -97,7 +97,7 @@ Les paramètres de l’éditeur ne sont disponibles que pour les utilisateurs ad
 
   ![](images/editor-setting-general.png){width="650" align="left"}
 
-   - **Vérifier l’orthographe**: il existe deux options — **Vérifier l’orthographe AEM** et **Vérifier l’orthographe du navigateur**. Par défaut, l’éditeur utilise la fonction Vérifier l’orthographe du navigateur, dans laquelle la vérification orthographique est effectuée à l’aide du dictionnaire intégré du navigateur. Vous pouvez passer à la vérification orthographique AEM pour utiliser AEM dictionnaire, qui peut également être personnalisé pour ajouter votre liste de mots personnalisée. Pour plus d’informations sur la personnalisation du dictionnaire AEM, voir *Personnalisation AEM dictionnaire par défaut* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
+   - **Vérifier l’orthographe**: il existe deux options — **Vérifier l’orthographe AEM** et **Vérifier l’orthographe du navigateur**. Par défaut, l’éditeur utilise la fonction Vérifier l’orthographe du navigateur, dans laquelle la vérification orthographique est effectuée à l’aide du dictionnaire intégré du navigateur. Vous pouvez passer à la vérification orthographique AEM pour utiliser AEM dictionnaire, qui peut également être personnalisé pour ajouter votre liste de mots personnalisée. Pour plus d’informations sur la personnalisation du dictionnaire AEM, voir *Personnalisation AEM dictionnaire par défaut* dans la section Installation et configuration de Adobe Experience Manager Guides as a Cloud Service.
 
 
    - **Condition**
@@ -127,7 +127,7 @@ Modifiez le style des citations. Choisissez le style de citation dans la liste d
 
 >[!NOTE]
 >
-> Si un panneau personnalisé a été configuré, il apparaît également dans la liste des panneaux. Vous pouvez activer ou désactiver le commutateur pour afficher ou masquer le panneau personnalisé. Pour plus d’informations sur la configuration, voir la section *Configurer un panneau personnalisé dans le panneau de gauche* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
+> Si un panneau personnalisé a été configuré, il apparaît également dans la liste des panneaux. Vous pouvez activer ou désactiver le commutateur pour afficher ou masquer le panneau personnalisé. Pour plus d’informations sur la configuration, voir la section *Configurer un panneau personnalisé dans le panneau de gauche* dans la section Installation et configuration de Adobe Experience Manager Guides as a Cloud Service.
 
 - **Liste des éléments**: en tant qu’administrateur, vous pouvez contrôler la liste des éléments qu’un auteur peut insérer à l’aide de la variable [Insérer un élément](#id204SG30105Z) et définissez également le nom d’affichage de l’élément. Le paramètre Liste d’éléments vous permet de spécifier le nom de l’élément conformément aux spécifications DITA et un libellé que vous souhaitez utiliser au lieu du nom d’élément défini par DITA :
 
@@ -171,7 +171,7 @@ Les préférences utilisateur sont disponibles pour tous les auteurs. À l’aid
 
 - **Profils de dossier**: le profil de dossier contrôle différentes configurations liées aux attributs conditionnels, aux modèles de création, aux paramètres prédéfinis de sortie et aux configurations de l’éditeur web. Le profil global s’affiche par défaut. En outre, si votre administrateur a configuré les profils de dossiers dans le système, ces derniers sont également affichés dans la liste Profils de dossiers .
 
-  Les configurations de l’éditeur web qu’un administrateur peut définir dans le profil de dossier incluent : la personnalisation de l’interface utilisateur, notamment les icônes de la barre d’outils, la mise en page de l’éditeur web, les fragments de code et la carte racine. Pour plus d’informations, voir *Configuration de profils globaux ou au niveau du dossier* dans l’as a Cloud Service Installer et configurer Adobe Experience Manager Guides.
+  Les configurations de l’éditeur web qu’un administrateur peut définir dans le profil de dossier incluent : la personnalisation de l’interface utilisateur, notamment les icônes de la barre d’outils, la mise en page de l’éditeur web, les fragments de code et la carte racine. Pour plus d’informations, voir *Configuration de profils globaux ou au niveau du dossier* dans l’as a Cloud Service Installer et configurer les guides Adobe Experience Manager .
 
   >[!NOTE]
   >
@@ -359,7 +359,7 @@ Vous pouvez rechercher des fichiers non DITA tels que les fichiers d’image, le
 
 >[!NOTE]
 >
-> L’administrateur du système peut également configurer les filtres de texte et afficher ou masquer d’autres filtres. Pour plus d’informations, reportez-vous à la section Configuration des filtres de texte dans les guides d’installation et de configuration d’Adobe Experience Manager as a Cloud Service.
+> L’administrateur du système peut également configurer les filtres de texte et afficher ou masquer d’autres filtres. Pour plus d’informations, reportez-vous à la section Configuration de filtres de texte dans les guides d’installation et de configuration de Adobe Experience Manager as a Cloud Service.
 
 La liste des fichiers filtrés contenant le texte recherché s’affiche. Par exemple, dans la capture d’écran ci-dessus, les fichiers contenant le texte &quot;général&quot; sont répertoriés. Vous pouvez également prévisualiser le contenu du fichier.
 
@@ -373,7 +373,7 @@ Dans la boîte de dialogue Réutiliser le contenu , sélectionnez le fichier DIT
 
 Pour insérer une référence de contenu, vous pouvez également saisir l’UUID du fichier et le contenu réutilisable de ce fichier est répertorié dans la section Aperçu .
 
-Selon le paramètre d’insertion de liens, vous pouvez afficher l’UUID du contenu inséré ou le chemin relatif dans le panneau Propriétés ou la vue Code source. Le lien est toujours créé à l&#39;aide de l&#39;UUID du contenu référencé. Reportez-vous à la section Configuration de liens basés sur l’UUID dans les guides d’installation et de configuration d’Adobe Experience Manager as a Cloud Service.
+Selon le paramètre d’insertion de liens, vous pouvez afficher l’UUID du contenu inséré ou le chemin relatif dans le panneau Propriétés ou la vue Code source. Le lien est toujours créé à l&#39;aide de l&#39;UUID du contenu référencé. Voir Configuration de liens basés sur l’UUID dans les guides d’installation et de configuration de Adobe Experience Manager as a Cloud Service.
 
 >[!NOTE]
 >
@@ -471,7 +471,7 @@ Les opérations suivantes peuvent être effectuées dans un document avec l’af
 
 >[!NOTE]
 >
-> Si un utilisateur active la vue Balises à partir de l’éditeur web, elle reste activée même au cours des sessions. Cela signifie que vous n’avez pas besoin d’activer à nouveau la vue Balises pour y accéder ultérieurement. La valeur par défaut de la vue Balises pour la session d’un nouvel utilisateur est déterminée par la propriété tagsView dans le fichier ui\_config.json. Pour plus d’informations, voir *Configuration de la valeur par défaut pour la vue Balises* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
+> Si un utilisateur active la vue Balises à partir de l’éditeur web, elle reste activée même au cours des sessions. Cela signifie que vous n’avez pas besoin d’activer à nouveau la vue Balises pour y accéder ultérieurement. La valeur par défaut de la vue Balises pour la session d’un nouvel utilisateur est déterminée par la propriété tagsView dans le fichier ui\_config.json. Pour plus d’informations, voir *Configuration de la valeur par défaut pour la vue Balises* dans la section Installation et configuration de Adobe Experience Manager Guides as a Cloud Service.
 
 **Activer/Désactiver le suivi des modifications** ![](images/track-change-icon.svg)
 
@@ -563,7 +563,7 @@ Pour fusionner les modifications dans un fichier map, procédez comme suit :
 
 AEM Guides fournit différentes manières d’afficher les versions créées pour vos fichiers de rubrique, ainsi que de restaurer une version spécifique. Cependant, la plupart de ces fonctions sont disponibles en dehors de l’éditeur web.
 
-La fonction Historique des versions de l’éditeur web vous permet non seulement de vérifier les versions et les libellés disponibles sur votre principale rubrique, mais également de restaurer n’importe quelle version à partir de l’éditeur lui-même.
+La fonction Historique des versions de l’éditeur web vous permet non seulement de vérifier les versions et les libellés disponibles sur votre rubrique active, mais également de restaurer n’importe quelle version à partir de l’éditeur lui-même.
 
 Pour accéder à l’historique des versions et revenir à une version spécifique de votre rubrique, procédez comme suit :
 
@@ -591,11 +591,11 @@ Pour accéder à l’historique des versions et revenir à une version spécifiq
 
    ![](images/version-history-revert-dialog-save-working-copy.png){width="550" align="left"}
 
-1. \(*Facultatif*\) Fournissez une raison de revenir à une version antérieure. Vous pouvez également créer une version de la principale copie de travail de votre rubrique.
+1. \(*Facultatif*\) Fournissez une raison de revenir à une version antérieure. Vous pouvez également créer une version de la copie de travail active de votre rubrique.
 
 1. Cliquez sur **Confirmer.**
 
-   Votre copie de travail du fichier est rétablie à la version sélectionnée. Si vous choisissez de créer une version de la copie de travail principale, une nouvelle version du fichier est également créée avec toutes les modifications en cours.
+   Votre copie de travail du fichier est rétablie à la version sélectionnée. Si vous choisissez de créer une version de la copie de travail active, une nouvelle version du fichier est également créée avec toutes les modifications en cours.
 
 
 Lorsque vous revenez à une version antérieure, un indice visuel s’affiche indiquant que la version sur laquelle vous travaillez n’est pas la dernière version.
@@ -606,7 +606,7 @@ Lorsque vous revenez à une version antérieure, un indice visuel s’affiche in
 
 Les libellés vous aident à identifier l’étape dans laquelle une rubrique particulière se trouve dans le DDLC \(Cycle de vie du développement de documents\). Par exemple, lorsque vous travaillez sur une rubrique, vous pouvez définir le libellé &quot;Approuvé&quot;. Une fois qu’une rubrique est publiée et mise à la disposition des clients, vous pouvez lui attribuer le libellé &quot;Publication&quot;.
 
-AEM Guides vous permet de spécifier des libellés dans un format de texte libre ou d’utiliser un ensemble de libellés prédéfinis. Le libellé personnalisé permet à tout auteur du système de spécifier un libellé en fonction de son choix. Cela offre une certaine souplesse, mais introduit des libellés incohérents dans le système. Pour résoudre ce problème, les administrateurs peuvent configurer un ensemble de libellés prédéfinis. Pour plus d’informations sur la configuration des libellés prédéfinis, voir *Configuration et personnalisation de l’éditeur Web XML* dans l’as a Cloud Service Installer et configurer Adobe Experience Manager Guides.
+AEM Guides vous permet de spécifier des libellés dans un format de texte libre ou d’utiliser un ensemble de libellés prédéfinis. Le libellé personnalisé permet à tout auteur du système de spécifier un libellé en fonction de son choix. Cela offre une certaine souplesse, mais introduit des libellés incohérents dans le système. Pour résoudre ce problème, les administrateurs peuvent configurer un ensemble de libellés prédéfinis. Pour plus d’informations sur la configuration des libellés prédéfinis, voir *Configuration et personnalisation de l’éditeur Web XML* dans l’as a Cloud Service Installer et configurer les guides Adobe Experience Manager .
 
 Ces libellés s’affichent sous la forme d’une liste déroulante pour les auteurs lorsqu’ils ont besoin de spécifier un libellé. Ainsi, seules les étiquettes prédéfinies et cohérentes sont utilisées dans le système.
 
@@ -681,20 +681,25 @@ Pour ajouter un fichier à votre collection préférée, utilisez l’une des m�
 
   ![](images/favorite-add-file-folder.png){width="300" align="left"}
 
-- Cliquez avec le bouton droit sur l’onglet d’un fichier dans l’éditeur pour ouvrir le menu contextuel. Choisir **Ajouter À \> Favoris** pour ajouter le fichier à votre liste de favoris.
+- Cliquez avec le bouton droit sur l’onglet d’un fichier dans l’éditeur pour ouvrir le menu contextuel. Choisir **Ajouter à** > **Favoris** pour ajouter le fichier à votre liste de favoris.
 
   ![](images/favorite-add-from-file-context-menu_cs.png){width="400" align="left"}
 
+>[!NOTE]
+>
+> - Pour supprimer un élément de la liste des favoris, sélectionnez l’icône Options en regard de l’élément dans une collection Favoris et choisissez **Supprimer des favoris**.
+> - Pour prévisualiser le fichier sans l’ouvrir, sélectionnez un fichier, puis sélectionnez **Aperçu** dans le menu Options.
 
-** Menu Options de la collection Favroties**\
+
+
+**Menu Options de la collection Favroties**\
 Vous pouvez également effectuer de nombreuses actions à l’aide du menu Options disponible pour une collection Favoris :
 
 ![](images/favorites-options.png){width="400" align="left"}
 - **Renommer**: renommez la collection sélectionnée.
-- **Supprimer**: supprime le fichier sélectionné.
+- **Supprimer**: supprime la collection sélectionnée.
 - **Actualiser**: obtenez une nouvelle liste de fichiers et de dossiers à partir du référentiel.
 - **Affichage dans l’interface utilisateur d’Assets**: affiche le contenu du fichier ou du dossier dans l’interface utilisateur d’Assets.
-
 
 >[!NOTE]
 >
@@ -730,7 +735,7 @@ Vous disposez également des options suivantes pour filtrer les fichiers et pour
 - **Dernière modification**: vous pouvez rechercher les fichiers qui ont été modifiés pour la dernière fois après une date sélectionnée, mais avant une date sélectionnée. Vous pouvez également rechercher les fichiers qui ont été modifiés pour la dernière fois au cours des deux dernières heures, de la semaine dernière, du mois dernier ou de l’année dernière.
 - **Balises**: vous pouvez rechercher les fichiers auxquels des balises spécifiques sont appliquées. Vous pouvez saisir la balise ou la sélectionner dans la liste déroulante.
 
-**Remarque :** L’administrateur du système peut également configurer les filtres de texte et afficher ou masquer d’autres filtres. Pour plus d’informations, voir *Configuration des filtres de texte* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
+**Remarque :** L’administrateur du système peut également configurer les filtres de texte et afficher ou masquer d’autres filtres. Pour plus d’informations, voir *Configuration des filtres de texte* dans la section Installation et configuration de Adobe Experience Manager Guides as a Cloud Service.
 
 La liste des fichiers filtrés contenant le texte recherché s’affiche. Par exemple, dans la capture d’écran ci-dessus, les fichiers contenant le texte &quot;usage général&quot; sont répertoriés. Vous pouvez sélectionner plusieurs fichiers de la liste filtrée pour les faire glisser et les déposer dans une carte ouverte pour modification.
 
@@ -810,7 +815,7 @@ Les différentes options du menu Options sont expliquées ci-dessous :
   > - Si un fichier est verrouillé ou extrait par un utilisateur, placez le pointeur de la souris sur l’icône de verrouillage pour afficher l’utilisateur \(nom\) qui a verrouillé le fichier.
   > - Lorsque vous archivez un fichier contenant des modifications non enregistrées, vous êtes invité à les enregistrer. Si vous n’enregistrez pas vos modifications, il extrait uniquement le fichier.
 
-- **Aperçu**: obtenez un aperçu rapide du fichier \(.dita/.xml\) sans l’ouvrir.
+- **Aperçu**: obtenir un aperçu rapide du fichier (fichier .dita, .xml, audio, vidéo ou image) sans l’ouvrir. Vous pouvez redimensionner le volet d’aperçu. Si le contenu contient des `<xref>` ou `<conref>`, vous pouvez la sélectionner pour l’ouvrir dans un nouvel onglet. Le titre du fichier s’affiche dans la fenêtre. Si aucun titre n’est présent, le nom du fichier s’affiche. Pour fermer la variable **Aperçu** , vous pouvez sélectionner l’icône de fermeture ou cliquer n’importe où en dehors du volet.
 
   ![](images/quick-preview_cs.png){width="800" align="left"}
 
@@ -858,7 +863,7 @@ Les différentes options du menu Options sont expliquées ci-dessous :
 
      >[!NOTE]
      >
-     > Si votre administrateur a empêché la suppression des fichiers extraits, le message d’erreur s’affiche uniquement. Pour plus d’informations, voir *Empêcher la suppression des fichiers extraits* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
+     > Si votre administrateur a empêché la suppression des fichiers extraits, le message d’erreur s’affiche uniquement. Pour plus d’informations, voir *Empêcher la suppression des fichiers extraits* dans la section Installation et configuration de Adobe Experience Manager Guides as a Cloud Service.
 
    - Si le fichier est ajouté à une collection de favoris, la variable **Forcer la suppression** s’affiche et vous pouvez la supprimer de manière forcée.
    - Si le fichier est référencé à partir d’un autre fichier, **Forcer la suppression** La boîte de dialogue de confirmation s’affiche et vous pouvez supprimer le fichier de manière forcée :
@@ -867,7 +872,7 @@ Les différentes options du menu Options sont expliquées ci-dessous :
 
      >[!NOTE]
      >
-     > Si votre administrateur a autorisé la suppression du fichier, **Forcer la suppression** est activée. Sinon, **Forcer la suppression** est désactivé et un message s’affiche indiquant que vous n’êtes pas autorisé à supprimer les fichiers référencés. Pour plus d’informations, voir *Empêcher la suppression des fichiers référencés* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
+     > Si votre administrateur a autorisé la suppression du fichier, **Forcer la suppression** est activée. Sinon, **Forcer la suppression** est désactivé et un message s’affiche indiquant que vous n’êtes pas autorisé à supprimer les fichiers référencés. Pour plus d’informations, voir *Empêcher la suppression des fichiers référencés* dans la section Installation et configuration de Adobe Experience Manager Guides as a Cloud Service.
 
    - Si vous supprimez une rubrique référencée et que vous avez ouvert le fichier contenant des références à modifier, le lien rompu du fichier référencé s’affiche.
 
@@ -1011,7 +1016,7 @@ Vous pouvez effectuer les actions suivantes à l’aide du menu Options :
   > - Si un fichier est verrouillé ou extrait par un utilisateur, placez le pointeur de la souris sur l’icône de verrouillage pour afficher l’utilisateur \(nom\) qui a verrouillé le fichier.
   > - Lorsque vous archivez un fichier, vous êtes invité à enregistrer les modifications. Si vous n’enregistrez pas vos modifications, il extrait uniquement le fichier.
 
-- **Aperçu**: obtenez un aperçu rapide du fichier \(.dita/.xml\) sans l’ouvrir.
+- **Aperçu**: obtenir un aperçu rapide du fichier (fichier .dita, .xml, audio, vidéo ou image) sans l’ouvrir. Vous pouvez redimensionner le volet d’aperçu. Si le contenu contient des `<xref>` ou `<conref>`, vous pouvez la sélectionner pour l’ouvrir dans un nouvel onglet.  Le titre du fichier s’affiche dans la fenêtre. Si aucun titre n’est présent, le nom du fichier s’affiche. Pour fermer la variable **Aperçu** , vous pouvez sélectionner l’icône de fermeture ou cliquer n’importe où en dehors du volet.
 - **Copier**: vous pouvez choisir parmi les options suivantes :
    - **Copier UUID**: copie de l’UUID du fichier sélectionné dans le Presse-papiers.
    - **Copier le chemin**: copie du chemin d’accès complet du fichier sélectionné dans le Presse-papiers.
@@ -1134,9 +1139,12 @@ Pour insérer du contenu à partir du panneau Contenu réutilisable , utilisez l
 
   >[!NOTE]
   >
-  > Remarque : La variable **Aperçu** est également disponible dans le menu contextuel, qui vous permet de prévisualiser rapidement l’élément avant de l’insérer.
+  > Sélectionnez un fichier, puis sélectionnez **Aperçu** de la **Options** pour prévisualiser le fichier sans l’ouvrir. Vous pouvez également prévisualiser les références présentes dans une rubrique. L’ID de référence s’affiche dans la fenêtre.
+  >
+  > La variable **Aperçu** est également disponible dans la variable **Options** d’un élément, qui permet de prévisualiser rapidement l’élément avant de l’insérer.
 
 - Faites glisser et déposez l’élément de contenu réutilisable du panneau à l’emplacement souhaité dans votre document.
+
 
 
 **Glossaire** -  ![](images/glossary.svg)
@@ -1272,87 +1280,138 @@ L’exemple suivant illustre l’utilisation du modèle d’objet dans AEM Guide
 
    ![](images/subject-scheme-apply.png){width="650" align="left"}
 
-   **Gestion des définitions hiérarchiques des définitions de sujet et des énumérations**
+**Gestion des définitions hiérarchiques des définitions de sujet et des énumérations**
 
-   Outre la gestion des énumérations et des définitions de sujet présentes dans la même carte, AEM Guides fournit également la fonctionnalité permettant de définir des énumérations et des définitions de sujet dans deux mappages distincts. Vous pouvez définir la définition de l’objet dans un mappage et les définitions de l’énumération dans un autre mappage, puis ajouter la référence du mappage. Par exemple, le code XML suivant crée des définitions de sujet et des définitions d’énumération dans deux mappages distincts.
+Outre la gestion des énumérations et des définitions de sujet présentes dans la même carte, AEM Guides fournit également la fonctionnalité permettant de définir des énumérations et des définitions de sujet dans deux mappages distincts. Vous pouvez définir une ou plusieurs définitions de sujet dans un mappage et les définitions d’énumération dans un autre mappage, puis ajouter la référence de mappage. Par exemple, le code XML suivant crée des définitions de sujet et des définitions d’énumération dans deux mappages distincts.
 
-   Les définitions de sujet sont définies dans la section `subject_scheme_map_1.ditamap`
-
-
-   ```XML
-   <?xml version="1.0" encoding="UTF-8"?> 
-   <!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "../dtd/libs/fmdita/dita_resources/DITA-1.3/dtd/subjectScheme/dtd/subjectScheme.dtd"> 
-   <subjectScheme id="subject-scheme.ditamap_f0bfda58-377b-446f-bf49-e31bc87792b3"> 
-   <title>subject_scheme_map_1</title> 
-   <subjectdef keys="os" navtitle="Operating system"> 
-   <subjectdef keys="linux" navtitle="Linux"> 
-   <subjectdef keys="redhat" navtitle="RedHat Linux"/> 
-   <subjectdef keys="suse" navtitle="SuSE Linux"/> 
-   </subjectdef> 
-   <subjectdef keys="windows" navtitle="Windows"/> 
-   <subjectdef keys="zos" navtitle="z/OS"/> 
-   </subjectdef> 
-   </subjectScheme>  
-   ```
-
-   La définition d’énumération est présente dans subject_scheme_map_2.ditamap
-
-   ```XML
-   <?xml version="1.0" encoding="UTF-8"?> 
-   <!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "../dtd/libs/fmdita/dita_resources/DITA-1.3/dtd/subjectScheme/dtd/subjectScheme.dtd"> 
-   <subjectScheme id="subject-scheme.ditamap_17c433d9-0558-44d4-826e-3a3373a4c5ae"> 
-   <title>subject_scheme_map_2</title> 
-   <mapref format="ditamap" href="subject_scheme_map_1.ditamap" type="subjectScheme"> 
-   </mapref> 
-   <enumerationdef> 
-   <attributedef name="platform"> 
-   </attributedef> 
-   <subjectdef keyref="os"> 
-   </subjectdef> 
-   </enumerationdef> 
-   </subjectScheme>  
-   ```
-
-   Ici, les définitions de sujet sont définies dans la section `subject_scheme_map_1.ditamap`  alors que le def de l&#39;énumération est présent dans `subject_scheme_map_2.ditamap`. La référence à `subject_scheme_map_1.ditamap` est également ajouté dans `subject_scheme_map_2.ditamap`.
-
-   >[!NOTE]
-   >
-   > Comme la variable `subject_scheme_map_1.ditamap` et `subject_scheme_map_2.ditamap` sont référencés les uns avec les autres, d’où la résolution des schémas de sujet.
-
-   Les références de l&#39;énumération objet sont résolues dans l&#39;ordre de priorité suivant :
-
-   1. Même carte
-   1. Carte référencée
+Les définitions de sujet sont définies dans la section `subject_scheme_map_1.ditamap`
 
 
-   Les références ne sont pas résolues si l’énumération est introuvable dans la même carte et la carte référencée.
+```XML
+  <?xml version="1.0" encoding="UTF-8"?> 
+    <!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "../dtd/libs/fmdita/dita_resources/DITA-1.3/dtd/subjectScheme/dtd/subjectScheme.dtd"> 
+    <subjectScheme id="subject-scheme.ditamap_f0bfda58-377b-446f-bf49-e31bc87792b3"> 
+
+    <title>subject_scheme_map_1</title> 
+    
+    <subjectdef keys="os" navtitle="Operating system">
+        <subjectdef keys="linux" navtitle="Linux">
+        <subjectdef keys="redhat" navtitle="RedHat Linux">
+        </subjectdef>
+        <subjectdef keys="suse" navtitle="SuSE Linux">
+        </subjectdef>
+        </subjectdef>
+        <subjectdef keys="windows" navtitle="Windows">
+        </subjectdef>
+        <subjectdef keys="zos" navtitle="z/OS">
+        </subjectdef>
+        </subjectdef>
+        <subjectdef keys="deliveryTargetValues">
+        <subjectdef keys="print">
+        </subjectdef>
+        <subjectdef keys="online">
+        </subjectdef>
+    </subjectdef>
+    <subjectdef keys="mobile" navtitle="Mobile">
+        <subjectdef keys="android" navtitle="Android">
+        </subjectdef>
+        <subjectdef keys="ios" navtitle="iOS">
+    </subjectdef>
+    </subjectdef>
+    <subjectdef keys="cloud" navtitle="Cloud">
+        <subjectdef keys="aws" navtitle="Amazon Web Services">
+        </subjectdef>
+        <subjectdef keys="azure" navtitle="Microsoft Azure">
+        </subjectdef>
+        <subjectdef keys="gcp" navtitle="Google Cloud Platform">
+        </subjectdef>
+    </subjectdef>
+    </subjectScheme>
+```
+
+La définition de l’énumération est présente dans subject_scheme_map_2.ditamap.
+
+```XML
+    ?xml version="1.0" encoding="UTF-8"?> 
+        <!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "../dtd/libs/fmdita/dita_resources/DITA-1.3/dtd/subjectScheme/dtd/subjectScheme.dtd"> 
+        <subjectScheme id="subject-scheme.ditamap_17c433d9-0558-44d4-826e-3a3373a4c5ae"> 
+        <title>subject_scheme_map_2</title> 
+        <mapref format="ditamap" href="subject_scheme_map_1.ditamap" type="subjectScheme"> 
+        </mapref> 
+        <enumerationdef>
+        <attributedef name="platform">
+        </attributedef>
+        <subjectdef keyref="mobile">
+        </subjectdef>
+        <subjectdef keyref="cloud">
+        </subjectdef>
+        </enumerationdef>
+        </subjectScheme>
+```
+
+Ici, les définitions de sujet sont définies dans la section `subject_scheme_map_1.ditamap`  alors que le def de l&#39;énumération est présent dans `subject_scheme_map_2.ditamap`. La référence à `subject_scheme_map_1.ditamap` est également ajouté dans `subject_scheme_map_2.ditamap`.
+
+>[!NOTE]
+>
+> Comme la variable `subject_scheme_map_1.ditamap` et `subject_scheme_map_2.ditamap` sont référencés les uns avec les autres, d’où la résolution des schémas de sujet.
+
+Les références de l&#39;énumération objet sont résolues dans l&#39;ordre de priorité suivant :
+
+1. Même carte
+1. Carte référencée
 
 
-   **Liste déroulante Attributs**
+Les références ne sont pas résolues si l’énumération est introuvable dans la même carte et la carte référencée.
 
-   Vous pouvez également modifier la valeur du modèle d’objet à l’aide de la liste déroulante Attribut du panneau Propriétés du contenu dans la vue Auteur. Pour modifier la valeur, sélectionnez une valeur dans la liste déroulante Attribut .
 
-   ![](images/subject-scheme-attribute-dropdown.png){width="300" align="left"}
 
-   Vous pouvez également appliquer des valeurs à un attribut en sélectionnant plusieurs valeurs dans la liste déroulante.
 
-   **Vue source**
+**Limiter les valeurs à un élément spécifique**
 
-   Vous pouvez également modifier les valeurs dans la liste déroulante de l’attribut dans la vue Source. La vue source vous empêche également d’ajouter une valeur incorrecte.
+Vous pouvez également restreindre les conditions à certains éléments d’une rubrique. Utilisez la variable `<elementdef>` pour définir l’élément et la balise `<attributedef>` pour définir la condition qui peut être appliquée à l’élément.  Si vous n’ajoutez pas la variable `<elementdef>` , vous pouvez appliquer les conditions à tous les éléments.
+Par exemple, utilisez l’énumération suivante pour restreindre l’objet `@platform` à l’attribut `<shortdesc>` élément .  Les autres conditions sont visibles pour tous les éléments.
 
-   ![](images/subject-scheme-code-error.png){width="550" align="left"}
+```XML
+<enumerationdef>
+    <elementdef name="shortdesc">
+    </elementdef>
+    <attributedef name="platform">
+    </attributedef>
+    <subjectdef keyref="deliveryTargetValues">
+    </subjectdef>
+    <subjectdef keyref="os">
+    </subjectdef>
+  </enumerationdef>
+```
 
-   **Afficher et appliquer le modèle d’objet à partir du panneau Conditions**
+</details>
 
-   Vous pouvez également afficher et appliquer le modèle d’objet à partir du panneau Conditions.
 
-   Pour afficher le modèle d’objet à partir du panneau Conditions, votre administrateur système doit sélectionner l’option . **Afficher le schéma d’objet dans le panneau Conditions** sous l’onglet Condition dans Paramètres de l’éditeur. Pour plus d’informations, voir [Onglet Condition](#id21BMNE0602V).
+**Liste déroulante Attributs**
 
-   Le panneau Conditions affiche la structure verticale plate des définitions d’objet dans le modèle d’objet.
+Vous pouvez également modifier la valeur du modèle d’objet à l’aide de la liste déroulante Attribut du panneau Propriétés du contenu dans la vue Auteur. Pour modifier la valeur, sélectionnez une valeur dans la liste déroulante Attribut .
 
-   ![](images/subject-scheme-condtions-panel.png){width="300" align="left"}
+![](images/subject-scheme-attribute-dropdown.png){width="300" align="left"}
 
-   Vous pouvez ajouter des conditions à votre contenu en faisant glisser la condition souhaitée sur votre contenu. Le contenu conditionnel est mis en surbrillance à l’aide de la couleur définie pour la condition.
+Vous pouvez également appliquer des valeurs à un attribut en sélectionnant plusieurs valeurs dans la liste déroulante.
+
+**Vue source**
+
+Vous pouvez également modifier les valeurs dans la liste déroulante de l’attribut dans la vue Source. La vue source vous empêche également d’ajouter une valeur incorrecte.
+
+![](images/subject-scheme-code-error.png){width="550" align="left"}
+
+**Afficher et appliquer le modèle d’objet à partir du panneau Conditions**
+
+Vous pouvez également afficher et appliquer le modèle d’objet à partir du panneau Conditions.
+
+Pour afficher le modèle d’objet à partir du panneau Conditions, votre administrateur système doit sélectionner l’option . **Afficher le schéma d’objet dans le panneau Conditions** sous l’onglet Condition dans Paramètres de l’éditeur. Pour plus d’informations, voir [Onglet Condition](#id21BMNE0602V).
+
+Le panneau Conditions affiche la structure verticale plate des définitions d’objet dans le modèle d’objet.
+
+![](images/subject-scheme-condtions-panel.png){width="300" align="left"}
+
+Vous pouvez ajouter des conditions à votre contenu en faisant glisser la condition souhaitée sur votre contenu. Le contenu conditionnel est mis en surbrillance à l’aide de la couleur définie pour la condition.
 
 **Extraits de code** -  ![](images/insert-snippet-icon.svg)
 
@@ -1414,13 +1473,13 @@ Dans le menu Options d’un modèle existant, vous pouvez choisir de **Modifier*
 
 **Révision** -  ![](images/active-review-tasklist-icon.svg)
 
-AEM Guides fournit la fonctionnalité permettant d’afficher toutes les tâches de révision dans vos projets. Vous pouvez afficher tous les projets de révision et les principales tâches de révision dans les projets de révision, dont vous faites partie depuis le **Réviser** du panneau.  Vous pouvez ensuite ouvrir les tâches de révision pour afficher les commentaires des différents réviseurs.
+AEM Guides fournit la fonctionnalité permettant d’afficher toutes les tâches de révision dans vos projets. Vous pouvez afficher tous les projets de révision et les tâches de révision actives dans les projets de révision, dont vous faites partie à partir du **Réviser** du panneau.  Vous pouvez ensuite ouvrir les tâches de révision pour afficher les commentaires des différents réviseurs.
 Le panneau de révision affiche les tâches de révision. En tant qu’auteur, vous pouvez traiter les commentaires d’une rubrique à l’aide de l’éditeur Web.
 
 
-Pour afficher les commentaires de révision dans les principales tâches de révision présentes dans vos projets, procédez comme suit :
+Pour afficher les commentaires de révision dans les tâches de révision actives présentes dans vos projets, procédez comme suit :
 
-1. Sélectionner une révision ![](images/active-review-tasklist-icon.svg)   dans le panneau de gauche. La variable **Réviser** s’ouvre.  Tous les projets de révision et les principales tâches de révision des projets de révision dont vous faites partie s’affichent.
+1. Sélectionner une révision ![](images/active-review-tasklist-icon.svg)   dans le panneau de gauche. La variable **Réviser** s’ouvre.  Tous les projets de révision et les tâches de révision actives dans les projets de révision dont vous faites partie s’affichent.
 
    ![](images/web-editor-review-panel.png){width="300" align="left"}
 1. Sélectionnez un projet de révision, puis une tâche de révision dans la liste pour l’ouvrir.
