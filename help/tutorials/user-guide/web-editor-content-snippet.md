@@ -1,9 +1,9 @@
 ---
 title: Insertion d’un fragment de contenu à partir de votre source de données
 description: Découvrez comment insérer un fragment de contenu de votre source de données
-source-git-commit: 0f1c9d545dfc6dc53742c6f8d89cd48d33de2681
+source-git-commit: af5ec027ea093a28ba2a2ffd0ca3895546ed6e76
 workflow-type: tm+mt
-source-wordcount: '1549'
+source-wordcount: '1685'
 ht-degree: 0%
 
 ---
@@ -32,14 +32,18 @@ Sélectionnez une source de données pour afficher les générateurs de fragment
 
 ![](images/data-sources-list-view.png){width="300" align="left"}
 
+*Liste des sources de données connectées.*
 
 ### Mosaïque   ![](images/data-sources-tile-view-icon.svg)
 
 ![](images/data-sources-tile-view.png){width="300" align="left"}
 
+*Affichez les sources de données connectées sous forme de mosaïques.*
+
 Vous pouvez utiliser les données des sources de données de deux manières :
 - Insertion d’un fragment de contenu
 - Création d’une rubrique
+
 
 
 ## Insertion d’un fragment de contenu à partir de votre source de données
@@ -53,6 +57,7 @@ Effectuez les étapes suivantes pour créer un fragment de contenu à l’aide d
 1. Sélectionnez une source de données pour afficher les générateurs de fragments de contenu disponibles pour la source de données sélectionnée.
 
    ![](images/code-snippet-generator.png){width="300" align="left"}
+   *Le panneau Sources de données répertorie les générateurs de fragments de contenu disponibles.*
 
 1. Sélectionner **Ajouter** pour ajouter un nouveau générateur de fragments de contenu. La variable **Ajout d’un générateur de fragments de contenu** s’ouvre.
 
@@ -75,6 +80,8 @@ Par exemple :
 
    1. La vue source affiche les données dans la vue source DITA.
       ![](images/add-content-snippet-generator.png){width="800" align="left"}
+      *Ajoutez un générateur de fragments de contenu. Affichez les données en mode source ou aperçu.*
+
 1. Pour enregistrer les résultats de la requête, saisissez le nom du générateur, puis cliquez sur **AJOUTER**.   Un nouveau générateur de fragments de contenu est ajouté à la liste.
 
    >[!NOTE]
@@ -102,6 +109,7 @@ Vous pouvez également utiliser la variable **Insérer un fragment de requête**
 
 ![](images/insert-content-snippet.png){width="800" align="left"}
 
+*Modifiez et insérez un fragment de données.*
 
 ## Création d’une rubrique à l’aide du générateur de rubriques
 
@@ -118,6 +126,9 @@ Effectuez les étapes suivantes pour créer une rubrique à l’aide du généra
 1. Sélectionnez une source de données pour afficher les générateurs de fragments de contenu et les générateurs de rubrique disponibles pour la source de données sélectionnée.
 
    ![](images/data-sources.png){width="300" align="left"}
+
+   *Ajoutez un générateur de rubrique pour une source de données connectée.*
+
 1. Sélectionner **Ajouter** ![](images/Add_icon.svg) et sélectionnez **Générateur de rubriques** dans la liste déroulante pour ajouter un nouveau générateur de rubriques. La variable **Ajout d’un générateur de rubrique** s’ouvre.
 
 
@@ -128,13 +139,14 @@ Effectuez les étapes suivantes pour créer une rubrique à l’aide du généra
 
    ![](images/topic-generator-fetch-configuration.png){width="300" align="left"}
 
+   *Ajoutez les détails de la requête de données, du modèle de mappage de données et du noeud racine pour le générateur de rubriques et attribuez-lui un nom unique dans le panneau Configuration de la récupération .*
 
    1. Saisissez la requête dans le champ **Requête de données** zone de texte.
    1. Sélectionnez le modèle qui mappe avec votre source de données dans la **Modèle de mappage de données** menu déroulant.
 
-   >[!NOTE]
-   >
-   > Si votre administrateur a configuré des modèles personnalisés, ils s’affichent également dans la liste déroulante (en fonction des configurations de chemin d’accès au modèle effectuées par votre administrateur). Vous pouvez par exemple créer un modèle de rubrique contenant une liste classée, des tableaux, des paragraphes ou d’autres éléments DITA.
+      >[!NOTE]
+      >
+      > Si votre administrateur a configuré des modèles personnalisés, ils s’affichent également dans la liste déroulante (en fonction des configurations de chemin d’accès au modèle effectuées par votre administrateur). Vous pouvez par exemple créer un modèle de rubrique contenant une liste classée, des tableaux, des paragraphes ou d’autres éléments DITA.
 
    1. Saisissez le **Noeud racine**. Il s’agit du noeud sur lequel vous souhaitez accéder à vos données. Le générateur de rubrique crée ensuite chaque rubrique au niveau défini dans le noeud racine. Par exemple, vous pouvez ajouter &quot;issues&quot; comme noeud racine dans Jira. Ainsi, si une requête renvoie 13 problèmes, vous obtiendrez 13 rubriques, une rubrique pour chaque problème.
 
@@ -148,6 +160,8 @@ Effectuez les étapes suivantes pour créer une rubrique à l’aide du généra
    **Configuration de la sortie**
 
    ![](images/topic-generator-output-configuration.png){width="300" align="left"}
+
+   *Renseignez les détails du chemin de sortie et de la convention d’affectation des noms des rubriques dans le panneau Configuration de la sortie . Générez un mappage DITA et nommez-le.*
 
    1. Saisissez le **Chemin de sortie** détails sur l’emplacement où vous souhaitez enregistrer vos rubriques.
    1. Dans le **Convention d’affectation des noms de rubrique**, vous pouvez saisir une valeur ou une variable avec des balises de vitesse. Les nouveaux thèmes suivront la convention. Par exemple, vous pouvez saisir la variable `$key` pour créer des rubriques basées sur des clés Jira.
@@ -166,7 +180,7 @@ Effectuez les étapes suivantes pour créer une rubrique à l’aide du généra
 
    ![](images/topic-generator-metadata.png){width="300" align="left"}
 
-
+   *Ajoutez les propriétés de métadonnées dans le panneau Métadonnées à transmettre aux rubriques.*
 
 1. Saisissez le nom du générateur et cliquez sur **Enregistrer** pour enregistrer les résultats de la requête. Un nouveau générateur de rubrique est ajouté à la liste.
 
@@ -175,6 +189,8 @@ Effectuez les étapes suivantes pour créer une rubrique à l’aide du généra
 
 
    ![](images/edit-topic-generator.png){width="650" align="left"}
+
+   *Générez de nouvelles rubriques à partir d’un générateur de rubriques existant.*
 
    >[!NOTE]
    >
@@ -192,6 +208,8 @@ Cliquez avec le bouton droit de la souris sur un générateur de rubrique pour o
   >Si votre rubrique existe déjà, vous pouvez soit remplacer les données de la rubrique, soit l’enregistrer en tant que nouvelle version.
 
   ![](images/generate-topic-options.png)
+
+  *Générez une rubrique. Si le fichier existe déjà, enregistrez-la en tant que nouvelle version ou remplacez-la.*
 
 - **Modifier**: utilisez cette option pour modifier et enregistrer le générateur de rubriques.
 - **Supprimer**: utilisez cette option pour supprimer le générateur de rubriques sélectionné.

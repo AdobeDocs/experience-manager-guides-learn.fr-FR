@@ -2,9 +2,9 @@
 title: Fonction de publication native d’un PDF | Composants d’un modèle de PDF
 description: Découvrez les différents composants d’un modèle de PDF et comment les personnaliser et les configurer.
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: 08c1f1a8df5fdbaa0d8f27d2752028d0ee2ed538
+source-git-commit: 18ec7e1b19cd6404b86f965be96caa88a0a067fe
 workflow-type: tm+mt
-source-wordcount: '3672'
+source-wordcount: '3934'
 ht-degree: 0%
 
 ---
@@ -107,25 +107,36 @@ Pour créer une feuille de style, procédez comme suit :
 
 ### Création d’un style {#create-style}
 
-Par défaut, les fichiers CSS contiennent des styles pour les styles d’en-tête, de paragraphe, de caractère, d’hyperlien, d’image, de tableau, de balise div, de page et d’autres styles. Vous pouvez remplacer le format de style par défaut ou créer un nouveau style.
+Par défaut, les fichiers CSS fournis avec le modèle contiennent des styles pour les styles d’en-tête, de paragraphe, de caractère, d’hyperlien, d’image, de tableau, de balise div, de page et d’autres styles. Vous pouvez remplacer le format de style par défaut ou créer un nouveau style.
 
-En règle générale, vous créez un style lorsque vous souhaitez associer un style personnalisé à un élément DITA. Pour que ces styles personnalisés fonctionnent, vous devez vous assurer que vous associez le nom de classe du style à l’attribut outputclass de l’élément DITA.
+
+Vous pouvez créer un style pour l’utiliser dans la mise en page du modèle ou appliquer un style personnalisé pour tout élément DITA. Pour appliquer ces styles personnalisés à l’élément DITA, vous devez vous assurer que le nom de classe du style est identique au nom de l’élément DITA ou au `outputclass` attribut.  Par exemple : `<div>` dans DITA, est régi par `.div {}` dans CSS ou dans `outputclass` attribut. Si vous appliquez `<div outputclass="my-div">` dans DITA, il est régi par la variable `.div {}` ou `.my-div {}` dans le fichier CSS.
+
 
 
 Pour créer un style, procédez comme suit :
-1. Cliquez avec le bouton droit de la souris sur un style, puis choisissez Nouveau style dans le menu contextuel.
+1. Développez la barre latérale gauche et double-cliquez sur le modèle dans lequel vous souhaitez créer le style.
+1. Développez l’objet **Feuilles de style** . Elle ouvre la fenêtre **Styles** qui contient toutes les options de style.
+1. Cliquez sur l’icône + pour ajouter un nouveau style.
 
-   La boîte de dialogue Ajouter un style s’ouvre.
+   **Ajouter un style** s’ouvre.
 
-   <img src="assets/add-style.png" alt="Ajouter un style" width="300"/>
-1. Dans le **Balise** , choisissez une balise pour laquelle vous souhaitez créer un style.
-1. Spécifiez un **Classe** nom.
 
-   Ce nom de classe doit être associé à l’attribut outputclass de la balise dans votre contenu source.
-1. Sélectionnez une **Classe Pseudo** pour un style amélioré de l’élément.
+   <img src="assets/add-style.png" alt="Ajouter un style" width="500"/>
+
+1. Spécifiez un **Classe** nom. Pour appliquer un style à l’élément DITA, assurez-vous que le nom de classe du style est identique au nom de l’élément DITA ou à la variable `outputclass` attribut.
+1. Dans le **Balise** (facultatif), choisissez une balise pour laquelle vous souhaitez créer un style.
+
+
+1. Sélectionnez une **Classe Pseudo** pour mettre en forme un élément. Une pseudo-classe permet de définir un état spécial de l’élément. Par exemple, utilisez une pseudo-classe pour mettre en forme un élément lorsque vous placez le pointeur de la souris dessus ou lorsque vous vous concentrez dessus. Vous pouvez également sélectionner plusieurs pseudo-classes. Par exemple, vous pouvez utiliser une pseudo-classe `a::visited {color: blue;}` pour mettre en forme les liens visités.
+
+1. Ajoutez le sélecteur correspondant au nouveau style. La variable **Sélecteur** vous permet d’ajouter des sélecteurs personnalisés en plus de la combinaison Classe, Balise et Classe de pseudo. Par exemple, vous pouvez créer des `table a.link` style de tous les liens hypertexte d’un tableau.
+
+   Pour plus d’informations sur les balises CSS, voir [Reportez-vous à la grammaire des styles CSS](https://www.w3.org/TR/CSS21/syndata.html#characters).
+
 1. Cliquez sur **Terminé**.
 
-   Un nouveau style est créé et ajouté sous le style de base.
+   Un nouveau style est créé et ajouté à la liste des styles.
 
 ### Personnalisation d’un style prédéfini ou nouveau {#customize-style}
 
@@ -143,17 +154,26 @@ Pour personnaliser un style, procédez comme suit :
 
    Cette opération ouvre la feuille de style à modifier et affiche la liste des styles dans le panneau Styles.
 
-   <img src="assets/customize-style.png" alt="Personnalisation du style" width="450">
+   <img src="assets/customize-style.png" alt="Personnalisation du style" width="800">
 
-1. Pour personnaliser un style, double-cliquez sur un style ou cliquez sur l’icône > devant un style pour l’afficher et le personnaliser à l’aide de l’éditeur de styles.
+1. Pour personnaliser un style, sélectionnez-le à l’aide de l’éditeur de styles.
 
-Pour plus d’informations sur l’utilisation des styles les plus courants, voir [Utilisation des styles de contenu communs](stylesheet.md).
+
+### Propriétés des styles
+
+Dans le panneau central, vous pouvez modifier les propriétés, mais il peut s’avérer difficile d’obtenir un instantané de toutes les valeurs présentes.  La variable **Propriétés** Le volet donne un aperçu rapide de tous les attributs et valeurs du style.
+
+Dans le panneau central, vous pouvez modifier les propriétés les plus utilisées, mais pas toutes les propriétés prises en charge par CSS. Dans le **Propriétés** vous pouvez modifier toutes les propriétés prises en charge par CSS et les prévisualiser. Vous n’avez pas besoin de basculer vers la vue source pour modifier les propriétés.
+
+
+En savoir plus sur l’utilisation de l’éditeur de style pour [Utilisation des styles de contenu communs](stylesheet.md).
 
 ## Utilisation des ressources {#work-with-resources}
 
 Il s’agit d’un conteneur pour toutes les ressources utilisées pour concevoir un modèle. Vous pouvez le considérer comme un dossier contenant des ressources telles que des images d’arrière-plan, des polices personnalisées, des logos, etc. Chaque fois que vous ajoutez une ressource dans votre modèle, elle est chargée ou archivée dans le dossier de ressources. Vous pouvez ensuite utiliser ces ressources pour personnaliser ou concevoir vos modèles de PDF.
 
 Pour ajouter un fichier de ressource au dossier Resources, procédez comme suit :
+
 1. Pointez sur l’onglet du dossier Ressources, cliquez sur l’icône (Options) ... et sélectionnez Importer.
 
    La boîte de dialogue Télécharger les ressources s’ouvre alors.

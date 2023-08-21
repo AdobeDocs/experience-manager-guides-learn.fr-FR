@@ -2,9 +2,9 @@
 user-guide-title: Tutoriels pour AEM Guides
 user-guide-description: Lisez notre collection de tutoriels pour Adobe Experience Manager Guides.
 breadcrumb-title: Tutoriels AEM Guides
-source-git-commit: 33c4a7b452049ab130f7bcdf9e8a90ecead32170
+source-git-commit: 49b1876f2e9ac653ced74bddb03a585c5154b8b6
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1444'
 ht-degree: 6%
 
 ---
@@ -158,6 +158,7 @@ ht-degree: 6%
          + [Configuration de caractères spéciaux supplémentaires](./web-editor/configure-additional-special-characters.md)
       + [Gestion des tâches de publication à l’aide du tableau de bord de publication](./user-guide/generate-output-publish-dashboard.md)
       + [Résolution des problèmes de base](./user-guide/generate-output-basic-troubleshooting.md)
+      + [Publication sur un fragment de contenu](./user-guide/publish-content-fragment.md)
       + Activation en masse du contenu {#bulk-activation}
          + [Activation en masse de contenu publié](./user-guide/conf-bulk-activation.md)
          + [Création d’une collection de cartes d’activation en bloc](./user-guide/conf-bulk-activation-create-map-collection.md)
@@ -186,7 +187,7 @@ ht-degree: 6%
       + Téléchargement, installation et mise à niveau {#download-install-upgrade-aemg}
          + [Vue d’ensemble](./install-guide/download-install.md)
          + [Exigences techniques](./install-guide/download-install-technical-requirements.md)
-         + [Installation d’Adobe Experience Manager](./install-guide/download-install-aem.md)
+         + [Installer Adobe Experience Manager](./install-guide/download-install-aem.md)
          + [Télécharger et installer AEM Guides pour la première fois](./install-guide/download-install-aemg-first-time.md)
          + [Configuration du Dispatcher](./install-guide/download-install-configure-dispatcher.md)
          + [Vérification de l’installation AEM Guides](./install-guide/download-install-verify-aemg-installation.md)
@@ -255,6 +256,7 @@ ht-degree: 6%
                + [Utilisation de JavaScript pour utiliser du contenu ou du style](./native-pdf/use-javascript-content-style.md)
                + [Utilisation de styles personnalisés dans les notes de bas de page](./native-pdf/footnote-number-style.md)
             + [Configuration des indicateurs JVM pour la publication native de PDF](./native-pdf/configure-jvm-flags.md)
+         + [Créer un mappage entre une rubrique et un fragment de contenu](./install-guide/conf-content-fragment-mapping.md)
       + Utilisation de workflows personnalisés {#custom-workflow}
          + [Configuration et personnalisation des workflows](./install-guide/customize-workflows.md)
       + Utilisation des configurations de traduction {#translate-config}
