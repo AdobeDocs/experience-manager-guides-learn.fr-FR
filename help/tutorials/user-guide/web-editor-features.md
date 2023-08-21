@@ -2,9 +2,9 @@
 title: Présentation des fonctionnalités de l’éditeur web
 description: Découvrez comment connaître les fonctionnalités de l’éditeur web
 exl-id: 38b378ff-da24-4560-a17f-a2c547aea1b8
-source-git-commit: 3ae28dc4266d418e5730e2036c8eee2a804dc847
+source-git-commit: d6e7046e8885191270620d634bda0a5284f76fa2
 workflow-type: tm+mt
-source-wordcount: '15745'
+source-wordcount: '15744'
 ht-degree: 0%
 
 ---
@@ -805,7 +805,7 @@ Le menu Options propose différentes options selon que vous sélectionnez un fic
 
 Les différentes options du menu Options sont expliquées ci-dessous :
 
-- **Modifier**: ouvrez le fichier à modifier. Dans le cas d’un fichier .ditamap/.bookmap, il est ouvert dans la variable [Éditeur de carte avancé](map-editor-advanced-map-editor.md#) pour modification.
+- **Modifier**: ouvrez le fichier à modifier. Dans le cas d’un fichier .ditamap/.bookmap, il est ouvert dans [Éditeur de carte avancé](map-editor-advanced-map-editor.md#) pour modification.
 
 - **Dupliquer**: utilisez cette option pour créer un doublon ou une copie du fichier sélectionné. Vous avez également la possibilité de renommer le fichier dupliqué à l’invite Dupliquer la ressource . Par défaut, le fichier est créé avec un suffixe \(comme filename\_1.extension\). Le titre du fichier reste identique à celui du fichier source et le nouveau fichier commence par la version 1.0. Toutes les références, balises et métadonnées sont copiées alors que les lignes de base ne sont pas copiées dans le fichier en double.
 - **Extraire**: verrouille le fichier sélectionné pour modification. Pour un fichier verrouillé, cette option se transforme en **Archiver**.
