@@ -2,7 +2,7 @@
 title: Configuration du modèle de rubrique DITA personnalisé
 description: Découvrez comment configurer le modèle de rubrique DITA personnalisé
 exl-id: f79165ef-5118-4574-815d-c4ecb2f7d58b
-source-git-commit: 20980cd289a306fc73146ec3550ae31f15e91591
+source-git-commit: ecd5c315da5d450f29ee5d44cb19bc3546a19d1c
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 2%
@@ -45,7 +45,9 @@ AEM Guides vous permet de configurer un dossier pour stocker vos modèles et map
 
 `/content/dam/dita-templates/`
 
-Pour gérer les fichiers de modèle de rubrique et de mappage, il existe des dossiers dédiés pour stocker les modèles de rubrique et de mappage. Par défaut, tous les modèles de rubrique sont stockés sous le `/content/dam/dita-templates/topics` dossier. Tous les modèles de mappage sont stockés sous `/content/dam/dita-templates/maps` dossier.
+Pour gérer les fichiers de modèle de rubrique et de mappage, il existe des dossiers dédiés pour stocker les modèles de rubrique et de mappage. Par défaut, tous les modèles de rubrique sont stockés sous le `/content/dam/dita-templates/topics`
+
+dossier. Tous les modèles de mappage sont stockés sous `/content/dam/dita-templates/maps` dossier.
 
 En tant qu’administrateur, vous pouvez choisir de créer une carte personnalisée ou des modèles de rubrique dans le dossier par défaut ou de créer votre propre dossier pour stocker des modèles personnalisés. Si vous prévoyez d’utiliser le dossier par défaut, vous pouvez ignorer ce processus.
 

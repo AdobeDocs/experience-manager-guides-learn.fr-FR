@@ -2,10 +2,10 @@
 title: Utilisation de la collecte des cartes pour la génération de la sortie
 description: Découvrez comment utiliser la collecte de cartes pour la génération de sortie
 exl-id: 32e3af6c-9670-42cc-8dbe-9f99fbc60adf
-source-git-commit: 3ae28dc4266d418e5730e2036c8eee2a804dc847
+source-git-commit: be1a61d9475185da594b382c1daf361d3fe60b08
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 0%
+source-wordcount: '898'
+ht-degree: 1%
 
 ---
 
@@ -79,13 +79,7 @@ Pour configurer et générer la sortie à l’aide d’une collection de cartes,
      >  
      > Par défaut, tout nouveau paramètre prédéfini est désactivé.
 
-1. Vous pouvez activer les paramètres prédéfinis pour un mappage DITA de la manière suivante :
-
-   - Activez n’importe quel paramètre prédéfini.
-   - Activer **Tous les paramètres prédéfinis** pour qu’un mappage DITA sélectionne tous les paramètres prédéfinis en une seule fois. Cette option est désactivée par défaut.
-   - Activer **Paramètres prédéfinis de profil de dossier** pour un mappage DITA, sélectionnez tous les paramètres prédéfinis de profil de dossier pour celui-ci. Cette option est désactivée par défaut.
-     ![modification d’une collection map sur les services cloud](images/edit-map-collection-cs.png){width="800" align="left"}
-
+   - Vous pouvez sélectionner **Activation/désactivation de tous les paramètres prédéfinis de profil de dossier** pour un mappage DITA afin de sélectionner tous les profils de dossiers pour celui-ci en une seule fois.
 
 
 1. Utilisez l’une des méthodes suivantes :
