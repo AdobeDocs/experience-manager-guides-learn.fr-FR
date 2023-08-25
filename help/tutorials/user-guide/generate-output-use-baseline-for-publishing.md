@@ -2,9 +2,9 @@
 title: Utilisation de la ligne de base
 description: Découvrez comment travailler avec la ligne de base
 exl-id: dcafab53-c388-48c3-9455-e4251cdda17d
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8e2e2c60f223b3967fad10372abee3192016c4ef
 workflow-type: tm+mt
-source-wordcount: '1917'
+source-wordcount: '1936'
 ht-degree: 0%
 
 ---
@@ -43,62 +43,42 @@ Effectuez les étapes suivantes pour créer une ligne de base :
 
 1. Sur la page Lignes de base , cliquez sur **Créer**.
 1. Saisissez un nom pour la ligne de base dans **Nom de la ligne de base**.
+   ![création d’une ligne de base](images/create-baseline.png){width="800" align="left"}
 1. Dans **Définir la version basée sur**, sélectionnez l’une des options suivantes :
 
-   - **Libellé**: Sélectionnez cette option pour sélectionner les rubriques en fonction du libellé qui leur est associé. Saisissez un libellé pour filtrer la liste selon la chaîne saisie. Dans la liste déroulante filtrée, vous pouvez choisir un libellé pour sélectionner les rubriques et autres ressources ayant le libellé spécifié.
+   - **Libellé**: sélectionnez cette option pour sélectionner les rubriques en fonction du libellé qui leur est appliqué. Saisissez un libellé pour filtrer la liste selon la chaîne saisie. Dans la liste déroulante filtrée, vous pouvez choisir un libellé pour sélectionner les rubriques et autres ressources ayant le libellé spécifié.
+
    Lorsque vous sélectionnez **Libellé**, vous disposez également d’une option supplémentaire pour utiliser la dernière version des rubriques pour lesquelles le libellé spécifié n’est pas appliqué. Si vous ne sélectionnez pas cette option et qu’il existe un fichier de rubrique ou de média qui ne comporte pas le libellé spécifié, le processus de création de ligne de base échoue. Pour plus d’informations sur l’ajout d’étiquettes, voir [Utilisation des libellés](web-editor-use-label.md#).
 
-   - **Version activée** &lt;*horodatage*\> : Permet de sélectionner la version des rubriques selon la date et l’heure spécifiées. Notez que l’heure que vous indiquez ici correspond au fuseau horaire de votre serveur AEM. Si votre serveur se trouve dans un fuseau horaire différent, les rubriques seront récupérées en fonction du fuseau horaire de votre serveur et non de votre fuseau horaire local.
+   - **Version activée** &lt;*horodatage*\> : sélectionne la version des rubriques à la date et à l’heure spécifiées. Notez que l’heure que vous indiquez ici correspond au fuseau horaire de votre serveur AEM. Si votre serveur se trouve dans un fuseau horaire différent, les rubriques seront récupérées en fonction du fuseau horaire de votre serveur et non de votre fuseau horaire local.
 
    Une fois que vous avez sélectionné un libellé ou une version à la date, toutes les rubriques et tous les fichiers multimédias référencés dans le mappage sont sélectionnés en conséquence. Cette sélection de rubriques n’est pas affichée dans l’interface utilisateur, mais elle est enregistrée dans le serveur principal.
 
-1. Si vous souhaitez utiliser une autre version pour une ou plusieurs rubriques, vous pouvez le faire en sélectionnant manuellement ces rubriques. Cliquez sur **Parcourir la rubrique**, sélectionnez la rubrique pour laquelle vous souhaitez utiliser une autre version. Dans la liste déroulante Sélectionner une version pour la rubrique sélectionnée, sélectionnez une version de la rubrique que vous souhaitez utiliser dans la ligne de base, puis cliquez sur **OK**.
-
-   ![](images/baseline-select-version-drop-down.png){width="800" align="left"}
-
-   Les informations sur la rubrique et sa version sélectionnée sont stockées dans le serveur principal. Vous pouvez répéter cette étape pour modifier la version sélectionnée pour plusieurs rubriques.
-
-1. Cliquez sur le bouton **Parcourir toutes les rubriques** lien pour charger toutes les rubriques et tous les fichiers multimédias référencés à partir de la carte DITA. L’UUID des rubriques et des fichiers multimédias s’affiche également sous le titre de la rubrique ou le nom du fichier \(media\).
-
    >[!NOTE]
    >
-   > Si votre carte DITA contient un très grand ensemble de fichiers, avec des mappages imbriqués et des rubriques, le fait de cliquer sur Parcourir toutes les rubriques peut prendre un certain temps pour charger tous les fichiers.
-
-   Le contenu de votre carte est présenté dans les trois sections : le fichier de mappage, le contenu \(références de rubrique\) et le contenu référent \(rubriques imbriquées, mappages et autres ressources\). Une fois que tout le contenu référencé est disponible, vous pouvez sélectionner individuellement la version de la rubrique que vous souhaitez utiliser dans votre ligne de base.
-
-   Le **Version** La liste déroulante affiche les versions disponibles des rubriques ou du contenu référencé. Pour le contenu référencé, vous avez la possibilité de choisir automatiquement une version.
-
-   Si vous choisissez **Sélectionner automatiquement** pour le contenu référencé, le système sélectionne automatiquement la version du contenu référencé correspondant à la version du contenu dans lequel il est référencé. Par exemple, supposons qu’une rubrique A comporte une référence à une image B. Lorsque la version 1.5 de la rubrique A a été créée, la version de l’image B était 1.2 dans le référentiel. Désormais, lorsqu’une ligne de base est créée avec la version 1.5 de la rubrique A avec l’image B définie sur **Sélectionner automatiquement**, le système sélectionne automatiquement la version 1.2 de l’image B.
-
-   Si vous créez une ligne de base à l’aide des libellés, **Sélectionner automatiquement** est appliquée à la version de tout le contenu référencé.
-
-   Si le contenu ou les ressources référencés \(rubrique, sous-plans, images ou vidéos\) ne sont pas versionnés \(par exemple, contenu récemment chargé\), la création d’une ligne de base crée une version pour ces fichiers. Toutefois, si vos fichiers sont versionnés, aucune version incrémentielle n’est créée pour ces fichiers. Ce comportement est contrôlé par le paramètre de création automatique de version, activé par défaut. Cela est également nécessaire pour la traduction du contenu, dans lequel le processus de traduction exige que tous les fichiers aient une version.
-
-   >[!NOTE]
-   >
-   > Si vous souhaitez spécifier une version différente pour une ressource spécifique, vous pouvez le faire en choisissant la version souhaitée dans la **Version** liste déroulante.
+   >Il est recommandé de ne pas utiliser la variable **Parcourir toutes les rubriques** lors de la création d’une ligne de base.
 
 1. Cliquez sur **Enregistrer**.
 
 ## Afficher le contenu d’une ligne de base {#id195FI0I0TLN}
 
-Vous pouvez afficher le contenu d’une ligne de base existante en cliquant sur l’onglet Lignes de base et en sélectionnant la version de base souhaitée dans la liste. La page Lignes de base se divise en trois parties : fichier de mappage DITA, contenu ou rubriques du mappage et contenu référencé. Si votre carte contient des sous-cartes, les rubriques référencées à partir de la sous-carte sont également affichées dans la section Contenu . Les différentes colonnes de la page Ligne de base sont décrites ci-dessous :
+Vous pouvez afficher le contenu d’une ligne de base existante en cliquant sur l’onglet Lignes de base et en sélectionnant la version de base souhaitée dans la liste. La page Lignes de base se divise en trois parties : fichier de mappage DITA, contenu ou rubriques de la carte, et contenu référencé. Si votre carte contient des sous-cartes, les rubriques référencées à partir de la sous-carte s’affichent également dans la section Contenu . Les différentes colonnes de la page Ligne de base sont décrites ci-dessous :
 
-- **Nom**: Répertorie le mappage DITA, le titre de la rubrique ou le nom de la ressource, tel que le nom de fichier d’une image.
+- **Nom**: répertorie le mappage DITA, le titre de la rubrique ou le nom de la ressource, tel que le nom de fichier d’une image.
 
-- **Genre**: Répertorie le type ou le type de ressource dans le mappage, tel que le mappage DITA, la rubrique DITA ou le format d’image.
+- **Genre**: répertorie le type ou le type de ressource dans le mappage, comme le mappage DITA, la rubrique DITA ou le format d’image.
 
-- **Version**: Répertorie la version de la ressource disponible dans la ligne de base.
+- **Version**: répertorie la version de la ressource disponible dans la ligne de base.
 
-- **Date et heure de la version**: Répertorie la date et l’heure de création de la ressource pour la version sélectionnée.
+- **Date et heure de la version**: répertorie la date et l’heure de création de la ressource pour la version sélectionnée.
 
-- **Dernière**: Indique si la dernière version de la ressource est utilisée dans la ligne de base.
+- **Dernière**: indique si la dernière version de la ressource est utilisée dans la ligne de base.
 
-- **Carte parente**: Si votre fichier map contient des sous-mappages, cette colonne contient le nom de la carte dans laquelle une rubrique est référencée.
+- **Carte parente**: si votre fichier map contient des sous-mappages, cette colonne contient le nom de la carte dans laquelle une rubrique est référencée.
 
-- **Libellé**: Répertorie le libellé\(s\) appliqué à la version de la rubrique.
+- **Libellé**: répertorie le libellé\(s\) appliqué à la version de la rubrique.
 
-- **Référencé par**: Cette colonne est disponible uniquement pour le contenu référencé. Elle indique la rubrique parente de la ressource référencée. Si une ressource est référencée par plusieurs rubriques, les rubriques sont séparées par des virgules.
+- **Référencé par**: cette colonne est disponible uniquement pour le contenu référencé. Elle indique la rubrique parente de la ressource référencée. Si une ressource est référencée par plusieurs rubriques, les rubriques sont séparées par des virgules.
 
 ## Modification, duplication ou suppression des lignes de base {#id195FI0I0YJL}
 
@@ -108,6 +88,31 @@ Effectuez les étapes suivantes pour modifier une ligne de base existante :
 
 1. Sélectionnez la ligne de base et cliquez sur **Modifier**.
 1. Effectuez les modifications requises dans la ligne de base. Vous pouvez modifier le nom et la version de la rubrique ou du contenu référencé.
+1. Si vous souhaitez utiliser une autre version pour une ou plusieurs rubriques, vous pouvez le faire en sélectionnant manuellement ces rubriques. Cliquez sur **Parcourir la rubrique**, sélectionnez la rubrique pour laquelle vous souhaitez utiliser une autre version. Dans la liste déroulante Sélectionner une version pour la rubrique sélectionnée, sélectionnez une version de la rubrique à utiliser dans la ligne de base, puis cliquez sur **OK**.
+
+   ![](images/baseline-select-version-drop-down.png){width="800" align="left"}
+
+   Les informations sur la rubrique et sa version sélectionnée sont stockées dans le serveur principal. Vous pouvez répéter cette étape pour modifier la version sélectionnée pour plusieurs rubriques.
+
+1. Pour charger toutes les rubriques et tous les fichiers multimédias référencés à partir du mappage DITA, cliquez sur le **Parcourir toutes les rubriques** lien. L’UUID des rubriques et des fichiers multimédia est également affiché sous le titre de la rubrique ou le nom du fichier \(media\).
+
+   >[!NOTE]
+   >
+   > Si votre carte DITA contient un très grand ensemble de fichiers, avec des mappages imbriqués et des rubriques, le fait de cliquer sur Parcourir toutes les rubriques peut prendre un certain temps pour charger tous les fichiers.
+
+   Le contenu de votre carte est présenté dans les trois sections : le fichier de mappage, le contenu \(références de rubrique\) et le contenu référent \(rubriques imbriquées, mappages et autres ressources\). Une fois que tout le contenu référencé est disponible, vous pouvez sélectionner individuellement la version de la rubrique que vous souhaitez utiliser dans votre ligne de base.
+
+   La variable **Version** La liste déroulante affiche les versions disponibles des rubriques ou du contenu référencé. Pour le contenu référencé, vous avez la possibilité de choisir automatiquement une version.
+
+   Si vous choisissez **Sélectionner automatiquement** pour le contenu référencé, le système sélectionne automatiquement la version du contenu référencé correspondant à la version du contenu dans lequel il est référencé. Par exemple, supposons qu’une rubrique A comporte une référence à une image B. Lorsque la version 1.5 de la rubrique A a été créée, la version de l’image B était 1.2 dans le référentiel. Désormais, lorsqu’une ligne de base est créée avec la version 1.5 de la rubrique A avec l’image B définie sur **Sélectionner automatiquement**, le système sélectionne automatiquement la version 1.2 de l’image B.
+
+   Si vous créez une ligne de base à l’aide des libellés, **Sélectionner automatiquement** s’applique à la version de tout le contenu référencé.
+
+   Si le contenu ou les ressources référencés \(rubrique, sous-plans, images ou vidéos\) ne sont pas versionnés \(par exemple, contenu récemment chargé\), la création d’une ligne de base crée une version pour ces fichiers. Toutefois, si vos fichiers sont versionnés, aucune version incrémentielle n’est créée pour ces fichiers. Ce comportement est contrôlé par le paramètre de création automatique de version, activé par défaut. Cela est également nécessaire pour la traduction du contenu, dans lequel le processus de traduction exige que tous les fichiers aient une version.
+
+   >[!NOTE]
+   >
+   > Si vous souhaitez spécifier une version différente pour une ressource spécifique, vous pouvez le faire en choisissant la version souhaitée dans la **Version** liste déroulante.
 1. Cliquez sur **Enregistrer**.
 
 **Duplication des lignes de base**
@@ -116,7 +121,7 @@ Sélectionnez la ligne de base et cliquez sur **Dupliquer** pour créer une copi
 
 **Suppression des lignes de base**
 
-Sélectionnez la version de lignes de base et cliquez sur **Supprimer** pour supprimer une ligne de base.
+Sélectionnez la version de base et cliquez sur **Supprimer** pour supprimer une ligne de base.
 
 ## Ajout d’étiquettes à une ligne de base {#id184KD0T305Z}
 
@@ -143,7 +148,7 @@ Effectuez les étapes suivantes pour ajouter un libellé à plusieurs rubriques 
    - Cliquez sur **Ajouter**.
 Le libellé spécifié est ajouté au mappage DITA et aux rubriques et au contenu référencés.
 
-      ![](images/label-added-baseline-uuid.png){width="650" align="left"}
+     ![](images/label-added-baseline-uuid.png){width="650" align="left"}
 
 
 ## Exporter la ligne de base traduite {#id196SE600GHS}
@@ -160,11 +165,11 @@ Effectuez les étapes suivantes pour exporter une ligne de base traduite :
 
 1. Ouvrez le mappage DITA qui contient la ligne de base traduite.
 
-1. Dans le **Traduction** , développez l’onglet **Ligne de base** option disponible dans le rail de gauche.
+1. Dans le **Traduction** , développez la **Ligne de base** option disponible dans le rail de gauche.
 
    ![](images/export-baseline.png){width="800" align="left"}
 
-1. Sélectionnez la **Utilisation de la ligne de base** et sélectionnez la ligne de base à exporter.
+1. Sélectionnez la variable **Utilisation de la ligne de base** et sélectionnez la ligne de base à exporter.
 
 1. Cliquez sur **Référence d’exportation**.
 
