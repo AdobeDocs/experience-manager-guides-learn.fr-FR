@@ -1,13 +1,13 @@
 ---
 title: Utilisez des variables pour définir le chemin de destination, le nom du site ou le nom de fichier.
 description: Découvrez comment utiliser des variables pour définir les options Chemin de destination, Nom du site ou Nom de fichier
-source-git-commit: 8b6294425c6e60d1c5b37d98e99114014a104ee6
+exl-id: e8d5b7c7-4f80-4ab6-9ad1-308bf0d4cf74
+source-git-commit: cf45be23a6369de1e510b7e8ee9cd1a2b61721e3
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
-
 
 # Utilisez des variables pour définir le chemin de destination, le nom du site ou le nom de fichier.
 
@@ -23,8 +23,9 @@ Le tableau suivant répertorie les variables prises en charge par défaut :
 | `${preset_name}` | Utilise le nom du paramètre prédéfini de sortie pour créer le chemin de destination. | **Nom du paramètre prédéfini de sortie**:<br>`AEM Guides PDF Output`<br><br>**Nom du fichier de mappage DITA**:<br>`SampleDita.ditamap`<br><br>**Chemin de destination** configuré comme suit :<br>`/content/output/sites/${preset_name}`<br><br>**Emplacement de sortie final**:<br>`/content/output/sites/AEM Guides PDF Output/SampleDita.html` |
 | `${language_code}` | Utilise le code de langue où se trouve le fichier de mappage pour créer le chemin d’accès de destination. | **Nom du fichier de mappage DITA**:<br>`SampleDita.ditamap`<br><br>**Chemin du fichier de mappage DITA**:<br>`/content/dam/projects/AEM-Guides/en/user-guide/`<br><br>**Chemin de destination** configuré comme suit :<br>`/content/output/sites/${language_code}`<br><br>**Emplacement de sortie final**:<br>`/content/output/sites/en/SampleDita.html` |
 | `${map_parentpath}` | Utilise le chemin d’accès complet du fichier de mappage pour créer le chemin d’accès de destination.<br><br>**Remarque**: cette variable ne peut pas être utilisée pour spécifier le nom de site AEM ou le nom de fichier du PDF. | **Nom du fichier de mappage DITA**:<br>`SampleDita.ditamap`<br><br>**Chemin du fichier de mappage DITA**:<br>`/content/dam/projects/AEM-Guides/en/user-guide`/<br><br>**Chemin de destination** configuré comme suit :<br>`/content/output/sites/${map_parentpath}`<br><br>**Emplacement de sortie final**:<br>`/content/output/sites/content/dam/projects/AEM-Guides/en/user-guide/SampleDita.html` |
-| `${path_after_langfolder}` | Utilise le chemin d’accès du fichier map après le dossier language pour créer le chemin d’accès de destination.<br><br>**Remarque**: Cette variable ne peut pas être utilisée pour spécifier le nom de site AEM ou le nom de fichier du PDF. | **Nom du fichier de mappage DITA**:<br>`SampleDita.ditamap`<br><br>**Chemin du fichier de mappage DITA**:<br>`/content/dam/projects/AEM-Guides/en/user-guide/`<br><br>**Chemin de destination** configuré comme suit :<br>`/content/output/sites/${path\_after\_langfolder}`<br><br>**Emplacement de sortie final**:<br>`/content/output/sites/user-guide/SampleDita.html` |
+| `${path_after_langfolder}` | Utilise le chemin d’accès du fichier map après le dossier language pour créer le chemin d’accès de destination.<br><br>**Remarque**: cette variable ne peut pas être utilisée pour spécifier le nom de site AEM ou le nom de fichier du PDF. | **Nom du fichier de mappage DITA**:<br>`SampleDita.ditamap`<br><br>**Chemin du fichier de mappage DITA**:<br>`/content/dam/projects/AEM-Guides/en/user-guide/`<br><br>**Chemin de destination** configuré comme suit :<br>`/content/output/sites/${path\_after\_langfolder}`<br><br>**Emplacement de sortie final**:<br>`/content/output/sites/user-guide/SampleDita.html` |
+| `${system_date}` | Utilise la date courante du serveur pour créer le chemin de destination. | **Nom du fichier de mappage DITA**: <br> `SampleDita.ditamap` <br><br> **Chemin du fichier de mappage DITA :** <br> `/content/dam/projects/AEM-Guides/en/user-guide/` <br><br> **Chemin de destination** configuré comme suit : <br> `/content/output/sites/${system_date}` <br> <br> **Emplacement de sortie final :** <br> /`content/output/sites/08252023/SampleDita.html` |
+| `${system_time}` | Utilise l’heure actuelle du serveur pour créer le chemin de destination. | **Nom du fichier de mappage DITA :** <br>`SampleDita.ditamap` <br> <br> **Chemin du fichier de mappage DITA :** <br>`/content/dam/projects/AEM-Guides/en/user-guide/` <br><Br>**Chemin de destination** configuré comme suit : <br> `/content/output/sites/${system_time}`<br><br>**Emplacement de sortie final :**<br>`/content/output/sites/055612/SampleDita.html` |
 
 En outre, vous pouvez également utiliser les métadonnées définies pour le mappage DITA ou le fichier bookmap comme variables. Les métadonnées se trouvent sous la variable `/jcr:content/metadata` noeud du mappage DITA ou du fichier bookmap. Par exemple, l’une des propriétés de métadonnées définies dans la variable `/jcr:content/metadata` node is `dc:title`. Vous pouvez indiquer `${dc:title}` et la valeur de titre est utilisée dans la sortie finale.
 **Rubrique parente :**[ Génération de sortie](generate-output.md)
-

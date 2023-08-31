@@ -4,9 +4,9 @@ description: Découvrez comment utiliser le module externe Oxygen pour les guide
 hide: true
 hidefromtoc: true
 exl-id: 2db9a34e-2efa-47ad-ba6b-02afc5197669
-source-git-commit: a77f93ddc14b6beb440eaa314eebe53fd00265d7
+source-git-commit: 7fbc6d22fd2f93b7b5bf3233f7ebdd0cb020dda2
 workflow-type: tm+mt
-source-wordcount: '5952'
+source-wordcount: '6038'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Une fois que vous avez installé le programme d’installation, installez-le sur
 
 - Oxygen XML Author version 25.1
 
-- Adobe Experience Manager Guides version 4.3 ou ultérieure
+- Guides Adobe Experience Manager version 4.3 ou ultérieure
 
 - Adobe Experience Manager version 6.5 avec Service Pack 14, 15, 16 et 17
 
@@ -109,7 +109,7 @@ Effectuez les étapes suivantes sur le système où Oxygen XML Author est instal
 
 En tant qu’auteur, vous pouvez ouvrir et modifier vos mappages ou rubriques DITA dans Auteur XML Oxygen directement à partir de l’interface web AEM. Pour activer cette fonctionnalité dans AEM interface web, votre administrateur AEM doit installer un package dans votre instance de création d’AEM.
 
-En tant qu’administrateur AEM, effectuez les étapes suivantes pour installer le package :
+En tant qu’administrateur AEM, procédez comme suit pour installer le package :
 
 1. Récupérez le fichier .zip du module auprès de votre équipe informatique.
 1. Connectez-vous à votre instance AEM *\(en tant qu’administrateur\)* et accédez au gestionnaire de modules CRX. L’URL par défaut pour accéder au gestionnaire de modules est :
@@ -146,7 +146,7 @@ Après avoir téléchargé et installé le module externe, vous devez configurer
 
 - **Paramètres d&#39;authentification web**: paramètres pour l’authentification SSO dans le module externe pour les Guides d’AEM.
 - **Paramètres généraux**: paramètres de connexion du module externe, tels que l’URL du serveur d’AEM, les détails de connexion, etc.
-- **Préférences pour la personnalisation des attributs de profilage**: cette configuration est requise pour les schémas d’attributs de profilage pour les jeux de documentation.
+- **Préférences pour la personnalisation des attributs de profilage et les noms de fichier dans les références croisées**: cette configuration est requise pour les schémas d’attributs de profilage pour les jeux de documentation.
 
 ### Paramètres d&#39;authentification web
 
@@ -204,7 +204,7 @@ Ajoutez les lignes suivantes dans le fichier oxygèneAuthor.bat.
 
 ### Paramètres généraux
 
-Effectuez les étapes suivantes pour configurer les paramètres de connexion dans le module externe Oxygen pour les guides Adobe Experience Manager :
+Effectuez les étapes suivantes pour configurer les paramètres de connexion dans les guides du module externe Oxygen pour Adobe Experience Manager :
 
 1. Dans le panneau Guides d’AEM, cliquez sur l’icône de paramètres, puis sélectionnez **Paramètres**.
 
@@ -236,11 +236,11 @@ Effectuez les étapes suivantes pour configurer les paramètres de connexion dan
    - **Extraction automatique du fichier lorsqu’il est ouvert**: si cette option est sélectionnée, un double-clic sur un fichier l’extrait automatiquement et l’ouvre pour modification. Si le fichier est déjà extrait, il est simplement ouvert pour modification. Si cette option n’est pas sélectionnée, l’ouverture d’un fichier sur lequel vous n’avez pas de verrouillage l’ouvre en mode lecture seule.
 1. Cliquez sur **OK**.
 
-### Préférences pour la personnalisation des attributs de profilage {#id1827K0D0OHT}
+### Préférences pour la personnalisation des attributs de profilage et les noms de fichier dans les références croisées {#id1827K0D0OHT}
 
-Vous devez configurer les préférences dans Oxygen XML Author pour utiliser l’attribut de profilage associé aux rubriques DITA dans le référentiel AEM.
+Vous devez configurer les préférences dans Oxygen XML Author pour utiliser l’attribut de profilage associé aux rubriques DITA dans le référentiel AEM. Vous devez également configurer la préférence pour afficher les noms de fichier à la place des GUID dans les références croisées.
 
-Effectuez les étapes suivantes pour configurer les attributs de profilage :
+Effectuez les étapes suivantes pour configurer les attributs de profilage et les références croisées :
 
 1. Dans Auteur XML Oxygen, cliquez sur **Options** \> **Préférences**.
 1. Dans le **Association du type de document** onglet, sélectionnez **DITA**, puis cliquez sur **Étendre**.
@@ -257,6 +257,11 @@ Effectuez les étapes suivantes pour configurer les attributs de profilage :
 La capture d’écran suivante montre le **Extension** pour les rubriques DITA :
 
      ![Extension configurée pour les rubriques DITA](images/dita-topic-extension-tab.png){width="650" align="left"}
+
+   - Cliquez sur **Choisir** en regard de **Groupe d’extensions** et sélectionnez LinkResolverExtensionBundle - com.adobe.o2.framework.extn dans **Classe** liste. Cliquez sur **OK**.
+
+     ![Extension configurée pour les rubriques DITA](images/dita-map-extenstion-link-resolve.png) {width="650" align="left"}
+
 
 1. Cliquez sur **OK** dans toutes les boîtes de dialogue pour enregistrer vos modifications.
 
@@ -496,6 +501,7 @@ Les points suivants doivent être pris en compte lors du déplacement ou de la c
 
 - Lorsque vous extrayez du contenu du référentiel AEM et apportez des modifications sur votre système local, assurez-vous que le nom de fichier n’est pas modifié au moment du téléchargement du fichier.
 
+- Lorsque vous insérez une référence dans le Gestionnaire de mappages DITA, elle affiche le titre du fichier et non l’UUID. Si le titre n’est pas présent, il affiche le nom du fichier.
 
 ### Ajouter ou supprimer des Favoris {#id195HC04405P}
 
@@ -595,7 +601,7 @@ Effectuez les étapes suivantes pour modifier une rubrique DITA dans Oxygen XML 
 
 ## Utilisation des profils d’attribut {#id1827JA002YK}
 
-AEM Guides vous permet de créer et d’associer facilement des attributs conditionnels à l’aide des attributs DITA appropriés. Vous pouvez définir des attributs conditionnels au niveau global ou au niveau du dossier. Les conditions définies globalement sont visibles pour tous les projets et les conditions au niveau du dossier ne sont visibles que dans les projets créés dans le dossier spécifié. Les auteurs de contenu peuvent utiliser ces attributs conditionnels pour conditionner le contenu de leurs rubriques ou mappages DITA qu’ils créent ou utilisent. Pour en savoir plus sur la création d’attributs conditionnels dans AEM à l’aide des AEM Guides, voir *Configuration d’attributs conditionnels pour les profils globaux ou au niveau du dossier* dans les guides d’installation et de configuration d’Adobe Experience Manager.
+AEM Guides vous permet de créer et d’associer facilement des attributs conditionnels à l’aide des attributs DITA appropriés. Vous pouvez définir des attributs conditionnels au niveau global ou au niveau du dossier. Les conditions définies globalement sont visibles pour tous les projets et les conditions au niveau du dossier ne sont visibles que dans les projets créés dans le dossier spécifié. Les auteurs de contenu peuvent utiliser ces attributs conditionnels pour conditionner le contenu de leurs rubriques ou mappages DITA qu’ils créent ou utilisent. Pour en savoir plus sur la création d’attributs conditionnels dans AEM à l’aide des AEM Guides, voir *Configuration d’attributs conditionnels pour les profils globaux ou au niveau du dossier* dans les guides d’installation et de configuration de Adobe Experience Manager.
 
 >[!NOTE]
 >

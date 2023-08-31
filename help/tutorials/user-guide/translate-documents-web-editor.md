@@ -2,9 +2,9 @@
 title: Traduire des documents à partir de l’éditeur Web
 description: Découvrez comment traduire des documents à partir de l’éditeur web
 exl-id: 02fc2b51-5b9a-4ad6-9e2e-726ab7602514
-source-git-commit: 7df3024578ad289d9c6e0ab8b93f9fc6b9ff0bfe
+source-git-commit: 15ba984275155489d7ac3878d4b1307a6cd076c6
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1885'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ AEM Guides s’accompagne d’une puissante fonctionnalité de l’éditeur web 
 
 >[!NOTE]
 >
-> Votre administrateur peut configurer l’onglet Gérer \(utilisé pour la traduction\) dans l’éditeur web. Pour plus d’informations, voir *Configuration de la fonction de traduction dans l’éditeur web* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
+> Votre administrateur peut configurer l’onglet Gérer \(utilisé pour la traduction\) dans l’éditeur web. Pour plus d’informations, voir *Configuration de la fonction de traduction dans l’éditeur web* dans la section Installation et configuration de Adobe Experience Manager Guides as a Cloud Service.
 
 ## Avant de commencer
 
@@ -55,11 +55,9 @@ Avant d’exécuter les étapes de cette procédure, assurez-vous d’avoir cré
    **Utiliser la dernière version telle quelle**: choisissez de filtrer la version des rubriques en fonction de leur date et heure de création. Lorsque vous sélectionnez une date et une heure, seule la dernière version des fichiers créés avant ou après la date et l’heure sélectionnées s’affiche.
 
 1. Cliquez sur **Appliquer**. Une liste contenant les détails des rubriques et des ressources associées s’affiche.
-1. Sélectionnez les rubriques que vous souhaitez envoyer pour traduction.
+1. Sélectionnez les rubriques que vous souhaitez envoyer pour traduction. Vous pouvez également utiliser les options de filtrage des rubriques pour les colonnes suivantes :
 
-   Vous pouvez également utiliser les options de filtrage de rubrique suivantes :
-
-   - **Titre**: titre du fichier source
+   - **Titre**: titre du fichier source.  Passez la souris sur le titre du fichier source pour afficher le titre du fichier cible ou du fichier traduit.
    - **Nom du fichier**: nom du fichier source
    - **Type de fichier**: type du fichier source. Les options disponibles sont Carte, Rubrique et Image.
    - **Type de référence**: références directes ou indirectes
@@ -126,7 +124,7 @@ Pour de meilleures performances, il est recommandé de ne conserver que les fich
 AEM Guides sélectionne les règles SRX en fonction de la langue source du projet de traduction. Il recherche un fichier SRX personnalisé pour une langue. Si vous ne définissez pas de fichier SRX personnalisé, il sélectionne les règles conformément aux règles de traduction prêtes à l’emploi.
 
 
-Pour plus d’informations sur la configuration des profils globaux et au niveau du dossier, voir *Configuration de modèles de création* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
+Pour plus d’informations sur la configuration des profils globaux et au niveau du dossier, voir *Configuration de modèles de création* dans la section Installation et configuration de Adobe Experience Manager Guides as a Cloud Service.
 
 ## Transmettre le libellé de la version à la version cible
 

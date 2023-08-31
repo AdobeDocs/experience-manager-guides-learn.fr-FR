@@ -2,9 +2,9 @@
 title: Gestion des fichiers et des dossiers
 description: Découvrez comment gérer des fichiers et des dossiers
 exl-id: e7810b06-f49f-467a-b987-a5e6f731d4cf
-source-git-commit: d0b3ccb87901c54b86aa7d0dba14dc7201c072e9
+source-git-commit: 8154cfe11f2f032d457671ebca60c1ab3f090385
 workflow-type: tm+mt
-source-wordcount: '3079'
+source-wordcount: '3082'
 ht-degree: 0%
 
 ---
@@ -59,13 +59,13 @@ Cette section explique comment AEM Guides gère les opérations de base sur les 
 
   >[!NOTE]
   >
-  > **Créer une version pour le fichier téléchargé** doit être activée par votre administrateur. Si cette fonction est activée, une nouvelle version du fichier chargé est créée. Si cette option est désélectionnée, aucune version du fichier chargé n’est créée. Pour plus d’informations, voir *Créer une version pour le fichier téléchargé* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
+  > **Créer une version pour le fichier téléchargé** doit être activée par votre administrateur. Si cette fonction est activée, une nouvelle version du fichier chargé est créée. Si cette option est désélectionnée, aucune version du fichier chargé n’est créée. Pour plus d’informations, voir *Créer une version pour le fichier téléchargé* dans la section Installation et configuration de Adobe Experience Manager Guides as a Cloud Service.
 
   Si un fichier est déjà extrait pour modification par un autre utilisateur et que vous tentez de charger et de remplacer le fichier existant, il échoue et affiche une erreur.
 
   >[!NOTE]
   >
-  >La variable **Remplacer le fichier extrait lors du téléchargement** doit être désactivée par votre administrateur. Si cette fonction est activée, vous pouvez remplacer les fichiers extraits. Si la fonction n’est pas activée, un fichier extrait ne peut pas être remplacé. Pour plus d’informations, voir *Remplacer le fichier extrait lors du téléchargement* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
+  >La variable **Remplacer le fichier extrait lors du téléchargement** doit être désactivée par votre administrateur. Si cette fonction est activée, vous pouvez remplacer les fichiers extraits. Si la fonction n’est pas activée, un fichier extrait ne peut pas être remplacé. Pour plus d’informations, voir *Remplacer le fichier extrait lors du téléchargement* dans la section Installation et configuration de Adobe Experience Manager Guides as a Cloud Service.
 
 
 - *Glisser-déposer des fichiers à différents emplacements*: une nouvelle copie du fichier est créée et un nouvel UUID lui est également affecté au nouvel emplacement. Ici, le nom du fichier est identique à celui du fichier d’origine.
@@ -81,7 +81,7 @@ Lorsque le fichier est remplacé, le nom du fichier ou son UUID ne change pas.
 
 Si vous sélectionnez l’option **Créer une version pour la copie de travail existante** , puis une nouvelle version de la copie de travail du document est créée ; le nouveau fichier est chargé, une nouvelle version du fichier est également créée et il est créé en tant que copie de travail du document.
 
-**Créer une version pour le fichier téléchargé** doit être activée par votre administrateur. Si cette fonction est activée, une nouvelle version du fichier chargé est créée. Si cette option est désélectionnée, aucune version du fichier chargé n’est créée. Pour plus d’informations, voir *Créer une version pour le fichier téléchargé* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
+**Créer une version pour le fichier téléchargé** doit être activée par votre administrateur. Si cette fonction est activée, une nouvelle version du fichier chargé est créée. Si cette option est désélectionnée, aucune version du fichier chargé n’est créée. Pour plus d’informations, voir *Créer une version pour le fichier téléchargé* dans la section Installation et configuration de Adobe Experience Manager Guides as a Cloud Service.
 
 
 *Glisser-déposer un fichier à un autre emplacement*: les options de **Remplacer le fichier existant\(s\)**, **Déplacer le fichier\(s\) vers un nouvel emplacement** et une option pour créer une version de la copie de travail existante.
@@ -129,7 +129,7 @@ Pour déplacer des fichiers en bloc, procédez comme suit :
 
    <details>
 
-   <summary> Système de fichiers basé sur l’UUID sur site </summary>
+   <summary> Cloud Service et système de fichiers basé sur l’UUID On-premise </summary>
 
    ![](images/bulk-move-tool-uuid.png){width="650" align="center"}
 
@@ -220,7 +220,7 @@ Par défaut, AEM ne reconnaît pas le contenu DITA, il ne fournit donc aucun mé
 
 >[!NOTE]
 >
->Votre administrateur système peut configurer la variable **Elément DITA** de recherche, puis vous pouvez utiliser la fonctionnalité à partir de l’interface utilisateur d’AEM Assets. Pour plus d’informations, voir *Ajout d’un composant de recherche d’éléments DITA dans l’interface utilisateur d’Assets* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
+>Votre administrateur système peut configurer la variable **Elément DITA** de recherche, puis vous pouvez utiliser la fonctionnalité à partir de l’interface utilisateur d’AEM Assets. Pour plus d’informations, voir *Ajout d’un composant de recherche d’éléments DITA dans l’interface utilisateur d’Assets* dans la section Installation et configuration de Adobe Experience Manager Guides as a Cloud Service.
 
 La fonction de recherche vous permet d’effectuer les opérations suivantes :
 

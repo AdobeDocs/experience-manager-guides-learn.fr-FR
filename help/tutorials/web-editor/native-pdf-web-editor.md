@@ -1,10 +1,10 @@
 ---
 title: PDF natif | Génération de sortie PDF
-description: Générer une sortie PDF dans Adobe Experience Manager Guides as a Cloud Service
+description: Génération d’une sortie de PDF dans Adobe Experience Manager Guides as a Cloud Service
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: c11a9d2153dd2971a133ecd40325266b1d6e236c
+source-git-commit: 70801ab0e9465cea7568c7d8e67fcc7f41bae8ab
 workflow-type: tm+mt
-source-wordcount: '3071'
+source-wordcount: '3083'
 ht-degree: 1%
 
 ---
@@ -125,7 +125,7 @@ Vous pouvez utiliser une seule ou une combinaison de variables pour définir les
 Vous pouvez également combiner une variable à une chaîne.  Par exemple, `View ${dc:title} in ${dc:language}`.
 
 
-**Mise en page**
+**Disposition**
 
 Utilisez pour définir des mises en page et des options de page vue pour la sortie du PDF, telles que l’affichage de la page et les niveaux de zoom.
 
@@ -159,7 +159,7 @@ Utilisez les options suivantes pour définir des paramètres avancés pour fusio
 | **Utiliser la compression complète pour optimiser la taille du PDF** | Sélectionnez cette option si vous souhaitez compresser/réduire la taille d’un PDF volumineux. N’oubliez pas que la compression du PDF peut réduire la qualité du fichier. |
 | **Utiliser la compression d’image pour optimiser la taille du PDF** | Sélectionnez cette option si vous souhaitez compresser/réduire la taille des images utilisées, dans votre PDF. N’oubliez pas que la compression d’une image peut réduire la qualité de l’image. |
 | **Utiliser la résolution personnalisée (pixels par pouce)** | Il s’agit de la résolution d’affichage de la page en pixels par pouce. Saisissez la valeur souhaitée dans le champ qui s’affiche lorsque cette option est sélectionnée. La valeur par défaut est de 96 pixels par pouce. Si vous définissez une valeur inférieure, définissez une valeur plus élevée afin d’y placer plus de contenu par pouce, et vice versa. |
-| **Afficher le filigrane** | Sélectionnez cette option pour effectuer le rendu des équations MathML présentes dans votre contenu. Les équations seront ignorées dans le cas contraire. |
+| **Afficher le filigrane** | Sélectionnez cette option pour superposer un filigrane dans la sortie. Vous pouvez saisir une nouvelle chaîne de texte dans la zone de texte avec le caractère dont la casse correspond à vos besoins. |
 | **Activation des équations MathML** | Sélectionnez cette option pour effectuer le rendu des équations MathML présentes dans votre contenu. Les équations seront ignorées par défaut. |
 | **Conformité du PDF** | Il s’agit de la norme à laquelle vous envisagez d’enregistrer votre PDF pour vous assurer qu’il est conforme. Sélectionnez dans la liste déroulante pour effectuer un choix dans la liste des normes de PDF disponibles. Pour plus d’informations sur les normes prises en charge, voir [A propos des normes PDF](https://helpx.adobe.com/acrobat/using/pdf-conversion-settings.html#about_pdf_x_pdf_e_and_pdf_a_standards). |
 | **Téléchargement de fichiers temporaires** | Sélectionnez cette option si vous souhaitez télécharger les fichiers de HTML intermédiaires créés lors de la génération de la sortie du PDF natif. Vous pouvez ensuite télécharger les fichiers temporaires après avoir généré la sortie. |

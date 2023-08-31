@@ -2,9 +2,9 @@
 title: Présentation des fonctionnalités de l’éditeur web
 description: Découvrez comment connaître les fonctionnalités de l’éditeur web
 exl-id: 38b378ff-da24-4560-a17f-a2c547aea1b8
-source-git-commit: 0a01752122d012cff9fb583ae527842714e8f154
+source-git-commit: 9196d7b1094149f06067c153b9c02c2cd20c18af
 workflow-type: tm+mt
-source-wordcount: '15461'
+source-wordcount: '15744'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ La sous-section suivante décrit en détail les différentes sections de l’éd
 
 ## Barre d’outils principale {#id2051EA0G05Z}
 
-La barre d’outils principale se trouve dans la partie supérieure de l’interface de l’éditeur Web. Elle fournit des fonctions au niveau du fichier et divers modes de création disponibles dans l’éditeur Web. Les fonctions disponibles dans la barre d’outils supérieure sont expliquées comme suit :
+La barre d’outils principale se trouve dans la partie supérieure de l’interface de l’éditeur Web. Elle fournit des fonctions au niveau du fichier et divers modes de création disponibles dans l’éditeur Web. Les fonctionnalités disponibles dans la barre d’outils supérieure sont expliquées comme suit :
 
 **Enregistrer tout** - ![](images/SaveFloppy_icon.svg)
 
@@ -681,20 +681,25 @@ Pour ajouter un fichier à votre collection préférée, utilisez l’une des m�
 
   ![](images/favorite-add-file-folder.png){width="300" align="left"}
 
-- Cliquez avec le bouton droit sur l’onglet d’un fichier dans l’éditeur pour ouvrir le menu contextuel. Choisir **Ajouter À \> Favoris** pour ajouter le fichier à votre liste de favoris.
+- Cliquez avec le bouton droit sur l’onglet d’un fichier dans l’éditeur pour ouvrir le menu contextuel. Choisir **Ajouter à** > **Favoris** pour ajouter le fichier à votre liste de favoris.
 
   ![](images/favorite-add-from-file-context-menu_cs.png){width="400" align="left"}
 
+>[!NOTE]
+>
+> - Pour supprimer un élément de la liste des favoris, sélectionnez l’icône Options en regard de l’élément dans une collection Favoris et choisissez **Supprimer des favoris**.
+> - Pour prévisualiser le fichier sans l’ouvrir, sélectionnez un fichier, puis sélectionnez **Aperçu** dans le menu Options.
 
-** Menu Options de la collection Favroties**\
+
+
+**Menu Options de la collection Favroties**\
 Vous pouvez également effectuer de nombreuses actions à l’aide du menu Options disponible pour une collection Favoris :
 
 ![](images/favorites-options.png){width="400" align="left"}
 - **Renommer**: renommez la collection sélectionnée.
-- **Supprimer**: supprime le fichier sélectionné.
+- **Supprimer**: supprime la collection sélectionnée.
 - **Actualiser**: obtenez une nouvelle liste de fichiers et de dossiers à partir du référentiel.
 - **Affichage dans l’interface utilisateur d’Assets**: affiche le contenu du fichier ou du dossier dans l’interface utilisateur d’Assets.
-
 
 >[!NOTE]
 >
@@ -800,7 +805,7 @@ Le menu Options propose différentes options selon que vous sélectionnez un fic
 
 Les différentes options du menu Options sont expliquées ci-dessous :
 
-- **Modifier**: ouvrez le fichier à modifier. Dans le cas d’un fichier .ditamap/.bookmap, il est ouvert dans [Éditeur de carte avancé](map-editor-advanced-map-editor.md#) pour modification.
+- **Modifier**: ouvrez le fichier à modifier. Dans le cas d’un fichier .ditamap/.bookmap, il est ouvert dans la variable [Éditeur de carte avancé](map-editor-advanced-map-editor.md#) pour modification.
 
 - **Dupliquer**: utilisez cette option pour créer un doublon ou une copie du fichier sélectionné. Vous avez également la possibilité de renommer le fichier dupliqué à l’invite Dupliquer la ressource . Par défaut, le fichier est créé avec un suffixe \(comme filename\_1.extension\). Le titre du fichier reste identique à celui du fichier source et le nouveau fichier commence par la version 1.0. Toutes les références, balises et métadonnées sont copiées alors que les lignes de base ne sont pas copiées dans le fichier en double.
 - **Extraire**: verrouille le fichier sélectionné pour modification. Pour un fichier verrouillé, cette option se transforme en **Archiver**.
@@ -810,7 +815,7 @@ Les différentes options du menu Options sont expliquées ci-dessous :
   > - Si un fichier est verrouillé ou extrait par un utilisateur, placez le pointeur de la souris sur l’icône de verrouillage pour afficher l’utilisateur \(nom\) qui a verrouillé le fichier.
   > - Lorsque vous archivez un fichier contenant des modifications non enregistrées, vous êtes invité à les enregistrer. Si vous n’enregistrez pas vos modifications, il extrait uniquement le fichier.
 
-- **Aperçu**: obtenez un aperçu rapide du fichier (.dita/.xml\) sans l’ouvrir.
+- **Aperçu**: obtenir un aperçu rapide du fichier (fichier .dita, .xml, audio, vidéo ou image) sans l’ouvrir. Vous pouvez redimensionner le volet d’aperçu. Si le contenu contient des `<xref>` ou `<conref>`, vous pouvez la sélectionner pour l’ouvrir dans un nouvel onglet. Le titre du fichier s’affiche dans la fenêtre. Si aucun titre n’est présent, le nom du fichier s’affiche. Pour fermer la variable **Aperçu** , vous pouvez sélectionner l’icône de fermeture ou cliquer n’importe où en dehors du volet.
 
   ![](images/quick-preview_cs.png){width="800" align="left"}
 
@@ -1011,7 +1016,7 @@ Vous pouvez effectuer les actions suivantes à l’aide du menu Options :
   > - Si un fichier est verrouillé ou extrait par un utilisateur, placez le pointeur de la souris sur l’icône de verrouillage pour afficher l’utilisateur \(nom\) qui a verrouillé le fichier.
   > - Lorsque vous archivez un fichier, vous êtes invité à enregistrer les modifications. Si vous n’enregistrez pas vos modifications, il extrait uniquement le fichier.
 
-- **Aperçu**: obtenez un aperçu rapide du fichier \(.dita/.xml\) sans l’ouvrir.
+- **Aperçu**: obtenir un aperçu rapide du fichier (fichier .dita, .xml, audio, vidéo ou image) sans l’ouvrir. Vous pouvez redimensionner le volet d’aperçu. Si le contenu contient des `<xref>` ou `<conref>`, vous pouvez la sélectionner pour l’ouvrir dans un nouvel onglet.  Le titre du fichier s’affiche dans la fenêtre. Si aucun titre n’est présent, le nom du fichier s’affiche. Pour fermer la variable **Aperçu** , vous pouvez sélectionner l’icône de fermeture ou cliquer n’importe où en dehors du volet.
 - **Copier**: vous pouvez choisir parmi les options suivantes :
    - **Copier UUID**: copie de l’UUID du fichier sélectionné dans le Presse-papiers.
    - **Copier le chemin**: copie du chemin d’accès complet du fichier sélectionné dans le Presse-papiers.
@@ -1134,9 +1139,12 @@ Pour insérer du contenu à partir du panneau Contenu réutilisable , utilisez l
 
   >[!NOTE]
   >
-  > Remarque : La variable **Aperçu** est également disponible dans le menu contextuel, qui vous permet de prévisualiser rapidement l’élément avant de l’insérer.
+  > Sélectionnez un fichier, puis sélectionnez **Aperçu** de la **Options** pour prévisualiser le fichier sans l’ouvrir. Vous pouvez également prévisualiser les références présentes dans une rubrique. L’ID de référence s’affiche dans la fenêtre.
+  >
+  > La variable **Aperçu** est également disponible dans la variable **Options** d’un élément, qui permet de prévisualiser rapidement l’élément avant de l’insérer.
 
 - Faites glisser et déposez l’élément de contenu réutilisable du panneau à l’emplacement souhaité dans votre document.
+
 
 
 **Glossaire** -  ![](images/glossary.svg)
@@ -1272,86 +1280,138 @@ L’exemple suivant illustre l’utilisation du modèle d’objet dans AEM Guide
 
    ![](images/subject-scheme-apply.png){width="650" align="left"}
 
-   **Gestion des définitions hiérarchiques des définitions de sujet et des énumérations**
+**Gestion des définitions hiérarchiques des définitions de sujet et des énumérations**
 
-   Outre la gestion des énumérations et des définitions de sujet présentes dans la même carte, AEM Guides fournit également la fonctionnalité permettant de définir des énumérations et des définitions de sujet dans deux mappages distincts. Vous pouvez définir la définition de l’objet dans un mappage et les définitions de l’énumération dans un autre mappage, puis ajouter la référence du mappage. Par exemple, le code XML suivant crée des définitions de sujet et des définitions d’énumération dans deux mappages distincts.
+Outre la gestion des énumérations et des définitions de sujet présentes dans la même carte, AEM Guides fournit également la fonctionnalité permettant de définir des énumérations et des définitions de sujet dans deux mappages distincts. Vous pouvez définir une ou plusieurs définitions de sujet dans un mappage et les définitions d’énumération dans un autre mappage, puis ajouter la référence de mappage. Par exemple, le code XML suivant crée des définitions de sujet et des définitions d’énumération dans deux mappages distincts.
 
-   Les définitions de sujet sont définies dans la section `subject_scheme_map_1.ditamap`
-
-
-   ```XML
-   <?xml version="1.0" encoding="UTF-8"?> 
-   <!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "../dtd/libs/fmdita/dita_resources/DITA-1.3/dtd/subjectScheme/dtd/subjectScheme.dtd"> 
-   <subjectScheme id="subject-scheme.ditamap_f0bfda58-377b-446f-bf49-e31bc87792b3"> 
-   <title>subject_scheme_map_1</title> 
-   <subjectdef keys="os" navtitle="Operating system"> 
-   <subjectdef keys="linux" navtitle="Linux"> 
-   <subjectdef keys="redhat" navtitle="RedHat Linux"/> 
-   <subjectdef keys="suse" navtitle="SuSE Linux"/> 
-   </subjectdef> 
-   <subjectdef keys="windows" navtitle="Windows"/> 
-   <subjectdef keys="zos" navtitle="z/OS"/> 
-   </subjectdef> 
-   </subjectScheme>  
-   ```
-
-   La définition d’énumération est présente dans subject_scheme_map_2.ditamap
-
-   ```XML
-   <?xml version="1.0" encoding="UTF-8"?> 
-   <!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "../dtd/libs/fmdita/dita_resources/DITA-1.3/dtd/subjectScheme/dtd/subjectScheme.dtd"> 
-   <subjectScheme id="subject-scheme.ditamap_17c433d9-0558-44d4-826e-3a3373a4c5ae"> 
-   <title>subject_scheme_map_2</title> 
-   <mapref format="ditamap" href="subject_scheme_map_1.ditamap" type="subjectScheme"> 
-   </mapref> 
-   <enumerationdef> 
-   <attributedef name="platform"> 
-   </attributedef> 
-   <subjectdef keyref="os"> 
-   </subjectdef> 
-   </enumerationdef> 
-   </subjectScheme>  
-   ```
-
-   Ici, les définitions de sujet sont définies dans la section `subject_scheme_map_1.ditamap`  alors que le def de l&#39;énumération est présent dans `subject_scheme_map_2.ditamap`. La référence à `subject_scheme_map_1.ditamap` est également ajouté dans `subject_scheme_map_2.ditamap`.
-
-   >[!NOTE]
-   >
-   > Comme la variable `subject_scheme_map_1.ditamap` et `subject_scheme_map_2.ditamap` sont référencés les uns avec les autres, d’où la résolution des schémas de sujet.
-
-   Les références de l&#39;énumération objet sont résolues dans l&#39;ordre de priorité suivant :
-
-   1. Même carte
-   1. Carte référencée
+Les définitions de sujet sont définies dans la section `subject_scheme_map_1.ditamap`
 
 
-   Les références ne sont pas résolues si l’énumération est introuvable dans la même carte et la carte référencée.
+```XML
+  <?xml version="1.0" encoding="UTF-8"?> 
+    <!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "../dtd/libs/fmdita/dita_resources/DITA-1.3/dtd/subjectScheme/dtd/subjectScheme.dtd"> 
+    <subjectScheme id="subject-scheme.ditamap_f0bfda58-377b-446f-bf49-e31bc87792b3"> 
 
-   **Liste déroulante Attributs**
+    <title>subject_scheme_map_1</title> 
+    
+    <subjectdef keys="os" navtitle="Operating system">
+        <subjectdef keys="linux" navtitle="Linux">
+        <subjectdef keys="redhat" navtitle="RedHat Linux">
+        </subjectdef>
+        <subjectdef keys="suse" navtitle="SuSE Linux">
+        </subjectdef>
+        </subjectdef>
+        <subjectdef keys="windows" navtitle="Windows">
+        </subjectdef>
+        <subjectdef keys="zos" navtitle="z/OS">
+        </subjectdef>
+        </subjectdef>
+        <subjectdef keys="deliveryTargetValues">
+        <subjectdef keys="print">
+        </subjectdef>
+        <subjectdef keys="online">
+        </subjectdef>
+    </subjectdef>
+    <subjectdef keys="mobile" navtitle="Mobile">
+        <subjectdef keys="android" navtitle="Android">
+        </subjectdef>
+        <subjectdef keys="ios" navtitle="iOS">
+    </subjectdef>
+    </subjectdef>
+    <subjectdef keys="cloud" navtitle="Cloud">
+        <subjectdef keys="aws" navtitle="Amazon Web Services">
+        </subjectdef>
+        <subjectdef keys="azure" navtitle="Microsoft Azure">
+        </subjectdef>
+        <subjectdef keys="gcp" navtitle="Google Cloud Platform">
+        </subjectdef>
+    </subjectdef>
+    </subjectScheme>
+```
 
-   Vous pouvez également modifier la valeur du modèle d’objet à l’aide de la liste déroulante Attribut du panneau Propriétés du contenu dans la vue Auteur. Pour modifier la valeur, sélectionnez une valeur dans la liste déroulante Attribut .
+La définition de l’énumération est présente dans subject_scheme_map_2.ditamap.
 
-   ![](images/subject-scheme-attribute-dropdown.png){width="300" align="left"}
+```XML
+    ?xml version="1.0" encoding="UTF-8"?> 
+        <!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "../dtd/libs/fmdita/dita_resources/DITA-1.3/dtd/subjectScheme/dtd/subjectScheme.dtd"> 
+        <subjectScheme id="subject-scheme.ditamap_17c433d9-0558-44d4-826e-3a3373a4c5ae"> 
+        <title>subject_scheme_map_2</title> 
+        <mapref format="ditamap" href="subject_scheme_map_1.ditamap" type="subjectScheme"> 
+        </mapref> 
+        <enumerationdef>
+        <attributedef name="platform">
+        </attributedef>
+        <subjectdef keyref="mobile">
+        </subjectdef>
+        <subjectdef keyref="cloud">
+        </subjectdef>
+        </enumerationdef>
+        </subjectScheme>
+```
 
-   Vous pouvez également appliquer des valeurs à un attribut en sélectionnant plusieurs valeurs dans la liste déroulante.
+Ici, les définitions de sujet sont définies dans la section `subject_scheme_map_1.ditamap`  alors que le def de l&#39;énumération est présent dans `subject_scheme_map_2.ditamap`. La référence à `subject_scheme_map_1.ditamap` est également ajouté dans `subject_scheme_map_2.ditamap`.
 
-   **Vue source**
+>[!NOTE]
+>
+> Comme la variable `subject_scheme_map_1.ditamap` et `subject_scheme_map_2.ditamap` sont référencés les uns avec les autres, d’où la résolution des schémas de sujet.
 
-   Vous pouvez également modifier les valeurs dans la liste déroulante de l’attribut dans la vue Source. La vue source vous empêche également d’ajouter une valeur incorrecte.
+Les références de l&#39;énumération objet sont résolues dans l&#39;ordre de priorité suivant :
 
-   ![](images/subject-scheme-code-error.png){width="550" align="left"}
+1. Même carte
+1. Carte référencée
 
-   **Afficher et appliquer le modèle d’objet à partir du panneau Conditions**
 
-   Vous pouvez également afficher et appliquer le modèle d’objet à partir du panneau Conditions.
+Les références ne sont pas résolues si l’énumération est introuvable dans la même carte et la carte référencée.
 
-   Pour afficher le modèle d’objet à partir du panneau Conditions, votre administrateur système doit sélectionner l’option . **Afficher le schéma d’objet dans le panneau Conditions** sous l’onglet Condition dans Paramètres de l’éditeur. Pour plus d’informations, voir [Onglet Condition](#id21BMNE0602V).
 
-   Le panneau Conditions affiche la structure verticale plate des définitions d’objet dans le modèle d’objet.
 
-   ![](images/subject-scheme-condtions-panel.png){width="300" align="left"}
 
-   Vous pouvez ajouter des conditions à votre contenu en faisant glisser la condition souhaitée sur votre contenu. Le contenu conditionnel est mis en surbrillance à l’aide de la couleur définie pour la condition.
+**Limiter les valeurs à un élément spécifique**
+
+Vous pouvez également restreindre les conditions à certains éléments d’une rubrique. Utilisez la variable `<elementdef>` pour définir l’élément et la balise `<attributedef>` pour définir la condition qui peut être appliquée à l’élément.  Si vous n’ajoutez pas la variable `<elementdef>` , vous pouvez appliquer les conditions à tous les éléments.
+Par exemple, utilisez l’énumération suivante pour restreindre l’objet `@platform` à l’attribut `<shortdesc>` élément .  Les autres conditions sont visibles pour tous les éléments.
+
+```XML
+<enumerationdef>
+    <elementdef name="shortdesc">
+    </elementdef>
+    <attributedef name="platform">
+    </attributedef>
+    <subjectdef keyref="deliveryTargetValues">
+    </subjectdef>
+    <subjectdef keyref="os">
+    </subjectdef>
+  </enumerationdef>
+```
+
+</details>
+
+
+**Liste déroulante Attributs**
+
+Vous pouvez également modifier la valeur du modèle d’objet à l’aide de la liste déroulante Attribut du panneau Propriétés du contenu dans la vue Auteur. Pour modifier la valeur, sélectionnez une valeur dans la liste déroulante Attribut .
+
+![](images/subject-scheme-attribute-dropdown.png){width="300" align="left"}
+
+Vous pouvez également appliquer des valeurs à un attribut en sélectionnant plusieurs valeurs dans la liste déroulante.
+
+**Vue source**
+
+Vous pouvez également modifier les valeurs dans la liste déroulante de l’attribut dans la vue Source. La vue source vous empêche également d’ajouter une valeur incorrecte.
+
+![](images/subject-scheme-code-error.png){width="550" align="left"}
+
+**Afficher et appliquer le modèle d’objet à partir du panneau Conditions**
+
+Vous pouvez également afficher et appliquer le modèle d’objet à partir du panneau Conditions.
+
+Pour afficher le modèle d’objet à partir du panneau Conditions, votre administrateur système doit sélectionner l’option . **Afficher le schéma d’objet dans le panneau Conditions** sous l’onglet Condition dans Paramètres de l’éditeur. Pour plus d’informations, voir [Onglet Condition](#id21BMNE0602V).
+
+Le panneau Conditions affiche la structure verticale plate des définitions d’objet dans le modèle d’objet.
+
+![](images/subject-scheme-condtions-panel.png){width="300" align="left"}
+
+Vous pouvez ajouter des conditions à votre contenu en faisant glisser la condition souhaitée sur votre contenu. Le contenu conditionnel est mis en surbrillance à l’aide de la couleur définie pour la condition.
 
 **Extraits de code** -  ![](images/insert-snippet-icon.svg)
 

@@ -1,9 +1,9 @@
 ---
 title: Publication d’une rubrique sur un fragment de contenu
 description: Découvrez comment publier une rubrique sur un fragment de contenu.
-source-git-commit: 6cd7d2ec76f90a192dbcd0ef552789d42c23a4fb
+source-git-commit: dd677257d94015d888705e4b6a43ae877e58be4b
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '593'
 ht-degree: 1%
 
 ---
@@ -36,11 +36,22 @@ Par exemple, ajoutez `/conf/we-retail` dans la configuration cloud. Cette config
    * **Modèle**: sélectionnez le modèle de fragment de contenu que vous souhaitez utiliser pour créer votre fragment de contenu. Les modèles sont sélectionnés dans le dossier que vous avez configuré dans les services cloud.
    * **Mappage**: sélectionnez un mappage dans la liste déroulante. Il sélectionne les mappages de la variable *contentFragmentMapping.json* fichier .
 
-     >[!NOTE]
-     >
-     >Votre administrateur peut ajouter les mappages dans la variable *contentFragmentMapping.json* fichier .  En savoir plus sur la manière de procéder [créer un mappage entre une rubrique et un fragment de contenu ;](../install-guide/conf-content-fragment-mapping.md) in *Guide d&#39;installation et de configuration On-Premise*.
 
 
+     Selon votre configuration, votre administrateur peut ajouter les mappages dans la variable *contentFragmentMapping.json* fichier .
+
+     <details>
+        <summary>Services cloud</summary>
+
+     En savoir plus sur la manière de procéder [créer un mappage entre une rubrique et un fragment de contenu ;](../cs-install-guide/conf-content-fragment-mapping-cs.md) dans le Guide d&#39;installation et de configuration de Cloud Service.
+     </details>
+
+     <details>
+        <summary> Logiciel On-Premise</summary>
+
+     En savoir plus sur la manière de procéder [créer un mappage entre une rubrique et un fragment de contenu ;](../install-guide/conf-content-fragment-mapping.md) dans le Guide d&#39;installation et de configuration On-premise.
+
+     </details>
    * Sélectionnez la variable **Remplacer** si votre fragment de contenu existe déjà et que vous souhaitez le remplacer. AEM Guides affiche une erreur si vous ne cochez pas la case et que votre fragment de contenu existe déjà.
 1. Cliquez sur **Créer** pour publier le fragment de contenu.
 1. Vous pouvez afficher les fragments de contenu d’une rubrique sous le **Fragments** dans la section **Propriétés du fichier**.

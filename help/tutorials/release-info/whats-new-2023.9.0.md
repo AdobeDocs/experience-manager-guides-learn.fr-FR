@@ -1,9 +1,9 @@
 ---
 title: Notes de mise à jour | Nouveautés des guides Adobe Experience Manager, version de septembre 2023
 description: Découvrez les nouvelles fonctionnalités améliorées de la version de septembre 2023 de Adobe Experience Manager Guides as a Cloud Service
-source-git-commit: c01c3500b55f3579633ad1a954f9010783365add
+source-git-commit: 9d59fbbc88c3effe0b1c8438d9f3af55ffb8da27
 workflow-type: tm+mt
-source-wordcount: '1361'
+source-wordcount: '1678'
 ht-degree: 0%
 
 ---
@@ -12,22 +12,21 @@ ht-degree: 0%
 
 Cet article couvre les nouvelles fonctionnalités et les fonctionnalités améliorées de la version de septembre 2023 des Guides Adobe Experience Manager (ultérieurement appelée *AEM Guides as a Cloud Service*).
 
-Pour plus d’informations sur les instructions de mise à niveau, la matrice de compatibilité et les problèmes résolus dans cette version, voir [Notes de mise à jour](release-notes-2023.7.0.md).
+Pour plus d’informations sur les instructions de mise à niveau, la matrice de compatibilité et les problèmes résolus dans cette version, voir [Notes de mise à jour](release-notes-2023.9.0.md).
 
-## Connexion à une source de données et insertion de données dans vos rubriques
+## Connexion à une source de données et insertion des rubriques
 
-Vous pouvez désormais vous connecter rapidement à vos sources de données à l’aide des connecteurs prêts à l’emploi des AEM Guides. La connexion à une source de données vous permet de maintenir vos informations synchronisées avec la source. Toute mise à jour des données est répercutée automatiquement, ce qui fait d’AEM Guides un véritable hub de contenu. Cette fonctionnalité vous permet de gagner du temps et vous évite d’ajouter ou de copier manuellement les données.
+AEM Guides fournit des connecteurs prêts à l’emploi qui vous aident à vous connecter à vos sources de données, ce qui fait d’AEM Guides un véritable centre de contenu. Cela vous permet de gagner du temps et de vous consacrer à l’ajout ou à la réplication manuels de données.
 
-AEM Guides permet à votre administrateur de configurer les connecteurs prêts à l’emploi pour les bases de données JIRA et SQL (MySQL, PostgreSQL, SQL Server, SQLite). Ils peuvent également ajouter d’autres connecteurs en étendant les interfaces par défaut.
-Une fois ajoutés, vous pouvez afficher les connecteurs configurés répertoriés sous le panneau Sources de données dans l’éditeur web.
+Outre les connecteurs prêts à l’emploi tels que JIRA et SQL (MySQL, PostgreSQL, SQL Server, SQLite), votre administrateur peut également configurer des connecteurs pour les bases de données MariaDB, H2DB, AdobeCommerce et Elasticsearch. Ils peuvent également ajouter d’autres connecteurs en étendant les interfaces par défaut.
+
+Vous pouvez afficher les connecteurs configurés sous le **Sources de données** dans l’éditeur Web.
 
 <img src="assets/data-sources.png" alt="Liste des sources de données dans le panneau" width="300">
 
 *Afficher les sources de données connectées.*
 
-Créez un fragment de contenu pour récupérer les données d’une source de données connectée. Vous pouvez ensuite insérer les données dans vos rubriques et les modifier. Une fois que vous avez créé un générateur de fragments de contenu, vous pouvez le réutiliser pour insérer les données dans n’importe quelle rubrique.
-
-Vous pouvez désormais également créer une rubrique à partir d’une source de données connectée. Une rubrique peut contenir des données dans divers formats, tels que des tableaux, des listes et des paragraphes. Il vous permet également de créer un mappage DITA pour toutes les rubriques. Vous pouvez associer des métadonnées à la rubrique lors de l’extraction d’une source de données.
+Vous pouvez désormais créer une rubrique à partir d’une source de données connectée. Une rubrique peut contenir des données dans divers formats, tels que des tableaux, des listes et des paragraphes. Il vous permet également de créer un mappage DITA pour toutes les rubriques. Vous pouvez associer des métadonnées à la rubrique lors de l’extraction d’une source de données.
 
 Pour plus d’informations, voir [Utiliser les données de votre source de données](../user-guide/web-editor-content-snippet.md).
 
@@ -40,6 +39,7 @@ Dans AEM Guides, vous pouvez ajouter des citations ou importer des citations et 
 Après avoir inséré vos citations dans vos rubriques, vous pouvez les prévisualiser dans l’éditeur web. Vous pouvez également publier du contenu avec des citations à l’aide du PDF natif.
 
 ![Citations répertoriées dans un panneau](assets/citation-panel.png){width="300" align="left"}
+
 *Affichez la liste des citations dans le panneau Citations .*
 
 Pour plus d’informations, voir [Ajouter et gérer des citations dans votre contenu](../user-guide/web-editor-apply-citations.md).
@@ -54,7 +54,10 @@ Désormais, AEM Guides permet de publier une rubrique ou les éléments d’une 
 Capitalisez la puissance des Guides AEM et des fragments de contenu et utilisez des fragments de contenu dans n’importe quel site AEM. Vous pouvez également extraire les détails via des API prises en charge par les fragments de contenu.
 
 ![option de publication de fragment de contenu](assets/content-fragment-publish.png){width="550" align="left"}
+
 *Publiez une rubrique sur un fragment de contenu.*
+
+Pour plus d’informations, voir [Publication sur un fragment de contenu](../user-guide//publish-content-fragment.md).
 
 ## Améliorations des révisions
 
@@ -66,6 +69,7 @@ Réaliser des révisions est une fonctionnalité essentielle des Guides d’AEM.
 Vous pouvez désormais rechercher une rubrique en saisissant une partie du texte du titre ou du chemin de fichier dans la barre de recherche de l’affichage des rubriques du panneau de révision. Vous pouvez également afficher toutes les rubriques ou afficher les rubriques avec des commentaires. Par défaut, vous pouvez afficher toutes les rubriques présentes dans la tâche de révision. Pour plus d’informations, voir [Rubriques de révision](../user-guide/review-topics.md).
 
 ![Recherche dans un panneau de rubriques de révision](assets/review-search-topic.png){width="800" align="left"}
+
 *Recherchez une rubrique de révision dans le panneau de révision.*
 
 
@@ -78,7 +82,7 @@ Créez des packages personnalisés au-dessus des Guides d’AEM afin de fournir 
 
 ## Améliorations apportées aux PDF natifs
 
-Les améliorations suivantes ont été apportées au PDF natif dans la version 4.3.0 pour que AEM Guides soit un produit plus robuste :
+Les améliorations suivantes ont été apportées aux PDF natifs dans la version de septembre 2023 afin de rendre AEM Guides plus robuste :
 
 
 
@@ -103,13 +107,21 @@ Pour plus d’informations, voir [Ordre de page](../native-pdf/components-pdf-te
 
 Dans une sortie de PDF native par défaut, toutes les sections commencent sur une nouvelle page. Vous pouvez désormais fusionner une section avec sa page précédente ou la page suivante. La section est ainsi publiée dans la suite avec la page sélectionnée dans la sortie du PDF et aucun saut de page n’est effectué entre les deux.
 
-Pour plus d’informations, consultez la description de la fonctionnalité Fusion de pages dans [Ordre de page](../native-pdf/components-pdf-template.md#page-order) .
+Pour plus d’informations, voir la **Fusion de pages** description des fonctionnalités dans [Ordre de page](../native-pdf/components-pdf-template.md#page-order) .
+
+### Démarrez n’importe quel chapitre à partir de la page active.
+
+Vous pouvez définir les paramètres de configuration de base pour démarrer un chapitre à partir d’une page impaire ou pair, la structure de la table des matières et définir le format de ligne de conduite des entrées de la table des matières.
+
+Vous pouvez également commencer un chapitre à partir de la page active. Si vous choisissez de le faire, tous les chapitres sont publiés dans la suite sans sauts de page. Par exemple, si un chapitre se termine au milieu de la page 15, le chapitre suivant commence également à partir de la 15e page elle-même.
+
+Pour plus d’informations, voir la **Général** description de l’onglet dans  [Paramètres du PDF avancé](../native-pdf/components-pdf-template.md#advanced-pdf-settings-advanced-pdf-settings).
 
 ### Pages statiques
 
 Vous pouvez également créer des mises en page personnalisées et les publier en tant que pages statiques dans la sortie du PDF. Cela vous permet d’ajouter du contenu statique tel que des notes ou des pages vierges.
 
-Pour plus d’informations, consultez la description des fonctionnalités des pages statiques dans [Ordre de page](../native-pdf/components-pdf-template.md#page-order) .
+Pour plus d’informations, voir la **Pages statiques** description des fonctionnalités dans [Ordre de page](../native-pdf/components-pdf-template.md#page-order) .
 
 
 ### Variables dans les références croisées
@@ -135,16 +147,29 @@ Vous pouvez désormais utiliser des sélecteurs personnalisés pour ajouter des 
 
 ![ajout de styles dans les modèles pdf natifs](assets/add-styles-native-pdf.png){width="300" align="left"}
 
+*Ajoutez les détails du nouveau style.*
+
 #### Personnalisation des propriétés du style
 
 Désormais, AEM Guides vous présente un nouveau panneau de propriétés sous la section d’aperçu pour les styles. Vous pouvez modifier les propriétés des styles plus efficacement et plus rapidement à partir du panneau Propriétés.
 
 
+## Prise en charge de plusieurs définitions de sujet dans une seule définition d’énumération
+
+Vous pouvez maintenant définir une ou plusieurs définitions de sujet dans un mappage et les définitions d’énumération dans un autre mappage, puis ajouter la référence de mappage. Les références de l’énumération objet sont résolues dans le même mappage ou le mappage référencé.
+
+Vous pouvez désormais également définir des conditions et les appliquer à certains éléments spécifiques d’une rubrique.  Les conditions ne sont visibles que pour ces éléments spécifiques et non pour tous les autres éléments.
+
+Pour plus d’informations sur la gestion des définitions hiérarchiques des définitions d’objet et des énumérations, consultez la description de la fonction Modèle d’objet dans la section [Panneau gauche](../user-guide/web-editor-features.md#id2051EA0M0HS) .
+
+
+
+
 
 ## Sélectionner tous les paramètres prédéfinis d’une collection de cartes
 
-Vous pouvez non seulement sélectionner un paramètre prédéfini individuel, mais également activer tous les paramètres prédéfinis pour un mappage DITA en une seule fois.
-![modification d’une collection de mappages](assets/edit-map-collection.png){width="800" align="left"}\
+Vous pouvez non seulement activer un paramètre prédéfini individuel et tous les paramètres prédéfinis de profil de dossier, mais également activer tous les paramètres prédéfinis pour un mappage DITA en une seule fois.
+![modification d’une collection de mappages](assets/edit-map-collection-cs.png){width="800" align="left"}\
 *Sélectionnez tous les paramètres prédéfinis d’une collection de mappages.*
 
 Pour plus d’informations, voir [Utilisation de la collecte des cartes pour la génération de la sortie](../user-guide/generate-output-use-map-collection-output-generation.md).
@@ -164,3 +189,19 @@ Vous pouvez utiliser la boîte de dialogue parcourir le fichier pour sélectionn
 Pour plus d’informations, voir [Déplacer des fichiers en masse](../user-guide/authoring-file-management.md#move-files-bulk).
 
 
+## Amélioration de l’expérience d’aperçu à partir du menu contextuel
+
+Utilisez le menu contextuel pour prévisualiser rapidement le fichier (fichier .dita, .xml, audio, vidéo ou image) sans l’ouvrir. Vous pouvez désormais redimensionner le volet d’aperçu. Si le contenu contient un lien de référence, vous pouvez le sélectionner pour l’ouvrir dans un nouvel onglet.
+
+![Volet Aperçu ](assets/quick-preview_cs.png){width="800" align="left"}
+
+*Prévisualisez le fichier dans le volet.*
+
+Pour plus d’informations sur le menu contextuel, voir **Options d’un fichier** description des fonctionnalités dans la section [Panneau gauche](../user-guide/web-editor-features.md#id2051EA0M0HS) .
+
+
+## Utilisez des variables pour la date et l’heure actuelles dans les options Chemin de destination, Nom du site ou Nom de fichier .
+
+Lors de la génération de sorties dans AEM site ou les PDF, vous pouvez utiliser des variables pour définir la variable **Chemin de destination**, **Nom du site**, ou **Nom du fichier** options. Vous pouvez désormais également utiliser la variable `${system_date}`et `${system_time}` . Ces variables vous aident à ajouter la date et l’heure actuelles à ces options.
+
+Découvrez comment [utiliser des variables pour définir le chemin de destination, le nom du site ou le nom de fichier ;](../user-guide/generate-output-use-variables.md).

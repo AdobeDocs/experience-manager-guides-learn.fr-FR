@@ -1,10 +1,10 @@
 ---
 title: Traduction du contenu
 description: Découvrez comment traduire du contenu
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+source-git-commit: 4d54c52b8771b0c5a40018cfec3a6586029af2fb
 workflow-type: tm+mt
 source-wordcount: '711'
-ht-degree: 18%
+ht-degree: 21%
 
 ---
 
@@ -28,9 +28,9 @@ La traduction du contenu implique les étapes suivantes :
 
 1. [Préparez le contenu à traduire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/preparation.html?lang=en) en créant le gabarit de langue et les pages racine des copies de langue.
 
-1. Créer [projets de traduction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/managing-projects.html?lang=en) pour rassembler le contenu à traduire et préparer le processus de traduction.
+1. Créer [projets de traduction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/managing-projects.html?lang=fr) pour rassembler le contenu à traduire et préparer le processus de traduction.
 
-1. Utilisez les projets de traduction pour [gestion de la traduction du contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/managing-projects.html?lang=en) processus.
+1. Utilisez les projets de traduction pour [gestion de la traduction du contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/managing-projects.html?lang=fr) processus.
 
 
 Lorsque votre fournisseur de services de traduction ne fournit pas de connecteur pour l’intégration avec AEM, AEM prend en charge l’exportation et l’importation manuelles de contenu traduit au format XML.
@@ -48,7 +48,7 @@ Pour masquer l’onglet Traduction sur le tableau de bord de mappage DITA, proc�
 
    | PID | Clé de propriété | Valeur de la propriété |
    |---|------------|--------------|
-   | `com.adobe.fmdita.config.ConfigManager` | `hide.tabs.translation` | Booléen \( true/ false\).<br> **Valeur par défaut**: `true` |
+   | `com.adobe.fmdita.config.ConfigManager` | `tabs.translation` | Booléen \( true/ false\).<br> **Valeur par défaut**: `true` |
 
    >[!NOTE]
    >
@@ -67,7 +67,7 @@ Selon le processus de traduction utilisé dans votre configuration, l’option d
 
 >[!NOTE]
 >
-> Si vous utilisez le connecteur de traduction, assurez-vous que vous avez configuré le connecteur comme décrit dans la section *[Configuration de la structure d’intégration de traduction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/integration-framework.html?lang=en)* dans la documentation AEM.
+> Si vous utilisez le connecteur de traduction, assurez-vous que vous avez configuré le connecteur comme décrit dans la section *[Configuration de la structure d’intégration de traduction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/integration-framework.html?lang=en)* dans la documentation d’AEM.
 
 >[!IMPORTANT]
 >

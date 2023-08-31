@@ -1,9 +1,9 @@
 ---
 title: Insertion d’un fragment de contenu à partir de votre source de données
 description: Découvrez comment insérer un fragment de contenu de votre source de données
-source-git-commit: af5ec027ea093a28ba2a2ffd0ca3895546ed6e76
+source-git-commit: 71a64a35d065da10783d8e1a035ea1c4728e35f4
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1723'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,22 @@ A **source de données** est un système dans lequel vous stockez et gérez les 
 
 ## Panneau Sources de données
 
-Sélectionner **Sources de données** ![](images/data-source-icon.svg) dans le panneau de gauche pour afficher les sources de données connectées. Le panneau Sources de données s’ouvre et affiche toutes les sources de données connectées. Pour plus d’informations, voir [Configuration d’un connecteur de source de données](../install-guide/conf-data-source-connector.md).
+Sélectionner **Sources de données** ![](images/data-source-icon.svg) dans le panneau de gauche pour afficher les sources de données connectées. Le panneau Sources de données s’ouvre et affiche toutes les sources de données connectées.
+
+Selon votre configuration, votre administrateur peut configurer un connecteur de source de données :
+
+<details>
+<summary> Services cloud </summary>
+
+Découvrez comment [configurer un connecteur de source de données](../cs-install-guide/conf-data-source-connector.md) dans le Guide d&#39;installation et de configuration de Cloud Service.
+</details>
+
+<details>    
+<summary>  Logiciel On-Premise </summary>
+
+Découvrez comment [configurer un connecteur de source de données](../install-guide/conf-data-source-connector.md)  dans le Guide d&#39;installation et de configuration On-premise.
+</details>
+
 
 >[!NOTE]
 >
