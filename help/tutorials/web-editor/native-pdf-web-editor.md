@@ -2,9 +2,9 @@
 title: PDF natif | Génération de sortie PDF
 description: Génération d’une sortie de PDF dans Adobe Experience Manager Guides as a Cloud Service
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: 70801ab0e9465cea7568c7d8e67fcc7f41bae8ab
+source-git-commit: 85075a51d141afa451c22f7a29d21fc7ae391d49
 workflow-type: tm+mt
-source-wordcount: '3083'
+source-wordcount: '3211'
 ht-degree: 1%
 
 ---
@@ -120,9 +120,13 @@ Pour utiliser une variable, vous devez la définir dans la variable `${<variable
 Par exemple, l’une des propriétés de métadonnées définies dans /`jcr:content/metadata` node is
 `dc:title`. Vous pouvez indiquer `${dc:title}`et la valeur de titre est utilisée dans la sortie finale.
 
-Vous pouvez utiliser une seule ou une combinaison de variables pour définir les métadonnées. Par exemple, `${dc:title} ${dc:docstate}`.
+Vous pouvez utiliser une seule ou une combinaison de variables pour définir les métadonnées. Par exemple, `${dc:title} ${dc:docstate}`. Vous pouvez également combiner une variable à une chaîne.  Par exemple, `View ${dc:title} in ${dc:language}`.
 
-Vous pouvez également combiner une variable à une chaîne.  Par exemple, `View ${dc:title} in ${dc:language}`.
+Utilisez des variables de langue pour définir la valeur localisée des propriétés de métadonnées. Selon la langue choisie, la valeur localisée est automatiquement sélectionnée dans la sortie du PDF. Par exemple, vous pouvez imprimer &quot;Auteur&quot; comme valeur de métadonnées en anglais et &quot;Autorin&quot; en allemand.
+
+Format: `${lng:<variable name>}`. Par exemple : `${lng:author-label}` where `author-label` est une variable de langue.
+
+Survol <img src="./assets/info-details.svg" alt= "icône info" width="25"> près de l’option pour afficher plus de détails sur celle-ci.
 
 
 **Disposition**
@@ -159,7 +163,7 @@ Utilisez les options suivantes pour définir des paramètres avancés pour fusio
 | **Utiliser la compression complète pour optimiser la taille du PDF** | Sélectionnez cette option si vous souhaitez compresser/réduire la taille d’un PDF volumineux. N’oubliez pas que la compression du PDF peut réduire la qualité du fichier. |
 | **Utiliser la compression d’image pour optimiser la taille du PDF** | Sélectionnez cette option si vous souhaitez compresser/réduire la taille des images utilisées, dans votre PDF. N’oubliez pas que la compression d’une image peut réduire la qualité de l’image. |
 | **Utiliser la résolution personnalisée (pixels par pouce)** | Il s’agit de la résolution d’affichage de la page en pixels par pouce. Saisissez la valeur souhaitée dans le champ qui s’affiche lorsque cette option est sélectionnée. La valeur par défaut est de 96 pixels par pouce. Si vous définissez une valeur inférieure, définissez une valeur plus élevée afin d’y placer plus de contenu par pouce, et vice versa. |
-| **Afficher le filigrane** | Sélectionnez cette option pour superposer un filigrane dans la sortie. Vous pouvez saisir une nouvelle chaîne de texte dans la zone de texte avec le caractère dont la casse correspond à vos besoins. |
+| **Afficher le filigrane** | Sélectionnez cette option pour superposer un filigrane dans la sortie. Vous pouvez saisir une nouvelle chaîne de texte dans la zone de texte avec le caractère dont la casse correspond à vos besoins. <br><br>Utilisez du texte statique ou des variables de langue pour publier la version localisée du filigrane.  Selon la langue choisie, la valeur localisée est automatiquement sélectionnée dans la sortie du PDF. Par exemple, vous pouvez imprimer &quot;Éditeur&quot; en filigrane en anglais et &quot;Auteur&quot; en français.  <br> Format: `${lng:<variable name>}`. Par exemple : `$ {lng:publisher-label}` where `publisher-label` est une variable de langue. <br> Survol <img src="./assets/info-details.svg" alt= "icône info" width="25"> près de l’option pour afficher plus de détails sur celle-ci. |
 | **Activation des équations MathML** | Sélectionnez cette option pour effectuer le rendu des équations MathML présentes dans votre contenu. Les équations seront ignorées par défaut. |
 | **Conformité du PDF** | Il s’agit de la norme à laquelle vous envisagez d’enregistrer votre PDF pour vous assurer qu’il est conforme. Sélectionnez dans la liste déroulante pour effectuer un choix dans la liste des normes de PDF disponibles. Pour plus d’informations sur les normes prises en charge, voir [A propos des normes PDF](https://helpx.adobe.com/acrobat/using/pdf-conversion-settings.html#about_pdf_x_pdf_e_and_pdf_a_standards). |
 | **Téléchargement de fichiers temporaires** | Sélectionnez cette option si vous souhaitez télécharger les fichiers de HTML intermédiaires créés lors de la génération de la sortie du PDF natif. Vous pouvez ensuite télécharger les fichiers temporaires après avoir généré la sortie. |

@@ -2,9 +2,9 @@
 title: Fonction de publication native d’un PDF | Composants d’un modèle de PDF
 description: Découvrez les différents composants d’un modèle de PDF et comment les personnaliser et les configurer.
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: 18ec7e1b19cd6404b86f965be96caa88a0a067fe
+source-git-commit: 90cd3c53fd8da0b987c99950dd37d405bea12c6e
 workflow-type: tm+mt
-source-wordcount: '3934'
+source-wordcount: '4160'
 ht-degree: 0%
 
 ---
@@ -192,7 +192,7 @@ Le fichier sélectionné est importé et répertorié sous le dossier Ressources
 
 ## Paramètres du PDF avancé {#advanced-pdf-settings}
 
-Utilisez la section Paramètres pour configurer les paramètres avancés de mise en page de la page du PDF, en commençant par une page impaire ou paire, les formats des références croisées et l’activation des marques d’impression dans le PDF final généré à l’aide du modèle.
+Utilisez la section Paramètres pour configurer les paramètres avancés de mise en page de la page du PDF, en commençant par une page impaire ou paire, les formats des références croisées et en activant les marques d’impression dans le PDF final généré à l’aide du modèle.
 
 Pour configurer, cliquez sur **Paramètres** dans le **Modèles** pour afficher les options suivantes :
 
@@ -226,7 +226,14 @@ Pour appliquer la structure de table des matières et le style des niveaux d’e
   >
   >Si vous êtes un développeur CSS, vous pouvez également définir le format de filet de conduite directement dans le fichier CSS.
 
-* **Marqueur de continuation de tableau**: sélectionnez cette option pour définir des marqueurs pour les tables longues qui s’étendent sur plusieurs pages. <!--For more information on using table continuation markers, see Use table continuation markers.-->
+* **Marqueur de continuation de tableau**: sélectionnez cette option pour définir des marqueurs pour les tables longues qui s’étendent sur plusieurs pages.
+Vous pouvez définir le texte à afficher avant et après le saut. Par exemple, un tableau se casse sur la page 5 et vous définissez `<Continued on page %page-num%>` pour **Texte avant saut**.  Le texte affiche &quot;Suite à la page 6&quot; au bas de la page 5.
+
+  Utilisez des variables de langue pour définir le texte du marqueur de continuation avant et après la coupure. Selon la langue choisie, la valeur localisée est automatiquement sélectionnée dans la sortie du PDF. Par exemple, vous pouvez publier `Continued on page %page-num%` comme texte en anglais et `Fortsetzung auf Seite %page-num%` en allemand.
+
+  Survol <img src="./assets/info-details.svg" alt= "icône info" width="25"> près de l’option pour afficher plus de détails sur celle-ci.
+
+<!--For more information on using table continuation markers, see Use table continuation markers.-->
 
 ### Disposition de page {#page-layouts}
 
@@ -357,11 +364,11 @@ Configurez les paramètres de production d’impression pour attribuer des repè
 
 ### Références croisées {#cross-references}
 
-Utilisez l’onglet Référence croisée pour définir la manière dont les références croisées sont publiées dans le PDF. Vous pouvez mettre en forme les références croisées pour le titre de la rubrique, les tableaux, les chiffres, etc.
+Utilisez la variable **Référence croisée** pour définir comment les références croisées sont publiées dans le PDF. Vous pouvez mettre en forme les références croisées pour le titre de la rubrique, les tableaux, les chiffres, etc.
 
 Vous pouvez également utiliser des variables pour définir une référence croisée.  Lorsque vous utilisez une variable, sa valeur est sélectionnée dans les propriétés. Vous pouvez utiliser une seule ou une combinaison de variables pour définir une référence croisée. Vous pouvez également combiner une chaîne et une variable.
 
-Par exemple, vous pouvez utiliser Afficher les détails sur la variable {chapter}. Si le nom du chapitre est &quot;Paramètres généraux&quot;, la référence croisée dans la sortie est &quot;Voir les détails sur les paramètres généraux&quot;.
+Par exemple, vous pouvez utiliser `View details on {chapter}`. Si le nom du chapitre est &quot;Paramètres généraux&quot;, la référence croisée dans la sortie est &quot;Voir les détails sur les paramètres généraux&quot;.
 
 AEM Guides fournit les variables d’usine suivantes :
 
@@ -381,8 +388,25 @@ AEM Guides fournit les variables d’usine suivantes :
   >Vous pouvez créer des styles de numéro automatique pour les balises de légende et de fitrage.
 
 
+#### Variables de langue dans les références croisées
+
+Vous pouvez également utiliser des variables de langue pour définir des références croisées localisées. Selon la langue choisie, la valeur localisée est automatiquement sélectionnée dans la sortie du PDF.
+
+Par exemple, vous pouvez ajouter une variable de langue &quot;reference-label&quot; et définir les valeurs en anglais et en allemand.
+
+* Anglais - &quot;Afficher sur la page {page}&quot;
+* Allemand : &quot;Einzelheiten finden Sie auf der Seite {page}&quot;
 
 
+Lorsque vous ajoutez `${lng:<variable name>}` à la section Paragraphe , les références croisées dans les paragraphes de la sortie contiennent le texte localisé et le numéro de page.\
+Par exemple, les captures d’écran suivantes montrent les références croisées &quot;Afficher sur la page 1&quot; en anglais et &quot;Einzelheiten finden Sites auf der Seite 1&quot; en allemand.
 
+<img src="./assets/english-output-corss-reference.png" alt="Sortie en anglais d’une référence croisée dans un pragrah" width ="800">
+
+*Référence croisée dans un paragraphe lorsqu’elle est publiée en anglais.*
+
+<img src="./assets/german-output-corss-reference.png" alt="Sortie allemande d&apos;une référence croisée dans un pragrah" width ="800">
+
+*Référence croisée dans un paragraphe lorsqu’elle est publiée en allemand.*
 
 <!--For more information, see *Format cross-references*.-->

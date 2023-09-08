@@ -1,9 +1,9 @@
 ---
 title: PDF natif | Prise en charge des variables de langue
 description: Utiliser des variables de langue dans les modèles de sortie et de sortie du PDF
-source-git-commit: 3e922ef7ed9af200aa8fcfb0cbe4489cf059e335
+source-git-commit: 6de4b4666d804c678674faa6fe1a54ef9b9dbbe0
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1591'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,9 @@ Vous pouvez, par exemple, présenter le libellé de la façon suivante : `Note` 
 
 - Allemand : Hinweis
 
-<img src="./assets/language-variable-output.png" width="550">
+<img alt= "sortie dans le document contenant des variables de langue" src="./assets/language-variable-output.png" width="550">
+
+*Un exemple de note en anglais, français et allemand.*
 
 >[!NOTE]
 >
@@ -33,20 +35,20 @@ Vous pouvez, par exemple, présenter le libellé de la façon suivante : `Note` 
 >
 > Si vous n’avez pas défini la valeur dans la langue de l’interface utilisateur, elle recherche l’anglais (`en_us`), ou sinon, il sélectionne le paramètre English(`en`) et affiche la même valeur dans la sortie du PDF.
 
-### Types de variables de langue
+## Types de variables de langue
 
-AEM Guides prend en charge deux types de variables : Variables Application et User.
+AEM Guides prend en charge deux types de variables : les variables d’application et les variables utilisateur.
 
-#### Variables d’application
+### Variables d’application
 
-AEM Guides fournit un ensemble de variables d’application prédéfinies ou prêtes à l’emploi. Vous pouvez utiliser ces variables prédéfinies pour ajouter des informations sur un document spécifique aux AEM Guides. Par exemple, la variable `chapter-number` , si elle est incluse dans une page, affiche le numéro du chapitre auquel appartient la page. Le `author-label` affiche le nom de l’auteur du document.
+AEM Guides fournit un ensemble de variables d’application prédéfinies ou prêtes à l’emploi. Vous pouvez utiliser ces variables prédéfinies pour ajouter des informations sur un document spécifique aux AEM Guides. Par exemple, la variable `chapter-number` , si elle est incluse dans une page, affiche le numéro du chapitre auquel appartient la page. La variable `author-label` affiche le nom de l’auteur du document.
 
 >[!NOTE]
 >
 > Vous pouvez remplacer la valeur d’une variable d’application.
 
 
-#### Variables utilisateur
+### Variables utilisateur
 
 Vous pouvez également créer de nouvelles variables de langue. Par exemple, vous pouvez créer une variable utilisateur Éditeur pour le libellé de l’éditeur du document.
 
@@ -54,9 +56,11 @@ Vous pouvez également créer de nouvelles variables de langue. Par exemple, vou
 >
 >  Vous devez disposer de droits d’administrateur pour créer des variables utilisateur et modifier les variables d’application.
 
-<img src="./assets/add-language-variables.png" width="550">
+<img alt="fenêtre des variables de langue" src="./assets/add-language-variables.png" width="550">
 
-### Ajout d’une nouvelle variable de langue
+*Ajoutez et affichez les variables de langue d’une langue sélectionnée.*
+
+## Ajouter une nouvelle variable de langue
 
 1. Dans l’éditeur Web, accédez à l’onglet Sortie .
 1. Sélectionner **Variables de langue** <img src="./assets/language-variables.svg" width="25"> dans le panneau de gauche.
@@ -79,13 +83,54 @@ Vous pouvez également créer de nouvelles variables de langue. Par exemple, vou
 >
 > Si vous ne sélectionnez pas **Ajouter une variable de langue**, la variable n’est pas créée ni ajoutée à la liste.
 
+## Exportation et importation de variables de langue
+
+Experience Manager Guides permet d’exporter et d’importer les variables de langue présentes dans la langue sélectionnée. Vous pouvez facilement exporter toutes les variables de langue avec les valeurs définies. Cela inclut les variables d’application et d’utilisateur. Utilisez le fichier exporté pour apporter les modifications souhaitées aux valeurs ou les localiser dans d’autres langues.
+
+Vous pouvez également importer le fichier XML, qui contient les variables de langue. Experience Manager Guides importe uniquement les variables de langue déjà définies, y compris les variables d’application et d’utilisateur. Elle n’importe aucune variable qui n’est pas déjà définie.
+
+### Exporter des variables de langue
+
+Pour exporter les variables de langue d’une langue, sélectionnez la langue dans la liste déroulante, puis choisissez **Exporter** <img src="./assets/language-variable-export-icon.svg" alt="icône d&#39;export" width="25">.
+Il crée un fichier XML au format `language_variable_<ln>` where `<ln>` est le code de la langue sélectionnée. Par exemple : `language_variable_en.xml` pour l’anglais et `language_variable_fr.xml` pour le français.
+
+>[!NOTE]
+> 
+>Si des modifications non enregistrées sont apportées aux variables de langue, vous ne pouvez pas les exporter. Enregistrez les modifications pour afficher la fonction activée. **Exporter** <img src="./assets/language-variable-export-icon.svg" alt="icône d&#39;import" width="25"> icon.
+
+### Importation de variables de langue
+
+Pour importer les variables de langue :
+
+1. Sélectionnez une langue dans la liste déroulante, puis sélectionnez **Importer** <img src="./assets/language-variable-import-icon.svg" width="25">.
+2. Recherchez et sélectionnez le XML, qui contient les variables de langue. Par exemple, language_variable_en.xml.
+Vous pouvez importer des fichiers XML au format suivant :
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<variables>    
+<variable id="note-important">Important: </variable>    
+<variable id="note-caution">Avertir: </variable>    
+<variable id="image-with-text">Text and image &lt;img src=&quot;/content/dam/assets/images/image_with_text.png&quot; /&gt; </variable> 
+</variables> 
+```
+
+Les variables avec le même ID sont importées une fois le fichier importé. Les valeurs des variables de la langue sélectionnée sont mises à jour avec celles du fichier XML.  Un message sur le nombre de variables mises à jour s’affiche.
+
+>[!NOTE]
+> 
+><ul><li>Si le fichier n’est pas un fichier XML ou s’il contient un format incorrect qui ne correspond pas aux variables de langue, vous obtenez une erreur indiquant qu’il y a un problème avec le fichier XML. 
+&gt;<li>Si le fichier ne contient aucune variable avec le même ID, vous voyez un avertissement indiquant qu’aucune variable de langue correspondante n’est trouvée dans le fichier importé.
+
 ### Options d’une variable de langue
 
 Passez la souris sur la variable pour afficher la variable **Options** pour celle-ci.
 
-<img width="550" src="./assets/language-variable-user-options.png">
+<img width="550" alt="menu Options pour les variables de langue" src="./assets/language-variable-user-options.png">
 
-Vous pouvez prévisualiser les variables d’application et d’utilisateur. Pour afficher la manière dont la valeur de la variable est affichée dans la sortie, sélectionnez **Aperçu** de la **Options** de la variable sélectionnée.
+*Utilisez la variable **Options**pour supprimer, prévisualiser ou dupliquer une variable de langue.*
+
+Vous pouvez prévisualiser les variables utilisateur et application. Pour afficher la manière dont la valeur de la variable est affichée dans la sortie, sélectionnez **Aperçu** de la **Options** du menu de la variable sélectionnée.
 Vous pouvez également choisir **Supprimer** ou **Dupliquer** les variables utilisateur. La suppression d’une variable d’une langue la supprime automatiquement de toutes les langues.
 
 ### Modification ou restauration des variables d’application
@@ -96,10 +141,12 @@ Vous pouvez également modifier les valeurs d’une variable d’application. Pa
 
 Vous devez ajouter des variables de langue dans vos documents localisés. Vous pouvez insérer ces variables de langue dans la mise en page qui s’affiche sur différentes pages de vos documents localisés. Par exemple, vous pouvez ajouter la variable language pour la variable `author-name` qui apparaît dans la zone d’en-tête de la mise en page (ou dans toute autre partie comme le pied de page ou le corps).
 
-<img src="./assets/language-variable-page-layout.png" width="550">
 
-La capture d&#39;écran suivante montre l&#39;auteur et le nom de la marque localisés dans la sortie PDF générée pour la langue française.
 
+<img alt="mise en page d’un pdf" src="./assets/language-variable-page-layout.png" width="550">
+
+
+*L&#39;auteur et le nom de la marque localisés dans la sortie du PDF générée pour la langue française.*
 
 Pour insérer une variable de langue comme le `copyright-label` dans la zone d’en-tête, procédez comme suit :
 
@@ -109,7 +156,7 @@ Pour insérer une variable de langue comme le `copyright-label` dans la zone d�
    >
    > Affichage [Personnalisation de la mise en page](../native-pdf/components-pdf-template.md#customize-a-page-layout-customize-page-layout) pour ouvrir une mise en page à des fins de personnalisation ou de modification.
 
-1. Sélectionnez l’en-tête pour qu’il soit principal d’insérer une variable.
+1. Sélectionnez l’en-tête pour activer l’insertion d’une variable.
 1. Sélectionner **Insérer une variable**  <img src="./assets/insert-language-variable.svg" width="25"> dans la barre d’outils.
 1. Dans le **Insérer une variable** , sélectionnez le nom de la variable de langue à insérer, puis cliquez sur **Insérer** pour l’insérer dans la zone d’en-tête.
 
@@ -118,9 +165,11 @@ Pour insérer une variable de langue comme le `copyright-label` dans la zone d�
    > Vous pouvez également saisir la chaîne de recherche dans la zone de texte. Les noms des variables contenant la chaîne donnée sont filtrés et affichés dans la liste.
    > La variable de langue sélectionnée est insérée dans la zone d’en-tête.
 
-La capture d’écran suivante montre la valeur de la variable `copyright-label` ajouté dans la zone d’en-tête.
 
-<img src="./assets/language-variable-header.png" width="550">
+
+<img alt="insérer une variable dans la zone d’en-tête" src="./assets/language-variable-header.png" width="550">
+
+*La variable `copyright-label` ajouté dans la zone d’en-tête.*
 
 ### Application du style de contenu aux variables de langue
 
@@ -166,9 +215,13 @@ h1:before {
 
 Les captures d’écran suivantes affichent les chaînes localisées en sortie PDF allemande et japonaise .
 
-<img src="./assets/localize-chapter-german.png" width="550">
+<img alt=" sortie japonaise avec variable de langue" src="./assets/localize-chapter-german.png" width="550">
 
-<img src="./assets/localize-chapter-japanese.png" width="550">
+
+
+<img alt="Sortie allemande avec variable de langue" src="./assets/localize-chapter-japanese.png" width="550">
+
+
 
 ### Mise en forme des préfixes
 
