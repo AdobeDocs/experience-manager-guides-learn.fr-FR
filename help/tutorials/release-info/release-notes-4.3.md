@@ -1,7 +1,7 @@
 ---
-title: Notes de mise à jour | Instructions de mise à niveau et problèmes résolus dans la version 4.3.0 des guides Adobe Experience Manager
-description: Découvrez les correctifs de bogues et comment mettre à niveau vers les versions 4.3.0 des Guides Adobe Experience Manager
-source-git-commit: 7581085859785c5b8b597ecfeb7dbe58c7c9e2bc
+title: Notes de mise à jour | Instructions de mise à niveau et problèmes résolus dans la version 4.3.0 de Adobe Experience Manager Guides
+description: Découvrez les correctifs et comment mettre à niveau vers les versions 4.3.0 des Guides Adobe Experience Manager.
+source-git-commit: b53f76c2f0234c1ef6c65d954311e3f8c980ffe2
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 5%
@@ -40,12 +40,12 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 ### Adobe Experience Manager
 
 **4.3.0 Non UID**
-Version 6.5 Service Pack 17, 16, 15 ou 14
+Version 6.5 Service Pack 18, 17, 16, 15 ou 14
 
 **UUID 4.3.0**
-Version 6.5 Service Pack 17, 16, 15 ou 14
+Version 6.5 Service Pack 18, 17, 16, 15 ou 14
 
-Pour plus d’informations, voir *Exigences techniques* dans le guide d’installation et de configuration d’Adobe Experience Manager Guides.
+Pour plus d’informations, voir *Exigences techniques* dans le guide d’installation et de configuration de Adobe Experience Manager Guides.
 
 ### FrameMaker et FrameMaker Publishing Server
 
