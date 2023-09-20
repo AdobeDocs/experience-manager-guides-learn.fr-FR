@@ -1,9 +1,10 @@
 ---
 title: Publication de PDF natifs - Apprentissage par exemples (partie 1)
 description: Avec le moteur de publication Native PDF, vous pouvez contrôler la mise en page du contenu du document tout en manipulant les sections souhaitées selon les besoins à l’aide de CSS, de HTML et de JavaScript faciles à mettre à jour.
-source-git-commit: c004267eab4dfaea10565b535b875c716c162343
+exl-id: e6fcb2cb-4dfe-4aa7-8c84-f11759898c41
+source-git-commit: 63c2103c18b2a6da450247b1ee6b676a00d5a510
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '287'
 ht-degree: 1%
 
 ---
@@ -43,21 +44,20 @@ Au cours de cette session, vous avez appris ce qui suit pour la publication d’
 
 - **Présentation fonctionnelle de la publication d’PDF natifs** - [sur Experience League](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/knowledge-base/expert-session/native-pdf-publishing-essentials-feb23.html?lang=en)
 
-- **Cas d’utilisation courants documentés** - [sur Experience League](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/configuring/config-native-pdf-publish/content-styles/stylesheet.html?lang=en)
+- **Cas d’utilisation courants documentés** - [sur Experience League](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/install-guide/on-prem-ig/output-gen-config/config-native-pdf-publish/content-styles/stylesheet.html?lang=en)
 
-- **Forum de la communauté** - Pour les interactions de communauté spécifiques à une session sur Experience League, rendez-vous sur la page  [Forum AEM Guides](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/bd-p/xml-documentation-discussions).
+- **Forum communautaire** - Pour les interactions de communauté spécifiques à une session sur Experience League, rendez-vous sur la page  [Forum AEM Guides](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/bd-p/xml-documentation-discussions).
 
 >[!NOTE]
 >
 > Les fonctionnalités affichées dans cette session sont disponibles dans les versions suivantes des AEM Guides :
 > - On-premise 4.2 ou version ultérieure
-> - Cloud Services 2303 et versions ultérieures
-
+> - Cloud Service 2303 et versions ultérieures
 
 ## Prochaine session d&#39;experts
 
-- **Rubrique** - À déterminer
-- **Planifié le** - 20 juillet 2023
+- **Rubrique** - Publication de PDF natifs &quot;Mains on lab - BYOS&quot; - apprentissage interactif
+- **Planifié le** - 7 septembre 2023
 
 ## Contactez-nous
 

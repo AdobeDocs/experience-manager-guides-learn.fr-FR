@@ -2,9 +2,9 @@
 user-guide-title: Tutoriels pour AEM Guides
 user-guide-description: Lisez notre collection de tutoriels pour Adobe Experience Manager Guides.
 breadcrumb-title: Tutoriels AEM Guides
-source-git-commit: 0a1e03989ff75146c88eb10569e57954bdedbee5
+source-git-commit: 8ee493dbcdf68b83a55a65945febfa52c56ef09e
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1577'
 ht-degree: 7%
 
 ---
@@ -362,6 +362,7 @@ ht-degree: 7%
       + [Rapports dans les guides d’AEM](./knowledge-base/expert-sessions/basic-reports-mar2023.md)
       + [Configuration du contenu et des modèles](./knowledge-base/expert-sessions/content-and-template-setup-apr2023.md)
       + [Formation à la publication en PDF natif - partie 1](./knowledge-base/expert-sessions/native-pdf-publishing-eamples-part1-june2023.md)
+      + [Apprentissage de la publication en PDF natif - Mains en laboratoire - BYOS](./knowledge-base/expert-sessions/native-pdf-publishing-hands-on-lab-sep2023.md)
    + Articles {#kb-articles}
       + Création {#authoring}
          + Rapports {#reports}
