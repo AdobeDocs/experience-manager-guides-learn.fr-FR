@@ -1,7 +1,7 @@
 ---
 title: Notes de mise à jour | Nouveautés des guides Adobe Experience Manager, version d’octobre 2023
 description: Découvrez les nouvelles fonctionnalités et les fonctionnalités améliorées de la version d’octobre 2023 de Adobe Experience Manager Guides as a Cloud Service.
-source-git-commit: 18adbd41370d32b183cc4828d1d79b7183453f5e
+source-git-commit: 87aef92535b7204503cd4ed1da838b43b1133b04
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Pour plus d’informations sur les instructions de mise à niveau, la matrice de
 
 Les guides du Experience Manager fournissent désormais une **Sources de données** qui vous aide à configurer des connecteurs prêts à l’emploi pour les sources de données. Vous pouvez facilement créer les connecteurs pour JIRA, SQL (MySQL, PostgreSQL, Microsoft SQL Server, SQLite, MariaDB, H2DB), AdobeCommerce et les bases de données Elasticsearch.
 
-Vous pouvez également facilement modifier, reconnecter, dupliquer ou supprimer un connecteur de source de données. Découvrez comment [configurer un connecteur de source de données à l’aide des outils](../install-guide/conf-data-source-connector.md).
+Vous pouvez également facilement modifier, reconnecter, dupliquer ou supprimer un connecteur de source de données. Découvrez comment [configurer un connecteur de source de données à l’aide des outils](../cs-install-guide/conf-data-source-connector-tools.md).
 
 ![connecteurs de source de données répertoriés dans le panneau des sources de données](assets/data-sources-create-window.png){width="550" align="left"}
 
@@ -33,7 +33,7 @@ Vous pouvez désormais également afficher le fichier journal de génération du
 
 Vous pouvez désormais utiliser les outils Velocity dans les modèles de guides du Experience Manager. Ces outils vous aident à appliquer diverses fonctions aux données que vous récupérez à partir des sources de données. Vous pouvez utiliser les modèles lors de la création d’un fragment de contenu ou d’une rubrique. Cette fonctionnalité vous permet de gagner du temps et vous permet d’appliquer manuellement la même fonction à chaque jeu de données.  Elle garantit également des résultats précis.
 Par exemple, vous pouvez utiliser $mathTool pour exécuter des fonctions mathématiques.
-En savoir plus sur la manière de procéder [utiliser les outils Velocity dans les modèles de source de données ;](../user-guide/web-editor-content-snippet.md##use-velocity-tools).
+En savoir plus sur la manière de procéder [utiliser les outils Velocity dans les modèles de source de données ;](../user-guide/web-editor-content-snippet.md#use-velocity-tools).
 
 
 ## Améliorations apportées aux PDF natifs

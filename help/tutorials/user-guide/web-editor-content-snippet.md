@@ -1,7 +1,7 @@
 ---
 title: Insertion d’un fragment de contenu à partir de votre source de données
 description: Utilisez les données de votre source de données dans AEM Guides. Découvrez comment insérer un fragment de contenu de votre source de données. Créez une rubrique à l’aide du générateur de rubriques.
-source-git-commit: 0293dc6e375d6a80bf35694a8e9784f0bb6d0384
+source-git-commit: 87aef92535b7204503cd4ed1da838b43b1133b04
 workflow-type: tm+mt
 source-wordcount: '2028'
 ht-degree: 0%
