@@ -1,10 +1,10 @@
 ---
 title: Rapport Historique des versions des fichiers restaurés
-description: Découvrez comment créer un rapport Historique des versions des fichiers restaurés
+description: Affichez les rapports d’historique des versions de fichiers restaurés dans AEM Guides. Découvrez comment accéder aux journaux de version rétablie à partir de l’interface utilisateur d’Assets, de l’aperçu de la rubrique et de la sélection des outils d’AEM.
 exl-id: fa90b373-742a-4102-b00f-07e4113fef98
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ AEM Guides vous permet de générer un rapport d’historique des versions pour 
 
 Vous pouvez accéder à ce rapport à partir des emplacements suivants :
 
-- **Interface utilisateur des ressources**: en sélectionnant un fichier et en ouvrant le **Historique des versions** dans le rail de gauche. Le **Historique des versions** La vue contient la variable **Rétablir les journaux de version** lien au bas du panneau. Lorsque vous cliquez sur ce lien, l’historique des versions rétablies du fichier sélectionné s’affiche.
+- **Interface utilisateur des ressources**: en sélectionnant un fichier et en ouvrant le **Historique des versions** dans le rail de gauche. La variable **Historique des versions** La vue contient la variable **Rétablir les journaux de version** lien au bas du panneau. Lorsque vous cliquez sur ce lien, l’historique des versions rétablies du fichier sélectionné s’affiche.
 
-   ![](images/revert-log-from-assets-ui.png){width="300" align="left"}
+  ![](images/revert-log-from-assets-ui.png){width="300" align="left"}
 
-- **Aperçu de la rubrique**: lorsque vous prévisualisez une rubrique, vous pouvez également afficher le **Historique des versions** du rail de gauche. Vous obtenez un panneau similaire à l’interface utilisateur d’Assets à partir duquel vous pouvez cliquer sur le bouton **Rétablir les journaux de version** pour accéder à l’historique de version rétabli du principal document.
+- **Aperçu de la rubrique**: lorsque vous prévisualisez une rubrique, vous pouvez également afficher le **Historique des versions** du rail de gauche. Vous obtenez un panneau similaire à l’interface utilisateur d’Assets à partir duquel vous pouvez cliquer sur le bouton **Rétablir les journaux de version** pour accéder à l’historique de version rétabli du document actif.
 
 - **AEM section Outils**: vous pouvez également accéder à ce rapport à partir de la section Outils d’AEM. La procédure suivante explique comment accéder à l’historique des versions de restauration à partir de la section Outils d’AEM.
 
@@ -42,17 +42,17 @@ Effectuez les étapes suivantes pour accéder au rapport Rétablir l’historiqu
 
    Le rapport contient les détails suivants :
 
-   - **Nom du fichier**: Titre de la rubrique. Cliquez sur le lien de titre de la rubrique pour ouvrir l’aperçu de la rubrique.
+   - **Nom du fichier**: titre de la rubrique. Cliquez sur le lien de titre de la rubrique pour ouvrir l’aperçu de la rubrique.
 
-   - **Horodatage**: Date et heure auxquelles la rubrique a été restaurée à une version antérieure.
+   - **Horodatage**: date et heure auxquelles la rubrique a été rétablie sur une version antérieure.
 
-   - **Utilisateur**: Nom de l’utilisateur qui a restauré une version antérieure.
+   - **Utilisateur**: nom de l’utilisateur qui a restauré une version antérieure.
 
-   - **Rétablir à partir de**: Numéro de version d’origine du fichier à partir duquel il a été restauré.
+   - **Revenir de**: numéro de version d’origine du fichier à partir duquel il a été restauré.
 
-   - **Revenir à**: Version vers laquelle le fichier a été restauré.
+   - **Revenir à**: version vers laquelle le fichier a été restauré.
 
-   - **Commentaire**: Tout commentaire donné par l’utilisateur qui a restauré le fichier.
+   - **Commentaire**: tout commentaire donné par l’utilisateur qui a restauré le fichier.
 
 
 **Rubrique parente :**[ Rapports](reports-intro.md)

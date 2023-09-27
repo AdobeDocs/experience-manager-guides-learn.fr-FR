@@ -1,10 +1,10 @@
 ---
 title: Rubriques de révision
-description: Découvrez comment consulter les rubriques
+description: Découvrez comment passer en revue des rubriques et utiliser les fonctionnalités comme réviseur, vue de document, vue de rubrique, barre d’outils contextuelle, mode Aperçu, ajouter des pièces jointes aux commentaires et panneau des conditions dans les Guides d’AEM.
 exl-id: ca94ec2e-cd45-418d-9b35-73d587ba51ec
-source-git-commit: b9bf08ccbe2eb17ca8d4dac675155e0b4631f0a9
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '2323'
+source-wordcount: '2348'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Pour passer en revue une rubrique, procédez comme suit :
      > Lorsque vous appliquez les filtres, seuls les commentaires correspondant aux filtres sélectionnés s’affichent dans le panneau des commentaires. Le nombre de commentaires filtrés s’affiche à gauche dans le panneau des rubriques.
 
    - **E**: une rubrique affectée à la révision au réviseur actuel s’affiche en noir et peut faire l’objet d’un clic. Lorsque le réviseur clique sur un lien de rubrique, cette rubrique est placée en haut de l’écran.
-   - **F**: une rubrique qui n’est pas disponible pour la révision est grisée. La rubrique s’affiche en lecture seule et vous n’êtes pas autorisé à ajouter des commentaires de révision sur ces rubriques.
+   - **F**: une rubrique qui n’est pas disponible pour la révision est grisée. La rubrique s’affiche en mode lecture seule et vous n’êtes pas autorisé à ajouter des commentaires de révision sur ces rubriques.
 
    - **G**: nombre de commentaires reçus sur un sujet. Ce nombre change en fonction du filtre que vous appliquez.
 

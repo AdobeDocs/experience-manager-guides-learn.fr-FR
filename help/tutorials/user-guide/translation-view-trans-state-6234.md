@@ -1,10 +1,10 @@
 ---
 title: Afficher le statut de traduction
-description: Découvrez comment afficher l’état de traduction
+description: Découvrez comment afficher l’état de traduction et les copies de langue traduites pour chaque rubrique dans un mappage DITA dans AEM Guides.
 exl-id: 2662d86e-5ebd-4f41-a1e9-5bf4c96ffce2
-source-git-commit: d87a2e054310e3421dcbf347232a420638823b93
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: Création de paramètres prédéfinis de sortie à partir de l’éditeur web
-description: Découvrez comment créer des paramètres prédéfinis de sortie à partir de l’éditeur web
+description: Créez des paramètres prédéfinis de sortie à partir de l’éditeur web. Découvrez comment modifier, renommer, dupliquer et supprimer un paramètre prédéfini de sortie dans AEM Guides.
 exl-id: 7fde0057-06a5-428e-a91b-9e9386a56270
-source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Effectuez les étapes suivantes pour créer des paramètres prédéfinis de sort
 
 1. Pour obtenir un verrou exclusif sur le fichier map, sélectionnez le fichier map et cliquez sur **Extraire**.
 
-1. Sélectionnez la **Modifier les rubriques** dans le menu d’actions du fichier map.
+1. Sélectionnez la variable **Modifier les rubriques** dans le menu d’actions du fichier map.
 
    Le fichier de mappage est ouvert pour modification dans l’éditeur web.
 
@@ -41,11 +41,11 @@ Effectuez les étapes suivantes pour créer des paramètres prédéfinis de sort
       > Actualisez chaque liste déroulante pour obtenir la classification supplémentaire dans la liste déroulante suivante.
 
    1. Dans la **Articles** , sélectionnez les rubriques pour lesquelles vous souhaitez générer la sortie.
-1. Sélectionnez la **Générer un paramètre prédéfini** dans la partie supérieure pour générer la sortie.
+1. Sélectionnez la variable **Générer un paramètre prédéfini** dans la partie supérieure pour générer la sortie.
 
    ![](images/add-preset-articles-tab_cs.png){width="800" align="left"}
 
-1. Vous verrez l’état du processus de génération de sortie. Le **Sujets** La colonne répertorie les rubriques pour lesquelles une sortie est générée pendant que la fonction **État** affiche l’état de publication de chaque rubrique.
+1. Vous verrez l’état du processus de génération de sortie. La variable **Sujets** La colonne répertorie les rubriques pour lesquelles une sortie est générée pendant que la fonction **État** affiche l’état de publication de chaque rubrique.
 
    Pour afficher la sortie, placez le pointeur de la souris sur la rubrique et cliquez sur Afficher la sortie.
 

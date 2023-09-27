@@ -1,10 +1,10 @@
 ---
 title: Modification d’une collection de cartes d’activation en bloc
-description: Découvrez comment modifier une collection de cartes d’activation en bloc
+description: Utilisez le tableau de bord de publication en bloc dans AEM Guides. Découvrez comment modifier une collection de mappages d’activation en bloc en ajoutant ou en supprimant des fichiers de mappage.
 exl-id: 110eba52-c886-4148-aff9-9c4e1d3d85bd
-source-git-commit: 25641f5c3207d98228d406e3b553c06d2bad1e10
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '230'
 ht-degree: 2%
 
 ---

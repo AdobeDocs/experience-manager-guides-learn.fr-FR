@@ -1,13 +1,13 @@
 ---
 title: Modification des rubriques dans l’éditeur web
-description: Découvrez comment modifier des rubriques dans l’éditeur web
-source-git-commit: cc0fbca257d82cc82db5b5da8d263309fd71de55
+description: Découvrez comment modifier des rubriques dans l’éditeur web. Découvrez les différentes fonctions de modification pour modifier vos fichiers de rubrique dans les Guides d’AEM.
+exl-id: 9950df78-09bd-433a-891d-0d689bb0c2e4
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
-
 
 # Modification des rubriques dans l’éditeur web {#id2056B040VUI}
 
@@ -36,9 +36,9 @@ L’éditeur web s’accompagne d’un éventail de fonctions d’édition qui v
    **Actualiser le navigateur lors de la modification des fichiers**
 AEM Guides permet d’actualiser le navigateur lorsque vous modifiez votre contenu dans l’éditeur web. Cette fonctionnalité vous permet de continuer à modifier le contenu si vous rencontrez une erreur d’application pendant que vous travaillez. Si vous appuyez sur l’actualisation du navigateur alors qu’un ou plusieurs fichiers contenant des modifications non enregistrées sont ouverts pour modification, vous êtes averti que les modifications non enregistrées risquent d’être perdues. Vous avez la possibilité d’annuler l’opération d’actualisation et d’enregistrer vos fichiers pour conserver vos modifications.
 
-   Même lors de l’actualisation du navigateur, les vues des panneaux gauche et droit sont conservées dans l’éditeur web. Par exemple, la principale rubrique du panneau Référentiel s’ouvre à nouveau. Le panneau de mappage est conservé avec la carte précédemment ouverte.
+   Même lors de l’actualisation du navigateur, les vues des panneaux gauche et droit sont conservées dans l’éditeur web. Par exemple, la rubrique active du panneau Référentiel s’ouvre à nouveau. Le panneau de mappage est conservé avec la carte précédemment ouverte.
 
-   La rubrique principale ou le mappage DITA est rouvert dans la zone d’édition du contenu.
+   La rubrique active ou le mappage DITA est rouvert dans la zone de modification du contenu.
 
    Le panneau de droite est également rouvert et affiche la même vue qu’avant l’actualisation.
 
@@ -53,4 +53,3 @@ AEM Guides fournit l’indicateur de copie de travail qui indique si la \(copie 
 
 
 **Rubrique parente :**[ Utilisation de l’éditeur web](web-editor.md)
-

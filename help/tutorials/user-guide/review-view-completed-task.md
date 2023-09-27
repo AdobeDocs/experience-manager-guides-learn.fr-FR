@@ -1,10 +1,10 @@
 ---
 title: Affichage d’une tâche de révision terminée
-description: Découvrez comment afficher une tâche de révision terminée
+description: Découvrez comment afficher une tâche de révision terminée en tant que réviseur ou auteur dans AEM Guides.
 exl-id: 37f10fc3-e4ca-4e73-a887-65c7e9496f5e
-source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Vous pouvez effectuer des tâches de révision pour les projets pour lesquels vo
 
 En tant que réviseur, vous pouvez voir un indicateur dans le panneau des commentaires pour indiquer que la révision est terminée. La barre d’outils des commentaires ne s’affiche pas. Vous ne pouvez donc pas mettre en surbrillance, barrer la souris, insérer du texte ou ajouter des commentaires. Vous pouvez lire un commentaire, mais vous ne pouvez ni modifier ni supprimer des commentaires. Vous ne pouvez pas non plus ajouter de réponse aux commentaires. Vous ne pouvez pas voir la barre d’outils contextuelle (utilisée pour mettre en surbrillance ou barrer n’importe quel texte). L’icône de commentaires obsolètes n’est pas non plus affichée dans une tâche de révision terminée.
 
-Vous pouvez toutefois rechercher ou filtrer des commentaires. Vous pouvez également choisir d’afficher ou de masquer les conditions et d’afficher le contenu conditionnel en conséquence. Vous pouvez télécharger des pièces jointes, mais vous ne pouvez pas télécharger ni supprimer de pièces jointes pour les commentaires.
+Cependant, vous pouvez rechercher ou filtrer les commentaires. Vous pouvez également choisir d’afficher ou de masquer les conditions et d’afficher le contenu conditionnel en conséquence. Vous pouvez télécharger des pièces jointes, mais vous ne pouvez pas télécharger ni supprimer de pièces jointes pour les commentaires.
 
 ![](images/complete-task-reviewer.png){width="800" align="left"}
 
@@ -26,7 +26,7 @@ Vous pouvez toutefois rechercher ou filtrer des commentaires. Vous pouvez égale
 
 En tant qu’auteur, vous pouvez voir l’état comme fermé dans le panneau Révision. Vous pouvez lire un commentaire, mais vous ne pouvez pas accepter ou refuser un commentaire. Vous ne pouvez pas modifier ni supprimer des commentaires. Vous ne pouvez pas non plus ajouter la réponse pour le commentaire. L’icône Commentaires obsolètes et l’icône Importer les commentaires dans la vue de l’auteur ne s’affichent pas dans une tâche de révision terminée.
 
-Vous pouvez toutefois rechercher ou filtrer des commentaires. Vous pouvez télécharger des pièces jointes, mais vous ne pouvez pas télécharger ni supprimer de pièces jointes pour les commentaires.
+Cependant, vous pouvez rechercher ou filtrer les commentaires. Vous pouvez télécharger des pièces jointes, mais vous ne pouvez pas télécharger ni supprimer de pièces jointes pour les commentaires.
 
 ![](images/completed-task-author.png){width="800" align="left"}
 

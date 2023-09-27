@@ -1,10 +1,10 @@
 ---
 title: Balisage en masse de contenu DITA
-description: Découvrez comment baliser le contenu DITA
+description: Utilisez le balisage massif du contenu dans AEM Guides pour améliorer la visibilité du contenu DITA. Découvrez comment appliquer, supprimer, afficher ou masquer des balises en bloc sur une ou plusieurs rubriques.
 exl-id: 0e855575-e62f-4dc7-869c-7fd3ec61ffdb
-source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Les balises vous permettent de regrouper ou de classer le contenu dans votre référentiel de contenu, ainsi que dans la sortie publiée. Si vous avez appliqué des balises à votre contenu, vous pouvez facilement trouver des rubriques connexes dans un mappage DITA qui peut vous aider à créer du contenu. Avec la sortie publiée, les utilisateurs finaux pourront localiser plus rapidement le contenu approprié avec les balises appropriées en place.
 
-AEM Guides vous permet de baliser le contenu DITA en quelques clics. Vous pouvez utiliser la fonction de balisage en masse pour appliquer plusieurs balises sur plusieurs rubriques, un mappage DITA ou sur un sous-mappage. Vous pouvez également appliquer des balises sur une rubrique individuelle. Le balisage est la fonctionnalité native d’AEM. Vous trouverez plus d’informations sur la création et la gestion des balises dans la section [Administration des balises](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/tags.html?lang=en) dans la documentation AEM.
+AEM Guides vous permet de baliser le contenu DITA en quelques clics. Vous pouvez utiliser la fonction de balisage en masse pour appliquer plusieurs balises sur plusieurs rubriques, un mappage DITA ou sur un sous-mappage. Vous pouvez également appliquer des balises sur une rubrique individuelle. Le balisage est la fonctionnalité native d’AEM. Vous trouverez plus d’informations sur la création et la gestion des balises dans la section [Administration des balises](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/tags.html?lang=en) dans la documentation d’AEM.
 
 Par défaut, AEM Guides n’accorde l’accès en lecture à aucun utilisateur du dossier où sont stockées toutes les balises du référentiel AEM. Pour utiliser des balises définies dans le référentiel AEM, vous devez demander à votre administrateur système d’accorder l’accès au dossier dans lequel les balises sont stockées.
 

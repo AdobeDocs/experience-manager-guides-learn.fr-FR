@@ -1,10 +1,10 @@
 ---
 title: Générer une sortie à partir du panneau Repository
-description: Découvrez comment générer une sortie à partir du panneau Repository
+description: Générez la sortie à partir du panneau du référentiel ou du panneau Vue Carte dans AEM Guides. Découvrez comment publier une rubrique utilisée sur un ou plusieurs mappages DITA ou générer une sortie pour plusieurs rubriques.
 exl-id: 3dea81c3-1e57-4f14-9afe-6b075bd410e0
-source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ Vous pouvez également utiliser les paramètres prédéfinis de sortie créés p
 
 - Utilisez la variable **Génération rapide** dans le panneau Référentiel ou le panneau Vue Carte afin de générer une sortie pour la rubrique unique sélectionnée ou l’ensemble du mappage DITA.
 
-   >[!NOTE]
-   >
-   > Vous pouvez également accéder au **Génération rapide** du panneau Favoris ou du panneau Rechercher.
+  >[!NOTE]
+  >
+  > Vous pouvez également accéder au **Génération rapide** du panneau Favoris ou du panneau Rechercher.
 
 - Utilisez la variable **Générer une sortie** dans le panneau Vue Carte afin de générer la sortie pour les rubriques sélectionnées.
 
@@ -41,12 +41,12 @@ Effectuez les étapes suivantes pour générer une sortie pour une ou plusieurs 
 
 1. Vous verrez l’état du processus de génération de sortie.
 
-   - **Sujets**: Répertorie les rubriques sélectionnées pour lesquelles une sortie est générée.
-   - **Paramètre prédéfini**: Affiche les paramètres prédéfinis de sortie qui contiennent les rubriques sélectionnées.
-   - **Carte**: Répertorie les mappages DITA contenant la rubrique sélectionnée.
-   - **État**: Affiche l’état de publication de chaque rubrique.
+   - **Sujets**: répertorie les rubriques sélectionnées pour lesquelles une sortie est générée.
+   - **Prédéfinie**: affiche les paramètres prédéfinis de sortie qui contiennent les rubriques sélectionnées.
+   - **Carte**: répertorie les mappages DITA qui contiennent la rubrique sélectionnée.
+   - **État**: affiche l’état de publication de chaque rubrique.
 Pour afficher la sortie, placez le pointeur de la souris sur la rubrique et cliquez sur Afficher la sortie.
-      ![](images/output-multiple-maps_cs.png){width="800" align="left"}
+     ![](images/output-multiple-maps_cs.png){width="800" align="left"}
 
 
 ## Générer la sortie d’un mappage DITA à partir de l’éditeur web
@@ -59,7 +59,7 @@ Effectuez les étapes suivantes pour générer une sortie pour l’ensemble du m
 
    ![](images/select-map-options-menu_cs.png){width="650" align="left"}
 
-1. Sélectionnez les paramètres prédéfinis de sortie de votre mappage DITA que vous souhaitez utiliser pour la publication, puis cliquez sur **Générez.**
+1. Sélectionnez les paramètres prédéfinis de sortie de votre mappage DITA à utiliser pour la publication, puis cliquez sur **Générez.**
 
 1. Vous verrez l’état du processus de génération de sortie. Pour afficher la sortie, placez le pointeur de la souris sur la rubrique et cliquez sur Afficher la sortie.
 
@@ -70,7 +70,7 @@ Effectuez les étapes suivantes pour générer la sortie pour plusieurs rubrique
 
 1. Dans le **Auteur** sélectionnez les rubriques que vous souhaitez publier.
 
-1. Sélectionner **Générer une sortie** dans le menu Options situé en bas.
+1. Sélectionner **Générer une sortie** dans le menu Options au bas de l’écran.
 
 1. Sélectionnez le paramètre prédéfini de sortie de votre mappage DITA que vous souhaitez utiliser pour la publication.
 

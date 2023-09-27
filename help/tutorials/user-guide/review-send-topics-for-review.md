@@ -1,10 +1,10 @@
 ---
 title: Envoi de rubriques en révision
-description: Découvrez comment envoyer des rubriques pour révision
+description: Découvrez comment créer une tâche de révision et envoyer des rubriques à réviser dans AEM Guides. Envoyez une ou plusieurs rubriques dans un mappage DITA pour révision.
 exl-id: 7a9b36ad-44d4-4952-9906-d95feb95d0c6
-source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '2733'
+source-wordcount: '2752'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ Comme le processus de révision est spécifique au projet, l’initiateur de la 
 
 Vous pouvez créer une tâche de révision à partir de :
 
-- **Éditeur web**: Permet d’envoyer une rubrique ou un mappage DITA individuel pour révision. Notez que le processus de création d’une tâche de révision est courant dans l’éditeur web et l’interface utilisateur d’Assets. Seule la méthode de lancement du workflow de révision diffère. Pour plus d’informations sur le lancement du processus de révision à partir de l’éditeur web, voir [Créer une tâche de révision](web-editor-features.md#id215OCJ00JXA) dans l’éditeur Web.
+- **Éditeur web**: vous permet d’envoyer une rubrique ou un mappage DITA individuel pour révision. Notez que le processus de création d’une tâche de révision est courant dans l’éditeur web et l’interface utilisateur d’Assets. Seule la méthode de lancement du workflow de révision diffère. Pour plus d’informations sur le lancement du processus de révision à partir de l’éditeur web, voir [Créer une tâche de révision](web-editor-features.md#id215OCJ00JXA) dans l’éditeur Web.
 
-- **Interface utilisateur des ressources**: Permet d’envoyer une ou plusieurs rubriques et le mappage DITA à des fins de révision. Le partage de documents pour révision à partir du workflow de l’interface utilisateur d’Assets est traité dans cette rubrique.
+- **Interface utilisateur des ressources**: vous permet d’envoyer une ou plusieurs rubriques et un mappage DITA à des fins de révision. Le partage de documents pour révision à partir du workflow de l’interface utilisateur d’Assets est traité dans cette rubrique.
 
 
 Dans l’interface utilisateur d’Assets, il existe deux manières par lesquelles un auteur/éditeur peut créer une tâche de révision :
@@ -67,15 +67,15 @@ Pour créer une tâche de révision et envoyer des rubriques à des fins de rév
 
    Cette description est utilisée comme corps de l&#39;email de notification envoyé aux opérateurs validants.
 
-1. Sélectionnez la **Date d’échéance** et le temps nécessaire pour marquer la date limite de la révision.
+1. Sélectionnez la variable **Date d’échéance** et le temps nécessaire pour marquer la date limite de la révision.
 
    >[!NOTE]
    >
    > Lorsque vous atteignez l’échéance, un email est envoyé à l’initiateur pour l’informer que la tâche de révision est terminée. L’initiateur peut prolonger la date limite de la tâche de révision à partir de la fonction [Tableau de bord des révisions](review-manage-tasks-review-dashboard.md#).
 
-1. Sélectionnez la carte racine dans la **Chemin d’accès Rootmap**. Cette feuille de route est utilisée pour résoudre toutes les références clés et tous les termes du glossaire utilisés dans le contenu de la révision. Si vous ne sélectionnez pas la feuille de route, les références ou les termes de glossaire clés associés à la rubrique DITA ne sont pas résolus avant d’envoyer la rubrique pour révision.
+1. Sélectionnez la carte racine dans la **Chemin Rootmap**. Cette feuille de route est utilisée pour résoudre toutes les références clés et tous les termes du glossaire utilisés dans le contenu de la révision. Si vous ne sélectionnez pas la feuille de route, les références ou les termes de glossaire clés associés à la rubrique DITA ne sont pas résolus avant d’envoyer la rubrique pour révision.
 
-   Si vous créez la révision d’un mappage DITA, alors par défaut **Chemin d’accès Rootmap** est définie sur le chemin d’accès de cette carte. Si vous créez la révision pour une ou plusieurs rubriques, la fonction **Chemin d’accès Rootmap** est défini sur la carte définie dans les préférences utilisateur.
+   Si vous créez la révision d’un mappage DITA, alors par défaut **Chemin Rootmap** est définie sur le chemin d’accès de cette carte. Si vous créez la révision pour une ou plusieurs rubriques, la fonction **Chemin Rootmap** est défini sur la carte définie dans les préférences utilisateur.
 
    >[!NOTE]
    >
@@ -116,26 +116,26 @@ Pour créer une tâche de révision et envoyer des rubriques à des fins de rév
 
 1. Sur la page Réviseurs , vous pouvez ajouter ou supprimer des réviseurs. Les opérations suivantes sont disponibles sur la page Réviseurs :
 
-   - **Tout sélectionner**: Sélectionne toutes les rubriques de la liste des rubriques. Vous pouvez facilement effectuer une opération par lot après avoir sélectionné toutes les rubriques.
-   - **Effacer la sélection**: Désélectionne les rubriques sélectionnées dans la liste des rubriques.
+   - **Tout sélectionner**: sélectionne toutes les rubriques de la liste des rubriques. Vous pouvez facilement effectuer une opération par lot après avoir sélectionné toutes les rubriques.
+   - **Effacer la sélection**: désélectionne les rubriques sélectionnées dans la liste des rubriques.
 
-      >[!NOTE]
-      >
-      > Vous pouvez également sélectionner ou désélectionner une rubrique individuellement en cochant la case en regard de la rubrique.
+     >[!NOTE]
+     >
+     > Vous pouvez également sélectionner ou désélectionner une rubrique individuellement en cochant la case en regard de la rubrique.
 
-   - **Ajouter**: Affiche la boîte de dialogue Ajouter des réviseurs . Vous pouvez saisir le nom d’un rôle de réviseur ou d’utilisateur \(ou groupe\) que vous souhaitez ajouter en tant que réviseur aux rubriques sélectionnées.
-   - **Supprimer**: Affiche la boîte de dialogue Supprimer les réviseurs . Vous pouvez saisir le nom d’un rôle de réviseur ou d’utilisateur \(ou groupe\) que vous souhaitez supprimer en tant que réviseur des rubriques sélectionnées.
+   - **Ajouter**: affiche la boîte de dialogue Ajouter des réviseurs . Vous pouvez saisir le nom d’un rôle de réviseur ou d’utilisateur \(ou groupe\) que vous souhaitez ajouter en tant que réviseur aux rubriques sélectionnées.
+   - **Supprimer**: affiche la boîte de dialogue Supprimer les réviseurs . Vous pouvez saisir le nom d’un rôle de réviseur ou d’utilisateur \(ou groupe\) que vous souhaitez supprimer en tant que réviseur des rubriques sélectionnées.
 
-      >[!NOTE]
-      >
-      > Vous pouvez également supprimer une révision d’une rubrique en cliquant sur le signe croisé dans la zone du réviseur.
+     >[!NOTE]
+     >
+     > Vous pouvez également supprimer une révision d’une rubrique en cliquant sur le signe croisé dans la zone du réviseur.
 
-   - **Réaffecter**: Affiche la boîte de dialogue Attribuer les réviseurs . Vous pouvez saisir le nom d’un rôle de réviseur ou d’utilisateur \(ou groupe\) auquel vous souhaitez affecter la tâche de révision. Cela supprime tous les réviseurs existants des rubriques sélectionnées et affecte les nouveaux réviseurs à ces rubriques.
-   - **Exporter**: Permet d’exporter les détails de la tâche de révision dans un fichier CSV. Le fichier contient des détails tels que le chemin et le titre de la rubrique, le nom du réviseur et la version des rubriques envoyées pour révision.
-   - **Modifier les réviseurs**: Cliquez sur le bouton ![](images/edit_pencil_icon.svg)dans la liste des rubriques affiche la boîte de dialogue Modifier les réviseurs . Vous pouvez ajouter ou supprimer des réviseurs pour la rubrique sélectionnée dans cette boîte de dialogue.
+   - **Réaffecter**: affiche la boîte de dialogue Attribuer les réviseurs . Vous pouvez saisir le nom d’un rôle de réviseur ou d’utilisateur \(ou groupe\) auquel vous souhaitez affecter la tâche de révision. Cela supprime tous les réviseurs existants des rubriques sélectionnées et affecte les nouveaux réviseurs à ces rubriques.
+   - **Exporter**: vous permet d’exporter les détails de la tâche de révision dans un fichier CSV. Le fichier contient des détails tels que le chemin et le titre de la rubrique, le nom du réviseur et la version des rubriques envoyées pour révision.
+   - **Modifier les réviseurs**: cliquez sur le bouton ![](images/edit_pencil_icon.svg)dans la liste des rubriques affiche la boîte de dialogue Modifier les réviseurs . Vous pouvez ajouter ou supprimer des réviseurs pour la rubrique sélectionnée dans cette boîte de dialogue.
 1. Cliquez sur **Créer** pour créer la tâche de révision.
 
-   Un message de confirmation s’affiche lorsque la tâche de révision est créée avec succès. Le [État du document](web-editor-document-states.md#) pour les rubriques envoyées pour révision sont définies sur In-Review.
+   Un message de confirmation s’affiche lorsque la tâche de révision est créée avec succès. La variable [État du document](web-editor-document-states.md#) pour les rubriques envoyées pour révision sont définies sur In-Review.
 
    >[!NOTE]
    >
@@ -150,9 +150,9 @@ Si plusieurs rubriques sont affectées, les réviseurs peuvent les afficher et l
 
 Une carte DITA est une organisation logique de rubriques dans un livre. Lorsque vous envoyez une rubrique individuelle pour révision, le réviseur n’obtient aucune information sur l’emplacement de cette rubrique dans le livre. Si un réviseur dispose d’informations sur l’emplacement exact de la rubrique en cours de révision, il obtient un meilleur contexte de la rubrique en cours de révision.
 
-AEM Guides vous permet d’envoyer simultanément une ou plusieurs rubriques dans un mappage DITA à des fins de révision. Le réviseur peut voir le fichier de mappage complet ainsi que les rubriques qui ont été partagées en vue de la révision. Cela permet au réviseur d’obtenir plus facilement un contexte de rubrique dans le mappage ou le fichier de livre.
+AEM Guides vous permet d’envoyer simultanément une ou plusieurs rubriques dans un mappage DITA à des fins de révision. Le réviseur peut voir le fichier de mappage complet ainsi que les rubriques qui ont été partagées pour révision. Cela permet au réviseur d’obtenir plus facilement un contexte de rubrique dans le mappage ou le fichier de livre.
 
-Vous pouvez partager le même mappage DITA dans pour révision dans plusieurs tâches de révision. Par exemple, si, dans un mappage DITA, il existe des rubriques A, B, C, D et E. Dans une tâche de révision, vous pouvez partager A, B et C pour la révision, et dans une autre tâche de révision, vous pouvez envoyer les rubriques C, D et E pour la révision. Le processus de révision permet de partager la même rubrique et le même fichier de mappage dans plusieurs tâches de révision. Pour la rubrique courante dans plusieurs tâches de révision, les commentaires fournis dans une tâche de révision ne remplacent ni ne fusionnent les commentaires des autres tâches de révision.
+Vous pouvez partager le même mappage DITA dans pour révision dans plusieurs tâches de révision. Par exemple, si dans un mappage DITA, il y a les rubriques A, B, C, D et E. Dans une tâche de révision, vous pouvez partager A, B et C pour révision, et dans une autre tâche de révision, vous pouvez envoyer les rubriques C, D et E pour révision. Le processus de révision permet de partager la même rubrique et le même fichier de mappage dans plusieurs tâches de révision. Pour la rubrique courante dans plusieurs tâches de révision, les commentaires fournis dans une tâche de révision ne remplacent ni ne fusionnent les commentaires des autres tâches de révision.
 
 >[!IMPORTANT]
 >
@@ -192,7 +192,7 @@ Pour envoyer une ou plusieurs rubriques avec le fichier de mappage à des fins d
 
    Cette description est utilisée comme corps de l&#39;email de notification envoyé aux opérateurs validants.
 
-1. Sélectionnez la **Date d’échéance** et le temps nécessaire pour marquer la date limite de la révision.
+1. Sélectionnez la variable **Date d’échéance** et le temps nécessaire pour marquer la date limite de la révision.
 
    >[!NOTE]
    >
@@ -217,7 +217,7 @@ Pour envoyer une ou plusieurs rubriques avec le fichier de mappage à des fins d
    - *\(Par défaut\)* Choisissez l’option **Leur dernière version** pour sélectionner la dernière révision enregistrée des rubriques.
    - Choisissez la **Version activée** et indiquez la date et l’heure de sélection d’une version en fonction de la date et de l’heure. Si aucune version de la rubrique n’est disponible à la date spécifiée, une version est disponible immédiatement après la date et l’heure spécifiées.
    - Choisissez la **Sélectionner une étiquette** et sélectionnez un libellé dans la liste déroulante. Toutes les rubriques contenant le libellé sélectionné sont sélectionnées dans la **Version** liste déroulante.
-   - Choisissez la **Sélectionner une ligne de base** et sélectionnez une ligne de base dans la liste déroulante. Toutes les versions de rubrique qui font partie de la ligne de base sélectionnée sont sélectionnées dans la variable **Version** liste déroulante.
+   - Choisissez la **Sélection d’une ligne de base** et sélectionnez une ligne de base dans la liste déroulante. Toutes les versions de rubrique qui font partie de la ligne de base sélectionnée sont sélectionnées dans la variable **Version** liste déroulante.
 1. Après avoir effectué votre sélection pour choisir une version, cliquez sur **Appliquer**.
 
    La version basée sur l’option sélectionnée est sélectionnée pour les rubriques.
@@ -232,26 +232,25 @@ Pour envoyer une ou plusieurs rubriques avec le fichier de mappage à des fins d
 
 1. Sur la page Réviseurs , vous pouvez ajouter ou supprimer des réviseurs. Les opérations suivantes sont disponibles sur la page Réviseurs :
 
-   - **Tout sélectionner**: Sélectionne toutes les rubriques de la liste des rubriques. Vous pouvez facilement effectuer une opération par lot après avoir sélectionné toutes les rubriques.
-   - **Effacer la sélection**: Désélectionne les rubriques sélectionnées dans la liste des rubriques.
+   - **Tout sélectionner**: sélectionne toutes les rubriques de la liste des rubriques. Vous pouvez facilement effectuer une opération par lot après avoir sélectionné toutes les rubriques.
+   - **Effacer la sélection**: désélectionne les rubriques sélectionnées dans la liste des rubriques.
 
-      >[!NOTE]
-      >
-      > Vous pouvez également sélectionner ou désélectionner une rubrique individuellement en cochant la case en regard de la rubrique.
+     >[!NOTE]
+     >
+     > Vous pouvez également sélectionner ou désélectionner une rubrique individuellement en cochant la case en regard de la rubrique.
 
-   - **Ajouter**: Affiche la boîte de dialogue Ajouter des réviseurs . Vous pouvez saisir le nom d’un rôle de réviseur ou d’utilisateur \(ou groupe\) que vous souhaitez ajouter en tant que réviseur aux rubriques sélectionnées.
-   - **Supprimer**: Affiche la boîte de dialogue Supprimer les réviseurs . Vous pouvez saisir le nom d’un rôle de réviseur ou d’utilisateur \(ou groupe\) que vous souhaitez supprimer en tant que réviseur des rubriques sélectionnées.
-   - **Réaffecter**: Affiche la boîte de dialogue Attribuer les réviseurs . Vous pouvez saisir le nom d’un rôle de réviseur ou d’utilisateur \(ou groupe\) auquel vous souhaitez affecter la tâche de révision. Cela supprime tous les réviseurs existants des rubriques sélectionnées et affecte les nouveaux réviseurs à ces rubriques.
-   - **Exporter**: Permet d’exporter les détails de la tâche de révision dans un fichier CSV. Le fichier contient des détails tels que le chemin et le titre de la rubrique, le nom du réviseur et la version des rubriques envoyées pour révision.
-   - **Modifier les réviseurs**: Cliquez sur le bouton ![](images/edit_pencil_icon.svg)dans la liste des rubriques affiche la boîte de dialogue Modifier les réviseurs . Vous pouvez ajouter ou supprimer des réviseurs pour la rubrique sélectionnée dans cette boîte de dialogue.
-
+   - **Ajouter**: affiche la boîte de dialogue Ajouter des réviseurs . Vous pouvez saisir le nom d’un rôle de réviseur ou d’utilisateur \(ou groupe\) que vous souhaitez ajouter en tant que réviseur aux rubriques sélectionnées.
+   - **Supprimer**: affiche la boîte de dialogue Supprimer les réviseurs . Vous pouvez saisir le nom d’un rôle de réviseur ou d’utilisateur \(ou groupe\) que vous souhaitez supprimer en tant que réviseur des rubriques sélectionnées.
+   - **Réaffecter**: affiche la boîte de dialogue Attribuer les réviseurs . Vous pouvez saisir le nom d’un rôle de réviseur ou d’utilisateur \(ou groupe\) auquel vous souhaitez affecter la tâche de révision. Cela supprime tous les réviseurs existants des rubriques sélectionnées et affecte les nouveaux réviseurs à ces rubriques.
+   - **Exporter**: vous permet d’exporter les détails de la tâche de révision dans un fichier CSV. Le fichier contient des détails tels que le chemin et le titre de la rubrique, le nom du réviseur et la version des rubriques envoyées pour révision.
+   - **Modifier les réviseurs**: cliquez sur le bouton ![](images/edit_pencil_icon.svg)dans la liste des rubriques affiche la boîte de dialogue Modifier les réviseurs . Vous pouvez ajouter ou supprimer des réviseurs pour la rubrique sélectionnée dans cette boîte de dialogue.
    >[!IMPORTANT]
    >
    > Vous devez affecter au moins un réviseur pour créer la tâche de révision.
 
 1. Cliquez sur **Créer** pour créer la tâche de révision.
 
-   Un message de confirmation s’affiche lorsque la tâche de révision est créée avec succès. Le [État du document](web-editor-document-states.md#) pour les rubriques envoyées pour révision sont définies sur In-Review.
+   Un message de confirmation s’affiche lorsque la tâche de révision est créée avec succès. La variable [État du document](web-editor-document-states.md#) pour les rubriques envoyées pour révision sont définies sur In-Review.
 
    >[!NOTE]
    >

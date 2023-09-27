@@ -1,10 +1,10 @@
 ---
 title: Création et gestion des lignes de base à partir de l’éditeur web
-description: Découvrez comment créer et gérer des lignes de base à partir de l’éditeur web
+description: Créez et gérez des lignes de base à partir de l’éditeur web dans AEM Guides. Découvrez comment créer des lignes de base sur la base des libellés et appliquer des filtres aux lignes de base.
 exl-id: 9e390489-16f5-4f9a-a821-5150a66c2ed4
-source-git-commit: 906b1db461d343568b43195113dbc37ef5f88341
+source-git-commit: 361c605bdf02fb3b8754c6596a70e86a00acb3db
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1446'
 ht-degree: 0%
 
 ---
@@ -78,21 +78,28 @@ Vous pouvez gérer vos lignes de base existantes à l’aide des différentes fo
 
 - Vous pouvez rechercher une ligne de base existante à l’aide de la zone de texte dans le panneau Ligne de base . Utilisez la variable **Appliquer un filtre** pour afficher toutes les lignes de base ou répertorier celles dont l’état de création est Réussite, En cours ou Échec.
 - Utilisez la variable **Actualiser** dans le panneau Ligne de base pour vérifier toutes les lignes de base et afficher une nouvelle liste des lignes de base pour le mappage DITA ouvert dans la vue Carte.
-- Vous pouvez afficher ou modifier le contenu d’une ligne de base existante en double-cliquant sur la ligne de base dans la liste du panneau Ligne de base . La fenêtre de modification de ligne de base au centre affiche le fichier de mappage DITA, le contenu ou les rubriques de la carte et le contenu référencé.
+- Vous pouvez afficher ou modifier le contenu d’une ligne de base statique existante en double-cliquant sur la ligne de base dans la liste du panneau Ligne de base . La fenêtre de modification de ligne de base au centre affiche le fichier de mappage DITA, le contenu ou les rubriques de la carte et le contenu référencé.
 
 
-![](images/baseline-options.png){width="550" align="left"}
+  ![options d’une ligne de base](images/baseline-options.png){width="800" align="left"}
 
 Vous pouvez également effectuer les opérations suivantes sur la ligne de base à partir du menu Options :
 
-- **Modifier**, **Dupliquer,** ou **Supprimer** une ligne de base existante.
-- Ajoutez, supprimez ou apportez des modifications à des étiquettes existantes à partir de la fonction **Gestion des étiquettes** . Si votre administrateur a configuré des libellés prédéfinis, ces libellés s’affichent dans la liste déroulante Ajouter un libellé . Pour plus d’informations sur l’ajout d’étiquettes, voir [Utilisation des libellés](web-editor-use-label.md#).
+- **Modifier**, **Dupliquer,** **Renommer**, ou **Supprimer** une ligne de base existante.
+
+  >[!NOTE]
+  >
+  >L’opération de modification des lignes de base statiques est recommandée uniquement pour un petit nombre de modifications de référence. L’opération de modification n’est pas recommandée pour modifier la version du mappage DITA principal, car il doit recalculer toutes les références. Cela peut entraîner un échec de mise à jour de ligne de base pour les mappages DITA volumineux. Pour les mappages DITA plus volumineux, vous pouvez créer une nouvelle ligne de base ou modifier les propriétés de la ligne de base.
+  >
+  >L’opération de modification dans le cas d’une ligne de base dynamique vous permet de modifier les propriétés de la ligne de base, car les références des lignes de base dynamiques sont générées au moment de l’exécution à l’aide des libellés.
+
+- Ajoutez, supprimez ou apportez des modifications à des étiquettes existantes à partir de la fonction **Gestion des étiquettes** pour les lignes de base statiques. Si votre administrateur a configuré des libellés prédéfinis, ces libellés s’affichent dans la liste déroulante Ajouter un libellé . Pour plus d’informations sur l’ajout d’étiquettes, voir [Utilisation des libellés](web-editor-use-label.md#).
 
   >[!NOTE]
   >
   > Le processus d’ajout ou de suppression des libellés se produit de manière asynchrone. Vous pouvez donc continuer à travailler sur d’autres fichiers dans l’éditeur web. Une fois le libellé ajouté ou supprimé, un message contextuel s’affiche pour confirmer qu’il a été ajouté ou supprimé et vous recevez également une notification de boîte de réception pour le même élément.
 
-- **Modifier les propriétés** d’une ligne de base existante que vous avez définie lors de la création de la ligne de base.
+- **Modifier les propriétés** d’une ligne de base statique existante que vous avez définie lors de la création de la ligne de base.
 - Exportez l’instantané d’une ligne de base dans un fichier CSV avec l’événement **Référence d’exportation** .
 
 **Filtres de base**

@@ -1,12 +1,12 @@
 ---
 title: Configuration de caractères spéciaux supplémentaires dans la barre d’outils de l’éditeur web
-description: Configuration de caractères spéciaux supplémentaires dans la barre d’outils de l’éditeur web
+description: Découvrez comment configurer des caractères spéciaux supplémentaires dans l’éditeur web des Guides d’AEM.
 feature: Web Editor
 role: User
 exl-id: 0fbc05a5-a6b0-4f6b-bbc4-8fca03581d90
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Cette liste de caractères est configurable ici. Si vous devez ajouter d’autre
 
 + Connectez-vous à AEM et ouvrez le mode CRXDE Lite.
 
-+ Créez le fichier symboles.json à l’emplacement suivant : &#39;/apps/fmdita/xmleditor/&#39; (Vous pouvez copier la valeur par défaut à partir de l’emplacement &quot;/libs/fmdita/clientlibs/clientlibs/xmleditor/symbols.json&quot;)
++ Créez le fichier Symboles.json à l’emplacement suivant : &#39;/apps/fmdita/xmleditor/&#39; (Vous pouvez copier la valeur par défaut à partir de l’emplacement &quot;/libs/fmdita/clientlibs/clientlibs/xmleditor/symbols.json&quot;).
 
 + Ajoutez la définition de caractère spécial dans le fichier symboles.json en tant que :
 
@@ -45,11 +45,11 @@ Cette liste de caractères est configurable ici. Si vous devez ajouter d’autre
 
 La structure du fichier symboles.json est expliquée ci-dessous :
 
-+ &quot;label&quot;: &quot;Symboles logiques&quot; : Cela permet de spécifier la catégorie des caractères spéciaux. Dans le fragment de code, une catégorie nommée &quot;Symbole logique&quot; est définie.
++ &quot;label&quot;: &quot;Symboles logiques&quot;: permet de spécifier la catégorie des caractères spéciaux. Dans le fragment de code, une catégorie nommée &quot;Symbole logique&quot; est définie.
 
-+ &quot;items&quot;: Cette option définit la collection de caractères spéciaux dans la catégorie.
++ &quot;items&quot; : définit la collection de caractères spéciaux dans la catégorie.
 
-+ &quot;name&quot;: &quot;≥&quot;, &quot;title&quot; : &quot;Supérieur ou égal à&quot; : Il s’agit de la définition du caractère spécial. Il commence par le libellé &quot;name&quot;, qui ne doit pas être modifié. Le nom est suivi du caractère spécial. Le &quot;titre&quot; est le nom ou le titre du caractère spécial qui apparaît comme info-bulle pour ce caractère spécial.
++ &quot;name&quot;: &quot;≥&quot;, &quot;title&quot;: &quot;Greater-Than or Equal To&quot;: c’est la définition du caractère spécial. Il commence par le libellé &quot;name&quot;, qui ne doit pas être modifié. Le nom est suivi du caractère spécial. Le &quot;titre&quot; est le nom ou le titre du caractère spécial qui apparaît comme info-bulle pour ce caractère spécial.
 
 Vous pouvez définir plusieurs définitions de caractères spéciaux dans une catégorie.
 
@@ -62,4 +62,3 @@ Une autre catégorie est alors ajoutée dans la boîte de dialogue Caractères s
 >[!MORELIKETHIS]
 >
 >+ [Guide d&#39;installation et de configuration](https://helpx.adobe.com/content/dam/help/en/xml-documentation-solution/3-6/XML-Documentation-for-Adobe-Experience-Manager_Installation-Configuration-Guide_EN.pdf)
-

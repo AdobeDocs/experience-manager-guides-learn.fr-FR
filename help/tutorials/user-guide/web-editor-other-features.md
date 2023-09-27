@@ -1,10 +1,10 @@
 ---
 title: Autres fonctionnalités de l’éditeur web
-description: Découvrez d’autres fonctionnalités de l’éditeur web
+description: Découvrez d’autres fonctionnalités de l’éditeur web dans AEM Guides. Découvrez comment utiliser ces fonctionnalités pour une création améliorée dans AEM Guides.
 exl-id: dea19372-8a15-4b5d-aea4-47dc914d779e
-source-git-commit: dd744a8e5b7d60a0e5b4d0ad8f9201950e3ae1ce
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '2131'
+source-wordcount: '2144'
 ht-degree: 0%
 
 ---
@@ -50,8 +50,8 @@ Pour créer une version du fichier, sélectionnez **Enregistrer comme nouvelle v
 
 ***Copier***: vous pouvez choisir parmi les options suivantes :
 
-- **Copier UUID**: pour copier l’UUID du fichier actuellement principal dans le Presse-papiers, sélectionnez **Copier \> Copier UUID**.
-- **Copier le chemin**: pour copier le chemin d’accès complet au fichier actuellement principal dans le Presse-papiers, sélectionnez **Copier \> Copier le chemin**.
+- **Copier UUID**: pour copier l’UUID du fichier actuellement actif dans le Presse-papiers, sélectionnez **Copier \> Copier UUID**.
+- **Copier le chemin**: pour copier le chemin d’accès complet au fichier actuellement actif dans le Presse-papiers, sélectionnez **Copier \> Copier le chemin**.
 
 
 ***Localisez la page***: vous pouvez choisir parmi les options suivantes :
@@ -92,7 +92,7 @@ Générez la sortie du fichier sélectionné. La sortie ne peut être générée
 
 **Fermer**, **Fermer les autres**, ou **Tout fermer**
 
-Si vous souhaitez fermer le fichier à partir duquel vous avez appelé le menu contextuel, sélectionnez **Fermer \> Fermer**. Utilisation **Fermer \> Fermer les autres** pour fermer tous les autres fichiers ouverts, à l’exception du fichier actuellement principal. Pour fermer tous les fichiers ouverts, sélectionnez l’option **Fermer > Tout fermer** dans le menu contextuel ou vous pouvez également choisir de fermer l’éditeur Web. Si votre session contient des fichiers non enregistrés, vous êtes invité à les enregistrer.
+Si vous souhaitez fermer le fichier à partir duquel vous avez appelé le menu contextuel, sélectionnez **Fermer \> Fermer**. Utilisation **Fermer \> Fermer les autres** pour fermer tous les autres fichiers ouverts, à l’exception du fichier actuellement actif. Pour fermer tous les fichiers ouverts, sélectionnez l’option **Fermer > Tout fermer** dans le menu contextuel ou vous pouvez également choisir de fermer l’éditeur Web. Si votre session contient des fichiers non enregistrés, vous êtes invité à les enregistrer.
 
 **Fermeture du fichier et enregistrement des scénarios**
 

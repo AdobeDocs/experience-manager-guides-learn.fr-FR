@@ -1,10 +1,10 @@
 ---
 title: Utilisation des libellés
-description: Découvrez comment utiliser les libellés
+description: Découvrez l’utilisation des libellés pour différentes versions d’un fichier dans AEM Guides. Découvrez comment ajouter ou supprimer une étiquette à une version d’une rubrique.
 exl-id: 3ea56d06-537f-4bfd-922d-df1f23e61a20
-source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ AEM Guides vous permet d’ajouter des libellés à différentes versions d’un
 
 Par exemple, si vous souhaitez utiliser *version 1.0* d’une rubrique dans *version 1.0* et *version 1.1* de la même rubrique dans *version 2.0*, vous pouvez ajouter *version 1.0* sur le *version 1.0* et *version 2.0* sur le *version 1.1*.
 
-Une fois que vous avez ajouté les étiquettes, vous pouvez créer une ligne de base et spécifier la version de la rubrique à inclure pour la publication à l’aide de cette ligne de base. Pour voir quelle version doit être incluse ou exclues dans une ligne de base, vous pouvez utiliser l’option Historique des versions .
+Une fois que vous avez ajouté les libellés, vous pouvez créer une ligne de base et spécifier la version de la rubrique à inclure pour la publication à l’aide de cette ligne de base. Pour voir quelle version doit être incluse ou exclues dans une ligne de base, vous pouvez utiliser l’option Historique des versions .
 
 ## Ajouter un libellé
 
 Pour ajouter un libellé à votre rubrique, procédez comme suit :
 
-1. Dans l’interface utilisateur d’Assets, sélectionnez une rubrique.
+1. Dans l’interface utilisateur Assets, sélectionnez une rubrique.
 1. Cliquez sur l’icône du sélecteur de rail de gauche et sélectionnez **Historique des versions**.
 1. Dans l’historique des versions, cliquez sur une version dans laquelle vous souhaitez ajouter un libellé.
 
@@ -39,7 +39,7 @@ Pour ajouter un libellé à votre rubrique, procédez comme suit :
 >
 > Une ligne de base vous permet d’ajouter un libellé à plusieurs rubriques. Pour plus d’informations sur l’ajout de libellés à l’aide de la ligne de base, voir [Ajout d’étiquettes à une ligne de base](generate-output-use-baseline-for-publishing.md#id184KD0T305Z).
 
-## Supprimer une étiquette
+## Suppression d’une étiquette
 
 Pour supprimer un libellé, procédez comme suit :
 

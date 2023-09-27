@@ -1,10 +1,10 @@
 ---
 title: Générer la sortie d’un mappage DITA à partir de la console de mappage
-description: Découvrez comment générer une sortie pour un mappage DITA à partir de la console de mappage
+description: Générez la sortie d’un mappage DITA à partir de la console de mappage dans AEM Guides. Découvrez la génération incrémentale de sortie et comment afficher l’état, annuler et supprimer une tâche de sortie.
 exl-id: 98afbdd2-56d7-44b0-ad2a-25e9143c88f3
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '1399'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Effectuez les étapes suivantes pour générer à nouveau une sortie pour une ru
 
    La console de mappage DITA s’affiche avec la liste des paramètres prédéfinis de sortie disponibles pour générer la sortie.
 
-1. Sélectionnez la **Sujets** .
+1. Sélectionnez la variable **Sujets** .
 
    Une liste des rubriques disponibles dans le mappage DITA s’affiche.
 
@@ -101,21 +101,21 @@ Effectuez les étapes suivantes pour afficher la file d’attente de génératio
 
    - **Sorties en file d’attente :**
 
-      Répertorie les sorties en attente de génération ou en cours de processus de génération. Les tâches en file d’attente ou en cours s’affichent avec une icône de couleur bleue devant le nom du paramètre prédéfini. Vous pouvez également trouver le paramètre de génération de sortie ou le paramètre prédéfini utilisé pour la tâche en file d’attente, le type, l’utilisateur qui a lancé la tâche, le temps écoulé depuis que la tâche est en file d’attente et l’état actuel.
+     Répertorie les sorties en attente de génération ou en cours de processus de génération. Les tâches en file d’attente ou en cours s’affichent avec une icône de couleur bleue devant le nom du paramètre prédéfini. Vous pouvez également trouver le paramètre de génération de sortie ou le paramètre prédéfini utilisé pour la tâche en file d’attente, le type, l’utilisateur qui a lancé la tâche, le temps écoulé depuis que la tâche est en file d’attente et l’état actuel.
 
-      Cliquez sur le lien pour accéder au **Publier le tableau de bord** et afficher l’état actuel de l’exécution. Une liste de toutes les principales tâches de publication est disponible dans le tableau de bord de publication. Le **Sorties en file d’attente** et le **Publier le tableau de bord** ne s’affichent que lorsqu’il existe des sorties en attente de génération ou en cours de processus de génération. Elles n’apparaissent pas une fois les tâches de sortie terminées. Pour plus d’informations sur le tableau de bord de publication, voir [Gestion des tâches de publication à l’aide du tableau de bord de publication](generate-output-publish-dashboard.md#).
+     Cliquez sur le lien pour accéder au **Publier le tableau de bord** et afficher l’état actuel de l’exécution. Une liste de toutes les tâches de publication actives est disponible dans le tableau de bord de publication. La variable **Sorties en file d’attente** et la variable **Publier le tableau de bord** ne s’affichent que lorsqu’il existe des sorties en attente de génération ou en cours de processus de génération. Elles n’apparaissent pas une fois les tâches de sortie terminées. Pour plus d’informations sur le tableau de bord de publication, voir [Gestion des tâches de publication à l’aide du tableau de bord de publication](generate-output-publish-dashboard.md#).
 
    - **Sorties générées**
 
-      Répertorie les tâches de sortie qui ont été terminées. Là encore, les informations affichées ici sont similaires à la section Sorties en file d’attente avec quelques différences. Vous disposez d’un nouvel ensemble d’informations sous la forme d’une icône de résultat de sortie et de la durée de génération de la sortie.
+     Répertorie les tâches de sortie terminées. Là encore, les informations affichées ici sont similaires à la section Sorties en file d’attente avec quelques différences. Vous disposez d’un nouvel ensemble d’informations sous la forme d’une icône de résultat de sortie et de la durée de génération de la sortie.
 
-      Dans cette liste, vous pouvez avoir des tâches qui ont été exécutées avec succès, des tâches qui ont été exécutées avec un message ou des tâches qui ont échoué. Les tâches réussies sont affichées avec une icône en couleur verte, les tâches avec un message ont une icône en couleur orange et les tâches ayant échoué sont affichées avec une icône en couleur rouge.
+     Dans cette liste, vous pouvez avoir des tâches qui ont été exécutées avec succès, des tâches qui ont été exécutées avec un message ou des tâches qui ont échoué. Les tâches réussies sont affichées avec une icône en couleur verte, les tâches avec un message ont une icône en couleur orange et les tâches ayant échoué sont affichées avec une icône en couleur rouge.
 
-      Pour toutes les tâches, le processus de publication crée un fichier journal \(logs.txt\) accessible en cliquant sur le lien dans la colonne Généré à. Pour les tâches ayant échoué ou comportant des messages, vous pouvez vérifier le fichier journal, qui est expliqué dans la section . [Afficher et vérifier le fichier journal](generate-output-basic-troubleshooting.md#id1822G0P0CHS).
+     Pour toutes les tâches, le processus de publication crée un fichier journal \(logs.txt\) accessible en cliquant sur le lien dans la colonne Généré à. Pour les tâches ayant échoué ou comportant des messages, vous pouvez vérifier le fichier journal, qui est expliqué dans la section . [Afficher et vérifier le fichier journal](generate-output-basic-troubleshooting.md#id1822G0P0CHS).
 
-      >[!NOTE]
-      >
-      > Lorsque vous cliquez sur un lien de la sortie de PDF générée, vous êtes invité à télécharger le PDF. Il s’agit du comportement par défaut dans AEM 6.5 et 6.4.
+     >[!NOTE]
+     >
+     > Lorsque vous cliquez sur un lien de la sortie de PDF générée, vous êtes invité à télécharger le PDF. Il s’agit du comportement par défaut dans AEM 6.5 et 6.4.
 
 
 ## Annulation d’une tâche de génération de sortie {#id2061H100T5Z}
@@ -130,7 +130,7 @@ Pour annuler une tâche de génération de sortie à partir de la console de map
 
 1. Dans la liste Sorties en file d’attente, placez le pointeur de la souris sur une tâche que vous souhaitez annuler.
 
-1. Cliquez sur le bouton *Annuler Cette Tâche* icône .
+1. Cliquez sur le bouton *Annuler Cette Tâche* Icône
 
    ![](images/cancel-publish-task-map-console.png){width="800" align="left"}
 
@@ -140,7 +140,7 @@ Pour annuler une tâche de génération de sortie à partir de la console de map
 
    Si la tâche n’a pas encore commencé, la commande d’annulation est exécutée sur la tâche. Pour une tâche en cours d’annulation, l’état est défini sur Annuler.
 
-   Une fois la tâche annulée, elle est déplacée vers la **Sorties générées** avec une **Annulé** statut. Lorsque vous passez la souris sur la tâche annulée, le nom de l’utilisateur qui a annulé la tâche s’affiche. Dans la capture d’écran suivante, la variable *HTML5* la tâche est annulée.
+   Une fois la tâche annulée, elle est déplacée vers la **Sorties générées** avec une liste **Annulé** statut. Lorsque vous passez la souris sur la tâche annulée, le nom de l’utilisateur qui a annulé la tâche s’affiche. Dans la capture d’écran suivante, la variable *HTML5* la tâche est annulée.
 
    ![](images/cancelled-output-task.png){width="800" align="left"}
 

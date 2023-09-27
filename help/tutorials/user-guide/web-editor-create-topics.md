@@ -1,10 +1,10 @@
 ---
 title: Création de rubriques
-description: Découvrez comment créer des rubriques
+description: Découvrez comment créer des types de rubriques DITA à l’aide de modèles personnalisés dans l’éditeur web des AEM Guides.
 exl-id: 336bbbff-f268-40be-ad3a-9c72923be71b
-source-git-commit: e69665f3c4a0db10365719ac671cbd3ac0c455ec
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -13,19 +13,19 @@ ht-degree: 0%
 
 AEM Guides vous permet de créer des rubriques DITA de type : rubrique, tâche, concept, référence, glossaire, DITAVAL, etc. Outre la création de rubriques basées sur les modèles d’usine, vous pouvez également définir vos modèles personnalisés. Ces modèles doivent être ajoutés au profil de dossier pour s’afficher dans le plan directeur de sélection du modèle et dans l’éditeur web.
 
-Notez que la configuration Global et Profil de dossier n’est disponible que pour les utilisateurs administratifs au niveau du dossier. Pour plus d’informations sur la configuration des profils globaux et au niveau du dossier, voir *Configuration de modèles de création* dans Installation et configuration des guides Adobe Experience Manager pour votre configuration.
+Notez que la configuration Global et Profil de dossier n’est disponible que pour les utilisateurs administratifs au niveau du dossier. Pour plus d’informations sur la configuration des profils globaux et au niveau du dossier, voir *Configuration de modèles de création* dans les guides d’installation et de configuration de Adobe Experience Manager pour votre configuration.
 
 Pour créer une rubrique, procédez comme suit :
 
 1. Dans l’interface utilisateur d’Assets, accédez à l’emplacement où vous souhaitez créer la rubrique.
 
-1. Pour créer une rubrique, cliquez sur **Créer** \> **Rubrique DITA**.
+1. Pour créer une rubrique, cliquez sur **Créer** \> **rubrique DITA**.
 
 1. Sur la page Plan directeur, sélectionnez le type de document DITA à créer, puis cliquez sur **Suivant**.
 
    ![](images/create_dita_topic.png){width="800" align="left"}
 
-   Par défaut, AEM Guides fournit les modèles de rubriques DITA les plus couramment utilisés. Vous pouvez configurer d’autres modèles de rubrique en fonction des besoins de votre organisation, voir *Configuration de modèles de création* dans Installation et configuration des guides Adobe Experience Manager pour votre configuration.
+   Par défaut, AEM Guides fournit les modèles de rubriques DITA les plus couramment utilisés. Vous pouvez configurer d’autres modèles de rubrique en fonction des besoins de votre organisation, voir *Configuration de modèles de création* dans les guides d’installation et de configuration de Adobe Experience Manager pour votre configuration.
 
    >[!NOTE]
    >
@@ -43,7 +43,7 @@ Pour créer une rubrique, procédez comme suit :
 
    Vous pouvez choisir d’ouvrir la rubrique à modifier dans l’éditeur web ou d’enregistrer le fichier de rubrique dans le référentiel AEM.
 
-   Chaque nouvelle rubrique que vous créez à partir de l’interface utilisateur d’Assets **Créer** \> **Rubrique DITA** ou un identifiant de rubrique unique est attribué à l’éditeur web. La valeur de cet ID est le nom de fichier lui-même. En outre, un nouveau document est enregistré comme la dernière copie de travail de la rubrique dans la gestion des ressources numériques. Tant que vous n’enregistrez pas de révision d’une nouvelle rubrique, vous ne verrez aucun numéro de version dans l’historique de versions. Si vous ouvrez la rubrique pour la modifier, les informations de version s’affichent dans le coin supérieur droit de l’onglet du fichier de rubrique :
+   Chaque nouvelle rubrique que vous créez à partir de l’interface utilisateur d’Assets **Créer** \> **rubrique DITA** ou un identifiant de rubrique unique est attribué à l’éditeur web. La valeur de cet ID est le nom de fichier lui-même. En outre, un nouveau document est enregistré comme la dernière copie de travail de la rubrique dans la gestion des ressources numériques. Tant que vous n’enregistrez pas de révision d’une nouvelle rubrique, vous ne verrez aucun numéro de version dans l’historique de versions. Si vous ouvrez la rubrique pour la modifier, les informations de version s’affichent dans le coin supérieur droit de l’onglet du fichier de rubrique :
 
    ![](images/topic-version-none_cs.png){width="550" align="left"}
 

@@ -1,10 +1,10 @@
 ---
 title: Résolution des problèmes de base
-description: Découvrez comment résoudre les problèmes de base
+description: Résolvez les problèmes liés au dépannage de base dans les AEM Guides. Découvrez comment afficher, copier et vérifier le fichier journal dans un éditeur de texte et résoudre les erreurs de compilation JSP.
 exl-id: b5ab2618-6f11-4aaa-8471-09521f8bb512
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ Lorsque vous utilisez AEM Guides, vous pouvez rencontrer des erreurs lors de la 
 
 Effectuez les étapes suivantes pour afficher et vérifier le fichier journal de génération de sortie :
 
-1. Une fois que vous avez lancé le processus de génération de sortie, cliquez sur **Sorties** dans la console de mappage DITA.
+1. Une fois le processus de génération de sortie lancé, cliquez sur **Sorties** dans la console de mappage DITA.
 
-   Le **Général** de la colonne **Sorties générées** affiche les icônes pour donner un indice visuel sur la réussite ou l’échec de la génération de sortie.
+   La variable **Général** de la colonne **Sorties générées** affiche les icônes pour donner un indice visuel sur la réussite ou l’échec de la génération de sortie.
 
    ![](images/output-general-settings.png){width="300" align="left"}
 
@@ -32,11 +32,11 @@ Effectuez les étapes suivantes pour afficher et vérifier le fichier journal de
    ![](images/log-file.png){width="800" align="left"}
 
 1. Appliquez les filtres suivants pour mettre le texte en surbrillance dans le fichier journal :
-   - Fatal : Met en évidence les erreurs fatales dans le fichier journal avec une couleur rose.
-   - Erreur : Met en évidence les erreurs dans le fichier journal avec une couleur orange.
-   - Avertissement : Met en surbrillance les avertissements dans le fichier journal avec une couleur violette.
-   - Infos : Met en surbrillance les messages d’information du fichier journal avec la couleur bleue.
-   - Exception : Met en surbrillance les exceptions dans le fichier journal avec la couleur jaune.
+   - Fatal : met en évidence les erreurs fatales dans le fichier journal avec une couleur rose.
+   - Erreur : met en surbrillance les erreurs dans le fichier journal avec une couleur orange.
+   - Avertissement : met en surbrillance les avertissements dans le fichier journal avec une couleur violette.
+   - Informations : met en surbrillance les messages d’informations du fichier journal avec la couleur bleue.
+   - Exception : met en évidence les exceptions dans le fichier journal avec la couleur jaune.
 1. Utilisez les boutons de navigation vers le haut et vers le bas pour accéder au texte en surbrillance dans le fichier journal.
 
    Vous pouvez également faire défiler le fichier journal et vérifier les messages.
@@ -46,7 +46,7 @@ Effectuez les étapes suivantes pour afficher et vérifier le fichier journal de
 
 Effectuez les étapes suivantes pour copier et vérifier le fichier journal de génération de sortie dans un éditeur de texte :
 
-1. Une fois que vous avez lancé le processus de génération de sortie, cliquez sur **Sorties** dans la console de mappage DITA.
+1. Une fois le processus de génération de sortie lancé, cliquez sur **Sorties** dans la console de mappage DITA.
 
 1. Cliquez sur le lien de la section **Généré à** une fois la tâche terminée.
 
@@ -59,13 +59,13 @@ Effectuez les étapes suivantes pour copier et vérifier le fichier journal de g
 
    Les informations suivantes vous aideront à déterminer si une erreur s’est produite dans le fichier DITA ou dans le processus AEM Guides :
 
-   - *Erreur liée au fichier de mappage DITA*: En cas d’erreur dans le fichier de mappage DITA ou tout autre fichier contenu dans le mappage DITA, le fichier journal contiendra une chaîne &quot;BUILD FAILED&quot; (Échec de la création). Vous pouvez vérifier les informations données dans le fichier journal pour localiser le fichier en erreur et corriger le problème.
+   - *Erreur liée au fichier de mappage DITA*: en cas d’erreur trouvée dans le fichier de mappage DITA ou dans tout autre fichier contenu dans le mappage DITA, le fichier journal contiendra une chaîne &quot;BUILD FAILED&quot;. Vous pouvez vérifier les informations données dans le fichier journal pour localiser le fichier en erreur et corriger le problème.
 
    Dans l’exemple de fragment de code de fichier journal suivant, vous pouvez voir le `BUILD FAILED` ainsi que la raison de l’erreur.
 
    ![](images/dita-error-in-log-file.png){width="650" align="left"}
 
-   - *Erreur AEM liée aux guides*: L’autre type d’erreur que vous pouvez identifier dans le fichier journal est lié au processus AEM Guides lui-même. Dans ce cas, le fichier de mappage DITA est analysé avec succès, mais le processus de génération de sortie échoue en raison d’une erreur interne dans AEM Guides. Pour ce type d&#39;erreurs, vous devez demander de l&#39;aide auprès de l&#39;équipe d&#39;assistance technique.
+   - *Erreur liée aux AEM Guides*: l’autre type d’erreur que vous pouvez identifier dans le fichier journal est lié au processus AEM Guides. Dans ce cas, le fichier de mappage DITA est analysé avec succès, mais le processus de génération de sortie échoue en raison d’une erreur interne dans AEM Guides. Pour ce type d&#39;erreurs, vous devez demander de l&#39;aide auprès de l&#39;équipe d&#39;assistance technique.
 
    Dans l’exemple de fragment de code de fichier journal suivant, vous pouvez voir le `BUILD SUCCESSFUL` , suivi d’une autre erreur technique.
 
@@ -80,7 +80,7 @@ Pour résoudre ce problème, procédez comme suit :
 
 1. Dans la navigation globale, sélectionnez Outils, puis Opérations > Console web.
 
-   La page Configuration de la console web Adobe Experience Manager s’affiche.
+   La page de configuration de la console web Adobe Experience Manager s’affiche.
 
 1. Recherchez et cliquez sur le bouton *Servlet principal Apache Sling* composant.
 

@@ -1,13 +1,13 @@
 ---
 title: Charger des fichiers
-description: Découvrez comment télécharger des fichiers
-source-git-commit: cc0fbca257d82cc82db5b5da8d263309fd71de55
+description: Découvrez comment charger vos fichiers dans le référentiel AEM et gérer les erreurs. Découvrez l’interface utilisateur de la console de ressources, AEM l’appli de bureau, l’outil d’assimilation en masse de ressources et utilisez le FrameMaker pour le chargement en masse.
+exl-id: d6a73953-94dd-4fa5-b09c-5e4c77fead62
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '432'
 ht-degree: 4%
 
 ---
-
 
 # Charger des fichiers {#id176FF000JUI}
 
@@ -19,19 +19,19 @@ Il est probable que vous disposiez d’un référentiel de contenu DITA existant
 
 ## Interface utilisateur de la console de ressources
 
-Vous pouvez sélectionner du contenu sur votre bureau et le faire glisser sur l’interface utilisateur d’AEM \(navigateur web\) vers le dossier de destination. Pour plus d’informations, voir [Chargement de ressources](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/add-assets.html#upload-assets) dans AEM documentation.
+Vous pouvez sélectionner du contenu sur votre bureau et le faire glisser sur l’interface utilisateur d’AEM \(navigateur web\) vers le dossier de destination. Pour plus d’informations, voir [Chargement de ressources](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/add-assets.html#upload-assets) dans la documentation AEM.
 
 ## Application de bureau AEM
 
-Utilisez AEM’appli de bureau si vous êtes un professionnel de la création et souhaitez gérer les ressources sur votre ordinateur local. Vous pouvez ouvrir et modifier ces ressources à l’aide de vos applications de bureau. Vous pouvez également conserver des versions et partager vos fichiers avec d’autres utilisateurs. Pour plus d’informations, voir [Application de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr).
+Utilisez AEM’appli de bureau si vous êtes un professionnel de la création et souhaitez gérer les ressources sur votre ordinateur local. Vous pouvez ouvrir et modifier ces ressources avec vos applications de bureau. Vous pouvez également conserver des versions et partager vos fichiers avec d’autres utilisateurs. Pour plus d’informations, voir [Application de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr).
 
 ## Outil d’ingestion en masse de ressources
 
 Si vous disposez de migrations à grande échelle et d’assimilations en masse occasionnelles, utilisez l’outil d’ingestion en masse des ressources pour charger votre contenu. Grâce à cet outil, vous pouvez charger du contenu en masse à partir de banques de données prises en charge telles qu’Azure ou S3. Pour plus d’informations, voir [Ingestion en masse de ressources](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/add-assets.html?lang=en#asset-bulk-ingestor).
 
-## Utilisation de FrameMaker pour le transfert en masse
+## Utilisation du FrameMaker pour le téléchargement en masse
 
-Adobe FrameMaker est fourni avec un puissant connecteur d’AEM qui vous permet de télécharger facilement votre DITA existant et d’autres documents FrameMaker \(`.book` et `.fm`\) dans AEM. Vous pouvez utiliser différentes fonctionnalités de chargement de fichier, telles que le chargement d’un seul fichier, le chargement d’un dossier complet avec ou sans dépendances \(comme les références de contenu, les références croisées et les graphiques\).
+Adobe FrameMaker est fourni avec un puissant connecteur d’AEM qui vous permet de télécharger facilement votre DITA existant et d’autres documents de FrameMaker \(`.book` et `.fm`\) dans AEM. Vous pouvez utiliser différentes fonctionnalités de chargement de fichier, telles que le chargement d’un seul fichier, le chargement d’un dossier complet avec ou sans dépendances \(comme les références de contenu, les références croisées et les graphiques\).
 
 Pour plus d’informations sur l’utilisation de la fonctionnalité de chargement en masse dans FrameMaker, reportez-vous à la section . *Création d’un dossier CRX et chargement de fichiers* dans le Guide de l’utilisateur de FrameMaker.
 
@@ -46,4 +46,3 @@ Pour plus d’informations sur les différents scénarios de téléchargement de
 Si vous utilisez un outil tel que l’appli de bureau AEM ou l’outil d’assimilation en masse de ressources, l’action à effectuer sur un fichier en double est contrôlée par un paramètre du serveur AEM. Contactez votre administrateur système pour connaître cette configuration.
 
 **Rubrique parente :**[ Gestion du contenu](authoring.md)
-

@@ -1,10 +1,10 @@
 ---
 title: Réaffecter la tâche de révision à l’aide d’une notification
-description: Découvrez comment réaffecter la tâche de révision à l’aide de la notification
+description: Réaffectez une tâche de révision à l’aide de notifications dans AEM Guides. Découvrez comment réaffecter une tâche de réviseur à partir de la notification de boîte de réception.
 exl-id: d20865a8-2c30-4bd7-8594-64e0ccdb665a
-source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
@@ -15,8 +15,8 @@ Vous pouvez réaffecter une tâche de révision à un autre utilisateur qui a é
 
 Notez que la réaffectation ne peut être effectuée que pour les tâches de réviseur et non pour les tâches du propriétaire.
 
-1. **Tâche du réviseur**: Toute tâche affectée à un réviseur pour une révision.
-1. **Tâche du propriétaire**: Tâche créée uniquement pour le propriétaire. Lorsque vous créez et affectez une tâche de révision à un réviseur, le propriétaire reçoit également une tâche du propriétaire avec le nom Fermer &lt; nom de la tâche de révision\> \(Par exemple, fermer-réviser la tâche1\), mais cette tâche du propriétaire ne peut être réaffectée à personne.
+1. **Tâche du réviseur**: toute tâche affectée à un réviseur pour une révision.
+1. **Tâche du propriétaire**: tâche créée uniquement pour le propriétaire. Lorsque vous créez et affectez une tâche de révision à un réviseur, le propriétaire reçoit également une tâche du propriétaire avec le nom Fermer &lt; nom de la tâche de révision\> \(Par exemple, fermer-réviser la tâche1\), mais cette tâche du propriétaire ne peut être réaffectée à personne.
 
 Effectuez les étapes suivantes pour réaffecter une tâche de révision à partir de la notification de boîte de réception :
 

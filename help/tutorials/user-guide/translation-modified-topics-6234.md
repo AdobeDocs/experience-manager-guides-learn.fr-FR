@@ -1,10 +1,10 @@
 ---
 title: Traduire les rubriques modifiées
-description: Découvrez comment traduire des rubriques modifiées
+description: Découvrez comment retraduire une rubrique modifiée dans AEM Guides.
 exl-id: 48b868c3-27ec-4641-b40d-17a641be7497
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Effectuez les étapes suivantes pour envoyer une rubrique modifiée à retraduir
 
 1. Cochez la case pour sélectionner les rubriques que vous souhaitez envoyer pour retraduction.
 
-   Lorsque vous sélectionnez une date désynchronisée, la variable **Créer/mettre à jour des copies de langue** s’affiche dans le panneau Références et l’option **Ignorer l’état de désynchronisation** au-dessus du bouton **Filtrer** icône .
+   Lorsque vous sélectionnez une date désynchronisée, la variable **Créer/mettre à jour des copies de langue** s’affiche dans le panneau Références et l’option **Ignorer l’état de désynchronisation** au-dessus du bouton **Filtrer** Icône
 
    Vous pouvez utiliser la variable **Ignorer la désynchronisation** pour remplacer l’état &quot;obsolète&quot; pour les rubriques du mappage DITA. Par exemple, si vous avez apporté des modifications à la version en anglais de la rubrique qui n’a pas besoin d’être traduite, vous pouvez utiliser ce bouton et modifier l’état &quot;À jour&quot; de la rubrique sélectionnée.
 
@@ -68,6 +68,7 @@ Effectuez les étapes suivantes pour envoyer une rubrique modifiée à retraduir
    - Cliquez sur **Accepter la traduction** si vous pensez que les modifications ont été correctement traduites. Un message de confirmation s’affiche.
 
    - Cliquez sur **Rejeter la traduction** si vous pensez que le travail doit être refait. Un message de rejet s’affiche.
+
    >[!NOTE]
    >
    > Il est important d’accepter ou de rejeter la ressource traduite, sinon le fichier reste à l’emplacement temporaire et n’est pas copié dans la gestion des ressources numériques.

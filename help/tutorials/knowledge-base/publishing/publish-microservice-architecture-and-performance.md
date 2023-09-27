@@ -2,9 +2,9 @@
 title: Architecture et performances du microservice de publication dans le cloud
 description: Découvrez comment le nouveau microservice permet une publication évolutive sur AEMaaCS.
 exl-id: 963d8912-be10-4d79-8ddd-12481c0ae682
-source-git-commit: 4185c31ae45c7b6fd0d394a15fbca0753d5e0463
+source-git-commit: aa71a2b8ff5f83365ff2f3562bb2b77061a3da8e
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Cet article partage les informations sur l’architecture et les performances du
 
 >[!NOTE]
 >
-> La publication basée sur les microservices dans AEM Guides prend en charge les types de paramètres prédéfinis de sortie PDF (natifs et basés sur DITA-OT), HTML5 et PERSONNALISÉS.
+> La publication basée sur les microservices dans AEM Guides prend en charge les types de paramètres prédéfinis de sortie PDF (natifs et basés sur DITA-OT), HTML5, JSON et PERSONNALISÉS.
 
 ## Problèmes liés aux workflows de publication existants sur le cloud
 
@@ -76,6 +76,6 @@ Si vous publiez une carte volumineuse sur le site, vous devrez peut-être ajuste
 
 ## Avantages supplémentaires
 
-Une partie de chaque requête de publication doit s’exécuter sur l’instance AEM pour récupérer le contenu de publication correct à envoyer au microservice. La nouvelle architecture cloud utilise AEM tâches au lieu de processus AEM, comme c’était le cas dans l’ancienne architecture. Cette modification permet aux administrateurs AEM Guides de configurer individuellement les paramètres de la file d’attente de publication dans le cloud sans affecter d’autres tâches AEM ou configurations de workflow.
+Une partie de chaque requête de publication doit s’exécuter sur l’instance AEM pour récupérer le contenu de publication correct à envoyer au microservice. La nouvelle architecture cloud utilise AEM tâches au lieu de processus AEM, comme c’était le cas dans l’ancienne architecture. Cette modification permet aux administrateurs d’AEM Guides de configurer individuellement les paramètres de la file d’attente de publication dans le cloud sans affecter d’autres tâches AEM ou configurations de workflow.
 
-Vous trouverez des informations détaillées sur la configuration du nouveau microservice de publication ici : [Configurer Microservice](configure-microservices.md)
+Vous trouverez des informations détaillées sur la configuration du nouveau microservice de publication ici : [Configuration de Microservice](configure-microservices.md)

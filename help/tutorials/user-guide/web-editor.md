@@ -1,13 +1,13 @@
 ---
 title: Utilisation de l’éditeur web
-description: Découvrez comment utiliser l’éditeur web
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+description: Créez et modifiez des documents structurés à l’aide de l’éditeur web. Découvrez comment travailler avec l’éditeur web en suivant les normes DITA dans AEM Guides.
+exl-id: 77d5daa7-4c19-448f-b10e-b52a055467ae
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
-
 
 # Utilisation de l’éditeur web {#id181OD0QE05Z}
 
@@ -45,4 +45,3 @@ En outre, l’éditeur web est compatible avec DITA et prend en charge les norme
 
 
 **Rubrique parente :**[ Création de contenu à l’aide des AEM Guides](authoring-content-xml-doc.md)
-

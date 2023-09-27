@@ -4,9 +4,9 @@ description: Découvrez comment utiliser le module externe Oxygen pour les guide
 hide: true
 hidefromtoc: true
 exl-id: 2db9a34e-2efa-47ad-ba6b-02afc5197669
-source-git-commit: 7fbc6d22fd2f93b7b5bf3233f7ebdd0cb020dda2
+source-git-commit: 23c1dfb405643bd9f5906807dddc4fff3f2e8535
 workflow-type: tm+mt
-source-wordcount: '6038'
+source-wordcount: '6120'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Une fois que vous avez installé le programme d’installation, installez-le sur
 
 - Système d’exploitation pris en charge par Oxygen XML Author version 25.1
 
-- Java Development Kit
+- Java Development Kit .
    - Oracle SE 8 JRE 1.8
 
 ### Installation du module externe sous Windows
@@ -377,7 +377,12 @@ Si vous souhaitez utiliser les éditeurs disponibles dans AEM Guides, vous pouve
 
 Lorsque vous extrayez un fichier, il est stocké localement sur votre système et verrouillé pour modification dans le référentiel AEM. Effectuez les étapes suivantes pour extraire un fichier :
 
-1. Cliquez avec le bouton droit de la souris sur un fichier dans le panneau AEM Guides.
+1. Vous pouvez extraire vos fichiers de l’une des manières suivantes :
+   - Cliquez avec le bouton droit de la souris sur un fichier dans le panneau AEM Guides.
+   - Cliquez avec le bouton droit sur l’onglet de mappage dans le panneau Gestionnaire de mappages DITA .
+   - Cliquez avec le bouton droit de la souris sur un fichier dans le panneau Gestionnaire de cartes DITA .
+   - Cliquez avec le bouton droit sur l’onglet Fichier lorsque vous ouvrez une carte ou une rubrique dans l’éditeur.
+
 1. Sélectionnez l’une des options suivantes :
    - **Extraction :** Extrait un fichier du référentiel AEM et le rend disponible pour modification.
    - **Extraction avec dépendances**: extrait un fichier avec ses références directes. Vous pouvez apporter des modifications aux pages parents et enfants à l’aide de cette option. Le module externe Oxygen pour AEM Guides prend en charge l’extraction d’un niveau de dépendances. Par exemple, la carte A fait référence à la rubrique A et la rubrique A à la rubrique B. L’extraction de la carte A entraîne l’extraction de la rubrique A, quel que soit son niveau dans la hiérarchie de la table des matières. Cependant, il n’extrait pas la rubrique B, car elle n’est pas directement liée à partir de la carte A.
@@ -403,7 +408,13 @@ Lorsque vous archivez un fichier, la copie locale du système est stockée dans 
 
 1. Enregistrez votre fichier en cliquant sur **Fichier** \> **Enregistrer**.
 
-1. Cliquez avec le bouton droit de la souris sur un fichier extrait, puis choisissez l’une des deux options suivantes :
+1. Cliquez avec le bouton droit sur un fichier extrait ou mappez-le dans l’un des emplacements suivants :
+   - Panneau Guides d’AEM
+   - Panneau Gestionnaire des mappages DITA
+   - Onglet Fichier lorsque vous ouvrez une carte ou une rubrique dans l’éditeur.
+   - Onglet de mappage dans le panneau Gestionnaire de mappages DITA .
+
+1. Choisissez l’une des deux options suivantes :
 
    - **Archivage**: archive le fichier sélectionné de votre système local dans AEM référentiel.
    - **Archivage avec les personnes à charge :** Si vous avez extrait un fichier avec ses fichiers dépendants, utilisez cette option pour archiver tous les fichiers dépendants en une seule opération. Lorsque vous sélectionnez cette option, la boîte de dialogue d’archivage s’affiche avec tous les fichiers dépendants. Cliquez sur OK pour archiver tous les fichiers en même temps.

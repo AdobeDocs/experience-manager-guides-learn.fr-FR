@@ -1,10 +1,10 @@
 ---
 title: Présentation des fonctionnalités de l’éditeur web
-description: Découvrez comment connaître les fonctionnalités de l’éditeur web
+description: Découvrez les fonctionnalités de l’éditeur web dans AEM Guides. Découvrez l’interface de l’éditeur web, notamment la barre d’outils principale, la barre d’outils secondaire, le panneau de gauche, la zone d’édition de contenu et le panneau de droite.
 exl-id: 38b378ff-da24-4560-a17f-a2c547aea1b8
-source-git-commit: 9196d7b1094149f06067c153b9c02c2cd20c18af
+source-git-commit: a209e46e41055348402292e20c229890cd0c01cf
 workflow-type: tm+mt
-source-wordcount: '15744'
+source-wordcount: '16066'
 ht-degree: 0%
 
 ---
@@ -741,9 +741,7 @@ La liste des fichiers filtrés contenant le texte recherché s’affiche. Par ex
 
 **Menu Options**
 
-Outre l’ouverture de fichiers à partir du panneau de gauche, vous pouvez également effectuer de nombreuses actions à l’aide de la fonction
-
-Menu Options disponible dans la vue Repository. Selon que vous sélectionnez un dossier, un fichier de rubrique ou un fichier multimédia, différentes options s’affichent.
+Outre l’ouverture de fichiers à partir du panneau de gauche, vous pouvez également effectuer de nombreuses actions à l’aide du menu Options disponible dans la vue Repository. Selon que vous sélectionnez un dossier, un fichier de rubrique ou un fichier multimédia, différentes options s’affichent.
 
 **Options d’un dossier**
 
@@ -801,7 +799,7 @@ Le menu Options propose différentes options selon que vous sélectionnez un fic
 - Propriétés
 - Affichage dans l’interface utilisateur d’Assets
 
-![](images/options-menu-repo-view-file-level.png){width="550" align="left"}
+![menu d’options d’un fichier dans la vue du référentiel](images/options-menu-repo-view-file-level.png){width="550" align="left"}
 
 Les différentes options du menu Options sont expliquées ci-dessous :
 
@@ -896,7 +894,18 @@ Les différentes options du menu Options sont expliquées ci-dessous :
 
 - **Ouvrir le tableau de bord de carte**: si le fichier sélectionné est un mappage DITA, cette option ouvre le tableau de bord du mappage.
 
+- **Modifier dans Oxygen**: sélectionnez cette option pour modifier le fichier sélectionné dans le module externe du connecteur Oxygen. Le fichier est ouvert pour modification.
+
+  >[!NOTE]
+  >
+  >Contactez votre équipe de réussite client pour que cette fonctionnalité soit activée dans l’environnement. Cette fonctionnalité n’est pas activée dans le cadre de la prise en charge prête à l’emploi. Pour plus d’informations, voir la [Configuration de l’option à modifier dans Oxygen](../cs-install-guide/conf-edit-in-oxygen.md) dans le Guide d&#39;installation et de configuration.
+
+
 - **Affichage dans l’interface utilisateur d’Assets**: utilisez cette option pour afficher un aperçu d’un fichier .dita/.xml dans l’interface utilisateur d’Assets. Dans le cas d’un fichier .ditamap/.bookmap, tous les fichiers de rubrique du mappage sont affichés dans une seule vue page par page unifiée.
+
+- **Téléchargement en tant que PDF**: utilisez l’option pour générer la sortie du PDF et la télécharger.
+
+- **Publier sous**: utilisez l’option pour publier une rubrique ou les éléments d’une rubrique dans un fragment de contenu.
 
 - **Génération rapide**: génère la sortie pour le fichier sélectionné. La sortie ne peut être générée que pour les fichiers faisant partie d’un paramètre prédéfini de sortie. Pour plus d’informations, voir [Publication basée sur des articles à partir de l’éditeur web](web-editor-article-publishing.md#id218CK0U019I).
 
@@ -995,9 +1004,25 @@ Vous pouvez effectuer les actions suivantes à l’aide du menu Options du fichi
 - **Ouvrir le tableau de bord de carte**: ouvrez le tableau de bord de la carte.
 
 - **Affichage dans l’interface utilisateur d’Assets**: utilisez cette option pour afficher un aperçu du fichier de mappage dans l’interface utilisateur d’Assets. Dans cette vue, tous les fichiers de rubrique dans le mappage sont affichés dans une seule vue page par page unifiée.
+- **Carte de téléchargement**: sélectionnez cette option pour ouvrir la **Carte de téléchargement** boîte de dialogue.
+Dans le **Carte de téléchargement** , vous pouvez choisir les options suivantes :
+   - **Utilisation de la ligne de base**: sélectionnez cette option pour obtenir une liste des lignes de base créées pour le mappage DITA. Si vous souhaitez télécharger le fichier de mappage et son contenu en fonction d’une ligne de base spécifique, sélectionnez la ligne de base dans la liste déroulante. Pour plus d’informations sur l’utilisation des lignes de base, voir [Utilisation de la ligne de base](./generate-output-use-baseline-for-publishing.md).
+   - **Aplatissement de la hiérarchie de fichiers**: sélectionnez cette option pour enregistrer toutes les rubriques et tous les fichiers multimédias référencés dans un seul dossier.
 
-- **Génération rapide**: génère la sortie pour le fichier de mappage sélectionné. La sortie ne peut être générée que pour les fichiers faisant partie d’un paramètre prédéfini de sortie. Pour plus d’informations, voir [Publication basée sur des articles à partir de l’éditeur web](web-editor-article-publishing.md#id218CK0U019I).
+  Vous pouvez également télécharger le fichier map sans sélectionner d’option. Dans ce cas, les dernières versions conservées des rubriques et des fichiers multimédia référencés sont téléchargées.
+
+  Après avoir cliqué sur **Télécharger** , la demande de téléchargement de carte est mise en file d’attente. Vous recevez la notification prête à être téléchargée si la carte est prête à être téléchargée. En cas d’échec du téléchargement, vous recevez la notification indiquant que le téléchargement de la carte a échoué.
+
+  Vous pouvez accéder au lien de téléchargement à partir de la boîte de réception des notifications AEM. Sélectionnez la notification de carte générée dans la boîte de réception pour télécharger la carte au format .zip.
+
+  >[!NOTE]
+  >
+  >  Par défaut, les mappages téléchargés restent pendant cinq jours dans la boîte de réception des notifications AEM.
+
+- **Générer une sortie**: génère la sortie pour le fichier de mappage sélectionné. La sortie ne peut être générée que pour les fichiers faisant partie d’un paramètre prédéfini de sortie. Pour plus d’informations, voir [Publication basée sur des articles à partir de l’éditeur web](web-editor-article-publishing.md#id218CK0U019I).
 - **Fermer**: ferme le fichier de mappage.
+
+
 
 La capture d’écran suivante présente le menu Options d’un fichier dans la vue Carte DITA :
 

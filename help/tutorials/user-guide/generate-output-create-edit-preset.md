@@ -1,13 +1,13 @@
 ---
 title: Créer, modifier, dupliquer ou supprimer un paramètre prédéfini de sortie
-description: Découvrez comment créer, modifier, dupliquer ou supprimer un paramètre prédéfini de sortie
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+description: Découvrez comment créer, modifier, dupliquer et supprimer un paramètre prédéfini de sortie personnalisé dans AEM Guides.
+exl-id: 6ed4f028-da96-4383-9d5c-06b94d6661c0
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
-
 
 # Créer, modifier, dupliquer ou supprimer un paramètre prédéfini de sortie {#id205BEH0K09Z}
 
@@ -51,7 +51,7 @@ Effectuez les étapes suivantes pour dupliquer un paramètre prédéfini de sort
 
 1. Assurez-vous que l’onglet Paramètres prédéfinis de sortie est sélectionné.
 
-1. Cliquez sur le paramètre prédéfini de sortie à dupliquer. Cliquez sur Dupliquer dans la barre d’outils.
+1. Cliquez sur le paramètre prédéfini de sortie que vous souhaitez dupliquer. Cliquez sur Dupliquer dans la barre d’outils.
 
    Un formulaire de paramètre prédéfini de sortie modifiable s’affiche avec les valeurs du paramètre prédéfini de sortie sélectionné.
 
@@ -76,4 +76,3 @@ Pour supprimer un paramètre prédéfini de sortie existant, procédez comme sui
 
 
 **Rubrique parente :**[ Génération de sortie](generate-output.md)
-

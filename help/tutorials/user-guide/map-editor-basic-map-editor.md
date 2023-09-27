@@ -1,10 +1,10 @@
 ---
 title: Utilisation de l’éditeur de cartes de base
-description: Découvrez comment utiliser l’éditeur de cartes de base
+description: Découvrez comment utiliser l’éditeur de cartes de base dans AEM Guides. Découvrez les fonctionnalités de l’éditeur de mappage de base au niveau de la carte et de la rubrique. Créez et modifiez des tableaux de relation dans un mappage DITA.
 exl-id: 85194806-db3f-442b-a551-540d148d26ec
-source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1420'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ L’éditeur de mappage de base (Basic Map Editor) offre une fonctionnalité de 
 
 Les sections suivantes décrivent les différentes fonctions disponibles dans l’éditeur de cartes de base.
 
-## Ajout de rubriques à un fichier de mappage {#id193CBL0505Z}
+## Ajout de rubriques à un fichier map {#id193CBL0505Z}
 
 Une fois un fichier map créé, vous devez ajouter des rubriques au fichier map. À l’aide de l’éditeur de mappage de base, vous pouvez ajouter des rubriques, des tableaux de relation ou d’autres fichiers de mappage.
 
@@ -68,7 +68,7 @@ La barre d’outils principale de l’éditeur de cartes de base vous permet d�
 
 ![](images/ditamap-toolbar-actions.png){width="800" align="left"}
 
-**A : Rechercher**
+**R : Recherche**
 
 Vous pouvez rechercher et inclure les rubriques requises dans la gestion des ressources numériques. Cliquez sur cette icône pour afficher la boîte de dialogue Rechercher :
 
@@ -78,7 +78,7 @@ Saisissez les mots-clés à rechercher, ils correspondent dans le nom de fichier
 
 **B : Groupe**
 
-Cochez la case à gauche des rubriques, puis cliquez sur Regrouper dans la barre d’outils pour regrouper les rubriques sélectionnées. Pour plus d’informations sur le regroupement de rubriques, voir [topicgroup](https://docs.oasis-open.org/dita/v1.0/langspec/topicgroup.html) documentation dans la spécification du langage OASIS DITA.
+Cochez la case à gauche des rubriques, puis cliquez sur Regrouper dans la barre d’outils pour regrouper les rubriques sélectionnées. Pour plus d’informations sur le regroupement de rubriques, voir [topicgroup](https://docs.oasis-open.org/dita/v1.0/langspec/topicgroup.html) documentation dans la Spécification du langage OASIS DITA.
 
 **C : Supprimer**
 
@@ -92,9 +92,9 @@ Afficher la numérotation \(ou masquer\) pour les rubriques dans la carte.
 
 Vérifiez si la carte est valide ou comporte des erreurs.
 
-**F : Mode par défaut/mode XML**
+**F : Mode par défaut/Mode XML**
 
-Dans le **Mode par défaut**, un clic sur un lien de rubrique affiche l’aperçu de la rubrique dans un nouvel onglet. Cliquez sur le **Mode par défaut** change de mode en **Mode XML**. Dans **Mode XML**, cliquer n’importe où sur une ligne de rubrique affiche le code XML sous-jacent des références de rubrique dans la rubrique. Dans la vue XML source, une **Retrait automatique** qui réorganise le code XML dans un format présentable et facile à lire. Si vous modifiez manuellement une carte, la vue source effectue également des vérifications de validation. Si votre XML contient des erreurs, celles-ci sont mises en surbrillance dans la variable **Mode XML** et vous n’êtes pas autorisé à enregistrer le fichier de mappage DITA. Si vous souhaitez afficher le code XML pour la carte entière, cliquez n’importe où en dehors de la limite de la rubrique.
+Dans le **Mode par défaut**, un clic sur un lien de rubrique affiche l’aperçu de la rubrique dans un nouvel onglet. Cliquez sur le bouton **Mode par défaut** change de mode en **Mode XML**. Dans **Mode XML**, cliquer n’importe où sur une ligne de rubrique affiche le code XML sous-jacent des références de rubrique dans la rubrique. Dans la vue XML source, une **Retrait automatique** qui réorganise le code XML dans un format présentable et facile à lire. Si vous modifiez manuellement une carte, la vue source effectue également des vérifications de validation. Si votre XML contient des erreurs, celles-ci sont surlignées dans la variable **Mode XML** et vous n’êtes pas autorisé à enregistrer le fichier de mappage DITA. Si vous souhaitez afficher le code XML pour la carte entière, cliquez n’importe où en dehors de la limite de la rubrique.
 
 
 **Remarque :** En mode par défaut, vous pouvez utiliser les raccourcis clavier pour annuler \(`Ctrl+z`\) ou rétablir \(`Ctrl+y`\) la dernière action.
@@ -104,7 +104,7 @@ Dans le **Mode par défaut**, un clic sur un lien de rubrique affiche l’aperç
 
 **G : Propriétés de la carte**
 
-Affichez la boîte de dialogue Propriétés de la carte dans laquelle vous pouvez définir les attributs et les informations de métadonnées de la carte. Pour ajouter un attribut, cliquez sur le bouton **Ajouter** dans le coin inférieur gauche de la boîte de dialogue pour obtenir le **Attribut** liste déroulante. Dans la liste, sélectionnez l’attribut à ajouter. Si l’attribut sélectionné a des valeurs prédéfinies spécifiées dans la DTD, ces valeurs seront présentées dans une nouvelle liste déroulante. Vous pouvez sélectionner la valeur souhaitée dans la liste déroulante. S’il n’existe pas de valeur prédéfinie, une zone de texte s’affiche pour vous permettre de saisir une valeur pour l’attribut sélectionné.
+Affichez la boîte de dialogue Propriétés de la carte dans laquelle vous pouvez définir les attributs et les informations de métadonnées de la carte. Pour ajouter un attribut, cliquez sur le bouton **Ajouter** dans le coin inférieur gauche de la boîte de dialogue pour obtenir le **Attribut** liste déroulante. Dans la liste, sélectionnez l’attribut à ajouter. Si l’attribut sélectionné a des valeurs prédéfinies spécifiées dans la DTD, ces valeurs seront présentées dans une nouvelle liste déroulante. Vous pouvez sélectionner une valeur dans la liste déroulante. S’il n’existe pas de valeur prédéfinie, une zone de texte s’affiche pour vous permettre de saisir une valeur pour l’attribut sélectionné.
 
 ![](images/map-properties.png){width="300" align="left"}
 
@@ -120,7 +120,7 @@ Cliquez sur les icônes de flèche gauche ou droite pour déplacer la rubrique v
 
 **B : Propriétés**
 
-Cliquez sur l’icône Propriétés pour ouvrir la boîte de dialogue Propriétés de la référence de rubrique. Cette boîte de dialogue vous permet de définir les attributs de rubrique et les informations de métadonnées. Pour plus d’informations sur les métadonnées et les attributs de rubrique standard, reportez-vous à la section [topicref](https://docs.oasis-open.org/dita/v1.2/os/spec/langref/topicref.html) documentation dans la spécification du langage OASIS DITA.
+Cliquez sur l’icône Propriétés pour ouvrir la boîte de dialogue Propriétés de la référence de rubrique. Cette boîte de dialogue vous permet de définir les attributs de rubrique et les informations de métadonnées. Pour plus d’informations sur les métadonnées et les attributs de rubrique standard, voir la section [topicref](https://docs.oasis-open.org/dita/v1.2/os/spec/langref/topicref.html) documentation dans la Spécification du langage OASIS DITA.
 
 
 ![](images/map-properties-metadata.png){width="350" align="left"}
@@ -129,7 +129,7 @@ Cliquez sur l’icône Propriétés pour ouvrir la boîte de dialogue Propriét�
 
 Cliquez sur l’icône Ajouter une nouvelle référence pour ajouter une nouvelle référence en tant que frère de la rubrique actuelle.
 
-**D : Ajouter une définition de clé**
+**D : Ajouter une nouvelle définition de clé**
 
 Cliquez sur l’icône Clé pour ajouter une nouvelle définition de clé. Toute clé remplacée ou clé déjà définie dans la carte s’affiche en rouge. Si vous cliquez sur l’icône Propriétés d’une définition de clé, la boîte de dialogue Propriétés de Keydef s’affiche.
 
@@ -143,7 +143,7 @@ Effectuez les étapes suivantes pour utiliser les tableaux de relation dans l’
 
 1. Cliquez sur le mappage DITA pour l’ouvrir dans la console de mappage DITA.
 
-1. Sélectionnez la **Sujets** pour afficher la liste des rubriques disponibles dans le mappage DITA.
+1. Sélectionnez la variable **Sujets** pour afficher la liste des rubriques disponibles dans le mappage DITA.
 
    >[!TIP]
    >

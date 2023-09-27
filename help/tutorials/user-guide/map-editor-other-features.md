@@ -1,13 +1,13 @@
 ---
 title: Autres fonctionnalités des éditeurs de carte
-description: Découvrez d’autres fonctionnalités des éditeurs de carte
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+description: Découvrez certaines fonctionnalités courantes des éditeurs de mappage de base et avancé. Découvrez comment résoudre les références clés dans l’éditeur de cartes.
+exl-id: ed6f42f6-b95e-4c4d-a648-6f29641a3488
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
-
 
 # Autres fonctionnalités des éditeurs de carte {#id1942D0T0HUI}
 
@@ -40,4 +40,3 @@ Ce mappage racine s’applique à toutes les ressources \(dossiers et sous-dossi
 **Mode d’édition des rubriques** - Cliquez sur l’icône Résolution de la clé lors de la modification d’une rubrique DITA et sélectionnez le fichier DITA à utiliser pour résoudre les références de clé.
 
 **Rubrique parente :**[ Utilisation de l’éditeur de cartes](map-editor.md)
-

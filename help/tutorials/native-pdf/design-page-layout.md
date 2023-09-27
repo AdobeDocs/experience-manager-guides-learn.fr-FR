@@ -2,9 +2,9 @@
 title: Fonction de publication native d’un PDF | Concevoir une mise en page
 description: Découvrez comment concevoir la mise en page afin de présenter des informations dans différentes sections de la sortie de votre PDF.
 exl-id: b4d3bdc4-0d01-46eb-b182-540380220485
-source-git-commit: 6182455850fb14cc24ce6229f6e4cb2b547901b7
+source-git-commit: 5abcc887a24d838caabdf9a34a84ebc851ed4cbf
 workflow-type: tm+mt
-source-wordcount: '4712'
+source-wordcount: '4807'
 ht-degree: 0%
 
 ---
@@ -57,9 +57,9 @@ Tenez compte des points suivants lors de la création des mises en page :
 
 * Si vous souhaitez que vos chapitres commencent à partir d’une page paire ou impaire, vous pouvez choisir de créer une mise en page pour la page vierge. Cette mise en page est utilisée pour combler l’écart entre deux chapitres afin de s’assurer que le chapitre commence à partir de la page impaire ou paire souhaitée.
 
-   >[!NOTE]
-   >
-   >Si vous ne créez pas de mise en page vierge distincte, la mise en page par défaut est utilisée. Pour créer une mise en page, reportez-vous à la section [Création d’une mise en page](components-pdf-template.md#create-page-layout).
+  >[!NOTE]
+  >
+  >Si vous ne créez pas de mise en page vierge distincte, la mise en page par défaut est utilisée. Pour créer une mise en page, reportez-vous à la section [Création d’une mise en page](components-pdf-template.md#create-page-layout).
 
 L’exemple suivant vous guide tout au long du processus de création de variantes d’une mise en page :
 
@@ -77,7 +77,7 @@ L’exemple suivant vous guide tout au long du processus de création de variant
    >
    >Pour une configuration avancée, vous pouvez utiliser la vue Source et ajouter votre HTML personnalisé et votre code CSS.
 
-1. Pointez la souris sur **Chapitre** mise en page, puis cliquez sur **Options** pour afficher le menu contextuel.
+1. Pointez la souris sur **Chapitre** disposition, puis cliquez sur **Options** pour afficher le menu contextuel.
 
 1. Survolez les clics ou la souris **Ajouter une variante de mise en page** et sélectionnez la mise en page souhaitée (Première, Gauche ou Droite) que vous souhaitez créer.
 
@@ -91,21 +91,24 @@ Lors de la conception d’une mise en page, un contrôle sur les différentes pr
 >
 >Le panneau Propriétés de page encapsule les propriétés et suit les règles définies sous le [Normes de médias de page](https://www.w3.org/TR/css-page-3/).
 
-* **Format de page** : Spécifiez la taille de page à utiliser pour la mise en page. La liste déroulante Taille de page vous permet de choisir parmi plus de 15 formats de page. Vous pouvez également créer une mise en page à l’aide d’un format de page personnalisé. Voir [Définir la taille de page](#set-page-size) pour plus d’informations.
+* **Format de page** : spécifiez la taille de page à utiliser pour la mise en page. La liste déroulante Taille de page vous permet de choisir parmi plus de 15 formats de page. Vous pouvez également créer une mise en page à l’aide d’un format de page personnalisé. Voir [Définir la taille de page](#set-page-size) pour plus d’informations.
 
-* **Orientation** : Spécifiez l’orientation de page à utiliser pour la mise en page. Vous pouvez choisir parmi les orientations de page Portrait ou Paysage. Notez que vous pouvez choisir d’appliquer différentes orientations à différentes variantes de page dans une mise en page. Par exemple, si votre contenu contient un tableau large ou une image volumineuse, vous pouvez créer une mise en page paysage et l’appliquer au tableau ou à l’image plus large.
+* **Orientation** : spécifiez l’orientation de la page à utiliser pour la mise en page. Vous pouvez choisir parmi les orientations de page Portrait ou Paysage. Notez que vous pouvez choisir d’appliquer différentes orientations à différentes variantes de page dans une mise en page. Par exemple, si votre contenu contient un tableau large ou une image volumineuse, vous pouvez créer une mise en page paysage et l’appliquer au tableau ou à l’image plus large.
 
-* **Afficher la rotation** : Spécifiez le côté ou la direction dans lequel le côté supérieur d’origine est représenté après la rotation. Vous pouvez choisir entre 90, 90 ou 90 dans le sens des aiguilles d’une montre ou 180 degrés dans le sens inverse des aiguilles d’une montre. Cela s’avère très utile lorsque vous souhaitez utiliser une combinaison de mises en page Portrait et Paysage dans votre sortie. Par exemple, vous pouvez utiliser le format portrait comme mise en page générique et définir une mise en page paysage pour le rendu de tableaux larges. Dans ce cas, vous pouvez définir pour afficher le contenu du tableau dans le sens des aiguilles d’une montre à 90 degrés. Ainsi, la page sera orientée en mode paysage et le contenu sera pivoté de 90 degrés afin de maintenir la continuité dans la vue. Nous verrons comment y parvenir à titre d’exemple dans la suite de cette section.
+* **Afficher la rotation** : spécifiez le côté ou la direction dans lequel le côté supérieur d’origine est représenté après la rotation. Vous pouvez choisir entre 90, 90 ou 90 dans le sens des aiguilles d’une montre ou 180 degrés dans le sens inverse des aiguilles d’une montre. Cela s’avère très utile lorsque vous souhaitez utiliser une combinaison de mises en page Portrait et Paysage dans votre sortie. Par exemple, vous pouvez utiliser le format portrait comme mise en page générique et définir une mise en page paysage pour le rendu de tableaux larges. Dans ce cas, vous pouvez définir pour afficher le contenu du tableau dans le sens des aiguilles d’une montre à 90 degrés. Ainsi, la page sera orientée en mode paysage et le contenu sera pivoté de 90 degrés afin de maintenir la continuité dans la vue. Nous verrons comment y parvenir à titre d’exemple dans la suite de cette section.
 
-* **Redémarrer la numérotation à partir de** : Spécifiez le numéro de page à partir duquel la numérotation de cette mise en page commencera. Par exemple, vous pouvez définir le numéro de page à redémarrer pour chaque chapitre. Dans ce cas, vous devez définir la propriété Redémarrer la numérotation à 1 sur la variante Première page mise en page de la mise en page du chapitre.
+* **Numérotation des pages** : la numérotation des pages, par défaut, est continue dans un PDF. Par exemple, un PDF de 100 pages peut avoir des numéros de page continus de 1 à 100. Vous pouvez également redémarrer la numérotation à partir d’un numéro spécifique dans toutes les différentes sections ou à partir de la première occurrence d’une section.
+   * **Redémarrer à partir de** : indiquez le numéro de la page à partir de laquelle la numérotation de cette mise en page commencera. Par exemple, vous pouvez définir le numéro de page à redémarrer pour chaque chapitre. Dans ce cas, vous devez définir le redémarrage de la propriété sur 1 sur la variante Première mise en page de la mise en page du chapitre. Par défaut, la numérotation des pages se poursuit à partir de la page précédente.
 
-* **Disposition** : Spécifiez les marges de page avec la marge intérieure pour les côtés supérieur, inférieur, gauche et droit. L’illustration suivante explique comment les marges, la marge intérieure et les bordures sont générées autour du contenu. Notez que la marge en haut et en bas d’une page contient l’en-tête et le pied de page.
+   * **Appliquer à la première occurrence uniquement**: vous pouvez également commencer à partir d’un nombre spécifique uniquement pour la première occurrence d’une section. Par exemple, vous ne pouvez commencer que le premier chapitre à partir de 1 et continuer les numéros de page des autres chapitres.
 
-   <img src="./assets/margins-padding-illustration.png" width="300">
+* **Disposition** : spécifiez les marges de la page ainsi que la marge intérieure pour les côtés supérieur, inférieur, gauche et droit. L’illustration suivante explique comment les marges, la marge intérieure et les bordures sont générées autour du contenu. Notez que la marge en haut et en bas d’une page contient l’en-tête et le pied de page.
 
-* **Contexte** : Incluez une image ou une couleur comme arrière-plan de la mise en page. Pour une image, vous pouvez spécifier la hauteur et la largeur de l’image, ainsi que les propriétés de répétition et de position.
+  <img src="./assets/margins-padding-illustration.png" width="300">
 
-* **Note de bas de page** : Spécifiez les propriétés à afficher dans les notes de bas de page de la sortie. Vous pouvez choisir de spécifier les propriétés de marge et de marge intérieure avec un style de bordure.
+* **Contexte** : incluez une image ou une couleur comme arrière-plan de la mise en page. Pour une image, vous pouvez spécifier la hauteur et la largeur de l’image, ainsi que les propriétés de répétition et de position.
+
+* **Remarques** : spécifiez les propriétés à afficher dans les notes de bas de page de la sortie. Vous pouvez choisir de spécifier les propriétés de marge et de marge intérieure avec un style de bordure.
 
 ### Définir la taille de page {#set-page-size}
 
@@ -122,7 +125,7 @@ La première chose que vous devez définir dans une mise en page est la taille d
 
    Les champs Largeur de page et Hauteur de page s’affichent.
 
-1. Saisissez les dimensions de page souhaitées dans la variable **Largeur de page** et **Hauteur de la page** champs.
+1. Saisissez les dimensions de page souhaitées dans la variable **Largeur de page** et **Hauteur de la page** des champs.
 
    >[!NOTE]
    >
@@ -140,7 +143,7 @@ Pour obtenir ce type de sortie, nous devons exécuter les tâches principales su
 
 1. Créez une mise en page avec l’orientation Paysage.
 
-1. Modifiez la variable **Afficher la rotation** pour effectuer le rendu du contenu dans 90°.
+1. Modifiez la variable **Afficher la rotation** pour rendre le contenu dans 90°.
 
 1. Créez un style personnalisé pour utiliser la nouvelle mise en page.
 
@@ -159,7 +162,6 @@ Effectuez les étapes suivantes pour réaliser les tâches ci-dessus :
 1. Modifiez la propriété View Rotation pour effectuer le rendu du contenu dans le sens 90° horaire.
 
    1. Sélectionner **90°** dans la liste déroulante Afficher la rotation .
-
    <img src="./assets/view-rotation-page-props.png" width="300">
 
    1. Cliquez sur **Tout enregistrer** pour enregistrer les propriétés de mise en page mises à jour.
@@ -204,7 +206,7 @@ Effectuez les étapes suivantes pour réaliser les tâches ci-dessus :
 
    1. Dans le panneau de droite, cliquez sur , puis ouvrez le panneau Propriétés du contenu .
 
-   1. Dans le panneau Propriétés du contenu, ajoutez une nouvelle **outputclass** avec **style paysage** comme valeur de propriété.
+   1. Dans le panneau Propriétés du contenu, ajoutez une nouvelle **outputclass** avec la propriété **style paysage** comme valeur de propriété.
 
       <img src="./assets/new-style-table-outputclass.png" width="300">
 
@@ -231,7 +233,7 @@ Par exemple, pour insérer une image d’arrière-plan dans la partie centrale d
 
 1. Développez l’objet **Contexte** .
 
-1. Cliquez sur le bouton Parcourir dans la **Chemin de l’image** champ location .
+1. Cliquez sur le bouton Parcourir dans la **Chemin de l’image** Champ de l’emplacement.
 
 1. Recherchez et sélectionnez l’image à utiliser comme image d’arrière-plan.
 
@@ -245,9 +247,9 @@ Par exemple, pour insérer une image d’arrière-plan dans la partie centrale d
 
 1. Définissez les autres propriétés pour ajuster la manière dont vous souhaitez que l’image d’arrière-plan s’affiche.
 
-   * **Répétition en arrière-plan** : Indiquez si vous souhaitez répéter l’arrière-plan ou non.
+   * **Répétition en arrière-plan** : indiquez si vous souhaitez que l’arrière-plan se répète ou non.
 
-   * **Position en arrière-plan** : Spécifiez la position de l’image d’arrière-plan sur votre page.
+   * **Position en arrière-plan** : spécifiez la position de l’image d’arrière-plan sur votre page.
 
 La capture d’écran suivante affiche l’image d’arrière-plan avec la propriété Background Repeat définie sur _no-repeat_ et la propriété Position de l’arrière-plan définie sur _centre_.
 
@@ -308,11 +310,11 @@ Si vous ne souhaitez pas qu’une mise en page comporte un en-tête et un pied d
 * Si vous souhaitez conserver les marges supérieure et inférieure, laissez la zone d’en-tête et de pied de page vide.
 * Si vous ne souhaitez pas conserver les marges supérieure et inférieure (comme la conception de la couverture avant et arrière d’un magazine), vous pouvez supprimer les marges en définissant les propriétés de marge supérieure et inférieure sur 0. L’en-tête et le pied de page n’ont alors plus d’espace.
 
-### Ajout d’une image ou d’un logo dans l’en-tête {#add-image-header}
+### Ajouter une image ou un logo dans l’en-tête {#add-image-header}
 
 Selon vos besoins, vous pouvez ajouter une image qui s’affiche dans la zone d’en-tête (ou toute autre partie) de la mise en page. Vous pouvez ajouter une image dans la mise en page de deux façons :
 
-* Utilisez une image du modèle Ressources.
+* Utilisez une image provenant des ressources du modèle.
 * Utilisez le \&lt;add image=&quot;&quot;> dans l’éditeur de mise en page.
 
 >[!NOTE]
@@ -332,7 +334,7 @@ Pour insérer une image telle que le logo de votre entreprise dans la zone d’e
    Vous pouvez également cliquer à l’intérieur de la zone d’en-tête.
 
 1. Pour ajouter une image, sélectionnez l’une des méthodes suivantes :
-1. Cliquez sur le bouton **Inert Image** (<img src="./assets/insert-image-icon.svg" width="25">) dans la barre d’outils ; dans le **Sélectionner le chemin** , accédez à l’emplacement de l’image, puis cliquez sur **Sélectionner** pour l’insérer dans la zone d’en-tête.
+1. Cliquez sur le bouton **Inert Image** (<img src="./assets/insert-image-icon.svg" width="25">) dans la barre d’outils, dans la variable **Sélectionner le chemin** , accédez à l’emplacement de l’image, puis cliquez sur **Sélectionner** pour l’insérer dans la zone d’en-tête.
 1. Faites glisser et déposez une image du dossier Ressources dans la zone d’en-tête.
 
 La capture d’écran suivante présente un exemple d’image ajoutée à la zone d’en-tête.
@@ -357,7 +359,7 @@ Il existe les catégories suivantes pour les champs que vous pouvez insérer dan
 * Numéro de chapitre
 * Métadonnées
 
-Chacune de ces catégories de champs contient différentes variantes dans lesquelles les informations du champ peuvent être insérées. Par exemple, un champ Date peut avoir différentes variantes, telles que `YYYY-MM-DD`, `MM/DD/YY`, `MM/DD/YYYY` etc. De même, le numéro de page peut avoir des variantes sous la forme de formats romains, décimaux ou même de paramètres régionaux, tels que _Arabe_, _Devanagari_, _Hébreu_, etc.
+Chacune de ces catégories de champs contient différentes variantes dans lesquelles les informations du champ peuvent être insérées. Par exemple, un champ Date peut avoir différentes variantes, telles que `YYYY-MM-DD`, `MM/DD/YY`, `MM/DD/YYYY` etc. De même, le numéro de page peut avoir des variations sous la forme de formats romains, décimaux ou même régionaux, tels que _Arabe_, _Devanagari_, _Hébreu_, etc.
 
 Outre les champs prédéfinis, vous pouvez ajouter des informations de métadonnées sous la forme de variables ou de champs dans la mise en page. Ces métadonnées sont stockées dans le contenu du mappage DITA source et peuvent être facilement insérées dans la mise en page.
 
@@ -388,7 +390,7 @@ Dans l’exemple suivant, nous allons insérer un numéro de page et un titre de
 
    La fenêtre contextuelle Champs s’affiche.
 
-1. Sélectionnez la **Numéro de page** catégorie de la liste Champ, la variable **default(1)** Format du numéro de page dans la liste Format, puis cliquez sur **Insérer**.
+1. Sélectionnez la variable **Numéro de page** catégorie de la liste Champ, la variable **default(1)** Format du numéro de page dans la liste Format, puis cliquez sur **Insérer**.
 
    <img src="./assets/insert-page-number-field.svg" width="400">
 
@@ -402,11 +404,11 @@ Dans l’exemple suivant, nous allons insérer un numéro de page et un titre de
 
    Le chemin de navigation supérieur répertorie les éléments dans lesquels les informations sont stockées.
 
-1. Saisissez un espace vide après le champ du numéro de page, puis cliquez sur le bouton **Insérer des champs** icône .
+1. Saisissez un espace vide après le champ du numéro de page, puis cliquez sur le bouton **Insérer des champs** Icône
 
-1. Sélectionnez la **Titre du chapitre** catégorie de la liste Champ, la variable **Titre du chapitre** formate dans la liste Format, puis cliquez sur **Insérer**.
+1. Sélectionnez la variable **Titre du chapitre** catégorie de la liste Champ, la variable **Titre du chapitre** formate dans la liste Format, puis cliquez sur **Insérer**.
 
-   Le _Titre du chapitre_ , qui est renseignée avec le titre du chapitre au moment de la publication, est insérée dans la zone de pied de page. Pour l’instant, les champs numéro de page et titre du chapitre sont séparés par un espace.
+   La variable _Titre du chapitre_ , qui est renseignée avec le titre du chapitre au moment de la publication, est insérée dans la zone de pied de page. Pour l’instant, les champs numéro de page et titre du chapitre sont séparés par un espace.
 
    <img src="./assets/page-number-topic-title-near-footer.png" width="400">
 
@@ -414,7 +416,7 @@ Dans l’exemple suivant, nous allons insérer un numéro de page et un titre de
 
    1. Cliquez sur l’élément Champ du chemin de navigation pour sélectionner le champ Titre du chapitre .
 
-   1. Dans le panneau de droite, cliquez sur le **Propriétés du contenu** (<img src="./assets/content-properties-icon.png" width="25">) icône.
+   1. Dans le panneau de droite, cliquez sur le **Propriétés du contenu** (<img src="./assets/content-properties-icon.png" width="25">) icon.
 
    1. Développez l’objet **Disposition** , puis définissez la variable **Flottant** valeur de propriété à **right**.
       <img src="./assets/float-prop-html-content.png" width="400">
@@ -426,7 +428,7 @@ Dans l’exemple suivant, nous allons insérer un numéro de page et un titre de
 | _Developer Corner_: <img src="./assets/developer-corner-icon.svg" width="25"> |
 |---|
 
-Si vous souhaitez travailler directement avec le code CSS et de HTML, vous pouvez également y parvenir en accédant à la vue Source de la mise en page et en apportant des modifications au code. Le fragment de code suivant affiche le même paramètre de pied de page effectué via le code :
+Si vous souhaitez travailler directement avec le code CSS et de HTML, vous pouvez également y parvenir en accédant à l’affichage Source de la mise en page et en apportant des modifications au code. Le fragment de code suivant affiche le même paramètre de pied de page effectué via le code :
 
 ```css
 …
@@ -466,7 +468,7 @@ Dans l&#39;exemple suivant, nous allons insérer une table des matières de chap
 
 1. Placez le curseur dans la zone de contenu de la mise en page.
 
-1. Cliquez sur la table des matières du chapitre (<img src="./assets/chapter-toc-icon.svg">) icône.
+1. Cliquez sur la table des matières du chapitre (<img src="./assets/chapter-toc-icon.svg">) icon.
 
    La table des matières du chapitre par défaut est insérée dans la zone de contenu.
 
@@ -474,7 +476,7 @@ Dans l&#39;exemple suivant, nous allons insérer une table des matières de chap
 
    >[!NOTE]
    >
-   >La table des matières du chapitre par défaut contient les en-têtes 1 à 4. Ici, En-tête 1 est le Titre du chapitre lui-même. Par conséquent, vous pouvez ne plus avoir le titre du chapitre dans la table des matières ou augmenter le niveau des en-têtes que vous souhaitez dans la table des matières. Vous pouvez personnaliser la table des matières en modifiant les propriétés.
+   >La table des matières du chapitre par défaut contient les en-têtes 1 à 4. Ici, Titre 1 est le Titre du chapitre lui-même. Par conséquent, vous pouvez ne plus avoir le titre du chapitre dans la table des matières ou augmenter le niveau des en-têtes que vous souhaitez dans la table des matières. Vous pouvez personnaliser la table des matières en modifiant les propriétés.
 
 1. Ouvrez le panneau Propriétés du contenu pour personnaliser les niveaux d’en-tête de la table des matières.
 
@@ -520,13 +522,13 @@ Pour créer une mise en page avec plusieurs colonnes, procédez comme suit :
 
    * **Largeur de colonne :** Spécifiez la largeur d’une colonne dans une mise en page à plusieurs colonnes. Par défaut, la taille est définie en pixels (px), vous pouvez également la spécifier en pt, rem, em, % ou en unités.
 
-      >[!NOTE]
-      >
-      >Si vous ne spécifiez pas de taille, les colonnes sont divisées uniformément pour s’adapter à la page donnée. Dans la plupart des cas, il n’est pas nécessaire de spécifier cette valeur.
+     >[!NOTE]
+     >
+     >Si vous ne spécifiez pas de taille, les colonnes sont divisées uniformément pour s’adapter à la page donnée. Dans la plupart des cas, il n’est pas nécessaire de spécifier cette valeur.
 
-   * **Intervalle entre les colonnes** : Spécifiez l’espace entre des colonnes individuelles.
+   * **Intervalle entre les colonnes** : spécifiez l’espace entre les colonnes individuelles.
 
-   * **Étendue de colonne** : Si vous souhaitez que l’un des éléments de votre mise en page s’étende sur plusieurs colonnes, vous devez utiliser cette propriété. Pour ce faire, modifiez le style de l’élément souhaité à l’aide des feuilles de style. <!--for more information see _Section explaining style customization_-->.
+   * **Étendue de colonne** : si vous souhaitez que l’un des éléments de votre mise en page s’étend sur plusieurs colonnes, vous devez utiliser cette propriété. Pour ce faire, modifiez le style de l’élément souhaité à l’aide des feuilles de style. <!--for more information see _Section explaining style customization_-->.
 
    Dans votre mise en page, si vous souhaitez qu’un certain texte apparaisse sur la première page de toutes les mises en page de page de chapitre, vous pouvez l’ajouter à la variante Première page de la mise en page de chapitre.
 
@@ -538,22 +540,21 @@ Pour créer une mise en page avec plusieurs colonnes, procédez comme suit :
    >
    >Vous pouvez appliquer la propriété Span Column à n’importe quel élément DITA à l’aide de l’attribut outputclass .
 
-   * **Remplissage de colonne** : Indiquez le mode de remplissage des colonnes par le contenu. Par défaut, il est défini sur Équilibrage qui remplit chaque colonne avec un contenu égal.
+   * **Remplissage de colonne** : indiquez comment le contenu remplit les colonnes. Par défaut, il est défini sur Équilibrage qui remplit chaque colonne avec un contenu égal.
 
-   * **Règle de colonne** : Si vous souhaitez qu’une ligne se trouve entre les colonnes, utilisez cette propriété pour définir les styles de ligne ou de règle. Spécifiez les valeurs des options Style, Couleur et Largeur de règle pour ajouter une ligne entre les colonnes.
-
+   * **Règle de colonne** : si vous souhaitez qu’une ligne se trouve entre les colonnes, utilisez cette propriété pour définir les styles de ligne ou de règle. Spécifiez les valeurs des options Style, Couleur et Largeur de règle pour ajouter une ligne entre les colonnes.
 
 ## Utilisation du panneau Propriétés du contenu {#work-with-content-props}
 
 Le panneau Propriétés du contenu vous permet de mettre facilement à jour l’aspect des éléments de votre mise en page. Les propriétés du panneau Propriétés du contenu sont divisées en plusieurs sections :
 
-* **Police** : Contient des propriétés liées au texte. Vous pouvez définir la famille de polices, le poids, la taille, la décoration de texte (comme souligné, surligné, ligne publicitaire), le style de texte (comme gras, italique, etc.), l’alignement du texte (comme à gauche, à droite, au centre ou justifié), gérer les espaces blancs (comme le format prédéfini, l’absence de retour automatique à la ligne, l’espace de début, l’interlettrage et l’insertion de texte.
+* **Police** : contient des propriétés liées au texte. Vous pouvez définir la famille de polices, le poids, la taille, la décoration de texte (comme souligné, surligné, ligne publicitaire), le style de texte (comme gras, italique, etc.), l’alignement du texte (comme à gauche, à droite, au centre ou justifié), gérer les espaces blancs (comme le format prédéfini, l’absence de retour automatique à la ligne, l’espace de début, l’interlettrage et l’insertion de texte.
 
-* **Bordure** : Contient des propriétés pour ajouter et mettre en forme une bordure à un élément dans la mise en page. Vous pouvez définir le côté de la bordure (comme tout, haut, bas, droite ou gauche), le style de la bordure (comme des lignes pleines, en pointillés, en pointillés ou plus), la couleur de la bordure, la largeur et le rayon pour obtenir une bordure incurvée. Dans l’exemple suivant, une bordure incurvée a été ajoutée dans la zone d’en-tête de la page.
+* **Bordure** : contient des propriétés pour ajouter et mettre en forme une bordure à un élément dans la mise en page. Vous pouvez définir le côté de la bordure (comme tout, haut, bas, droite ou gauche), le style de la bordure (comme des lignes pleines, en pointillés, en pointillés ou plus), la couleur de la bordure, la largeur et le rayon pour obtenir une bordure incurvée. Dans l’exemple suivant, une bordure incurvée a été ajoutée dans la zone d’en-tête de la page.
 
-   <img src="./assets/border-properties.png" width="500">
+  <img src="./assets/border-properties.png" width="500">
 
-* **Disposition** : Contient des propriétés pour configurer la mise en page d’un élément dans la mise en page. Vous pouvez définir la hauteur, la largeur, les marges et la marge (pour le haut, le bas, la gauche ou la droite), l’alignement horizontal ou vertical, le flottement (comme gauche, la droite ou aucune), le effacement (comme gauche, droite, les deux ou aucune), la position de l’élément (comme absolu, fixe, relatif ou plus), l’affichage (comme bloc, contenu, fixe ou plus), l’index Z, la transparence, la transformation (par rotation ou ) et Transformer l’origine (en décalé X et Y).
+* **Disposition** : contient des propriétés pour configurer la mise en page d’un élément dans la mise en page. Vous pouvez définir la hauteur, la largeur, les marges et la marge (pour le haut, le bas, la gauche ou la droite), l’alignement horizontal ou vertical, le flottement (comme gauche, la droite ou aucune), le effacement (comme gauche, droite, les deux ou aucune), la position de l’élément (comme absolu, fixe, relatif ou plus), l’affichage (comme bloc, contenu, fixe ou plus), l’index Z, la transparence, la transformation (par rotation ou ) et Transformer l’origine (en décalé X et Y).
 
-* **Contexte** : Contient des propriétés pour inclure une image d’arrière-plan ou un nuage de couleur. Vous pouvez définir la Taille de l’image (en définissant la Hauteur ou la Largeur), la Répétition en arrière-plan (en répétition, sans répétition, arrondie ou plus) et la Position en arrière-plan (en haut à gauche, au centre, au centre en bas ou plus).
-* **Plusieurs colonnes** : Contient des propriétés permettant de configurer des propriétés à plusieurs colonnes pour la page ou tout élément spécifique, tel que la table des matières du chapitre. Pour plus d’informations sur les propriétés et leur utilisation, voir [Utilisation de la mise en page à plusieurs colonnes](#multi-column-layout).
+* **Contexte** : contient des propriétés pour inclure une image d’arrière-plan ou un nuage de couleur. Vous pouvez définir la Taille de l’image (en définissant la Hauteur ou la Largeur), la Répétition en arrière-plan (en répétition, sans répétition, arrondie ou plus) et la Position en arrière-plan (en haut à gauche, au centre, au centre en bas ou plus).
+* **Plusieurs colonnes** : contient des propriétés permettant de configurer des propriétés à plusieurs colonnes pour la page ou tout élément spécifique, tel que la table des matières du chapitre. Pour plus d’informations sur les propriétés et leur utilisation, voir [Utilisation de la mise en page à plusieurs colonnes](#multi-column-layout).

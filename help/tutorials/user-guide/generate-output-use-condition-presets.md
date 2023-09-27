@@ -1,17 +1,17 @@
 ---
 title: Utilisation des paramètres de condition prédéfinis
-description: Découvrez comment utiliser les paramètres prédéfinis de condition
-source-git-commit: 6eb8d29e71301581e8dbb5b6a4252194c5a89f96
+description: Découvrez l’utilisation des paramètres prédéfinis de condition dans AEM Guides. Découvrez comment créer, modifier, copier et supprimer des paramètres prédéfinis de condition dans AEM.
+exl-id: cd8f8196-ba03-4a4b-9ce8-2651de4e5cc2
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '499'
 ht-degree: 2%
 
 ---
 
-
 # Utilisation des paramètres de condition prédéfinis {#id1825FL004PN}
 
-Vous pouvez définir des attributs dans vos rubriques DITA et utiliser le paramètre prédéfini de condition pour spécifier ce qui se passe avec l’attribut dans la sortie finale. Par exemple, vous pouvez ajouter des attributs comme version 1.0 et version 2.0 dans votre contenu, et utiliser un paramètre prédéfini de condition pour inclure la version 1.0 de la version 1.0 et exclure la version 2.0. De même, vous pouvez ajouter des attributs comme OS Windows et OS Linux à votre contenu, puis inclure ou exclure le contenu approprié pour votre sortie finale en fonction du système d’exploitation.
+Vous pouvez définir des attributs dans vos rubriques DITA et utiliser le paramètre prédéfini de condition pour spécifier ce qui se passe avec l’attribut dans la sortie finale. Par exemple, vous pouvez ajouter des attributs comme version 1.0 et version 2.0 dans votre contenu, et utiliser un paramètre prédéfini de condition pour inclure la version 1.0 pour la version 1.0 et exclure la version 2.0. De même, vous pouvez ajouter des attributs sous OS Windows et OS Linux à votre contenu, puis inclure ou exclure le contenu correspondant à votre sortie finale en fonction du système d’exploitation.
 
 ## Création d’un paramètre prédéfini de condition
 
@@ -39,7 +39,7 @@ Pour créer un paramètre de condition prédéfini, procédez comme suit :
 
 ## Modifier un paramètre prédéfini de condition
 
-Vous pouvez apporter des modifications à un paramètre prédéfini de condition existant afin de modifier les actions appliquées aux attributs dans le paramètre prédéfini de condition. Pour modifier un paramètre de condition prédéfini, procédez comme suit :
+Vous pouvez apporter des modifications à un paramètre prédéfini de condition existant afin de modifier les actions appliquées aux attributs dans le paramètre prédéfini de condition. Effectuez les étapes suivantes pour modifier un paramètre prédéfini de condition :
 
 1. Cliquez sur **Paramètres prédéfinis de condition** dans la console de mappage DITA.
 1. Cliquez sur **Modifier** bouton .
@@ -48,7 +48,7 @@ Vous pouvez apporter des modifications à un paramètre prédéfini de condition
 
 ## Création d’une copie d’un paramètre prédéfini de condition
 
-Vous pouvez créer une copie d’un paramètre prédéfini de condition, puis le modifier selon vos besoins. Pour créer une copie d’un paramètre prédéfini de condition, procédez comme suit :
+Vous pouvez créer une copie d’un paramètre prédéfini de condition, puis le modifier selon vos besoins. Effectuez les étapes suivantes pour créer une copie d’un paramètre prédéfini de condition :
 
 1. Cliquez sur **Paramètres prédéfinis de condition** dans la console de mappage DITA.
 1. Cliquez sur **Dupliquer** bouton .
@@ -57,7 +57,7 @@ Vous pouvez créer une copie d’un paramètre prédéfini de condition, puis le
    >
    > Le nom par défaut du paramètre prédéfini est `<selected condition preset name>_Duplicate`
 
-   Vous pouvez modifier le nom selon vos besoins.
+   Vous pouvez modifier le nom en fonction de vos besoins.
 
 1. \(Facultatif\) Apportez les modifications requises pour tous les attributs du paramètre prédéfini de condition.
 1. Cliquez sur **Enregistrer**.
@@ -72,4 +72,3 @@ Vous pouvez supprimer un ou plusieurs paramètres prédéfinis de condition dans
 1. Cliquez sur **Supprimer** pour confirmer l’action.
 
 **Rubrique parente :**[ Génération de sortie](generate-output.md)
-

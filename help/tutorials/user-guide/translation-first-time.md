@@ -1,10 +1,10 @@
 ---
 title: Bonnes pratiques relatives à la traduction de contenu
-description: Découvrez les bonnes pratiques en matière de traduction de contenu
+description: Découvrez les bonnes pratiques en matière de traduction de contenu dans AEM Guides. Découvrez comment configurer le service de traduction, créer un projet de traduction et lancer la tâche de traduction.
 exl-id: 4eff0f27-b3d1-4c6e-af88-bcb3f6d96990
-source-git-commit: d87a2e054310e3421dcbf347232a420638823b93
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1304'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ Tenez compte du point suivant pour traduire du contenu :
 
 - Les noms de dossier et de fichier doivent respecter les normes d’attribution de noms de fichier, telles que : il ne doit pas y avoir d’espaces, d’apostrophe, d’accolades, de signe égal, de caractères spéciaux ou non ASCII.
 
-- Si vous traduisez du contenu dans différentes langues, vous devez créer des dossiers correspondant à chaque langue. Chacun de ces dossiers de langue contiendra le contenu correspondant à cette langue. Par exemple, vous pouvez créer des dossiers à l’aide du concepteur de langue, comme `de` pour l&#39;allemand, `fr` pour le français, etc. Vous pouvez également créer des dossiers à l’aide des indicateurs de langue et de région tels que `fr-FR` pour le français utilisé en France ou `fr-CA` pour le français utilisé au Canada.
+- Si vous traduisez du contenu dans différentes langues, vous devez créer des dossiers correspondant à chaque langue. Chacun de ces dossiers de langue contiendra le contenu correspondant à cette langue. Par exemple, vous pouvez créer des dossiers à l’aide du concepteur de langue, comme `de` pour l&#39;allemand, `fr` pour le français, etc. Vous pouvez également créer des dossiers à l’aide des indicateurs de langue et de région, tels que `fr-FR` pour le français utilisé en France ou `fr-CA` pour le français utilisé au Canada.
 - Les paramètres régionaux de la langue cible doivent également être sélectionnés en fonction des dossiers de langue cible sur leur instance.
 - La configuration du cloud doit être identique à celle du dossier source et il ne doit y avoir qu’une seule configuration du cloud dans un dossier. Vous pouvez créer plusieurs dossiers sous /conf si vous souhaitez utiliser plusieurs connecteurs de traduction.
 - Un dossier ne doit pas contenir plus de 1 000 fichiers.
@@ -25,7 +25,7 @@ Tenez compte du point suivant pour traduire du contenu :
 - Le processus de traduction du contenu doit être démarré à partir de la console de mappage DITA et non de l’interface utilisateur d’AEM Assets.
 - Le processus de traduction DITA basé sur des composants ne doit pas être utilisé si vous traduisez du contenu par le biais d’une traduction humaine. Toutefois, cette option doit être utilisée pour la traduction automatique.
 - Le contenu et le média utilisés globalement qui ne nécessitent pas de localisation doivent être conservés en dehors des copies de langue.
-- Tout le contenu commun qui doit être localisé doit être conservé dans un dossier commun sous le dossier de langue.
+- Tout le contenu commun à localiser doit être conservé dans un dossier commun sous le dossier de langue.
 
 L’illustration suivante présente un exemple de structure de dossiers dans AEM lorsque vous avez utilisé du contenu global et trois copies de langue.
 
@@ -37,9 +37,9 @@ Effectuez les étapes suivantes pour configurer le service de traduction humaine
 
 1. Dans l’interface utilisateur d’Assets, sélectionnez le dossier de langue source.
 
-1. Ouvrez les propriétés du dossier, puis accédez à **Cloud Services** .
+1. Ouvrez les propriétés du dossier, puis accédez à **Cloud Service** .
 
-1. Dans le **Cloud Services** , configurez le service de traduction que vous souhaitez utiliser.
+1. Dans le **Cloud Service** , configurez le service de traduction à utiliser.
 
    Vous pouvez configurer la traduction automatique ou humaine.
 
@@ -74,7 +74,7 @@ Effectuez les étapes suivantes pour créer un projet de traduction :
 
    >[!IMPORTANT]
    >
-   > Le **Langues cibles** afficher uniquement les langues pour lesquelles un dossier de langues est créé parallèlement à la langue source. Un dossier de langue créé à un autre niveau, tel qu’un niveau inférieur du dossier de langue source, n’est pas non plus affiché. Veillez à créer tous vos dossiers de langue cible au même niveau que votre dossier de langue source.
+   > La variable **Langues cibles** afficher uniquement les langues pour lesquelles un dossier de langues est créé parallèlement à la langue source. Un dossier de langue créé à un autre niveau, tel qu’un niveau inférieur du dossier de langue source, n’est pas non plus affiché. Veillez à créer tous vos dossiers de langue cible au même niveau que votre dossier de langue source.
 
 1. Sélectionnez les rubriques que vous souhaitez envoyer pour traduction.
 
@@ -84,11 +84,11 @@ Effectuez les étapes suivantes pour créer un projet de traduction :
    >
    > Après avoir appliqué le filtre requis, cliquez sur **Terminé** dans le panneau Filtre pour filtrer les rubriques en fonction de votre sélection.
 
-   - **État de traduction**: Choisissez de filtrer les rubriques en fonction de leur état de traduction. Les options disponibles sont les suivantes : Désynchronisé, Copie manquante, En cours et Synchronisé.
-   - **Rechercher**: Saisissez un ou plusieurs termes à rechercher dans les titres de rubrique.
-   - **Type de source**: Choisissez de filtrer les rubriques en fonction de leurs types de fichiers. Les options disponibles sont les suivantes : Tous, DITA, carte DITA, ressource.
-   - **Version source modifiée après**: Choisissez de filtrer les rubriques en fonction de leur date et heure de modification. Toutes les rubriques modifiées après la date et l’heure spécifiées s’affichent dans la liste.
-   - **Ligne de base**: Cliquez sur Utiliser la ligne de base et choisissez une ligne de base créée sur la carte. Tous les fichiers qui font partie de la ligne de base sélectionnée sont affichés dans la page Traduction. Vous pouvez choisir les fichiers de votre choix à partir de la ligne de base et poursuivre le processus de traduction. Une fois votre contenu traduit, vous pouvez exporter la ligne de base traduite. Pour plus d’informations sur l’exportation de la ligne de base traduite, voir [Exporter la ligne de base traduite](generate-output-use-baseline-for-publishing.md#id196SE600GHS).
+   - **État de traduction**: choisissez de filtrer les rubriques en fonction de leur état de traduction. Les options disponibles sont : Désynchronisé, Copie manquante, En cours et Synchronisé.
+   - **Rechercher**: saisissez un ou plusieurs termes à rechercher dans les titres de rubrique.
+   - **Type de source**: choisissez de filtrer les rubriques en fonction de leurs types de fichiers. Les options disponibles sont les suivantes : Tous, DITA, Carte DITA, Ressource.
+   - **Version source modifiée après**: choisissez de filtrer les rubriques en fonction de leur date et heure de modification. Toutes les rubriques modifiées après la date et l’heure spécifiées s’affichent dans la liste.
+   - **Ligne de base**: cliquez sur Utiliser la ligne de base et choisissez une ligne de base créée sur la carte. Tous les fichiers qui font partie de la ligne de base sélectionnée sont affichés dans la page Traduction. Vous pouvez choisir les fichiers de votre choix à partir de la ligne de base et poursuivre le processus de traduction. Une fois votre contenu traduit, vous pouvez exporter la ligne de base traduite. Pour plus d’informations sur l’exportation de la ligne de base traduite, voir [Exporter la ligne de base traduite](generate-output-use-baseline-for-publishing.md#id196SE600GHS).
 1. Cliquez sur **Créer/mettre à jour des copies de langue** au bas du panneau Filtre.
 
 1. Dans la **Projet** list, select **Création d’un projet de traduction**.
@@ -99,7 +99,7 @@ Effectuez les étapes suivantes pour créer un projet de traduction :
 
 1. Dans le champ **Titre du projet**, saisissez un titre pour le projet.
 
-1. Sélectionnez la **Inclure la carte DITA** pour envoyer la carte à traduire.
+1. Sélectionnez la variable **Inclure la carte DITA** pour envoyer la carte à traduire.
 1. Cliquez sur **Début** pour créer un projet de traduction.
 
    Un nouveau projet de traduction est créé avec la version sélectionnée des rubriques. À l’heure actuelle, un message contextuel s’affiche, confirmant que le projet de traduction a été créé. Une fois que toutes les copies de langue cible sont disponibles dans le projet de traduction, vous recevez une notification dans la boîte de réception. Une fois la zone des copies de langue cible disponible dans le projet de traduction, vous pouvez poursuivre et lancer la tâche de traduction.
@@ -109,8 +109,8 @@ Effectuez les étapes suivantes pour créer un projet de traduction :
 
 L’onglet Traduction comporte les sections suivantes :
 
-- **Résumé**: Affiche le nombre de rubriques référencées et la langue source, ainsi que son code.
-- **Détails**: Affiche le titre de la rubrique, le type de rubrique, le code de langue de la rubrique, la langue source, la version de la rubrique source, le libellé ajouté à la rubrique et l’état de traduction.
+- **Résumé**: indique le nombre de rubriques référencées et la langue source, ainsi que son code.
+- **Détails**: affiche le titre de la rubrique, le type de rubrique, le code de langue de la rubrique, la langue source, la version de la rubrique source, le libellé ajouté à la rubrique et l’état de traduction.
 
 
 

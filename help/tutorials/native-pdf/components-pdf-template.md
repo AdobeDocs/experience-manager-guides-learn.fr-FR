@@ -2,9 +2,9 @@
 title: Fonction de publication native d’un PDF | Composants d’un modèle de PDF
 description: Découvrez les différents composants d’un modèle de PDF et comment les personnaliser et les configurer.
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: 90cd3c53fd8da0b987c99950dd37d405bea12c6e
+source-git-commit: 5abcc887a24d838caabdf9a34a84ebc851ed4cbf
 workflow-type: tm+mt
-source-wordcount: '4160'
+source-wordcount: '4376'
 ht-degree: 0%
 
 ---
@@ -219,6 +219,7 @@ Définissez les paramètres de configuration de base pour démarrer un chapitre 
 
   Vous pouvez constater ici que le premier chapitre Paramètres avancés du PDF ne reçoit aucun numéro de page, car il contient des rubriques imbriquées ou enfants. En revanche, un numéro de page s’il est affecté à l’Annexe et aux Mentions légales, car il s’agit de rubriques autonomes sans rubrique enfant.
 
+* **N’affiche pas le numéro de chapitre dans la table des matières** : sélectionnez cette option pour afficher les noms des chapitres sans les numéros de chapitre dans la table des matières.   Par défaut, les numéros de chapitre s’affichent dans la table des matières de la sortie de votre PDF.
 * **Format de filet**: utilisez la liste déroulante pour sélectionner les lignes de filet de conduite Pointe, Pleine ou Espace afin de lier les niveaux d’en-tête aux numéros de page correspondants.
 Pour appliquer la structure de table des matières et le style des niveaux d’en-tête, voir [Ajout d’une table des matières de chapitre](design-page-layout.md#add-chapter-toc).
 
@@ -232,8 +233,14 @@ Vous pouvez définir le texte à afficher avant et après le saut. Par exemple, 
   Utilisez des variables de langue pour définir le texte du marqueur de continuation avant et après la coupure. Selon la langue choisie, la valeur localisée est automatiquement sélectionnée dans la sortie du PDF. Par exemple, vous pouvez publier `Continued on page %page-num%` comme texte en anglais et `Fortsetzung auf Seite %page-num%` en allemand.
 
   Survol <img src="./assets/info-details.svg" alt= "icône info" width="25"> près de l’option pour afficher plus de détails sur celle-ci.
+* **Lier des termes du glossaire à la page du glossaire**: sélectionnez cette option pour afficher les termes du glossaire sous forme de liens hypertexte dans le contenu et les lier aux termes de la page du glossaire. Cela permet aux lecteurs d’afficher rapidement la définition d’un terme défini dans le glossaire.
 
-<!--For more information on using table continuation markers, see Use table continuation markers.-->
+  Pour convertir les termes du glossaire en hyperliens, vous devez :
+   * Activer **Glossaire** dans le **Ordre de page** pour un mappage DITA.
+   * Ajoutez le glossaire dans la carte des pages de fond pour un livre.
+
+  Si vous n’activez pas la page Glossaire, les termes du glossaire dans le contenu ne sont pas convertis en liens hypertexte dans la sortie du PDF.
+  <!--For more information on using table continuation markers, see Use table continuation markers.-->
 
 ### Disposition de page {#page-layouts}
 
@@ -256,7 +263,13 @@ Les paramètres suivants sont disponibles sous la section Mise en page de page :
 
 * **Liste des figures et liste des tableaux**: vous pouvez également spécifier la mise en page des chiffres et des tableaux. La mise en page sélectionnée sera appliquée à tous les tableaux et figures.
 
-* **Index et glossaire**: si vous avez conçu une mise en page de page Index, mappez-la à l’option Index . Si vous disposez d’une mise en page de page Glossaire, mappez-la à l’option Glossaire .
+* **Index**: si vous avez conçu une mise en page de page Index, mappez-la à l’option Index . Les feuilles de style permettent de mettre en forme différents éléments d&#39;index dans la sortie du PDF. Utilisation des styles d’index `.idx-header`, `.idx-footer`, `.idx-body`, `.idx-title`, `.idx-keyword-group`, `.idx-unit`,  `.idx-keyword`, `.idx-name`, `.idx-link` et `.idx-child` pour personnaliser les styles des éléments de l’index.
+
+* **Glossaire**: si vous disposez d’une mise en page de page Glossaire, mappez-la à l’option Glossaire .  Les termes du glossaire de la sortie de votre PDF sont toujours triés par ordre alphabétique.
+
+  Les feuilles de style permettent de mettre en forme différents éléments du glossaire dans la sortie du PDF. Utilisation des styles du glossaire `.glo-header`, `.glo-footer`, `.glo-body`, `.glo-title`, `.glo-unit`, `.glo-link`, et `.glo-term` pour personnaliser les styles des éléments du glossaire.
+
+  En savoir plus sur l’utilisation de l’éditeur de style pour [Utilisation des styles de contenu communs](stylesheet.md).
 
 * **Pages de premier plan et pages de premier plan**: ces mises en page définissent la mise en forme des pages d’avant ou d’arrière-plan de votre livre. Si vous avez conçu la disposition du recto, mappez-la au **Pages de premier plan** . Lorsque vous sélectionnez la mise en page du recto dans la liste déroulante, la mise en page du recto s’applique à toutes les rubriques présentes dans le recto.
 
@@ -290,7 +303,7 @@ Vous pouvez afficher ou masquer les sections suivantes dans votre PDF et organis
 
   Si vous ne souhaitez pas afficher une section spécifique dans la sortie de votre PDF, vous pouvez masquer cela en désactivant le bouton d’activation/désactivation.
 
-  Vous pouvez également définir l’ordre dans lequel ces différentes sections ont été générées dans votre PDF. Pour modifier l’ordre par défaut de ces sections, sélectionnez les barres en pointillés à faire glisser et déposez-les à l’emplacement souhaité.
+  Vous pouvez également définir l’ordre dans lequel ces différentes sections sont générées dans votre PDF. Pour modifier l’ordre par défaut de ces sections, sélectionnez les barres en pointillés à faire glisser et déposez-les à l’emplacement souhaité.
 
   >[!NOTE]
   >
@@ -298,7 +311,7 @@ Vous pouvez afficher ou masquer les sections suivantes dans votre PDF et organis
 
 
 .
-**Chapitre et rubriques** la mise en page est toujours activée et **Glossaire** La mise en page est toujours désactivée par défaut. Vous ne pouvez pas les basculer.
+**Chapitre et rubriques** La mise en page est toujours activée par défaut. Vous ne pouvez pas le basculer.
 
 **Fusion de pages**
 

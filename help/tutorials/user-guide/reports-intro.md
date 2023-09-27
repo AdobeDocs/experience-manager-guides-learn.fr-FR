@@ -1,13 +1,13 @@
 ---
 title: Rapports
-description: Découvrez comment créer des rapports
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+description: Découvrez comment créer des rapports de mappage DITA dans AEM Guides.
+exl-id: baf3bc11-0725-418e-afef-fe9aa55327fe
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '188'
 ht-degree: 1%
 
 ---
-
 
 # Rapports {#id1645H9007MZ}
 
@@ -15,8 +15,8 @@ Dans une configuration organisationnelle, vous souhaitez vérifier l’exhaustiv
 
 Vous pouvez créer des rapports de mappage DITA de deux manières :
 
-- **À partir de l’éditeur Web**: Permet de générer la liste de rubriques et le rapport de métadonnées pour le mappage DITA actuel à partir de l’éditeur web. Vous pouvez trier les rubriques ou les filtrer selon votre sélection. Vous avez également la possibilité de mettre à jour les métadonnées des rubriques sélectionnées en masse.
-- **Depuis le tableau de bord de la carte**: Permet de générer le rapport de mappage DITA et fournit des informations détaillées au niveau du mappage et au niveau du sujet.
+- **À partir de l’éditeur Web**: vous permet de générer la liste de rubriques et le rapport de métadonnées pour le mappage DITA actuel à partir de l’éditeur web. Vous pouvez trier les rubriques ou les filtrer selon votre sélection. Vous avez également la possibilité de mettre à jour les métadonnées des rubriques sélectionnées en masse.
+- **Depuis le tableau de bord de la carte**: vous permet de générer le rapport de mappage DITA et fournit des informations détaillées au niveau du mappage et au niveau du sujet.
 
 - **[Rapport de mappage DITA à partir de l’éditeur web](reports-web-editor.md)**
 
@@ -27,5 +27,3 @@ Vous pouvez créer des rapports de mappage DITA de deux manières :
 - **[Rapport d’état de conversion](reports-convertion-status.md)**
 
 - **[Rapport Historique des versions des fichiers restaurés](reports-reverted-file-version-history.md)**
-
-

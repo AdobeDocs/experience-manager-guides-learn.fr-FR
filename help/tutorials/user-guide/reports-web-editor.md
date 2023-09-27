@@ -1,10 +1,10 @@
 ---
 title: Rapport de mappage DITA à partir de l’éditeur web
-description: Découvrez comment mapper le rapport DITA à partir de l’éditeur web
+description: Générez des rapports de mappage DITA à partir de l’éditeur web dans AEM Guides. Découvrez comment générer un fichier CSV pour une liste de rubriques, un fichier multimédia, des métadonnées et des rapports sur les liens rompus.
 exl-id: b1011cec-6374-4026-bf1c-54a1981c760e
-source-git-commit: 5670b4a8f34916c7ff415680c5ddcfab6e9618e6
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '2351'
+source-wordcount: '2367'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Vous pouvez afficher la liste des rubriques, gérer les métadonnées de toutes 
 
 ## Génération d’un fichier CSV à partir de la vue Liste de rubriques
 
-Le **Liste des rubriques** La vue fournit des informations détaillées sur vos rubriques, telles que le type de référence, l’état du document et l’auteur.
+La variable **Liste des rubriques** La vue fournit des informations détaillées sur vos rubriques, telles que le type de référence, l’état du document et l’auteur.
 
 Vous pouvez créer un rapport des rubriques en procédant comme suit :
 
@@ -39,7 +39,6 @@ Vous pouvez créer un rapport des rubriques en procédant comme suit :
    - **État du document** État actuel du sujet.
    - **Auteur** L’utilisateur qui a travaillé en dernier sur le sujet.
    - **Carte parente** Liste de toutes les cartes dans lesquelles la rubrique est directement référencée.
-
    >[!NOTE]
    >
    > Cliquez sur **Actualiser** pour obtenir une nouvelle liste des rubriques et afficher toute modification dans votre fichier map ou si une référence dans votre fichier de rubrique est mise à jour.
@@ -65,17 +64,17 @@ Pour afficher les métadonnées de vos références dans le mappage DITA actuel,
    1. Vous pouvez également utiliser les options de filtrage de rubrique suivantes pour choisir d’afficher les colonnes suivantes dans la liste des métadonnées :
       - **Titre** \(sélectionné par défaut\) Le titre du fichier référencé est spécifié dans le mappage DITA. Vous pouvez cliquer sur le fichier pour le modifier. Vous pouvez également cliquer sur un fichier audio ou vidéo et le lire dans l’éditeur Web. Vous pouvez modifier le volume ou l’affichage de la vidéo. Dans le menu contextuel, vous disposez également des options de téléchargement, de modification de la vitesse de lecture ou d’affichage de l’image.
 
-         >[!NOTE]
-         >
-         > Une icône d’extraction s’affiche également près du titre d’un fichier extrait. Vous pouvez placer le pointeur de la souris sur l’icône pour afficher le nom de l’utilisateur.
+        >[!NOTE]
+        >
+        > Une icône d’extraction s’affiche également près du titre d’un fichier extrait. Vous pouvez placer le pointeur de la souris sur l’icône pour afficher le nom de l’utilisateur.
 
       - **Nom du fichier** Nom du fichier.
       - **Emplacement du fichier** Chemin d’accès complet au fichier.
       - **Balises** \(sélectionné par défaut\) Balises appliquées au fichier.
 
-         >[!NOTE]
-         >
-         > Par défaut, vous pouvez afficher deux balises pour un fichier. Pour afficher d’autres balises, cliquez sur **Afficher plus**. Cliquez sur **Afficher moins** pour contracter à nouveau la liste.
+        >[!NOTE]
+        >
+        > Par défaut, vous pouvez afficher deux balises pour un fichier. Pour afficher d’autres balises, cliquez sur **Afficher plus**. Cliquez sur **Afficher moins** pour contracter à nouveau la liste.
 
       - **Type de référence** Type de référence : directe ou indirecte
       - **État du document** \(sélectionné par défaut\) État actuel du fichier de référence.
@@ -91,7 +90,7 @@ Pour afficher les métadonnées de vos références dans le mappage DITA actuel,
    >
    > Vous ne pouvez pas sélectionner de fichiers extraits. Une icône d’extraction s’affiche également près du titre d’un fichier extrait. Vous pouvez placer le pointeur de la souris sur l’icône pour afficher le nom de l’utilisateur.
 
-1. Sélectionner **Gérer** en haut.
+1. Sélectionner **Gérer** dans la partie supérieure.
 
    ![](images/web-editor-manage-metadata.png){width="350" align="left"}
 
@@ -102,11 +101,11 @@ Pour afficher les métadonnées de vos références dans le mappage DITA actuel,
    > Les balises courantes appliquées à toutes les rubriques sélectionnées sont répertoriées.
 
 1. Sélectionnez un nouvel état de document si vous souhaitez modifier l’état du document de toutes les références sélectionnées. La liste déroulante affiche l’état possible commun pour toutes les rubriques sélectionnées. Par exemple, si l’état actuel de vos rubriques est En révision, vous pouvez afficher l’état Version préliminaire, Approuvé ou Révisé.
-1. Cliquez sur **Mettre à jour** pour mettre à jour les métadonnées. Un message de confirmation s’affiche pour les métadonnées, qu’elles aient été mises à jour avec succès ou qu’elles aient échoué. Vous pouvez également cliquer sur **Télécharger le rapport** pour télécharger le fichier CSV de métadonnées à partir de la boîte de dialogue de confirmation. Ce fichier CSV contient les détails de l’état de mise à jour des références sélectionnées.
+1. Cliquez sur **Mettre à jour** pour mettre à jour les métadonnées. Un message de confirmation s’affiche pour les métadonnées, qu’elles aient été mises à jour avec succès ou qu’elles aient échoué. Cliquez également sur **Télécharger le rapport** pour télécharger le fichier CSV de métadonnées à partir de la boîte de dialogue de confirmation. Ce fichier CSV contient les détails de l’état de mise à jour des références sélectionnées.
 
 ## Génération d’un rapport multimédia
 
-Le **Multimédia** Le rapport fournit des informations détaillées sur le contenu multimédia utilisé dans votre carte, telles que le titre, le type \(audio, vidéo et images\), les fichiers dans lesquels le contenu multimédia est utilisé, ainsi que le type de référence des fichiers dans lesquels ils ont été utilisés. Vous pouvez également afficher l’UUID et l’emplacement du fichier multimédia dans le référentiel. Vous pouvez créer un rapport du fichier multimédia en procédant comme suit :
+La variable **Multimédia** Le rapport fournit des informations détaillées sur le contenu multimédia utilisé dans votre carte, telles que le titre, le type \(audio, vidéo et images\), les fichiers dans lesquels le contenu multimédia est utilisé, ainsi que le type de référence des fichiers dans lesquels ils ont été utilisés. Vous pouvez également afficher l’UUID et l’emplacement du fichier multimédia dans le référentiel. Vous pouvez créer un rapport du fichier multimédia en procédant comme suit :
 
 1. Dans le **Référentiel** , ouvrez le fichier de mappage DITA en mode Carte.
 1. Cliquez sur le bouton **Gérer** .
@@ -115,17 +114,17 @@ Le **Multimédia** Le rapport fournit des informations détaillées sur le conte
 
    - Lorsque vous commandez par **Multimédia**, le****nom du fichier multimédia s&#39;affiche dans la première colonne, puis le nom de toutes les références dans lesquelles il a été utilisé, s&#39;affiche dans une autre colonne sur la même ligne. Par exemple, la capture d’écran suivante montre le fichier multimédia WarmCoolForC.gif dans la première colonne et trois références dans lesquelles il est utilisé sont affichées dans la troisième colonne de la même ligne.
 
-      ![](images/multimedia-report-file-order.png){width="650" align="left"}
+     ![](images/multimedia-report-file-order.png){width="650" align="left"}
 
    - Si vous commandez par **Utilisé dans** , vous verrez la vue transposée dans laquelle les noms des références dans lesquelles des éléments multimédias ont été utilisés sont répertoriés dans la première colonne tandis que les noms multimédias sont répertoriés dans une autre colonne sur des lignes distinctes. Par exemple, la capture d’écran suivante montre les noms de trois références \(Ajuster la température du siège, Modifier l’affichage de la température du siège et Zone d’équipage\) dans la première colonne et le fichier multimédia WarmCoolForC.gif est affiché dans la troisième colonne sur trois lignes distinctes.
 
-      ![](images/multimedia-report-used-in-order.png){width="650" align="left"}
+     ![](images/multimedia-report-used-in-order.png){width="650" align="left"}
 
 1. Vous pouvez filtrer votre contenu multimédia en fonction des **Type de média multimédia**, et **Type de référence**. La liste des fichiers multimédia s’affiche en fonction de la sélection que vous avez effectuée dans la liste déroulante. Par exemple, vous pouvez choisir d’afficher uniquement les références audio dans votre carte DITA, et un fichier n’affiche que les références audio utilisées.
 
    >[!NOTE]
    >
-   > Selon le type de fichier multimédia utilisé dans votre carte, l’image, la vidéo et l’audio sont répertoriés dans la variable **Type de média multimédia** et Direct ou Indirect sont répertoriés dans le **Type de référence** menu déroulant.
+   > Selon le type de fichier multimédia utilisé dans votre carte, Image, Vidéo et Audio sont répertoriés dans la variable **Type de média multimédia** et Direct ou Indirect sont répertoriés dans le **Type de référence** menu déroulant.
 
 1. Vous pouvez également utiliser les options de filtrage suivantes pour choisir d&#39;afficher les colonnes suivantes dans la liste :
 
@@ -133,9 +132,8 @@ Le **Multimédia** Le rapport fournit des informations détaillées sur le conte
    - **Emplacement multimédia** Chemin d’accès complet au fichier multimédia.
    - **UUID multimédia** L’identifiant unique universelle \(UUID\) du fichier.
    - **Type de média multimédia** \(sélectionné par défaut\) Type du fichier multimédia. Les options disponibles sont Audio, Vidéo ou Image.
-   - **Utilisé dans** \(sélectionné par défaut\) Références dans lesquelles le fichier multimédia a été utilisé. Vous pouvez cliquer sur la référence pour l&#39;éditer.
+   - **Utilisé dans** \(sélectionné par défaut\) Références dans lesquelles le fichier multimédia a été utilisé. Vous pouvez cliquer sur la référence pour la modifier.
    - **Type de référence** \(sélectionné par défaut\) Type de référence : directe ou indirecte.
-
    >[!NOTE]
    >
    > Cliquez sur **Actualiser** pour obtenir une nouvelle liste de fichiers multimédias et afficher toute modification dans votre fichier de carte ou si un fichier multimédia de votre carte DITA est mis à jour.
@@ -149,7 +147,7 @@ Le **Multimédia** Le rapport fournit des informations détaillées sur le conte
 
 ## Afficher et corriger les liens rompus{#report-broken-links}
 
-Le **Liens rompus** est un rapport utile qui vous fournit les détails des liens rompus présents dans votre carte actuelle. Vous pouvez afficher les liens rompus, qui peuvent être destinés aux rubriques DITA, aux références de fichiers multimédia, aux références de clés de contenu, etc. Vous avez aussi la possibilité de les réparer ici même.
+La variable **Liens rompus** est un rapport utile qui vous fournit les détails des liens rompus présents dans votre carte actuelle. Vous pouvez afficher les liens rompus, qui peuvent être destinés aux rubriques DITA, aux références de fichiers multimédia, aux références de clés de contenu, etc. Vous avez aussi la possibilité de les réparer ici même.
 Le rapport fournit des informations détaillées telles que le lien rompu, le type de lien, les fichiers dans lesquels une référence est utilisée et le type de fichiers dans lesquels ils ont été utilisés.
 Vous pouvez afficher le rapport pour les liens rompus en procédant comme suit :
 1. Dans le **Référentiel** , ouvrez le fichier de mappage DITA en mode Carte.
@@ -164,7 +162,7 @@ Vous pouvez afficher le rapport pour les liens rompus en procédant comme suit :
    ![](images/broken-link-filter-usedin.png){width="800" align="left"}
 1. Vous pouvez filtrer vos liens rompus en fonction des **Type de fichier** et **Type de lien**. La liste des liens rompus s’affiche en fonction de votre sélection dans la liste déroulante. Par exemple, vous pouvez choisir d’afficher uniquement les références de contenu dans votre mappage DITA, et un fichier n’affiche que les références de contenu utilisées dans celui-ci.
 
-   Selon le type de références utilisé dans votre carte, la référence de fichier, la référence de clé, la référence de contenu, la référence de clé de contenu, la référence d’image et la référence de fichier multimédia sont répertoriées dans la liste **Type de lien** et **Rubrique DITA** ou **Carte DITA** sont répertoriées dans la variable **Type de fichier** menu déroulant.
+   Selon le type de références utilisé dans votre carte, la référence de fichier, la référence de clé, la référence de contenu, la référence de clé de contenu, la référence d’image et la référence de fichier multimédia sont répertoriées dans la liste **Type de lien** et **rubrique DITA** ou **Carte DITA** sont répertoriées dans la variable **Type de fichier** menu déroulant.
 1. Vous pouvez également utiliser les options de filtrage suivantes pour choisir d&#39;afficher les colonnes suivantes dans la liste :
 
    - **Lien rompu** (sélectionné par défaut) Le chemin d’accès du lien rompu est spécifié dans le mappage DITA.
@@ -175,13 +173,13 @@ Vous pouvez afficher le rapport pour les liens rompus en procédant comme suit :
 
    - **Type de fichier** (sélectionné par défaut) Type de référence : carte DITA ou rubrique DITA.
 Cliquez sur **Actualiser** pour obtenir une nouvelle liste des liens rompus et afficher toute modification dans votre fichier de mappage ou si un lien rompu dans votre mappage DITA est mis à jour.
-1. Vous pouvez cliquer sur le bouton **Lien de correction** Icône (![](images/fix-broken-link.svg)) pour corriger le lien rompu.
+1. Vous pouvez cliquer sur le bouton **Lien de correction** icône (![](images/fix-broken-link.svg)) pour corriger le lien rompu.
 
    >[!NOTE]
    >
    > Passez la souris sur le chemin du lien rompu sous la colonne Lien rompu pour afficher le lien Correctif (![](images/fix-broken-link.svg)).
 
-   Vous pouvez corriger un lien dans les deux vues (lorsque vous avez ordonné la commande **Liens rompus** ou **Utilisé dans**.
+   Vous pouvez corriger un lien dans les deux vues (lorsque vous avez ordonné la commande **Liens rompus** ou par **Utilisé dans**.
 
    >[!NOTE]
    >

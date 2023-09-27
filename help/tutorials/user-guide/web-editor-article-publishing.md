@@ -1,13 +1,13 @@
 ---
 title: Publication basée sur des articles à partir de l’éditeur web
-description: Découvrez comment publier des articles à partir de l’éditeur web
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+description: Découvrez comment publier un ou plusieurs articles à partir de l’éditeur web. Générez une sortie pour une ou plusieurs rubriques dans un mappage DITA dans AEM Guides.
+exl-id: b827c606-0d4b-4e7b-8a82-75b375dffe1a
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
-
 
 # Publication basée sur des articles à partir de l’éditeur web {#id218CL05J0M1}
 
@@ -23,7 +23,7 @@ Si vous avez mis à jour le contenu uniquement pour quelques rubriques de votre 
 
 Pour la publication basée sur des articles, vous devez créer le paramètre prédéfini de sortie pour votre mappage DITA à partir de l’éditeur web. Votre carte doit inclure les rubriques que vous souhaitez publier. Vous pouvez également appliquer des conditions et spécifier les détails AEM site pour le paramètre prédéfini de sortie. Vous pouvez ensuite générer une sortie à l’aide de la fonction Générer un paramètre prédéfini .
 
-Vous pouvez également utiliser les paramètres prédéfinis de sortie créés pour votre mappage DITA pour générer la sortie à partir du panneau Référentiel ou de la vue Carte. Vous pouvez générer la sortie pour une ou plusieurs rubriques, ou pour l’ensemble du mappage DITA.
+Vous pouvez également utiliser les paramètres prédéfinis de sortie créés pour votre mappage DITA pour générer la sortie à partir du panneau Référentiel ou de la vue Carte. Vous pouvez générer la sortie pour une ou plusieurs rubriques, ou pour le mappage DITA entier.
 
 - **[Création de paramètres prédéfinis de sortie à partir de l’éditeur web](web-editor-article-publishing-presets.md)**
 
@@ -31,4 +31,3 @@ Vous pouvez également utiliser les paramètres prédéfinis de sortie créés p
 
 
 **Rubrique parente :**[ Utilisation de l’éditeur web](web-editor.md)
-

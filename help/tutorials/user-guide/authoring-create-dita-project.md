@@ -1,10 +1,10 @@
 ---
 title: Création d’un projet DITA
-description: Découvrez comment créer un projet DITA
+description: Créez un projet DITA à l’aide d’un modèle dans AEM Guides. Découvrez comment utiliser un projet DITA pour lancer les révisions.
 exl-id: 6dc88ac4-249a-4da2-9787-a58370e281ca
-source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Vous pouvez ajouter des membres de l’équipe à un projet qui peuvent ensuite 
 
 Une fois que vous avez créé votre projet DITA, vous pouvez lancer votre révision à partir de l’éditeur web ou de l’interface utilisateur d’Assets. Pour plus d’informations, voir [Envoi de rubriques en révision](review-send-topics-for-review.md#).
 
-De même, chaque fois qu’un auteur lance un processus de révision, les membres sélectionnés du projet reçoivent une notification par e-mail. Pour configurer des notifications par courrier électronique, voir *Personnalisation des modèles de courrier électronique* dans Installer et configurer Adobe Experience Manager Guides as a Cloud Service.
+De même, chaque fois qu’un auteur lance un processus de révision, les membres sélectionnés du projet reçoivent une notification par e-mail. Pour configurer des notifications par courrier électronique, voir *Personnalisation des modèles de courrier électronique* dans Installation et configuration de Adobe Experience Manager Guides as a Cloud Service.
 
 Pour créer un projet DITA, procédez comme suit :
 
@@ -48,6 +48,7 @@ Pour créer un projet DITA, procédez comme suit :
    - Vous pouvez, éventuellement, choisir une miniature pour le projet.
 
    - Par défaut, vous êtes le propriétaire du projet. Pour ajouter d’autres utilisateurs à ce projet :
+
    1. Saisissez ou sélectionnez un utilisateur dans le **Utilisateur** liste déroulante.
 
    1. Sélectionnez un type d’utilisateur : Auteurs, Réviseurs ou Éditeurs.
@@ -61,11 +62,10 @@ Pour créer un projet DITA, procédez comme suit :
       >[!NOTE]
       >
       >Si vous utilisez AEM Guides version 3.5 ou antérieure, une option vous est présentée pour sélectionner un fichier de mappage DITA afin de résoudre les références clés pour les workflows de modification, de prévisualisation et de révision des rubriques. Dans les versions 3.6 et ultérieures, vous pouvez définir la carte racine via l’éditeur web. Pour plus d’informations, voir [Préférences utilisateur](web-editor-features.md#id2087G0P40SB) dans l’éditeur Web. Une autre manière de définir la carte racine consiste à la configurer au niveau des profils globaux ou au niveau du dossier. Pour plus d’informations, voir *Configuration de profils globaux ou au niveau du dossier* dans le Guide d&#39;installation et de configuration.
+
    Informations dans la variable **Avancé** tab :
 
    - Saisissez le nom du projet. Ce nom est utilisé pour créer l’URL de ce projet.
-
-
 
 1. Cliquez sur **Créer**.
 

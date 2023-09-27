@@ -2,9 +2,9 @@
 title: Configuration de la nouvelle publication basée sur un microservice pour AEM Guides as a Cloud Service
 description: Découvrez comment configurer une nouvelle publication basée sur un microservice pour AEM Guides.
 exl-id: 92e3091d-6337-4dc6-9609-12b1503684cd
-source-git-commit: 92b087c4cb115f0966d20b6b1d9d26839c6e39b7
+source-git-commit: aa71a2b8ff5f83365ff2f3562bb2b77061a3da8e
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -17,14 +17,14 @@ Pour chaque demande de publication AEM Guides as a Cloud Service exécute un con
 
 >[!NOTE]
 >
-> La publication basée sur les microservices dans AEM Guides prend en charge les types de paramètres prédéfinis de sortie PDF (natifs et basés sur DITA-OT), HTML5 et PERSONNALISÉS.
+> La publication basée sur les microservices dans AEM Guides prend en charge les types de paramètres prédéfinis de sortie PDF (natifs et basés sur DITA-OT), HTML5, JSON et PERSONNALISÉS.
 
-Comme le nouveau service de publication dans le cloud est sécurisé par l’authentification basée sur JWT d’Adobe IMS, les clients doivent suivre les étapes ci-dessous pour intégrer leurs environnements aux processus d’authentification par jeton sécurisés d’Adobe et commencer à utiliser la nouvelle solution de publication évolutive basée sur le cloud.
+Comme le nouveau service de publication dans le cloud est sécurisé par l’authentification basée sur JWT d’Adobe IMS, les clients doivent suivre les étapes ci-dessous pour intégrer leurs environnements aux workflows d’authentification par jeton sécurisés d’Adobe et commencer à utiliser la nouvelle solution de publication évolutive basée sur le cloud.
 
 
 ## Création de configurations IMS dans la console Adobe Developer
 
-**Rôle requis pour créer les configurations**: Administrateur système
+**Rôle requis pour créer les configurations**: administrateur système
 
 Effectuez les étapes suivantes pour créer des configurations IMS dans la console Adobe Developer :
 
@@ -117,8 +117,8 @@ Une fois cela fait, vous devriez pouvoir utiliser la nouvelle publication cloud 
 **Fichier**: `com.adobe.fmdita.publishworkflow.PublishWorkflowConfigurationService.xml`
 
 **Contenu**:
-* `dxml.use.publish.microservice`: Basculez pour activer la publication basée sur un microservice à l’aide de DITA-OT
-* `dxml.use.publish.microservice.native.pdf`: Basculer pour activer la publication de PDF natifs en fonction du microservice
+* `dxml.use.publish.microservice`: basculez pour activer la publication basée sur un microservice à l’aide de DITA-OT
+* `dxml.use.publish.microservice.native.pdf`: basculez pour activer la publication de PDF natifs en fonction du microservice.
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>

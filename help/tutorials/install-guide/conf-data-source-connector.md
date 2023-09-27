@@ -1,7 +1,7 @@
 ---
 title: Configuration d’un connecteur de source de données
 description: Découvrez comment configurer un connecteur de source de données
-source-git-commit: bb04590ccb08cde0826dcb60c664f47d7305c9d1
+source-git-commit: fc142d8a6e907fac1321dfd5c2cb9615d523709d
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 1%
@@ -176,7 +176,7 @@ Les autres champs sont personnalisés en fonction de la classe de configuration 
 
 Téléchargez le fichier vers un emplacement spécifique dans AEM Assets.
 
-Par exemple, `/var/dxml/konnect/jira.json`.
+Par exemple, `/content/dam/jira.json`.
 
 ## Créer une configuration à l’aide de l’API REST
 

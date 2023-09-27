@@ -1,13 +1,13 @@
 ---
 title: Révision de rubriques ou de mappages
-description: Découvrez comment passer en revue des rubriques ou des mappages
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+description: Consultez efficacement les rubriques ou les mappages dans les Guides d’AEM pour une évaluation du contenu fluide. Découvrez les fonctionnalités destinées aux auteurs et aux réviseurs dans AEM Guides.
+exl-id: 26860f5d-d744-49b4-8483-4e0f3798af93
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
-
 
 # Révision de rubriques ou de mappages {#id1645H6010Q5}
 
@@ -62,5 +62,3 @@ Fonctionnalités disponibles pour *validants*:
 - **[Commentaires sur la révision des adresses](review-address-review-comments.md)**
 
 - **[Gestion des tâches de révision à l’aide du tableau de bord de révision](review-manage-tasks-review-dashboard.md)**
-
-

@@ -1,13 +1,13 @@
 ---
 title: et créer du contenu.
-description: Découvrez comment créer du contenu
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+description: Créez du contenu dans AEM Guides. Découvrez comment créer, prévisualiser, modifier, enregistrer la version de votre document et partager pour révision.
+exl-id: bba2a7a1-ffbc-4d28-9b70-a0274f03e29b
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 3%
+source-wordcount: '145'
+ht-degree: 2%
 
 ---
-
 
 # et créer du contenu. {#id221EAJ0A047}
 
@@ -22,5 +22,3 @@ Vous pouvez également utiliser des outils de bureau pour créer votre contenu. 
 - **[Création de contenu à l’aide des AEM Guides](authoring-content-xml-doc.md)**
 
 - **[Création de contenu à l’aide d’outils de bureau](author-desktop-tools.md)**
-
-

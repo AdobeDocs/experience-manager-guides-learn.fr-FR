@@ -1,10 +1,10 @@
 ---
 title: Rapport Réutilisation du contenu
-description: Découvrez comment réutiliser le rapport Réutilisation du contenu
+description: Découvrez comment afficher le rapport de réutilisation du contenu dans AEM Guides. Générez le rapport pour connaître le pourcentage de réutilisation du contenu.
 exl-id: 658ae0fd-9032-4480-b9e4-fe4fec261e72
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Effectuez les étapes suivantes pour afficher le rapport Réutilisation du conte
 
 1. Cliquez sur **Parcourir** pour choisir un chemin où se trouvent vos rubriques ou saisissez le chemin manuellement.
 
-   Le rapport est généré en analysant le contenu des dossiers parents et enfants.
+   Le rapport est généré en analysant le contenu dans les dossiers parents et tous les dossiers enfants.
 
 1. Cliquez sur **Générer un rapport** pour obtenir le rapport Réutilisation du contenu .
 
@@ -37,23 +37,23 @@ Effectuez les étapes suivantes pour afficher le rapport Réutilisation du conte
 
    - **Résumé du rapport :**
 
-      Répertorie la Réutilisation moyenne du contenu, qui est calculée en tant qu’ Instances/Nombre total de rubriques de la réutilisation du contenu. Ce rapport prend en compte toutes les références de contenu direct de premier niveau et les références de rubrique pour le calcul. Les instances de réutilisation du contenu sont calculées comme la somme totale des valeurs du champ Nombre de fois réutilisées . Le sujet qui est le plus réutilisé est également répertorié dans le résumé du rapport. Cliquez sur le lien de la rubrique dans la rubrique la plus sollicitée pour ouvrir l’aperçu de la rubrique.
+     Répertorie la Réutilisation moyenne du contenu, qui est calculée en tant qu’ Instances/Nombre total de rubriques de la réutilisation du contenu. Ce rapport prend en compte toutes les références de contenu direct de premier niveau et les références de rubrique pour le calcul. Les instances de réutilisation du contenu sont calculées comme la somme totale des valeurs du champ Nombre de fois réutilisées . Le sujet qui est le plus réutilisé est également répertorié dans le résumé du rapport. Cliquez sur le lien de la rubrique dans la rubrique la plus sollicitée pour ouvrir l’aperçu de la rubrique.
 
    - **Détails:**
 
-      La section Détails contient les colonnes suivantes :
+     La section Détails contient les colonnes suivantes :
 
-      - **Titre**: Titre de la rubrique. Cliquez sur le lien de titre de la rubrique pour ouvrir l’aperçu de la rubrique.
+      - **Titre**: titre de la rubrique. Cliquez sur le lien de titre de la rubrique pour ouvrir l’aperçu de la rubrique.
 
-      - **UUID**: L’identifiant unique universelle \(UUID\) du fichier.
+      - **UUID**: identifiant unique universelle \(UUID\) du fichier.
 
-      - **Taille**: Taille des fichiers en octets.
+      - **Taille**: taille des fichiers en octets.
 
-      - **État**: L’état actuel du document (brouillon, en révision ou révision).
+      - **État**: état actuel du document (brouillon, en révision ou révision).
 
-      - **Nombre de fois réutilisées**: Nombre de fois où la rubrique correspondante a été réutilisée. Ce calcul correspond à la somme des entrées dans les colonnes Référencé par moins 1.
+      - **Nombre de fois réutilisées**: nombre de fois où la rubrique correspondante a été réutilisée. Ce calcul correspond à la somme des entrées dans les colonnes Référencé par moins 1.
 
-      - **Référencé par**: Les rubriques dans lesquelles la rubrique correspondante a été référencée. Ici, seules les références directes \(premier niveau\) sont prises en compte. Plusieurs rubriques sont séparées par une virgule. L’UUID du fichier référencé est également mentionné entre crochets. Cliquez sur le lien de titre de la rubrique pour ouvrir l’aperçu de la rubrique.
+      - **Référencé par**: rubriques dans lesquelles la rubrique correspondante a été référencée. Ici, seules les références directes \(premier niveau\) sont prises en compte. Plusieurs rubriques sont séparées par une virgule. L’UUID du fichier référencé est également mentionné entre crochets. Cliquez sur le lien de titre de la rubrique pour ouvrir l’aperçu de la rubrique.
 
 
 >[!NOTE]

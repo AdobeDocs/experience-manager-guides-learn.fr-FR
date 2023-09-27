@@ -1,10 +1,10 @@
 ---
 title: Transmission des métadonnées à la sortie à l’aide de DITA-OT
-description: Découvrez comment transmettre des métadonnées à la sortie à l’aide de DITA-OT
+description: Découvrez comment transmettre les métadonnées à la sortie à l’aide de la publication DITA-OT dans AEM Guides.
 exl-id: 637895e5-aece-4827-a32e-f2ae3e3704ef
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Effectuez les étapes suivantes pour transmettre les métadonnées à la sortie 
 
    Pour transmettre une propriété personnalisée pour laquelle vous avez déjà défini les valeurs, voir [Utilisation des métadonnées AEM dans la sortie du PDF DITA-OT](https://experienceleaguecommunities.adobe.com/t5/xml-documentation-discussions/use-aem-metadata-in-dita-ot-pdf-output/td-p/411880).
 
-1. Dans la **Propriétés** , sélectionnez les propriétés personnalisées et par défaut requises. Par exemple, sélectionnez `author`, `dc:title`, et `dc:description`. Il s’agit de la norme `metadata/properties` qui est créé une fois que nous avons créé un fichier. Les propriétés sélectionnées sont répertoriées sous la liste déroulante.
+1. Dans la **Propriétés** , sélectionnez les propriétés personnalisées et par défaut requises. Par exemple, sélectionnez `author`, `dc:title`, et `dc:description`. Il s’agit des `metadata/properties` qui est créé une fois que nous avons créé un fichier. Les propriétés sélectionnées sont répertoriées sous la liste déroulante.
 
    ![](images/selected-metadata-properties.png){width="300" align="left"}
 

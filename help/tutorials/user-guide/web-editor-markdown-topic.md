@@ -1,13 +1,13 @@
 ---
 title: Création de documents Markdown
-description: Découvrez comment créer des documents Markdown
-source-git-commit: fa6e9f8b32d191f5b6f7136724d2145d81317767
+description: Créez des documents de balisage à partir de l’éditeur web. Découvrez comment créer, créer et prévisualiser une rubrique Markdown dans AEM Guides.
+exl-id: ad20ca0b-a01d-4e72-8e3e-1d6feb41e52a
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
-
 
 # Création de documents Markdown à partir de l’éditeur web {#id223MIE0B079}
 
@@ -60,4 +60,3 @@ Pour créer une rubrique Markdown à partir de l’éditeur web, procédez comme
 > Si vous n’avez pas enregistré les modifications, une fenêtre contextuelle s’affiche et vous êtes invité à enregistrer votre rubrique avant de la fermer.
 
 **Rubrique parente :**[ Utilisation de l’éditeur web](web-editor.md)
-

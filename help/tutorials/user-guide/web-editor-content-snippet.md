@@ -1,9 +1,9 @@
 ---
 title: Insertion d’un fragment de contenu à partir de votre source de données
-description: Découvrez comment insérer un fragment de contenu de votre source de données
-source-git-commit: 71a64a35d065da10783d8e1a035ea1c4728e35f4
+description: Utilisez les données de votre source de données dans AEM Guides. Découvrez comment insérer un fragment de contenu de votre source de données. Créez une rubrique à l’aide du générateur de rubriques.
+source-git-commit: 0293dc6e375d6a80bf35694a8e9784f0bb6d0384
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '2028'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,11 @@ Selon votre configuration, votre administrateur peut configurer un connecteur de
 <details>
 <summary> Services cloud </summary>
 
-Découvrez comment [configurer un connecteur de source de données](../cs-install-guide/conf-data-source-connector.md) dans le Guide d&#39;installation et de configuration de Cloud Service.
+
+- Si vous utilisez la version d’octobre 2023 ou une version ultérieure, découvrez comment [configurer un connecteur de source de données à l’aide des outils](../cs-install-guide/conf-data-source-connector-tools.md) dans le Guide d&#39;installation et de configuration de Cloud Service.
+
+- Si vous utilisez la version de juillet 2023 ou de septembre 2023, découvrez comment [configurer un connecteur de source de données](../cs-install-guide/conf-data-source-connector.md) dans le Guide d&#39;installation et de configuration de Cloud Service.
+
 </details>
 
 <details>    
@@ -83,6 +87,8 @@ Les modèles d’usine de la source de données sélectionnée s’affichent dan
    >[!NOTE]
    >  
    > Si votre administrateur a configuré des modèles personnalisés, ces modèles s’affichent également dans la liste déroulante (en fonction des configurations de chemin d’accès au modèle effectuées par votre administrateur).
+   >   
+   >Vous pouvez également utiliser les outils Velocity dans les modèles. En savoir plus sur la manière de procéder [utilisation des outils Velocity](#use-velocity-tools).
 
 1. Cliquez sur **Récupérer** pour récupérer les données de la source de données et appliquer le modèle aux données qui résultent de la requête SQL.
 
@@ -215,9 +221,7 @@ Effectuez les étapes suivantes pour créer une rubrique à l’aide du généra
 
 Cliquez avec le bouton droit de la souris sur un générateur de rubrique pour ouvrir le **Options**. Les options suivantes vous permettent d’effectuer les opérations suivantes :
 
-- **Aperçu**: utilisez cette option pour ouvrir un volet et afficher une petite partie de l’affichage des données dans la sortie.
-- **Génération de contenu**: cette option génère les rubriques du générateur de rubriques sélectionné. Vous pouvez également utiliser cette option pour mettre à jour les rubriques existantes. Il se connecte à la source de données et récupère les données mises à jour.
-
+- **Générer**: cette option génère les rubriques du générateur de rubriques sélectionné. Vous pouvez également utiliser cette option pour mettre à jour les rubriques existantes. Il se connecte à la source de données et récupère les données mises à jour. Lors de la génération du contenu, cette option est désactivée et vous affichez un chargeur.
   >[!NOTE]
   >
   >Si votre rubrique existe déjà, vous pouvez soit remplacer les données de la rubrique, soit l’enregistrer en tant que nouvelle version.
@@ -225,11 +229,50 @@ Cliquez avec le bouton droit de la souris sur un générateur de rubrique pour o
   ![](images/generate-topic-options.png)
 
   *Générez une rubrique. Si le fichier existe déjà, enregistrez-la en tant que nouvelle version ou remplacez-la.*
+- **Afficher le journal**: sélectionnez cette option pour afficher le fichier journal de génération du contenu. Le fichier journal s’ouvre dans un nouvel onglet. Vous pouvez afficher les erreurs, les avertissements, les messages d’information et les exceptions dans le fichier journal. Cette option est activée si vous avez généré le contenu pour le générateur de rubriques sélectionné.
 
-- **Modifier**: utilisez cette option pour modifier et enregistrer le générateur de rubriques.
-- **Supprimer**: utilisez cette option pour supprimer le générateur de rubriques sélectionné.
+- **Aperçu**: utilisez cette option pour ouvrir un volet et afficher une petite partie de l’affichage des données dans la sortie.
+
+
+
+- **Modifier**: utilisez cette option pour modifier et enregistrer le générateur de rubriques. Cette option est désactivée lorsque vous générez le contenu.
+- **Supprimer**: utilisez cette option pour supprimer le générateur de rubriques sélectionné. Cette option est désactivée lorsque vous générez le contenu.
 - **Dupliquer**: cette option crée un doublon ou une copie du générateur de rubriques sélectionné. Le doublon est créé avec un suffixe (comme `topic-sample_1`) par défaut.
 
+
+
+## Utilisation des outils Velocity dans les modèles de source de données {#use-velocity-tools}
+
+Les modèles Experience Manager prennent également en charge les outils Velocity (version 2.0). Ces outils vous aident à appliquer diverses fonctions aux données que vous récupérez à partir des sources de données. En savoir plus sur l’utilisation de la variable [Outils Velocity](https://velocity.apache.org/tools/2.0/generic.html) et les fonctions que vous pouvez appliquer.
+
+Effectuez les étapes suivantes pour utiliser un outil Velocity dans un modèle :
+1. Modifiez un modèle Velocity dans l’éditeur web.
+1. Ajoutez un outil et sa fonction dans la variable `<tool.function>` format. Par exemple :
+   - Pour générer un nombre aléatoire à l’aide de l’outil mathématique, utilisez `$mathTool.random`.
+   - Pour générer la somme des nombres à l’aide de l’outil mathématique, utilisez `$mathTool.add(num1, num2)`.
+1. Utilisez le modèle pour créer un fragment de contenu ou une rubrique.
+1. Après avoir appliqué le modèle aux données, vous pouvez afficher les données dans l’aperçu ou la vue source DITA.
+
+
+
+
+Vous pouvez utiliser les outils suivants dans les modèles Velocity pour appliquer diverses fonctions aux données que vous récupérez du connecteur : -`$alternatorTool`
+- `$classTool`
+- `$contextTool`
+- `$conversionTool`
+- `$dateTool`
+- `$comparisonDateTool`
+- `$displayTool`
+- `$escapeTool`
+- `$fieldTool`
+- `$loopTool`
+- `$linkTool`
+- `$listTool`
+- `$mathTool`
+- `$numberTool`
+- `$renderTool`
+- `$resourceTool`
+- `$sortTool`
 
 
 

@@ -1,10 +1,10 @@
 ---
 title: Activer la sortie
-description: Découvrez comment activer la sortie
+description: Activez la sortie des mappages DITA dans AEM Guides. Découvrez comment activer votre contenu sur l’instance de publication.
 exl-id: a3b6cfed-813e-433c-891f-bb0715e7b94a
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '193'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ Une fois que vous avez créé une collection de cartes pour l’activation en bl
 
    Une liste des collections de cartes d’activation en bloc s’affiche.
 
-1. Sélectionnez la collection que vous souhaitez publier, puis cliquez sur **Ouvrir**.
+1. Sélectionnez la collection à publier, puis cliquez sur **Ouvrir**.
 
    ![](images/bulk-activation-collection-open.png){width="800" align="left"}
 
@@ -30,8 +30,7 @@ Une fois que vous avez créé une collection de cartes pour l’activation en bl
 
    - Pour activer la sortie des mappages sélectionnés, sélectionnez les fichiers de mappage et cliquez sur **Publication rapide**.
    - Pour activer la sortie de toutes les cartes DITA avec leurs paramètres prédéfinis configurés, cochez la case en regard de l’option Mappage \(colonne\), puis cliquez sur **Publication rapide.**
-
-      ![](images/bulk-activation-collection-quick-publish.png){width="650" align="left"}
+     ![](images/bulk-activation-collection-quick-publish.png){width="650" align="left"}
 
 
 Une fois que la sortie est activée pour les fichiers de mappage sélectionnés, la colonne Publié est mise à jour avec la date et l’heure actuelles.

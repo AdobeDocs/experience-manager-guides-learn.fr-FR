@@ -1,19 +1,19 @@
 ---
 title: Utilisation de l’éditeur DITAVAL
-description: Découvrez comment utiliser l’éditeur DITAVAL
-source-git-commit: c6eceb8ea3ce41f12ea1f689dc8aeab2b4ba3d9c
+description: Découvrez comment créer et modifier des fichiers DITAVAL à l’aide de l’éditeur DIVATAL dans AEM Guides. Découvrez comment l’éditeur DITAVAL prend en charge les fichiers DITAVAL dans les vues d’auteur et source.
+exl-id: 53dc9a61-aa07-4fb0-a442-ac845433c8f5
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '780'
 ht-degree: 0%
 
 ---
-
 
 # Éditeur DITAVAL {#ditaval-editor}
 
 Les fichiers DITAVAL sont utilisés pour générer une sortie conditionnelle. Dans une même rubrique, vous pouvez ajouter des conditions à l’aide d’attributs d’élément pour conditionner le contenu. Ensuite, vous créez un fichier DITAVAL dans lequel vous spécifiez les conditions à sélectionner pour générer le contenu et la condition à exclure de la sortie finale.
 
-AEM Guides vous permet de créer et de modifier facilement des fichiers DITAVAL à l’aide de l’éditeur DITAVAL. L’éditeur DITAVAL récupère les attributs \(ou balises\) définis dans votre système et vous pouvez les utiliser pour créer ou modifier des fichiers DITAVAL. Pour plus d’informations sur la création et la gestion des balises dans AEM, voir [Administration des balises](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/tags.html?lang=en) dans la documentation AEM.
+AEM Guides vous permet de créer et de modifier facilement des fichiers DITAVAL à l’aide de l’éditeur DITAVAL. L’éditeur DITAVAL récupère les attributs \(ou balises\) définis dans votre système et vous pouvez les utiliser pour créer ou modifier des fichiers DITAVAL. Pour plus d’informations sur la création et la gestion des balises dans AEM, voir [Administration des balises](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/tags.html?lang=en) dans la documentation d’AEM.
 
 ## Créer un fichier DITAVAL
 
@@ -21,7 +21,7 @@ Effectuez les étapes suivantes pour créer un fichier DITAVAL :
 
 1. Dans l’interface utilisateur d’Assets, accédez à l’emplacement où vous souhaitez créer le fichier DITAVAL.
 
-1. Cliquez sur **Créer** \> **Rubrique DITA**.
+1. Cliquez sur **Créer** \> **rubrique DITA**.
 
 1. Sur la page Plan directeur, sélectionnez le modèle de fichier DITAVAL et cliquez sur **Suivant**.
 
@@ -48,7 +48,7 @@ Effectuez les étapes suivantes pour modifier un fichier DITAVAL :
 
    L’éditeur DITAVAL vous permet d’effectuer les tâches suivantes :
 
-   A : Activer/désactiver le panneau de gauche Active/désactive la vue du panneau de gauche. Si vous avez ouvert le fichier DITAVAL via le mappage DITA, le mappage et le référentiel sont affichés dans ce panneau. Pour plus d’informations sur l’ouverture d’un fichier via un mappage DITA, voir [Modification des rubriques à l’aide de la carte DITA](map-editor-advanced-map-editor.md#id17ACJ0F0FHS).
+   R : Activer/désactiver le panneau de gauche Activez/désactivez l’affichage du panneau de gauche. Si vous avez ouvert le fichier DITAVAL via le mappage DITA, le mappage et le référentiel s’affichent dans ce panneau. Pour plus d’informations sur l’ouverture d’un fichier via un mappage DITA, voir [Modification des rubriques à l’aide de la carte DITA](map-editor-advanced-map-editor.md#id17ACJ0F0FHS).
 
    B : Enregistrer Enregistre les modifications que vous avez apportées au fichier. Toutes vos modifications sont enregistrées dans la version actuelle de votre fichier.
 
@@ -68,7 +68,7 @@ Effectuez les étapes suivantes pour modifier un fichier DITAVAL :
 
    ![](images/ditaval-all-props.png)
 
-1. Une fois que vous avez terminé de modifier votre fichier DITAVAL, cliquez sur **Enregistrer**.
+1. Une fois la modification de votre fichier DITAVAL terminée, cliquez sur **Enregistrer**.
 
    >[!NOTE]
    >
@@ -79,13 +79,12 @@ Effectuez les étapes suivantes pour modifier un fichier DITAVAL :
 
 L’éditeur DITAVAL des Guides d’AEM prend en charge l’affichage de fichiers DITAVAL dans deux modes ou vues différents :
 
-**Auteur**: Il s’agit d’une vue standard de ce que vous voyez est ce que vous obtenez \(WYSISYG\) de l’éditeur DITAVAL. Vous pouvez ajouter ou supprimer des propriétés à l’aide de l’interface utilisateur simple, qui présente les propriétés, leurs valeurs et les actions dans la liste déroulante. Dans la vue Auteur, vous avez la possibilité d’insérer une propriété individuelle et toutes les propriétés en un seul clic.
+**Auteur**: il s’agit d’une vue standard de ce que vous voyez est ce que vous obtenez \(WYSISYG\) de l’éditeur DITAVAL. Vous pouvez ajouter ou supprimer des propriétés à l’aide de l’interface utilisateur simple, qui présente les propriétés, leurs valeurs et les actions dans la liste déroulante. Dans la vue Auteur, vous avez la possibilité d’insérer une propriété individuelle et toutes les propriétés en un seul clic.
 
 Vous pouvez également trouver la version du fichier DITAVAL sur lequel vous travaillez actuellement en pointant le pointeur de la souris sur le nom du fichier.
 
-**Source**: La vue Source affiche le code XML sous-jacent qui constitue le fichier DITAVAL. En plus d’apporter des modifications de texte standard dans cette vue, un auteur peut également ajouter ou modifier des propriétés à l’aide du catalogue dynamique.
+**Source**: la vue Source affiche le code XML sous-jacent qui constitue le fichier DITAVAL. En plus d’apporter des modifications de texte standard dans cette vue, un auteur peut également ajouter ou modifier des propriétés à l’aide du catalogue dynamique.
 
 Pour appeler le catalogue dynamique, placez le curseur à la fin d’une définition de propriété et saisissez &quot;&lt;&quot;. L’éditeur affiche la liste de tous les éléments XML valides que vous pouvez insérer à cet emplacement.
 
 ![](images/ditaval-source-view.png)
-

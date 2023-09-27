@@ -1,17 +1,17 @@
 ---
 title: Générer la sortie des fichiers .book ou .fm
-description: Découvrez comment générer une sortie de fichiers .book ou .fm
+description: Découvrez comment générer une sortie de fichiers .book ou .fm dans AEM Guides.
 exl-id: 578cff9f-cb27-4df3-8571-277f81b930d7
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
 
 # Générer la sortie des fichiers .book ou .fm {#generating_output_fm_docs}
 
-Effectuez les étapes suivantes pour générer une sortie pour les documents FrameMaker :
+Effectuez les étapes suivantes pour générer une sortie pour des documents de FrameMaker :
 
 1. Dans l’interface utilisateur d’Assets, accédez à et cliquez sur le `.book` ou `.fm` fichier que vous souhaitez publier.
 
@@ -28,4 +28,4 @@ Effectuez les étapes suivantes pour générer une sortie pour les documents Fra
 >
 > Vous pouvez afficher l’état actuel de la requête de génération de sortie en cliquant sur Sorties. Pour plus d’informations, voir [Afficher l&#39;état de la tâche de génération de sortie](fm-output-view-status.md).
 
-**Rubrique parente :**[ Génération d’une sortie de documents FrameMaker](fm-output-generatation.md)
+**Rubrique parente :**[ Générer une sortie de documents de FrameMaker](fm-output-generatation.md)

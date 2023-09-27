@@ -1,10 +1,10 @@
 ---
 title: Utilisation du panneau Génération rapide
-description: Découvrez comment utiliser le panneau Génération rapide
+description: Utilisez le panneau de génération rapide dans AEM Guides. Découvrez comment générer et afficher la sortie à partir du panneau de génération rapide.
 exl-id: d48803d9-470c-4679-8def-72b45a85917b
-source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ AEM Guides fournit une **Génération rapide** intégré dans l’éditeur web. 
 
 >[!NOTE]
 >
-> Le **Génération rapide** s’affiche pour le mappage DITA ouvert dans le panneau Affichage des cartes .
+> La variable **Génération rapide** s’affiche pour le mappage DITA ouvert dans le panneau Affichage des cartes .
 
 ![](images/quick-generate-map-view.png){width="800" align="left"}
 

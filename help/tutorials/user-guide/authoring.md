@@ -1,13 +1,13 @@
 ---
 title: Gestion du contenu
-description: Découvrez comment gérer le contenu
-source-git-commit: bad2f5cea2c00ca6c9758da27f0dba89a8579eb7
+description: Gérez le contenu et identifiez vos rôles et autorisations dans AEM Guides. Découvrez les concepts clés de la gestion de contenu et de l’utilisation des profils globaux ou au niveau des dossiers.
+exl-id: d2fa31a7-a8ce-4d17-bd4e-0f51ea751dca
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '722'
 ht-degree: 11%
 
 ---
-
 
 # Gestion du contenu {#id164JBG0M0T1}
 
@@ -27,7 +27,7 @@ Déplacez ou renommez des fichiers ou modifiez la structure de dossiers dans le 
 
 **Gestion des versions**
 
-AEM Guides permet de gérer les versions de vos ressources numériques. Vous pouvez facilement activer cette fonctionnalité à partir d’une application de création DITA de votre choix. Permet à vos auteurs d’exécuter les fonctions de contrôle de version standard telles que l’archivage et l’extraction.
+AEM Guides permet de gérer les versions de vos ressources numériques. Vous pouvez facilement activer cette fonctionnalité depuis une application de création DITA de votre choix. Permet à vos auteurs d’exécuter les fonctions de contrôle de version standard telles que l’archivage et l’extraction.
 
 Pour plus d’informations sur la création de versions ou le rétablissement d’une version spécifique, voir [Branchement, restauration et contrôle de version ultérieur](web-editor-preview-topics.md#id193PG0Y051X).
 
@@ -85,7 +85,7 @@ Le tableau suivant répertorie les différentes tâches et les groupes pouvant e
 
 [1](#fnsrc_1) If *Auteurs* et *Éditeurs* sont invités à une révision.
 
-[2](#fnsrc_2) Selon les droits accordés à l’utilisateur dans le profil d’état du document.
+[2](#fnsrc_2) En fonction des droits accordés à l’utilisateur dans le profil d’état du document.
 
 ## Conditions préalables à la création de contenu
 
@@ -97,9 +97,4 @@ AEM Guides vous permet de configurer la création de modèles \(rubrique ou mapp
 
 Vous pouvez également déléguer les configurations spécifiques aux dossiers à un service ou à des administrateurs de produit pour décentraliser l’administration.
 
-Pour plus d’informations sur la configuration des profils globaux et au niveau du dossier, voir *Configuration de profils globaux ou au niveau du dossier* dans Installer et configurer Adobe Experience Manager Guides as a Cloud Service.
-
-
-
-
-
+Pour plus d’informations sur la configuration des profils globaux et au niveau du dossier, voir *Configuration de profils globaux ou au niveau du dossier* dans Installation et configuration de Adobe Experience Manager Guides as a Cloud Service.

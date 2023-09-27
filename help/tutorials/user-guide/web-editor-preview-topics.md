@@ -1,13 +1,13 @@
 ---
 title: Aperçu d’une rubrique
-description: Découvrez comment prévisualiser une rubrique
-source-git-commit: cc0fbca257d82cc82db5b5da8d263309fd71de55
+description: Découvrez comment prévisualiser une rubrique dans AEM Guides. Découvrez les fonctionnalités disponibles en mode d’aperçu. Branchement, rétablissement et contrôle de version ultérieur dans les guides d’AEM.
+exl-id: fb8eb87b-2a98-4540-9329-08a759145497
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '1815'
+source-wordcount: '1834'
 ht-degree: 0%
 
 ---
-
 
 # Aperçu d’une rubrique {#id1696II000QR}
 
@@ -16,13 +16,13 @@ Une fois une rubrique créée, AEM Guides génère un aperçu de la rubrique. Le
 Pour prévisualiser une rubrique, procédez comme suit :
 
 1. Dans l’interface utilisateur d’Assets, accédez à la rubrique que vous souhaitez afficher.
-1. Cliquez sur la rubrique à afficher.
+1. Cliquez sur la rubrique que vous souhaitez afficher.
 
    Un aperçu de la rubrique s’affiche dans l’interface utilisateur d’Assets.
 
    >[!NOTE]
    >
-   > Vous pouvez voir la version de la principale rubrique ou du mappage DITA dans le coin supérieur droit de l’onglet Fichier de la rubrique.
+   > Vous pouvez voir la version de la rubrique active ou du mappage DITA dans le coin supérieur droit de l’onglet Fichier de la rubrique.
 
    >[!IMPORTANT]
    >
@@ -36,7 +36,7 @@ Vous pouvez effectuer les opérations suivantes à partir de la barre d’outils
 
 **Propriétés.**
 
-Affichez les propriétés de la rubrique sélectionnée. En fonction de votre version d’AEM, vous pouvez voir des propriétés telles que les métadonnées, l’activation de la planification \(de\), les références, l’état du document, etc.
+Afficher les propriétés de la rubrique sélectionnée. En fonction de votre version d’AEM, vous pouvez voir des propriétés telles que les métadonnées, l’activation de la planification \(de\), les références, l’état du document, etc.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Affichez les propriétés de la rubrique sélectionnée. En fonction de votre ve
 
 La page Propriétés contient des informations utiles sur les références, telles que l’endroit où une carte ou une rubrique est utilisée ou les références contenues dans un document. La page Propriétés répertorie deux types de références pour un document : **Utilisé dans** et **Références sortantes**.
 
-Le **Utilisé dans** Les références répertorient les documents dans lesquels le fichier actif est référencé ou utilisé. Le **Références sortantes** répertorie les documents référencés dans le document actif.
+La variable **Utilisé dans** Les références répertorient les documents dans lesquels le fichier actif est référencé ou utilisé. La variable **Références sortantes** répertorie les documents qui sont référencés dans le document actif.
 
 L’icône \(+\) dans la variable **Utilisé dans** la section références vous permet de naviguer plus haut pour trouver où cette rubrique est utilisée ou référencée.
 
@@ -64,7 +64,7 @@ Si votre rubrique comporte du contenu conditionnel, l’icône A/B s’affiche d
 
 **Modifier**
 
-- Ouvrez la rubrique à modifier dans l’éditeur Web. Le **Modifier** ne sera pas disponible si votre administrateur a activé la variable **Désactiver la modification sans extraction** . Lorsque l’option est activée, le **Modifier** n’est disponible qu’après extraction d’un fichier de rubrique.
+- Ouvrez la rubrique à modifier dans l’éditeur Web. La variable **Modifier** ne sera pas disponible si votre administrateur a activé la variable **Désactiver la modification sans extraction** . Lorsque l’option est activée, le **Modifier** n’est disponible qu’après extraction d’un fichier de rubrique.
 
 **Résolution des clés**
 
@@ -74,11 +74,11 @@ Si votre rubrique comporte du contenu conditionnel, l’icône A/B s’affiche d
 
 - Ouvrez le code source XML d’un fichier. Vous pouvez afficher le code XML sous-jacent d’un fichier map, topic ou DITAVAL en ouvrant le fichier en mode Aperçu et en cliquant sur l’icône Source . La fenêtre contextuelle Source XML affiche le code source XML. Vous pouvez sélectionner un code spécifique dans le fichier ou appuyer sur la touche `Ctrl`+`a` pour sélectionner l’intégralité du contenu.
 
-   >[!NOTE]
-   >
-   > Pour obtenir l’affichage du code source d’un fichier de mappage DITA, sélectionnez le fichier dans l’interface utilisateur Assets et cliquez sur Source.
+  >[!NOTE]
+  >
+  > Pour obtenir l’affichage du code source d’un fichier de mappage DITA, sélectionnez le fichier dans l’interface utilisateur Assets et cliquez sur Source.
 
-   ![](images/xml-source-code-view-from-preview_cs.png){width="800" align="left"}
+  ![](images/xml-source-code-view-from-preview_cs.png){width="800" align="left"}
 
 **Partager le lien UUID**
 
@@ -128,9 +128,9 @@ Si la colonne Extraits n’est pas visible, sélectionnez **Paramètres d’affi
 
 - Si votre rubrique a fait l’objet de modifications, vous pouvez facilement trouver les modifications apportées dans différentes versions de cette rubrique. Pour découvrir les modifications apportées à différentes versions d’une rubrique :
 
-   >[!IMPORTANT]
-   >
-   > La méthode décrite dans la procédure suivante ne s’applique qu’aux fichiers DITA. Pour les fichiers autres que DITA, utilisez la vue Chronologie pour créer des versions ou restaurer une version existante d’un fichier.
+  >[!IMPORTANT]
+  >
+  > La méthode décrite dans la procédure suivante ne s’applique qu’aux fichiers DITA. Pour les fichiers autres que DITA, utilisez la vue Chronologie pour créer des versions ou restaurer une version existante d’un fichier.
 
    1. Ouvrez la rubrique en mode Aperçu .
 
@@ -157,19 +157,19 @@ Si la colonne Extraits n’est pas visible, sélectionnez **Paramètres d’affi
    - Création de versions ultérieures dans une nouvelle branche
    - Revenir à une version spécifique d’une rubrique
 
-   L’illustration suivante présente l’embranchement type et le système de contrôle de version suivant :
+  L’illustration suivante présente l’embranchement type et le système de contrôle de version suivant :
 
-   ![](images/branching_illustration.png){width="550" align="center"}
+  ![](images/branching_illustration.png){width="550" align="center"}
 
-   Pour toute nouvelle rubrique, la première version est numérotée 1.0. Par la suite, chaque nouvelle version de la rubrique est enregistrée avec un numéro incrémentiel tel que 1.1, 1.2, etc. Une fois que vous avez créé une branche d’une rubrique, une nouvelle branche prend le numéro de version à partir duquel la branche est créée et ajoute un 0 à la fin de la version. Comme le montre l’illustration, une nouvelle branche est créée à partir de la version 1.1 d’une rubrique. La nouvelle branche est versionnée sous la forme 1.1.0. Par la suite, chaque fois que vous enregistrez une nouvelle version de la rubrique dans cette branche, elle obtient un numéro de version incrémentielle tel que 1.1.1, 1.1.2, etc.
+  Pour toute nouvelle rubrique, la première version est numérotée 1.0. Par la suite, chaque nouvelle version de la rubrique est enregistrée avec un numéro incrémentiel tel que 1.1, 1.2, etc. Une fois que vous avez créé une branche d’une rubrique, une nouvelle branche prend le numéro de version à partir duquel la branche est créée et ajoute un 0 à la fin de la version. Comme le montre l’illustration, une nouvelle branche est créée à partir de la version 1.1 d’une rubrique. La nouvelle branche a la version 1.1.0. Par la suite, chaque fois que vous enregistrez une nouvelle version de la rubrique dans cette branche, elle obtient un numéro de version incrémentielle tel que 1.1.1, 1.1.2, etc.
 
-   Comme pour l’embranchement, vous pouvez rétablir votre version actuelle ou opérationnelle sur n’importe quelle version du référentiel. Pour revenir à une version, sélectionnez simplement la version souhaitée de la rubrique et cliquez sur **Revenir à cette version** dans le **Historique des versions** du panneau.
+  Comme pour l’embranchement, vous pouvez rétablir votre version actuelle ou opérationnelle sur n’importe quelle version du référentiel. Pour revenir à une version, sélectionnez simplement la version souhaitée de la rubrique et cliquez sur **Revenir à cette version** dans le **Historique des versions** du panneau.
 
-   Pour créer une branche, revenir à une version et conserver les versions suivantes d’une rubrique, procédez comme suit :
+  Pour créer une branche, revenir à une version et conserver les versions suivantes d’une rubrique, procédez comme suit :
 
-   >[!IMPORTANT]
-   >
-   > La méthode décrite dans la procédure suivante ne s’applique qu’aux fichiers DITA. Pour les fichiers autres que DITA, utilisez la vue Chronologie pour créer des versions ou restaurer une version existante d’un fichier.
+  >[!IMPORTANT]
+  >
+  > La méthode décrite dans la procédure suivante ne s’applique qu’aux fichiers DITA. Pour les fichiers autres que DITA, utilisez la vue Chronologie pour créer des versions ou restaurer une version existante d’un fichier.
 
    1. Accédez à la rubrique dans l’interface utilisateur d’Assets.
 
@@ -197,21 +197,23 @@ Si la colonne Extraits n’est pas visible, sélectionnez **Paramètres d’affi
 
       Un message s’affiche vous demandant de confirmer la création d’une nouvelle branche.
 
-   1. *\(Facultatif\)* Dans l’invite de message, vous avez la possibilité de sélectionner la variable **Enregistrer La Copie De Travail Actuelle En Tant Que Nouvelle Version**. Les deux actions suivantes sont possibles en fonction de la sélection de cette option :
+   1. *\(Facultatif\)* Dans l’invite de message, vous avez la possibilité de sélectionner la variable **Enregistrer La Copie De Travail Actuelle Comme Nouvelle Version**. Les deux actions suivantes sont possibles en fonction de la sélection de cette option :
 
       - Si vous sélectionnez cette option, une branche est créée à partir de la version 1.1. De plus, une nouvelle version de la rubrique est également créée à partir de la copie de travail actuelle de la rubrique et enregistrée comme version suivante - 1.4.
 
-         ![](images/next_version_created_over_working_copy.png){width="300" align="left"}
+        ![](images/next_version_created_over_working_copy.png){width="300" align="left"}
 
-         La version 1.2 devient votre copie de travail actuelle de la rubrique. Toute version enregistrée après cette opération est créée sous la nouvelle branche de 1.1. Par exemple, la version ultérieure d’une nouvelle rubrique de cette branche sera enregistrée sous la forme 1.2.0.
+        La version 1.2 devient votre copie de travail actuelle de la rubrique. Toute version enregistrée après cette opération est créée sous la nouvelle branche de 1.1. Par exemple, la version ultérieure d’une nouvelle rubrique dans cette branche sera enregistrée sous la version 1.2.0.
 
-         ![](images/new_version_in_branch.png){width="300" align="left"}
+        ![](images/new_version_in_branch.png){width="300" align="left"}
 
       - Si vous ne sélectionnez pas cette option, aucune nouvelle version de la copie de travail actuelle de la rubrique n’est créée. Une nouvelle branche est créée à partir de la version 1.2 de la rubrique. Toute version ultérieure de la rubrique est enregistrée sous la branche 1.2 sous 1.2.0, 1.2.1, etc.
 
-         ![](images/new_version_without_working_copy.png){width="300" align="left"}
+        ![](images/new_version_without_working_copy.png){width="300" align="left"}
+
    1. Cliquez sur **OK**.
-   Une nouvelle branche est créée à partir de la version sélectionnée de la rubrique. Le processus ci-dessus s’applique également pour revenir à une version spécifique d’une rubrique. Techniquement, la restauration d’une version spécifique signifie que vous créez une branche à partir de la version sélectionnée et que vous faites de cette version la copie de travail actuelle de la rubrique. Vous pouvez également afficher l’historique des fichiers qui ont été restaurés dans le rapport Historique de rétablissement de version . Pour plus d’informations sur ce rapport, voir [Rapport Historique des versions des fichiers restaurés](reports-reverted-file-version-history.md#).
+
+
+  Une nouvelle branche est créée à partir de la version sélectionnée de la rubrique. Le processus ci-dessus s’applique également pour revenir à une version spécifique d’une rubrique. Techniquement, la restauration d’une version spécifique signifie que vous créez une branche à partir de la version sélectionnée et que vous faites de cette version la copie de travail actuelle de la rubrique. Vous pouvez également afficher l’historique des fichiers qui ont été restaurés dans le rapport Historique de rétablissement de version . Pour plus d’informations sur ce rapport, voir [Rapport Historique des versions des fichiers restaurés](reports-reverted-file-version-history.md#).
 
 **Rubrique parente :**[ Création et prévisualisation des rubriques](create-preview-topics.md)
-

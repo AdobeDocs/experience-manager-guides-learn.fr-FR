@@ -1,13 +1,13 @@
 ---
 title: Gestion des métadonnées
-description: Découvrez comment gérer les métadonnées
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+description: Découvrez comment définir et gérer des métadonnées dans AEM Guides. Utilisez le balisage intelligent et en masse pour trouver facilement les rubriques connexes dans un mappage DITA.
+exl-id: 842f1b41-9146-4de3-bcc0-38c10646a032
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '165'
 ht-degree: 2%
 
 ---
-
 
 # Gestion des métadonnées {#id221EJ0500LI}
 
@@ -20,5 +20,3 @@ Les ressources Adobe Experience Manager prennent en charge l’ajout, la modific
 - **[Balisage intelligent](web-editor-smart-tagging.md)**
 
 - **[Balisage en masse de contenu DITA](map-editor-bulk-tagging.md)**
-
-

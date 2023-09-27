@@ -1,10 +1,10 @@
 ---
 title: Lancement de l’éditeur web
-description: Découvrez comment lancer l’éditeur web
+description: Découvrez comment lancer l’éditeur web à partir de la page de navigation d’AEM, de l’interface utilisateur d’AEM Assets et de la console de mappage DITA dans AEM Guides.
 exl-id: f02f9612-7aaa-42ea-bad3-c44d23b5d034
-source-git-commit: dce7b1c97f8f7f79b313b08ca0489e8e50b633ec
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -31,26 +31,26 @@ Cliquez sur le bouton **Guides** permet d’accéder directement à l’éditeur
 
 Comme vous avez lancé l’éditeur Web sans sélectionner de fichier, un écran d’éditeur Web vierge s’affiche. Vous pouvez ouvrir un fichier pour le modifier à partir du référentiel AEM ou de votre collection Favoris.
 
-- Cliquez sur le bouton **Guides** Icône (![](images/aem-guides-icon.png) ), pour revenir à la page de navigation AEM.
+- Cliquez sur le bouton **Guides** icône (![](images/aem-guides-icon.png) ), pour revenir à la page de navigation AEM.
 
-- Le **Fermer** permet d’accéder à une destination en fonction de votre configuration :
+- La variable **Fermer** permet d’accéder à une destination en fonction de votre configuration :
 
 
 
-   <details>
+  <details>
 
-   <summary> Services cloud </summary>
+  <summary> Services cloud </summary>
 
-   Si vous utilisez des Cloud Services, cliquez sur le bouton **Fermer** pour revenir à la page de navigation AEM.
-   </details>
+  Si vous utilisez des Cloud Service, cliquez sur le bouton **Fermer** pour revenir à la page de navigation AEM.
+  </details>
 
-   <details>
+  <details>
 
-   <summary> Logiciel On-Premise</summary>
+  <summary> Logiciel On-Premise</summary>
 
-   Si vous utilisez AEM Guides du logiciel On-premise (4.2.1 et versions ultérieures), cliquez sur le bouton **Fermer** sur la droite pour revenir au chemin d’accès au fichier actif dans l’interface utilisateur d’Assets.
+  Si vous utilisez AEM Guides du logiciel On-premise (4.2.1 et versions ultérieures), cliquez sur le bouton **Fermer** sur la droite pour revenir au chemin d’accès au fichier actif dans l’interface utilisateur d’Assets.
 
-   </details>
+  </details>
 
 ## Interface utilisateur d’AEM Assets {#id2056BG0307U}
 
@@ -70,7 +70,7 @@ L’interface utilisateur d’AEM Assets vous permet également de lancer l’é
    >
    > Assurez-vous que vous disposez des autorisations de lecture et d’écriture sur le dossier contenant la rubrique que vous souhaitez modifier.
 
-1. Pour obtenir un verrou exclusif sur la rubrique, sélectionnez la rubrique et cliquez sur **Extraire**.
+1. Pour obtenir un verrouillage exclusif sur la rubrique, sélectionnez la rubrique et cliquez sur **Extraire**.
 
    >[!IMPORTANT]
    >

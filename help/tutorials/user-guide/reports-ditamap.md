@@ -1,10 +1,10 @@
 ---
 title: Rapport de mappage DITA à partir du tableau de bord de mappage
-description: Découvrez comment mapper le rapport DITA à partir du tableau de bord de mappage
+description: Générez des rapports de mappage DITA à partir du tableau de bord de mappage dans AEM Guides. Découvrez comment générer le fichier CSV d’un rapport de mappage DITA.
 exl-id: 8ba1dc83-fa96-4ae0-bfa8-89b5a8949f08
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '742'
 ht-degree: 0%
 
 ---
@@ -29,45 +29,44 @@ Effectuez les étapes suivantes pour afficher le rapport de mappage DITA :
 
    - **Résumé de la rubrique :**
 
-      Répertorie le résumé global du fichier de mappage sélectionné. En regardant le résumé, vous pouvez rapidement connaître le nombre total de rubriques dans la carte, les rubriques manquantes, le nombre de rubriques comportant des éléments manquants, l’état des rubriques — En version préliminaire, En révision ou En révision.
+     Répertorie le résumé global du fichier de mappage sélectionné. En regardant le résumé, vous pouvez rapidement connaître le nombre total de rubriques dans la carte, les rubriques manquantes, le nombre de rubriques comportant des éléments manquants, l’état des rubriques — En version préliminaire, En révision ou En révision.
 
    - **Détails:**
 
-      Lorsque vous cliquez sur une rubrique, un rapport détaillé de la rubrique sélectionnée s’affiche.
+     Lorsque vous cliquez sur une rubrique, un rapport détaillé de la rubrique sélectionnée s’affiche.
 
-      ![](images/detailed-report-uuid.png){width="800" align="left"}
+     ![](images/detailed-report-uuid.png){width="800" align="left"}
 
-      Éléments surlignés sous **A**, **B**, **C** et **D** sont décrites ci-dessous :
+     Éléments surlignés sous **A**, **B**, **C** et **D** sont décrites ci-dessous :
 
-      - **Rubrique**: Titre de la rubrique spécifiée dans le mappage DITA. Placez le pointeur de la souris sur le titre de la rubrique pour afficher le chemin d’accès complet de la rubrique. S’il existe des problèmes dans la rubrique, tels que des références ou des images manquantes, un point rouge s’affiche avant le titre de la rubrique.
+      - **Rubrique**: titre de la rubrique spécifié dans le mappage DITA. Placez le pointeur de la souris sur le titre de la rubrique pour afficher le chemin d’accès complet de la rubrique. S’il existe des problèmes dans la rubrique, tels que des références ou des images manquantes, un point rouge s’affiche avant le titre de la rubrique.
 
-      - **Nom du fichier**: Nom du fichier.
+      - **Nom du fichier**: nom du fichier.
 
-      - **UUID**: L’identifiant unique universelle \(UUID\) du fichier.
+      - **UUID**: identifiant unique universelle \(UUID\) du fichier.
 
-      - **Auteur**: Utilisateur ayant travaillé en dernier sur cette rubrique.
+      - **Auteur**: utilisateur qui a travaillé en dernier sur cette rubrique.
 
-      - **État du document**: L’état actuel du document (brouillon, en révision ou révision).
+      - **État du document**: état actuel du document (brouillon, en révision ou révision).
 
-      - **Rubriques manquantes \(B\)**: S’il existe des rubriques avec des références rompues, ces rubriques sont répertoriées sous la liste Rubriques manquantes.
+      - **Rubriques manquantes \(B\)**: s’il existe des rubriques avec des références rompues, ces rubriques sont répertoriées sous la liste Rubriques manquantes.
 
-      - **Éléments manquants**: Répertorie le nombre d’images manquantes ou de références croisées rompues, le cas échéant.
+      - **Éléments manquants**: liste le nombre d’images manquantes ou de références croisées rompues, le cas échéant.
 
-      - **Ouvrir dans l’éditeur \(D\)**: Cliquez sur cette icône pour ouvrir la rubrique dans l’éditeur web.
+      - **Ouvrir dans l’éditeur \(D\)**: lorsque vous cliquez sur cette icône, la rubrique s’ouvre dans l’éditeur web.
+
 
    Éléments surlignés sous **E** sont décrites ci-dessous :
 
-   - **Multimédia**: Le chemin d’accès aux images utilisées dans la rubrique est affiché avec son UUID. Si vous cliquez sur le chemin de l’image, l’image correspondante est ouverte dans une fenêtre contextuelle. Les liens d’image rompus sont répertoriés en rouge.
+   - **Multimédia**: le chemin des images utilisées dans la rubrique est affiché avec son UUID. Si vous cliquez sur le chemin de l’image, l’image correspondante est ouverte dans une fenêtre contextuelle. Les liens d’image rompus sont répertoriés en rouge.
 
-   - **Références de contenu**: Le chemin d’accès au contenu référencé dans la rubrique est affiché avec son UUID. Si vous cliquez sur le titre du contenu référencé, la rubrique correspondante est ouverte en mode Aperçu.
+   - **Références de contenu**: le chemin d’accès au contenu référencé dans la rubrique est affiché avec son UUID. Si vous cliquez sur le titre du contenu référencé, la rubrique correspondante est ouverte en mode Aperçu.
 
-   - **Référence croisée**: Le chemin d’accès au contenu référencé est affiché avec son UUID. Si vous cliquez sur le titre du contenu référencé, la rubrique correspondante est ouverte en mode Aperçu. Les références croisées rompues sont répertoriées en rouge.
+   - **Référence croisée**: le chemin d’accès au contenu référencé est affiché avec son UUID. Si vous cliquez sur le titre du contenu référencé, la rubrique correspondante est ouverte en mode Aperçu. Les références croisées rompues sont répertoriées en rouge.
 
-   - **Réviser**: Affiche l’état de la tâche de révision de la rubrique. Vous pouvez voir l’état \(ouverture ou fermeture\), la date d’échéance et la personne désignée pour la rubrique en cours de révision. Si vous cliquez sur le lien de la rubrique, elle s’ouvre en mode de révision.
+   - **Réviser**: affiche l’état de la tâche de révision de la rubrique. Vous pouvez voir l’état \(ouverture ou fermeture\), la date d’échéance et la personne désignée pour la rubrique en cours de révision. Si vous cliquez sur le lien de la rubrique, elle s’ouvre en mode de révision.
 
-   - **Utilisé dans**: Affiche une liste d’autres rubriques ou mappages où la rubrique est utilisée. L’UUID de toutes ces rubriques et cartes est également répertorié.
-
-
+   - **Utilisé dans**: affiche une liste d’autres rubriques ou mappages où la rubrique est utilisée. L’UUID de toutes ces rubriques et cartes est également répertorié.
 
 Outre le rapport pour chaque rubrique, les administrateurs ont également accès à des informations telles que l’historique de publication d’un mappage DITA. Pour plus d’informations sur l’historique des sorties générées, voir [Afficher l&#39;état de la tâche de génération de sortie](generate-output-for-a-dita-map.md#viewing_output_history).
 

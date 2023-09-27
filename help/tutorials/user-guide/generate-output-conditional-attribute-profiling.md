@@ -1,10 +1,10 @@
 ---
 title: profilage conditionnel des attributs
-description: Découvrez comment profiler des attributs conditionnels
+description: Découvrez comment créer des attributs conditionnels dans AEM Guides. Utilisez des attributs conditionnels dans le dossier et les profils globaux pour conditionner votre contenu.
 exl-id: 31b0ffe6-44e7-459d-a8df-a64ec868768c
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '481'
 ht-degree: 1%
 
 ---
@@ -47,12 +47,12 @@ Pour définir des attributs conditionnels, procédez comme suit :
 
 1. Si vous souhaitez ajouter d’autres valeurs pour le même attribut, cliquez sur le bouton **+** et saisissez une valeur et un libellé supplémentaires.
 
-1. Si vous souhaitez ajouter d’autres attributs, cliquez sur **Ajouter**.
+1. Pour ajouter d’autres attributs, cliquez sur **Ajouter**.
 
 1. Cliquez sur **Enregistrer** pour enregistrer les modifications.
 
 
-Le `platform` est stocké dans le système. Lorsqu’un auteur décide d’utiliser la variable `platform` dans une rubrique DITA dans un dossier, les valeurs s’affichent dans l’onglet Propriétés de l’éditeur web.
+La variable `platform` est stocké dans le système. Lorsqu’un auteur décide d’utiliser la variable `platform` dans une rubrique DITA dans un dossier, les valeurs s’affichent dans l’onglet Propriétés de l’éditeur web.
 
 ![](images/properties-tab.png){width="350" align="left"}
 

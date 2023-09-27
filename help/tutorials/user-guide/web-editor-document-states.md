@@ -1,10 +1,10 @@
 ---
 title: État du document
-description: Découvrez comment Document state
+description: Découvrez les types d’états de document dans AEM Guides. Découvrez comment modifier ou afficher l’état du document et utiliser l’état du document dans DDLC.
 exl-id: 6ab85a63-02d2-4802-a6b8-99e6551a567b
-source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Un document peut avoir l’un des états de document définis dans le profil Doc
 
 Ces états sont définis manuellement ou automatiquement, conformément aux paramètres de profil Document States . Par exemple, si le profil Etat du document est configuré avec l’état de départ comme brouillon et que l’état In-Review est défini pour les documents en cours de révision. Ensuite, lorsque vous créez un document, l’état du document est défini sur *Version préliminaire*. Si vous lancez une tâche de révision, l’état du document est alors modifié en In-Review.
 
-Vous pouvez également modifier manuellement l’état du document pour un ou plusieurs documents. Cependant, si vous choisissez de modifier l’état du document pour plusieurs documents, l’état autorisé est déterminé par les états communs autorisés pour les documents sélectionnés. Supposons, par exemple, que vous ayez défini les états du document comme Brouillon, En révision, Révisé et Prêt à publier, dans le même ordre. Dans le document one.dita, l’état est défini sur *Version préliminaire* et sur le document two.dita, l’état est défini sur Révision. Lorsque vous sélectionnez à la fois : one.dita et two.dita, l’état du document autorisé est *Prêt à publier*. Comme le fait le dictionnaire two.dita dans *Révisé* état, le prochain état possible de two.dita n’est que *Prêt à publier*, qui s’affiche lorsque les deux documents sont sélectionnés.
+Vous pouvez également modifier manuellement l’état du document pour un ou plusieurs documents. Cependant, si vous choisissez de modifier l’état du document pour plusieurs documents, l’état autorisé est déterminé par les états communs autorisés pour les documents sélectionnés. Supposons, par exemple, que vous ayez défini les états du document comme Brouillon, En révision, Révisé et Prêt à publier, dans le même ordre. Dans le document one.dita, l’état est défini sur *Version préliminaire* et sur le document two.dita, l’état est défini sur Révision. Lorsque vous sélectionnez à la fois : one.dita et two.dita, l’état du document autorisé est *Prêt à publier*. Comme le fait le dictionnaire two.dita dans *Révisé* état, le prochain état possible de two.dita est uniquement *Prêt à publier*, qui s’affiche lorsque les deux documents sont sélectionnés.
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Le mode Carte de l’interface utilisateur d’Assets affiche l’état actuel a
 
 Les états de document jouent un rôle important dans la gestion du cycle de vie des documents dans DDLC. Si votre entreprise suit strictement le DDLC, disposer d’un mécanisme de contrôle de la modification des documents en fonction de leur état devient une fonctionnalité essentielle. Par exemple, vous pouvez autoriser la modification de documents lorsqu’ils se trouvent dans *Version préliminaire* ou *En cours de révision* états. Cependant, une fois qu’un document est révisé et prêt à être publié, il doit y avoir un moyen d’empêcher toute modification supplémentaire des documents.
 
-AEM Guides fournit un processus d’approbation de document qui vous aide à contrôler le cycle de vie de votre processus de développement de documents. Une fois qu’un document est prêt à être publié ou qu’il a atteint l’avant-dernier état, vous pouvez le marquer comme approuvé. Une fois qu’un document est approuvé, AEM Guides crée une nouvelle version du document et le rend en lecture seule. Vous pouvez ensuite déplacer le document pour le publier ou créer une ligne de base pour un traitement ultérieur.
+AEM Guides fournit un processus d’approbation de document qui vous aide à contrôler le cycle de vie de votre processus de développement de documents. Une fois qu’un document est prêt à être publié ou qu’il a atteint l’avant-dernier état, vous pouvez le marquer comme approuvé. Une fois qu’un document est approuvé, AEM Guides crée une nouvelle version du document et le rend en lecture seule. Vous pouvez ensuite déplacer le document à des fins de publication ou créer une ligne de base pour un traitement ultérieur.
 
 Pour lancer une nouvelle version à partir des documents marqués comme approuvés, un auteur doit lancer une nouvelle version. Le lancement d’une nouvelle version modifie l’état du document en *Version préliminaire* encore une fois. En définissant l’état du document sur *Version préliminaire*, le document est à nouveau modifiable et vous pouvez continuer à travailler sur la prochaine version.
 
@@ -61,11 +61,11 @@ Pour utiliser la fonction d’approbation de document, procédez comme suit :
 
 >[!NOTE]
 >
-> La fonction de workflow d’approbation doit être activée par votre administrateur. Pour plus d’informations, voir *Activer le workflow de validation* dans la section Installation et configuration d’Adobe Experience Manager Guides as a Cloud Service.
+> La fonction de workflow d’approbation doit être activée par votre administrateur. Pour plus d’informations, voir *Activer le workflow de validation* dans la section Installation et configuration de Adobe Experience Manager Guides as a Cloud Service.
 
 1. Dans l’éditeur Web, ouvrez le document que vous souhaitez marquer pour approbation.
 
-1. Cliquez sur le bouton **Marquer comme approuvé**![](images/mark_approve_icon.svg) icône .
+1. Cliquez sur le bouton **Marquer comme approuvé**![](images/mark_approve_icon.svg) Icône
 
 1. Si votre document doit être marqué comme approuvé, la boîte de dialogue suivante s’affiche :
 
@@ -87,12 +87,12 @@ Pour utiliser la fonction d’approbation de document, procédez comme suit :
 
    >[!NOTE]
    >
-   > En mode Aperçu , toutes les options de modification sont supprimées de la barre d’outils. En outre, les vues Auteur et Source du document ont également été supprimées de la navigation supérieure.
+   > En mode Aperçu , toutes les options de modification sont supprimées de la barre d’outils. En outre, les vues Auteur et Source du document ont également été supprimées de la barre de navigation supérieure.
 
 
-Une fois qu’un document est marqué comme approuvé, il ne peut plus être modifié. Si vous souhaitez utiliser le document pour la prochaine version, vous devez le ramener à la *Version préliminaire* état. Pour rétablir l’état du document d’un document approuvé sur *Version préliminaire* , procédez comme suit :
+Une fois qu’un document est marqué comme approuvé, il ne peut plus être modifié. Si vous souhaitez utiliser le document pour la prochaine version, vous devez le ramener à la *Version préliminaire* état. Pour rétablir l’état du document d’un document approuvé sur *Version préliminaire* en mode , procédez comme suit :
 
-1. Dans un document approuvé, cliquez sur le bouton **Démarrage d’une nouvelle version** Icône ![](images/approved-restart-draft-mode-icon.svg).
+1. Dans un document approuvé, cliquez sur l’icône **Commencer une nouvelle version** Icône ![](images/approved-restart-draft-mode-icon.svg).
 
    Le message Démarrer une nouvelle version s’affiche.
 

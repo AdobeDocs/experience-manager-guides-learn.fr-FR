@@ -1,13 +1,13 @@
 ---
 title: EPUB
-description: Découvrez comment EPUB
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+description: Générez et configurez la sortie EPUB pour les documents de FrameMaker dans AEM Guides.
+exl-id: 5c9d4b78-94bd-46b7-891e-33d7df596ca3
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '175'
 ht-degree: 5%
 
 ---
-
 
 # EPUB {#id205BB0V0PQZ}
 
@@ -25,5 +25,4 @@ Les options suivantes sont disponibles pour la sortie en EPUB :
 | Chemin de destination | Chemin d’accès dans votre référentiel AEM où est stockée la sortie de l’EPUB. |
 | Exécuter le processus de génération de publication | Lorsque vous sélectionnez cette option, une nouvelle liste déroulante Processus de génération de publication s’affiche, contenant tous les workflows configurés dans AEM. Vous devez sélectionner un workflow à exécuter une fois le workflow de génération de sortie terminé. |
 
-**Rubrique parente :**[ Génération d’une sortie de documents FrameMaker](fm-output-generatation.md)
-
+**Rubrique parente :**[ Générer une sortie de documents de FrameMaker](fm-output-generatation.md)
