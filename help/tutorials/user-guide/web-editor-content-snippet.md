@@ -1,13 +1,13 @@
 ---
 title: Insertion d’un fragment de contenu à partir de votre source de données
 description: Utilisez les données de votre source de données dans AEM Guides. Découvrez comment insérer un fragment de contenu de votre source de données. Créez une rubrique à l’aide du générateur de rubriques.
-source-git-commit: 87aef92535b7204503cd4ed1da838b43b1133b04
+exl-id: 9d60499c-49b4-4793-b3ec-5c99b34338e0
+source-git-commit: e8503e1441b7bc365d37c76ab9cf7b5f50374f10
 workflow-type: tm+mt
-source-wordcount: '2028'
+source-wordcount: '2029'
 ht-degree: 0%
 
 ---
-
 
 # Utiliser les données de votre source de données
 
@@ -23,7 +23,7 @@ Selon votre configuration, votre administrateur peut configurer un connecteur de
 <summary> Services cloud </summary>
 
 
-- Si vous utilisez la version d’octobre 2023 ou une version ultérieure, découvrez comment [configurer un connecteur de source de données à l’aide des outils](../cs-install-guide/conf-data-source-connector-tools.md) dans le Guide d&#39;installation et de configuration de Cloud Service.
+- Si vous utilisez la version d’octobre 2023 ou une version ultérieure, découvrez comment [configurer un connecteur de source de données à partir de l’interface utilisateur](../cs-install-guide/conf-data-source-connector-tools.md) dans le Guide d&#39;installation et de configuration de Cloud Service.
 
 - Si vous utilisez la version de juillet 2023 ou de septembre 2023, découvrez comment [configurer un connecteur de source de données](../cs-install-guide/conf-data-source-connector.md) dans le Guide d&#39;installation et de configuration de Cloud Service.
 
@@ -273,6 +273,3 @@ Vous pouvez utiliser les outils suivants dans les modèles Velocity pour appliqu
 - `$renderTool`
 - `$resourceTool`
 - `$sortTool`
-
-
-

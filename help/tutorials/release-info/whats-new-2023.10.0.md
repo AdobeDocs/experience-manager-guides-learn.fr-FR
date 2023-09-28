@@ -1,9 +1,10 @@
 ---
 title: Notes de mise à jour | Nouveautés des guides Adobe Experience Manager, version d’octobre 2023
 description: Découvrez les nouvelles fonctionnalités et les fonctionnalités améliorées de la version d’octobre 2023 de Adobe Experience Manager Guides as a Cloud Service.
-source-git-commit: 87aef92535b7204503cd4ed1da838b43b1133b04
+exl-id: 583bc9fe-1e61-4727-869b-0dbc19625f70
+source-git-commit: e8503e1441b7bc365d37c76ab9cf7b5f50374f10
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -15,11 +16,11 @@ Cet article couvre les nouvelles fonctionnalités et les fonctionnalités améli
 Pour plus d’informations sur les instructions de mise à niveau, la matrice de compatibilité et les problèmes résolus dans cette version, voir [Notes de mise à jour](release-notes-2023.10.0.md).
 
 
-## Configuration d’un connecteur de source de données à l’aide des outils
+## Configurer un connecteur de source de données à partir de l’interface utilisateur
 
 Les guides du Experience Manager fournissent désormais une **Sources de données** qui vous aide à configurer des connecteurs prêts à l’emploi pour les sources de données. Vous pouvez facilement créer les connecteurs pour JIRA, SQL (MySQL, PostgreSQL, Microsoft SQL Server, SQLite, MariaDB, H2DB), AdobeCommerce et les bases de données Elasticsearch.
 
-Vous pouvez également facilement modifier, reconnecter, dupliquer ou supprimer un connecteur de source de données. Découvrez comment [configurer un connecteur de source de données à l’aide des outils](../cs-install-guide/conf-data-source-connector-tools.md).
+Vous pouvez également facilement modifier, reconnecter, dupliquer ou supprimer un connecteur de source de données. Découvrez comment [configurer facilement un connecteur de source de données à partir de l’interface utilisateur](../cs-install-guide/conf-data-source-connector-tools.md).
 
 ![connecteurs de source de données répertoriés dans le panneau des sources de données](assets/data-sources-create-window.png){width="550" align="left"}
 
@@ -65,4 +66,3 @@ Pour plus d’informations, reportez-vous au **Vue Carte** description des fonct
 Les guides du Experience Manager vous permettent désormais de sélectionner un fichier dans l’éditeur web, puis de choisir de modifier le fichier dans le module externe du connecteur Oxygen. Cette option n’est pas activée dans le cadre de la prise en charge prête à l’emploi.
 
 Pour plus d’informations, reportez-vous au **Options d’un fichier** description des fonctionnalités dans la section [Panneau gauche](../user-guide/web-editor-features.md#id2051EA0M0HS) .
-

@@ -1,10 +1,11 @@
 ---
 title: Notes de mise à jour | Instructions de mise à niveau et problèmes résolus dans les guides Adobe Experience Manager, version d’octobre 2023
 description: Découvrez les correctifs et comment mettre à niveau vers la version d’octobre 2023 des Guides Adobe Experience Manager as a Cloud Service
-source-git-commit: 4ce9024579aeaa97e6e35ac777ee3c14f0061aa6
+exl-id: fb1b74d7-25f2-4a20-9248-44dfdabf553d
+source-git-commit: e8503e1441b7bc365d37c76ab9cf7b5f50374f10
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 3%
+source-wordcount: '1017'
+ht-degree: 2%
 
 ---
 
@@ -159,8 +160,9 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 
 - De nouveaux projets de traduction sont créés au lieu d’ajouter de nouvelles tâches aux projets de traduction existants sélectionnés.  (10214)
 
+## Problème connu
 
+Adobe a identifié le problème connu suivant pour la version d’octobre 2023.
 
-
-
+- La republication du fragment de contenu échoue.
 

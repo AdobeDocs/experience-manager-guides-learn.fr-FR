@@ -1,15 +1,17 @@
 ---
 title: Configuration d’un connecteur de source de données à l’aide d’outils
 description: Découvrez comment configurer un connecteur de source de données à l’aide des outils.
-source-git-commit: 87e907a1fbc27c9b3f8db5e4ab3c78143b03001e
+exl-id: b73ceb8d-caf0-4752-a6d9-07985cdf741e
+source-git-commit: e8503e1441b7bc365d37c76ab9cf7b5f50374f10
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
 
 
-# Configuration d’un connecteur de source de données à l’aide des outils
+
+# Configurer un connecteur de source de données à partir de l’interface utilisateur
 
 Les guides du Experience Manager sont fournis avec la variable **Sources de données** qui vous aide à configurer des connecteurs prêts à l’emploi pour les sources de données. Vous pouvez configurer des connecteurs pour JIRA, SQL (MySQL, PostgreSQL, Microsoft SQL Server, SQLite, MariaDB, H2DB), AdobeCommerce et des bases de données Elasticsearch.
 
@@ -74,7 +76,3 @@ Vous affichez une erreur si le connecteur portant le même nom existe.
 
 
 Une fois que vous avez configuré la source de données, le connecteur est répertorié sous le **Panneau Sources de données** dans l’éditeur Web. Vous pouvez ensuite vous connecter à la source de données et insérer un fragment de contenu dans vos rubriques. Pour plus d’informations, voir [Insertion d’un fragment de contenu à partir de votre source de données](../user-guide/web-editor-content-snippet.md).
-
-
-
-
