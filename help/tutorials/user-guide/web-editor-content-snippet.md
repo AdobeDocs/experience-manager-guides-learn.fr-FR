@@ -1,10 +1,10 @@
 ---
 title: Insertion d’un fragment de contenu à partir de votre source de données
 description: Utilisez les données de votre source de données dans AEM Guides. Découvrez comment insérer un fragment de contenu de votre source de données. Créez une rubrique à l’aide du générateur de rubriques.
-exl-id: 9d60499c-49b4-4793-b3ec-5c99b34338e0
-source-git-commit: e8503e1441b7bc365d37c76ab9cf7b5f50374f10
+exl-id: fbd5eff2-451b-49d6-ba77-6eb271e94349
+source-git-commit: f7a0140a274a83dfeb6a1ba70ae9c09297d1754c
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2060'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,9 @@ Selon votre configuration, votre administrateur peut configurer un connecteur de
 <details>    
 <summary>  Logiciel On-Premise </summary>
 
-Découvrez comment [configurer un connecteur de source de données](../install-guide/conf-data-source-connector.md)  dans le Guide d&#39;installation et de configuration On-premise.
+- Si vous utilisez la version 4.3.1 ou ultérieure, découvrez comment [configurer un connecteur de source de données à partir de l’interface utilisateur](../cs-install-guide/conf-data-source-connector-tools.md) dans le Guide d&#39;installation et de configuration On-premise.
+
+- Si vous utilisez la version 4.3, découvrez comment [configurer un connecteur de source de données](../cs-install-guide/conf-data-source-connector.md) dans le Guide d&#39;installation et de configuration On-premise.
 </details>
 
 

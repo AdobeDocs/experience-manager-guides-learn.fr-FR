@@ -1,10 +1,10 @@
 ---
 title: Présentation des fonctionnalités de l’éditeur web
 description: Découvrez les fonctionnalités de l’éditeur web dans AEM Guides. Découvrez l’interface de l’éditeur web, notamment la barre d’outils principale, la barre d’outils secondaire, le panneau de gauche, la zone d’édition de contenu et le panneau de droite.
-exl-id: 38b378ff-da24-4560-a17f-a2c547aea1b8
-source-git-commit: a209e46e41055348402292e20c229890cd0c01cf
+exl-id: 340cf72e-e44d-4df2-8312-50d00ac651b7
+source-git-commit: f7a0140a274a83dfeb6a1ba70ae9c09297d1754c
 workflow-type: tm+mt
-source-wordcount: '16066'
+source-wordcount: '16500'
 ht-degree: 0%
 
 ---
@@ -141,17 +141,62 @@ Dans la capture d’écran suivante, seuls 3 éléments configurés sur 4 de la 
 
 - **Liste d’attributs**: à l’instar de la liste des éléments, vous pouvez contrôler la liste des attributs et leurs noms d’affichage à afficher dans la liste des attributs d’un élément. Dans la capture d’écran suivante, seuls 3 attributs ont été configurés pour s’afficher dans la liste d’attributs d’un élément :
 
-![](images/editor-setting-attributes-list.png){width="650" align="left"}
+  ![](images/editor-setting-attributes-list.png){width="650" align="left"}
 
-Avec ce paramètre, lorsque vous essayez d’ajouter un attribut à un élément, vous ne voyez que la liste des attributs configurés dans la liste.
+  Avec ce paramètre, lorsque vous essayez d’ajouter un attribut à un élément, vous ne voyez que la liste des attributs configurés dans la liste.
 
-![](images/editor-setting-add-attributes-list.png-to-element.PNG){width="300" align="left"}
+  ![](images/editor-setting-add-attributes-list.png-to-element.PNG){width="300" align="left"}
+
+- **Profil de publication**: contient les profils de publication qui peuvent être utilisés pour publier la sortie de la base de connaissances. Vous pouvez créer un profil pour un type de consommateur sélectionné. Par exemple, Salesforce.
+
+   - **Conditions requises pour créer un profil de publication Salesforce**
+
+      - Créez une application connectée pour Salesforce. Pour plus d’informations, voir [Activation des paramètres OAuth pour l’intégration d’API](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&amp;type=5).
+
+      - Lors de la configuration de l’application connectée, vérifiez les éléments suivants :
+
+         - Spécifiez le rappel.
+
+           `URL: http://: <server name>:<port>/bin/dxml/thirdparty/callback/salesforce`
+
+         - Sélectionnez les périmètres OAuth suivants :
+            - Accès complet (complet)
+            - Sélectionnez Gérer les données utilisateur via les API (api).
+
+  Une fois l’application configurée, Salesforce fournit une **Clé client** et **Secret du client**.
+
+  Ils peuvent être utilisés pour créer le profil de publication Salesforce.
+  ![profils dans les paramètres de l’éditeur](./images/create-profile-editor-settings.png){width="300" align="left"}
+
+
+
+- Pour créer un profil de publication, vous pouvez sélectionner une base de connaissances telle que Salesforce à partir de la **Type de serveur** menu déroulant. Saisissez un nom de profil. Dans le **URL du site** accédez au site destiné aux consommateurs que vous utiliserez pour publier la sortie, puis ajoutez le **Clé client** et **Secret du client** fourni par le site client comme Salesforce. Connectez-vous ensuite au profil nouvellement créé.
+
+  >[!NOTE]
+  >
+  >Pour configurer un proxy pour Salesforce dans les guides du Experience Manager, utilisez la configuration du proxy des composants HTTP Apache dans AEM. Découvrez comment [Configuration du proxy pour le vérificateur de lien d’AEM](https://helpx.adobe.com/experience-manager/kb/How-to-configure-proxy-for-the-AEM-Link-Checker-AEM.html).
+
+
+  Après vous être connecté, vous pouvez sélectionner le profil de publication dans les paramètres prédéfinis de sortie d’une carte DITA et l’utiliser pour générer la sortie pour les articles sélectionnés. Pour plus d’informations, voir [Publication basée sur des articles à partir de l’éditeur web](../install-guide/configure-article-based-publishing.md) dans le Guide d&#39;installation et de configuration.
+
+- **Validation**: cet onglet contient les options de configuration des validations de schémas dans l’éditeur web. Vous pouvez activer les fonctionnalités suivantes :
+
+   - **Exécutez la vérification de validation avant d’enregistrer le fichier.**: sélectionnez cette option pour exécuter les validations de schéma à l’aide du ou des fichiers de schéma sélectionnés avant toute opération d’enregistrement. Vous pouvez ajouter un fichier de schéma en cliquant sur l’icône + . Le ou les fichiers de schéma sélectionnés sont répertoriés.
+
+     >[!NOTE]
+     >Le ou les fichiers de schéma sélectionnés seront conservés pour le profil de dossier sélectionné.
+
+     ![Validation dans les paramètres de l’éditeur](./images/editor-setting-validation.png){width="300" align="left"}
+Cela empêche les utilisateurs d’enregistrer un fichier qui rompt une règle définie dans le ou les fichiers de schéma sélectionnés. Si cette option n’est pas sélectionnée, le fichier ne sera pas validé avant d’enregistrer les modifications.
+
+   - **Autoriser tous les utilisateurs à ajouter des fichiers de schéma dans le panneau de validation**: sélectionnez cette option pour permettre aux utilisateurs d’ajouter n’importe quel fichier de schéma dans le panneau Validation de l’éditeur web. Cela permet aux utilisateurs d’ajouter des fichiers de schéma, puis de valider les rubriques par rapport au fichier de schéma. Si cette option n’est pas sélectionnée, l’événement **Ajouter un fichier de schéma** n’est pas disponible pour les utilisateurs de la fonction **Panneau de validation** de l’éditeur Web.
+
 
 - **Attributs d’affichage**: tout comme la liste des attributs, vous pouvez contrôler la liste des attributs à afficher dans la liste des attributs d’un élément. Par défaut, quatre **Attributs d’affichage** — audience, plateforme, produit et props ont été configurés pour s’afficher dans la liste d’attributs d’un élément. Vous pouvez également ajouter un attribut d’affichage à l’aide de la variable **Ajouter** en haut. Vous pouvez également supprimer n’importe quel attribut d’affichage à l’aide de la variable **Supprimer** Icône
 
-Les attributs définis pour un élément sont affichés dans les vues Disposition et Contour.
+  Les attributs définis pour un élément sont affichés dans les vues Disposition et Contour.
 
-![](images/editor-settings-display-attributes.png){width="550" align="left"}
+  ![](images/editor-settings-display-attributes.png){width="550" align="left"}
 
 - **Traduction**: cet onglet contient l’option permettant de propager les libellés source à la version cible.
 
@@ -789,7 +834,7 @@ Le menu Options propose différentes options selon que vous sélectionnez un fic
 
 - Dupliquer
 - Extraction/archivage
-- Prévisualisation
+- Prévisualiser
 - Déplacer vers
 - Renommer
 - Supprimer
