@@ -2,7 +2,7 @@
 title: Mise à niveau des guides Adobe Experience Manager
 description: Découvrez comment mettre à niveau les guides Adobe Experience Manager
 exl-id: f058b39f-7408-4874-942b-693e133886cf
-source-git-commit: 9a4f230d6724bcb5d8fc7036048ca13fd7bc52bc
+source-git-commit: 6078cb1856ba45524e46165d546daf4109e9b2b2
 workflow-type: tm+mt
 source-wordcount: '4349'
 ht-degree: 1%
@@ -526,7 +526,7 @@ Effectuez les étapes suivantes pour le post-traitement du contenu existant et l
 
 ## Mise à niveau vers la version 4.3.1 {#upgrade-version-4-3-1}
 
-La mise à niveau vers la version 4.3.1 dépend de la version actuelle des Guides du Experience Manager. Si vous utilisez la version 4.3, 4.2 ou 4.2.1, vous pouvez directement effectuer la mise à niveau vers la version 4.3.1.
+La mise à niveau vers la version 4.3.1 dépend de la version actuelle des Guides du Experience Manager. Si vous utilisez la version 4.3.0, 4.2 ou 4.2.1, vous pouvez directement effectuer la mise à niveau vers la version 4.3.1.
 
 >[!NOTE]
 >
