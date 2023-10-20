@@ -1,22 +1,22 @@
 ---
 title: Notes de mise à jour | Nouveautés de la version 4.3.1 des guides Adobe Experience Manager
 description: Découvrez les fonctionnalités nouvelles et améliorées des versions 4.3.1 des Guides Adobe Experience Manager
-source-git-commit: 5c51ff7f52624c6403e5486e099d1262f324e523
+source-git-commit: a865630527045574ef5a96622537e767eacd9fc2
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1119'
 ht-degree: 0%
 
 ---
 
 # Nouveautés de la version 4.3.1 des guides Adobe Experience Manager (octobre 2023)
 
-Cet article couvre les nouvelles fonctionnalités et les fonctionnalités améliorées de la version 4.3.1 des Guides Adobe Experience Manager (ultérieurement appelées *Guides d’AEM*).
+Cet article couvre les nouvelles fonctionnalités et les fonctionnalités améliorées de la version 4.3.1 des Guides Adobe Experience Manager (ultérieurement appelées *Guides du Experience Manager*).
 
 Pour plus d’informations sur les instructions de mise à niveau, la matrice de compatibilité et les problèmes résolus dans cette version, voir [Notes de mise à jour](./release-notes-4.3.1.md).
 
 ## Connexion à une source de données et insertion des rubriques
 
-Experience Manager Guides fournit des connecteurs prêts à l’emploi qui vous aident à vous connecter à vos sources de données, ce qui fait d’AEM Guides un véritable centre de contenu. Cela vous permet de gagner du temps et de vous consacrer à l’ajout ou à la réplication manuels de données.
+Experience Manager Guides fournit des connecteurs prêts à l’emploi qui vous aident à vous connecter à vos sources de données, ce qui fait de Experience Manager Guides un véritable centre de contenu. Cela vous permet de gagner du temps et de vous consacrer à l’ajout ou à la réplication manuels de données.
 
 Outre les connecteurs prêts à l’emploi tels que JIRA et SQL (MySQL, PostgreSQL, SQL Server, SQLite), votre administrateur peut également configurer des connecteurs pour les bases de données MariaDB, H2DB, AdobeCommerce et Elasticsearch. Ils peuvent également ajouter d’autres connecteurs en étendant les interfaces par défaut.
 
