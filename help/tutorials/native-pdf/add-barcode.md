@@ -1,7 +1,7 @@
 ---
 title: Fonction de publication native d’un PDF | Ajouter un code à barres
 description: Découvrez comment ajouter des codes à barres.
-source-git-commit: 6cea7a92eed8f7b1d4a0763baae65ccccd71790e
+source-git-commit: 31225583f45337b209f325174176b9a4199db648
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 2%
@@ -38,12 +38,12 @@ Ajoutez un élément d’ID de ressource au mappage DITA. L’ID de ressource se
 
 Vous pouvez également modifier l’ID de la ressource en mode Création.
 
-<img src="./assets/barcode-map.png" alt="Exemple de sortie avec code-barres" width="700">
+<img src="./assets/barcode-map.png" alt="Exemple de sortie avec code-barres" width="700" border="2px solid blue">
 
 
 ### Ajout d’un espace réservé de code à barres dans l’en-tête du modèle
 
-Modifiez le `Common.plt` dans le fichier **De base** pour ajouter un code à barres après le titre du projet.
+Modifiez la variable `Common.plt` dans le fichier **De base** pour ajouter un code à barres après le titre du projet.
 
 ```html
 ...
@@ -58,7 +58,7 @@ Modifiez le `Common.plt` dans le fichier **De base** pour ajouter un code à bar
 
 ### Mettre à jour le CSS du modèle pour générer une valeur de code à barres
 
-Modifiez le `content.css` pour générer un code à barres pendant la génération du PDF. Divers types de codes à barres tels que &quot;qrcode&quot; et &quot;pdf417&quot; sont pris en charge.  Pour plus d’informations, voir [Types de codes à barres](#barcode-types).
+Modifiez la variable `content.css` pour générer un code à barres pendant la génération du PDF. Divers types de codes à barres tels que &quot;qrcode&quot; et &quot;pdf417&quot; sont pris en charge.  Pour plus d’informations, voir [Types de codes à barres](#barcode-types).
 
 
 
@@ -80,32 +80,32 @@ La capture d’écran suivante affiche un exemple de code-barres dans une sortie
 
 ## Types de codes à barres {#barcode-types}
 
-| Type | Attribut CSS | Attribut(s) supplémentaire(s) |
+| Type | Attribut CSS | Attributs supplémentaires |
 | ------------------------------- | ----------------------- | -------------------------- |
-| Code QR | qrcode |  |
-| PDF417 | pdf417 |  |
-| DataMatrix | matrice de données |  |
-| Code Aztec | aztec-code |  |
-| Matrice de grille | grid-grid |  |
-| Maxicode | maxicode mode-4 |  |
-| Micro QR | microqr |  |
-| Code 1 | code-one |  |
-| Codablock F | codablockf |  |
-| Base de données GS1 limitée | databar-limited |  |
-| Omnidirectionnel de la base de données GS1 | omnidirectionnel de la base de données |  |
-| EAN-13 | ean-13 |  |
+| Code QR | qrcode |                            |
+| PDF417 | pdf417 |                            |
+| DataMatrix | matrice de données |                            |
+| Code Aztec | aztec-code |                            |
+| Matrice de grille | grid-grid |                            |
+| Maxicode | maxicode mode-4 |                            |
+| Micro QR | microqr |                            |
+| Code 1 | code-one |                            |
+| Codablock F | codablockf |                            |
+| Base de données GS1 limitée | databar-limited |                            |
+| Omnidirectionnel de la base de données GS1 | omnidirectionnel de la base de données |                            |
+| EAN-13 | ean-13 |                            |
 | GS1-128 (EAN-128) | code128 | -ro-barcode-encoding: gs1; |
-| ITF-14 | itf14 |  |
-| UPC-A | upc-a |  |
-| Code 128 | code128 |  |
-| Interleaved 2 sur 5 | code2of5 entrelacé |  |
-| POSTNET | postnet |  |
-| Dutch Post Kixcode | kixcode |  |
-| Corée : Post | corée-post |  |
-| Deutsche Post Leitcode | dp-leitcode |  |
-| Australia Post | auspost |  |
-| Logmars | logmars |  |
-| Pharmacode | pharmacode |  |
-| USPS OneCode (Intelligent Mail) | usps-onecode |  |
+| ITF-14 | itf14 |                            |
+| UPC-A | upc-a |                            |
+| Code 128 | code128 |                            |
+| Interleaved 2 sur 5 | code2of5 entrelacé |                            |
+| POSTNET | postnet |                            |
+| Dutch Post Kixcode | kixcode |                            |
+| Corée : Post | corée-post |                            |
+| Deutsche Post Leitcode | dp-leitcode |                            |
+| Australia Post | auspost |                            |
+| Logmars | logmars |                            |
+| Pharmacode | pharmacode |                            |
+| USPS OneCode (Intelligent Mail) | usps-onecode |                            |
 
 
