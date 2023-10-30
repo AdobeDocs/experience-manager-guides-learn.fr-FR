@@ -2,7 +2,7 @@
 title: Fonction de publication native d’un PDF | Composants d’un modèle de PDF
 description: Découvrez les différents composants d’un modèle de PDF et comment les personnaliser et les configurer.
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: 5abcc887a24d838caabdf9a34a84ebc851ed4cbf
+source-git-commit: 7fe45a2bb55e9cb72518edd3cb2aa81b99612613
 workflow-type: tm+mt
 source-wordcount: '4376'
 ht-degree: 0%
@@ -414,11 +414,11 @@ Par exemple, vous pouvez ajouter une variable de langue &quot;reference-label&qu
 Lorsque vous ajoutez `${lng:<variable name>}` à la section Paragraphe , les références croisées dans les paragraphes de la sortie contiennent le texte localisé et le numéro de page.\
 Par exemple, les captures d’écran suivantes montrent les références croisées &quot;Afficher sur la page 1&quot; en anglais et &quot;Einzelheiten finden Sites auf der Seite 1&quot; en allemand.
 
-<img src="./assets/english-output-corss-reference.png" alt="Sortie en anglais d’une référence croisée dans un pragrah" width ="800">
+<img src="./assets/english-output-corss-reference.png" alt="Sortie en anglais d’une référence croisée dans un pragrah" width ="800" border="2px solid blue">
 
 *Référence croisée dans un paragraphe lorsqu’elle est publiée en anglais.*
 
-<img src="./assets/german-output-corss-reference.png" alt="Sortie allemande d&apos;une référence croisée dans un pragrah" width ="800">
+<img src="./assets/german-output-corss-reference.png" alt="Sortie allemande d&apos;une référence croisée dans un pragrah" width ="800" border="2px solid blue">
 
 *Référence croisée dans un paragraphe lorsqu’elle est publiée en allemand.*
 
