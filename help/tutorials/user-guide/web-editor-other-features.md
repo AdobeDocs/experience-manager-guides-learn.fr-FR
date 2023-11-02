@@ -1,10 +1,10 @@
 ---
 title: Autres fonctionnalités de l’éditeur web
 description: Découvrez d’autres fonctionnalités de l’éditeur web dans AEM Guides. Découvrez comment utiliser ces fonctionnalités pour une création améliorée dans AEM Guides.
-exl-id: dea19372-8a15-4b5d-aea4-47dc914d779e
-source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
+exl-id: 1833b1e3-c7f1-4f2c-be35-235b65ba2f36
+source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
 workflow-type: tm+mt
-source-wordcount: '2144'
+source-wordcount: '2136'
 ht-degree: 0%
 
 ---
@@ -190,7 +190,7 @@ Outre le menu contextuel du chemin de navigation, la boîte de dialogue Renommer
 
 **Extraire un élément**
 
-- Le déballage d’un élément vous permet de supprimer la balise d’élément du texte sélectionné et de le fusionner avec son élément parent. Par exemple, si vous avez une `p` dans un élément `note` , vous pouvez annuler l’encapsulage de l’élément `p` élément pour fusionner le texte directement dans l’élément `note` élément . L’option Extraire l’élément est disponible dans le menu contextuel du chemin de navigation de la rubrique. Pour retirer un élément de son contenu, sélectionnez-le dans le chemin de navigation de la rubrique, puis cliquez avec le bouton droit de la souris sur l’élément pour ouvrir le menu contextuel, puis sélectionnez Supprimer le retour à la ligne pour supprimer l’élément et fusionner le texte de l’élément avec son élément parent.
+- Le déballage d’un élément vous permet de supprimer la balise d’élément du texte sélectionné et de le fusionner avec son élément parent. Par exemple, si vous avez une `p` dans un élément `note` , vous pouvez annuler l’encapsulage de l’élément `p` élément pour fusionner le texte directement dans l’élément `note` élément . La variable **Annuler le retour à la ligne** est disponible dans le menu contextuel du chemin de navigation de la rubrique. Pour retirer le retour à la ligne d’un élément, cliquez avec le bouton droit de la souris sur l’élément pour ouvrir le menu contextuel, puis sélectionnez **Annuler le retour à la ligne** pour supprimer l’élément et fusionner le texte de l’élément avec son élément parent.
 
 **Conservation des sauts de ligne et du retrait**
 

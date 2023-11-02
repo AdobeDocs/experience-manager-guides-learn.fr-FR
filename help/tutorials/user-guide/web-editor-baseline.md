@@ -1,10 +1,10 @@
 ---
 title: Création et gestion des lignes de base à partir de l’éditeur web
 description: Créez et gérez des lignes de base à partir de l’éditeur web dans AEM Guides. Découvrez comment créer des lignes de base sur la base des libellés et appliquer des filtres aux lignes de base.
-exl-id: 9e390489-16f5-4f9a-a821-5150a66c2ed4
-source-git-commit: 361c605bdf02fb3b8754c6596a70e86a00acb3db
+exl-id: 14f87bdd-3042-46f9-853e-e9ded81b10ed
+source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1447'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ Vous pouvez également effectuer les opérations suivantes sur la ligne de base 
   > Le processus d’ajout ou de suppression des libellés se produit de manière asynchrone. Vous pouvez donc continuer à travailler sur d’autres fichiers dans l’éditeur web. Une fois le libellé ajouté ou supprimé, un message contextuel s’affiche pour confirmer qu’il a été ajouté ou supprimé et vous recevez également une notification de boîte de réception pour le même élément.
 
 - **Modifier les propriétés** d’une ligne de base statique existante que vous avez définie lors de la création de la ligne de base.
-- Exportez l’instantané d’une ligne de base dans un fichier CSV avec l’événement **Référence d’exportation** .
+- Exportez l’instantané d’une ligne de base dans un fichier Excel Microsoft avec le **Référence d’exportation** .
 
 **Filtres de base**
 

@@ -1,10 +1,10 @@
 ---
 title: Modification des rubriques dans l’éditeur web
 description: Découvrez comment modifier des rubriques dans l’éditeur web. Découvrez les différentes fonctions de modification pour modifier vos fichiers de rubrique dans les Guides d’AEM.
-exl-id: 9950df78-09bd-433a-891d-0d689bb0c2e4
-source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
+exl-id: 8da37a81-e8c3-434f-b3f4-4723d87c2ade
+source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ L’éditeur web s’accompagne d’un éventail de fonctions d’édition qui v
    > Si vous ne souhaitez pas valider de modifications dans AEM référentiel, cliquez sur **Fermer**, puis cliquez sur **Fermer sans enregistrer** dans la boîte de dialogue Modifications non enregistrées .
 
    **Actualiser le navigateur lors de la modification des fichiers**
-AEM Guides permet d’actualiser le navigateur lorsque vous modifiez votre contenu dans l’éditeur web. Cette fonctionnalité vous permet de continuer à modifier le contenu si vous rencontrez une erreur d’application pendant que vous travaillez. Si vous appuyez sur l’actualisation du navigateur alors qu’un ou plusieurs fichiers contenant des modifications non enregistrées sont ouverts pour modification, vous êtes averti que les modifications non enregistrées risquent d’être perdues. Vous avez la possibilité d’annuler l’opération d’actualisation et d’enregistrer vos fichiers pour conserver vos modifications.
+Les guides du Experience Manager prennent en charge l’actualisation du navigateur lorsque vous modifiez votre contenu dans l’éditeur web. Cette fonctionnalité vous permet de continuer à modifier le contenu si vous rencontrez une erreur d’application pendant que vous travaillez. Si vous appuyez sur l’actualisation du navigateur alors qu’un ou plusieurs fichiers contenant des modifications non enregistrées sont ouverts pour modification, vous êtes averti que les modifications non enregistrées risquent d’être perdues. Vous avez la possibilité d’annuler l’opération d’actualisation et d’enregistrer vos fichiers pour conserver vos modifications.
 
-   Même lors de l’actualisation du navigateur, les vues des panneaux gauche et droit sont conservées dans l’éditeur web. Par exemple, la rubrique active du panneau Référentiel s’ouvre à nouveau. Le panneau de mappage est conservé avec la carte précédemment ouverte.
+   Même lors de l’actualisation du navigateur, les vues des panneaux gauche et droit sont conservées dans l’éditeur web. Experience Manager Guides restaure le dernier état enregistré des fichiers ouverts dans l’éditeur web lorsque vous actualisez le navigateur. Par exemple, les fichiers ouverts dans le panneau Référentiel sont à nouveau ouverts. Le panneau de mappage est conservé avec la carte précédemment ouverte.
 
    La rubrique active ou le mappage DITA est rouvert dans la zone de modification du contenu.
 

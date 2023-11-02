@@ -2,9 +2,9 @@
 title: Fonction de publication native d’un PDF | Composants d’un modèle de PDF
 description: Découvrez les différents composants d’un modèle de PDF et comment les personnaliser et les configurer.
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: 7fe45a2bb55e9cb72518edd3cb2aa81b99612613
+source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
 workflow-type: tm+mt
-source-wordcount: '4376'
+source-wordcount: '4859'
 ht-degree: 0%
 
 ---
@@ -236,7 +236,7 @@ Vous pouvez définir le texte à afficher avant et après le saut. Par exemple, 
 * **Lier des termes du glossaire à la page du glossaire**: sélectionnez cette option pour afficher les termes du glossaire sous forme de liens hypertexte dans le contenu et les lier aux termes de la page du glossaire. Cela permet aux lecteurs d’afficher rapidement la définition d’un terme défini dans le glossaire.
 
   Pour convertir les termes du glossaire en hyperliens, vous devez :
-   * Activer **Glossaire** dans le **Ordre de page** pour un mappage DITA.
+   * Activer **Glossaire** dans le **Ordre de mise en page** pour un mappage DITA.
    * Ajoutez le glossaire dans la carte des pages de fond pour un livre.
 
   Si vous n’activez pas la page Glossaire, les termes du glossaire dans le contenu ne sont pas convertis en liens hypertexte dans la sortie du PDF.
@@ -265,7 +265,11 @@ Les paramètres suivants sont disponibles sous la section Mise en page de page :
 
 * **Index**: si vous avez conçu une mise en page de page Index, mappez-la à l’option Index . Les feuilles de style permettent de mettre en forme différents éléments d&#39;index dans la sortie du PDF. Utilisation des styles d’index `.idx-header`, `.idx-footer`, `.idx-body`, `.idx-title`, `.idx-keyword-group`, `.idx-unit`,  `.idx-keyword`, `.idx-name`, `.idx-link` et `.idx-child` pour personnaliser les styles des éléments de l’index.
 
-* **Glossaire**: si vous disposez d’une mise en page de page Glossaire, mappez-la à l’option Glossaire .  Les termes du glossaire de la sortie de votre PDF sont toujours triés par ordre alphabétique.
+* **Glossaire**: si vous disposez d’une mise en page de page Glossaire, mappez-la à l’option Glossaire .
+
+  Les termes du glossaire de la sortie de votre PDF sont toujours triés par ordre alphabétique.
+
+  Vous pouvez également ajouter la balise `sort-as` pour définir une clé de tri pour les termes du glossaire. Les guides du Experience Manager utilisent ensuite la touche de tri pour trier les termes du glossaire à la place des termes du glossaire. Si vous n’avez pas défini la clé de tri, elle utilise les termes du glossaire pour le tri. Par exemple, vous pouvez ajouter la balise . `sort-as` à la fonction `glossterm` et définissez sa valeur sur `A` pour le terme &quot;USB&quot; (par exemple, `<glossterm>USB<sort-as>A</sort-as></glossterm>`). De même, vous pouvez ajouter `sort-as` et définissez sa valeur sur `B` pour le terme &quot;Pen Drive&quot;. Lorsque vous triez ces termes dans le glossaire, la clé de tri `A` pour le glossaire, le terme &quot;USB&quot; apparaît avant la clé de tri. `B` pour le glossaire &quot;Pen Drive&quot;. Ainsi, dans la sortie du PDF, &quot;USB&quot; se trouve avant &quot;Pen Drive&quot; sur la page du glossaire.
 
   Les feuilles de style permettent de mettre en forme différents éléments du glossaire dans la sortie du PDF. Utilisation des styles du glossaire `.glo-header`, `.glo-footer`, `.glo-body`, `.glo-title`, `.glo-unit`, `.glo-link`, et `.glo-term` pour personnaliser les styles des éléments du glossaire.
 
@@ -285,7 +289,7 @@ Les paramètres suivants sont disponibles sous la section Mise en page de page :
 
 Pour plus d’informations sur les mises en page, voir [Concevoir une mise en page](design-page-layout.md).
 
-### Ordre de page {#page-order}
+### Ordre de mise en page {#page-order}
 
 Vous pouvez afficher ou masquer les sections suivantes dans votre PDF et organiser l’ordre dans lequel elles doivent apparaître dans la sortie finale du PDF :
 
@@ -299,7 +303,7 @@ Vous pouvez afficher ou masquer les sections suivantes dans votre PDF et organis
 * Glossaire
 * Citation
 
-  <img src="assets/page-order-advance-settings.png" alt="Ordre de page" width="550">
+  <img src="assets/page-order-advance-settings.png" alt="Ordre de disposition des pages" width="550">
 
   Si vous ne souhaitez pas afficher une section spécifique dans la sortie de votre PDF, vous pouvez masquer cela en désactivant le bouton d’activation/désactivation.
 
@@ -350,6 +354,43 @@ Vous pouvez également effectuer les actions suivantes :
 * Vous pouvez également ajouter une disposition personnalisée plusieurs fois et la classer. Vous pouvez ainsi publier le contenu statique en conséquence.
 
   Par exemple, vous pouvez utiliser une disposition personnalisée pour publier un avertissement statique plusieurs fois dans la sortie du PDF.
+
+
+
+### Organisation de la page
+
+Les pages d’un document de PDF sont généralement publiées en fonction du contenu organisé dans le mappage DITA ou le fichier bookmap. Cependant, vous pouvez également modifier l’ordre des pages dans le document du PDF. Par exemple, vous pouvez imprimer un document de plusieurs pages en tant que signet d’applet. Lorsque vous assemblez, pliez et agrafez les feuilles, le résultat est un seul livre avec l’ordre de page correct.  Vous pouvez ensuite lire la brochure publiée comme un livre.
+
+<img src="assets/template-page-organization.png" alt="Organisation de la page" width="550">
+
+
+Les paramètres suivants sont disponibles sous la variable **Organisation de la page** section :
+
+#### Ordre de page
+
+Sélectionnez un ordre de page qui détermine la séquence des pages dans votre document de PDF. Vous pouvez choisir les options suivantes dans la liste déroulante :
+
+* **Par défaut**: ordre par défaut des pages selon le fichier source.
+* **Pages impaires en premier**: toutes les pages impaires sont déplacées avant toutes les pages paires.
+* **Pages paires en premier**: toutes les pages paires sont déplacées avant toutes les pages impaires.
+* **Reverse**: l’ordre de la page est inversé.
+* **Petit livre**: toutes les pages sont classées comme dans un signet.
+* **Petit livre à droite et à gauche**: toutes les pages sont dans l’ordre de droite à gauche du signet d’applet.
+* **Personnalisé**: définissez un ordre personnalisé de pages au lieu d’un ordre prédéfini.
+   * &quot;a..b&quot; — Toutes les pages consécutives de a à b.
+   * &quot;a,b,c&quot; — nouvel ordre de page a, b, c.
+   * &quot;a*b&quot; — La page a est répétée par fois.
+   * &quot;-a&quot; : les numéros de page négatifs sont comptabilisés en amont à partir de la dernière page et peuvent être combinés à d’autres commandes personnalisées.
+   * &quot;X&quot; — Toutes les pages du document. Même résultat que &quot;1..-1&quot;.
+
+Par exemple, vous pouvez donner une commande personnalisée telle que &quot;2,3,5*2,7.10,-1,-2.
+L’ordre de page donné entraîne l’affichage des numéros de page suivants dans le document d’origine, en supposant qu’il comporte 25 pages au total : 2, 3, 5, 5, 7, 8, 9, 10, 25, 24.
+
+#### Configuration de plusieurs pages par feuille
+
+Choisissez cette option pour publier plusieurs pages sur une seule feuille de papier.  Sélectionnez ensuite le nombre de lignes et de colonnes et publiez les pages comme une grille sur une seule feuille. Vous pouvez par exemple publier les pages sous la forme d’une grille de 2 lignes et de 4 colonnes.
+
+Définissez la taille de la feuille cible et l’orientation dans laquelle vous souhaitez publier la feuille. Vous pouvez également spécifier la marge et les propriétés de remplissage de la feuille.
 
 
 

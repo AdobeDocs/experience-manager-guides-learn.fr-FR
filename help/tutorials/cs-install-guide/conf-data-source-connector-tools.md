@@ -1,19 +1,17 @@
 ---
 title: Configuration d’un connecteur de source de données à l’aide d’outils
 description: Découvrez comment configurer un connecteur de source de données à l’aide des outils.
-exl-id: b73ceb8d-caf0-4752-a6d9-07985cdf741e
-source-git-commit: e8503e1441b7bc365d37c76ab9cf7b5f50374f10
+exl-id: d7cd412b-89ea-43a5-97b3-09944863bbee
+source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
 
-
-
 # Configurer un connecteur de source de données à partir de l’interface utilisateur
 
-Les guides du Experience Manager sont fournis avec la variable **Sources de données** qui vous aide à configurer des connecteurs prêts à l’emploi pour les sources de données. Vous pouvez configurer des connecteurs pour JIRA, SQL (MySQL, PostgreSQL, Microsoft SQL Server, SQLite, MariaDB, H2DB), AdobeCommerce et des bases de données Elasticsearch.
+Les guides du Experience Manager sont fournis avec la variable **Sources de données** qui vous aide à configurer des connecteurs prêts à l’emploi pour les sources de données. Vous pouvez configurer les connecteurs client REST JIRA, SQL (MySQL, PostgreSQL, Microsoft SQL Server, SQLite, MariaDB, H2DB), AdobeCommerce, Elasticsearch et générique.
 
 Pour configurer un connecteur, procédez comme suit :
 

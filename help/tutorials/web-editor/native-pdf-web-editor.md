@@ -2,9 +2,9 @@
 title: PDF natif | Génération de sortie PDF
 description: Découvrez comment utiliser la publication native de PDF, créer et générer un paramètre prédéfini de sortie de PDF, télécharger des fichiers temporaires après avoir généré la sortie de PDF natif et utiliser des variables de langue dans les Guides d’AEM.
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+source-git-commit: 4c10f2387208477bd2ba27188e8aeaa6f3a4a661
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3264'
 ht-degree: 1%
 
 ---
@@ -135,7 +135,7 @@ Utilisez pour définir des mises en page et des options de page vue pour la sort
 
 | Configuration | Description |
 | --- | --- |
-| **Modèle de PDF** | Les modèles PDF fournissent une structure claire pour définir la mise en page, le style du contenu et l’application de divers paramètres à la sortie du PDF. Sélectionnez dans la liste déroulante Modèle de PDF pour choisir le modèle de votre choix. |
+| **Modèle de PDF** | Les modèles PDF fournissent une structure claire pour définir la mise en page, le style du contenu et l’application de divers paramètres à la sortie du PDF. Sélectionnez dans la liste déroulante Modèle de PDF pour choisir le modèle de votre choix. <br> Vous pouvez également sélectionner **Parcourir le modèle** <img src="./assets/browse-templates-icon.svg"  alt= "icône parcourir les modèles" width="25">  pour choisir un modèle. Dans le **Sélectionner un modèle de PDF** vous pouvez également prévisualiser la miniature et afficher le titre et la description du modèle sélectionné. |
 | **Affichage de page** | Utilisez l’affichage de page pour une page vue qui indique comment le PDF s’affiche à l’ouverture. Sélectionnez dans la liste déroulante Affichage de page pour choisir la vue souhaitée. <br><ul><li> **Par défaut**  S’affiche selon le paramètre par défaut de la visionneuse du PDF sur la machine d’un utilisateur.  <br> <li> **Une seule page vue** Affiche une page à la fois.   <br> <li> **Défilement d’une seule page** Affiche une seule page dans une colonne verticale continue.  <br> <li> **Deux pages vues** Affiche côte à côte deux pages espacées. .<br> <li> **Défilement de deux pages** Affiche l’espacement de deux pages côte à côte avec défilement continu. </ul> |
 | **Zoom** | Sélectionnez cette option pour redimensionner la page vue qui indique comment le PDF s’affiche à l’ouverture.  <br><ul><li> **Par défaut** S’affiche selon le paramètre par défaut de la visionneuse du PDF sur la machine d’un utilisateur.    <br> <li> **100 %** Permet à la page d’apparaître dans sa taille réelle.     <br> <li> **Page entière** Rend la largeur et la hauteur de la page compatibles avec le panneau du document. .<br> <li> **Ajuster la largeur de page** Remplit la largeur de la page dans le volet de document.  <br> <li> **Ajuster la hauteur de page** Fait en sorte que la hauteur de la page soit remplie par celle du panneau de document. </ul> |
 

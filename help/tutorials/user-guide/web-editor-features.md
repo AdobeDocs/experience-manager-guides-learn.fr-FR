@@ -2,9 +2,9 @@
 title: Présentation des fonctionnalités de l’éditeur web
 description: Découvrez les fonctionnalités de l’éditeur web dans AEM Guides. Découvrez l’interface de l’éditeur web, notamment la barre d’outils principale, la barre d’outils secondaire, le panneau de gauche, la zone d’édition de contenu et le panneau de droite.
 exl-id: 340cf72e-e44d-4df2-8312-50d00ac651b7
-source-git-commit: f7a0140a274a83dfeb6a1ba70ae9c09297d1754c
+source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
 workflow-type: tm+mt
-source-wordcount: '16500'
+source-wordcount: '17079'
 ht-degree: 0%
 
 ---
@@ -212,6 +212,12 @@ Les préférences utilisateur sont disponibles pour tous les auteurs. À l’aid
 ![](images/user_preference_editor.PNG){width="550" align="left"}
 
 - **Utilisation du thème du périphérique**: cochez cette case pour permettre à AEM Guides de basculer automatiquement entre les thèmes clairs et sombres en fonction du thème de votre appareil.
+
+- **Afficher les fichiers par**: sélectionnez la manière par défaut d’afficher les fichiers dans l’éditeur web. Vous pouvez afficher la liste des fichiers selon les titres ou les noms des fichiers à partir des différents panneaux du **Auteur** vue.
+  >[!NOTE]
+  >
+  > Par défaut, les fichiers sont affichés par titre dans l’éditeur web.
+
 - **Thème**: choisissez les thèmes Clair, Lumineux, Foncé ou Plus sombre pour l’éditeur. Dans le cas d’un thème plus clair, les barres d’outils et les panneaux utilisent un arrière-plan de couleur grise plus clair. Dans le cas du thème Lumière, les barres d’outils et les panneaux utilisent l’arrière-plan en gris clair. Dans le cas du thème le plus sombre, les barres d’outils et les panneaux utilisent un arrière-plan de couleur noire plus foncé. En cas de thème sombre, les barres d’outils et les panneaux utilisent l’arrière-plan en couleur noire. Dans tous les thèmes, la zone d’édition du contenu s’affiche en arrière-plan de couleur blanche.
 
 - **Profils de dossier**: le profil de dossier contrôle différentes configurations liées aux attributs conditionnels, aux modèles de création, aux paramètres prédéfinis de sortie et aux configurations de l’éditeur web. Le profil global s’affiche par défaut. En outre, si votre administrateur a configuré les profils de dossiers dans le système, ces derniers sont également affichés dans la liste Profils de dossiers .
@@ -713,6 +719,10 @@ Le panneau de gauche vous donne accès aux fonctionnalités suivantes :
 **Favoris** -  ![](images/favorite-collections.svg)
 
 Si vous travaillez sur un ensemble de fichiers ou de dossiers, vous pouvez les ajouter à votre liste préférée pour y accéder rapidement. La liste Favori affiche la liste des documents que vous avez ajoutés ainsi que d’autres listes publiques des documents favoris des autres utilisateurs.
+Par défaut, vous pouvez afficher les fichiers par titres. Lorsque vous placez le pointeur de la souris sur un fichier, vous pouvez afficher le titre du fichier et le chemin du fichier sous forme d’info-bulle.
+>[!NOTE]
+>
+> En tant qu’administrateur, vous pouvez également choisir d’afficher la liste des fichiers par nom de fichier dans l’éditeur Web. Sélectionnez la variable **Nom du fichier** de l’ **Afficher les fichiers par** dans **Préférences utilisateur** ![](images/user_preference_editor_icon.svg).
 
 Pour créer une liste ou une collection préférée, cliquez sur l’icône + en regard du panneau Favoris pour afficher le journal de la nouvelle collection :
 
@@ -753,7 +763,12 @@ Vous pouvez également effectuer de nombreuses actions à l’aide du menu Optio
 
 **Repository View** - ![](images/Repository_icon.svg)
 
-Lorsque vous cliquez sur l’icône Vue du référentiel, vous obtenez une liste de fichiers et de dossiers disponibles dans la gestion des ressources numériques.
+Lorsque vous cliquez sur l’icône Vue du référentiel, vous obtenez une liste de fichiers et de dossiers disponibles dans la gestion des ressources numériques. Par défaut, vous pouvez afficher les fichiers par titres. Lorsque vous placez le pointeur de la souris sur un fichier, vous pouvez afficher le titre du fichier et son nom sous forme d’info-bulle.
+
+>[!NOTE]
+>
+> En tant qu’administrateur, vous pouvez également choisir d’afficher la liste des fichiers par nom de fichier dans l’éditeur Web. Sélectionnez la variable **Nom du fichier** de l’ **Afficher les fichiers par** dans **Préférences utilisateur** ![](images/user_preference_editor_icon.svg).
+
 
 75 fichiers sont chargés à la fois. Chaque fois que vous cliquez sur **Charger plus**...75 fichiers sont chargés, et le bouton cesse d&#39;être affiché lorsque tous les fichiers sont répertoriés. Ce chargement par lots est efficace et vous pouvez accéder aux fichiers plus rapidement par rapport au chargement de tous les fichiers existants dans un dossier.
 
@@ -834,7 +849,7 @@ Le menu Options propose différentes options selon que vous sélectionnez un fic
 
 - Dupliquer
 - Extraction/archivage
-- Prévisualiser
+- Prévisualisation
 - Déplacer vers
 - Renommer
 - Supprimer
@@ -1013,7 +1028,15 @@ Saisissez un **Titre** pour le dossier, qui est automatiquement converti en nom 
 
 **Vue Carte** -  ![](images/map-view-icon.svg)
 
-Lorsque vous cliquez sur l’icône Affichage des cartes , vous obtenez une liste des rubriques dans le fichier de carte. Si vous n’avez ouvert aucun fichier de carte, la vue Carte apparaît vide. Double-cliquez sur un fichier de carte pour ouvrir le fichier de carte dans cette vue. Vous pouvez double-cliquer sur un fichier de la carte pour l’ouvrir dans l’éditeur Web. Lorsque vous ouvrez une carte en mode Carte, le titre de la carte active s’affiche au centre de la barre d’outils principale. Si le titre est trop long, des points de suspension s’affichent et vous pouvez également survoler le titre avec la souris pour afficher le titre complet dans l’info-bulle. Si vous disposez de droits de modification sur les fichiers de mappage, vous pourrez également modifier les fichiers. Pour plus d’informations sur l’ouverture et la modification d’une rubrique via le mappage DITA, voir [Modification des rubriques à l’aide de la carte DITA](map-editor-advanced-map-editor.md#id17ACJ0F0FHS).
+Lorsque vous cliquez sur l’icône Affichage des cartes , vous obtenez une liste des rubriques dans le fichier de carte. Si vous n’avez ouvert aucun fichier de carte, la vue Carte apparaît vide. Double-cliquez sur un fichier de carte pour ouvrir le fichier de carte dans cette vue. Vous pouvez double-cliquer sur un fichier de la carte pour l’ouvrir dans l’éditeur Web.
+
+Par défaut, vous pouvez afficher les fichiers par titres. Lorsque vous placez le pointeur de la souris sur un fichier, vous pouvez afficher le titre du fichier et le chemin du fichier sous forme d’info-bulle.
+>[!NOTE]
+>
+>En tant qu’administrateur, vous pouvez également choisir d’afficher le nom de fichier de la carte parent actuellement ouverte dans la vue map. Sélectionnez la variable **Nom du fichier** de l’ **Afficher les fichiers par** dans **Préférences utilisateur** ![](images/user_preference_editor_icon.svg).
+
+
+Lorsque vous ouvrez une carte en mode Carte, le titre de la carte active s’affiche au centre de la barre d’outils principale. Si le titre est trop long, des points de suspension s’affichent et vous pouvez également survoler le titre avec la souris pour afficher le titre complet dans l’info-bulle. Si vous disposez de droits de modification sur les fichiers de mappage, vous pourrez également modifier les fichiers. Pour plus d’informations sur l’ouverture et la modification d’une rubrique via le mappage DITA, voir [Modification des rubriques à l’aide de la carte DITA](map-editor-advanced-map-editor.md#id17ACJ0F0FHS).
 
 Vous pouvez effectuer les actions suivantes à l’aide du menu Options du fichier de carte :
 
@@ -1177,6 +1200,11 @@ Vous pouvez rechercher une chaîne dans l’élément si elle est affichée dans
 L’une des principales fonctionnalités de DITA est la possibilité de réutiliser du contenu. Le panneau Contenu réutilisable peut stocker vos fichiers DITA à partir desquels vous insérez généralement du contenu réutilisable. Une fois ajoutés, les fichiers DITA restent dans le panneau Contenu réutilisable d’une session à une autre. Cela signifie que vous n’avez pas besoin d’ajouter à nouveau vos fichiers DITA pour y accéder ultérieurement.
 
 Vous pouvez simplement faire glisser et déposer du contenu réutilisable du panneau sur votre rubrique actuelle et il est inséré facilement et rapidement. Vous pouvez également obtenir un aperçu du contenu avant de l’insérer dans votre document.
+
+Par défaut, vous pouvez afficher les fichiers par titres. Lorsque vous placez le pointeur de la souris sur un fichier, vous pouvez afficher le titre du fichier et le chemin du fichier sous forme d’info-bulle.
+>[!NOTE]
+>
+> En tant qu’administrateur, vous pouvez également choisir d’afficher la liste des fichiers par nom de fichier dans l’éditeur Web. Sélectionnez la variable **Nom du fichier** de l’ **Afficher les fichiers par** dans **Préférences utilisateur** ![](images/user_preference_editor_icon.svg).
 
 Pour ajouter un fichier DITA à votre panneau Contenu réutilisable , utilisez l’une des méthodes suivantes :
 
@@ -1527,6 +1555,12 @@ Le panneau Modèles est disponible uniquement pour les administrateurs. Grâce �
 
 ![](images/templates-panel_cs.png){width="550" align="left"}
 
+Par défaut, vous pouvez afficher les fichiers par titres. Lorsque vous placez le pointeur de la souris sur un modèle, vous pouvez afficher le titre du fichier et son nom sous forme d’info-bulle.
+
+>[!NOTE]
+>
+> En tant qu&#39;administrateur, vous pouvez également choisir d&#39;afficher la liste des fichiers dans l&#39;éditeur Web. Sélectionnez la variable **Nom du fichier** de l’ **Afficher les fichiers par** dans **Préférences utilisateur** ![](images/user_preference_editor_icon.svg).
+
 Pour créer un modèle, cliquez sur l’icône + en regard de Modèles et choisissez un modèle à créer. Si vous sélectionnez **Modèle de rubrique**, la boîte de dialogue Créer un modèle de rubrique s’affiche :
 
 ![](images/create-new-topic-template.PNG){width="400" align="left"}
@@ -1544,7 +1578,12 @@ Dans le menu Options d’un modèle existant, vous pouvez choisir de **Modifier*
 **Révision** -  ![](images/active-review-tasklist-icon.svg)
 
 AEM Guides fournit la fonctionnalité permettant d’afficher toutes les tâches de révision dans vos projets. Vous pouvez afficher tous les projets de révision et les tâches de révision actives dans les projets de révision, dont vous faites partie à partir du **Réviser** du panneau.  Vous pouvez ensuite ouvrir les tâches de révision pour afficher les commentaires des différents réviseurs.
-Le panneau de révision affiche les tâches de révision. En tant qu’auteur, vous pouvez traiter les commentaires d’une rubrique à l’aide de l’éditeur Web.
+Le panneau de révision affiche les tâches de révision. Par défaut, vous pouvez afficher les fichiers par titres. Lorsque vous placez le pointeur de la souris sur un fichier, vous pouvez afficher le titre du fichier et le chemin du fichier sous forme d’info-bulle.
+>[!NOTE]
+>
+> En tant qu’administrateur, vous pouvez également choisir d’afficher la liste des fichiers par nom de fichier dans l’éditeur Web. Sélectionnez la variable **Nom du fichier** de l’ **Afficher les fichiers par** dans **Préférences utilisateur** ![](images/user_preference_editor_icon.svg).
+
+En tant qu’auteur, vous pouvez traiter les commentaires d’une rubrique à l’aide de l’éditeur Web.
 
 
 Pour afficher les commentaires de révision dans les tâches de révision actives présentes dans vos projets, procédez comme suit :
@@ -1581,6 +1620,11 @@ Pour afficher les commentaires de révision dans les tâches de révision active
 L’icône Rechercher et remplacer se trouve au bas du panneau de gauche. Le panneau Rechercher et remplacer vous permet de rechercher et de remplacer du texte dans des fichiers d’une carte ou d’un dossier de votre référentiel. Vous pouvez trouver et remplacer dans toutes les rubriques d’une carte ainsi que les rubriques présentes dans les sous-cartes de la carte.
 
 ![](images/map-find-replace.png){width="800" align="left"}
+
+Par défaut, vous pouvez afficher les fichiers par titres. Lorsque vous placez le pointeur de la souris sur un fichier, vous pouvez afficher le titre du fichier et le chemin du fichier sous forme d’info-bulle.
+>[!NOTE]
+>
+> En tant qu’administrateur, vous pouvez également choisir d’afficher la liste des noms de fichier dans l’éditeur web. Sélectionnez la variable **Nom du fichier** de l’ **Afficher les fichiers par** dans **Préférences utilisateur** ![](images/user_preference_editor_icon.svg).
 
 Pour effectuer la recherche globale et la remplacer, procédez comme suit :
 
@@ -1665,7 +1709,14 @@ Vous pouvez également utiliser la variable **Rechercher dans la carte** de l’
 
 ## Zone de modification du contenu {#id2051EB000UI}
 
-La zone d’édition du contenu est l’endroit où s’affiche le contenu de votre rubrique ou mappage. Vous effectuez toutes les modifications de contenu dans cette zone. Il donne une vue WYSIWYG du contenu que vous êtes en train de modifier. Plusieurs rubriques peuvent être ouvertes simultanément et s’affichent dans leurs onglets respectifs. Sous l’onglet du fichier, le chemin de navigation de l’élément se trouve à l’emplacement actuel du curseur. Dans le coin supérieur droit de la zone d’édition du contenu, le numéro de version de la rubrique active s’affiche.
+La zone d’édition du contenu est l’endroit où s’affiche le contenu de votre rubrique ou mappage. Vous effectuez toutes les modifications de contenu dans cette zone. Il donne une vue WYSIWYG du contenu que vous êtes en train de modifier. Plusieurs rubriques peuvent être ouvertes simultanément et s’affichent dans leurs onglets respectifs.
+
+Par défaut, vous pouvez afficher les titres des fichiers dans les onglets. Lorsque vous placez le pointeur de la souris sur un fichier, vous pouvez afficher le titre du fichier et le chemin du fichier sous forme d’info-bulle.
+>[!NOTE]
+>
+> En tant qu’administrateur, vous pouvez également choisir d’afficher la liste des fichiers par nom de fichier dans les onglets. Sélectionnez la variable **Nom du fichier** de l’ **Afficher les fichiers par** dans **Préférences utilisateur** ![](images/user_preference_editor_icon.svg).
+
+Sous l’onglet du fichier, le chemin de navigation de l’élément se trouve à l’emplacement actuel du curseur. Dans le coin supérieur droit de la zone d’édition du contenu, le numéro de version de la rubrique active s’affiche.
 
 ![](images/content-editing-area.png){width="650" align="left"}
 
@@ -1720,7 +1771,10 @@ La section Références vous donne accès aux fonctionnalités suivantes :
 - **Utilisé dans**: la liste Utilisé(e) dans les références répertorie les documents dans lesquels le fichier actif est référencé ou utilisé.
 - **Liens sortants :** La section Liens sortants répertorie les documents auxquels il est fait référence dans le document actif.
 
-Placez le pointeur de la souris sur la référence du fichier et obtenez le chemin d’accès au fichier et l’UUID du fichier dans l’info-bulle.
+Par défaut, vous pouvez afficher les fichiers par titres. Lorsque vous placez le pointeur de la souris sur un fichier, vous pouvez afficher le titre du fichier et le chemin du fichier sous forme d’info-bulle.
+>[!NOTE]
+>
+> En tant qu’administrateur, vous pouvez également choisir d’afficher la liste des fichiers par nom de fichier dans l’éditeur Web. Sélectionnez la variable **Nom du fichier** de l’ **Afficher les fichiers par** dans **Préférences utilisateur** ![](images/user_preference_editor_icon.svg).
 
 **Remarque :** Toutes les références utilisées dans et sortantes sont liées par des liens hypertexte aux documents. Vous pouvez facilement ouvrir et modifier les documents liés.
 

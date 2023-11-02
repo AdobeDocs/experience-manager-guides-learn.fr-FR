@@ -1,13 +1,13 @@
 ---
 title: Configuration des paramètres de génération de sortie
 description: Découvrez comment configurer les paramètres de génération de sortie
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+exl-id: b5cf4f6c-dc56-428e-a514-6c9f879ac03d
+source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
 workflow-type: tm+mt
-source-wordcount: '5252'
+source-wordcount: '5340'
 ht-degree: 1%
 
 ---
-
 
 # Configuration des paramètres de génération de sortie {#id181AI0B0E30}
 
@@ -66,20 +66,19 @@ La prochaine fois que vous publierez du contenu DITA à l’aide des configurati
 AEM Guides prend en charge la création de sorties dans les formats suivants :
 
 - AEM site
-
 - PDF
-
 - HTML 5
 - EPUB
 - Sortie personnalisée via DITA-OT
 
-Pour la sortie Site AEM, vous pouvez affecter différents modèles de conception avec différentes tâches de sortie. Ces modèles de conception peuvent rendre le contenu DITA dans différentes dispositions. Par exemple, vous pouvez spécifier différents modèles de conception pour les audiences internes et externes.
+Pour la sortie Site AEM, vous pouvez affecter différents modèles de conception avec différentes tâches de sortie. Ces modèles de conception peuvent rendre le contenu DITA dans différentes mises en page. Par exemple, vous pouvez spécifier différents modèles de conception pour les audiences internes et externes.
 
 Vous pouvez également utiliser les modules externes de boîte à outils ouverte DITA personnalisés \(DITA-OT\) avec les AEM Guides. Vous pouvez charger ces modules externes DITA-OT personnalisés pour générer une sortie PDF d’une manière spécifique.
 
 >[!TIP]
 >
 > Voir *Publication AEM site* dans le guide des bonnes pratiques pour connaître les bonnes pratiques relatives à la création d’AEM sortie au site.
+
 
 ### Personnaliser le modèle de conception pour générer la sortie {#customize_xml-add-on}
 
@@ -103,15 +102,15 @@ Effectuez les étapes suivantes pour spécifier votre propre modèle de concepti
 
    /libs/fmdita/templates/default/cqtemplates
 
-   Les propriétés du modèle de conception des Guides AEM sont décrites dans le tableau suivant.
+   Les propriétés du modèle de conception des Guides d’AEM sont décrites dans le tableau suivant.
 
    | Propriété | Description |
    |--------|-----------|
-   | `landingPageTemplate`, `searchPageTemplate`, `topicPageTemplate`, `shadowPageTemplate` | Spécifiez la variable `cq:Template` noeud pour ces pages correspondantes \(entrée, recherche et rubrique\). Par défaut, la variable `cq:Template` Le noeud de ces pages se trouve dans `/libs/fmdita/templates/default/cqtemplates` noeud . Ce noeud définit la structure et les propriétés des pages d’entrée, de recherche et de rubrique.<br> Le `shadowPageTemplate` est utilisé pour optimiser le contenu fragmenté. Vous devez définir la valeur de cette propriété sur : `fmdita/templates/default/cqtemplates/shadowpage` <br> **Remarque :** Vous devez spécifier une valeur pour la variable `topicPageTemplate`. Le `landingPageTemplate` et `searchPageTemplate` sont des propriétés facultatives. Si vous ne souhaitez pas que la recherche et les landing pages soient générées, ne spécifiez pas ces propriétés. |
+   | `landingPageTemplate`, `searchPageTemplate`, `topicPageTemplate`, `shadowPageTemplate` | Spécifiez la variable `cq:Template` noeud pour ces pages correspondantes \(entrée, recherche et rubrique\). Par défaut, la variable `cq:Template` Le noeud de ces pages se trouve dans `/libs/fmdita/templates/default/cqtemplates` noeud . Ce noeud définit la structure et les propriétés des pages d’entrée, de recherche et de rubrique.<br> La variable `shadowPageTemplate` est utilisé pour optimiser le contenu fragmenté. Vous devez définir la valeur de cette propriété sur : `fmdita/templates/default/cqtemplates/shadowpage` <br> **Remarque :** Vous devez spécifier une valeur pour la variable `topicPageTemplate`. La variable `landingPageTemplate` et `searchPageTemplate` sont des propriétés facultatives. Si vous ne souhaitez pas que la recherche et les landing pages soient générées, ne spécifiez pas ces propriétés. |
    | `title` | Nom descriptif de votre modèle de conception. |
    | `topicContentNode` | Emplacement du noeud qui contiendra le contenu DITA dans une page de rubrique. Le chemin d’accès est relatif à la page de rubrique. |
    | `topicHeadNode` | L’emplacement du noeud qui contiendra les valeurs d’en-tête \(ou metadata\) dérivées du contenu DITA. Le chemin d’accès est relatif à la page de rubrique. |
-   | `tocNode` | Emplacement du noeud qui contiendra la table des matières. Le chemin est relatif à la page d’entrée ou au chemin de destination. |
+   | `tocNode` | Emplacement du noeud qui contiendra la table des matières. Le chemin d’accès est relatif à la page d’entrée ou au chemin de destination. |
    | `basePathProp` | Nom de la propriété pour stocker le chemin d’accès de la racine du site publié. |
    | `indexPathProp` | Nom de la propriété pour le stockage du chemin d’accès à la page d’entrée/d’index du site publié. |
    | `pdfPathProp` | Nom de propriété pour le stockage du chemin du PDF de rubrique, si la génération du PDF de rubrique est activée. |
@@ -158,7 +157,7 @@ Suivez les instructions de la section [Remplacements de configuration](download-
 
 | PID | Clé de propriété | Valeur de la propriété |
 |---|------------|--------------|
-| `com.adobe.fmdita.common.SanitizeNodeNameImpl` | `aemsite.DisallowedFileNameChars` | Assurez-vous que la propriété est définie sur ``'<>`@$``. Vous pouvez ajouter d’autres caractères spéciaux à cette liste. |
+| `com.adobe.fmdita.common.SanitizeNodeNameImpl` | `aemsite.DisallowedFileNameChars` | Vérifiez que la propriété est définie sur ``'<>`@$``. Vous pouvez ajouter des caractères spéciaux à cette liste. |
 
 Vous pouvez également configurer d’autres propriétés, telles que l’utilisation de minuscules dans les noms de fichier, le séparateur pour gérer les caractères non valides et le nombre maximal de caractères autorisés dans les noms de fichier. Pour configurer ces propriétés, ajoutez les paires clé-valeur suivantes dans le fichier de configuration :
 
@@ -261,8 +260,14 @@ Effectuez les étapes suivantes pour arrêter la création d’une version de la
    >
    > Lorsque cette option est sélectionnée, les utilisateurs peuvent supprimer directement n’importe quelle page sans créer de version pour eux. Si cette option n’est pas sélectionnée, une version est créée avant la suppression de la ou des pages\.
 
+### Configuration d’un module de réécriture personnalisé avec des guides du Experience Manager {#custom-rewriter}
 
-## Utilisation de métadonnées pour la publication d’une sortie via DITA-OT {#id191LF0U0TY4}
+Les guides du Experience Manager ont un sling personnalisé [**rewriter**](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) module de gestion des liens générés en cas de croix (liens entre les rubriques de deux cartes différentes). Cette configuration de module de réécriture est installée à l’emplacement suivant : <br> `/apps/fmdita/config/rewriter/fmdita-crossmap-link-patcher`.
+
+Si votre code base comporte un autre module de réécriture sling personnalisé, utilisez une `'order'` valeur supérieure à 50, comme l’utilise le module de réécriture sling de Guides de Experience Manager `'order'` 50.  Pour le remplacer, vous devez disposer d’une valeur supérieure à 50 . Pour plus d’informations, voir [Pipelines de réécriture de sortie](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html).
+
+
+## Utilisation de métadonnées pour publier une sortie via DITA-OT {#id191LF0U0TY4}
 
 AEM Guides permet de transmettre des métadonnées personnalisées lors de la publication d’une sortie à l’aide de DITA-OT. En tant qu’administrateur et éditeur, vous devez effectuer les tâches suivantes pour configurer et utiliser des métadonnées personnalisées dans la sortie publiée :
 
@@ -285,7 +290,7 @@ Pour ajouter les métadonnées requises dans le système, procédez comme suit :
 
    La page Formulaires de schéma de métadonnées s’affiche.
 
-1. Sélectionnez la **default** formulaire de la liste.
+1. Sélectionnez la variable **default** formulaire de la liste.
 
    >[!NOTE]
    >
@@ -388,8 +393,8 @@ Pour valider les valeurs de métadonnées transmises à DITA-OT, vous pouvez uti
   ```
 
 
-- isArray : Attribut booléen qui définit si les métadonnées sont à plusieurs valeurs \(Tableau\) ou non. Les valeurs sont délimitées par un point-virgule.
-- Identifiant de chemin d’accès : Chemin d’accès absolu au fichier stocké dans le répertoire temporaire.
+- isArray : attribut booléen qui définit si les métadonnées sont à plusieurs valeurs \(Array\) ou non. Les valeurs sont délimitées par un point-virgule.
+- ID de chemin d’accès : chemin d’accès absolu au fichier stocké dans le répertoire temporaire.
 
 >[!NOTE]
 >
@@ -457,9 +462,9 @@ Présentation générale de la variable `elementmapping.xml` La structure est ex
 
    - COMPOSITE : élément au composant *le mappage se poursuit pour les éléments enfants* ainsi que .
 
-   - STANDALONE : les éléments enfants de l’élément actif sont *mappé plus*.
+   - STANDALONE : les éléments enfants de l’élément actif sont *n’est plus mappé*.
 
-   Dans l’exemple ci-dessus, si la variable `<title>` contient des éléments enfants, ils ne seront mappés à aucun autre composant. Le composant pour `<title>` est responsable du rendu de tous les éléments enfants à l’intérieur de l’élément `<title>` élément .
+   Dans l’exemple ci-dessus, si la variable `<title>` contient des éléments enfants, ils ne seront mappés à aucun autre composant. Le composant pour `<title>` est responsable du rendu de tous les éléments enfants à l’intérieur de la fonction `<title>` élément .
 
 1. S’il existe plusieurs composants mappés à un seul élément DITA, la meilleure correspondance pour l’élément est sélectionnée. Pour sélectionner le meilleur composant de correspondance, la spécialisation du domaine et de la structure des éléments DITA est prise en compte.
 
@@ -495,7 +500,7 @@ Présentation générale de la variable `elementmapping.xml` La structure est ex
    </ditaelement>
    ```
 
-   Le mappage d’élément ci-dessus indique que l’ensemble du balisage XML de l’élément `<svg-container>` sera enregistrée comme valeur d’une propriété nommée `data` sur le noeud output.
+   Le mappage d’élément ci-dessus indique que le balisage XML entier de l’élément `<svg-container>` sera enregistrée comme valeur d’une propriété nommée `data` sur le noeud output.
 
 1. Il existe un mappage d’attributs spécial pour gérer la résolution du chemin dans le processus de génération de sortie. Par exemple :
 
@@ -507,7 +512,7 @@ Présentation générale de la variable `elementmapping.xml` La structure est ex
    </attributemap>
    ```
 
-   Pour ce qui concerne `attributemap`, la variable `href` dans votre élément DITA sera mappé à une propriété node nommée `fileReference`. Maintenant depuis `ispath` est défini sur `true`, le processus de génération de sortie résout ce chemin, puis le définit dans `fileReference` de noeud.
+   Pour ce qui concerne `attributemap`, la variable `href` dans votre élément DITA sera mappé à une propriété de noeud nommée `fileReference`. Maintenant depuis `ispath` est défini sur `true`, le processus de génération de sortie résout ce chemin, puis le définit dans `fileReference` de noeud.
 
    La manière dont cette résolution se produit est déterminée en fonction de la valeur de la variable `rel` dans le mappage des attributs.
 
@@ -544,21 +549,21 @@ Voici un exemple du schéma d’élément DITA dans `elementmapping.xml` fichier
 
 Le tableau suivant décrit les éléments du schéma d’élément DITA :
 
-| Élément | Description |
+| Élément. | Description |
 |-------|-----------|
 | `<ditaelement>` | Noeud de niveau supérieur pour chaque élément de mappage. |
 | `<class>` | L’attribut de classe de l’élément DITA cible pour lequel vous écrivez le composant.<br> Par exemple, l’attribut de classe pour la rubrique DITA est : <br> `- topic/topic` |
 | `<componentpath>` | Chemin d’accès CRXDE du composant AEM mappé. |
-| `<type>` | Valeurs possibles :<br> -   **COMPOSITE**: Traiter également les éléments enfants <br> -   **AUTONOME**: Ignore le traitement des éléments enfants |
+| `<type>` | Valeurs possibles :<br> -   **COMPOSITE**: traitez également les éléments enfants. <br> -   **AUTONOME**: ignore le traitement des éléments enfants |
 | `<attributeprop>` | Utilisé pour mapper les attributs et valeurs DITA sérialisés sur les noeuds AEM en tant que propriété. Par exemple, si vous avez `<note type="Caution">` et que le composant mappé pour cet élément comporte `<attributeprop>attr_t</ attributeprop>`, l’attribut et la valeur du noeud sont sérialisés en `attr_t` propriété du noeud d’AEM correspondant \( `attr_t->type="caution"`\). |
-| `<textprop>propname_t</textprop>` | Enregistrez le `getTextContent()` sortie vers la propriété définie par `propname_t.` <br> **Remarque :** Il s’agit d’une propriété optimisée. |
-| `<xmlprop>propname_x </xmlprop>` | Enregistrer le XML sérialisé de ce noeud dans la propriété définie par `propname_x.<br> `**Remarque :** Il s’agit d’une propriété optimisée. |
+| `<textprop>propname_t</textprop>` | Enregistrez le `getTextContent()` sortie vers la propriété définie par `propname_t.` <br> **Remarque :** C’est une propriété optimisée. |
+| `<xmlprop>propname_x </xmlprop>` | Enregistrer le XML sérialisé de ce noeud dans la propriété définie par `propname_x.<br> `**Remarque :** C’est une propriété optimisée. |
 | `<xpath>` | Si l’élément XPath est fourni dans le mappage d’élément, alors avec le nom de l’élément et la classe, la condition XPath doit également être satisfaite pour que le mappage de composant soit utilisé. |
-| `<target>` | Placez l’élément DITA dans le référentiel crx à l’emplacement spécifié.<br> Valeurs possibles : <br> - **head**: Sous le noeud head <br> - **text**: Sous le noeud de paragraphe |
+| `<target>` | Placez l’élément DITA dans le référentiel crx à l’emplacement spécifié.<br> Valeurs possibles : <br> - **head**: sous le noeud head <br> - **text**: sous le noeud de paragraphe |
 | `<wrapelement>` | Elément HTML dans lequel placer le contenu. |
 | `<wrapclass>` | La valeur de l’élément à la propriété `wrapclass.` |
 | `<attributemap>` | Noeud de conteneur contenant un ou plusieurs noeuds `<attribute>` noeuds. |
-| `<attribute from="attrname" to="propname" ispath="true|false" rel="source|target" />` | Mappe les attributs DITA aux propriétés AEM : <br> -   **`from`**: Nom d’attribut DITA <br> -   **`to`**: AEM nom de la propriété du composant <br> -   **`ispath`**: Si l’attribut est une valeur de chemin \(par exemple : *image*\) <br> -   **`rel`**: Si le chemin d’accès est la source ou la cible <br> **Remarque :** If `attrname` commence par `%`, puis map `attrname minus '%'` à prop &#39; `propname`&#39;. |
+| `<attribute from="attrname" to="propname" ispath="true|false" rel="source|target" />` | Mappe les attributs DITA aux propriétés AEM : <br> -   **`from`**: nom de l’attribut DITA <br> -   **`to`**: nom de la propriété du composant AEM <br> -   **`ispath`**: si l’attribut est une valeur de chemin \(par exemple : *image*\) <br> -   **`rel`**: si le chemin est la source ou la cible <br> **Remarque :** If `attrname` commence par `%`, puis map `attrname minus '%'` à prop &#39; `propname`&#39;. |
 
 **Remarques supplémentaires**
 
@@ -566,7 +571,7 @@ Le tableau suivant décrit les éléments du schéma d’élément DITA :
 
 - Dans le `elementmapping.xml` , il existe de nombreuses entrées de mappage faisant référence au composant fmdita/components/dita/wrapper . Wrapper est un composant générique qui effectue le rendu de constructions DITA relativement simples à l’aide de propriétés sur leur noeud de site pour générer un HTML pertinent. Elle utilise la variable `wrapelement` pour générer des balises englobantes et déléguer le rendu enfant aux composants correspondants. Cela s’avère utile lorsque vous souhaitez uniquement un composant de conteneur. Au lieu de créer un composant qui effectue le rendu d’une balise conteneur spécifique comme `div` ou `p`, vous pouvez utiliser le composant Wrapper avec l’événement `wrapelement` et `wrapclass` pour obtenir le même effet.
 
-- Il n’est pas recommandé d’enregistrer de grandes quantités de texte dans les propriétés JCR de chaîne. Le calcul du type de propriété optimisé dans la génération de sortie garantit que le contenu texte volumineux n’est pas enregistré comme type de chaîne. Au lieu de cela, lorsque le contenu supérieur à un certain seuil doit être enregistré, le type de la propriété est remplacé par binaire. Par défaut, ce seuil est configuré à 512 octets, mais peut être modifié dans Configuration Manager \(*com.adobe.fmdita.config.ConfigManager*\) en modifiant la variable **Enregistrer comme seuil binaire** .
+- Il n’est pas recommandé d’enregistrer de grandes quantités de texte dans les propriétés JCR de chaîne. Le calcul du type de propriété optimisé dans la génération de sortie garantit que le contenu texte volumineux n’est pas enregistré comme type de chaîne. Au lieu de cela, lorsque le contenu supérieur à un certain seuil doit être enregistré, le type de la propriété est remplacé par binaire. Par défaut, ce seuil est configuré à 512 octets, mais peut être modifié dans Configuration Manager \(*com.adobe.config.ConfigManager*\) en modifiant la variable **Enregistrer comme seuil binaire** .
 
 - Si vous envisagez de remplacer certains \(et pas tous\) des mappages d’éléments, il n’est pas nécessaire de répliquer l’intégralité de la variable `elementmapping.xml` fichier . Vous devez créer un nouveau fichier de mappage XML et définir uniquement les éléments que vous remplacez.
 
@@ -581,21 +586,21 @@ AEM Guides vous offre la possibilité d’étendre les fonctionnalités de la co
 >
 > La modification directe aux composants de page n’est pas recommandée, car elle sera écrasée par les nouvelles versions du produit.
 
-AEM Guides fournit les `apps.fmdita.dashboard-extn` catégorie pour la personnalisation de la console de mappage. Chaque fois que la console de mappage est chargée, la fonctionnalité créée sous `apps.fmdita.dashboard-extn` est exécutée et chargée.
+AEM Guides fournit la variable `apps.fmdita.dashboard-extn` catégorie pour personnaliser la console de mappage. Chaque fois que la console de mappage est chargée, la fonctionnalité créée sous `apps.fmdita.dashboard-extn` est exécutée et chargée.
 
 >[!NOTE]
 >
-> Pour plus d’informations sur la création d’AEM bibliothèque cliente, voir [Utilisation de bibliothèques côté client](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=en).
+> Pour plus d’informations sur la création d’AEM bibliothèque cliente, voir [Utilisation de bibliothèques côté client](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=fr).
 
-## Gérer le rendu d’image lors de la génération de sortie {#id177BF0G0VY4}
+## Gérer le rendu d’image lors de la génération de la sortie {#id177BF0G0VY4}
 
-AEM est fourni avec un ensemble de workflows et de gestionnaires de médias par défaut pour traiter les ressources. Dans AEM, il existe des workflows prédéfinis pour gérer le traitement des ressources pour les types MIME les plus courants. En règle générale, pour chaque image que vous téléchargez, AEM crée plusieurs rendus du même format binaire. Ces rendus peuvent être de taille différente, avec une résolution différente, avec un filigrane ajouté ou d’autres caractéristiques modifiées. Pour plus d’informations sur la manière dont AEM gère les ressources, voir [Traitement des ressources à l’aide des workflows et des gestionnaires de médias](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=fr) dans AEM documentation.
+AEM est fourni avec un ensemble de workflows et de gestionnaires de médias par défaut pour traiter les ressources. Dans AEM, il existe des workflows prédéfinis pour gérer le traitement des ressources pour les types MIME les plus courants. En règle générale, pour chaque image que vous téléchargez, AEM crée plusieurs rendus du même format binaire. Ces rendus peuvent être de taille différente, avec une résolution différente, avec un filigrane ajouté ou d’autres caractéristiques modifiées. Pour plus d’informations sur la manière dont AEM gère les ressources, voir [Traitement des ressources à l’aide des workflows et des gestionnaires de médias](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=fr) dans la documentation AEM.
 
-AEM Guides vous permet de configurer le rendu d’image à utiliser lors de la génération de la sortie pour vos documents. Par exemple, vous pouvez choisir parmi l’un des rendus d’image par défaut ou en créer un et l’utiliser pour publier vos documents. Le mappage de rendu d’image pour la publication de vos documents est stocké dans la variable `/libs/fmdita/config/ **renditionmap.xml**` fichier . Un fragment de code `renditionmap.xml` est le suivant :
+AEM Guides vous permet de configurer le rendu d’image à utiliser lors de la génération de la sortie pour vos documents. Par exemple, vous pouvez choisir parmi l’un des rendus d’image par défaut ou en créer un et l’utiliser pour publier vos documents. Le mappage de rendu d’image pour la publication de vos documents est stocké dans la variable `/libs/fmdita/config/ **renditionmap.xml**` fichier . Un extrait de code de `renditionmap.xml` se présente comme suit :
 
 >[!NOTE]
 >
-> Il est recommandé de créer une copie du `renditionmap.xml` dans le fichier `apps` pour toutes les personnalisations.
+> Il est recommandé de créer une copie de la variable `renditionmap.xml` dans le fichier `apps` pour toutes les personnalisations.
 
 ```XML
 <renditionmap>
@@ -611,7 +616,7 @@ AEM Guides vous permet de configurer le rendu d’image à utiliser lors de la g
 </renditionmap>
 ```
 
-Le `mimetype` spécifie le type MIME du format de fichier. Le `rendition output` element spécifie le type de format de sortie et le nom du rendu \(par exemple, `cq5dam.web.1280.1280.jpeg`\) qui doit être utilisé pour publier la sortie spécifiée. Vous pouvez spécifier les rendus d’image à utiliser pour tous les formats de sortie pris en charge : AEMSITE, PDF, HTML5, EPUB et PERSONNALISÉ.
+La variable `mimetype` spécifie le type MIME du format de fichier. La variable `rendition output` element spécifie le type de format de sortie et le nom du rendu \(par exemple, `cq5dam.web.1280.1280.jpeg`\) qui doit être utilisé pour publier la sortie spécifiée. Vous pouvez spécifier les rendus d’image à utiliser pour tous les formats de sortie pris en charge : AEMSITE, PDF, HTML5, EPUB et PERSONNALISÉ.
 
 Si le rendu spécifié n’est pas présent, AEM processus de publication Guides commence par rechercher le rendu web de l’image donnée. Si même le rendu web est introuvable, le rendu d’origine de l’image est utilisé.
 
@@ -657,4 +662,3 @@ Suivez les instructions de la section [Remplacements de configuration](download-
 >[!TIP]
 >
 > Voir *Historique des sorties* dans le guide des bonnes pratiques pour connaître les bonnes pratiques relatives à l’utilisation de l’historique des sorties.
-

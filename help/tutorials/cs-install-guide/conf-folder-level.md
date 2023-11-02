@@ -1,13 +1,13 @@
 ---
 title: Configuration de profils globaux ou au niveau du dossier
 description: Découvrez comment configurer des profils globaux ou de niveau dossier
-source-git-commit: 6f4ab3baf0c0dd333035c3a7d131bd151b17de45
+exl-id: 19f63d67-89ef-4c5e-bc9a-cf40dd8d7979
+source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
 workflow-type: tm+mt
-source-wordcount: '3962'
+source-wordcount: '3961'
 ht-degree: 0%
 
 ---
-
 
 # Configuration de profils globaux ou au niveau du dossier {#id181AH2003PF}
 
@@ -25,7 +25,7 @@ Vous pouvez également déléguer les configurations spécifiques aux dossiers �
 
 - **Attributs conditionnels**: utilisez cet onglet pour configurer les attributs conditionnels au niveau global ou au niveau du dossier. Un attribut conditionnel est une combinaison du nom et de la valeur de l’attribut, et vous pouvez également définir un libellé pour celui-ci. Vous pouvez utiliser les attributs DITA standard ou vos propres attributs personnalisés. Les attributs conditionnels que vous définissez au niveau global sont mis à la disposition de tous les utilisateurs dans l’ensemble des projets. Si vous avez défini des attributs conditionnels au niveau du dossier, ils sont fusionnés avec les attributs conditionnels définis globalement.
 
-- **Modèle de création**: utilisez cet onglet pour configurer les modèles que vos auteurs utiliseront pour créer du contenu DITA. Les modèles de rubrique suivants sont disponibles prêts à l’emploi :
+- **Modèles**: utilisez cet onglet pour configurer les modèles que vos auteurs utiliseront pour créer ou publier du contenu DITA. Les modèles de rubrique suivants sont disponibles prêts à l’emploi :
 
    - Glossaire
 
@@ -49,11 +49,11 @@ Vous pouvez également déléguer les configurations spécifiques aux dossiers �
 
   Avec les modèles de rubrique, vous pouvez également définir les modèles de mappage qui seront mis à la disposition des auteurs. Les modèles de mappage suivants sont disponibles prêts à l’emploi :
 
-   - Map
+   - Mappage
 
    - Bookmap
 
-- **Paramètre prédéfini de sortie**: à l’instar des modèles de création, il existe cinq paramètres prédéfinis de sortie préconfigurés :
+- **Paramètre prédéfini de sortie**: à l’instar des modèles, il existe cinq paramètres prédéfinis de sortie préconfigurés :
 
    - AEM site
 
@@ -75,9 +75,9 @@ Vous pouvez également déléguer les configurations spécifiques aux dossiers �
    - Étiquettes de version de contenu XML
    - Rootmap \(uniquement au niveau du dossier\)
 
-Vous pouvez configurer les deux profils : profil global et profil au niveau du dossier. Dans un profil de niveau dossier, vous pouvez définir les dossiers sur lesquels les paramètres seront applicables. Ces paramètres comprennent les attributs conditionnels, les modèles de création, les paramètres prédéfinis de sortie et les paramètres de l’éditeur XML. Les paramètres prédéfinis conditionnels, les modèles de création et les configurations de l’éditeur XML sont ensuite mis à la disposition des auteurs qui travaillent dans les dossiers configurés. De même, les éditeurs auront accès aux paramètres prédéfinis de sortie configurés définis dans les dossiers configurés.
+Vous pouvez configurer les deux profils : profil global et profil au niveau du dossier. Dans un profil de niveau dossier, vous pouvez définir les dossiers sur lesquels les paramètres seront applicables. Ces paramètres comprennent les attributs conditionnels, les modèles, les paramètres prédéfinis de sortie et les paramètres de l’éditeur XML. Les paramètres prédéfinis conditionnels, les modèles et les configurations de l’éditeur XML sont ensuite mis à la disposition des auteurs qui travaillent dans les dossiers configurés. De même, les éditeurs auront accès aux paramètres prédéfinis de sortie configurés définis dans les dossiers configurés.
 
-Un profil au niveau du dossier remplace les paramètres configurés dans le profil global. En d’autres termes, si un dossier comporte un profil au niveau du dossier, il affichera les modèles de création, les modèles de sortie et les paramètres de l’éditeur XML configurés dans son profil de dossier correspondant. Il n’affichera pas les paramètres configurés dans le profil global. Toutefois, cela ne s’applique pas aux attributs conditionnels. Dans le cas d’attributs conditionnels, les attributs conditionnels sont fusionnés aux niveaux global et de dossier.
+Un profil au niveau du dossier remplace les paramètres configurés dans le profil global. En d’autres termes, si un dossier comporte un profil au niveau du dossier, il affichera les modèles, les modèles de sortie et les paramètres de l’éditeur XML configurés dans son profil de dossier correspondant. Il n’affichera pas les paramètres configurés dans le profil global. Toutefois, cela ne s’applique pas aux attributs conditionnels. Dans le cas d’attributs conditionnels, les attributs conditionnels sont fusionnés aux niveaux global et de dossier.
 
 Les sections suivantes vous guident tout au long du processus de configuration des profils globaux et des profils au niveau du dossier.
 
@@ -99,7 +99,7 @@ Effectuez les étapes suivantes pour configurer le profil global :
 
 1. Pour configurer **Attributs conditionnels**, voir [Configuration d’attributs conditionnels pour les profils globaux ou au niveau du dossier](#id1889D0I305Z).
 
-1. Pour configurer **Modèle de création**, voir [Configuration de modèles de création](#id1889D0IL0Y4).
+1. Pour configurer **Modèles**, voir [Configuration de modèles de création](#id1889D0IL0Y4).
 
 1. Pour configurer **Paramètres prédéfinis de sortie**, voir [Configuration des paramètres prédéfinis de sortie](#id18AGD0IH0Y4).
 
@@ -144,7 +144,7 @@ Effectuez les étapes suivantes pour configurer un profil au niveau du dossier :
 
    >[!NOTE]
    >
-   > Les utilisateurs que vous ajoutez ici auront les droits d’administration pour mettre à jour les attributs conditionnels, le modèle de création et les paramètres prédéfinis de sortie configurés pour ce profil de dossiers.
+   > Les utilisateurs que vous ajoutez ici auront les droits d’administration pour mettre à jour les attributs conditionnels, les modèles et les paramètres prédéfinis de sortie configurés pour ce profil de dossiers.
 
 1. Pour ajouter un dossier, cliquez sur l’icône Parcourir dans Chemin d’accès au dossier et sélectionnez un dossier, puis cliquez sur Ajouter pour ajouter le dossier à ce profil.
 
@@ -161,11 +161,11 @@ Effectuez les étapes suivantes pour configurer un profil au niveau du dossier :
 1. Après avoir ajouté tous les dossiers et utilisateurs requis au profil de dossier, cliquez sur **Enregistrer**.
 
 
-Vous êtes maintenant prêt à configurer les attributs conditionnels, les modèles de création, les paramètres prédéfinis de sortie et l’éditeur XML.
+Vous êtes maintenant prêt à configurer les attributs conditionnels, les modèles, les paramètres prédéfinis de sortie et l’éditeur XML.
 
 >[!IMPORTANT]
 >
-> Lorsque vous créez un profil de dossier, il ne contient par défaut aucun modèle de création. Vous devez ajouter les modèles de création requis dans le profil de dossier pour les rendre disponibles à vos auteurs.
+> Lorsque vous créez un profil de dossier, il ne contient par défaut aucun modèle. Vous devez ajouter les modèles requis dans le profil de dossier pour les rendre disponibles à vos auteurs.
 
 ## Configuration d’attributs conditionnels pour les profils globaux ou au niveau du dossier {#id1889D0I305Z}
 
@@ -225,13 +225,13 @@ Si vous utilisez un attribut personnalisé, il doit s’agir d’un attribut DIT
 1. Ajoutez des attributs personnalisés au profil global ou au niveau du dossier.
 
 
-## Configuration de modèles de création {#id1889D0IL0Y4}
+## Configurer des modèles {#id1889D0IL0Y4}
 
-AEM Guides est fourni avec 7 modèles de création prêts à l’emploi et 2 modèles de mappage DITA. Vous pouvez choisir de n’avoir que quelques modèles disponibles pour vos auteurs. Si vous utilisez un modèle personnalisé, celui-ci peut être configuré et rendu disponible pour la création. Vous utilisez l’onglet Modèle de création dans la configuration Profils de dossier pour ajouter ou supprimer des modèles de rubrique ou de mappage de profils globaux ou de niveau dossier.
+AEM Guides est fourni avec 7 modèles de rubrique prêts à l’emploi, 2 modèles de mappage DITA et 3 modèles de PDF. Vous pouvez choisir de n’avoir que quelques modèles disponibles pour les auteurs et les éditeurs. Si vous utilisez un modèle personnalisé, celui-ci peut être configuré et rendu disponible pour la création et la publication. Vous utilisez la variable **Modèles** dans la configuration Profils de dossier pour ajouter ou supprimer des modèles de rubrique, de mappage ou de PDF de profils globaux ou de niveau dossier.
 
-Avant même de configurer la rubrique ou les modèles de mappage au niveau global ou au niveau du dossier, vous pouvez également définir un emplacement pour stocker vos modèles de création personnalisés. Pour configurer un emplacement personnalisé pour stocker des modèles de création, reportez-vous à la section [Configuration du chemin d’accès au dossier de modèle DITA personnalisé](conf-template-tags-custom-dita-topic-template.md#id191LCF0095Z).
+Avant même de configurer les modèles de rubrique, de mappage ou de PDF au niveau global ou au niveau du dossier, vous pouvez également définir un emplacement pour stocker vos modèles personnalisés. Pour configurer un emplacement personnalisé pour stocker les modèles, reportez-vous à la section [Configuration du chemin d’accès au dossier de modèle DITA personnalisé](conf-template-tags-custom-dita-topic-template.md#id191LCF0095Z).
 
-Effectuez les étapes suivantes pour ajouter la rubrique ou mapper des modèles dans un profil de dossier :
+Effectuez les étapes suivantes pour ajouter des modèles de rubrique, de mappage ou de PDF à un profil de dossier :
 
 1. Connectez-vous à Adobe Experience Manager en tant qu’administrateur ou que l’utilisateur disposant de droits d’administration sur un profil de niveau dossier.
 
@@ -243,26 +243,26 @@ Effectuez les étapes suivantes pour ajouter la rubrique ou mapper des modèles 
 
    >[!NOTE]
    >
-   > Vous pouvez choisir de configurer un modèle de création dans le profil global ou un profil au niveau du dossier.
+   > Vous pouvez choisir de configurer un modèle dans le profil global ou un profil au niveau du dossier.
 
-1. Sur la page du profil, cliquez sur le **Modèle de création** .
+1. Sur la page du profil, cliquez sur le **Modèles** .
 1. Cliquez sur **Modifier**.
 
-   Vous avez la possibilité d’ajouter des modèles de rubrique et de carte en effectuant une recherche à partir de l’emplacement par défaut ou en la recherchant.
+   Vous avez la possibilité d’ajouter des modèles de rubrique, de carte et de PDF en effectuant des recherches à partir de l’emplacement par défaut ou en le recherchant.
 
    >[!NOTE]
    >
-   > Par défaut, tous les modèles de création sont stockés dans le dossier /content/dam/dita-templates . La variable `dita-templates` Le dossier contient `topics` et `maps` sous-dossiers pour stocker la rubrique et mapper des modèles. Vous pouvez ajouter vos modèles personnalisés \(.dita,.xml ou .ditamapfiles\) dans les dossiers de modèles par défaut. Une fois que vous avez ajouté votre modèle dans le dossier par défaut, vous pouvez le faire dans le profil global ou de dossier. Pour plus d’informations sur la création de modèles personnalisés à l’aide de l’éditeur web, voir [Créer un modèle de création personnalisé](#id1917D0EG0HJ).
+   > Par défaut, tous les modèles sont stockés dans le dossier /content/dam/dita-templates . La variable `dita-templates` Le dossier contient `topics`, `maps`, et `PDF` sous-dossiers pour stocker la rubrique, le mappage et les modèles de PDF. Vous pouvez ajouter vos modèles personnalisés \(.dita,.xml ou .ditamapfiles\) dans les dossiers de modèles par défaut. Une fois que vous avez ajouté votre modèle dans le dossier par défaut, vous pouvez le faire dans le profil global ou de dossier. Pour plus d’informations sur la création de modèles personnalisés à l’aide de l’éditeur web, voir [Créer un modèle de création personnalisé](#id1917D0EG0HJ).
 
-   ![](assets/search-author-temp.png)
+   ![](assets/search-author-temp.png){width="800" align="left"}
 
-1. Ajoutez la rubrique requise et mappez les modèles à votre profil.
+1. Ajoutez la rubrique, le mappage et les modèles de PDF requis à votre profil.
 
    Pour ajouter un modèle, effectuez l’une des opérations suivantes :
 
    - Choisir **Recherche ou type** et saisissez ou sélectionnez le nom d’un modèle dans la liste déroulante. La liste déroulante se compose de tous les modèles par défaut et de tout nouveau modèle que vous avez créé.
 
-     ![](assets/default-template-list.png)
+     ![](assets/default-template-list.png){width="800" align="left"}
 
    - Cliquez sur **Parcourir** et sélectionnez un modèle dans DAM.
 
@@ -270,7 +270,7 @@ Effectuez les étapes suivantes pour ajouter la rubrique ou mapper des modèles 
 
    Les modèles sélectionnés sont ajoutés à la liste des modèles.
 
-   ![](assets/author-templ-added-list.png)
+   ![](assets/author-templ-added-list.png){width="800" align="left"}
 
    >[!NOTE]
    >
@@ -334,11 +334,11 @@ AEM Guides permet à l’administrateur de créer des paramètres prédéfinis d
 
 Une fois que les paramètres prédéfinis de sortie par défaut ont été créés dans le système, tous les paramètres prédéfinis DITA créés par la suite utilisent les paramètres prédéfinis par défaut pour générer la sortie. Cependant, tous les mappages DITA existants continueraient à utiliser les paramètres prédéfinis de sortie qui avaient été configurés auparavant avec eux. Si vous souhaitez appliquer le nouveau paramètre prédéfini de sortie sur tous les mappages DITA existants, vous devez exécuter le workflow Appliquer les modifications prédéfinies .
 
-Outre les paramètres prédéfinis configurés au niveau global ou au niveau de l’entreprise, un éditeur aurait toujours les droits de créer d’autres paramètres prédéfinis de sortie. Cependant, ces paramètres prédéfinis sont liés au mappage DITA pour lequel ils sont créés. Pour plus d’informations sur la création de paramètres prédéfinis de sortie standard pour un mappage DITA, voir *Créer, modifier, dupliquer ou supprimer un paramètre prédéfini de sortie* dans le guide as a Cloud Service Utilisation des guides Adobe Experience Manager .
+Outre les paramètres prédéfinis configurés au niveau global ou au niveau de l’entreprise, un éditeur aurait toujours les droits de créer d’autres paramètres prédéfinis de sortie. Cependant, ces paramètres prédéfinis sont liés au mappage DITA pour lequel ils sont créés. Pour plus d’informations sur la création de paramètres prédéfinis de sortie standard pour un mappage DITA, voir *Créer, modifier, dupliquer ou supprimer un paramètre prédéfini de sortie* dans le guide d’utilisation des guides Adobe Experience Manager as a Cloud Service.
 
 Effectuez les étapes suivantes pour configurer des paramètres prédéfinis de sortie globaux ou spécifiques à un dossier :
 
-1. Connectez-vous à Adobe Experience Manager en tant qu’administrateur ou que l’utilisateur disposant de droits d’administration sur un profil spécifique au dossier.
+1. Connectez-vous à Adobe Experience Manager en tant qu’administrateur ou l’utilisateur disposant de droits d’administration sur un profil spécifique au dossier.
 
 1. Cliquez sur le lien Adobe Experience Manager en haut de l’écran et choisissez **Outils**.
 
@@ -361,7 +361,7 @@ Effectuez les étapes suivantes pour configurer des paramètres prédéfinis de 
 
    - Cliquez sur **Modifier** pour ouvrir la configuration du paramètre prédéfini sélectionné à des fins de modification.
 
-     Pour plus d’informations sur les paramètres prédéfinis de sortie, voir *Présentation des paramètres prédéfinis de sortie* dans le guide as a Cloud Service Utilisation des guides Adobe Experience Manager .
+     Pour plus d’informations sur les paramètres prédéfinis de sortie, voir *Présentation des paramètres prédéfinis de sortie* dans le guide d’utilisation des guides Adobe Experience Manager as a Cloud Service.
 
 1. Cliquez sur **Enregistrer** pour enregistrer les paramètres prédéfinis.
 
@@ -374,7 +374,7 @@ Un nouveau paramètre prédéfini de sortie créé au niveau global est mis à l
 
 Si vous avez mis à jour un paramètre prédéfini de sortie existant ou si vous souhaitez rendre un nouveau paramètre prédéfini de sortie disponible pour les mappages DITA existants, effectuez les étapes suivantes :
 
-1. Connectez-vous à Adobe Experience Manager en tant qu’administrateur ou que l’utilisateur disposant de droits d’administration sur un profil spécifique au dossier.
+1. Connectez-vous à Adobe Experience Manager en tant qu’administrateur ou l’utilisateur disposant de droits d’administration sur un profil spécifique au dossier.
 
 1. Cliquez sur le lien Adobe Experience Manager en haut de l’écran et choisissez **Outils**.
 
@@ -475,4 +475,3 @@ Dans l’exemple ci-dessus, &quot;label1&quot; est l’identifiant de la séquen
 **Rootmap**
 
 Si vos auteurs travaillent sur une carte racine spécifique, vous pouvez rechercher et sélectionner cette carte racine ici. Notez que vous ne pouvez définir le rootmap que pour un profil au niveau du dossier.
-
