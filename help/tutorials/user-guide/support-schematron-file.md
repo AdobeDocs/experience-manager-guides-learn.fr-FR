@@ -1,8 +1,8 @@
 ---
 title: Prise en charge des fichiers de schéma
 description: Découvrez comment importer et valider une rubrique DITA, utiliser l’insertion d’instructions de rapport pour rechercher des règles, utiliser des expressions regex et définir des modèles abstraits dans les fichiers de schéma des Guides d’AEM.
-exl-id: e5912fa1-af26-42f4-b5e5-a6d2afd45bc8
-source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
+exl-id: ed07a5ec-6adc-43a3-8f03-248b8c963e9a
+source-git-commit: 05a7b46b0c6ec056f85a82759400717fce9a845c
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 0%
@@ -105,7 +105,7 @@ No one word titles.
 
 ## Définition de modèles abstraits{#schematron-abstract-patterns}
 
-AEM Gudies prend également en charge les modèles abstraits dans Schematron. Vous pouvez définir des modèles abstraits génériques qui réutilisent ces modèles abstraits.  Vous pouvez créer des paramètres d’espace réservé qui spécifient le modèle réel.
+AEM Guides prend également en charge les modèles abstraits dans Schematron. Vous pouvez définir des modèles abstraits génériques qui réutilisent ces modèles abstraits.  Vous pouvez créer des paramètres d’espace réservé qui spécifient le modèle réel.
 
 
 L’utilisation de modèles abstraits peut simplifier votre schéma de schéma en réduisant la duplication des règles et en facilitant la gestion et la mise à jour de votre logique de validation. Cela peut également faciliter la compréhension de votre schéma, car vous pouvez définir une logique de validation complexe dans un modèle abstrait unique qui peut être réutilisé dans l’ensemble du schéma.
