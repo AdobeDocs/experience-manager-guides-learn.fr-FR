@@ -1,10 +1,10 @@
 ---
 title: Utilisation de l’éditeur de mappage avancé
 description: Découvrez comment utiliser l’éditeur de mappage avancé dans AEM Guides. Découvrez les fonctionnalités de l’éditeur de cartes avancé. Modifiez les rubriques par le biais d’un mappage DITA et utilisez les modes de mise en page, de création et d’aperçu.
-exl-id: 4f48d489-d13e-4285-8870-373f0324f5f6
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+exl-id: e58e3705-2c3b-48cc-b2c8-2596e9751c85
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '3701'
+source-wordcount: '3707'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Effectuez les étapes suivantes pour créer votre fichier de carte à l’aide d
 
    La rubrique est ajoutée dans la carte.
 
-   ![](images/map-editor-add-topic.png){width="800" align="left"}
+   ![rubrique d’ajout de l’éditeur de mappage](images/map-editor-add-topic.png){width="800" align="left"}
 
 1. Pour ajouter des rubriques ou une sous-map suivantes, faites glisser la rubrique ou la sous-map vers l’emplacement requis dans la carte.
 
@@ -156,7 +156,7 @@ Cliquez sur les icônes de flèche vers le haut ou vers le bas pour déplacer la
 >
 > Vous pouvez également faire glisser et déposer les références pour les déplacer dans une carte.
 
-**Verrouillage/déverrouillage** - ![](images/LockClosed_icon.svg) / ![](images/LockOpen_icon.svg)
+**Verrouiller/déverrouiller** - ![](images/LockClosed_icon.svg) / ![](images/LockOpen_icon.svg)
 
 Obtient un verrou sur le fichier map et libère le verrou. Si vous avez des modifications non enregistrées dans votre fichier de carte, vous êtes invité à enregistrer le fichier de carte au moment de la publication du verrouillage. Les modifications sont enregistrées dans la version actuelle du fichier de mappage.
 
@@ -231,7 +231,7 @@ Le panneau Propriétés du contenu contient des informations sur le type de rubr
 
 - **Autres attributs** Si votre administrateur a créé un profil pour les attributs, vous obtiendrez ces attributs avec leurs valeurs configurées. À l’aide du panneau des propriétés de contenu, vous pouvez choisir ces attributs et les affecter au contenu approprié de votre rubrique. Vous pouvez également attribuer des attributs configurés par votre administrateur sous le **Attributs d’affichage** dans les paramètres de l’éditeur. Les attributs définis pour un élément sont affichés dans les vues Disposition et Contour. Vous pouvez ainsi jeter un coup d’oeil rapide à toutes les rubriques d’une carte pour lesquelles un attribut particulier est défini. Par exemple, toutes les rubriques pour lesquelles l’attribut de plateforme est défini comme &quot;Android&quot;.
 
-  ![](images/layout-inline-attributes.png){width="650" align="left"}
+  ![vue de mise en page](images/layout-inline-attributes.png){width="650" align="left"}
 
 
   Pour plus d’informations, voir *Attributs d’affichage* dans la fonction *Paramètres de l’éditeur* description des fonctionnalités dans la section [Panneau gauche](web-editor-features.md#id2051EA0M0HS) .

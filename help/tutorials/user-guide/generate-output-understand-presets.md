@@ -1,10 +1,10 @@
 ---
 title: Présentation des paramètres prédéfinis de sortie
 description: Comprendre les paramètres prédéfinis de sortie dans AEM Guides. Créez des paramètres prédéfinis de sortie à partir de l’éditeur web et du tableau de bord de mappage pour les formats de site AEM, de PDF, de HTML 5, d’EPUB, personnalisé et JSON.
-exl-id: ff4dedbb-47c4-40c7-950c-51f70d5d4b1b
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+exl-id: 8eaf0765-8b66-47d6-9c40-888495baa711
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '208'
 ht-degree: 2%
 
 ---
@@ -34,5 +34,6 @@ Les sections suivantes décrivent les options disponibles pour les formats de so
 
 - **[JSON](generate-output-json.md)**
 
+En tant qu’administrateur, Experience Manager Guides vous permet de créer et de gérer des paramètres prédéfinis de sortie pour les profils globaux et de dossiers. Pour plus d’informations, voir [Gestion des paramètres prédéfinis de sortie de profil global et de dossier](./web-editor-manage-output-presets.md).
 
 **Rubrique parente :**[ Génération de sortie](generate-output.md)

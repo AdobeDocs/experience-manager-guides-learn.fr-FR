@@ -2,9 +2,9 @@
 title: PDF natif | Génération de sortie PDF
 description: Découvrez comment utiliser la publication native de PDF, créer et générer un paramètre prédéfini de sortie de PDF, télécharger des fichiers temporaires après avoir généré la sortie de PDF natif et utiliser des variables de langue dans les Guides d’AEM.
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: 4c10f2387208477bd2ba27188e8aeaa6f3a4a661
+source-git-commit: 1305c960df98553edbd1fb65c8f6e8da7c232087
 workflow-type: tm+mt
-source-wordcount: '3264'
+source-wordcount: '3327'
 ht-degree: 1%
 
 ---
@@ -165,8 +165,9 @@ Utilisez les options suivantes pour définir des paramètres avancés pour fusio
 | **Utiliser la résolution personnalisée (pixels par pouce)** | Il s’agit de la résolution d’affichage de la page en pixels par pouce. Saisissez la valeur souhaitée dans le champ qui s’affiche lorsque cette option est sélectionnée. La valeur par défaut est de 96 pixels par pouce. Si vous définissez une valeur inférieure, définissez une valeur plus élevée afin d’y placer plus de contenu par pouce, et vice versa. |
 | **Afficher le filigrane** | Sélectionnez cette option pour superposer un filigrane dans la sortie. Vous pouvez saisir une nouvelle chaîne de texte dans la zone de texte avec le caractère dont la casse correspond à vos besoins. <br><br>Utilisez du texte statique ou des variables de langue pour publier la version localisée du filigrane.  Selon la langue choisie, la valeur localisée est automatiquement sélectionnée dans la sortie du PDF. Par exemple, vous pouvez imprimer &quot;Éditeur&quot; en filigrane en anglais et &quot;Auteur&quot; en français.  <br> Format: `${lng:<variable name>}`. Par exemple : `$ {lng:publisher-label}` where `publisher-label` est une variable de langue. <br> Survol <img src="./assets/info-details.svg" alt= "icône info" width="25"> près de l’option pour afficher plus de détails sur celle-ci. |
 | **Activation des équations MathML** | Sélectionnez cette option pour effectuer le rendu des équations MathML présentes dans votre contenu. Les équations seront ignorées par défaut. |
-| **Conformité du PDF** | Il s’agit de la norme à laquelle vous envisagez d’enregistrer votre PDF pour vous assurer qu’il est conforme. Sélectionnez dans la liste déroulante pour effectuer un choix dans la liste des normes de PDF disponibles. Pour plus d’informations sur les normes prises en charge, voir [A propos des normes PDF](https://helpx.adobe.com/acrobat/using/pdf-conversion-settings.html#about_pdf_x_pdf_e_and_pdf_a_standards). |
 | **Téléchargement de fichiers temporaires** | Sélectionnez cette option si vous souhaitez télécharger les fichiers de HTML intermédiaires créés lors de la génération de la sortie du PDF natif. Vous pouvez ensuite télécharger les fichiers temporaires après avoir généré la sortie. |
+| **Conformité du PDF** | Il s’agit de la norme à laquelle vous envisagez d’enregistrer votre PDF pour vous assurer qu’il est conforme. Sélectionnez dans la liste déroulante pour effectuer un choix dans la liste des normes de PDF disponibles. Pour plus d’informations sur les normes prises en charge, voir [A propos des normes PDF](https://helpx.adobe.com/acrobat/using/pdf-conversion-settings.html#about_pdf_x_pdf_e_and_pdf_a_standards). |
+| **Propriétés du fichier** | Sélectionnez les propriétés que vous souhaitez traiter en tant que métadonnées. La liste déroulante répertorie les propriétés personnalisées et par défaut. Ces propriétés sont définies à partir de la page Propriétés du mappage DITA ou du fichier bookmap. Une fois définies, ces propriétés sont également copiées dans les rubriques de la carte. Les propriétés de métadonnées sélectionnées sont transmises à la sortie générée à l’aide de l’option Native-PDF. |
 
 ## Génération d’une sortie de PDF {#generate-pdf-output}
 

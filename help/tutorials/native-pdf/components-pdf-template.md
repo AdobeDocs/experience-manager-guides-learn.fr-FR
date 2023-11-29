@@ -2,9 +2,9 @@
 title: Fonction de publication native d’un PDF | Composants d’un modèle de PDF
 description: Découvrez les différents composants d’un modèle de PDF et comment les personnaliser et les configurer.
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '4859'
+source-wordcount: '4947'
 ht-degree: 0%
 
 ---
@@ -420,6 +420,10 @@ Configurez les paramètres de production d’impression pour attribuer des repè
 
 Utilisez la variable **Référence croisée** pour définir comment les références croisées sont publiées dans le PDF. Vous pouvez mettre en forme les références croisées pour le titre de la rubrique, les tableaux, les chiffres, etc.
 
+>[!NOTE]
+>
+> Si vous avez défini le texte du lien lors de l’insertion de la référence croisée, celle-ci prévaut sur le format de référence croisée défini dans le modèle PDF natif .
+
 Vous pouvez également utiliser des variables pour définir une référence croisée.  Lorsque vous utilisez une variable, sa valeur est sélectionnée dans les propriétés. Vous pouvez utiliser une seule ou une combinaison de variables pour définir une référence croisée. Vous pouvez également combiner une chaîne et une variable.
 
 Par exemple, vous pouvez utiliser `View details on {chapter}`. Si le nom du chapitre est &quot;Paramètres généraux&quot;, la référence croisée dans la sortie est &quot;Voir les détails sur les paramètres généraux&quot;.
@@ -441,8 +445,24 @@ AEM Guides fournit les variables d’usine suivantes :
   >
   >Vous pouvez créer des styles de numéro automatique pour les balises de légende et de fitrage.
 
+#### Format de référence croisée par défaut
 
-#### Variables de langue dans les références croisées
+Si vous laissez le champ de texte vide et que vous n’avez pas défini le texte du lien lors de l’insertion d’une référence croisée, Experience Manager Guides ajoute les variables suivantes pour les références croisées respectives :
+
+* **Titre** : `{title}`
+* **Description** : `{description}`
+* **Paragraphe**: `{bookmarkText}`
+* **Signet**: `{bookmarkText}`
+* **Figure**: `{captionText}`
+* **Tableau**: `{captionText}`
+
+L’ordre de priorité des références croisées est le suivant :
+* Texte du lien ajouté dans les références croisées
+* Format de référence croisée défini dans le modèle de PDF natif
+* Format de référence croisée par défaut
+
+
+#### Variables linguistiques dans les références croisées
 
 Vous pouvez également utiliser des variables de langue pour définir des références croisées localisées. Selon la langue choisie, la valeur localisée est automatiquement sélectionnée dans la sortie du PDF.
 
@@ -455,11 +475,12 @@ Par exemple, vous pouvez ajouter une variable de langue &quot;reference-label&qu
 Lorsque vous ajoutez `${lng:<variable name>}` à la section Paragraphe , les références croisées dans les paragraphes de la sortie contiennent le texte localisé et le numéro de page.\
 Par exemple, les captures d’écran suivantes montrent les références croisées &quot;Afficher sur la page 1&quot; en anglais et &quot;Einzelheiten finden Sites auf der Seite 1&quot; en allemand.
 
-<img src="./assets/english-output-corss-reference.png" alt="Sortie en anglais d’une référence croisée dans un pragrah" width ="800" border="2px solid blue">
+<img src="./assets/english-output-corss-reference.png" alt="Sortie en anglais d’une référence croisée dans un pragrah" width ="800" border="2px">
 
 *Référence croisée dans un paragraphe lorsqu’elle est publiée en anglais.*
 
-<img src="./assets/german-output-corss-reference.png" alt="Sortie allemande d&apos;une référence croisée dans un pragrah" width ="800" border="2px solid blue">
+<img src="./assets/german-output-corss-reference.png" alt="Sortie allemande d&apos;une référence croisée dans un pragrah" width ="800" border="2px">
+
 
 *Référence croisée dans un paragraphe lorsqu’elle est publiée en allemand.*
 

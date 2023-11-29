@@ -2,9 +2,9 @@
 title: Présentation des fonctionnalités de l’éditeur web
 description: Découvrez les fonctionnalités de l’éditeur web dans AEM Guides. Découvrez l’interface de l’éditeur web, notamment la barre d’outils principale, la barre d’outils secondaire, le panneau de gauche, la zone d’édition de contenu et le panneau de droite.
 exl-id: 340cf72e-e44d-4df2-8312-50d00ac651b7
-source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '17079'
+source-wordcount: '17231'
 ht-degree: 0%
 
 ---
@@ -302,7 +302,12 @@ Grâce au menu contextuel du tableau, vous pouvez :
 - Générer des identifiants
 
 
-Vous pouvez également définir des attributs sur plusieurs cellules, rangée entière ou colonne d’un tableau. Par exemple, pour aligner une cellule de tableau, faites glisser et sélectionnez la cellule requise. Dans le panneau Propriétés du contenu \(à droite\), la propriété **Type** change en **Entrée multiple**. Dans la section Autres attributs , sélectionnez la variable `@valign` dans la liste déroulante des attributs. Dans la liste déroulante des valeurs, sélectionnez l’alignement de texte à appliquer aux cellules de tableau sélectionnées.
+Vous pouvez également définir des attributs sur plusieurs cellules, rangée entière ou colonne d’un tableau. Par exemple, pour aligner une cellule de tableau, faites glisser et sélectionnez la cellule requise. Dans le panneau Propriétés du contenu (à droite), la propriété **Type** change en **Entrée multiple**.
+
+1. Dans le **Attributs** , cliquez sur **+Ajouter**.
+1. Sélectionnez la variable `@valign` de la fonction **Attribut** liste déroulante
+1. Dans la liste déroulante des valeurs, sélectionnez l’alignement de texte que vous souhaitez appliquer aux cellules de tableau sélectionnées.
+1. Cliquez sur **Ajouter.**
 
 ![](images/align-table-cell_cs.png){width="800" align="left"}
 
@@ -329,7 +334,7 @@ Le champ Source affiche l’UUID du fichier image inséré. Vous pouvez trouver 
 
 Vous pouvez redimensionner une image en fournissant des valeurs Hauteur ou Largeur pour le fichier image. Les proportions de l’image sont conservées automatiquement. Si vous le souhaitez, vous pouvez également choisir de ne pas conserver les proportions du fichier image en cliquant sur l’icône de verrouillage \(de Conserver les proportions\) et en fournissant les valeurs de hauteur et de largeur.
 
-Vous pouvez également spécifier le paramètre Placement de l’image en tant que En ligne ou Saut. Si vous choisissez d’utiliser l’option d’emplacement Saut , vous pouvez ensuite choisir l’emplacement d’alignement de l’image \(Gauche, Centre ou Droite\).
+Vous pouvez également spécifier le paramètre Placement de l’image en tant que En ligne ou Saut. Si vous choisissez d’utiliser l’option d’emplacement Saut , vous pouvez ensuite choisir l’endroit où aligner l’image (gauche, centre ou droite).
 
 Vous pouvez également ajouter d’autres propriétés pour un fichier image en sélectionnant les propriétés requises dans la variable **Attributs** champ .
 
@@ -778,7 +783,7 @@ Vous pouvez également cliquer et lire un fichier audio ou vidéo dans l’édit
 
 
 
-Le fait de double-cliquer sur un fichier de carte l’ouvre dans la variable **Vue Carte**. Pour plus d’informations, voir **Vue Carte** description des fonctionnalités dans la section [Panneau gauche](web-editor-features.md#id2051EA0M0HS) . Si vous double-cliquez sur un fichier de rubrique, il s’ouvre dans le [Zone de modification du contenu](#id2051EB000UI). La navigation et l’ouverture d’un fichier directement à partir de l’éditeur Web permettent de gagner du temps et d’accroître la productivité.
+Sélectionnez une carte et appuyez sur Entrée ou double-cliquez pour l’ouvrir dans le **Vue Carte**. Pour plus d’informations, voir **Vue Carte** description des fonctionnalités dans la section [Panneau gauche](web-editor-features.md#id2051EA0M0HS) . Sélectionnez une rubrique et appuyez sur Entrée ou double-cliquez pour l’ouvrir dans le [Zone de modification du contenu](#id2051EB000UI). La navigation et l’ouverture d’un fichier directement à partir de l’éditeur Web permettent de gagner du temps et d’accroître la productivité.
 
 **Recherche de filtre**
 
@@ -1036,7 +1041,14 @@ Par défaut, vous pouvez afficher les fichiers par titres. Lorsque vous placez l
 >En tant qu’administrateur, vous pouvez également choisir d’afficher le nom de fichier de la carte parent actuellement ouverte dans la vue map. Sélectionnez la variable **Nom du fichier** de l’ **Afficher les fichiers par** dans **Préférences utilisateur** ![](images/user_preference_editor_icon.svg).
 
 
-Lorsque vous ouvrez une carte en mode Carte, le titre de la carte active s’affiche au centre de la barre d’outils principale. Si le titre est trop long, des points de suspension s’affichent et vous pouvez également survoler le titre avec la souris pour afficher le titre complet dans l’info-bulle. Si vous disposez de droits de modification sur les fichiers de mappage, vous pourrez également modifier les fichiers. Pour plus d’informations sur l’ouverture et la modification d’une rubrique via le mappage DITA, voir [Modification des rubriques à l’aide de la carte DITA](map-editor-advanced-map-editor.md#id17ACJ0F0FHS).
+Lorsque vous ouvrez une carte en mode Carte, le titre de la carte active s’affiche au centre de la barre d’outils principale. Si le titre est trop long, des points de suspension s’affichent et vous pouvez également survoler le titre avec la souris pour afficher le titre complet dans l’info-bulle.
+
+Lorsque vous définissez des attributs clés pour la rubrique ou les références de mappage, vous pouvez afficher le titre, l’icône correspondante et la clé dans le panneau de gauche. La clé s’affiche sous la forme `keys=<key-name>`.
+
+![clés dans la vue map](images/view-key-title-map-view.png){width="300" align="left"}
+
+Si vous disposez de droits de modification sur les fichiers de mappage, vous pourrez également modifier les fichiers. Pour plus d’informations sur l’ouverture et la modification d’une rubrique via le mappage DITA, voir [Modification des rubriques à l’aide de la carte DITA](map-editor-advanced-map-editor.md#id17ACJ0F0FHS).
+
 
 Vous pouvez effectuer les actions suivantes à l’aide du menu Options du fichier de carte :
 
@@ -1163,7 +1175,7 @@ La vue Plan offre les fonctionnalités suivantes :
 
   ![](images/drop-element-outline-view_cs.png){width="300" align="left"}
 
-- La variable **Options** dans le menu *Mode plan* permet d’effectuer des opérations génériques telles que Couper, Copier, Supprimer, Générer un identifiant, Insérer un élément avant ou après l’élément actif, Renommer ou remplacer un élément, Déplacer un élément et créer un extrait de code à partir de l’élément sélectionné.
+- La variable **Options** dans le menu *Mode plan* permet d’effectuer des opérations génériques telles que Couper, Copier, Supprimer, Générer un identifiant, Insérer un élément avant ou après l’élément actif, Renommer ou remplacer un élément, Encapsuler un élément, Déplacer un élément et créer un extrait de code à partir de l’élément sélectionné.
 
 >[!NOTE]
 >
@@ -1487,9 +1499,16 @@ Par exemple, utilisez l’énumération suivante pour restreindre l’objet `@pl
 
 **Liste déroulante Attributs**
 
-Vous pouvez également modifier la valeur du modèle d’objet à l’aide de la liste déroulante Attribut du panneau Propriétés du contenu dans la vue Auteur. Pour modifier la valeur, sélectionnez une valeur dans la liste déroulante Attribut .
+Vous pouvez également modifier la valeur du modèle d’objet à l’aide de la variable **Attributs** de la liste déroulante **Propriétés du contenu** dans le panneau **Auteur** vue.
+![](images/subject-scheme-attribute-dropdown.png){width="200" align="left"}
+Effectuez les étapes suivantes pour modifier la valeur :
 
-![](images/subject-scheme-attribute-dropdown.png){width="300" align="left"}
+1. Sélectionnez un attribut dans le **Attribut** menu déroulant.
+1. Sélectionner **Modifier** ![edit-icon](images/edit_pencil_icon.svg).
+1. Sélectionnez la valeur requise dans la variable **Valeur** menu déroulant.
+1. Cliquez sur **Mettre à jour**.
+
+
 
 Vous pouvez également appliquer des valeurs à un attribut en sélectionnant plusieurs valeurs dans la liste déroulante.
 
@@ -1732,7 +1751,22 @@ Le panneau de droite vous donne accès aux fonctionnalités suivantes :
 
 **Propriétés du contenu** -  ![](images/content-properties-icon.svg)
 
-Pour accéder à la fonction Propriétés du contenu , cliquez sur l’icône Propriétés du contenu dans le panneau de droite. Le panneau Propriétés du contenu contient des informations sur le type d’élément actuellement sélectionné dans le document et ses attributs. Vous pouvez également ajouter des attributs en sélectionnant l’attribut dans la liste déroulante et en spécifiant la valeur d’un attribut.
+Pour accéder à la fonction Propriétés du contenu , cliquez sur l’icône Propriétés du contenu dans le panneau de droite. Le panneau Propriétés du contenu contient des informations sur le type d’élément actuellement sélectionné dans le document et ses attributs.
+Vous pouvez facilement ajouter, modifier ou supprimer les attributs.
+
+1. Cliquez sur **+ Ajouter**.
+
+   ![Attributs dans les propriétés de contenu](images/properties-tab-attributes_cs.png){width="300" align="left"}
+
+1. Dans le **Attribut** , sélectionnez l’attribut dans la liste déroulante et spécifiez la valeur d’un attribut.  Cliquez ensuite sur **Ajouter**.
+
+   ![Panneau Attributs avec plusieurs attributs ](images/attributes-multiple-properties.png){width="300" align="left"}
+
+1. Pour modifier l’attribut, pointez dessus et sélectionnez **Modifier** ![edit-icon](images/edit_pencil_icon.svg).
+   ![modifier les attributs](images/edit-attributes-content-properties.png){width="300" align="left"}
+
+1. Pour supprimer l’attribut, pointez dessus et sélectionnez **Supprimer** ![delete-icon](images/Delete_icon.svg).
+
 
 >[!NOTE]
 >
@@ -1740,7 +1774,7 @@ Pour accéder à la fonction Propriétés du contenu , cliquez sur l’icône Pr
 
 Si votre administrateur a créé un profil pour les attributs, vous obtiendrez ces attributs avec leurs valeurs configurées. À l’aide du panneau des propriétés de contenu, vous pouvez choisir ces attributs et les affecter au contenu approprié de votre rubrique. Vous pouvez ainsi créer du contenu conditionnel qui pourra ensuite être utilisé pour créer une sortie conditionnelle. Pour plus d’informations sur la génération d’une sortie à l’aide de paramètres prédéfinis conditionnels, voir [Utilisation des paramètres de condition prédéfinis](generate-output-use-condition-presets.md#).
 
-![](images/properties-tab-attributes_cs.png){width="300" align="left"}
+
 
 **Propriétés du fichier** -  ![](images/topic-properties-icon.svg)
 
@@ -1750,11 +1784,12 @@ Affichez les propriétés du fichier sélectionné en cliquant sur l’icône Pr
 
 La section Général vous donne accès aux fonctionnalités suivantes :
 
-![](images/file-properties-general.png){width="300" align="left"}
+![file-properties](images/file-properties-general.png){width="300" align="left"}
 
 - **Nom**: affiche le nom de fichier de la rubrique sélectionnée. Le nom du fichier est lié par un lien hypertexte à la page des propriétés du fichier sélectionné.
 - **ID**: affiche l’identifiant de la rubrique sélectionnée.
-- **Balises de métadonnées**: il s’agit des balises de métadonnées de la rubrique. Elles sont définies à partir du champ de balises de la page de propriétés.
+- **Balises**: il s’agit des balises de métadonnées de la rubrique. Elles sont définies à partir du champ de balises de la page de propriétés. Vous pouvez les saisir ou les sélectionner dans la liste déroulante.  Les balises s’affichent sous la liste déroulante. Pour supprimer une balise, cliquez sur l’icône croisée située en regard de la balise .
+- **Modification d’autres propriétés**: vous pouvez modifier d’autres propriétés dans la page des propriétés du fichier.
 - **Langue**: affiche la langue de la rubrique. Elle est définie à partir du champ de langue de la page des propriétés.
 - **Créé le**: affiche la date et l’heure de création de la rubrique.
 - **Extraits par**: affiche l’utilisateur qui a extrait la rubrique.

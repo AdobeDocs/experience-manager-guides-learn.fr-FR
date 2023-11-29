@@ -2,9 +2,9 @@
 title: Autres fonctionnalités de l’éditeur web
 description: Découvrez d’autres fonctionnalités de l’éditeur web dans AEM Guides. Découvrez comment utiliser ces fonctionnalités pour une création améliorée dans AEM Guides.
 exl-id: 1833b1e3-c7f1-4f2c-be35-235b65ba2f36
-source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '2136'
+source-wordcount: '2248'
 ht-degree: 0%
 
 ---
@@ -187,6 +187,15 @@ Outre le menu contextuel du chemin de navigation, la boîte de dialogue Renommer
 
 - Vous pouvez accéder à la boîte de dialogue Renommer l’élément en appelant le menu Options d’un élément dans le panneau Contour .
 
+
+
+**Encapsuler un élément**
+
+- Le placement d’un élément à la ligne permet d’ajouter une balise d’élément au texte sélectionné. Vous pouvez renvoyer le texte à n’importe quel élément enfant suivant les normes DITA. Par exemple, si vous avez du texte sous un `note` , puis vous pouvez renvoyer le texte à un élément `p` élément .
+
+  La variable **Elément Placer** est disponible dans le menu contextuel du chemin de navigation de la rubrique. Pour encapsuler un élément, cliquez avec le bouton droit de la souris sur l’élément et ouvrez le menu contextuel. Sélectionnez l’élément dans la **Elément Placer** boîte de dialogue. Le texte apparaît dans le nouvel élément.
+
+  Vous pouvez également sélectionner le texte ou l’élément dans le contenu, puis sélectionner la variable **Elément Placer**  dans le menu contextuel.
 
 **Extraire un élément**
 

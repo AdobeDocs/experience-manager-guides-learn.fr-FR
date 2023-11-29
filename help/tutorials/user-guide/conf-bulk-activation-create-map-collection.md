@@ -1,10 +1,10 @@
 ---
 title: Création d’une collection de cartes d’activation en bloc
 description: Découvrez comment créer une collection de cartes d’activation en bloc dans AEM guides.
-exl-id: 7d17fb37-9486-4a3b-a421-08e279c95b6c
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+exl-id: ea0bd465-a2d9-488f-83e9-62b336233eb1
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ L’onglet Cartes et paramètres prédéfinis présente des informations dans le
   > Le petit ![](images/global-preset-icon.svg) indique un paramètre prédéfini au niveau du profil de dossier.
 - **Modifié**: indique si le mappage DITA est mis à jour après la dernière publication. En fonction de ces informations, vous pouvez décider si vous souhaitez activer ou non la sortie pour ce mappage DITA.
 - **Généré**: affiche la date et l’heure de la dernière sortie générée.
-- **Publié**: affiche la date et l’heure de la dernière sortie publiée \(ou activée\). Si vous cliquez sur le lien, la page Résultats de l’activation s’affiche avec des informations sur le chemin racine d’activation du contenu.
+- **Publié**: affiche la date et l’heure de la dernière sortie publiée (ou activée). Si vous sélectionnez le lien, la variable **Résultats de l’activation** s’affiche, qui contient les journaux avec des informations sur le chemin racine où le contenu est activé.
 
 
 Les options de filtrage disponibles dans le panneau de gauche sont les suivantes :

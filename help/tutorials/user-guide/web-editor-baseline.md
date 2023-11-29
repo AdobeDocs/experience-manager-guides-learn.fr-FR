@@ -2,9 +2,9 @@
 title: Création et gestion des lignes de base à partir de l’éditeur web
 description: Créez et gérez des lignes de base à partir de l’éditeur web dans AEM Guides. Découvrez comment créer des lignes de base sur la base des libellés et appliquer des filtres aux lignes de base.
 exl-id: 14f87bdd-3042-46f9-853e-e9ded81b10ed
-source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1454'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Vous pouvez créer une ligne de base à partir de l’éditeur Web en procédant
 1. Dans le panneau Repository, ouvrez le fichier de mappage DITA en mode Carte.
 1. Cliquez sur le bouton **Gérer** . La variable **Ligne de base** affiche les lignes de base du mappage DITA.
 
-   ![](images/baseline-manage.png){width="800" align="left"}
+   ![Panneau de base](images/baseline-manage.png){width="800" align="left"}
 
 1. Sur le **Ligne de base** , cliquez sur l’icône + en haut à droite. Vous pouvez créer une ligne de base avec une version spécifique des rubriques et du contenu référencé disponible à une date et une heure spécifiques, ou avec un libellé défini pour une version des rubriques.
 1. Saisissez un nom pour la ligne de base dans **Nom de la ligne de base**.
@@ -56,7 +56,7 @@ Vous pouvez créer une ligne de base à partir de l’éditeur Web en procédant
 
    Les lignes de base basées sur les libellés sont mises à jour dynamiquement. Si vous générez une ligne de base, téléchargez une ligne de base ou créez un projet de traduction à l’aide d’une ligne de base, les fichiers sont sélectionnés dynamiquement en fonction des étiquettes mises à jour. Par exemple, si vous avez utilisé la version 1.2 d’une rubrique avec la version 1.0 du libellé pour la ligne de base et la version 1.5 ultérieure mise à jour avec la version 1.0 du libellé, la ligne de base sera mise à jour dynamiquement et la version 1.5 sera utilisée.
 
-   ![](images/dynamic-baseline.png){width="550" align="left"}
+   ![Création d’une ligne de base](images/dynamic-baseline.png){width="550" align="left"}
 
    - **Sélectionner des étiquettes**: si des libellés sont spécifiés pour les rubriques, ils sont répertoriés dans la section **Sélectionner des étiquettes** menu déroulant. Vous pouvez choisir le ou les libellés\(s\) dans la liste. Les libellés sélectionnés en premier se voient accorder une priorité plus élevée que les libellés ultérieurs.
 
@@ -83,7 +83,9 @@ Vous pouvez gérer vos lignes de base existantes à l’aide des différentes fo
 
   ![options d’une ligne de base](images/baseline-options.png){width="800" align="left"}
 
-Vous pouvez également effectuer les opérations suivantes sur la ligne de base à partir du menu Options :
+
+
+  Vous pouvez également effectuer les opérations suivantes sur la ligne de base à partir du menu Options :
 
 - **Modifier**, **Dupliquer,** **Renommer**, ou **Supprimer** une ligne de base existante.
 
@@ -106,7 +108,7 @@ Vous pouvez également effectuer les opérations suivantes sur la ligne de base 
 
 Utilisation de l’icône Filtres dans la variable **Filtres de ligne de base** vous pouvez appliquer des filtres sur la ligne de base ouverte dans la fenêtre d’édition de ligne de base :
 
-![](images/baseline-filter.png){width="350" align="left"}
+![filtres de ligne de base](images/baseline-filter.png){width="300" align="left"}
 
 - Filtrez les fichiers en fonction de leur nom ou de leur emplacement.
 - Filtrez les fichiers en fonction des valeurs de différentes colonnes comme Type de fichier, Type de référence, etc.

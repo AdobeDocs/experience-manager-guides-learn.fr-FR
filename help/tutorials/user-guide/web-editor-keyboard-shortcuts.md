@@ -2,10 +2,10 @@
 title: Raccourcis clavier dans l’éditeur web
 description: Découvrez les raccourcis clavier permettant d’économiser du temps dans l’éditeur web des Guides d’AEM.
 exl-id: d843c5a9-04f8-44f2-9bf5-60cb4ed7fa38
-source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 3%
+source-wordcount: '347'
+ht-degree: 2%
 
 ---
 
@@ -24,6 +24,9 @@ Il existe de nombreuses opérations dans l’éditeur Web que vous pouvez effect
 | Appliquer la mise en forme gras au texte sélectionné | ***Ctrl***+***B*** | ***Commande***+***B*** |
 | Appliquer la mise en forme italique au texte sélectionné | ***Ctrl***+***I*** | ***Commande***+***I*** |
 | Appliquer la mise en forme soulignée au texte sélectionné | ***Ctrl***+***U*** | ***Commande***+***U*** |
+| Mise au point sur le panneau de gauche | **Ctrl***+**Maj**+***1*** | ***Commande***+**Maj**+***1*** |
+| Concentrez-vous sur le panneau de droite | **Ctrl***+**Maj**+***2*** | ***Commande***+**Maj**+***2*** |
+| Concentrez-vous sur l’éditeur actuel | **Ctrl***+**Maj**+***0*** | ***Commande***+**Maj**+***0*** |
 | Enregistrer le document en mode Auteur ou Source | ***Ctrl***+**Maj**+***s*** | ***Commande***+**Maj**+***s*** |
 | Enregistrer tous les documents ouverts en mode Auteur ou Source | ***Ctrl***+***s*** | ***Commande***+***s*** |
 | Boîte de dialogue Insérer un élément | ***Alt***+***Entrée*** | ***Option***+***Entrée*** |

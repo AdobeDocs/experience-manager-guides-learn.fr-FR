@@ -1,10 +1,10 @@
 ---
 title: Utilisation de la collecte des cartes pour la génération de la sortie
 description: Découvrez comment créer et supprimer une collection de mappages et ajouter ou supprimer un mappage DITA. Configurez, générez et annulez une tâche de génération de sortie à partir d’une collection de mappages dans AEM Guides.
-exl-id: 32e3af6c-9670-42cc-8dbe-9f99fbc60adf
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+exl-id: 41152fa4-f739-44d2-9ccd-74072f53e31b
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '1212'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Pour créer une collection de mappages et ajouter des mappages DITA à la collec
 
    Les fichiers de mappage DITA sont ajoutés à votre collection de cartes.
 
-   ![](images/maps_presets_62_63.png){width="800" align="left"}
+   ![tableau de bord de la collecte de mappage](./images/map-collection-dashboard.png){width="800" align="left"}
 
 Les options de filtrage et les détails de mappage suivants sont affichés sur la page de collection :
 
@@ -57,8 +57,10 @@ Les options de filtrage et les détails de mappage suivants sont affichés sur l
    - **Langue**: vous pouvez sélectionner l’un des codes de langue disponibles et afficher uniquement la langue sélectionnée dans le tableau Cartes et paramètres prédéfinis .
 - **Cartes et paramètres prédéfinis** tableau : le tableau Cartes et paramètres prédéfinis présente des informations dans les colonnes suivantes :
    - **Carte**: affiche le titre du fichier de mappage DITA.
+   - **Nom du fichier**: affiche le nom de fichier du mappage DITA.
    - **Langue**: affiche la langue du mappage DITA.
    - **Prédéfinie**: affiche le type de paramètre prédéfini de sortie configuré dans le fichier de mappage.
+   - **Ligne de base**: affiche la ligne de base utilisée par le paramètre prédéfini de sortie.  Si aucune ligne de base n’est utilisée, un trait d’union &quot;-&quot; s’affiche.
    - **Modifié**: indique si le mappage DITA est mis à jour après la dernière publication. En fonction de ces informations, vous pouvez décider si vous souhaitez republier la sortie pour ce mappage DITA ou non.
    - **Dernière génération**: affiche la date et l’heure de la dernière sortie générée.
 
@@ -92,9 +94,36 @@ Pour configurer et générer la sortie à l’aide d’une collection de cartes,
 
    - Pour générer la sortie des mappages sélectionnés, sélectionnez les fichiers de mappage et cliquez sur **Générer la sélection**.
    - Pour générer une sortie de toutes les cartes DITA avec leurs paramètres prédéfinis configurés, cliquez sur **Générer tout**.
+
    >[!IMPORTANT]
    >
    > Si un processus de génération de sortie pour un paramètre prédéfini ou un mappage DITA se trouve dans la file d’attente ou en cours, vous ne pouvez pas lancer une autre tâche de génération de sortie pour le même paramètre prédéfini ou le même mappage.
+
+## Configuration des propriétés de métadonnées
+
+Dans la collection de mappages, vous pouvez configurer les propriétés de métadonnées en bloc pour les mappages DITA. Sélectionner **Configuration des métadonnées**  pour ouvrir le **Métadonnées de ressource** page. Sur le **Métadonnées de ressource** , toutes les cartes présentes dans la collection sont répertoriées sur la gauche.
+
+![configuration des métadonnées](images/map-collection-asset-metadata.png){width="800" align="left"}
+
+Pour configurer les propriétés de métadonnées, procédez comme suit :
+
+1. Vous pouvez choisir les cartes pour lesquelles vous souhaitez mettre à jour les métadonnées. Par défaut, tous les mappages DITA présents sont sélectionnés.
+
+1. Une fois que vous avez sélectionné les mappages DITA, vous pouvez afficher des propriétés telles que les métadonnées, la planification (de)l’activation, les références, l’état du document, etc.
+
+1. Mettez à jour les propriétés des métadonnées.
+
+1. Cliquez sur **Enregistrer et fermer** sur la partie supérieure pour enregistrer les mises à jour.
+1. (Facultatif) Lorsque vous mettez à jour les balises, vous pouvez également sélectionner Ajouter dans le **Enregistrer et fermer** pour ajouter les nouvelles balises à la liste existante.
+1. Cliquez sur **Envoyer** de la **Enregistrer et fermer** menu déroulant.
+Les propriétés de métadonnées sont mises à jour pour les mappages DITA que vous sélectionnez en bloc dans la collection de mappages.
+
+>[!NOTE]
+> 
+>Pour le **État du document** dans la liste déroulante, vous pouvez sélectionner uniquement les états de document qui sont autorisés en commun pour tous les mappages DITA sélectionnés. Pour en savoir plus, voir [**État du document**](./web-editor-document-states.md).
+
+Les propriétés de métadonnées sont synchronisées avec les propriétés du fichier. Une fois que vous les avez mises à jour, vous pouvez les afficher à partir du **Propriétés du fichier** dans l’éditeur Web.
+
 
 
 ## Suppression d’une collection de cartes ou d’un mappage DITA de la collection de cartes
@@ -102,7 +131,7 @@ Pour configurer et générer la sortie à l’aide d’une collection de cartes,
 - Pour supprimer une collection de mappages, sélectionnez-la dans la page Collection de mappages, puis cliquez sur **Supprimer**.
 - Pour supprimer un mappage DITA d’une collection de mappages, ouvrez la collection de mappages en mode d’édition, sélectionnez le fichier de mappage DITA, puis cliquez sur **Supprimer de la collection**.
 
-  Cela supprime également tous les paramètres prédéfinis ou les paramètres régionaux associés au mappage DITA de la collection de cartes.
+Cela supprime également tous les paramètres prédéfinis ou les paramètres régionaux associés au mappage DITA de la collection de cartes.
 
 
 ## Annulation d’une tâche de génération de sortie à partir d’une collection de cartes

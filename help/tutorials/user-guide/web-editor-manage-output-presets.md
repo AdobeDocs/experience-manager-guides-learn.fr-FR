@@ -1,10 +1,10 @@
 ---
 title: Gestion des paramètres prédéfinis de sortie de profil global et de dossier
 description: Découvrez comment créer, modifier, renommer, dupliquer et supprimer des paramètres prédéfinis de sortie de profil de dossier et global en tant qu’utilisateurs administrateurs dans AEM Guides.
-exl-id: 40ea464c-16c8-4c95-9c0e-61b6bad95272
-source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
+exl-id: 549c9fe2-77f8-423c-8b3e-b43e56055732
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Effectuez les étapes suivantes pour créer un paramètre prédéfini de sortie 
    - Nom
    - Target \(pour le paramètre prédéfini de la base de connaissances\)
 1. Sélectionnez la variable **Ajouter au profil de dossier** pour créer un paramètre prédéfini de sortie pour le profil de dossier associé, puis cliquez sur **Ajouter**. Le paramètre prédéfini est créé et s’affiche sous la propriété **Sortie** de toutes les cartes associées. \( ![](images/global-preset-icon.svg)L’icône \) indique un paramètre prédéfini de niveau profil de dossier.
-1. Saisissez les détails de la configuration.
+1. Saisissez les détails de la configuration. Pour plus d’informations sur les paramètres prédéfinis de sortie, voir [Présentation des paramètres prédéfinis de sortie](./generate-output-understand-presets.md).
 
    >[!NOTE]
    >

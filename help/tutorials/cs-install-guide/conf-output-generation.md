@@ -2,10 +2,10 @@
 title: Configuration des paramètres de génération de sortie
 description: Découvrez comment configurer les paramètres de génération de sortie
 exl-id: b5cf4f6c-dc56-428e-a514-6c9f879ac03d
-source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '5340'
-ht-degree: 1%
+source-wordcount: '5496'
+ht-degree: 2%
 
 ---
 
@@ -140,6 +140,23 @@ Suivez les instructions de la section [Remplacements de configuration](download-
 | PID | Clé de propriété | Valeur de la propriété |
 |---|------------|--------------|
 | `com.adobe.fmdita.config.ConfigManager` | `aemsite.pagetitle` | Booléen \(true/false\). Si vous souhaitez générer une sortie à l’aide du titre de la page, définissez cette propriété sur true. Par défaut, il est défini pour utiliser le nom du fichier.<br> **Valeur par défaut**: false |
+
+### Configurez l’URL de la sortie Site AEM pour utiliser le titre du document.
+
+Vous pouvez utiliser les titres des documents dans l’URL de la sortie AEM Site. Si le nom de fichier n’existe pas ou contient tous les caractères spéciaux, vous pouvez configurer le système pour remplacer les caractères spéciaux par un séparateur dans l’URL de la sortie Site AEM. Vous pouvez également le configurer pour les remplacer par le nom de la première rubrique enfant.
+
+
+Pour configurer les noms de page, procédez comme suit :
+
+1. Suivez les instructions de la section [Remplacements de configuration](download-install-additional-config-override.md#) pour créer le fichier de configuration.
+1. Dans le fichier de configuration, fournissez les détails (propriété) suivants pour configurer les noms de page des rubriques.
+
+| PID | Clé de propriété | Valeur de la propriété |
+|---|------------|--------------|
+| `com.adobe.fmdita.common.SanitizeNodeName` | `nodename.systemDefinedPageName` | Booléen (`true/false`). **Valeur par défaut**: `false` |
+
+Par exemple, si la variable *@navtitle* in `<topichead>` comporte tous les caractères spéciaux et vous définissez la variable `aemsite.pagetitle` sur true, puis, par défaut, il utilise un séparateur. Si vous définissez la variable `nodename.systemDefinedPageName` sur true, il affiche le nom de la première rubrique enfant.
+
 
 ### Configuration des règles d’assainissement des noms de fichier pour la création de rubriques et la publication AEM sortie du site {#id2164D0KD0XA}
 
