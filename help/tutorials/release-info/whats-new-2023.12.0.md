@@ -1,9 +1,9 @@
 ---
 title: Notes de mise à jour | Nouveautés des guides Adobe Experience Manager, version de décembre 2023
 description: Découvrez les nouvelles fonctionnalités améliorées de la version de décembre 2023 de Adobe Experience Manager Guides as a Cloud Service.
-source-git-commit: 9fcc8faec4631d710dbdfd7e4f8567069d0ba120
+source-git-commit: 8d24048af5f5583988da50927e31f2643d844e68
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1021'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,8 @@ Vous pouvez désormais afficher le nom de fichier du mappage DITA. Vous pouvez �
 ![Tableau de bord de la collecte des cartes](assets/map-collection-dashboard.png){width="800" align="left"}
 
 *Affichez, modifiez et générez la sortie à partir du tableau de bord de la collection de mappages.*
+
+Découvrez comment [Utilisation de la collecte des cartes pour la génération de sortie](../user-guide/generate-output-use-map-collection-output-generation.md).
 
 ## Affichage des attributs clés dans la vue Carte
 

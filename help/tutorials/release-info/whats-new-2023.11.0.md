@@ -1,9 +1,10 @@
 ---
 title: Notes de mise à jour | Nouveautés des guides Adobe Experience Manager, version de novembre 2023
 description: Découvrez les nouvelles fonctionnalités améliorées de la version de novembre 2023 de Adobe Experience Manager Guides as a Cloud Service.
-source-git-commit: 6cc5299f8f4566e38c5a8c96e17fadd915f6e206
+exl-id: 83c04e01-92f1-41b0-8866-a202f4106b51
+source-git-commit: 57ff1a3b6ceb9debc8e29065fd37cab21adc1b96
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -43,6 +44,7 @@ Pour plus d’informations, voir la [Paramètres du PDF avancé](../native-pdf/c
 ### Amélioration de la gestion des ressources pour les modèles de PDF natif
 
 Les guides du Experience Manager ont désormais amélioré la gestion des ressources pour les modèles de PDF natif. Vous pouvez désormais partager et réutiliser des ressources, telles que des images, des fichiers CSS et des fichiers de polices, sur plusieurs modèles de PDF natif. Avec cette amélioration, la gestion des ressources pour un grand ensemble de modèles est beaucoup plus simple. Vous n’avez pas besoin de créer des ressources en double pour chaque modèle. Vous pouvez également les conserver dans un dossier partagé et les utiliser dans tous les modèles de PDF natif.
+Pour plus d’informations, voir [Modèle de PDF](../native-pdf/pdf-template.md).
 
 ## Améliorations apportées à l’éditeur web
 
@@ -64,6 +66,8 @@ Vous pouvez définir des attributs de condition dans vos rubriques DITA. Ensuite
 
 ![Paramètres prédéfinis de condition de l’onglet Gérer de l’éditeur web ](assets/web-editor-manage-condition-presets.png){width="550" align="left"}
 
+Pour plus d’informations, voir [Utiliser des paramètres prédéfinis de condition](../user-guide/generate-output-use-condition-presets.md).
+
 ### Restaurer les onglets de fichier lors de l’actualisation du navigateur
 
 Experience Manager Guides restaure l’état des onglets de fichiers ouverts dans l’éditeur web lorsque vous actualisez le navigateur. Pour plus d’informations, voir la **Actualiser le navigateur lors de la modification des fichiers** section sous [Modification des rubriques dans l’éditeur web](../user-guide/web-editor-edit-topics.md).
@@ -78,4 +82,3 @@ Pour plus d’informations, voir la **Extraire un élément** de la section [aut
 Les guides du Experience Manager vous permettent désormais d’utiliser des raccourcis clavier pour déplacer le curseur dans l’éditeur web. Vous pouvez utiliser les raccourcis clavier pour déplacer rapidement un mot vers la gauche ou la droite. Vous pouvez également passer au début ou à la fin de la ligne à l’aide des raccourcis clavier.
 Désormais, vous pouvez également utiliser des raccourcis clavier pour déplacer le curseur au début de l’élément suivant ou à la fin de l’élément précédent.
 En savoir plus sur les [raccourcis clavier dans l’éditeur web](../user-guide/web-editor-keyboard-shortcuts.md).
-
