@@ -1,17 +1,17 @@
 ---
 title: Processus de génération de publication
 description: Présentation du workflow de post-génération avec un exemple
-source-git-commit: 447cd512d1b6cdce3bd1ddded1575dab87daa04a
+exl-id: e19fdc0b-0ec6-46ce-81ed-e9490d12c029
+source-git-commit: b8fed051e235146cd797af2524a68d8d2d0f16c6
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '320'
 ht-degree: 2%
 
 ---
 
-
 # Publication AEM Guides - Workflow de génération de publication
 
-AEM Guides vous offre la possibilité de spécifier un workflow de génération après sortie. Vous pouvez effectuer certaines tâches de post-traitement sur la sortie générée à l’aide des AEM Guides.
+AEM Guides vous offre la possibilité de spécifier un workflow de génération de post-sortie. Vous pouvez effectuer certaines tâches de post-traitement sur la sortie générée à l’aide des AEM Guides.
 Par exemple, vous pouvez définir certaines propriétés sur la sortie du PDF ou envoyer un email à un ensemble d’utilisateurs une fois la sortie générée.
 
 
@@ -19,9 +19,9 @@ Par exemple, vous pouvez définir certaines propriétés sur la sortie du PDF ou
 
 ### Création d’un processus de workflow
 
-Créez un processus de workflow basé sur Java ou ECMA qui effectue l’opération sur la sortie générée. Par exemple, la copie de certaines métadonnées de la source vers le contenu généré ou la manipulation des métadonnées de la sortie générée.
-- Nous allons prendre un exemple de création d’un tel processus à l’aide d’un script ECMA (vous pouvez consulter le package joint).
-- Pour le processus de workflow Java, reportez-vous à la section &quot;*Personnaliser le workflow de génération après la sortie*&quot; de [Guide d&#39;installation et de configuration](https://helpx.adobe.com/content/dam/help/en/xml-documentation-solution/4-2/Adobe-Experience-Manager-Guides_UUID_Installation-Configuration-Guide_EN.pdf#page=119)
+Créez un processus de workflow basé sur Java ou ECMA qui effectue l’opération sur la sortie générée. Par exemple, copier certaines métadonnées de la source vers le contenu généré ou manipuler les métadonnées de la sortie générée.
+- Nous allons prendre un exemple de création d’un tel processus à l’aide du script ECMA (vous pouvez consulter le package joint).
+- Pour le processus de workflow Java, reportez-vous à la section &quot;*Personnaliser le workflow de génération après la sortie*&quot; de [Guide d&#39;installation et de configuration](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/install-guide/on-prem-ig/custom-workflow/customize-workflows.html?lang=en#id17A6GI004Y4)
 
 
 ### Créer un modèle de processus
@@ -34,9 +34,9 @@ Reportez-vous à l’exemple de modèle de workflow illustré ci-dessous :
 ![Modèle de workflow de post-génération](../assets/workflows/pgwf-workflow-model.png)
 
 
-### Utiliser ce workflow de post-génération sur une carte
+### Utiliser ce workflow de génération de publication sur une carte
 
-Le workflow de génération de publication est une propriété qui peut être configurée sur n’importe quel paramètre prédéfini de sortie dans AEM mécanisme de publication Guides. Exemple :
+Le workflow de génération de publication est une propriété qui peut être configurée sur n’importe quel paramètre prédéfini de sortie dans le mécanisme de publication AEM Guides. Exemple :
 
 ![Processus de post-génération sur le paramètre prédéfini de sortie](../assets/workflows/pgwf-preset-settings.png)
 
