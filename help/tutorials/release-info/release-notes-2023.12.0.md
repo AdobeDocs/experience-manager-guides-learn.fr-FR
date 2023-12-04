@@ -1,10 +1,10 @@
 ---
 title: Notes de mise à jour | Instructions de mise à niveau et problèmes résolus dans les guides Adobe Experience Manager, version de décembre 2023
 description: Découvrez les correctifs de bogues et comment effectuer la mise à niveau vers la version de décembre 2023 de Adobe Experience Manager Guides as a Cloud Service.
-source-git-commit: 9fcc8faec4631d710dbdfd7e4f8567069d0ba120
+source-git-commit: b4bbed1de8fc2d8ef81332445a5c96161be508d4
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 3%
+source-wordcount: '1319'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités et améliorations,
 Mettez à niveau votre configuration as a Cloud Service actuelle des guides de Experience Manager en procédant comme suit :
 
 1. Extrayez le code Git des Cloud Service et passez à la branche configurée dans le pipeline Cloud Service correspondant à l’environnement que vous souhaitez mettre à niveau.
-2. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Service vers la version 2023.12.0.15.
+2. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Service vers la version 2023.12.0.16.
 3. Validez les modifications et exécutez le pipeline Cloud Service pour effectuer la mise à niveau vers la version de décembre 2023 des Guides Experience Manager as a Cloud Service.
 
 ## Procédure d’activation du déclencheur d’un script via un servlet
@@ -28,13 +28,13 @@ Mettez à niveau votre configuration as a Cloud Service actuelle des guides de E
 
 Une fois l’installation terminée, vous pouvez choisir d’ACCÉDER au déclencheur pour lancer la tâche de traduction :
 
-POST:
+POST :
 
 ```
 http://localhost:4503/bin/guides/script/start?jobType=translation-map-upgrade
 ```
 
-Réponse:
+Réponse :
 
 ```
 {
@@ -122,7 +122,7 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 
 | Version de Experience Manager Guides as a Cloud | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
 | --- | --- | --- | --- | --- |
-| 2023.12.0 | 3.3-uuid.5 | 3.3-uuid.5 | 2.3 | 2.3 |
+| 2023.12.0 | 3.3-uuid.5 | 3.3-uuid.5 | 2,3 | 2,3 |
 |  |  |  |  |
 
 
@@ -140,31 +140,31 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 
 ### Création
 
-- La variable **Titre** dans l’onglet Éditeur web est tronqué après un point(.) caractère « ? » supplémentaire. (14372)
+- La variable **Titre** dans l’onglet Éditeur web est tronqué après un point(.) caractère « ? » supplémentaire. 14372
 - Les messages d’erreur relatifs aux noms de mappage en double dans l’interface utilisateur d’Assets ne sont pas mis à jour. (14320)
 - Une erreur se produit dans la logique de création de version lors du glisser-déposer des ressources. (14291)
 - Le contenu réutilisable ignore les identifiants d’élément. (14213)
 - Le contrôle des paramètres à masquer **Variables de langue** panneau sous **Sortie** est manquant. (14194)
-- L’éditeur web renvoie des erreurs d’application lors de l’ajout d’une nouvelle référence ou d’une nouvelle rubrique à l’aide d’un schéma spécialisé dans la vue Disposition. (14094)
+- L’éditeur web renvoie des erreurs d’application lors de l’ajout d’une nouvelle référence ou d’une nouvelle rubrique à l’aide d’un schéma spécialisé dans la vue Disposition. 14094
 - Un lien d’ancrage vers `<dlentry>` ou `<dt>` ne parvient pas à afficher le texte du lien. (13543)
 - La variable **Favoris** ne se charge pas dans l’éditeur Web. (13495)
 - Les citations affichent des liens non cliquables lorsqu’elles sont créées avec un identifiant unique avec des espaces. (13447)
 - Dans le **Disposition** vue d’une carte des actifs numériques, à l’aide de **Déplacer à droite** pour qu’un chapitre sélectionné ne fonctionne pas comme un sous-élément. (12567)
-- La fenêtre Aperçu de l’éditeur XML est tronquée dans les navigateurs Google Chrome et Microsoft Edge. (10755)
+- La fenêtre Aperçu de l’éditeur XML est tronquée dans les navigateurs Google Chrome et Microsoft Edge. 10755)
 - L’éditeur web n’a pas la possibilité de placer un élément à l’intérieur des éléments parents possibles. (8791)
 
 ### Publication
 
 - Les composants de formulaire ont un chemin d’accès codé en dur pour `delegator.jsp`, empêchant le recouvrement des composants AEM Sites. (13993)
-- La vue balisée du réacteur PDF dans la sortie de publication du PDF natif ne fonctionne pas comme prévu. (13622)
-- AEM La publication sur site rencontre un problème lors de la validation de la banque de données pour les cartes volumineuses avec des liens de portée partagée. (13531)
-- Impossible d’activer un site à l’aide du tableau de bord Publication en bloc de guides du Experience Manager . (13439)
+- La vue balisée du réacteur PDF dans la sortie de publication du PDF natif ne fonctionne pas comme prévu. 13622
+- AEM La publication sur site rencontre un problème lors de la validation de la banque de données pour les cartes volumineuses avec des liens de portée partagée. 13531
+- Impossible d’activer un site à l’aide du tableau de bord Publication en bloc de guides du Experience Manager . 13439
 - La localisation des libellés d’élément ne fonctionne pas correctement dans la sortie AEM Sites. (12144)
 - Absente **ditaval** dans les paramètres prédéfinis de sortie au niveau du profil de dossier créés via l’interface utilisateur de l’éditeur web. (11903)
 
 ### Gestion
 
-- AEM environnements cloud rencontrent l’exception MongoWrite en raison de noeuds de grande taille. (13509)
+- AEM environnements cloud rencontrent l’exception MongoWrite en raison de noeuds de grande taille. 13509
 
 ### Traduction
 
