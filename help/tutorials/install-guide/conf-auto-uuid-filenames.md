@@ -1,13 +1,12 @@
 ---
 title: Configuration des noms de fichier automatique en fonction de l’UUID
 description: Découvrez comment configurer des noms de fichier automatique en fonction de l’UUID
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%
 
 ---
-
 
 # Configuration des noms de fichier automatique en fonction de l’UUID {#id205QG070D5Z}
 
@@ -15,7 +14,7 @@ Par défaut, lorsqu’un fichier de rubrique ou de mappage est créé, les auteu
 
 Effectuez les étapes suivantes pour attribuer automatiquement le nom de fichier basé sur l’UUID à tous les nouveaux fichiers créés dans le système :
 
-1. Ouvrez la page Configuration de la console web Adobe Experience Manager .
+1. Ouvrez la page de configuration de la console web Adobe Experience Manager .
 
    L&#39;URL par défaut pour accéder à la page de configuration est :
 
@@ -25,7 +24,7 @@ Effectuez les étapes suivantes pour attribuer automatiquement le nom de fichier
 
 1. Recherchez et cliquez sur le bouton *com.adobe.fmdita.xmleditor.config.XmlEditorConfig* du lot.
 
-1. Sélectionnez la **Utilisation de noms de fichier système UUID** .
+1. Sélectionnez la variable **Utilisation de noms de fichier système UUID** .
 
 1. Cliquez sur **Enregistrer**.
 
@@ -35,4 +34,3 @@ Effectuez les étapes suivantes pour attribuer automatiquement le nom de fichier
 > Par défaut, cette option est désactivée. Lorsque cette option est activée, les auteurs ne voient pas l’option permettant de spécifier le nom de fichier lors de la création d’un fichier de rubrique ou de mappage. Un nouveau fichier de rubrique ou de mappage peut être créé à partir de l’interface utilisateur d’Assets et de l’éditeur web.
 
 **Rubrique parente :**[ Configuration des noms de fichier](conf-file-names.md)
-

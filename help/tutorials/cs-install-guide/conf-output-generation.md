@@ -1,11 +1,10 @@
 ---
 title: Configuration des paramètres de génération de sortie
 description: Découvrez comment configurer les paramètres de génération de sortie
-exl-id: b5cf4f6c-dc56-428e-a514-6c9f879ac03d
-source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '5496'
-ht-degree: 2%
+source-wordcount: '5470'
+ht-degree: 1%
 
 ---
 
@@ -67,7 +66,7 @@ AEM Guides prend en charge la création de sorties dans les formats suivants :
 
 - AEM site
 - PDF
-- HTML 5
+- HTML5
 - EPUB
 - Sortie personnalisée via DITA-OT
 
@@ -244,7 +243,7 @@ Par défaut, vous pouvez rechercher une chaîne dans les titres uniquement dans 
 
 Pour activer la recherche, vous devez configurer l’aplatissement de AEM structure de noeuds Site.
 
-ATTENTION:
+ATTENTION :
 
 Vous pouvez rechercher jusqu’à 1 Mo de contenu aplati. Par exemple, dans la capture d’écran précédente, vous pouvez rechercher si le contenu sous &lt;p> La balise est &lt;= 1Mo.
 
@@ -305,7 +304,7 @@ Pour ajouter les métadonnées requises dans le système, procédez comme suit :
 
 1. Cliquez sur le bouton **Schémas de métadonnées** mosaïque.
 
-   La page Formulaires de schéma de métadonnées s’affiche.
+   La page Forms de schéma de métadonnées s’affiche.
 
 1. Sélectionnez la variable **default** formulaire de la liste.
 
@@ -566,7 +565,7 @@ Voici un exemple du schéma d’élément DITA dans `elementmapping.xml` fichier
 
 Le tableau suivant décrit les éléments du schéma d’élément DITA :
 
-| Élément. | Description |
+| Elément | Description |
 |-------|-----------|
 | `<ditaelement>` | Noeud de niveau supérieur pour chaque élément de mappage. |
 | `<class>` | L’attribut de classe de l’élément DITA cible pour lequel vous écrivez le composant.<br> Par exemple, l’attribut de classe pour la rubrique DITA est : <br> `- topic/topic` |
@@ -607,11 +606,11 @@ AEM Guides fournit la variable `apps.fmdita.dashboard-extn` catégorie pour pers
 
 >[!NOTE]
 >
-> Pour plus d’informations sur la création d’AEM bibliothèque cliente, voir [Utilisation de bibliothèques côté client](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=fr).
+> Pour plus d’informations sur la création d’AEM bibliothèque cliente, voir [Utilisation de bibliothèques côté client](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=en).
 
 ## Gérer le rendu d’image lors de la génération de la sortie {#id177BF0G0VY4}
 
-AEM est fourni avec un ensemble de workflows et de gestionnaires de médias par défaut pour traiter les ressources. Dans AEM, il existe des workflows prédéfinis pour gérer le traitement des ressources pour les types MIME les plus courants. En règle générale, pour chaque image que vous téléchargez, AEM crée plusieurs rendus du même format binaire. Ces rendus peuvent être de taille différente, avec une résolution différente, avec un filigrane ajouté ou d’autres caractéristiques modifiées. Pour plus d’informations sur la manière dont AEM gère les ressources, voir [Traitement des ressources à l’aide des workflows et des gestionnaires de médias](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=fr) dans la documentation AEM.
+AEM est fourni avec un ensemble de workflows et de gestionnaires de médias par défaut pour traiter les ressources. Dans AEM, il existe des workflows prédéfinis pour gérer le traitement des ressources pour les types MIME les plus courants. En règle générale, pour chaque image que vous téléchargez, AEM crée plusieurs rendus du même format binaire. Ces rendus peuvent être de taille différente, avec une résolution différente, avec un filigrane ajouté ou d’autres caractéristiques modifiées. Pour plus d’informations sur la manière dont AEM gère les ressources, voir [Traitement des ressources à l’aide des workflows et des gestionnaires de médias](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=en) dans la documentation AEM.
 
 AEM Guides vous permet de configurer le rendu d’image à utiliser lors de la génération de la sortie pour vos documents. Par exemple, vous pouvez choisir parmi l’un des rendus d’image par défaut ou en créer un et l’utiliser pour publier vos documents. Le mappage de rendu d’image pour la publication de vos documents est stocké dans la variable `/libs/fmdita/config/ **renditionmap.xml**` fichier . Un extrait de code de `renditionmap.xml` se présente comme suit :
 

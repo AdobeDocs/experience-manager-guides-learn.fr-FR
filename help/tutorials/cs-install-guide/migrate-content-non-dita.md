@@ -1,13 +1,12 @@
 ---
 title: Migration de contenu non DITA
 description: Découvrez comment migrer du contenu non DITA
-source-git-commit: 6051181e243cf71919901093c1b5590f21832545
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '2936'
+source-wordcount: '2889'
 ht-degree: 0%
 
 ---
-
 
 # Migration de contenu non DITA {#id181AH0R02HT}
 
@@ -30,7 +29,7 @@ AEM Guides vous permet de migrer vos documents Word existants \(`.docx`\) dans d
 
 Pour pouvoir convertir un document Word avec succès, votre document doit être bien structuré. Par exemple, votre document doit comporter un titre, suivi de l’en-tête 1, de l’en-tête 2, etc. Chacun des en-têtes doit contenir du contenu. Si votre document n’est pas correctement structuré, le processus risque de ne pas fonctionner comme prévu.
 
-Par défaut, AEM Guides utilise la variable [Structure de transformation Word vers DITA \(Word2DITA\)](http://www.dita4publishers.org/docs/repo/org.dita4publishers.word2dita/word2dita/word2dita-intro.html). Cette transformation dépend du [mappage style-balise](http://www.dita4publishers.org/docs/repo/org.dita4publishers.word2dita/word2dita/style-to-tag-map-overview.html) fichier de configuration. Pour pouvoir utiliser la transformation Word2DITA avec succès, vous devez tenir compte des instructions suivantes pour préparer votre document Word à la conversion :
+Par défaut, AEM Guides utilise la variable [Structure de transformation Word vers DITA \(Word2DITA\)](http://www.dita4publishers.org/docs/repo/org.dita4publishers.word2dita/word2dita/word2dita-intro.html). Cette transformation dépend de la [mappage style-balise](http://www.dita4publishers.org/docs/repo/org.dita4publishers.word2dita/word2dita/style-to-tag-map-overview.html) fichier de configuration. Pour pouvoir utiliser la transformation Word2DITA avec succès, vous devez tenir compte des instructions suivantes pour préparer votre document Word à la conversion :
 
 >[!NOTE]
 >
@@ -65,13 +64,13 @@ Effectuez les étapes suivantes pour convertir vos documents Word existants en d
 
    /apps/fmdita/config/w2d\_io.xml
 
-   Le `w2d_io.xml` contient les paramètres configurables suivants :
+   La variable `w2d_io.xml` contient les paramètres configurables suivants :
 
-   - Dans le `inputDir` , spécifiez l’emplacement du dossier input dans lequel vos documents Word sources sont disponibles. Par exemple, si vos documents Word sont stockés dans un dossier nommé `wordtodita` in `projects` , puis spécifiez l’emplacement suivant : `/content/dam/projects/wordtodita/`
+   - Dans le `inputDir` , spécifiez l’emplacement du dossier input dans lequel vos documents Word sources sont disponibles. Par exemple, si vos documents Word sont stockés dans un dossier nommé `wordtodita` in `projects` , puis spécifiez l’emplacement comme suit : `/content/dam/projects/wordtodita/`
 
    - Dans le`outputDir` , spécifiez l’emplacement du dossier output ou conservez l’emplacement de sortie par défaut pour enregistrer le document DITA converti. Si le dossier de sortie spécifié n’existe pas sur DAM, le workflow de conversion crée le dossier de sortie.
 
-   - Pour le `createRev` élément , spécifiez si une nouvelle version de la rubrique DITA convertie doit être créée \(`true`\) ou non \(`false`\).
+   - Pour le `createRev` spécifiez si une nouvelle version de la rubrique DITA convertie doit être créée \(`true`\) ou non \(`false`\).
 
    - Dans le `s2tMap` , spécifiez l’emplacement du fichier map contenant les mappages des styles de document Word aux éléments DITA. Le mappage par défaut est stocké dans le fichier situé à l’emplacement suivant :
 
@@ -116,7 +115,7 @@ Le processus de conversion nécessite le mappage des formats de paragraphe et de
 
 Le processus de conversion implique les actions suivantes dans le serveur principal :
 
-- Le *Langue de balisage de l’InDesign* Le fichier \(IDML\) est décompressé dans un répertoire de travail.
+- La variable *Langue de balisage de l’InDesign* Le fichier \(IDML\) est décompressé dans un répertoire de travail.
 - Le fichier designmap.xml est lu pour localiser les différents articles d’InDesign.
 - Tous les articles sont fusionnés en une seule instance XML, les articles &quot;vides&quot; sont ignorés.
 - Tous les graphiques incorporés sont exportés.
@@ -125,7 +124,7 @@ Le processus de conversion implique les actions suivantes dans le serveur princi
 - Création et validation de rubriques DITA individuelles et de fichiers de mappage DITA.
 - Suppression des fichiers temporaires.
 
-Dans l’ensemble, le processus de conversion requiert que vous [Préparation des fichiers d’InDesign pour la conversion](appendix.md#id195DBF0045Z)[annexe.md\#id195DBF0045Z](appendix.md#id195DBF0045Z) et [Préparation du fichier de mappage pour l’InDesign à la migration DITA](appendix.md#id194AF0003HT)[annexe.md\#id194AF0003HT](appendix.md#id194AF0003HT), vous devez ensuite suivre la procédure d’exécution du processus de conversion.
+En général, le processus de conversion requiert que vous [Préparation des fichiers d’InDesign pour la conversion](appendix.md#id195DBF0045Z)[annexe.md\#id195DBF0045Z](appendix.md#id195DBF0045Z) et [Préparation du fichier de mappage pour l’InDesign à la migration DITA](appendix.md#id194AF0003HT)[annexe.md\#id194AF0003HT](appendix.md#id194AF0003HT), vous devez ensuite suivre la procédure d’exécution du processus de conversion.
 
 Effectuez les étapes suivantes pour convertir vos documents InDesign existants en document de type rubrique DITA :
 
@@ -135,7 +134,7 @@ Effectuez les étapes suivantes pour convertir vos documents InDesign existants 
 
    `/libs/fmdita/config/idml2dita_io.xml`
 
-1. Créez un noeud de recouvrement de la propriété `config` dans le dossier `apps` noeud .
+1. Créez un noeud de recouvrement du `config` dans le dossier `apps` noeud .
 
 1. Accédez au fichier de configuration disponible dans le `apps` node:
 
@@ -143,7 +142,7 @@ Effectuez les étapes suivantes pour convertir vos documents InDesign existants 
 
    Configurez les paramètres suivants dans le `idml2dita_io.xml` fichier :
 
-   - Dans le `inputDir` , indiquez l’emplacement du dossier input dans lequel vos documents d’InDesign source sont disponibles. Par exemple, si vos documents d’InDesign sont stockés dans un dossier nommé `indesigntodita` in `projects` , puis spécifiez l’emplacement suivant : `/content/dam/idmlfiles/indesigntodita/`
+   - Dans le `inputDir` , indiquez l’emplacement du dossier input dans lequel vos documents d’InDesign source sont disponibles. Par exemple, si vos documents d’InDesign sont stockés dans un dossier nommé `indesigntodita` in `projects` , puis spécifiez l’emplacement comme suit : `/content/dam/idmlfiles/indesigntodita/`
 
    - Dans le`outputDir` , spécifiez l’emplacement du dossier output ou conservez l’emplacement de sortie par défaut pour enregistrer le document DITA converti. Si le dossier de sortie spécifié n’existe pas sur DAM, le workflow de conversion crée le dossier de sortie.
 
@@ -233,13 +232,13 @@ Pour convertir votre document XHTML existant en rubrique DITA, procédez comme s
 
    /apps/fmdita/config/h2d\_io.xml
 
-   Le `h2d_io.xml` contient les paramètres configurables suivants :
+   La variable `h2d_io.xml` contient les paramètres configurables suivants :
 
-   - Dans le `inputDir` , indiquez l’emplacement de votre dossier d’entrée dans lequel vos documents XHTML sources sont disponibles. Par exemple, si vos documents XHTML sont stockés dans un dossier nommé `xhtmltodita` in `projects` , puis spécifiez l’emplacement suivant : `/content/dam/projects/xhtmltodita/`
+   - Dans le `inputDir` , indiquez l’emplacement de votre dossier d’entrée dans lequel vos documents XHTML sources sont disponibles. Par exemple, si vos documents XHTML sont stockés dans un dossier nommé `xhtmltodita` in `projects` , puis spécifiez l’emplacement comme suit : `/content/dam/projects/xhtmltodita/`
 
    - Dans le`outputDir` , indiquez l’emplacement de votre dossier de sortie ou conservez l’emplacement de sortie par défaut. Si le dossier de sortie spécifié n’existe pas sur DAM, le workflow de conversion crée le dossier de sortie.
 
-   - Pour le `createRev` élément , spécifiez si une nouvelle version de la rubrique DITA convertie doit être créée \(`true`\) ou non \(`false`\).
+   - Pour le `createRev` spécifiez si une nouvelle version de la rubrique DITA convertie doit être créée \(`true`\) ou non \(`false`\).
 
 1. Exécutez le pipeline Cloud Manager pour déployer la configuration mise à jour.
 
@@ -298,7 +297,7 @@ Pour convertir vos documents de FrameMaker non structurés existants au format D
 
    `/apps/fmdita/config/ditaElems.xml`
 
-   Le `ditaElems.xml` contient un seul paramètre configurable :
+   La variable `ditaElems.xml` contient un seul paramètre configurable :
 
    - Dans le `elem` , indiquez le nom de l’élément personnalisé que vous souhaitez utiliser dans vos documents DITA convertis. Cet élément serait transmis tel quel dans les documents DITA générés.
 
@@ -306,13 +305,13 @@ Pour convertir vos documents de FrameMaker non structurés existants au format D
 
    `/libs/fmdita/config/style2attrMap.xml`
 
-1. Créez un noeud de recouvrement de la propriété `config` dans le dossier `apps` noeud .
+1. Créez un noeud de recouvrement du `config` dans le dossier `apps` noeud .
 
 1. Accédez au fichier de configuration disponible dans le `apps` node:
 
    `/apps/fmdita/config/style2attrMap.xml`
 
-   Le `style2attrMap.xml` contient les paramètres configurables suivants :
+   La variable `style2attrMap.xml` contient les paramètres configurables suivants :
 
    - Dans le `fmStyle` , spécifiez le format source utilisé dans le document de FrameMaker que vous souhaitez mapper.
 
@@ -341,7 +340,7 @@ En utilisant la variable `<attrMap> </attrMap>` bloc, vous pouvez définir un ou
 
 ## Migration de tout autre document structuré {#id1949B0590YK}
 
-AEM Guides vous permet de convertir vos documents structurés existants en documents DITA valides. Vous devez indiquer les emplacements des dossiers d’entrée et de sortie, l’emplacement de votre fichier de transformation, l’extension avec laquelle la sortie finale est enregistrée et si une nouvelle version du document est requise ou non.
+AEM Guides vous permet de convertir vos documents structurés existants en documents DITA valides. Vous devez spécifier les emplacements des dossiers d’entrée et de sortie, l’emplacement de votre fichier de transformation, l’extension avec laquelle la sortie finale est enregistrée et si une nouvelle version du document est requise ou non.
 
 Pour convertir vos documents structurés existants au format DITA, procédez comme suit :
 
@@ -351,19 +350,19 @@ Pour convertir vos documents structurés existants au format DITA, procédez com
 
    `/apps/fmdita/config/XSLConfig.xml`
 
-   Le `XSLConfig.xml` contient les paramètres configurables suivants :
+   La variable `XSLConfig.xml` contient les paramètres configurables suivants :
 
-   - Dans le `inputDir` , indiquez l’emplacement de votre dossier input dans lequel vos documents structurés sources sont disponibles. Par exemple, si vos documents structurés sont stockés dans un dossier nommé `xsltodita` in `projects` , puis spécifiez l’emplacement suivant : `/content/dam/projects/xsltodita/`
+   - Dans le `inputDir` , indiquez l’emplacement de votre dossier input dans lequel vos documents structurés sources sont disponibles. Par exemple, si vos documents structurés sont stockés dans un dossier nommé `xsltodita` in `projects` , puis spécifiez l’emplacement comme suit : `/content/dam/projects/xsltodita/`
 
    - Dans le`outputDir` , indiquez l’emplacement de votre dossier de sortie ou conservez l’emplacement de sortie par défaut. Si le dossier de sortie spécifié n’existe pas sur DAM, le workflow de conversion crée le dossier de sortie.
 
    - Dans le `xslFolder` , indiquez l’emplacement du dossier où sont stockés les fichiers de transformation XSL.
 
-   - Dans le ``xslPath`` spécifiez l’emplacement du Principal fichier .XSL utilisé pour lancer le processus de conversion.
+   - Dans le ``xslPath`` , spécifiez l’emplacement du fichier .XSL principal utilisé pour lancer le processus de conversion.
 
    - Dans le ``outputExt`` , spécifiez les extensions de fichier du fichier de sortie final créé à partir du flux de transformation.
 
-   - Pour le `createRev` élément , spécifiez si une nouvelle version de la rubrique DITA convertie doit être créée \(`true`\) ou non \(`false`\).
+   - Pour le `createRev` spécifiez si une nouvelle version de la rubrique DITA convertie doit être créée \(`true`\) ou non \(`false`\).
 
 1. Enregistrez le fichier `XSLConfig.xml`.
 
@@ -377,4 +376,3 @@ Pour convertir vos documents structurés existants au format DITA, procédez com
 En utilisant la variable `<config> </config>` bloc, vous pouvez définir un ou plusieurs blocs de configurations pour la conversion. Le workflow de conversion est exécuté et la sortie finale sous la forme d’une rubrique DITA est enregistrée à l’emplacement spécifié dans la variable `outputDir` élément .
 
 **Rubrique parente :**[ Migration de contenu existant](migrate-content.md)
-

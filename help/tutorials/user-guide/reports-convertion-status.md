@@ -1,8 +1,7 @@
 ---
 title: Rapport d’état de conversion
 description: Convertissez des documents de différents formats en DITA dans AEM Guides. Découvrez comment ajouter des filtres et afficher un rapport d’état de conversion.
-exl-id: 41887af2-404f-41d7-b54c-ec49797200f0
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
@@ -27,7 +26,7 @@ Pour afficher le rapport d’état de conversion, procédez comme suit :
 
 1. La page du rapport se divise en deux parties :
 
-   - **Filtrer:**
+   - **Filtre :**
 
      Vous pouvez filtrer les données du rapport en fonction du type de fichier et de l’état de conversion. Dans le type de fichier, vous pouvez choisir d’afficher les données du rapport pour le document Word, le HTML structuré, XML et le type DocBook des documents. Dans l’état, vous pouvez choisir d’afficher les données du rapport pour les tâches qui ont été exécutées avec succès, Échec, Actif ou En file d’attente.
 

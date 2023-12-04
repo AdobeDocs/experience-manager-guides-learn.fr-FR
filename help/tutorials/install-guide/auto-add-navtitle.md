@@ -1,19 +1,18 @@
 ---
 title: Inclure l’attribut @navtitle par défaut
 description: Découvrez comment inclure l’attribut @navtitle par défaut
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 1%
 
 ---
 
-
 # Inclure l’attribut @navtitle par défaut {#id2115BC0J0XA}
 
 Vous pouvez ajouter différents types de fichiers de référence dans un mappage, par exemple rubrique, référence, tâche, mappages \(sub\), etc. La plupart de ces fichiers prennent en charge la variable `@navtitle` attribut. Cependant, peu d’auteurs l’utilisent de manière cohérente. Si vous souhaitez appliquer l’utilisation de la variable `@navtitle` dans tous les fichiers référencés d’une carte, puis vous pouvez le faire avec une configuration simple.
 
-Une fois activé, chaque fichier de référence que vous ajoutez dans une carte reçoit automatiquement la variable `@navtitle` ajouté à ses propriétés. Le `@navtitle` obtient également la valeur de la variable `title` élément du contenu référencé.
+Une fois activé, chaque fichier de référence que vous ajoutez dans une carte reçoit automatiquement la variable `@navtitle` ajouté à ses propriétés. La variable `@navtitle` obtient également la valeur de la variable `title` élément du contenu référencé.
 
 À inclure `@navtitle` par défaut dans les propriétés des fichiers de référence, procédez comme suit :
 
@@ -45,4 +44,3 @@ Une fois activé, chaque fichier de référence que vous ajoutez dans une carte 
 
 
 Avec cette configuration, chaque fichier de référence que vous ajoutez à un mappage contient le `@navtitle` par défaut.
-

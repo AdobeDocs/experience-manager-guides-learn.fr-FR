@@ -1,15 +1,14 @@
 ---
-title: Rapports dans les guides AEM
+title: Rapports dans les guides d’AEM
 description: Découvrez tous les rapports disponibles dans AEM pour aider les utilisateurs à améliorer la qualité du contenu.
-exl-id: f0d761ff-efea-452c-bb8e-865f34a182fc
-source-git-commit: 7871a54f3181fd114e24e0e10cfc15351cefd761
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '263'
 ht-degree: 1%
 
 ---
 
-# Rapports dans les guides AEM
+# Rapports dans les guides d’AEM
 
 Dans une configuration organisationnelle, vous souhaitez vérifier l’exhaustivité globale de votre contenu avant de transférer les documents à des utilisateurs finaux. Un tel besoin devient encore plus essentiel dans les environnements multi-utilisateurs et à grande échelle où le contenu peut être réutilisé dans différents contextes. Il est donc nécessaire de valider votre contenu ou votre document. Dans le contexte du contenu structuré, certains types de rapports spécifiques sont généralement nécessaires.
 
@@ -53,14 +52,13 @@ Au cours de cette session, vous avez appris les éléments suivants :
 
 - **Guide de l’utilisateur** - [Création de contenu](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Freports-intro.html)
 
-- **Forum de la communauté** - Pour les interactions de communauté spécifiques à une session sur Experience League, rendez-vous sur la page  [Forum AEM Guides](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/bd-p/xml-documentation-discussions).
+- **Forum communautaire** - Pour les interactions de communauté spécifiques à une session sur Experience League, rendez-vous sur la page  [Forum AEM Guides](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/bd-p/xml-documentation-discussions).
 
 >[!NOTE]
 >
 > Les fonctionnalités affichées dans cette session sont disponibles dans les versions suivantes des AEM Guides :
-> - On-prem : 4.2 ou version ultérieure
-> - Cloud Services : 2302 ou version ultérieure
-
+> - On-premise : 4.2 ou version ultérieure
+> - Cloud Service : 2302 ou version ultérieure
 
 
 ## Prochaine session d&#39;experts

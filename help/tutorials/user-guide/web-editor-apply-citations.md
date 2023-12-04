@@ -1,13 +1,12 @@
 ---
 title: Ajouter et gérer des citations dans votre contenu
 description: Ajoutez et gérez des citations dans AEM Guides. Découvrez comment appliquer, importer, filtrer, rechercher, modifier le style de la citation, modifier, prévisualiser, insérer, supprimer et générer une sortie de contenu avec des citations.
-source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1877'
-ht-degree: 1%
+source-wordcount: '1887'
+ht-degree: 0%
 
 ---
-
 
 # Ajouter et gérer des citations dans votre contenu
 
@@ -133,7 +132,7 @@ Les options suivantes sont disponibles dans la liste déroulante :
 | MLA | APA | Chicago | IEEE | AHA |
 |---|---|---|---|---|
 | Style d&#39;association de langues modernes <br> | Le style de l&#39;association psychologique américaine | Manuel de style de Chicago | Style de l&#39;Institut pour les ingénieurs électriques et électroniques | American Heartbeat Association Style |
-| Exemple :<br> Crawford, Claire, et al. *Contenu émotionnel des souvenirs sombres*.Edité par Memory, vol 16, 2010, Amsterdam. | Exemple : <br> Crawford, C., J., &amp;, C. (2010) *Contenu émotionnel des souvenirs sombres* (505-16 éd.). 10.1080/ 09658210902067289 | Exemple : <br> Crawford, Claire, et al. *Contenu émotionnel des souvenirs sombres*. 505-16, 2010. | Exemple : <br> C. Crawford, J. et C. , *Contenu émotionnel des souvenirs sombres*. Amsterdam, 2010. | Exemple : <br> C. Crawford, J. et C. , *Contenu émotionnel des souvenirs sombres*. Amsterdam, 2010. |
+| Exemple :<br> Crawford, Claire, et al. *Contenu émotionnel des souvenirs sombres*.Edité par Memory, vol 16, 2010, Amsterdam. | Exemple : <br> Crawford, C., J., &amp;, C. (2010) *Contenu émotionnel des souvenirs sombres* (505-16 éd.). 10.1080/09658210902067289 | Exemple : <br> Crawford, Claire, et al. *Contenu émotionnel des souvenirs sombres*. 505-16, 2010. | Exemple : <br> C. Crawford, J. et C. , *Contenu émotionnel des souvenirs sombres*. Amsterdam, 2010. | Exemple : <br> C. Crawford, J. et C. , *Contenu émotionnel des souvenirs sombres*. Amsterdam, 2010. |
 
 
 ## Modifier une citation
@@ -142,11 +141,11 @@ Pour éditer la citation, procédez comme suit :
 
 1. Pointez sur le nom de la citation de la liste. Sélectionner  ![](images/options.svg) la valeur **Options** Icône
 
-1. Sélectionnez **Modifier**.
+1. Sélectionner  **Modifier**.
 
 La variable **Modifier la citation** s’ouvre.
 
-1. Effectuez les modifications nécessaires. Sélectionnez **Terminé**.
+1. Effectuez les modifications nécessaires. Sélectionner **Terminé**.
 La citation sélectionnée est éditée.
 
 >[!NOTE]
@@ -159,7 +158,7 @@ Pour prévisualiser une citation, procédez comme suit :
 
 Pointez sur le nom de la citation de la liste. Sélectionner     ![](images/options.svg) **Options** Icône
 
-1. Sélectionnez **Aperçu**.
+1. Sélectionner **Aperçu**.
 Vous pouvez prévisualiser le contenu et le format de la citation dans le volet d’aperçu.
 
    >[!NOTE]

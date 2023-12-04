@@ -1,17 +1,16 @@
 ---
 title: Configuration de la génération d’un PDF de rubrique unique
 description: Découvrez comment configurer la génération d’un PDF de rubrique unique
-source-git-commit: 6051181e243cf71919901093c1b5590f21832545
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
 
-
 # Configuration de la génération d’un PDF de rubrique unique {#id22ADC70M0XA}
 
-Avec les AEM Guides, vous pouvez générer le PDF de rubriques individuelles ou un fichier de mappage entier. Vous pouvez publier vos rubriques dans un format PDF à l’aide d’un PDF natif ou d’une méthode DITA-OT. Utilisez la méthode de PDF native pour générer une sortie de PDF riche en fonctionnalités basée sur les normes W3C CSS3 et CSS paged Media. Vous pouvez utiliser la méthode DITA-OT pour générer une sortie de PDF pour une carte à partir du tableau de bord de la carte.
+Avec les AEM Guides, vous pouvez générer le PDF de rubriques individuelles ou d’un fichier de mappage entier. Vous pouvez publier vos rubriques dans un format PDF à l’aide d’un PDF natif ou d’une méthode DITA-OT. Utilisez la méthode de PDF native pour générer une sortie de PDF riche en fonctionnalités basée sur les normes W3C CSS3 et CSS paged Media. Vous pouvez utiliser la méthode DITA-OT pour générer une sortie de PDF pour une carte à partir du tableau de bord de la carte.
 
 >[!NOTE]
 >
@@ -24,7 +23,7 @@ Pour activer l’ancienne génération de PDF via DITA-OT à partir du mode d’
 1. Pour ce faire, cliquez sur le lien Adobe Experience Manager en haut de l’écran et choisissez **Outils**.
 1. Sélectionner **Guides** dans la liste des outils, puis cliquez sur l’icône **Profils de dossier**.
 1. Cliquez sur le bouton **Profil global** mosaïque.
-1. Sélectionnez la **Configuration de l’éditeur XML** et cliquez sur **Modifier** icône en haut
+1. Sélectionnez la variable **Configuration de l’éditeur XML** et cliquez sur **Modifier** icône en haut
 1. Cliquez sur le bouton **Télécharger** pour télécharger le fichier ui\_config.json sur votre système local. Vous pouvez ensuite apporter des modifications au fichier, puis charger le même fichier.
 1. Dans le `ui_config.json` recherchez la configuration suivante :
 
@@ -57,4 +56,3 @@ Pour activer l’ancienne génération de PDF via DITA-OT à partir du mode d’
 Après avoir effectué les étapes ci-dessus, si vous choisissez le même profil de dossier dans Préférences utilisateur dans l’éditeur web, l’option de génération de PDF s’affiche en mode d’aperçu d’une rubrique.
 
 **Rubrique parente :**[ Personnalisation de l’éditeur web](conf-web-editor.md)
-

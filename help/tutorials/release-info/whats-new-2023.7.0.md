@@ -1,9 +1,9 @@
 ---
 title: Notes de mise à jour | Nouveautés des guides Adobe Experience Manager, version de juillet 2023
-description: Découvrez les nouvelles fonctionnalités et les fonctionnalités améliorées de la version de juillet 2023 des Guides Adobe Experience Manager as a Cloud Service.
-source-git-commit: 7581085859785c5b8b597ecfeb7dbe58c7c9e2bc
+description: Découvrez les nouvelles fonctionnalités et les fonctionnalités améliorées de la version de juillet 2023 de Adobe Experience Manager Guides as a Cloud Service
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ Une fois que vous avez créé un générateur de fragments de contenu, vous pouv
 
 
 
-## Panneau de révision pour afficher les projets de révision et les tâches de révision principales
+## Panneau de révision pour afficher les projets de révision et les tâches de révision actives
 
-Maintenant AEM Guides rend vos révisions plus transparentes. Il fournit le panneau Révisions dans l’éditeur web. Le panneau Révisions affiche tous les projets de révision et les principales tâches de révision dans les projets de révision dont vous faites partie.
+Maintenant AEM Guides rend vos révisions plus transparentes. Il fournit le panneau Révisions dans l’éditeur web. Le panneau Révisions affiche tous les projets de révision et les tâches de révision actives dans les projets de révision dont vous faites partie.
 
 En tant qu’auteur, cette fonctionnalité vous permet d’ouvrir facilement les tâches de révision, d’afficher les commentaires et d’adresser rapidement les commentaires dans une vue centralisée.
 ![](assets/active-review-task-comments.png){width="800" align="left"}

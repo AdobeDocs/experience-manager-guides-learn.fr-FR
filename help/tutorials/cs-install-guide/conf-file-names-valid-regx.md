@@ -1,13 +1,12 @@
 ---
 title: Configuration de Regx pour les caractères de nom de fichier valides
 description: Découvrez comment configurer la regx pour les caractères de nom de fichier valides
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
-
 
 # Configuration de Regx pour les caractères de nom de fichier valides {#id214BD0550E8}
 
@@ -30,4 +29,3 @@ Suivez les instructions de la section [Remplacements de configuration](download-
 > Tout comme la liste des caractères de nom de fichier valides, vous pouvez également spécifier une liste de caractères de nom de fichier valides pour AEM sortie Site. Pour plus d’informations, voir [Configuration de noms de fichier valides pour AEM sortie Site](conf-file-names-valid-regx-aem-site-output.md#).
 
 **Rubrique parente :**[ Configuration des noms de fichier](conf-file-names.md)
-

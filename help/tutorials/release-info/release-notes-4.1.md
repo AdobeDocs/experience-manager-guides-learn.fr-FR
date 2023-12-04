@@ -1,17 +1,16 @@
 ---
 title: Notes de mise à jour | Adobe Experience Manager Guides version 4.1
 description: Dernière version des guides Adobe Experience Manager
-exl-id: c70b3bbc-3332-4626-bc30-641034f8fd06
-source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '3532'
-ht-degree: 3%
+source-wordcount: '3644'
+ht-degree: 1%
 
 ---
 
 # Version 4.1.x des guides Adobe Experience Manager
 
-Les notes de mise à jour suivantes portent sur les instructions de mise à niveau, les nouvelles fonctionnalités et les améliorations de la version 4.1.x des Guides Adobe Experience Manager (ultérieurement appelée *Guides d’AEM*).
+Les notes de mise à jour de cette version portent sur les instructions de mise à niveau, les nouvelles fonctionnalités et les améliorations de la version 4.1.x des Guides Adobe Experience Manager (ultérieurement appelés *Guides d’AEM*).
 
 ## Mise à niveau vers la dernière version
 
@@ -37,33 +36,33 @@ Version 6.5 Service Pack 13, 12, 11 ou 10
 **UUID**
 Version 6.5 Service Pack 13, 12, 11 ou 10
 
-Pour plus d’informations, reportez-vous à la section Exigences techniques du guide Installation et configuration des guides Adobe Experience Manager .
+Pour plus d’informations, voir la section Exigences techniques du guide Installation et configuration de Adobe Experience Manager Guides .
 
 
 ### FrameMaker et FrameMaker Publishing Server
 
-| Mise à jour | FMPS 2020 | FMPS 2019 | Fm 2020 | Fm 2019 |
+| Version | FMPS 2020 | FMPS 2019 | Fm 2020 | Fm 2019 |
 | --- | --- | --- | --- | --- |
 | 4.1.3 (non UUID) | 2020.2 ou version ultérieure* | 2019 | 2020.3 ou version ultérieure | 2019.8 (dernière mise à jour) |
 | 4.1.3 (UUID) | 2020.2 ou version ultérieure* | Non compatible | 2020.4 ou version ultérieure | Non compatible |
-|  |  |  |  |
+| | | | |
 
 *Les conditions de base et créées dans AEM sont prises en charge dans les versions FMPS à partir de 2020.2.
 
 ### Connecteur Oxygen
 
-| Mise à jour | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
+| Version | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
 | --- | --- | --- |--- |--- |
-| 4.1.3 (non UUID) | 2.0 | 2.0 | 1.6 | 1.6 |
-| 4.1.3 (UUID) | 2.7 | 2.7 | 2.3 | 2.3 |
-|  |  |  |
+| 4.1.3 (non UUID) | 2.0 | 2.0 | 1,6 | 1,6 |
+| 4.1.3 (UUID) | 2,7 | 2,7 | 2,3 | 2,3 |
+|  |  |   |
 
 
 ## Problèmes résolus
 
 Le bogue corrigé est répertorié ci-dessous :
 
-* L’éditeur web charge une page vierge par intermittence. (10678)
+* L’éditeur web charge une page vierge par intermittence. 10678
 
 
 ## 4.1.2 | Notes de mise à jour
@@ -80,48 +79,48 @@ Version 6.5 Service Pack 13, 12, 11 ou 10
 **UUID**
 Version 6.5 Service Pack 13, 12, 11 ou 10
 
-Pour plus d’informations, reportez-vous à la section Exigences techniques du guide Installation et configuration des guides Adobe Experience Manager .
+Pour plus d’informations, voir la section Exigences techniques du guide Installation et configuration de Adobe Experience Manager Guides .
 
 
 ### FrameMaker et FrameMaker Publishing Server
 
-| Mise à jour | FMPS 2020 | FMPS 2019 | Fm 2020 | Fm 2019 |
+| Version | FMPS 2020 | FMPS 2019 | Fm 2020 | Fm 2019 |
 | --- | --- | --- | --- | --- |
 | 4.1.2 (non UUID) | 2020.2 ou version ultérieure* | 2019 | 2020.3 ou version ultérieure | 2019.8 (dernière mise à jour) |
 | 4.1.2 (UUID) | 2020.2 ou version ultérieure* | Non compatible | 2020.4 ou version ultérieure | Non compatible |
-|  |  |  |  |
+| | | | |
 
 *Les conditions de base et créées dans AEM sont prises en charge dans les versions FMPS à partir de 2020.2.
 
 ### Connecteur Oxygen
 
-| Mise à jour | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
+| Version | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
 | --- | --- | --- |--- |--- |
-| 4.1.2 (non UUID) | 2.0 | 2.0 | 1.6 | 1.6 |
-| 4.1.2 (UUID) | 2.7 | 2.7 | 2.3 | 2.3 |
-|  |  |  |
+| 4.1.2 (non UUID) | 2.0 | 2.0 | 1,6 | 1,6 |
+| 4.1.2 (UUID) | 2,7 | 2,7 | 2,3 | 2,3 |
+|  |  |   |
 
 
 ## Problèmes résolus
 
 Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 
-* Lors de la sélection de tous les profils de dossier, un profil de dossier invisible (incorrect) s’affiche. (10393)
-* La création de ligne de base ne sélectionne pas la dernière version lorsque le fuseau horaire de l’utilisateur est différent du fuseau horaire du serveur. (10336)
+* Lors de la sélection de tous les profils de dossier, un profil de dossier invisible (incorrect) s’affiche. 10393)
+* La création de ligne de base ne sélectionne pas la dernière version lorsque le fuseau horaire de l’utilisateur est différent du fuseau horaire du serveur. 10336
 * Le raccourci Ctrl+F n’ouvre pas le modal de recherche du navigateur sur la console Ressources après l’installation des AEM Guides 4.1. (10339)
-* Une erreur de création de ligne de base se produit pour la rubrique qui contient la référence à un dossier. (10383)
+* Une erreur de création de ligne de base se produit pour la rubrique qui contient la référence à un dossier. 10383
 * L’onglet Paramètres prédéfinis de sortie affiche par intermittence un écran vide et, dans certains cas, des paramètres prédéfinis non modifiables s’affichent. (10390)
-* La gestion de l’espace de clés génère des exceptions et des erreurs. (10449)
+* La gestion de l’espace de clés génère des exceptions et des erreurs. 10449)
 
 ### Problèmes connus liés à la solution
 
 * La ligne de base exportée lors de la traduction ne se charge pas dans l’onglet de ligne de base de l’éditeur.
 
-   **Solution**: Utilisez l’onglet de ligne de base du tableau de bord de mappage DITA.
+  **Solution**: utilisez l’onglet de ligne de base du tableau de bord de mappage DITA.
 
 ## 4.1 | Notes de mise à jour
 
-Les notes de mise à jour suivantes portent sur les instructions de mise à niveau, les nouvelles fonctionnalités et les améliorations de la version 4.1.x des Guides Adobe Experience Manager (ultérieurement appelée *Guides d’AEM*).
+Les notes de mise à jour de cette version portent sur les instructions de mise à niveau, les nouvelles fonctionnalités et les améliorations de la version 4.1.x des Guides Adobe Experience Manager (ultérieurement appelés *Guides d’AEM*).
 
 ## Matrice de compatibilité
 
@@ -135,27 +134,27 @@ Version 6.5 Service Pack 13, 12, 10 ou 11
 **UUID**
 Version 6.5 Service Pack 13, 12, 10 ou 11
 
-Pour plus d’informations, reportez-vous à la section Exigences techniques du guide Installation et configuration des guides Adobe Experience Manager .
+Pour plus d’informations, voir la section Exigences techniques du guide Installation et configuration de Adobe Experience Manager Guides .
 
 
 
 
 ### FrameMaker et FrameMaker Publishing Server
 
-| Mise à jour | FMPS 2020 | FMPS 2019 | Fm 2020 | Fm 2019 |
+| Version | FMPS 2020 | FMPS 2019 | Fm 2020 | Fm 2019 |
 | --- | --- | --- | --- | --- |
 | 4.1 (non UUID) | 2020.2 ou version ultérieure* | 2019 | 2020.3 ou version ultérieure | 2019.8 (dernière mise à jour) |
 | 4.1 (UUID) | 2020.2 ou version ultérieure* | Non compatible | 2020.4 ou version ultérieure | Non compatible |
-|  |  |  |  |
+| | | | |
 
 *Les conditions de base et créées dans AEM sont prises en charge dans les versions FMPS à partir de 2020.2.
 
 ### Connecteur Oxygen
 
-| Mise à jour | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
+| Version | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
 | --- | --- | --- |--- |--- |
-| 4.1 (non UUID) | 2.0 | 2.0 | 1.6 | 1.6 |
-| 4.1 (UUID) | 2.7 | 2.7 | 2.3 | 2.3 |
+| 4.1 (non UUID) | 2.0 | 2.0 | 1,6 | 1,6 |
+| 4.1 (UUID) | 2,7 | 2,7 | 2,3 | 2,3 |
 |  |  |  |
 
 
@@ -163,7 +162,7 @@ Pour plus d’informations, reportez-vous à la section Exigences techniques du 
 
 AEM Guides contient de nombreuses améliorations et nouvelles fonctionnalités de la version 4.1 :
 
-### Publication de PDF natifs
+### Publication PDF native
 
 La prise en charge de la création d’un PDF natif a également été ajoutée dans la version 4.1 des AEM Guides. Un nouveau moteur de publication a été introduit avec les fonctionnalités suivantes :
 * Création d’un modèle CSS
@@ -191,7 +190,7 @@ Désormais, les références clés sont résolues sur la base de la carte racine
 
 Pour plus d’informations, voir *Résoudre les références de clés* dans le guide d’utilisation des guides Adobe Experience Manager.
 
-* **Ajout d’un panneau personnalisé dans le panneau de gauche**
+* **Ajouter un panneau personnalisé dans le panneau de gauche**
 
 Vous pouvez maintenant ajouter un panneau personnalisé dans le panneau de gauche de l’éditeur Web. Vous pouvez utiliser un panneau personnalisé à diverses fins, par exemple pour fournir de l’aide ou effectuer les tests pour un projet. Si un panneau personnalisé a été configuré, il apparaît également dans la liste des panneaux de la variable **Paramètres de l’éditeur**. Vous pouvez activer ou désactiver le commutateur pour afficher ou masquer le panneau personnalisé.
 
@@ -203,7 +202,7 @@ Vous pouvez désormais facilement modifier l’état du document des rubriques s
 
 * **Informations de version affichées en mode Aperçu**
 
-L’éditeur web vous aide à gérer vos versions. Vous pouvez désormais également voir la version de la principale rubrique ou du mappage DITA dans le coin supérieur droit de l’onglet Fichier de la rubrique en mode Aperçu d’une rubrique.
+L’éditeur web vous aide à gérer vos versions. Vous pouvez désormais également voir la version de la rubrique active ou du mappage DITA dans le coin supérieur droit de l’onglet Fichier de la rubrique en mode Aperçu d’une rubrique.
 
 ![version d’aperçu](assets/preview-version.png)
 
@@ -216,7 +215,7 @@ Les améliorations suivantes sont désormais disponibles avec l’opération d�
 
 * Même lors de l’actualisation du navigateur, les vues du panneau de gauche et du panneau de droite sont conservées.
 
-* La rubrique principale ou le mappage DITA est rouvert dans la zone d’édition du contenu.
+* La rubrique active ou le mappage DITA est rouvert dans la zone de modification du contenu.
 
 * **Création de cartes à partir de modèles personnalisés**
 
@@ -248,13 +247,12 @@ Pour plus d’informations, voir *Fermeture du fichier et enregistrement des sc�
 ![mot-clé d&#39;insertion](assets/insert-keyword.png)
 
 * **Prise en charge des documents Markdown**
-Markdown est un langage de balisage léger qui peut vous aider à ajouter des éléments de formatage aux documents en texte brut. L’éditeur web vous permet d’utiliser des documents Markdown (.md) avec vos documents DITA. Vous pouvez facilement créer et prévisualiser un document Markdown dans l’éditeur web et également l’ajouter à votre fichier de mappage via l’éditeur de mappage DITA.  Pour plus d’informations, voir 
-*Création de documents Markdown à partir de l’éditeur web* dans le guide d’utilisation des guides Adobe Experience Manager.
+Markdown est un langage de balisage léger qui peut vous aider à ajouter des éléments de formatage aux documents en texte brut. L’éditeur web vous permet d’utiliser des documents Markdown (.md) avec vos documents DITA. Vous pouvez facilement créer et prévisualiser un document Markdown dans l’éditeur web et également l’ajouter à votre fichier de mappage via l’éditeur de mappage DITA.  Pour plus d’informations, voir *Création de documents Markdown à partir de l’éditeur web* dans le guide d’utilisation des guides Adobe Experience Manager.
 
-![markdown de prise en charge](assets/create-markdown-dita-topic.png)
+![markdown de support](assets/create-markdown-dita-topic.png)
 
 * **Possibilité de configurer une vue de balises par défaut**
-Si un utilisateur active la vue Balises à partir de l’éditeur web, elle reste activée même au cours des sessions.  Cela signifie que vous n’avez pas à réactiver la vue Balises pour y accéder ultérieurement. Votre administrateur peut configurer l’état par défaut de la vue Balises dans l’éditeur web. La valeur par défaut de la vue Balises pour la session d’un nouvel utilisateur est déterminée par la propriété tagsView dans le fichier ui_config.json.
+Si un utilisateur active la vue Balises à partir de l’éditeur web, elle reste activée même au cours des sessions.  Cela signifie que vous n’avez pas besoin d’activer à nouveau la vue Balises pour y accéder ultérieurement. Votre administrateur peut configurer l’état par défaut de la vue Balises dans l’éditeur web. La valeur par défaut de la vue Balises pour la session d’un nouvel utilisateur est déterminée par la propriété tagsView dans le fichier ui_config.json.
 
 * Désormais, les fichiers en mode Référentiel sont chargés par lots. Tous les fichiers présents dans la balise principale ou `/content/dam folder` sont répertoriées. Mais à partir du niveau suivant ou du dossier secondaire, 75 fichiers sont chargés à la fois. Ce chargement par lots est efficace et vous pouvez accéder aux fichiers plus rapidement par rapport au chargement de tous les fichiers existants dans un dossier.
 
@@ -264,7 +262,7 @@ Si un utilisateur active la vue Balises à partir de l’éditeur web, elle rest
 
 La version 4.1 d’AEM Guides fournit la fonctionnalité de ligne de base intégrée à l’éditeur web. Vous pouvez désormais créer des lignes de base à partir de l’éditeur Web et les utiliser pour publier ou traduire des rubriques de différentes versions.
 
-**Remarque**: Pour le système mis à niveau, mettez à jour la dernière version **ui_config.json** pour le profil de dossier.
+**Remarque**: pour le système mis à niveau, mettez à jour la dernière version **ui_config.json** pour le profil de dossier.
 
 Utilisez cette fonction pour créer une ligne de base avec une version spécifique des rubriques disponibles à une date et une heure spécifiques. En outre, vous obtenez la prise en charge de l’API pour créer ou mettre à jour une ligne de base avec un libellé défini pour une version de rubriques.
 
@@ -276,19 +274,18 @@ Vous pouvez rechercher les fichiers en fonction de leur nom ou de leur emplaceme
 
 Les performances du processus de création de ligne de base ont été améliorées. Le processus de création des lignes de base est asynchrone. Vous pouvez donc continuer à modifier d’autres fichiers dans l’éditeur web pendant la création de la ligne de base. Pour plus d’informations, voir *Création et gestion des lignes de base à partir de l’éditeur web* dans le guide Utilisation des guides Adobe Experience Manager .
 
-Remarque : L’onglet Ligne de base du tableau de bord de carte est masqué par défaut. Votre administrateur peut activer l’onglet Ligne de base dans le tableau de bord de mappage.
+Remarque : l’onglet Ligne de base du tableau de bord de carte est masqué par défaut. Votre administrateur peut activer l’onglet Ligne de base dans le tableau de bord de mappage.
 
 * Le paramètre de ligne de base des API à télécharger utilise désormais le titre de la ligne de base pour récupérer le contenu versionné.
 
 ### Processus de traduction amélioré
 
 * **Possibilité de créer un projet de traduction de portée**
-Si vous devez créer uniquement la portée d’un projet à traduire, vous pouvez sélectionner 
-**Création d’un projet de traduction de définition de la portée**. Cela n’enverra pas les copies à traduire et l’état de traduction d’origine des fichiers est conservé.
+Si vous devez créer uniquement la portée d’un projet à traduire, vous pouvez sélectionner **Création d’un projet de traduction d’étendue**. Cela n’enverra pas les copies à traduire et l’état de traduction d’origine des fichiers est conservé.
 
 ![projet de traduction de portée](assets/scoping-translation-project.png)
 
-* Le **Langues** La liste affiche les dossiers de langue ainsi que leurs codes de langue. Par exemple, Français (fr) et Allemand (de).
+* La variable **Langues** La liste affiche les dossiers de langue ainsi que leurs codes de langue. Par exemple, Français (fr) et Allemand (de).
 
 ![langue de traduction](assets/translation-languages.png)
 
@@ -297,7 +294,7 @@ Pour plus d’informations sur la traduction, voir *Traduire des documents à pa
 
 ### Publication améliorée
 
-* Vous pouvez également accéder au **Publier le tableau de bord** dans l’onglet Sorties lorsque vous générez une sortie à partir du tableau de bord de mappage. Une liste de toutes les principales tâches de publication est disponible dans le tableau de bord de publication.
+* Vous pouvez également accéder au **Publier le tableau de bord** dans l’onglet Sorties lorsque vous générez une sortie à partir du tableau de bord de mappage. Une liste de toutes les tâches de publication actives est disponible dans le tableau de bord de publication.
 
 ![sorties en file d’attente](assets/queued-output.png)
 
@@ -305,7 +302,7 @@ Pour plus d’informations sur la traduction, voir *Traduire des documents à pa
 
 * Les lignes de base ont été respectées pour les métadonnées de la sortie AEM site. Vous pouvez également traiter les propriétés d’une version de ligne de base en tant que métadonnées. Si aucune ligne de base n’est définie, les propriétés de la dernière version sont traitées comme des métadonnées.
 
-* Le **Nom du fichier** et **Arguments de ligne de commande DITA-OT** Des options ont été ajoutées pour les paramètres prédéfinis de sortie HTML5, EPUB et Personnalisé. Vous pouvez maintenant spécifier le nom de fichier avec lequel vous souhaitez enregistrer la sortie. Vous pouvez également spécifier les arguments supplémentaires que DITA-OT doit traiter lors de la génération de la sortie.
+* La variable **Nom du fichier** et **Arguments de ligne de commande DITA-OT** Des options ont été ajoutées pour les paramètres prédéfinis de sortie HTML5, EPUB et Personnalisé. Vous pouvez maintenant spécifier le nom de fichier avec lequel vous souhaitez enregistrer la sortie. Vous pouvez également spécifier les arguments supplémentaires que DITA-OT doit traiter lors de la génération de la sortie.
 
 ### Tableau de bord des cartes
 
@@ -320,7 +317,7 @@ Lorsque vous choisissez de télécharger le mappage DITA, la demande est mise en
 
 ### Fonctionnalité obsolète
 
-AEM Guides ne prend plus en charge la génération du format de sortie DITA pour les documents FrameMaker. Cette option DITA a également été supprimée des paramètres prédéfinis de sortie du tableau de bord des cartes.
+AEM Guides ne prend plus en charge la génération du format de sortie DITA pour les documents de FrameMaker. Cette option DITA a également été supprimée des paramètres prédéfinis de sortie du tableau de bord des cartes.
 
 ## Problèmes résolus
 

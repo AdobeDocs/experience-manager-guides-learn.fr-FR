@@ -1,13 +1,12 @@
 ---
 title: Définir l’éditeur de mappage avancé comme valeur par défaut
 description: Découvrez comment définir l’éditeur de mappage avancé comme valeur par défaut
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
 
 ---
-
 
 # Définir l’éditeur de mappage avancé comme valeur par défaut {#id181AI0003PN}
 
@@ -26,4 +25,3 @@ Suivez les instructions de la section [Remplacements de configuration](download-
 > Par défaut, lorsqu’un auteur crée un fichier de mappage et choisit de l’ouvrir pour le modifier, l’éditeur de mappage de base est lancé. Lorsque l’option Modifier est sélectionnée pour un fichier de mappage dans l’interface utilisateur d’Assets, elle est également ouverte dans l’éditeur de mappage de base.
 
 **Rubrique parente :**[ Personnalisation de l’éditeur web](conf-web-editor.md)
-

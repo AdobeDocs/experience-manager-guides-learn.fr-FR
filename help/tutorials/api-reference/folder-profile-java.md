@@ -1,13 +1,12 @@
 ---
 title: API Java pour travailler avec des profils de dossier
 description: Découvrez l’API Java pour utiliser les profils de dossier
-source-git-commit: fad5049962f258bbe59c7d172436d82b3d6cd68f
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
-
 
 # API Java pour travailler avec des profils de dossier {#id175UB30E05Z}
 
@@ -62,4 +61,3 @@ Session session) throws GuidesApiException
 - Si l’API est appelée par le biais d’une session utilisateur non autorisée, par exemple un utilisateur qui n’est pas administrateur pour le profil de dossier donné.
 
 [1](#fnsrc_1) La variable `attributeNames`, `values`, et `labels` au même index dans une liste de tableaux doit correspondre à la même entrée.
-

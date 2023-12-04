@@ -1,9 +1,9 @@
 ---
 title: Ajout d’un bouton interactif personnalisé dans la barre d’outils de l’éditeur de webeans
 description: Découvrez comment ajouter un nouveau bouton personnalisé dans la barre d’outils de l’éditeur de weets et appeler javascript pour l’utiliser de manière personnalisée.
-source-git-commit: 26a6acde54953eab1d751f165d0f7769c7e790fe
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
@@ -59,11 +59,11 @@ Utilisez les profils de dossier pour vérifier la variable *ui_config.json* sous
 
 ### Gérer l’événement &quot;onclick&quot; pour le nouveau bouton
 
-    REMARQUE : Les étapes mentionnées ci-dessous sont disponibles sous forme de package joint à cette publication.
+    REMARQUE : Les étapes mentionnées ci-dessous sont disponibles sous forme de package joint à ce billet.
 
 
-- Après avoir enregistré le profil de dossier, créez un &quot;cq:ClientLibraryFolder&quot; sous un répertoire de projet (peut se trouver sous */apps*) et ajoutez des propriétés comme illustré dans la capture d’écran ci-dessous :
-   ![Paramètres de bibliothèque cliente pour webeditor](../../../assets/authoring/webeditor-add-customtoolbarbutton-clientlibrarysettings.png)
+- Après avoir enregistré le profil de dossier, créez un &quot;cq:ClientLibraryFolder&quot; sous un répertoire de projet (sous */apps*) et ajoutez des propriétés comme illustré dans la capture d’écran ci-dessous :
+  ![Paramètres de bibliothèque cliente pour webeditor](../../../assets/authoring/webeditor-add-customtoolbarbutton-clientlibrarysettings.png)
 
 ```
 This example uses "coralui3" library to show a dialog as it is used in the Javascript sample we presented.
@@ -71,8 +71,8 @@ You may use different library of your choice.
 ```
 
 - Sous ce dossier de bibliothèque cliente, créez deux fichiers comme indiqué ci-dessous :
-   - *overrides.js*: qui aura le code javascript pour gérer l’événement &quot;insertJIRARef&quot; en &quot;clic&quot; (utilisez le package joint pour obtenir le contenu de ce javascript).
-   - *js.txt*: qui inclura &quot;overrides.js&quot; pour activer ce JavaScript
+   - *overrides.js*: qui aura le code javascript pour gérer l’événement &quot;insertJIRARef&quot; en cas de clic (utiliser le package joint pour obtenir le contenu de ce javascript).
+   - *js.txt*: inclut le fichier &quot;overrides.js&quot; pour activer ce JavaScript.
 
 - Enregistrez les modifications et vous devriez être prêt à les tester.
 
@@ -80,7 +80,7 @@ You may use different library of your choice.
 ### Tests
 
 - Ouvrir l’éditeur web
-- Dans les préférences de l’utilisateur, sélectionnez le profil de dossier dans lequel vous avez ajouté le profil personnalisé. *ui_config.json*. Si vous l’avez ajouté au profil Global, vous l’utilisez probablement déjà.
+- Dans les préférences de l’utilisateur, sélectionnez le profil de dossier dans lequel vous avez ajouté le profil personnalisé *ui_config.json*. Si vous l’avez ajouté au profil Global, vous l’utilisez probablement déjà.
 - Ouvrez une rubrique, vous remarquerez que la barre d’outils comporte un nouveau bouton &quot;Insérer une référence Jira&quot;.
 - Vous pouvez ensuite ajouter la section prolog comme indiqué ci-dessous à la rubrique et essayer de cliquer sur le bouton &quot;Insérer une référence Jira&quot; à l’intérieur de l’élément prolog &quot;change-request-reference&quot;.
 
@@ -99,12 +99,12 @@ You may use different library of your choice.
 
 Reportez-vous à la capture d’écran ci-dessous pour savoir à quoi elle ressemblera :
 
-![Bouton Tester le nouveau](../../../assets/authoring/webeditor-add-customtoolbarbutton-testing.png)
+![Tester le nouveau bouton](../../../assets/authoring/webeditor-add-customtoolbarbutton-testing.png)
 
 
 ### Pièces jointes
 
-- Exemple de package clientlibs qui installera la bibliothèque cliente webeditor avec du code JavaScript pour l’action de bouton de barre d’outils : [télécharger à l’aide de ce lien](../../../assets/authoring/webeditor-addbuttonontoolbar-insertjira-clientlib.zip)
+- Exemple de package clientlibs qui installera la bibliothèque cliente webeditor avec du code JavaScript pour l’action de bouton de barre d’outils : [télécharger à partir de ce lien](../../../assets/authoring/webeditor-addbuttonontoolbar-insertjira-clientlib.zip)
 - Exemple *ui_config.json* que vous pouvez charger vers un profil de dossier : [téléchargement de l’exemple ui_config.json](../../../assets/authoring/sample_ui_config_Guides4.2-InsertJiraReference.json)
 
 ```

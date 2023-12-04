@@ -1,10 +1,9 @@
 ---
 title: Générer une sortie de documents de FrameMaker
 description: Découvrez comment générer la sortie de documents FrameMaker dans AEM guides pour les publier au format PDF, HTML5 et EPUB.
-exl-id: d3cef05b-8574-4e86-ab94-c9b880fb9c29
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '203'
 ht-degree: 1%
 
 ---
@@ -15,7 +14,7 @@ ht-degree: 1%
 
 - PDF
 
-- HTML 5
+- HTML5
 
 - EPUB
 
@@ -31,4 +30,3 @@ Les informations des sections suivantes concernent les éditeurs qui utiliseront
 >[!IMPORTANT]
 >
 > Les fonctionnalités décrites dans cette rubrique sont disponibles uniquement pour les utilisateurs disposant de droits d’éditeur ou d’administrateur.
-

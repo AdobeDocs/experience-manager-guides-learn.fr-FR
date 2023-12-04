@@ -1,10 +1,9 @@
 ---
 title: Fonction de publication native d’un PDF | Concevoir une mise en page
 description: Découvrez comment concevoir la mise en page afin de présenter des informations dans différentes sections de la sortie de votre PDF.
-exl-id: b4d3bdc4-0d01-46eb-b182-540380220485
-source-git-commit: 5abcc887a24d838caabdf9a34a84ebc851ed4cbf
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '4807'
+source-wordcount: '4825'
 ht-degree: 0%
 
 ---
@@ -416,7 +415,7 @@ Dans l’exemple suivant, nous allons insérer un numéro de page et un titre de
 
    1. Cliquez sur l’élément Champ du chemin de navigation pour sélectionner le champ Titre du chapitre .
 
-   1. Dans le panneau de droite, cliquez sur le **Propriétés du contenu** (<img src="./assets/content-properties-icon.png" width="25">) icon.
+   1. Dans le panneau de droite, cliquez sur le **Propriétés du contenu** (<img src="./assets/content-properties-icon.png" width="25">).
 
    1. Développez l’objet **Disposition** , puis définissez la variable **Flottant** valeur de propriété à **right**.
       <img src="./assets/float-prop-html-content.png" width="400">
@@ -468,7 +467,7 @@ Dans l&#39;exemple suivant, nous allons insérer une table des matières de chap
 
 1. Placez le curseur dans la zone de contenu de la mise en page.
 
-1. Cliquez sur la table des matières du chapitre (<img src="./assets/chapter-toc-icon.svg">) icon.
+1. Cliquez sur la table des matières du chapitre (<img src="./assets/chapter-toc-icon.svg">).
 
    La table des matières du chapitre par défaut est insérée dans la zone de contenu.
 

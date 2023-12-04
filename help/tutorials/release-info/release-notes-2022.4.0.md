@@ -1,11 +1,10 @@
 ---
 title: Notes de mise à jour | Guides Adobe Experience Manager as a Cloud Service, version d’avril 2022
 description: Version d’avril des guides Adobe Experience Manager as a Cloud Service
-exl-id: c735ba24-a803-454b-8723-57dacf90061b
-source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 3%
+source-wordcount: '809'
+ht-degree: 0%
 
 ---
 
@@ -14,9 +13,9 @@ ht-degree: 3%
 ## Mise à niveau vers la version d’avril
 
 Mettre à niveau votre [!DNL Adobe Experience Manager Guides] as a Cloud Service (plus tard appelé *[!DNL AEM Guides]as a Cloud Service*) en procédant comme suit :
-1. Extrayez le code Git des Cloud Services et passez à la branche configurée dans le pipeline Cloud Services correspondant à l’environnement que vous souhaitez mettre à niveau.
-1. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Services vers la version 2022.4.133.
-1. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version d’avril de [!DNL AEM Guides] as a Cloud Service.
+1. Extrayez le code Git des Cloud Service et passez à la branche configurée dans le pipeline Cloud Service correspondant à l’environnement que vous souhaitez mettre à niveau.
+1. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Service vers la version 2022.4.133.
+1. Validez les modifications et exécutez le pipeline Cloud Service pour effectuer la mise à niveau vers la version d’avril de [!DNL AEM Guides] as a Cloud Service.
 
 ## Matrice de compatibilité
 
@@ -27,7 +26,7 @@ Cette section répertorie la matrice de compatibilité des applications logiciel
 | FMPS | FrameMaker |
 | --- | --- |
 | Non compatible | Mise à jour 4 et ultérieure 2020 |
-|  |  |
+| | |
 
 
 ### Connecteur Oxygen
@@ -57,7 +56,7 @@ Désormais, les références clés sont résolues sur la base de la carte racine
 
 Pour plus d’informations, voir *Résoudre les références de clés* dans le guide de l’utilisateur.
 
-### Ajout d’un panneau personnalisé dans le panneau de gauche
+### Ajouter un panneau personnalisé dans le panneau de gauche
 
 Vous pouvez maintenant ajouter un panneau personnalisé dans le panneau de gauche de l’éditeur Web. Vous pouvez utiliser un panneau personnalisé à diverses fins, par exemple pour fournir de l’aide ou effectuer les tests pour un projet. Si un panneau personnalisé a été configuré, il apparaît également dans la liste des panneaux de la variable **Paramètres de l’éditeur**. Vous pouvez activer ou désactiver le commutateur pour afficher ou masquer le panneau personnalisé.
 
@@ -69,7 +68,7 @@ Vous pouvez désormais facilement modifier l’état du document des rubriques s
 
 ### Informations de version affichées en mode Aperçu
 
-L’éditeur web vous aide à gérer vos versions. Vous pouvez désormais également voir la version de la principale rubrique ou du mappage DITA dans le coin supérieur droit de l’onglet Fichier de la rubrique en mode Aperçu d’une rubrique.
+L’éditeur web vous aide à gérer vos versions. Vous pouvez désormais également voir la version de la rubrique active ou du mappage DITA dans le coin supérieur droit de l’onglet Fichier de la rubrique en mode Aperçu d’une rubrique.
 
 ![version d’aperçu](assets/preview-version.png)
 

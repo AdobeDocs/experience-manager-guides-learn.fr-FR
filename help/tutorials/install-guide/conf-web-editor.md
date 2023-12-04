@@ -1,13 +1,12 @@
 ---
 title: Personnalisation de l’éditeur web
 description: Découvrez comment personnaliser l’éditeur web
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%
 
 ---
-
 
 # Personnalisation de l’éditeur web {#id181AI0003PN}
 
@@ -21,7 +20,7 @@ AEM Guides est fourni avec un puissant éditeur web qui permet aux auteurs de cr
 
 - [Ouvrir les fichiers de rubrique ou de mappage DITA dans le même onglet](open-dita-files-same-tab.md)
 
-- [Configuration d’un panneau personnalisé dans le panneau de gauche](configure-custom-panel.md)
+- [Configurer un panneau personnalisé dans le panneau de gauche](configure-custom-panel.md)
 
 - [Configuration de l’enregistrement automatique du fichier dans l’éditeur web](auto-save-in-editor.md)
 
@@ -40,5 +39,3 @@ AEM Guides est fourni avec un puissant éditeur web qui permet aux auteurs de cr
 - [Configuration du nombre de LimitReads pour une requête](conf-query-limitreads.md)
 
 - [Installation de packages pour la publication basée sur un article](configure-article-based-publishing.md)
-
-

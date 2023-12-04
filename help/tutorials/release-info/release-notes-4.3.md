@@ -1,10 +1,10 @@
 ---
 title: Notes de mise à jour | Instructions de mise à niveau et problèmes résolus dans la version 4.3.0 de Adobe Experience Manager Guides
 description: Découvrez les correctifs et comment mettre à niveau vers les versions 4.3.0 des Guides Adobe Experience Manager.
-source-git-commit: b53f76c2f0234c1ef6c65d954311e3f8c980ffe2
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 5%
+source-wordcount: '1086'
+ht-degree: 1%
 
 ---
 
@@ -61,8 +61,8 @@ Pour plus d’informations, voir *Exigences techniques* dans le guide d’instal
 
 | Version | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
 | --- | --- | --- |--- |--- |
-| 4.3.0 (non UUID) | 2.3-normal-5 | 2.3-normal-5 | 1.6 | 1.6 |
-| 4.3.0 (UUID) | 3.0-uuid-4 | 3.0-uuid-3 | 2.3 | 2.3 |
+| 4.3.0 (non UUID) | 2.3-normal-5 | 2.3-normal-5 | 1,6 | 1,6 |
+| 4.3.0 (UUID) | 3.0-uuid-4 | 3.0-uuid-3 | 2,3 | 2,3 |
 |  |  |   |
 
 ## Problèmes résolus
@@ -71,24 +71,24 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 
 ### Création
 
-- Le fichier de rubrique n’est pas déverrouillé dans l’éditeur web, bien que les options Déverrouiller le fichier et Ne pas enregistrer soient sélectionnées. (12558)
+- Le fichier de rubrique n’est pas déverrouillé dans l’éditeur web, bien que les options Déverrouiller le fichier et Ne pas enregistrer soient sélectionnées. 12558
 - Impossible d’extraire un fichier dans l’éditeur web, bien que vous ayez choisi l’option NON pour ignorer les modifications avant l’archivage. (12557)
-- Les info-bulles des icônes Verrouiller et déverrouiller le fichier dans la barre d’outils principale de l’éditeur web ne sont pas cohérentes avec les icônes affichées dans la vue Repository.(12555)
-- L’option Annuler l’extraction et Déverrouiller s’affiche pour un fichier dans l’éditeur web qui n’est pas encore extrait en mode Carte. (12556)
-- Impossible de sélectionner les ressources du PDF dans les liens &quot;topicref&quot; existants. (12477).
+- Les info-bulles des icônes Verrouiller et déverrouiller le fichier dans la barre d’outils principale de l’éditeur web ne sont pas cohérentes avec les icônes affichées dans la vue Repository.12555
+- L’option Annuler l’extraction et Déverrouiller s’affiche pour un fichier dans l’éditeur web qui n’est pas encore extrait en mode Carte. 12556
+- Impossible de sélectionner les ressources du PDF dans les liens &quot;topicref&quot; existants. (12477)
 - Lors d’une fusion et d’un partage dans les tableaux, AEM Guides 4.2 génère des cellules de tableau supplémentaires. (11793)
 - Dans la vue Repository, les rubriques ou les images ne peuvent pas être glissées après l’utilisation de la fonctionnalité Search/Filter . (12396)
 - Les résultats de recherche sont désactivés dans le panneau Rechercher et remplacer après l’ouverture d’un fichier de recherche. (12142)
 - La touche numérique &quot;8&quot; du clavier latéral ne fonctionne pas dans l’éditeur AEM Guides. (12106)
 - Les attributs intégrés/affichés ne s’affichent pas dans la vue Disposition de l’éditeur web. (12498)
-- La configuration de l’interface utilisateur du profil global ne correspond pas au profil du dossier. (11970)
-- Les références au contenu sont rompues lorsque les fichiers DITA sont copiés et collés. (11959)
+- La configuration de l’interface utilisateur du profil global ne correspond pas au profil du dossier. (1970)
+- Les références au contenu sont rompues lorsque les fichiers DITA sont copiés et collés. (1959)
 - Impossible de modifier le fragment de contenu en mode Colonne avec les AEM Guides installés. (7342)
-- Le contenu est perdu lorsqu’un xref non encapsulé se trouve sous des balises de sous-élément. (12532)
+- Le contenu est perdu lorsqu’un xref non encapsulé se trouve sous des balises de sous-élément. 12532
 - Le processus d’approbation ne fonctionne pas lorsque la propriété docstate est remplacée par &quot;end state&quot; à partir des propriétés File du panneau de droite. (11026)
 - Interface utilisateur des ressources | En mode Liste, les colonnes disponibles superposées ne sont pas fusionnables. (11528)
 - Keyref n’est pas résolu dans la vue map. (11490)
-- Le menu supérieur n’apparaît pas lors de la navigation dans l’éditeur XML. (10868)
+- Le menu supérieur n’apparaît pas lors de la navigation dans l’éditeur XML. 10868
 - `conref` balise h | La boîte de dialogue de navigation affichée est incorrecte. (9481)
 - Les liens locaux vers d’autres éléments ne sont pas résolus dans l’éditeur web. (8790)
 - La fonction Matches() ne fonctionne pas dans la fonction de schéma. (11224)
@@ -97,7 +97,7 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 
 ### Gestion
 
-- Le champ &quot;titre&quot; des propriétés de métadonnées de mappage DITA est remplacé par `<title>` pour la carte. (10702)
+- Le champ &quot;titre&quot; des propriétés de métadonnées de mappage DITA est remplacé par `<title>` pour la carte. 10702
 - Lorsque vous essayez d’ouvrir ou de mettre à jour la version des rubriques dans la ligne de base, le chargeur &quot;Récupération des informations à partir du serveur&quot; s’exécute indéfiniment.(12478)
 
 
@@ -107,8 +107,8 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 
 ### Publication
 
-- La publication échoue lors du changement du nom d’un paramètre prédéfini de PDF natif. (12564)
-- La duplication d’un modèle de PDF natif duplique l’emplacement du modèle par défaut au lieu de l’emplacement du modèle personnalisé fourni. (12563)
+- La publication échoue lors du changement du nom d’un paramètre prédéfini de PDF natif. 12564
+- La duplication d’un modèle de PDF natif duplique l’emplacement du modèle par défaut au lieu de l’emplacement du modèle personnalisé fourni. 12563
 - PDF natif | Les métadonnées de langue ne peuvent pas être définies dans le PDF généré pour être conformes à WCAG 2.0. (12407)
 - La publication sur AEM site échoue lors de la lecture de fichiers temporaires à partir d’une capsule qui peuvent avoir été actualisés ou redémarrés. (12113)
 - PDF natif | Les attributs personnalisés ne sont pas propagés au moteur de HTML ou de PDF temporaire. (DXML-12005)
@@ -129,7 +129,7 @@ Adobe a identifié le problème connu suivant pour la version 4.3.0 d’AEM Guid
   Solution de contournement : ajoutez la mise en page courante en tant que couverture avant et arrière, puis elle commence à venir pour chaque page.
 - Un problème se produit dans la recherche de site lors de la recherche dans la page de sortie du site AEM sur AEM Service Pack 16 ou 17.
 
-  Solution:
+  Solution :
 
    1. Ouvrez le fichier avec le chemin d’accès : `/libs/foundation/components/search/search.jsp` in `crx/de`
    1. Remplacez la ligne 234 par le code suivant :

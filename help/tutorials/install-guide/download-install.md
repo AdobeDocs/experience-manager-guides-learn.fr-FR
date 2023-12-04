@@ -1,13 +1,12 @@
 ---
 title: Télécharger et installer
 description: Découvrez comment télécharger et installer
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '134'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
-
 
 # Télécharger et installer {#id1645E0O04MK}
 
@@ -17,18 +16,16 @@ Avant de commencer le processus de téléchargement et d’installation, vous de
 
 - **[Exigences techniques](download-install-technical-requirements.md)**
 
-- **[Installation d’Adobe Experience Manager](download-install-aem.md)**
+- **[Installer Adobe Experience Manager](download-install-aem.md)**
 
 - **[Télécharger et installer AEM Guides pour la première fois](download-install-aemg-first-time.md)**
 
-- **[La configuration de Dispatcher](download-install-configure-dispatcher.md)**
+- **[Configuration de Dispatcher](download-install-configure-dispatcher.md)**
 
 - **[Vérification de l’installation AEM Guides](download-install-verify-aemg-installation.md)**
 
 - **[Mise à niveau des guides Adobe Experience Manager](upgrade-xml-documentation.md)**
 
-- **[Désinstallation des AEM Guides](download-install-unistall-aemg.md)**
+- **[Désinstallation des guides d’AEM](download-install-unistall-aemg.md)**
 
 - **[Recommendations pour l’optimisation des performances](download-install-recommend-perf-optimiz.md)**
-
-

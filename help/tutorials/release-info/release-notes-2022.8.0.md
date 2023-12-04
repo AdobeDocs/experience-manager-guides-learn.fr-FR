@@ -1,22 +1,21 @@
 ---
-title: Notes de mise à jour | Adobe Experience Manager Guides as a Cloud Service, version d’août 2022
-description: Version d’août des guides Adobe Experience Manager as a Cloud Service
-exl-id: a01bfe8a-4715-438c-bb94-aa1d31f6662d
-source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
+title: Notes de mise à jour | Guides Adobe Experience Manager as a Cloud Service, version d’août 2022
+description: Version d’août des Guides Adobe Experience Manager as a Cloud Service
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 2%
+source-wordcount: '1169'
+ht-degree: 0%
 
 ---
 
-# Version d’août des guides Adobe Experience Manager as a Cloud Service
+# Version d’août des Guides Adobe Experience Manager as a Cloud Service
 
 ## Mise à niveau vers la version d’août
 
 Mettez à niveau vos guides Adobe Experience Manager actuels as a Cloud Service (plus tard appelés *AEM Guides as a Cloud Service*) en procédant comme suit :
-1. Extrayez le code Git des Cloud Services et passez à la branche configurée dans le pipeline Cloud Services correspondant à l’environnement que vous souhaitez mettre à niveau.
-1. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Services vers la version 2022.8.167.
-1. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version d’août d’AEM Guides as a Cloud Service.
+1. Extrayez le code Git des Cloud Service et passez à la branche configurée dans le pipeline Cloud Service correspondant à l’environnement que vous souhaitez mettre à niveau.
+1. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Service vers la version 2022.8.167.
+1. Validez les modifications et exécutez le pipeline Cloud Service pour effectuer la mise à niveau vers la version d’août d’AEM Guides as a Cloud Service.
 
 ## Matrice de compatibilité
 
@@ -27,7 +26,7 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 | FMPS | FrameMaker |
 | --- | --- |
 | Non compatible | Mise à jour 4 et ultérieure 2020 |
-|  |  |
+| | |
 
 *Les conditions de base et créées dans AEM sont prises en charge dans les versions FMPS à partir de 2020.2.
 
@@ -35,7 +34,7 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 
 | AEM Guides as a Cloud | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen |
 | --- | --- | --- |
-| 2022.8.0 | 2.7.5 | 2.7.5 |
+| 2022.8.0 | 2,7,5 | 2,7,5 |
 |  |  |  |
 
 
@@ -43,7 +42,7 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 
 AEM Guides as a Cloud Service comporte de nombreuses améliorations et nouvelles fonctionnalités dans la version d’août :
 
-### Mode Mise en page dans l’éditeur de cartes
+### Mode Mise en page dans l’éditeur de mappage
 
 Vous pouvez désormais afficher la mise en page complète d’un mappage DITA dans l’éditeur de cartes. Lorsque vous ouvrez une carte en vue de la modifier, elle ouvre la variable **Disposition** vue de l’éditeur de cartes. Dans cette vue, vous pouvez voir la hiérarchie des mappages dans une arborescence et organiser ou structurer les rubriques dans une carte.
 
@@ -68,7 +67,7 @@ Vous pouvez désormais également définir les informations de métadonnées pou
 
 ![panneau droit du mode Disposition](assets/layout-inline-attributes.png)
 
-Pour plus d’informations, voir *Mode Disposition* dans Utilisation des guides Adobe Experience Manager as a Cloud Service.
+Pour plus d’informations, voir *Mode Mise en page* dans Utilisation des guides Adobe Experience Manager as a Cloud Service.
 
 ### Attributs intégrés dans les paramètres de l’éditeur
 
@@ -81,8 +80,8 @@ Les attributs intégrés configurés définis pour une rubrique sont affichés p
 ### Filtres supplémentaires dans la vue Repository
 
 Désormais, la recherche de filtre dans la vue du référentiel a été rendue plus puissante. Deux nouveaux critères de recherche, **Dernière modification** et **Balises** ont été ajoutés pour filtrer les fichiers et pour affiner votre recherche dans le référentiel AEM :
-* **Dernière modification**: Vous pouvez rechercher les fichiers qui ont été modifiés pour la dernière fois après une date sélectionnée, mais avant une date sélectionnée. Vous avez également la possibilité d’utiliser les critères prédéfinis et de rechercher les fichiers qui ont été modifiés pour la dernière fois au cours des deux dernières heures, de la semaine dernière, du mois dernier ou de l’année dernière.
-* **Balises**: Vous pouvez également rechercher des fichiers auxquels des balises spécifiques sont appliquées. Vous pouvez saisir la balise ou la sélectionner dans la liste déroulante.
+* **Dernière modification**: vous pouvez rechercher les fichiers qui ont été modifiés pour la dernière fois après une date sélectionnée, mais avant une date sélectionnée. Vous avez également la possibilité d’utiliser les critères prédéfinis et de rechercher les fichiers qui ont été modifiés pour la dernière fois au cours des deux dernières heures, de la semaine dernière, du mois dernier ou de l’année dernière.
+* **Balises**: vous pouvez également rechercher des fichiers auxquels des balises spécifiques sont appliquées. Vous pouvez saisir la balise ou la sélectionner dans la liste déroulante.
 
 ![Filtres d’affichage du référentiel](assets/repo-filter-search.png)
 
@@ -96,9 +95,9 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 * La rubrique DITA n’est pas mise à jour automatiquement avec les modifications effectuées sur la **Propriétés** page. (8745)
 * Lorsqu’il est ajouté à un mappage d’applet DITA, l’élément de structure de contenu ne fonctionne pas correctement. (9507)
 * PDF natif | Un PDF vierge est généré lors de l’utilisation de **Génération rapide** pour plusieurs fichiers lorsqu’un élément vide est sélectionné. (9822)
-* PDF natif | L’annexe est publiée sous la forme d’un chapitre dans la sortie du PDF. (9829)
+* PDF natif | L’annexe est publiée sous forme de chapitre dans la sortie du PDF. (9829)
 * PDF natif | Lorsqu’une image de SVG est modifiée, elle n’est pas affichée dans la mise en page. (9069)
-* Un trait d’union normal est inséré lorsqu’un `Nonbreaking Hyphen` Le caractère est inséré à l’aide de la fonction **Insérer un caractère spécial** boîte de dialogue. (8919)
+* Un trait d’union normal est inséré lorsqu’un `Nonbreaking Hyphen` est inséré à l’aide du **Insérer un caractère spécial** boîte de dialogue. (8919)
 * L’éditeur XML n’affiche pas les images mises à jour dans les rubriques si elles ont été modifiées. (9500)
 * Lors de la publication de la sortie via l’éditeur, les paramètres prédéfinis ne peuvent pas être supprimés de la variable **Sortie** . (9100)
 * Les sous-cartes d’un mappage DITA ne sont pas extraites à l’aide de la variable **Tout sélectionner** dans le menu représentant des points de suspension. (9814)
@@ -120,11 +119,11 @@ Utilisez la solution donnée pour les problèmes connus suivants :
 
 * La vue Disposition n’est pas visible dans l’éditeur de cartes.
 
-   **Solution**: Mettez à jour ui_config.json dans le profil du dossier.
+  **Solution**: mettez à jour le fichier ui_config.json dans le profil du dossier.
 
 * Le fichier Symbols.json est remplacé, donc le problème 8919 se produit.
 
-   **Solution**: La mise à jour de la bibliothèque de symboles.json doit être fusionnée avec la bibliothèque de symboles.json remplacée.
+  **Solution**: la mise à jour de la bibliothèque de symboles.json doit être fusionnée avec la bibliothèque de symboles.json remplacée.
 
 ### Autres problèmes connus
 

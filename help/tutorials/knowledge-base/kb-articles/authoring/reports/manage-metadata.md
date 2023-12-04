@@ -1,13 +1,12 @@
 ---
 title: Gestion des balises des fichiers DITA dans les Guides d’AEM
 description: Article bref à fournir sur la gestion des balises cq:tags dans AEM Guides
-source-git-commit: 06f7adfd4fbbc3b51c6d6c08689697c20c8ce8fe
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '280'
 ht-degree: 1%
 
 ---
-
 
 # Comment ajouter , supprimer et gérer des balises dans votre contenu DITA
 
@@ -16,23 +15,23 @@ Les balises s’avèrent utiles pour classer votre contenu. Si le contenu est co
 > **_REMARQUE :_**  L’article suivant concerne AEM Guides Build 4.2 (on-prem) /Feb 2023 (version cloud ) ou les versions ultérieures
 
 
-## Création des balises
+## Créer des balises
 
 Le balisage est une fonctionnalité d’AEM native et votre administrateur AEM peut vous aider à créer et configurer initialement ces balises.
 
 
 ## Ajout, suppression et gestion des balises dans votre contenu DITA
 
-**Toutes les balises créées dans AEM cq : des balises peuvent être ajoutées, supprimées et gérées pour le contenu DITA ;**
+**Toutes les balises créées dans AEM cq: peuvent être ajoutées, supprimées et gérées pour le contenu DITA.**
 
 Il existe plusieurs façons d’ajouter des balises à votre contenu DITA, mais cet article se concentrera sur l’interface utilisateur de l’éditeur web de Guides d’AEM.
 
-### Étapes:
+### Étapes :
 
 1. Accès à la vue du référentiel dans l’interface utilisateur des guides
-2. Double-cliquez sur ditamap et ouvrez-le en mode Carte.
+2. Double-cliquez sur ditamap et ouvrez en mode Carte.
 3. Onglet Gérer
-4. Dans l’onglet Gérer , sélectionnez l’option Atteindre les métadonnées .
+4. Sous l’onglet Gérer , option Accéder aux métadonnées .
 5. Tous les chargements de la liste des fichiers ditamap directs et indirects sont ici.
 6. Sélectionnez un ou plusieurs fichiers et cliquez sur l’icône &quot;gérer&quot;. Vous pouvez y ajouter des balises aux fichiers sélectionnés.
 Vous pouvez également supprimer les balises existantes qui sont communes aux fichiers sélectionnés.
@@ -60,4 +59,3 @@ Vous pouvez également supprimer les balises existantes qui sont communes aux fi
 
 
 **Contactez votre CSM respectif pour toute autre requête.**
-

@@ -1,11 +1,10 @@
 ---
 title: Traduire des documents à partir de l’éditeur Web
 description: Traduisez votre contenu dans plusieurs langues à partir de l’éditeur web. Découvrez comment créer un projet de traduction, ajouter des règles, afficher des versions et ignorer les fichiers désynchronisés dans les Guides d’AEM.
-exl-id: 02fc2b51-5b9a-4ad6-9e2e-726ab7602514
-source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1904'
-ht-degree: 1%
+source-wordcount: '1907'
+ht-degree: 0%
 
 ---
 

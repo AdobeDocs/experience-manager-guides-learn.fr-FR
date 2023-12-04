@@ -1,13 +1,12 @@
 ---
 title: Vérification de l’installation AEM Guides
 description: Découvrez comment vérifier l’installation des AEM Guides
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
 
 ---
-
 
 # Vérification de l’installation AEM Guides {#id213BD030FBE}
 
@@ -23,9 +22,9 @@ Une fois que vous avez installé AEM Guides, vous devez vérifier si l’install
 
 1. Filtrez la liste des lots en saisissant fmdita dans la zone de texte de filtrage, puis appuyez sur **Entrée**.
 
-   La liste des lots est filtrée pour afficher les lots installés par AEM Guides. Si l’installation a réussi, tous les lots installés auront une **État** de **Principal**.
+   La liste des lots est filtrée pour afficher les lots installés par AEM Guides. Si l’installation a réussi, tous les lots installés auront une **État** de **Actif**.
 
-   Si l’un des lots n’a pas de **Principal** , puis vérifiez les journaux d’AEM pour résoudre le problème d’installation.
+   Si l’un des lots n’a pas de **Actif** , puis vérifiez les journaux d’AEM pour résoudre le problème d’installation.
 
 
 >[!IMPORTANT]
@@ -33,4 +32,3 @@ Une fois que vous avez installé AEM Guides, vous devez vérifier si l’install
 > Il existe un certain nombre de recommandations d’optimisation des performances que vous pouvez prendre en compte pour améliorer les performances de votre système. Voir [Recommendations pour l’optimisation des performances](download-install-recommend-perf-optimiz.md#) pour plus d’informations.
 
 **Rubrique parente :**[ Télécharger et installer](download-install.md)
-

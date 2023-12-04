@@ -1,13 +1,12 @@
 ---
 title: Configuration de la recherche dans l’interface utilisateur d’AEM Assets
 description: Découvrez comment configurer la recherche dans l’interface utilisateur d’AEM Assets
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '1697'
 ht-degree: 1%
 
 ---
-
 
 # Configuration de la recherche dans l’interface utilisateur d’AEM Assets {#id192SC800MY4}
 
@@ -18,7 +17,7 @@ Par défaut, AEM ne reconnaît pas le contenu DITA, il ne fournit donc aucun mé
 La configuration de la recherche de contenu DITA implique les tâches suivantes :
 
 1. [Ajout d’un composant de recherche d’éléments DITA dans l’interface utilisateur d’Assets](#id192SF0F50HS)
-1. [Ajout d’un composant de recherche basé sur l’UUID dans l’interface utilisateur d’Assets](#id2034F04K05Z)
+1. [Ajout d’un composant de recherche basé sur l’UUID dans l’interface utilisateur Assets](#id2034F04K05Z)
 1. [Octroi d’autorisations aux utilisateurs](#id192SF0G0RUI)
 1. [Ajout d’éléments ou d’attributs personnalisés dans la recherche](#id192SF0G10YK)
 1. [Extraction des métadonnées du contenu existant](#id192SF0GA0HT)
@@ -51,7 +50,7 @@ Procédez comme suit pour ajouter le composant de recherche de contenu DITA dans
    ![](assets/search-filter-asset-console.png){width="350" align="left"}
 
 
-## Ajout d’un composant de recherche basé sur l’UUID dans l’interface utilisateur d’Assets {#id2034F04K05Z}
+## Ajout d’un composant de recherche basé sur l’UUID dans l’interface utilisateur Assets {#id2034F04K05Z}
 
 Procédez comme suit pour ajouter un composant de recherche basé sur l’UUID dans l’interface utilisateur d’AEM Assets :
 
@@ -89,7 +88,7 @@ Effectuez les étapes suivantes pour accorder l’accès à la fonction de reche
 
    ![](assets/authors-group-permission.png){width="350" align="left"}
 
-1. Sélectionnez la **authors** groupe.
+1. Sélectionnez la variable **authors** groupe.
 
 1. Dans le volet de droite, sélectionnez la variable **Autorisations** .
 
@@ -133,27 +132,27 @@ Dans la section du jeu de règles, vous pouvez spécifier :
 
 Une règle se compose des éléments suivants :
 
-xpath : Il s’agit de la requête XPath qui récupère les éléments ou les attributs des fichiers DITA. La configuration par défaut de la règle d’élément récupère toutes les `prolog` éléments . Et la configuration par défaut de la règle d’attribut récupère tous les attributs de `prolog` éléments . Vous pouvez spécifier une requête XPath pour sérialiser les éléments ou attributs que vous souhaitez rechercher.
+xpath : il s’agit de la requête XPath qui récupère les éléments ou les attributs des fichiers DITA. La configuration par défaut de la règle d’élément récupère toutes les `prolog` éléments . Et la configuration par défaut de la règle d’attribut récupère tous les attributs de `prolog` éléments . Vous pouvez spécifier une requête XPath pour sérialiser les éléments ou attributs que vous souhaitez rechercher.
 
-La requête XPath contient le nom de classe du type de document. La classe &quot;rubrique/rubrique&quot; est utilisée pour les documents DITA de type de rubrique. Si vous souhaitez créer une règle pour d’autres documents DITA, vous devez utiliser les noms de classe suivants :
+    La requête XPath contient le nom de classe du type de document. La classe &quot;rubrique/rubrique&quot; est utilisée pour les documents DITA de type de rubrique. Si vous souhaitez créer une règle pour d’autres documents DITA, vous devez utiliser les noms de classe suivants :
+    
+    |Type de document|Nom de classe|
+    |—|—|
+    |Rubrique|- rubrique/rubrique|
+    |Tâche|- tâche/tâche de rubrique/de rubrique
+    |Concept|- thème/sujet concept/concept|
+    |Référence|- Référence/référence de rubrique/de rubrique|
+    |Carte|- map/map|
 
-|Type de document|Nom de classe|
-|---|---|
-|Rubrique|- rubrique/rubrique|
-|Tâche|- tâche/tâche de rubrique/de rubrique|
-|Concept|- thème/sujet concept/concept|
-|Référence|- Référence/référence de rubrique/de rubrique|
-|Carte|- map/map|
+text : si vous souhaitez rechercher le texte dans l’élément spécifié, indiquez la valeur oui. Si vous spécifiez non comme valeur, seuls les attributs de l’élément sont sérialisés. Les attributs que vous souhaitez rechercher doivent être spécifiés dans la section du jeu d’attributs .
 
-text : Si vous souhaitez rechercher le texte dans l’élément spécifié, indiquez la valeur oui. Si vous spécifiez non comme valeur, seuls les attributs de l’élément sont sérialisés. Les attributs que vous souhaitez rechercher doivent être spécifiés dans la section du jeu d’attributs .
-
-attribut teset : Indiquez l’identifiant du jeu d’attributs que vous souhaitez associer à cette règle. La valeur all-attrs est un cas spécial pour indiquer que tous les attributs de cette règle doivent être sérialisés.
+attributeset : spécifiez l’identifiant du jeu d’attributs que vous souhaitez associer à cette règle. La valeur all-attrs est un cas spécial pour indiquer que tous les attributs de cette règle doivent être sérialisés.
 
 Un jeu d’attributs contient une liste d’attributs que vous souhaitez rechercher dans le contenu DITA. Le jeu d’attributs contient les éléments suivants :
 
-id : Identifiant unique du jeu d’attributs. Cet identifiant est spécifié dans le paramètre attributeset d’un jeu de règles.
+id : identifiant unique du jeu d’attributs. Cet identifiant est spécifié dans le paramètre attributeset d’un jeu de règles.
 
-attribute : Liste des attributs que vous souhaitez rechercher. Pour chaque attribut, vous devez créer une entrée individuelle dans la variable `attribute` élément .
+attribute : liste des attributs que vous souhaitez rechercher. Pour chaque attribut, vous devez créer une entrée individuelle dans la variable `attribute` élément .
 
 Effectuez les étapes suivantes pour ajouter des éléments ou des attributs DITA personnalisés dans le fichier de sérialisation de recherche :
 
@@ -163,7 +162,7 @@ Effectuez les étapes suivantes pour ajouter des éléments ou des attributs DIT
 
    /libs/fmdita/config/serializationconfig.xml
 
-1. Créez un noeud de recouvrement de la propriété `config` dans le dossier `apps` noeud .
+1. Créez un noeud de recouvrement du `config` dans le dossier `apps` noeud .
 
 1. Accédez au fichier de configuration disponible dans le `apps` node:
 
@@ -173,11 +172,11 @@ Effectuez les étapes suivantes pour ajouter des éléments ou des attributs DIT
 
 1. Enregistrez le fichier.
 
-1. Ouvrez la page Configuration de la console web Adobe Experience Manager . L&#39;URL par défaut pour accéder à la page de configuration est :
+1. Ouvrez la page de configuration de la console web Adobe Experience Manager . L&#39;URL par défaut pour accéder à la page de configuration est :
 
    http://&lt;server name=&quot;&quot;>:&lt;port>/system/console/configMgr
 
-1. Recherchez et cliquez sur le bouton *com.adobe.fmdita.config.ConfigManager* du lot.
+1. Recherchez et cliquez sur le bouton *com.adobe.config.ConfigManager* du lot.
 
 1. Cliquez sur **Enregistrer**.
 
@@ -186,7 +185,7 @@ Les nouvelles informations de sérialisation sont stockées et activées pour la
 
 ## Extraction des métadonnées du contenu existant {#id192SF0GA0HT}
 
-Une fois que vous avez apporté des modifications au fichier de sérialisation de recherche par défaut, vous devez activer l’option Extraction des métadonnées DITA dans la variable *com.adobe.fmdita.config.ConfigManager* regroupez et exécutez ensuite le workflow pour extraire les métadonnées. Cette opération extrait les métadonnées requises des fichiers DITA existants, puis les rend disponibles pour la recherche.
+Une fois que vous avez apporté des modifications au fichier de sérialisation de recherche par défaut, vous devez activer l’option Extraction des métadonnées DITA dans la variable *com.adobe.config.ConfigManager* regroupez et exécutez ensuite le workflow pour extraire les métadonnées. Cette opération extrait les métadonnées requises des fichiers DITA existants, puis les rend disponibles pour la recherche.
 
 Si vous créez des fichiers ou modifiez un fichier après la mise à jour du fichier de sérialisation, les métadonnées sont automatiquement extraites de ces fichiers. Le processus d’extraction des métadonnées n’est nécessaire que pour les fichiers qui existent déjà dans le référentiel AEM.
 
@@ -197,13 +196,13 @@ L’extraction de métadonnées à partir de fichiers DITA existants implique de
 
 Effectuez les étapes suivantes pour activer l’option d’extraction des métadonnées dans configMgr :
 
-1. Ouvrez la page Configuration de la console web Adobe Experience Manager . L&#39;URL par défaut pour accéder à la page de configuration est :
+1. Ouvrez la page de configuration de la console web Adobe Experience Manager . L&#39;URL par défaut pour accéder à la page de configuration est :
 
    http://&lt;server name=&quot;&quot;>:&lt;port>/system/console/configMgr
 
-1. Recherchez et cliquez sur le bouton *com.adobe.fmdita.config.ConfigManager* du lot.
+1. Recherchez et cliquez sur le bouton *com.adobe.config.ConfigManager* du lot.
 
-1. Sélectionnez la **Activation de l’extraction de métadonnées DITA** .
+1. Sélectionnez la variable **Activation de l’extraction de métadonnées DITA** .
 
 1. Cliquez sur **Enregistrer**.
 
@@ -251,7 +250,7 @@ Pour exclure le dossier de traduction temporaire de la recherche, procédez comm
 
    | Nom de la propriété | Type | Valeur |
    |-------------|----|-----|
-   | excludedPaths | Chaîne\[\] | Ajoutez la valeur suivante à cette propriété : <br>/content/dam/projects/translation\_output |
+   | excludedPaths | String\[\] | Ajoutez la valeur suivante à cette propriété : <br>/content/dam/projects/translation\_output |
 
 1. Accédez au noeud lucene disponible à l’emplacement suivant :
 
@@ -261,6 +260,4 @@ Pour exclure le dossier de traduction temporaire de la recherche, procédez comm
 
    | Nom de la propriété | Type | Valeur |
    |-------------|----|-----|
-   | excludedPaths | Chaîne\[\] | Ajoutez les valeurs suivantes à cette propriété : <br><ul><li>/var/dxml</li><li>/content/dam/projects/translation\_output</li></ul> |
-
-
+   | excludedPaths | String\[\] | Ajoutez les valeurs suivantes à cette propriété : <br><ul><li>/var/dxml</li><li>/content/dam/projects/translation\_output</li></ul> |

@@ -1,13 +1,12 @@
 ---
 title: Gestionnaire d’événements de processus de conversion
 description: En savoir plus sur le gestionnaire d’événements de processus de conversion
-source-git-commit: 8707acf3ba01b7488eea6597c434da73a901d037
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
 
 ---
-
 
 # Gestionnaire d’événements de processus de conversion {#id175UB30E05Z}
 
@@ -25,4 +24,3 @@ com/adobe/fmdita/conversion/complete
 
 **Paramètres**:\
 |Nom|Type|Description| |—|—|—| |`status`|String|L’état de retour de l’opération effectuée. Les options possibles sont : - SUCCESS : le processus de conversion s’est terminé avec succès. <br> - TERMINÉ AVEC DES ERREURS : le processus de conversion s’est terminé, mais avec certaines erreurs. <br>- FAILED : le processus de conversion a échoué en raison d’une erreur fatale.| |`filePath`|Chaîne|Chemin absolu du fichier source \(à convertir\) dans le référentiel AEM.| |`outputPath`|Chaîne|Chemin absolu de l’emplacement de destination où les fichiers DITA convertis seront enregistrés.| |`logPath`|Chaîne|Chemin absolu du noeud où sera enregistré le journal de conversion.|
-

@@ -1,13 +1,12 @@
 ---
 title: Ouvrir les fichiers de rubrique ou de mappage DITA dans le même onglet
 description: Découvrez comment ouvrir une rubrique DITA ou mapper des fichiers dans le même onglet
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
-
 
 # Ouvrir les fichiers de rubrique ou de mappage DITA dans le même onglet {#id223HH0301J3}
 
@@ -23,7 +22,7 @@ Ce paramètre a un impact sur les emplacements suivants d’où vous pouvez acc�
 
 - Créez une rubrique DITA \(à la fin du processus, lorsque vous cliquez sur l’icône **Ouvrir la rubrique** button\)
 
-- Création d’une carte DITA \(à la fin du processus, lorsque vous cliquez sur l’icône **Open Map** button\)
+- Créez une carte DITA \(à la fin du processus, lorsque vous cliquez sur la **Open Map** button\)
 
 - Onglet Sujets dans la console de mappage DITA
 
@@ -33,4 +32,3 @@ Ce paramètre a un impact sur les emplacements suivants d’où vous pouvez acc�
 
 
 **Rubrique parente :**[ Personnalisation de l’éditeur web](conf-web-editor.md)
-

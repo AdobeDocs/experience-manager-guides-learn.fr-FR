@@ -1,11 +1,10 @@
 ---
-title: Notes de mise à jour | Adobe Experience Manager Guides as a Cloud Service, version de novembre 2022
+title: Notes de mise à jour | Guides Adobe Experience Manager as a Cloud Service, version de novembre 2022
 description: Version de novembre des guides Adobe Experience Manager as a Cloud Service
-exl-id: 9f329ec1-dd74-47cc-8567-3fadd962584a
-source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1372'
-ht-degree: 2%
+source-wordcount: '1384'
+ht-degree: 0%
 
 ---
 
@@ -14,20 +13,19 @@ ht-degree: 2%
 ## Mise à niveau vers la version de novembre
 
 Mettez à niveau vos guides Adobe Experience Manager actuels as a Cloud Service (plus tard appelés *AEM Guides as a Cloud Service*) en procédant comme suit :
-1. Extrayez le code Git des Cloud Services et passez à la branche configurée dans le pipeline Cloud Services correspondant à l’environnement que vous souhaitez mettre à niveau.
-1. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Services vers 2022.11.198.
-1. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version de novembre d’AEM Guides as a Cloud Service.
+1. Extrayez le code Git des Cloud Service et passez à la branche configurée dans le pipeline Cloud Service correspondant à l’environnement que vous souhaitez mettre à niveau.
+1. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Service vers la version 2022.11.198.
+1. Validez les modifications et exécutez le pipeline Cloud Service pour effectuer la mise à niveau vers la version de novembre d’AEM Guides as a Cloud Service.
 
 ## Étapes d’indexation du contenu existant (uniquement si vous utilisez une version antérieure à la version de septembre des AEM Guides as a Cloud Service)
 
 Effectuez les étapes suivantes pour indexer le contenu existant et utilisez le nouveau texte de recherche et de remplacement au niveau de la carte :
 
 * Exécutez une requête de POST sur le serveur (avec l’authentification correcte) - `http://<server:port>/bin/guides/map-find/indexing`.
-(Facultatif) Vous pouvez transmettre des chemins d’accès spécifiques des cartes pour les indexer ; par défaut, toutes les cartes seront indexées. || Exemple : `https://<Server:port>/bin/guides/map-find/indexing?paths=<map_path_in_repository>`)
+(Facultatif : vous pouvez transmettre des chemins spécifiques des cartes pour les indexer ; par défaut, toutes les cartes seront indexées. || Exemple : `https://<Server:port>/bin/guides/map-find/indexing?paths=<map_path_in_repository>`)
 
 * L’API renvoie un jobId. Pour vérifier l’état de la tâche, vous pouvez envoyer une demande de GET avec l’ID de la tâche au même point de terminaison : `http://<server:port>/bin/guides/map-find/indexing?jobId={jobId}`
-(Par exemple : http://&lt;
-_localhost:8080_>/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42_678)
+(Par exemple : http://&lt;_localhost:8080_>/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42_678)
 
 * Une fois la tâche terminée, la requête de GET ci-dessus répond avec succès et indique si une correspondance a échoué. Les mappages indexés avec succès peuvent être confirmés à partir des journaux du serveur.
 
@@ -40,7 +38,7 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 | FMPS | FrameMaker |
 | --- | --- |
 | Non compatible | Mise à jour 4 et ultérieure 2020 |
-|  |  |
+| | |
 
 *Les conditions de base et créées dans AEM sont prises en charge dans les versions FMPS à partir de 2020.2.
 
@@ -48,7 +46,7 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 
 | AEM Guides as a Cloud | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
 | --- | --- | --- | --- | --- |
-| 2022.11.0 | 2.7.13 | 2.7.13 | 2.3 | 2.3 |
+| 2022.11.0 | 2,7.13 | 2,7.13 | 2,3 | 2,3 |
 |  |  |  |  |
 
 
@@ -66,7 +64,7 @@ Une invite de confirmation s’affiche avant de supprimer le fichier. Si le fich
 
 Si le fichier sélectionné est extrait, vous ne pouvez pas le supprimer et un message d’erreur s’affiche. Si le fichier sélectionné est ajouté à une collection de favoris ou est référencé à partir de tout autre fichier, AEM guide la vérification de votre confirmation et vous donne la possibilité de le supprimer de force. Si vous supprimez une rubrique référencée et que vous avez ouvert le fichier contenant des références à modifier, le lien rompu du fichier référencé s’affiche.
 
-**Remarque**: Vous pouvez également supprimer le fichier sélectionné à l’aide de la touche Suppr du clavier.
+**Remarque**: vous pouvez également supprimer le fichier sélectionné à l’aide de la touche Suppr du clavier.
 
 
 ### Purge des versions sélectionnées des fichiers
@@ -92,7 +90,7 @@ AEM Guides vous fournit la fonction permettant de créer et de gérer des param�
 
 **Remarque** Seuls les utilisateurs administratifs de niveau dossier peuvent créer des paramètres prédéfinis de profil global et de dossier.
 
-Ces paramètres prédéfinis globaux apparaissent sous **Sortie** de toutes les cartes associées. Vous pouvez les utiliser pour générer la sortie pour toutes les cartes associées. Vous pouvez sélectionner le paramètre prédéfini comme paramètre prédéfini de PDF par défaut pour générer la sortie du PDF. Vous pouvez également **Modifier**, **Renommer**, **Dupliquer** ou **Supprimer** un paramètre prédéfini de sortie existant à partir de la fonction **Options** .
+Ces paramètres prédéfinis globaux apparaissent sous **Sortie** de toutes les cartes associées. Vous pouvez les utiliser pour générer la sortie pour toutes les cartes associées. Vous pouvez sélectionner le paramètre prédéfini comme paramètre prédéfini de PDF par défaut pour générer la sortie du PDF. Vous pouvez également **Modifier**, **Renommer**, **Dupliquer**, ou **Supprimer** un paramètre prédéfini de sortie existant à partir du **Options** .
 
 ### Colonne Libellé de version ajoutée au tableau de bord de traduction
 
@@ -107,7 +105,7 @@ Vous pouvez maintenant créer un PDF qui affiche les différences de contenu ent
 
 <img src="assets/pdf-change-version.png" alt="spdf-change-version" width="600">
 
-Une barre de modification s’affiche dans le PDF pour indiquer le contenu modifié, inséré ou supprimé. Vous disposez également des options suivantes :
+Une barre de modification s’affiche dans le PDF pour indiquer le contenu modifié, inséré ou supprimé. Vous avez également la possibilité d’effectuer les opérations suivantes :
 * Afficher le contenu inséré en vert et souligné
 * Afficher le contenu supprimé en rouge et marqué d’une barre oblique
 
@@ -130,23 +128,23 @@ Vous pouvez désormais également générer la table des matières dans les mapp
 
 Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 
-* PDF natif | `conkeyref` n’est pas résolu dans la sortie de PDF générée. (10564)
+* PDF natif | `conkeyref` n’est pas résolu dans la sortie de PDF générée. 10564
 * PDF natif | Des problèmes se produisent lors de l’accès aux métadonnées d’une carte dans la sortie du PDF. (10556)
 * PDF natif | Les styles intégrés sont utilisés pour générer des balises à la place du nom de classe.  (10498)
-* L’éditeur web charge une page vierge par intermittence. (10678)
-* La publication du PDF échoue si nous créons un paramètre prédéfini en dupliquant un paramètre prédéfini existant. (10584)
-* **Afficher le journal** ne fonctionne pas lorsque la génération du PDF échoue pour un paramètre prédéfini. (10576)
+* L’éditeur web charge une page vierge par intermittence. 10678
+* La publication du PDF échoue si nous créons un paramètre prédéfini en dupliquant un paramètre prédéfini existant. 10584
+* **Afficher le journal** ne fonctionne pas lorsque la génération du PDF échoue pour un paramètre prédéfini. 10576
 * Remarque à l’intérieur d’une balise para , qui est un conref, ne s’affiche pas dans l’aperçu. (10559)
 * Lorsque vous appuyez sur Retour arrière à la fin d’un élément de liste, toute la liste est supprimée. (10540)
 * Lors de l’utilisation d’un PDF natif pour exporter les données imbriquées `<indexterm>` ne sont pas imbriqués dans l’index. (10521)
-* **Retrait automatique** est absent de la barre d’outils en mode Source. (10448)
+* **Retrait automatique** dans la barre d’outils est manquante dans la vue Source. 10448
 * Le premier caractère d’un élément de liste est perdu pendant la création de la liste dans l’éditeur. (10447)
-* Plusieurs fenêtres contextuelles s’affichent si une version de ressource DITA est modifiée et enregistrée dans la fenêtre d’édition de ligne de base. (10399)
-* L’erreur d’application se produit lorsque l’utilisateur clique **Modifier** après avoir sélectionné tous les paramètres prédéfinis de sortie dans le panneau Quick Generate. (10388)
+* Plusieurs fenêtres contextuelles s’affichent si une version de ressource DITA est modifiée et enregistrée dans la fenêtre d’édition de ligne de base. 10399)
+* L’erreur d’application se produit lorsque l’utilisateur clique **Modifier** après avoir sélectionné tous les paramètres prédéfinis de sortie dans le panneau Quick Generate. 10388
 * Les métadonnées personnalisées de la rubrique DITA ne sont pas conservées lorsqu’une action de copier-coller est effectuée à partir de l’interface utilisateur d’Assets. (10367)
-* Le post-traitement est bloqué pour l’ensemble du dossier linguistique dont les ressources sont présentes dans un principal projet de traduction. (10332)
+* Le post-traitement est bloqué pour l’ensemble du dossier linguistique dont les ressources sont présentes dans un projet de traduction actif. (10332)
 * L’onglet Modèle de l’éditeur XML n’est pas visible pour les administrateurs de profil de dossier. (10266)
-* Les problèmes de navigation se produisent dans l’éditeur web après la mise à niveau vers la version 4.0. (10159)
+* Les problèmes de navigation se produisent dans l’éditeur web après la mise à niveau vers la version 4.0. 10159
 * Les fichiers du SVG ne s’affichent pas en mode Aperçu. (10010)
 * Si l’onglet Sortie de l’éditeur contient d’autres paramètres prédéfinis, la section Paramètres prédéfinis ne peut pas être défilée et tous les paramètres prédéfinis ne s’affichent pas. (9787)
 * **Modifier** et **Annoter** les options d’une image ne fonctionnent pas correctement en mode Colonnes. (8758)

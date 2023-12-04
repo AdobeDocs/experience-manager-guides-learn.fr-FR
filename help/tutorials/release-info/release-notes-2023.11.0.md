@@ -1,11 +1,10 @@
 ---
 title: Notes de mise à jour | Instructions de mise à niveau et problèmes résolus dans les guides Adobe Experience Manager, version de novembre 2023
 description: Découvrez les correctifs et comment mettre à niveau vers la version de novembre 2023 de Adobe Experience Manager Guides as a Cloud Service
-exl-id: 80839890-075f-4187-a167-444c73215496
-source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1640'
-ht-degree: 3%
+source-wordcount: '1673'
+ht-degree: 0%
 
 ---
 
@@ -29,13 +28,13 @@ Mettez à niveau votre configuration as a Cloud Service actuelle des guides de E
 
 Une fois l’installation terminée, vous pouvez choisir d’ACCÉDER au déclencheur pour lancer la tâche de traduction :
 
-POST:
+POST :
 
 ```
 http://localhost:4503/bin/guides/script/start?jobType=translation-map-upgrade
 ```
 
-Réponse:
+Réponse :
 
 ```
 {
@@ -123,7 +122,7 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 
 | Version de Experience Manager Guides as a Cloud | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
 | --- | --- | --- | --- | --- |
-| 2023.11.0 | 3.2-uuid 5 | 3.2-uuid 5 | 2.3 | 2.3 |
+| 2023.11.0 | 3.2-uuid 5 | 3.2-uuid 5 | 2,3 | 2,3 |
 |  |  |  |  |
 
 
@@ -141,17 +140,17 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 
 ### Création
 
-- Espace après conref `<ph>` disparaît lors de l’enregistrement de la rubrique. (13642)
-- Une erreur d’application se produit lors de la tentative d’enregistrement des fichiers DITA avant la fin du post-traitement. (13571)
+- Espace après conref `<ph>` disparaît lors de l’enregistrement de la rubrique. 13642
+- Une erreur d’application se produit lors de la tentative d’enregistrement des fichiers DITA avant la fin du post-traitement. 13571
 - Si le titre d’une rubrique contient une barre oblique `/`, l’onglet de l’éditeur n’affiche que les lettres qui lui succèdent. (13455)
 - L’aperçu de l’image ne disparaît pas après l’affichage de l’aperçu dans l’éditeur. (13454)
 - La fenêtre contextuelle Insérer un mot-clé n’apparaît pas lors de l’utilisation de clés définies par la carte racine dans d’autres rubriques. (12950)
 - Les icônes de fermeture ne sont pas visibles lorsque de très grands graphiques sont prévisualisés dans le panneau Historique de version . (12867)
 - Impossible de modifier le fuseau horaire de **Version créée le** pour les lignes de base. (12711)
-- La variable **Historique des versions** Le panneau de l’interface utilisateur d’Assets affiche un horodatage incorrect pour la variable **Actuel** champ . (12624)
+- La variable **Historique des versions** Le panneau de l’interface utilisateur d’Assets affiche un horodatage incorrect pour la variable **Actuel** champ . 12624
 - La création d’un fichier DITA à partir d’un modèle dont le nom commence par des caractères numériques entraîne une erreur d’espace de noms. (12188)
 - Dans l’éditeur Web, la variable **Références clés** s’ouvre lors de l’insertion du `varname` balise . (10940)
-- Les fichiers ZIP ne sont pas reconnus dans l’éditeur web et vous ne pouvez pas les faire glisser et les déposer. (12709)
+- Les fichiers ZIP ne sont pas reconnus dans l’éditeur web et vous ne pouvez pas les faire glisser et les déposer. 12709
 - Le contenu auquel certains attributs sont appliqués n’est pas mis en surbrillance en mode création ou aperçu. (11063)
 - Lorsque vous fermez une rubrique après l’avoir modifiée, vous êtes redirigé vers la page d’accueil AEM au lieu de revenir à la vue du dossier. (13306)
 - Le délai survient lors du post-traitement des fichiers qui ont été copiés et collés dans les services cloud. (12457)
@@ -161,16 +160,16 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 ### Publication
 
 - La fonction Publier en tant que fragment de contenu ne fonctionne pas pour les fichiers répertoriés dans les résultats de recherche. (14090)
-- Dans la publication avec un PDF natif, la sélection de couleur d’arrière-plan sur la mise en page du modèle nécessite un rechargement de page lors du rétablissement de la valeur `None`. (13621)
+- Dans la publication avec un PDF natif, la sélection de couleur d’arrière-plan sur la mise en page du modèle nécessite un rechargement de page lors du rétablissement de la valeur `None`. 13621
 - Problème lors de la validation de la banque de données pour un mappage DITA volumineux avec des liens de portée par rapport à la publication d’AEM site. (13530)
 - Dans la publication avec un PDF natif, l’accessibilité est compromise, car les images dans l’en-tête et le pied de page n’affichent pas de texte secondaire. (12829)
-- La duplication de la mise en page dans le PDF natif ne fonctionne pas si aucune extension n’est ajoutée automatiquement. (12534)
+- La duplication de la mise en page dans le PDF natif ne fonctionne pas si aucune extension n’est ajoutée automatiquement. 12534
 - Lors de la génération de la sortie du PDF avec la publication d’un PDF natif, le nom de fichier est tronqué après un point. (13620)
-- Une icône et une info-bulle incorrectes s’affichent pour  **Modifier le contenu** dans la barre d’outils Mises en page de la section Modèles utilisés dans la publication avec PDF natif. (13492)
+- Une icône et une info-bulle incorrectes s’affichent pour  **Modifier le contenu** dans la barre d’outils Mises en page de la section Modèles utilisés dans la publication avec PDF natif. 13492
 - Les métadonnées personnalisées ne sont pas disponibles dans la sortie finale. (12116)
 - fmdita rewriter entre en conflit avec la configuration de réécriture de l’utilisateur et entraîne l’affichage de longues URL au lieu des liens. (12076)
 - Dans le paramètre prédéfini AEM site, l’option permettant de **Générer un PDF distinct pour chaque rubrique** n’est pas fonctionnel. (11555)
-- La publication de PDF natif ne prend pas en charge la conversion de l’espace colorimétrique CMJN. (10754)
+- La publication de PDF natif ne prend pas en charge la conversion de l’espace colorimétrique CMJN. 10754)
 - Les appels de ligne de base dynamiques utilisent le nom plutôt que le titre, ce qui entraîne l’échec de l’API de mappage d’exportation DITA. (14268)
 
 ### Gestion
@@ -178,15 +177,15 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 - La référence au contenu est rompue lors du copier-coller des fichiers DITA comportant des liens d’auto-référence sans GUID. (13540)
 - Dans l’éditeur Web, la ligne de base affiche le titre de la version précédente au lieu de la version sélectionnée du fichier DITA. (13444)
 - La variable **Rapports** dans l’interface utilisateur de l’éditeur web, l’affichage de la liste des rubriques pour les anciens mappages DITA créés avant la mise à niveau de Guides de Experience Manager as a Cloud Service en juillet 2023 échoue. (11852)
-- Les paramètres prédéfinis de condition pour une carte DITA volumineuse ne sont pas créés. (10936)
-- Un lien d’auto-référence s’affiche sous la liste des liens rompus dans les rapports. (13539)
+- Les paramètres prédéfinis de condition pour une carte DITA volumineuse ne sont pas créés. 10936
+- Un lien d’auto-référence s’affiche sous la liste des liens rompus dans les rapports. 13539)
 
 ### Révision
 
 - Les panneaux de révision côte à côte des versions précédentes et actuelles de l’éditeur web ne sont pas corrects dans la version d’octobre 2023 de l’as a Cloud Service Guides du Experience Manager. (14156)
 - Personnalisation du modèle de courrier électronique pour **Réviser** ne fonctionne pas avec le recouvrement des noeuds. (13954)
-- La variable **Fermer** sur la page Réviser des Guides du Experience Manager, l’utilisateur accède à la page d’accueil d’AEM. (13535)
-- Des caractères rompus apparaissent lors de la création des fragments de code en coréen. (13489)
+- La variable **Fermer** sur la page Réviser des Guides du Experience Manager, l’utilisateur accède à la page d’accueil d’AEM. 13535)
+- Des caractères rompus apparaissent lors de la création des fragments de code en coréen. 13489
 - Il n’est pas possible de cliquer sur les pièces jointes coréennes dans l’écran Révision des guides du Experience Manager. (13436)
 - Le titre de la carte est coupé dans l’écran de révision et de collaboration, sans possibilité d’afficher le titre complet. (13012)
 

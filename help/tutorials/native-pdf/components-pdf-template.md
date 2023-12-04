@@ -1,10 +1,9 @@
 ---
 title: Fonction de publication native d’un PDF | Composants d’un modèle de PDF
 description: Découvrez les différents composants d’un modèle de PDF et comment les personnaliser et les configurer.
-exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '4947'
+source-wordcount: '4975'
 ht-degree: 0%
 
 ---
@@ -187,7 +186,7 @@ Pour ajouter un fichier de ressource au dossier Resources, procédez comme suit 
 
 1. Cliquez sur **Choisir les fichiers** pour parcourir le fichier de ressources à partir de votre ordinateur local
 
-1. Cliquez sur **Charger**.
+1. Cliquez sur **Télécharger**.
 Le fichier sélectionné est importé et répertorié sous le dossier Ressources .
 
 ## Paramètres du PDF avancé {#advanced-pdf-settings}

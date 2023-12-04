@@ -1,13 +1,12 @@
 ---
 title: Définir l’éditeur de mappage avancé comme valeur par défaut
 description: Découvrez comment définir l’éditeur de mappage avancé comme valeur par défaut
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 0%
 
 ---
-
 
 # Définir l’éditeur de mappage avancé comme valeur par défaut {#id181AI0003PN}
 
@@ -17,7 +16,7 @@ Par défaut, chaque fois qu’un nouveau fichier de mappage est créé, il est o
 
 Effectuez les étapes suivantes pour faire de l’éditeur de mappage avancé l’éditeur par défaut des fichiers de mappage :
 
-1. Ouvrez la page Configuration de la console web Adobe Experience Manager .
+1. Ouvrez la page de configuration de la console web Adobe Experience Manager .
 
    L&#39;URL par défaut pour accéder à la page de configuration est :
 
@@ -27,8 +26,6 @@ Effectuez les étapes suivantes pour faire de l’éditeur de mappage avancé l�
 
 1. Recherchez et cliquez sur le bouton **com.adobe.fmdita.xmleditor.config.XmlEditorConfig** du lot.
 
-1. Sélectionnez la **Masquer l’éditeur de carte de base** .
+1. Sélectionnez la variable **Masquer l’éditeur de carte de base** .
 
    Lorsque cette option est sélectionnée, le lien Éditeur de carte de base n’apparaît plus dans l’interface utilisateur. Par défaut, les fichiers de mappage s’ouvrent dans l’éditeur de mappage avancé.
-
-

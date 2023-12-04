@@ -1,9 +1,9 @@
 ---
 title: Notes de mise à jour | Nouveautés de la version 4.2 des guides Adobe Experience Manager
 description: Découvrez les nouvelles fonctionnalités et les fonctionnalités améliorées des versions 4.2 des Guides Adobe Experience Manager
-source-git-commit: a54ada55dad4ff8da8eee3dccb5ad9028b4cdc9e
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '2417'
+source-wordcount: '2423'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Désormais, AEM guides fournit un UX amélioré qui vous aide à passer en revue
 <img alt="tâche de révision" src="assets/comment-pop-up-panel.png" width="600">
 
 
-Pour plus d’informations, reportez-vous à la section *Révision de rubriques ou de mappages* dans le guide d’utilisation des guides Adobe Experience Manager.
+Pour plus d’informations, reportez-vous au *Révision de rubriques ou de mappages* dans le guide d’utilisation des guides Adobe Experience Manager.
 
 ## Améliorations de la traduction
 
@@ -84,7 +84,7 @@ Si vous apportez des modifications à certaines ressources, AEM Guides les signa
 
 Certaines des références de votre tableau de bord de traduction peuvent être en cours. Désormais, AEM Guides fournit une fonctionnalité qui vous aide à afficher la liste de tous les projets de traduction en cours (ainsi que la langue cible) qui contiennent la référence sélectionnée.
 
-Pour plus d’informations, reportez-vous à la section *Traduire des documents à partir de l’éditeur Web* dans le guide d’utilisation des guides Adobe Experience Manager.
+Pour plus d’informations, reportez-vous au *Traduire des documents à partir de l’éditeur Web* dans le guide d’utilisation des guides Adobe Experience Manager.
 
 ## Générer une sortie dans divers formats à partir de l’éditeur web
 
@@ -97,7 +97,7 @@ AEM Guides vous fournit la fonction permettant de créer et de gérer des param�
 <img alt="ajouter un paramètre prédéfini" src="assets/add-global-output-preset.png" width="400">
 
 
-Ces paramètres prédéfinis globaux apparaissent sous **Sortie** de toutes les cartes associées. Vous pouvez les utiliser pour générer la sortie pour toutes les cartes associées. Vous pouvez sélectionner le paramètre prédéfini comme paramètre prédéfini de PDF par défaut pour générer la sortie du PDF. Vous pouvez également **Modifier**, **Renommer**, **Dupliquer** ou **Supprimer** un paramètre prédéfini de sortie existant à partir de la fonction **Options** .
+Ces paramètres prédéfinis globaux apparaissent sous **Sortie** de toutes les cartes associées. Vous pouvez les utiliser pour générer la sortie pour toutes les cartes associées. Vous pouvez sélectionner le paramètre prédéfini comme paramètre prédéfini de PDF par défaut pour générer la sortie du PDF. Vous pouvez également **Modifier**, **Renommer**, **Dupliquer**, ou **Supprimer** un paramètre prédéfini de sortie existant à partir du **Options** .
 
 >[!NOTE]
 >
@@ -105,14 +105,14 @@ Ces paramètres prédéfinis globaux apparaissent sous **Sortie** de toutes les 
 
 ## Rechercher et remplacer le texte au niveau de la carte
 
-Vous pouvez désormais rechercher des fichiers dans une carte qui contient du texte spécifique. Le texte recherché est mis en surbrillance dans les fichiers. Vous pouvez également remplacer le mot ou l’expression recherché par un autre mot ou expression dans les fichiers. Sélectionnez la **Remplacer une occurrence unique** pour remplacer l’occurrence actuelle et la variable **Remplacer tout dans le fichier** pour remplacer toutes les occurrences dans le fichier sélectionné. Vous pouvez sélectionner **Tout remplacer** pour remplacer toutes les occurrences du terme recherché dans tous les fichiers.
+Vous pouvez désormais rechercher des fichiers dans une carte qui contient du texte spécifique. Le texte recherché est mis en surbrillance dans les fichiers. Vous pouvez également remplacer le mot ou l’expression recherché par un autre mot ou expression dans les fichiers. Sélectionnez la variable **Remplacer une occurrence unique** pour remplacer l’occurrence actuelle et la variable **Remplacer tout dans le fichier** pour remplacer toutes les occurrences dans le fichier sélectionné. Vous pouvez sélectionner **Tout remplacer** pour remplacer toutes les occurrences du terme recherché dans tous les fichiers.
 
 <img src="assets/map-find-replace.png" alt="map find replace" width="600">
 
 
 Par défaut, les options **Extraction de fichier avant remplacement** et **Créer une version après remplacement** étant sélectionnés, un fichier est extrait avant de remplacer le texte et une nouvelle version est créée après le remplacement du texte. Vous pouvez également rechercher la chaîne dans les références indirectes dans le mappage DITA. Par défaut, cette option est désactivée. La recherche n’est donc effectuée que sur les références directes.
 
-## Mode Mise en page dans l’éditeur de cartes
+## Mode Mise en page dans l’éditeur de mappage
 
 
 Vous pouvez désormais afficher la mise en page complète d’un mappage DITA dans l’éditeur de cartes. Lorsque vous ouvrez une carte en vue de la modifier, la vue Disposition de l’éditeur de cartes s’affiche. Dans cette vue, vous pouvez voir la hiérarchie des mappages dans une arborescence. Vous pouvez également modifier, organiser ou structurer les rubriques dans une carte.
@@ -133,7 +133,7 @@ Outre l’organisation des rubriques dans le fichier de mappage, vous pouvez ég
 
 Le panneau de droite affiche les propriétés du contenu et les propriétés de mappage dans la vue Disposition de l’éditeur de cartes. Vous pouvez désormais également définir les informations de métadonnées pour les rubriques ou la carte. Vous pouvez définir le titre de navigation, le texte du lien, la description courte et les mots-clés pour la rubrique ou le mappage sélectionné.
 
-Pour plus d’informations, voir *Mode Disposition* dans le guide d’utilisation des guides Adobe Experience Manager.
+Pour plus d’informations, voir *Mode Mise en page* dans le guide d’utilisation des guides Adobe Experience Manager.
 
 ## Panneau Génération rapide
 
@@ -143,7 +143,7 @@ Désormais, AEM Guides fournit le panneau de génération rapide qui vous permet
 
 Dans le **Génération rapide** vous pouvez voir la liste de tous les paramètres prédéfinis de sortie créés pour votre mappage DITA. Vous pouvez également afficher rapidement la sortie générée pour les paramètres prédéfinis. Un message de réussite ou d’échec s’affiche à la fin de la génération de sortie. Vous pouvez également afficher le journal des erreurs qui contient les détails de l’erreur survenue dans le processus de génération.
 
-## Création d’une ligne de base dynamique basée sur des étiquettes
+## Création d’une ligne de base dynamique basée sur des libellés
 
 Désormais, AEM Guides vous offre la fonctionnalité de création de lignes de base dynamiques basées sur des libellés. Si vous générez une ligne de base, téléchargez une ligne de base ou créez un projet de traduction à l’aide d’une ligne de base, les fichiers sont sélectionnés dynamiquement en fonction des étiquettes mises à jour. Cette fonctionnalité est pratique, car vous n’avez pas à modifier la ligne de base lors de la mise à jour des libellés.
 
@@ -194,7 +194,7 @@ Vous pouvez maintenant créer un PDF qui affiche les différences de contenu ent
 
 <img src="assets/pdf-change-version.png" alt="pdf-change-version" width="600">
 
-Une barre de modification s’affiche dans le PDF pour indiquer le contenu modifié, inséré ou supprimé. Vous disposez également des options suivantes :
+Une barre de modification s’affiche dans le PDF pour indiquer le contenu modifié, inséré ou supprimé. Vous avez également la possibilité d’effectuer les opérations suivantes :
 * Afficher le contenu inséré en vert et souligné
 * Afficher le contenu supprimé en rouge et marqué d’une barre oblique
 

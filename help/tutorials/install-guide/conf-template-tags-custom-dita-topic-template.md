@@ -1,8 +1,7 @@
 ---
 title: Configuration du modèle de rubrique DITA personnalisé
 description: Découvrez comment configurer le modèle de rubrique DITA personnalisé
-exl-id: f79165ef-5118-4574-815d-c4ecb2f7d58b
-source-git-commit: ecd5c315da5d450f29ee5d44cb19bc3546a19d1c
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 2%

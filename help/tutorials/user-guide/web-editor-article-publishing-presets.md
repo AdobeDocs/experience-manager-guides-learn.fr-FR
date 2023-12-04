@@ -1,8 +1,7 @@
 ---
 title: Création de paramètres prédéfinis de sortie à partir de l’éditeur web
 description: Créez des paramètres prédéfinis de sortie à partir de l’éditeur web. Découvrez comment modifier, renommer, dupliquer et supprimer un paramètre prédéfini de sortie dans AEM Guides.
-exl-id: 7fde0057-06a5-428e-a91b-9e9386a56270
-source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%

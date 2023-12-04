@@ -1,11 +1,10 @@
 ---
 title: Création de contenu web
 description: Découvrez comment créer du contenu structuré à l’aide de l’éditeur web.
-exl-id: ab051c14-5c1e-4685-89e8-3c90dff9ea5e
-source-git-commit: 3d12389dbd7458a74bb9b9ec488e83bf39c8c9bf
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 1%
+source-wordcount: '196'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +27,7 @@ Au cours de cette session, vous apprendrez à créer, publier et gérer du conte
 - **Durée** - 60 minutes
 - **Audience** - Clients, partenaires et employés d’Adobe
 
-## Principales acquisitions
+## Principaux points à retenir
 
 Au cours de cette session, vous découvrirez les éléments suivants :
 - Configuration des paramètres de l’éditeur web
@@ -42,14 +41,13 @@ Au cours de cette session, vous découvrirez les éléments suivants :
 
 - **Guide de l’utilisateur** - [Création de contenu](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map/authoring-content.html)
 
-- **Forum de la communauté** - Pour les interactions de communauté spécifiques à une session sur Experience League, rendez-vous sur la page  [Forum AEM Guides](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/bd-p/xml-documentation-discussions).
+- **Forum communautaire** - Pour les interactions de communauté spécifiques à une session sur Experience League, rendez-vous sur la page  [Forum AEM Guides](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/bd-p/xml-documentation-discussions).
 
 >[!NOTE]
 >
 > Les fonctionnalités affichées dans cette session sont disponibles dans les versions suivantes des AEM Guides :
 > - On-premise 4.1.3 ou version ultérieure
-> - Cloud Services 2211 et versions ultérieures
-
+> - Cloud Service 2211 et versions ultérieures
 
 ## Contactez-nous
 

@@ -1,13 +1,12 @@
 ---
 title: Configuration des filtres de texte
 description: Découvrez comment configurer des filtres de texte
-source-git-commit: 6051181e243cf71919901093c1b5590f21832545
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%
 
 ---
-
 
 # Configuration des filtres de texte {#id21BPD0FK0XA}
 
@@ -67,9 +66,9 @@ Effectuez les étapes suivantes pour configurer les filtres de texte :
 
       Dans le fragment de code ci-dessus, le premier filtre concerne les fichiers DITA. La définition de filtre utilise les paramètres suivants :
 
-      ****Titre****: Nom d’affichage du filtre. Ce titre apparaît comme option de filtrage dans la boîte de dialogue de navigation des fichiers.
+      ****Titre****: nom d’affichage du filtre. Ce titre apparaît comme option de filtrage dans la boîte de dialogue de navigation des fichiers.
 
-      ****Propriété****: Propriété à faire correspondre dans les métadonnées du fichier. Par exemple, pour n’autoriser que les fichiers dont la propriété contient des métadonnées de classe dita\, le filtre de propriété prend comme valeur &quot;jcr:content/metadata/dita\_class&quot;.
+      ****Propriété****: propriété à faire correspondre dans les métadonnées du fichier. Par exemple, pour n’autoriser que les fichiers dont la propriété contient des métadonnées de classe dita\, le filtre de propriété prend comme valeur &quot;jcr:content/metadata/dita\_class&quot;.
 
       ****Opération **:**Indiquez &quot;exists&quot; pour correspondre à l’existence de la valeur spécifiée dans le paramètre de propriété.
 
@@ -78,4 +77,3 @@ Effectuez les étapes suivantes pour configurer les filtres de texte :
 Les filtres configurés sont disponibles dans le panneau Filtres .
 
 **Rubrique parente :**[ Personnalisation de l’éditeur web](conf-web-editor.md)
-

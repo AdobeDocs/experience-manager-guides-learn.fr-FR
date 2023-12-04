@@ -1,10 +1,9 @@
 ---
 title: Générer la sortie d’un mappage DITA à partir de la console de mappage
 description: Générez la sortie d’un mappage DITA à partir de la console de mappage dans AEM Guides. Découvrez la génération incrémentale de sortie et comment afficher l’état, annuler et supprimer une tâche de sortie.
-exl-id: 98afbdd2-56d7-44b0-ad2a-25e9143c88f3
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---

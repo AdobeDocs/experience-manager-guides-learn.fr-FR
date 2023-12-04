@@ -1,13 +1,12 @@
 ---
 title: Configuration des noms de fichier automatique en fonction de l’UUID
 description: Découvrez comment configurer des noms de fichier automatique en fonction de l’UUID
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 1%
 
 ---
-
 
 # Configuration des noms de fichier automatique en fonction de l’UUID {#id205QG070D5Z}
 
@@ -24,4 +23,3 @@ Suivez les instructions de la section [Remplacements de configuration](download-
 > Lorsque cette option est activée, les auteurs ne voient pas l’option permettant de spécifier le nom de fichier lors de la création d’un fichier de rubrique ou de mappage. Un nouveau fichier de rubrique ou de mappage peut être créé à partir de l’interface utilisateur d’Assets et de l’éditeur web.
 
 **Rubrique parente :**[ Configuration des noms de fichier](conf-file-names.md)
-

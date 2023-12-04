@@ -1,15 +1,12 @@
 ---
 title: Conversion de contenu non UID avec des versions en contenu UID
 description: Découvrez comment migrer du contenu non UUID avec des versions.
-source-git-commit: 33cdc1b14db0d123c01bbc719c2833ce0df4c9d9
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1272'
-ht-degree: 3%
+source-wordcount: '1287'
+ht-degree: 2%
 
 ---
-
-
-
 
 # Migration de contenu non UUID avec des versions
 
@@ -57,7 +54,7 @@ Cette étape peut échouer si le système contient de nombreux fichiers DITA. Po
 
 ### Etape 1 : mise à jour de la configuration
 
-1. Assurez-vous que l’espace disponible est au moins 10 fois supérieur à l’espace utilisé par AEM (répertoire crx-quickstart) pendant la migration. Une fois la migration terminée, vous pouvez récupérer la plus grande partie de l’espace disque en exécutant la compression (voir [Nettoyage des révisions](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=en)).
+1. Assurez-vous que l’espace disponible est au moins 10 fois supérieur à l’espace utilisé par AEM (répertoire crx-quickstart) pendant la migration. Une fois la migration terminée, vous pouvez récupérer la plus grande partie de l’espace disque en exécutant la compression (voir [Nettoyage des révisions](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=fr)).
 
 1. Activer *Activation des lanceurs de workflow de post-traitement* in `com.adobe.fmdita.config.ConfigManager` et *Activation du post-traitement des versions* in `com.adobe.fmdita.postprocess.version.PostProcessVersionObservation.`
 
@@ -147,7 +144,7 @@ Une fois la migration du serveur terminée, activez les workflows de post-traite
 
    | URL du point d’entrée | Type de requête | Paramètre de requête | Résultats attendus |
    |---|---|---|---|
-   | `/bin/guides/data_import`<br> **Par exemple**:`http://localhost:4502/bin/guides/data_import?path=/content/dam/dataexport_1689344927551.zip&createVersion=true` | POST | **path**<br> **Valeur**: `/content/dam/filename.zip`(Emplacement du fichier téléchargé) **createVersion** <br> **Valeur**: true/false<br>(La valeur par défaut de createVersion est false). | Le fichier est téléchargé vers le chemin d’accès au contenu souhaité.<br><br>**Exemple**: `dataexport_1689761491218.zip`<br><br> (Le même fichier qui a été exporté à l’étape précédente est téléchargé vers le chemin d’accès souhaité dans `/content/dam`). |
+   | `/bin/guides/data_import`<br> **Par exemple**:`http://localhost:4502/bin/guides/data_import?path=/content/dam/dataexport_1689344927551.zip&createVersion=true` | POST | **Chemin.**<br> **Valeur**: `/content/dam/filename.zip`(Emplacement du fichier téléchargé) **createVersion** <br> **Valeur**: true/false<br>(La valeur par défaut de createVersion est false). | Le fichier est téléchargé vers le chemin d’accès au contenu souhaité.<br><br>**Exemple**: `dataexport_1689761491218.zip`<br><br> (Le même fichier qui a été exporté à l’étape précédente est téléchargé vers le chemin d’accès souhaité dans `/content/dam`). |
 
 1. Le script crée un nouveau fichier s’il n’existe pas ou remplace le fichier existant s’il a été modifié.
 

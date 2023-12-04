@@ -1,13 +1,12 @@
 ---
 title: Mise à niveau AEM guides
 description: Découvrez comment mettre à niveau AEM guides
-source-git-commit: 6051181e243cf71919901093c1b5590f21832545
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '98'
 ht-degree: 0%
 
 ---
-
 
 # Mise à niveau AEM guides {#id213BD050YPH}
 
@@ -26,7 +25,6 @@ ht-degree: 0%
 
 ## Effacer le cache du navigateur
 
-Une fois la mise à niveau terminée, tous les utilisateurs doivent vider le cache du navigateur avant d’utiliser la version mise à niveau des AEM Guides.
+Une fois le processus de mise à niveau terminé, tous les utilisateurs doivent vider le cache du navigateur avant d’utiliser la version mise à niveau des AEM Guides.
 
 **Rubrique parente :**[ Télécharger et installer](download-install.md)
-

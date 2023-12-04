@@ -1,15 +1,14 @@
 ---
-title: La configuration de Dispatcher
+title: Configuration du Dispatcher
 description: Découvrez comment configurer Dispatcher
-source-git-commit: 9fe396dcfd2e3570ec386c958d7d4efdb4d608e5
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 9%
+source-wordcount: '302'
+ht-degree: 6%
 
 ---
 
-
-# La configuration de Dispatcher {#id213BCM0M05U}
+# Configuration du Dispatcher {#id213BCM0M05U}
 
 Si vous prévoyez d’utiliser un Dispatcher sur l’instance d’auteur AEM avec AEM Guides, vous devez effectuer les configurations supplémentaires suivantes pour terminer la configuration :
 
@@ -63,7 +62,7 @@ Cette mise à jour de la configuration garantit que le mappage DITA et les fichi
 
 Lors de l’utilisation d’un Dispatcher avec AEM Guides, si votre instance d’auteur dispose d’un Dispatcher au premier plan, effectuez les deux modifications suivantes :
 
-- Placez sur la liste autorisée l’URL de demande du POST. Exemple &quot; `/filters`&quot; est donnée ci-dessous - Ajoutez cette règle au fichier de configurations du Dispatcher :
+- Placez l’URL de demande du POST sur liste blanche. Exemple &quot; `/filters`&quot; est donnée ci-dessous - Ajoutez cette règle au fichier de configurations du Dispatcher :
 
 ```json
 /xxxx {/type "allow" /method "POST" /url "/home/users/*/preferences"}
@@ -79,4 +78,3 @@ Lors de l’utilisation d’un Dispatcher avec AEM Guides, si votre instance d�
 ```
 
 **Rubrique parente :**[ Télécharger et installer](download-install.md)
-

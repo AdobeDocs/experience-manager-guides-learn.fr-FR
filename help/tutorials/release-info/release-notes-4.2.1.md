@@ -1,24 +1,23 @@
 ---
 title: Notes de mise à jour | Instructions de mise à niveau et problèmes résolus dans la version 4.2.1 des guides Adobe Experience Manager
-description: Découvrez les correctifs de bogues et comment mettre à niveau vers les versions 4.2.1 des Guides Adobe Experience Manager.
-exl-id: 19b23164-4a07-4748-a8c4-1760bfdb2ca6
-source-git-commit: 6d7b17709e7a17c30b544a7f3f3707328431aac0
+description: Découvrez les correctifs et comment mettre à niveau vers les versions 4.2.1 des Guides Adobe Experience Manager.
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 5%
+source-wordcount: '876'
+ht-degree: 1%
 
 ---
 
 # Version 4.2.1 des guides Adobe Experience Manager (mai 2023)
 
-Cette note de mise à jour traite des instructions de mise à niveau, de la matrice de compatibilité et des problèmes résolus dans la version 4.2.1 des Guides Adobe Experience Manager (ultérieurement appelés *Guides d’AEM*).
+Cette note de mise à jour traite des instructions de mise à niveau, de la matrice de compatibilité et des problèmes résolus dans la version 4.2.1 des Guides Adobe Experience Manager (appelée ultérieurement *Guides d’AEM*).
 
 Pour plus d’informations sur les nouvelles fonctionnalités et améliorations, voir [Nouveautés de la version 4.2.1 des guides Adobe Experience Manager](whats-new-4.2.1-release.md).
 
 ## Mise à niveau vers la version 4.2.1 des Guides AEM
 
 
-Vous pouvez facilement mettre à niveau votre version actuelle des AEM Guides vers la version 4.2.1. Avant de procéder à la mise à niveau vers la version 4.2.1 des AEM Guides, vous devez tenir compte des points suivants : Vous pouvez mettre à niveau votre version actuelle des AEM Guides vers la version 4.2.1.
+Vous pouvez facilement mettre à niveau votre version actuelle des AEM Guides vers la version 4.2.1. Avant de procéder à la mise à niveau vers la version 4.2.1 des AEM Guides, vous devez tenir compte des points suivants : Vous pouvez mettre à niveau votre version actuelle d’Guides vers la version 4.2.1.
 * Si vous utilisez la version 4.1, 4.1.x ou 4.2, vous pouvez directement effectuer la mise à niveau vers la version 4.2.1.
 * Si vous utilisez la version 4.0, vous devez effectuer la mise à niveau vers la version 4.2 avant de passer à la version 4.2.1.
 * Si vous utilisez la version 3.8.5, vous devez effectuer la mise à niveau vers la version 4.0 avant de passer à la version 4.2.
@@ -42,25 +41,25 @@ Version 6.5 Service Pack 15, 14, 13 ou 12
 **UUID**
 Version 6.5 Service Pack 15, 14, 13 ou 12
 
-Pour plus d’informations, voir *Exigences techniques* dans le guide d’installation et de configuration d’Adobe Experience Manager Guides.
+Pour plus d’informations, voir *Exigences techniques* dans le guide d’installation et de configuration de Adobe Experience Manager Guides.
 
 ### FrameMaker et FrameMaker Publishing Server
 
-| Mise à jour | FMPS 2022 | FMPS 2020 | Fm 2022 | Fm 2020 |
+| Version | FMPS 2022 | FMPS 2020 | Fm 2022 | Fm 2020 |
 | --- | --- | --- | --- | --- |
 | 4.2.1 (non UUID) | 2022 ou version ultérieure | 2020.2 ou version ultérieure* | 2022 ou version ultérieure | 2020.3 ou version ultérieure |
 | 4.2.1 (UUID) | 2022 ou version ultérieure | 2020.2 ou version ultérieure* | 2022 ou version ultérieure | 2020.4 ou version ultérieure |
-|  |  |  |  |
+| | | | |
 
 *Les conditions de base et créées dans AEM sont prises en charge dans les versions FMPS à partir de 2020.2.
 
 ### Connecteur Oxygen
 
-| Mise à jour | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
+| Version | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
 | --- | --- | --- |--- |--- |
-| 4.2.1 (non UUID) | 2.2-normal-3 | 2.2-normal-3 | 1.6 | 1.6 |
-| 4.2.1 (UUID) | 2.9-uuid-2 | 2.9-uuid-2 | 2.3 | 2.3 |
-|  |  |  |
+| 4.2.1 (non UUID) | 2.2-normal-3 | 2.2-normal-3 | 1,6 | 1,6 |
+| 4.2.1 (UUID) | 2.9-uuid-2 | 2.9-uuid-2 | 2,3 | 2,3 |
+|  |  |   |
 
 ## Problèmes résolus
 
@@ -76,11 +75,11 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 * Les éléments de la liste de retrait ou de retrait ne fonctionnent pas comme prévu lorsque le suivi des modifications est activé. (11568)
 * L’ajout de contenu sur une ligne avec le suivi des modifications activé, puis la désactivation du suivi des modifications ne la désactive pas. (11567)
 * Difficulté à faire glisser et déposer un élément de liste, le texte est déplacé à la place de l’élément de liste. (11566)
-* Lors de la création dans l’élément affiché en vert (Suivi des modifications), le nouveau contenu s’affiche comme suivi des modifications, même si le suivi des modifications est désactivé. (7021)
+* Lors de la création dans l’élément affiché en vert (Suivi des modifications), le nouveau contenu s’affiche en tant que suivi des modifications, même si le suivi des modifications est désactivé. (7021)
 * Le navigateur (éditeur web) se bloque lors du chargement de contenu avec un schéma personnalisé. (11211)
 * PDF natif | Lors de la création d’un paramètre prédéfini de sortie avec l’option &quot;Ajouter au profil de dossier&quot;, la génération du PDF échoue avec une exception Null Pointer. (10950)
-* PDF natif | La balise d’image ajoute un attribut display-inline à toutes les images. (10653)
-* L’insertion des fichiers multimédia audio et vidéo échoue au format YouTube sous le **Insérer du contenu multimédia** icône . (11320)
+* PDF natif | La balise d’image ajoute un attribut display-inline à toutes les images. 10653)
+* L’insertion pour les fichiers multimédia audio et vidéo échoue au format YouTube sous le **Insérer du contenu multimédia** Icône (11320)
 * Une erreur de validation se produit lorsqu’une map est créée à l’aide du modèle qui comporte un élément de titre spécialisé. (11212)
 * Éditeur web | Un espace insécable est ajouté dans l’éditeur XML lors de la modification d’une rubrique. (11786)
 
@@ -100,7 +99,7 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 * Lors de la mise à niveau de la version 4.1.x vers la version 4.2, le moteur de PDF natif ne fonctionne pas et renvoie NullPointerException même pour le système d’exploitation pris en charge.(11526)
 * Le processus du PDF de téléchargement ne fonctionne pas correctement dans l’éditeur web. (11496)
 * PDF natif | Les commentaires brouillons sont masqués par défaut dans la sortie générée. (10560)
-* PDF natif | navtitle n’est pas honoré pour topichead. (10509)
+* PDF natif | navtitle n’est pas honoré pour topichead. 10509)
 * PDF natif | Ajouter `xref` à une image n’effectue pas le rendu de l’image sur le PDF généré. (11346)
 * PDF natif | La note de bas de page présente dans l’en-tête du tableau pour afficher le texte en gras aligné au centre dans le pied de page correspondant dans la sortie du PDF. (10610)
 

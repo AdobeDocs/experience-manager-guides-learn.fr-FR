@@ -1,13 +1,12 @@
 ---
 title: Configuration des états du document
 description: Découvrez comment configurer des états de document
-source-git-commit: cf1b9812cb6bb00319eb8fe23162d3830c82b1b1
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '1131'
 ht-degree: 0%
 
 ---
-
 
 # Configuration des états du document {#id181GB0400UI}
 
@@ -38,34 +37,34 @@ Pour créer des états de document à l’aide du profil de dossier, procédez c
 1. Sélectionner **Guides** dans la liste des outils.
 1. Cliquez sur la mosaïque États du document .
 
-   La page Assets States (états des ressources) s’affiche. Par défaut, la page affiche un profil par défaut.
+   La page États des ressources s’affiche. Par défaut, la page affiche un profil par défaut.
 
 1. Cliquez sur **Créer un profil** et saisissez les informations suivantes :
    - Saisissez le nom du profil dans le champ Profil .
-   - Indiquez le chemin d’accès auquel vous souhaitez appliquer le nouveau profil.
+   - Spécifiez le chemin d’accès auquel appliquer le nouveau profil.
    - Spécifiez les états du document dans le **États autorisés** under **Etats**. Les états du document par défaut sont Brouillon, Modifier, En révision, Approuvé et Terminé.-
 
-      Cliquez sur le bouton **Ajouter** pour ajouter un état de document.
+     Cliquez sur le bouton **Ajouter** pour ajouter un état de document.
 
       - Cliquez sur l’icône Supprimer pour supprimer un état de document.
-      >[!NOTE]
-      >
-      > Ne supprimez pas un état de document si les documents sont toujours dans cet état. Si vous supprimez un état de document, vous ne pourrez pas modifier l’état du document de ces documents, à moins que vous n’apparteniez à l’événement *administrator* groupe d’utilisateurs.
+
+     >[!NOTE]
+     >
+     > Ne supprimez pas un état de document si les documents sont toujours dans cet état. Si vous supprimez un état de document, vous ne pourrez pas modifier l’état du document de ces documents, à moins que vous n’apparteniez à l’événement *administrator* groupe d’utilisateurs.
 
    - Spécifiez l’état de début du document dans le **État de départ**.
    - Spécifiez l’état de fin du document dans le **État de fin**.
-   - Spécifiez la transition d’état du document dans **De** et **À** under **Transition d’état**.
+   - Spécifiez la transition d’état du document dans **De** et **À** under **Transition de l’état**.
 
       - Spécifier les utilisateurs et les groupes d’utilisateurs pouvant modifier l’état du document dans **Groupes**.
 
       - Cliquez sur le bouton **Ajouter** pour ajouter une transition d’état.
 
       - Cliquez sur l’icône Supprimer pour supprimer une transition d’état.
-      >[!NOTE]
-      >
-      > Ne supprimez pas une transition d’état si des documents sont toujours présents dans `From` état. Si vous supprimez une transition d’état, vous ne pourrez pas modifier l’état du document de ces documents, à moins que vous n’apparteniez au *administrator* groupe d’utilisateurs.
 
-
+     >[!NOTE]
+     >
+     > Ne supprimez pas une transition d’état si des documents sont toujours présents dans `From` état. Si vous supprimez une transition d’état, vous ne pourrez pas modifier l’état du document de ces documents, à moins que vous n’apparteniez au *administrator* groupe d’utilisateurs.
 
 1. Cliquez sur **Terminé**.
 
@@ -79,9 +78,9 @@ Pour créer une copie d’un profil d’état de document, procédez comme suit 
 1. Sélectionner **Guides** dans la liste des outils.
 1. Cliquez sur la mosaïque États du document .
 
-   La page Assets States (états des ressources) s’affiche.
+   La page États des ressources s’affiche.
 
-1. Sélectionnez le profil d’état du document à dupliquer, puis cliquez sur **Duplication de profil**.
+1. Sélectionnez le profil d’état du document à dupliquer, puis cliquez sur **Dupliquer le profil**.
 1. Apportez les modifications requises et cliquez sur **Terminé**.
 
 ## Suppression d’un état ou d’une transition d’état de document
@@ -96,7 +95,7 @@ Effectuez les étapes suivantes pour supprimer une transition d’état ou d’�
 1. Sélectionner **Guides** dans la liste des outils.
 1. Cliquez sur la mosaïque États du document .
 
-   La page Assets States (états des ressources) s’affiche.
+   La page États des ressources s’affiche.
 
 1. Sélectionnez le profil d’état du document à partir duquel vous souhaitez supprimer l’état du document, puis cliquez sur **Modifier le profil**.
 1. Supprimez la transition d’état ou d’état du document et cliquez sur **Terminé**.
@@ -109,7 +108,7 @@ Pour supprimer un profil d’état de document, procédez comme suit :
 1. Sélectionner **Guides** dans la liste des outils.
 1. Cliquez sur la mosaïque États du document .
 
-   La page Assets States (états des ressources) s’affiche.
+   La page États des ressources s’affiche.
 
 1. Sélectionnez le profil d’état du document à supprimer, puis cliquez sur **Supprimer le profil**.
 
@@ -138,9 +137,9 @@ Effectuez les étapes suivantes pour automatiser la modification de l’état du
    - Cochez la case Avance du gestionnaire .
    - Saisissez le nom de l’état du document dans le champ **Arguments** zone de texte.
 
-      >[!NOTE]
-      >
-      > Veillez à saisir l’état correct du document dans la zone de texte Argument . Si vous saisissez un nom incorrect, le document sera défini sur le mauvais état du document.
+     >[!NOTE]
+     >
+     > Veillez à saisir l’état correct du document dans la zone de texte Argument . Si vous saisissez un nom incorrect, le document sera défini sur le mauvais état du document.
 
 1. Cliquez sur **Enregistrer** pour enregistrer le workflow.
 
@@ -168,5 +167,3 @@ AEM Guides fournit un processus d’approbation de document qui vous aide à con
       "approvalWorkflow":  true 
    }
    ```
-
-

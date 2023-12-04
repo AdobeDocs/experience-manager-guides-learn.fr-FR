@@ -1,13 +1,12 @@
 ---
 title: Configuration de Regx pour les caractères de nom de fichier valides
 description: Découvrez comment configurer la regx pour les caractères de nom de fichier valides
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
-
 
 # Configuration de Regx pour les caractères de nom de fichier valides {#id214BD0550E8}
 
@@ -21,7 +20,7 @@ Si vous ne configurez pas la liste des caractères spéciaux valides, le process
 
 Pour configurer une expression régulière pour les caractères \(ou autorisés\) valides dans les noms de fichier, procédez comme suit :
 
-1. Ouvrez la page Configuration de la console web Adobe Experience Manager .
+1. Ouvrez la page de configuration de la console web Adobe Experience Manager .
 
    L&#39;URL par défaut pour accéder à la page de configuration est :
 
@@ -29,7 +28,7 @@ Pour configurer une expression régulière pour les caractères \(ou autorisés\
    http://<server name>:<port>/system/console/configMgr
    ```
 
-1. Recherchez et cliquez sur le bouton *com.adobe.fmdita.config.ConfigManager* du lot.
+1. Recherchez et cliquez sur le bouton *com.adobe.config.ConfigManager* du lot.
 
 1. Dans le **Expression régulière pour les caractères valides** , assurez-vous que la propriété est définie sur \[-a-zA-Z0-9\_\]. Vous pouvez ajouter d’autres caractères à cette liste, mais elle doit contenir ces caractères de base et la liste doit commencer par un trait d’union &quot;-&quot;.
 
@@ -45,4 +44,3 @@ Pour configurer une expression régulière pour les caractères \(ou autorisés\
 > Tout comme la liste des caractères de nom de fichier valides, vous pouvez également spécifier une liste de caractères de nom de fichier valides pour AEM sortie Site. Pour plus d’informations, voir [Configuration de noms de fichier valides pour AEM sortie Site](conf-file-names-valid-regx-aem-site-output.md#).
 
 **Rubrique parente :**[ Configuration des noms de fichier](conf-file-names.md)
-

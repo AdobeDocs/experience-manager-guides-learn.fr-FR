@@ -1,13 +1,12 @@
 ---
 title: Génération automatique des identifiants d’élément
 description: Découvrez comment générer automatiquement des identifiants d’élément
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
-
 
 # Génération automatique des identifiants d’élément {#id20CIL40016I}
 
@@ -17,7 +16,7 @@ AEM Guides fournit des paramètres de configuration simples dans lesquels vous d
 
 Effectuez les étapes suivantes pour configurer les éléments avec un identifiant généré automatiquement :
 
-1. Ouvrez la page Configuration de la console web Adobe Experience Manager .
+1. Ouvrez la page de configuration de la console web Adobe Experience Manager .
 
    L&#39;URL par défaut pour accéder à la page de configuration est :
 
@@ -35,7 +34,7 @@ Effectuez les étapes suivantes pour configurer les éléments avec un identifia
 
 1. Dans le **Modèle de génération d’ID** , spécifiez un modèle pour générer un identifiant.
 
-   La valeur par défaut de ce champ est définie sur `${elementName}_${id}`. Le `${elementName}` est remplacée par le nom de l’élément . Le `${id}` génère un nombre séquentiel pour l’élément. Par exemple, si vous attribuez à l’élément de paragraphe des identifiants générés automatiquement, le premier paragraphe de la rubrique ou du document reçoit un identifiant comme p\_1, le paragraphe suivant reçoit p\_2, etc. Cependant, dans un autre document, le processus de génération des identifiants redémarre. Cela signifie que dans un autre document, des identifiants comme p\_1 et p\_2 peuvent être affectés aux éléments de paragraphe.
+   La valeur par défaut de ce champ est définie sur `${elementName}_${id}`. La variable `${elementName}` est remplacée par le nom de l’élément . La variable `${id}` génère un nombre séquentiel pour l’élément. Par exemple, si vous attribuez à l’élément de paragraphe des identifiants générés automatiquement, le premier paragraphe de la rubrique ou du document reçoit un identifiant comme p\_1, le paragraphe suivant reçoit p\_2, etc. Cependant, dans un autre document, le processus de génération des identifiants redémarre. Cela signifie que dans un autre document, des identifiants comme p\_1 et p\_2 peuvent être affectés aux éléments de paragraphe.
 
    Si votre document contient déjà des identifiants dans le modèle spécifié, le processus de génération automatique n’affecte pas ces identifiants aux nouveaux éléments.
 
@@ -43,4 +42,3 @@ Effectuez les étapes suivantes pour configurer les éléments avec un identifia
 
 
 **Rubrique parente :**[ Personnalisation de l’éditeur web](conf-web-editor.md)
-

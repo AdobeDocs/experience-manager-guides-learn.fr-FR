@@ -1,10 +1,9 @@
 ---
 title: Présentation des fonctionnalités de l’éditeur web
 description: Découvrez les fonctionnalités de l’éditeur web dans AEM Guides. Découvrez l’interface de l’éditeur web, notamment la barre d’outils principale, la barre d’outils secondaire, le panneau de gauche, la zone d’édition de contenu et le panneau de droite.
-exl-id: 340cf72e-e44d-4df2-8312-50d00ac651b7
-source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '17231'
+source-wordcount: '17222'
 ht-degree: 0%
 
 ---
@@ -307,7 +306,7 @@ Vous pouvez également définir des attributs sur plusieurs cellules, rangée en
 1. Dans le **Attributs** , cliquez sur **+Ajouter**.
 1. Sélectionnez la variable `@valign` de la fonction **Attribut** liste déroulante
 1. Dans la liste déroulante des valeurs, sélectionnez l’alignement de texte que vous souhaitez appliquer aux cellules de tableau sélectionnées.
-1. Cliquez sur **Ajouter.**
+1. Cliquez sur **Ajoutez.**
 
 ![](images/align-table-cell_cs.png){width="800" align="left"}
 
@@ -649,7 +648,7 @@ Pour accéder à l’historique des versions et revenir à une version spécifiq
 
 1. \(*Facultatif*\) Fournissez une raison de revenir à une version antérieure. Vous pouvez également créer une version de la copie de travail active de votre rubrique.
 
-1. Cliquez sur **Confirmer.**
+1. Cliquez sur **Confirmez.**
 
    Votre copie de travail du fichier est rétablie à la version sélectionnée. Si vous choisissez de créer une version de la copie de travail active, une nouvelle version du fichier est également créée avec toutes les modifications en cours.
 
@@ -1023,7 +1022,7 @@ Dans le **Créer une carte** , fournissez les détails suivants :
 
 Lorsque vous cliquez **Créer**, la carte est créée et ajoutée dans le dossier spécifié dans le champ Chemin . En outre, la carte est ouverte dans la vue Carte. Vous pouvez ouvrir le fichier de mappage dans l’éditeur de mappage et y ajouter une rubrique. Pour plus d’informations sur l’ajout de rubriques à un fichier de mappage, voir [Création d’une carte](map-editor-create-map.md#).
 
-***Créez un dossier***.
+***Création d’un dossier***
 
 Lorsque vous choisissez de *créer un dossier ;*, vous obtenez la variable **Créer un dossier** dialog :
 
@@ -1594,7 +1593,7 @@ Une fois le modèle créé, vous devez l’ajouter à votre profil global ou au 
 
 Dans le menu Options d’un modèle existant, vous pouvez choisir de **Modifier** ou **Dupliquer** c&#39;est le cas. En cas de duplication, la structure et le type \(du document\) du modèle sont conservés et vous pouvez le réutiliser pour en créer un autre modèle.
 
-**Révision** -  ![](images/active-review-tasklist-icon.svg)
+**Réviser** -  ![](images/active-review-tasklist-icon.svg)
 
 AEM Guides fournit la fonctionnalité permettant d’afficher toutes les tâches de révision dans vos projets. Vous pouvez afficher tous les projets de révision et les tâches de révision actives dans les projets de révision, dont vous faites partie à partir du **Réviser** du panneau.  Vous pouvez ensuite ouvrir les tâches de révision pour afficher les commentaires des différents réviseurs.
 Le panneau de révision affiche les tâches de révision. Par défaut, vous pouvez afficher les fichiers par titres. Lorsque vous placez le pointeur de la souris sur un fichier, vous pouvez afficher le titre du fichier et le chemin du fichier sous forme d’info-bulle.
@@ -1815,7 +1814,7 @@ Par défaut, vous pouvez afficher les fichiers par titres. Lorsque vous placez l
 
 Outre l’ouverture de fichiers, vous pouvez également effectuer de nombreuses actions à l’aide de la fonction **Options** dans la section Références . Parmi les actions que vous pouvez effectuer, citons Modifier, Aperçu, Copier l’UUID, Copier le chemin, Ajouter aux favoris, Propriétés et Ouvrir le tableau de bord.
 
-**Révision** -  ![](images/review-icon.svg)
+**Réviser** -  ![](images/review-icon.svg)
 
 Cliquez sur l’icône Réviser pour ouvrir le panneau de révision dans lequel vous pouvez créer une tâche de révision pour le document actuellement ouvert.
 

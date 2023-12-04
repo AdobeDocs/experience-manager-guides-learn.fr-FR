@@ -1,11 +1,10 @@
 ---
 title: Principes élémentaires de la publication par les PDF natifs
 description: Découvrez comment publier du PDF à l’aide du moteur PDF natif dans AEM Guides.
-exl-id: e7ba6d2d-ebfb-4400-9b10-c4fb173123cf
-source-git-commit: 093cb6c3b3a523e56f401e813c2b51a414c725d2
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 1%
+source-wordcount: '204'
+ht-degree: 2%
 
 ---
 
@@ -28,11 +27,11 @@ Au cours de cette session, vous apprendrez à publier PDF à l’aide du moteur 
 - **Durée** - 60 minutes
 - **Audience** - Clients, partenaires et employés d’Adobe
 
-## Principales acquisitions
+## Principaux points à retenir
 
 Au cours de cette session, vous découvrirez les éléments suivants :
 - Principes de publication des PDF
-- Création et personnalisation de divers composants d’un modèle de PDF
+- Création et personnalisation de divers composants du modèle de PDF
 - Structuration et style du contenu pour la publication
 - Manipulation de la sortie via des scripts
 - Configurations avancées, sécurité, impression et production
@@ -41,16 +40,15 @@ Au cours de cette session, vous découvrirez les éléments suivants :
 
 - **Vidéos de présentation** -  [Experience League](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/videos/advanced-user-guide/overview.html?lang=en)
 
-- **Guide de l’utilisateur** - [Publication de PDF natifs](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/configuring/config-native-pdf-publish/pdf-template.html?lang=en)
+- **Guide de l’utilisateur** - [Publication PDF native](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/configuring/config-native-pdf-publish/pdf-template.html?lang=en)
 
-- **Forum de la communauté** - Pour les interactions de communauté spécifiques à une session sur Experience League, rendez-vous sur la page  [Forum AEM Guides](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/bd-p/xml-documentation-discussions).
+- **Forum communautaire** - Pour les interactions de communauté spécifiques à une session sur Experience League, rendez-vous sur la page  [Forum AEM Guides](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/bd-p/xml-documentation-discussions).
 
 >[!NOTE]
 >
 > Les fonctionnalités affichées dans cette session sont disponibles dans les versions suivantes des AEM Guides :
 > - On-premise 4.2 ou version ultérieure
-> - Cloud Services 2211 et versions ultérieures
-
+> - Cloud Service 2211 et versions ultérieures
 
 ## Contactez-nous
 

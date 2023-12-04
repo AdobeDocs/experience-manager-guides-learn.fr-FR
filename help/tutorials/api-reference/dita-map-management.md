@@ -1,13 +1,12 @@
 ---
 title: API REST pour travailler avec des mappages DITA
 description: En savoir plus sur l’API REST pour utiliser les mappages DITA
-source-git-commit: fad5049962f258bbe59c7d172436d82b3d6cd68f
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 0%
 
 ---
-
 
 # API REST pour travailler avec des mappages DITA {#id175UB30E05Z}
 
@@ -43,4 +42,3 @@ Méthode de GET qui récupère l’état de l’exportation pour un mappage DITA
 |Nom|Type|Obligatoire|Description| |—|—|—|— |`jobId`|Chaîne|Oui|L’ID de tâche récupéré lors du lancement de la tâche d’exportation.|
 
 **Valeurs de réponse**: |Elément|Description| |—|—| |`status`|L’état de la tâche d’exportation. Les options possibles sont : DÉMARRÉ, ÉCHEC, INPROGRESSION, SUCCÈS, MANQUANT, SUPPRIMÉ| |`jobId`|L’identifiant unique de la tâche. Peut être utilisé ultérieurement pour interroger l’état.| |`errorMessage`|Message d’erreur de la tâche en cas d’échec \(si l’état est EN ÉCHEC, MANQUANT ou SUPPRIMÉ\).| |`filePath`|Le chemin d’accès au fichier ZIP. Il est présent uniquement lorsque la tâche est terminée et que l’état est SUCCEED. Vous pouvez l’utiliser pour télécharger le fichier ZIP.|
-

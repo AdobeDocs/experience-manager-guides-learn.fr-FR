@@ -1,13 +1,12 @@
 ---
 title: Installation de packages pour la publication basée sur un article
 description: Découvrez comment installer des packages pour la publication basée sur un article
-source-git-commit: 6051181e243cf71919901093c1b5590f21832545
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 3%
+source-wordcount: '348'
+ht-degree: 0%
 
 ---
-
 
 # Installation de packages pour la publication basée sur un article {#id21BNL02052Z}
 
@@ -18,7 +17,7 @@ Pour créer un site AEM pour publier une sortie basée sur un article, procédez
 1. Télécharger **Package de contenu des composants XML Documentation pour Cloud Service** de votre [Portail de distribution de logiciels Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).
 1. Ouvrez AEM Gestionnaire de modules. L’URL par défaut pour accéder au gestionnaire de packages est la suivante : `https://<hostname>/crx/packmgr/index.jsp`
 1. Téléchargez le module de contenu des composants XML Documentation pour Cloud Service, puis installez-le.
-1. Téléchargez la `Knowledge-base-template-for-article-based-publishing-for-cloud-service.zip` à partir de votre [Portail de distribution de logiciels Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).
+1. Téléchargez la `Knowledge-base-template-for-article-based-publishing-for-cloud-service.zip` à partir de [Portail de distribution de logiciels Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).
 1. Dans la navigation globale, sélectionnez **Sites**.
 1. Dans l’interface utilisateur de Sites, cliquez sur **Créer** dans le coin supérieur droit.
 1. Sélectionner **Site à partir du modèle** de la **Créer** menu déroulant.
@@ -30,7 +29,7 @@ Pour créer un site AEM pour publier une sortie basée sur un article, procédez
 
    Sélectionner **Modèle de base de connaissances pour la publication basée sur un article** pour créer le site AEM et cliquez sur **Suivant** dans le coin supérieur droit.
 
-1. Saisissez le **Titre du site** et le **Nom du site** et cliquez sur **Créer** dans le coin supérieur droit. Un site AEM est créé à l’aide du modèle de site Tragopan . \(Le site Tragopan est un exemple de base de connaissances AEM site avec des modèles pour une catégorie, une section et des pages d’article.\)
+1. Saisissez le **Titre du site** et la variable **Nom du site** et cliquez sur **Créer** dans le coin supérieur droit. Un site AEM est créé à l’aide du modèle de site Tragopan . \(Le site Tragopan est un exemple de base de connaissances AEM site avec des modèles pour une catégorie, une section et des pages d’article.\)
 
    >[!NOTE]
    >
@@ -40,4 +39,3 @@ Pour créer un site AEM pour publier une sortie basée sur un article, procédez
 Vous pouvez utiliser le site AEM pour publier votre article à l’aide des paramètres prédéfinis de sortie de l’éditeur web.
 
 **Rubrique parente :**[ Personnalisation de l’éditeur web](conf-web-editor.md)
-

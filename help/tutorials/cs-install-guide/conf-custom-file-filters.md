@@ -1,13 +1,12 @@
 ---
 title: Configuration des filtres pour la boîte de dialogue de navigation dans les fichiers
 description: Découvrez comment configurer des filtres pour la boîte de dialogue de navigation dans les fichiers
-source-git-commit: 6051181e243cf71919901093c1b5590f21832545
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
 
 ---
-
 
 # Configuration des filtres pour la boîte de dialogue de navigation dans les fichiers {#id20CIL7009GN}
 
@@ -20,7 +19,7 @@ Procédez comme suit pour ajouter vos options de filtrage de fichier personnalis
 1. Cliquez sur le lien Adobe Experience Manager en haut de l’écran et choisissez **Outils**.
 1. Sélectionner **Guides** dans la liste des outils, puis cliquez sur l’icône **Profils de dossier**.
 1. Cliquez sur le bouton **Profil global** mosaïque.
-1. Sélectionnez la **Configuration de l’éditeur XML** et cliquez sur **Modifier** icône en haut
+1. Sélectionnez la variable **Configuration de l’éditeur XML** et cliquez sur **Modifier** icône en haut
 1. Cliquez sur le bouton **Télécharger** pour télécharger le fichier ui\_config.json sur votre système local. Vous pouvez ensuite apporter des modifications au fichier, puis charger le même fichier.
 1. Dans le `ui_config.json` ajoutez la définition des filtres que vous souhaitez ajouter.
 
@@ -47,13 +46,13 @@ Procédez comme suit pour ajouter vos options de filtrage de fichier personnalis
 
    Dans le fragment de code ci-dessus, le premier filtre concerne les fichiers DITA. La définition de filtre utilise les paramètres suivants :
 
-   title : Nom d’affichage du filtre. Ce titre apparaît comme option de filtrage dans la boîte de dialogue de navigation des fichiers.
+   title : nom d’affichage du filtre. Ce titre apparaît comme option de filtrage dans la boîte de dialogue de navigation des fichiers.
 
-   property : Propriété à faire correspondre dans les métadonnées du fichier. Par exemple, pour n’autoriser que les fichiers qui ont la variable `dita_class` métadonnées dans leur propriété, le filtre de propriété utilise &quot; `jcr:content/metadata/dita_class`&quot; comme valeur.
+   property : propriété à faire correspondre dans les métadonnées du fichier. Par exemple, pour n’autoriser que les fichiers qui ont la variable `dita_class` métadonnées dans leur propriété, le filtre de propriété utilise &quot; `jcr:content/metadata/dita_class`&quot; comme valeur.
 
-   operation : Spécifiez &quot; `exists`&quot; pour correspondre à l’existence de la valeur spécifiée dans le paramètre de propriété.
+   operation : spécifiez &quot; `exists`&quot; pour correspondre à l’existence de la valeur spécifiée dans le paramètre de propriété.
 
-   Le second filtre concerne les fichiers image. Les paramètres sont similaires au premier filtre, à l’exception du filtre `value` . Le `value` prend comme valeur un tableau de types d’image. Tous les types de fichiers spécifiés dans le paramètre de valeur sont recherchés et affichés dans la boîte de dialogue de navigation des fichiers ; tous les autres types de fichiers sont ignorés.
+   Le second filtre concerne les fichiers image. Les paramètres sont similaires au premier filtre, à l’exception du filtre `value` . La variable `value` prend comme valeur un tableau de types d’image. Tous les types de fichiers spécifiés dans le paramètre de valeur sont recherchés et affichés dans la boîte de dialogue de navigation des fichiers ; tous les autres types de fichiers sont ignorés.
 
 1. Enregistrez le *ui\_config.json* et téléchargez le même fichier. Ensuite, rechargez l’éditeur Web.
 
@@ -63,4 +62,3 @@ Procédez comme suit pour ajouter vos options de filtrage de fichier personnalis
 
 
 **Rubrique parente :**[ Personnalisation de l’éditeur web](conf-web-editor.md)
-

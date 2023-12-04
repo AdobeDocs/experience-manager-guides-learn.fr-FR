@@ -1,10 +1,9 @@
 ---
 title: Création d’une carte
 description: Créez une carte avec l’éditeur de cartes dans AEM Guides. Recherchez les étapes de création d’un fichier map basé sur un modèle map .
-exl-id: d35ee09f-f951-4866-a2b1-e4b19f76e7a1
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---

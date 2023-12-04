@@ -1,13 +1,12 @@
 ---
 title: Configuration de l’enregistrement automatique du fichier dans l’éditeur web
 description: Découvrez comment configurer l’enregistrement automatique du fichier dans l’éditeur web
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 1%
 
 ---
-
 
 # Configuration de l’enregistrement automatique du fichier dans l’éditeur web {#id199CC0J0M5Z}
 
@@ -23,4 +22,3 @@ Suivez les instructions de la section [Remplacements de configuration](download-
 | `xmleditor.autosaveinterval` | Spécifiez l’intervalle en secondes pour déclencher la fonction d’enregistrement automatique. |
 
 **Rubrique parente :**[ Personnalisation de l’éditeur web](conf-web-editor.md)
-

@@ -1,15 +1,12 @@
 ---
 title: Personnalisation et configuration de la fonction de publication d’PDF natif
 description: Découvrez comment personnaliser et configurer les différents composants de la fonction de PDF natif.
-source-git-commit: 7bee42be8975ee25254e185edee67778ff3e1294
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 0%
 
 ---
-
-
-
 
 # Publication de PDF natifs
 
@@ -30,4 +27,3 @@ Pour plus d’informations, consultez les informations suivantes :
    * [Ajout d’un signet personnalisé dans la sortie PDF](../native-pdf/add-custom-bookmark.md)
    * [Utilisation de JavaScript pour utiliser du contenu ou du style](../native-pdf/use-javascript-content-style.md)
    * [Utilisation de styles personnalisés dans les notes de bas de page](../native-pdf/footnote-number-style.md)
-

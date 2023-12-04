@@ -1,13 +1,12 @@
 ---
 title: Configuration des caractères spéciaux autorisés
 description: Découvrez comment configurer des caractères spéciaux autorisés
-source-git-commit: 6051181e243cf71919901093c1b5590f21832545
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%
 
 ---
-
 
 # Configuration des caractères spéciaux autorisés {#id20CIL600035}
 
@@ -36,12 +35,11 @@ Effectuez les étapes suivantes pour remplacer la liste par défaut des caractè
 
 La structure de la variable `symbols.json` est expliqué ci-dessous :
 
-- `"label": "Arrows"`: Cela permet de spécifier la catégorie des caractères spéciaux. Dans le fragment de code, une catégorie portant le nom `"Arrows"` est définie.
-- `"items"`: Cette option définit la collection de caractères spéciaux dans la catégorie.
-- `"name": "←", "title": "Left Arrow"`: Il s’agit de la définition du caractère spécial. Elle commence par la fonction `"name"` qui ne doit pas être modifiée. Le nom est suivi du caractère spécial. Le `"title"` est le nom ou le titre du caractère spécial qui apparaît comme info-bulle pour ce caractère spécial.
+- `"label": "Arrows"`: permet de spécifier la catégorie des caractères spéciaux. Dans le fragment de code, une catégorie portant le nom `"Arrows"` est définie.
+- `"items"`: définit la collection de caractères spéciaux dans la catégorie.
+- `"name": "←", "title": "Left Arrow"`: il s’agit de la définition du caractère spécial. Elle commence par la fonction `"name"` qui ne doit pas être modifiée. Le nom est suivi du caractère spécial. La variable `"title"` est le nom ou le titre du caractère spécial qui apparaît comme info-bulle pour ce caractère spécial.
 
   Vous pouvez définir plusieurs définitions de caractères spéciaux dans une catégorie.
 
 
 **Rubrique parente :**[ Personnalisation de l’éditeur web](conf-web-editor.md)
-

@@ -1,10 +1,9 @@
 ---
 title: Configuration de profils globaux ou au niveau du dossier
 description: Découvrez comment configurer des profils globaux ou de niveau dossier
-exl-id: 3370e22c-b996-4261-b250-8b8f8667c2a0
-source-git-commit: 192d807d0020193f39e8340fb6c0b6a50c6489f8
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '3891'
+source-wordcount: '3896'
 ht-degree: 0%
 
 ---
@@ -49,7 +48,7 @@ Vous pouvez également déléguer les configurations spécifiques aux dossiers �
 
   Avec les modèles de rubrique, vous pouvez également définir les modèles de mappage qui seront mis à la disposition des auteurs. Les modèles de mappage suivants sont disponibles prêts à l’emploi :
 
-   - Map
+   - Mappage
 
    - Bookmap
 
@@ -59,7 +58,7 @@ Vous pouvez également déléguer les configurations spécifiques aux dossiers �
 
    - PDF
 
-   - HTML 5
+   - HTML5
 
    - EPUB
 
@@ -346,7 +345,7 @@ Outre les paramètres prédéfinis configurés au niveau global ou au niveau de 
 
 Effectuez les étapes suivantes pour configurer des paramètres prédéfinis de sortie globaux ou spécifiques à un dossier :
 
-1. Connectez-vous à Adobe Experience Manager en tant qu’administrateur ou que l’utilisateur disposant de droits d’administration sur un profil spécifique au dossier.
+1. Connectez-vous à Adobe Experience Manager en tant qu’administrateur ou l’utilisateur disposant de droits d’administration sur un profil spécifique au dossier.
 
 1. Cliquez sur le lien Adobe Experience Manager en haut de l’écran et choisissez **Outils**.
 
@@ -369,7 +368,7 @@ Effectuez les étapes suivantes pour configurer des paramètres prédéfinis de 
 
    - Cliquez sur **Modifier** pour ouvrir la configuration du paramètre prédéfini sélectionné à des fins de modification.
 
-     Pour plus d’informations sur les paramètres prédéfinis de sortie, voir *Présentation des paramètres prédéfinis de sortie* dans les guides Utilisation d’Adobe Experience Manager .
+     Pour plus d’informations sur les paramètres prédéfinis de sortie, voir *Présentation des paramètres prédéfinis de sortie* dans les guides Utilisation de Adobe Experience Manager .
 
 1. Cliquez sur **Enregistrer** pour enregistrer les paramètres prédéfinis.
 
@@ -382,7 +381,7 @@ Un nouveau paramètre prédéfini de sortie créé au niveau global est mis à l
 
 Si vous avez mis à jour un paramètre prédéfini de sortie existant ou si vous souhaitez rendre un nouveau paramètre prédéfini de sortie disponible pour les mappages DITA existants, effectuez les étapes suivantes :
 
-1. Connectez-vous à Adobe Experience Manager en tant qu’administrateur ou que l’utilisateur disposant de droits d’administration sur un profil spécifique au dossier.
+1. Connectez-vous à Adobe Experience Manager en tant qu’administrateur ou l’utilisateur disposant de droits d’administration sur un profil spécifique au dossier.
 
 1. Cliquez sur le lien Adobe Experience Manager en haut de l’écran et choisissez **Outils**.
 

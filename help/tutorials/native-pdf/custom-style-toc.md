@@ -1,13 +1,12 @@
 ---
 title: Fonction de publication native d’un PDF | Application d’un style personnalisé aux entrées de la table des matières et au contenu de la rubrique
 description: Découvrez comment créer des feuilles de style et créer des styles pour votre contenu.
-source-git-commit: 09918abbdade934468dea1c55d0ca2cd60622b35
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
 
 ---
-
 
 # Application d’un style personnalisé aux entrées de la table des matières et au contenu de la rubrique
 
@@ -20,7 +19,7 @@ Dans l’exemple suivant, la variable *Histoire des vols* une rubrique a été a
 <img src="./assets/new-topic-attribute-in-map.png" width="500">
 
 La définition de classe de la variable `new-topic` dans une page CSS peut vous permettre de définir le style des éléments suivants :
-* L’entrée principale dans la table des matières ou la mini-table des matières
+* Entrée principale dans la table des matières ou la mini-table des matières
 * Titre de la rubrique dans le contenu principal
 * Contenu complet de la rubrique, y compris le titre
 
@@ -72,5 +71,3 @@ Enfin, vous pouvez également appliquer des styles à l’ensemble du contenu de
 À l’aide des attributs de style ci-dessus, une barre de modification est ajoutée à gauche du *Histoire du vol* , comme illustré ci-dessous :
 
 <img src="./assets/pdf-output-topic-content.jpg" width="500">
-
-

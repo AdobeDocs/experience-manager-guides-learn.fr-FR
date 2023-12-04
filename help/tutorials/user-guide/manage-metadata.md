@@ -1,8 +1,7 @@
 ---
 title: Gestion des métadonnées
 description: Découvrez comment définir et gérer des métadonnées dans AEM Guides. Utilisez le balisage intelligent et en masse pour trouver facilement les rubriques connexes dans un mappage DITA.
-exl-id: 842f1b41-9146-4de3-bcc0-38c10646a032
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 2%
@@ -13,7 +12,7 @@ ht-degree: 2%
 
 Les métadonnées sont la description ou la définition de votre contenu. Ces métadonnées sont utiles pour définir votre article ou une carte. Par exemple, les métadonnées du PDF peuvent se composer des propriétés d’un document telles qu’un titre, un auteur, un objet, des mots-clés et une langue. AEM Guides fournit divers outils qui peuvent vous aider à définir des métadonnées pour votre contenu.
 
-Les ressources Adobe Experience Manager prennent en charge l’ajout, la modification, l’importation ou l’exportation de métadonnées pour vos ressources. Vous pouvez utiliser l’outil d’extraction de mots-clés XML pour extraire des balises intelligentes à l’aide de mots-clés pertinents. Les balises intelligentes peuvent vous aider à trouver le contenu associé. Vous pouvez également définir des métadonnées en bloc pour une collection de fichiers et de dossiers. Le balisage en masse peut vous aider à trouver facilement des rubriques connexes dans un mappage DITA.
+Adobe Experience Manager Assets prend en charge l’ajout, la modification, l’importation ou l’exportation de métadonnées pour vos ressources. Vous pouvez utiliser l’outil d’extraction de mots-clés XML pour extraire des balises intelligentes à l’aide de mots-clés pertinents. Les balises intelligentes peuvent vous aider à trouver le contenu associé. Vous pouvez également définir des métadonnées en bloc pour une collection de fichiers et de dossiers. Le balisage en masse peut vous aider à trouver facilement des rubriques connexes dans un mappage DITA.
 
 - **[Utilisation des métadonnées dans AEM](metadata-dita.md)**
 

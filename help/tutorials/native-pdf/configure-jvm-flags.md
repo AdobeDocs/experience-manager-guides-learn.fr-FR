@@ -1,13 +1,12 @@
 ---
 title: PDF natif | Configuration des indicateurs JVM pour la publication native de PDF
 description: Configuration des indicateurs JVM pour la publication native de PDF
-source-git-commit: cfb1197d0aad7ea3771bc6e1a73c02f540cef0c9
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 1%
 
 ---
-
 
 # Configuration des indicateurs JVM pour la publication native de PDF
 
@@ -15,7 +14,7 @@ La publication d’un PDF natif lance un processus JVM distinct pour générer u
 
 Effectuez les étapes suivantes pour configurer AEM Guides Native PDF Publishing JVM indicateurs :
 
-1. Ouvrez la page Configuration de la console web Adobe Experience Manager .
+1. Ouvrez la page de configuration de la console web Adobe Experience Manager .
 
    L&#39;URL par défaut pour accéder à la page de configuration est :
 

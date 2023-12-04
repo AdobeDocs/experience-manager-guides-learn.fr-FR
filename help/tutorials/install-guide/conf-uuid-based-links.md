@@ -1,21 +1,20 @@
 ---
 title: Configuration de l’affichage des liens basés sur l’UUID
-description: Découvrez comment configurer l’affichage des liens basés sur l’UUID
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+description: Découvrez comment configurer l’affichage des liens basés sur UUID
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
 
 ---
 
-
 # Configuration de l’affichage des liens basés sur l’UUID {#id2035G20M0QN}
 
-Par défaut, lorsque vous créez un lien à l’aide de l’option Insérer une référence ou Insérer un contenu réutilisé de l’éditeur web, le lien est créé à l’aide de l’UUID du contenu référencé. Le **Lien** La propriété \(dans le panneau Propriétés\) du contenu référencé peut être configurée pour afficher le chemin d’accès relatif au fichier du contenu référencé ou l’UUID. Cet affichage est contrôlé par la fonction **Activation des UUID** dans configMgr. Par défaut, elle est activée, ce qui signifie que l’UUID du contenu référencé est affiché dans le panneau Propriétés.
+Par défaut, lorsque vous créez un lien à l’aide de l’option Insérer une référence ou Insérer un contenu réutilisé de l’éditeur web, le lien est créé à l’aide de l’UUID du contenu référencé. La variable **Lien** La propriété \(dans le panneau Propriétés\) du contenu référencé peut être configurée pour afficher le chemin d’accès relatif au fichier du contenu référencé ou l’UUID. Cet affichage est contrôlé par la fonction **Activation des UUID** dans configMgr. Par défaut, elle est activée, ce qui signifie que l’UUID du contenu référencé est affiché dans le panneau Propriétés.
 
 Effectuez les étapes suivantes pour afficher le chemin relatif ou l’UUID du contenu référencé dans l’éditeur web :
 
-1. Ouvrez la page Configuration de la console web Adobe Experience Manager .
+1. Ouvrez la page de configuration de la console web Adobe Experience Manager .
 
    L&#39;URL par défaut pour accéder à la page de configuration est :
 
@@ -25,12 +24,11 @@ Effectuez les étapes suivantes pour afficher le chemin relatif ou l’UUID du c
 
 1. Recherchez et cliquez sur le bouton **com.adobe.fmdita.xmleditor.config.XmlEditorConfig** du lot.
 
-1. Dans le *XmlEditorConfig* , les **Activation des UUID** est activée par défaut. Cela signifie que l’UUID du contenu référencé s’affiche dans la variable **Lien** dans le panneau Propriétés.
+1. Dans le *XmlEditorConfig* les paramètres, **Activation des UUID** est activée par défaut. Cela signifie que l’UUID du contenu référencé s’affiche dans la variable **Lien** dans le panneau Propriétés.
 
-   Si vous souhaitez afficher le chemin relatif du contenu lié, désélectionnez l’option **Activation des UUID** .
+   Si vous souhaitez afficher le chemin relatif du contenu lié, désélectionnez la **Activation des UUID** .
 
 1. Cliquez sur **Enregistrer**.
 
 
 **Rubrique parente :**[ Personnalisation de l’éditeur web](conf-web-editor.md)
-

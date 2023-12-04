@@ -1,11 +1,10 @@
 ---
 title: Charger des fichiers
 description: Découvrez comment charger vos fichiers dans le référentiel AEM et gérer les erreurs. Découvrez l’interface utilisateur de la console de ressources, AEM l’appli de bureau, l’outil d’assimilation en masse de ressources et utilisez le FrameMaker pour le chargement en masse.
-exl-id: d6a73953-94dd-4fa5-b09c-5e4c77fead62
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 4%
+source-wordcount: '405'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +16,7 @@ Il est probable que vous disposiez d’un référentiel de contenu DITA existant
 >
 > Voir [Ajout de ressources numériques à Adobe Experience Manager as a Cloud Service Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/add-assets.html) pour plus d’informations, voir les méthodes de chargement de contenu prises en charge dans AEM.
 
-## Interface utilisateur de la console de ressources
+## Interface utilisateur de la console Assets
 
 Vous pouvez sélectionner du contenu sur votre bureau et le faire glisser sur l’interface utilisateur d’AEM \(navigateur web\) vers le dossier de destination. Pour plus d’informations, voir [Chargement de ressources](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/add-assets.html#upload-assets) dans la documentation AEM.
 
@@ -25,7 +24,7 @@ Vous pouvez sélectionner du contenu sur votre bureau et le faire glisser sur l�
 
 Utilisez AEM’appli de bureau si vous êtes un professionnel de la création et souhaitez gérer les ressources sur votre ordinateur local. Vous pouvez ouvrir et modifier ces ressources avec vos applications de bureau. Vous pouvez également conserver des versions et partager vos fichiers avec d’autres utilisateurs. Pour plus d’informations, voir [Application de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr).
 
-## Outil d’ingestion en masse de ressources
+## Ingestion en masse de ressources
 
 Si vous disposez de migrations à grande échelle et d’assimilations en masse occasionnelles, utilisez l’outil d’ingestion en masse des ressources pour charger votre contenu. Grâce à cet outil, vous pouvez charger du contenu en masse à partir de banques de données prises en charge telles qu’Azure ou S3. Pour plus d’informations, voir [Ingestion en masse de ressources](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/add-assets.html?lang=en#asset-bulk-ingestor).
 

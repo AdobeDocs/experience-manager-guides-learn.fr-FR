@@ -1,13 +1,12 @@
 ---
 title: Télécharger et installer AEM Guides pour la première fois
 description: Découvrez comment télécharger et installer AEM Guides pour la première fois
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 2%
+source-wordcount: '232'
+ht-degree: 0%
 
 ---
-
 
 # Télécharger et installer AEM Guides pour la première fois {#id213BCL00KEV}
 
@@ -25,7 +24,7 @@ Pour télécharger et installer AEM Guides pour la première fois sur un ordinat
    http://<server name>:<port>/crx/packmgr/index.jsp
    ```
 
-   Le gestionnaire de modules gère les modules de votre installation AEM locale. Pour plus d’informations sur l’utilisation du gestionnaire de modules, voir [Utilisation de modules](https://helpx.adobe.com/fr/experience-manager/6-5/sites/administering/using/package-manager.html) dans AEM documentation.
+   Le gestionnaire de modules gère les modules de votre installation AEM locale. Pour plus d’informations sur l’utilisation du gestionnaire de modules, voir [Utilisation de modules](https://helpx.adobe.com/fr/experience-manager/6-5/sites/administering/using/package-manager.html) dans la documentation AEM.
 
    ![](assets/package-manager.png){width="650" align="left"}
 
@@ -49,4 +48,3 @@ Pour télécharger et installer AEM Guides pour la première fois sur un ordinat
 > Exécutez la procédure d’installation sur toutes les instances des serveurs AEM de votre configuration.
 
 **Rubrique parente :**[ Télécharger et installer](download-install.md)
-

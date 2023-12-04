@@ -1,15 +1,14 @@
 ---
 title: Notes de mise à jour | Instructions de mise à niveau et problèmes résolus dans les guides Adobe Experience Manager, version de juin 2023
-description: Découvrez les correctifs et comment mettre à niveau vers la version de juin 2023 des Guides Adobe Experience Manager as a Cloud Service
-exl-id: ea0ff27a-9c3a-49d7-b94a-d1b9d9e85dcf
-source-git-commit: 4359d857f3662ae29a55420c0fafc4a244258389
+description: Découvrez les correctifs et comment mettre à niveau vers la version de juin 2023 de Adobe Experience Manager Guides as a Cloud Service
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 3%
+source-wordcount: '1170'
+ht-degree: 1%
 
 ---
 
-# Version de juin 2023 des Guides Adobe Experience Manager as a Cloud Service
+# Version de juin 2023 de Adobe Experience Manager Guides as a Cloud Service
 
 Cette note de mise à jour traite des instructions de mise à niveau, de la matrice de compatibilité et des problèmes résolus dans la version de juin 2023 des Guides Adobe Experience Manager (appelée ultérieurement *AEM Guides as a Cloud Service*).
 
@@ -19,21 +18,21 @@ Pour plus d’informations sur les nouvelles fonctionnalités et améliorations,
 
 Mettez à niveau votre configuration as a Cloud Service actuelle AEM Guides en procédant comme suit :
 
-1. Extrayez le code Git des Cloud Services et passez à la branche configurée dans le pipeline Cloud Services correspondant à l’environnement que vous souhaitez mettre à niveau.
-2. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Services vers la version 2023.6.297.
-3. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version de juin 2023 d’AEM Guides as a Cloud Service.
+1. Extrayez le code Git des Cloud Service et passez à la branche configurée dans le pipeline Cloud Service correspondant à l’environnement que vous souhaitez mettre à niveau.
+2. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Service vers la version 2023.6.297.
+3. Validez les modifications et exécutez le pipeline Cloud Service pour effectuer la mise à niveau vers la version de juin 2023 d’AEM Guides as a Cloud Service.
 
 ## Procédure d’activation du déclencheur d’un script via un servlet
 
 Une fois l’installation terminée, vous pouvez choisir d’ACCÉDER au déclencheur pour lancer la tâche de traduction :
 
-POST:
+POST :
 
 ```
 http://localhost:4503/bin/guides/script/start?jobType=translation-map-upgrade
 ```
 
-Réponse:
+Réponse :
 
 ```
 {
@@ -64,7 +63,7 @@ Effectuez les étapes suivantes pour le post-traitement du contenu existant et l
 
 1. (Facultatif) Si le système contient plus de 100 000 fichiers dita, mettez à jour la variable `queryLimitReads` under `org.apache.jackrabbit.oak.query.QueryEngineSettingsService` à une valeur plus élevée (toute valeur supérieure au nombre de ressources présentes, par exemple 200 000), puis redéployez.
 
-   - Suivez les instructions de la section *Remplacements de configuration* dans la section Installation et configuration des guides Adobe Experience Manager as a Cloud Service pour créer le fichier de configuration.
+   - Suivez les instructions de la section *Remplacements de configuration* dans la section Installation et configuration de Adobe Experience Manager Guides as a Cloud Service pour créer le fichier de configuration.
    - Dans le fichier de configuration, fournissez les détails (propriété) suivants pour configurer l’option queryLimitReads :
 
      | PID | Clé de propriété | Valeur de la propriété |
@@ -111,7 +110,7 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 
 | AEM Guides as a Cloud | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
 | --- | --- | --- | --- | --- |
-| 2023.06.0 | 2.9-uuid-2 | 2.9-uuid-2 | 2.3 | 2.3 |
+| 2023.06.0 | 2.9-uuid-2 | 2.9-uuid-2 | 2,3 | 2,3 |
 |  |  |  |  |
 
 
@@ -126,7 +125,7 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 - Éditeur web | Un espace insécable est ajouté dans l’éditeur XML lors de la modification d’une rubrique. (11786)
 - Interface utilisateur des ressources | En mode Liste, les colonnes disponibles superposées ne sont pas fusionnables. (11528)
 - Keyref n’est pas résolu dans la vue map. (11490)
-- Le menu supérieur n’apparaît pas lors de la navigation dans l’éditeur XML. (10868)
+- Le menu supérieur n’apparaît pas lors de la navigation dans l’éditeur XML. 10868
 - `conref` balise h | La boîte de dialogue de navigation affichée est incorrecte. (9481)
 - Les liens locaux vers d’autres éléments ne sont pas résolus dans l’éditeur web. (8790)
 - La fonction Matches() ne fonctionne pas dans la fonction de schéma. (11224)

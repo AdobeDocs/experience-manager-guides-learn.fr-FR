@@ -1,13 +1,12 @@
 ---
 title: Fonction de publication native d’un PDF | Utilisation des styles de contenu communs
 description: Découvrez comment créer des feuilles de style et créer des styles pour votre contenu.
-source-git-commit: a1367a6915e760e533bb984705f4be37596b5477
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '3496'
-ht-degree: 0%
+source-wordcount: '3525'
+ht-degree: 1%
 
 ---
-
 
 # Utilisation des styles de contenu communs {#work-with-common-styles}
 
@@ -15,7 +14,7 @@ Une feuille de style contient les définitions des styles pour les éléments ut
 
 L’éditeur de styles est un éditeur WYSIWYG qui masque toutes les complexités d’un code CSS derrière l’interface utilisateur. L’éditeur de style vous permet de personnaliser facilement et très rapidement les styles pour les éléments de votre choix. Les styles sont classés sous les en-têtes suivants :
 
-* Styles d’en-tête
+* Styles de titre
 * Styles de paragraphe
 * Styles de caractère
 * Styles d’hyperlien
@@ -55,8 +54,8 @@ Dans cet exemple, nous allons créer un style d’en-tête de chapitre de deuxi�
    >
    >Voir [Personnalisation d’un style prédéfini ou nouveau](components-pdf-template.md#customize-style) pour ouvrir une feuille de style à des fins de personnalisation ou de modification.
 
-1. Dans le **Styles** , développez la liste **Styles d’en-tête**.
-1. Cliquez avec le bouton droit de la souris sur **Styles d’en-tête** style et choisissez **Nouveau style**.
+1. Dans le **Styles** , développez la liste **Styles de titre**.
+1. Clic droit sur **Styles de titre** style et choisissez **Nouveau style**.
 1. Dans le *Ajouter un style* , conservez la **Balise** name as `h2` et saisissez `chapter` dans le **Classe** champ du nom.
 1. Cliquez sur **Terminé**.
 
@@ -76,54 +75,69 @@ Dans cet exemple, nous allons personnaliser les en-têtes du niveau 1 au niveau 
    >
    >Voir [Personnalisation d’un style prédéfini ou nouveau](components-pdf-template.md#customize-style) pour ouvrir une feuille de style à des fins de personnalisation ou de modification.
 
-1. Dans le **Styles** , développez la liste **Styles d’en-tête**.
+1. Dans le **Styles** , développez la liste **Styles de titre**.
 
-1. Sélectionnez la **h1** style de la liste.
+1. Sélectionnez la variable **h1** style de la liste.
 Les propriétés du style h1 sont affichées dans le panneau Propriétés avec son aperçu.
 
    >[!NOTE]
    >
    >Le panneau Aperçu vous donne une vue en temps réel des mises à jour de style que vous appliquez à n’importe quel élément.
 
-1. Sélectionnez la **Autonnumber** .
+1. Sélectionnez la variable **Autonnumber** .
 
    Les styles que vous pouvez appliquer sur la liste de numéros automatiques sont affichés sous la propriété Autonumber .
 
 1. Définissez les propriétés suivantes :
-   * **Style**: Effectuez une sélection parmi un large éventail de styles de numérotation spécifiques aux paramètres régionaux ou génériques. Vous pouvez choisir des styles tels que Arabic-Indic, Devanagari, Géorgien, Décimal, Lower-Alpha, etc. Pour l’exemple actuel, sélectionnez `upper-alpha`.
+   * **Style**: effectuez une sélection parmi un large éventail de styles de numérotation spécifiques à un paramètre régional ou générique. Vous pouvez choisir des styles tels que Arabo-Indic, Devanagari, Géorgien, Décimal, Alpha inférieur, etc. Pour l’exemple actuel, sélectionnez `upper-alpha`.
 
-   * **Format**: Le format par défaut est défini sur `<x>`, dans laquelle la variable `x` est remplacée par le style de numérotation que vous avez sélectionné dans la propriété Style . Par exemple, si vous avez sélectionné `decimal` (1) style, puis la valeur de `x` s’incrémente automatiquement pour chaque instance du `h1` style et est égal à 2, 3, etc. Vous pouvez également ajouter du texte personnalisé dans le champ pour mettre en forme le style de titre. Par exemple, si vous souhaitez que tous les en-têtes h1 aient un préfixe `Chapter`, vous devez définir ce champ sur `Chapter <x>`.
+   * **Format**: le format par défaut est défini sur `<x>`, dans laquelle la variable `x` est remplacée par le style de numérotation que vous avez sélectionné dans la propriété Style . Par exemple, si vous avez sélectionné `decimal` (1) style, puis la valeur de `x` s’incrémente automatiquement pour chaque instance du `h1` style et est égal à 2, 3, etc. Vous pouvez également ajouter du texte personnalisé dans le champ pour mettre en forme le style de titre. Par exemple, si vous souhaitez que tous les en-têtes h1 aient un préfixe `Chapter`, vous devez définir ce champ sur `Chapter <x>`.
 
-   * **Insérer un caractère**: Si vous souhaitez ajouter un caractère spécial au format , cliquez sur Insérer un caractère (<img src="./assets/insert-chars.png" width="25">) icône. Sélectionnez le caractère que vous souhaitez ajouter au format de style, puis cliquez sur Insérer. Vous pouvez choisir différents types de caractères spéciaux dans la liste déroulante Sélectionner une catégorie . Pour notre exemple, sélectionnez le guillemet Guillemet double angle à droite dans la catégorie Ponctuation .
+   * **Insérer un caractère**: si vous souhaitez ajouter un caractère spécial au format , cliquez sur Insérer un caractère (<img src="./assets/insert-chars.png" width="25">). Sélectionnez le caractère que vous souhaitez ajouter au format de style, puis cliquez sur Insérer. Vous pouvez choisir différents types de caractères spéciaux dans la liste déroulante Sélectionner une catégorie . Pour notre exemple, sélectionnez le guillemet Guillemet double angle à droite dans la catégorie Ponctuation .
 
-      <img src="./assets/insert-special-chars.png" width="400">
+     <img src="./assets/insert-special-chars.png" width="400">
 
 
-   * **Commencer la numérotation à partir de**: Si vous souhaitez que la numérotation commence à partir d’un nombre spécifique, indiquez cette valeur. Dans notre exemple, conservez la valeur par défaut 1.
+   * **Commencer la numérotation à partir de**: si vous souhaitez que la numérotation commence à partir d’un nombre spécifique, indiquez cette valeur. Dans notre exemple, conservez la valeur par défaut 1.
 
-   * **Retrait**: Si vous souhaitez mettre l’en-tête en retrait, vous devez définir la valeur Retrait . Dans notre exemple, définissez-le sur 0 px.
+   * **Retrait**: si vous souhaitez mettre l’en-tête en retrait, vous devez définir la valeur Retrait . Dans notre exemple, définissez-le sur 0 px.
 
-      >[!NOTE]
-      >
-      >Vous pouvez saisir la valeur en px (pixels), pt (points), rem, em, % (pourcentage) ou en unités (pouces).
+     >[!NOTE]
+     >
+     >Vous pouvez saisir la valeur en px (pixels), pt (points), rem, em, % (pourcentage) ou en unités (pouces).
 
-   * **Largeur du préfixe**: Il s’agit de la zone occupée par le format de numéro automatique. Elle est automatiquement définie sur une taille pouvant facilement s’adapter au format de style sélectionné. Si vous souhaitez augmenter la taille, vous pouvez remplacer la valeur par défaut.
+   * **Largeur du préfixe**: il s’agit de la zone occupée par le format de numéro automatique. Elle est automatiquement définie sur une taille pouvant facilement s’adapter au format de style sélectionné. Si vous souhaitez augmenter la taille, vous pouvez remplacer la valeur par défaut.
 
-      Lorsque vous définissez cette valeur manuellement, essayez de modifier les autres propriétés qui auront un impact sur la largeur. Par exemple, modifiez la taille de police, le format avec préfixe (Chapitre) ou un suffixe (:), définissez la valeur maximale dans la variable *Commencer la numérotation à partir de* , ainsi que les différentes propriétés de police à afficher avec une taille optimale.
+     Lorsque vous définissez cette valeur manuellement, essayez de modifier les autres propriétés qui auront un impact sur la largeur. Par exemple, modifiez la taille de la police, le format avec préfixe (Chapitre) ou un suffixe (:), définissez la valeur maximale dans la variable *Commencer la numérotation à partir de* , ainsi que les différentes propriétés de police à afficher avec une taille optimale.
 
-      Dans notre exemple, conservez la valeur par défaut.
+     Dans notre exemple, conservez la valeur par défaut.
 
-   * **Espacement**: Spécifiez l’espacement horizontal et vertical. Dans notre exemple, conservez les valeurs par défaut.
+   * **Espacement**: spécifiez l’espacement horizontal et vertical. Dans notre exemple, conservez les valeurs par défaut.
 
-      Avec les personnalisations ci-dessus, le style est personnalisé comme illustré ci-dessous :
+     Avec les personnalisations ci-dessus, le style est personnalisé comme illustré ci-dessous :
 
-      <img src="./assets/h1-style-custmization.png" width="500">
+     <img src="./assets/h1-style-custmization.png" width="500">
 
-   * **Appliquer la mise en forme à**: Les propriétés situées sous la catégorie Nombre automatique vous aideront à définir le style de numérotation. Pour appliquer d’autres personnalisations au style de numérotation ou au contenu de votre format d’en-tête, vous pouvez choisir Numérotation ou Paragraphe dans ce champ. Si vous choisissez Numérotation, toutes les modifications apportées aux catégories Police, Bordure, Disposition et autres s’appliqueront uniquement au style de numérotation du titre. Toutefois, si vous choisissez Paragraphe, les modifications seront appliquées au contenu de l’en-tête et non au style de numérotation.
+   * **Appliquer la mise en forme à**: les propriétés de la catégorie Numéro automatique vous aideront à définir le style de numérotation. Pour appliquer d’autres personnalisations au style de numérotation ou au contenu de votre format d’en-tête, vous pouvez choisir Numérotation ou Paragraphe dans ce champ. Si vous choisissez Numérotation, toutes les modifications apportées aux catégories Police, Bordure, Disposition et autres s’appliqueront uniquement au style de numérotation du titre. Toutefois, si vous choisissez Paragraphe, les modifications seront appliquées au contenu de l’en-tête et non au style de numérotation.
 
    Utilisez les paramètres suivants pour générer une sortie affichée dans la capture d’écran suivante :
 
-   |**Style d’en-tête**|**Propriété**|**Valeur**|**Commentaires supplémentaires**| | : | : | : | : | |h1|Style|Decimal|Ces propriétés se trouvent sous la catégorie Nombre automatique . | ||Format|`Capter <x>:`|| ||Largeur du préfixe|160 px| ||Police > Alignement du texte|Gauche|Assurez-vous que l’option Appliquer le formatage à est définie sur Numérotation| |h2|Style|Décimal|Ces propriétés se trouvent sous la catégorie Nombre automatique . | ||Format|`Section <x>:`|| ||Largeur du préfixe|125 px| ||Police > Alignement du texte|Gauche|Assurez-vous que l’option Appliquer le formatage à est définie sur Numérotation| |h3|Style|Decimal|Ces propriétés se trouvent sous la catégorie Nombre automatique . | ||Insérer un niveau|2| ||Format|`Section <2>.<x>:`|| ||Largeur du préfixe|125 px| ||Police > Alignement du texte|Gauche|Assurez-vous que l’option Appliquer le formatage à est définie sur Numérotation| ||
+   | **Style de titre** | **Propriété** | **Valeur**. | **Commentaires supplémentaires** |
+   | :- | :- | :- | :- |
+   | h1 | Style | Décimale | Ces propriétés se trouvent dans la catégorie Numéro automatique . |
+   |  | Format | `Capter <x>:` |  |
+   |  | Largeur du préfixe | 160 px |  |
+   |  | Police > Alignement du texte | Gauche | Assurez-vous que l’option Appliquer la mise en forme à est définie sur Numérotation. |
+   | h2 | Style | Décimale | Ces propriétés se trouvent dans la catégorie Numéro automatique . |
+   |  | Format | `Section <x>:` |  |
+   |  | Largeur du préfixe | 125 px |  |
+   |  | Police > Alignement du texte | Gauche | Assurez-vous que l’option Appliquer la mise en forme à est définie sur Numérotation. |
+   | h3 | Style | Décimale | Ces propriétés se trouvent dans la catégorie Numéro automatique . |
+   |  | Niveau d’insertion | 2 |  |
+   |  | Format | `Section <2>.<x>:` |  |
+   |  | Largeur du préfixe | 125 px |  |
+   |  | Police > Alignement du texte | Gauche | Assurez-vous que l’option Appliquer la mise en forme à est définie sur Numérotation. |
+   |  |
 
    <img src="./assets/auto-number-output.png" width="500">
 
@@ -131,7 +145,7 @@ Les propriétés du style h1 sont affichées dans le panneau Propriétés avec s
 
 Un style de paragraphe peut être créé pour appliquer une mise en forme spéciale à un paragraphe entier. Cependant, en utilisant la pseudo-classe, vous pouvez appliquer un style à une partie spécifique du texte. Dans l’exemple suivant, nous allons créer un style de paragraphe pour utiliser le style de casquette déroulante.
 
-### Création du style de casquette de dépôt {#drop-cap-style}
+### Création du style de la casquette de dépôt {#drop-cap-style}
 
 Un style de casquette (ou de majuscule perdue) est utilisé dans les magazines et les documents littéraires dans lesquels le premier caractère d’un paragraphe ou d’une section reçoit un style spécial. Vous pouvez obtenir le même effet à l’aide de la fonction Publication de PDF natif .
 
@@ -140,13 +154,14 @@ Dans l’exemple suivant, nous allons créer un style de casquette de dépôt :
 1. Ouvrez la feuille de style requise pour la modifier.
 
    >[!NOTE]
+   >
    Voir [Personnalisation d’un style prédéfini ou nouveau](components-pdf-template.md#customize-style) pour ouvrir une feuille de style à des fins de personnalisation ou de modification.
 
 1. Dans le **Styles** , développez la liste **Styles de paragraphe**.
 
 1. Cliquez avec le bouton droit de la souris sur le **Style de paragraphe** et choisissez **Nouveau style**.
 
-1. Dans le *Ajouter un style* , conservez la **Balise** nom sous la forme p et dans **Pseudo** **Classe** champ, sélectionnez `::first-letter`.
+1. Dans le *Ajouter un style* , conservez la **Balise** nom sous la forme p et dans la fonction **Pseudo** **Classe** champ, sélectionnez `::first-letter`.
 
 1. Cliquez sur **Terminé**.
 
@@ -154,9 +169,9 @@ Dans l’exemple suivant, nous allons créer un style de casquette de dépôt :
 
 1. Sélectionner `::first-letter` sous le style p, puis définissez les propriétés suivantes :
 
-   * **Police**: Définissez la police souhaitée pour la première lettre de votre paragraphe. Dans notre exemple, définissez la famille de polices sur cursive, le poids de la police sur 500, la taille de la police sur 30 pt et choisissez une couleur de police.
+   * **Police**: définissez la police souhaitée pour la première lettre de votre paragraphe. Dans notre exemple, définissez la famille de polices sur cursive, le poids de la police sur 500, la taille de la police sur 30 pt et choisissez une couleur de police.
 
-   * **Disposition**: Définissez l’alignement vertical du texte autour de la casquette de dépôt. Dans notre exemple, nous allons définir l’alignement vertical sur le bas.
+   * **Disposition**: définissez l’alignement vertical du texte autour de la casquette de dépôt. Dans notre exemple, nous allons définir l’alignement vertical sur le bas.
 
 Comme la variable `p` est mappée avec la balise `<p>` dans DITA, vous n’avez pas besoin d’ajouter explicitement ce style à l’aide de l’attribut outputclass . Où que vous soyez dans votre contenu a `<p>` est utilisé, le style de la casquette de dépôt est automatiquement appliqué. Dans la capture d’écran suivante, le titre du chapitre, la brève description et les éléments de liste de définitions n’ont pas été formatés avec le style de casquette déroulante. Seul le style de paragraphe est formaté avec le style de la casquette déroulante :
 
@@ -175,6 +190,7 @@ Dans l’exemple suivant, nous allons créer un style de caractères intégré :
 1. Ouvrez la feuille de style requise pour la modifier.
 
    >[!NOTE]
+   >
    Voir [Personnalisation d’un style prédéfini ou nouveau](components-pdf-template.md#customize-style) pour ouvrir une feuille de style à des fins de personnalisation ou de modification.
 
 1. Dans le **Styles** , développez la liste **Styles de caractère**.
@@ -191,14 +207,15 @@ Dans l’exemple suivant, nous allons créer un style de caractères intégré :
 
 1. Sélectionner `span.BoldItalic` de la **Style de caractère** et définissez les propriétés suivantes :
 
-   * **Police**: Toutes les propriétés liées aux polices peuvent être personnalisées à partir de cette section. Par défaut, certaines polices sont regroupées avec le produit. Vous pouvez choisir la police de votre choix pour le style de caractère. Dans notre exemple, définissez la famille de polices sur *Serif,* et sélectionnez *Gras* et *Italique* dans la propriété Font Style. Vous pouvez également personnaliser d’autres propriétés de police, telles que le poids de la police (comme le gras ou le briquet), la décoration du texte (comme le soulignement ou le surlignage), la taille de la police, la couleur de la police, l’alignement du texte, etc.
+   * **Police**: toutes les propriétés relatives aux polices peuvent être personnalisées à partir de cette section. Par défaut, certaines polices sont regroupées avec le produit. Vous pouvez choisir la police de votre choix pour le style de caractère. Dans notre exemple, définissez la famille de polices sur *Serif,* et sélectionnez *Gras* et *Italique* dans la propriété Font Style. Vous pouvez également personnaliser d’autres propriétés de police, telles que le poids de la police (comme le gras ou le briquet), la décoration du texte (comme le soulignement ou le surlignage), la taille de la police, la couleur de la police, l’alignement du texte, etc.
 
-      >[!NOTE]
-      Vous pouvez également ajouter des polices à votre modèle, qui sont stockées dans la section Ressources de votre modèle. Pour plus d’informations sur l’ajout de polices et l’utilisation des ressources, voir [Utilisation des ressources](components-pdf-template.md#work-with-resources).
+     >[!NOTE]
+     >
+     Vous pouvez également ajouter des polices à votre modèle, qui sont stockées dans la section Ressources de votre modèle. Pour plus d’informations sur l’ajout de polices et l’utilisation des ressources, voir [Utilisation des ressources](components-pdf-template.md#work-with-resources).
 
-   * **Disposition**: Vous pouvez définir les propriétés liées à la mise en page, telles que Hauteur et Largeur, Marge, Marge intérieure, Alignement, etc.
+   * **Disposition**: vous pouvez définir les propriétés liées à la mise en page, telles que Hauteur et Largeur, Marge, Marge intérieure, Alignement, etc.
 
-   * **Contexte**: Les propriétés Background permettent de formater la couleur d’arrière-plan d’un style particulier. Vous pouvez définir la couleur ou l’image d’arrière-plan de n’importe quel style.
+   * **Contexte**: les propriétés Background permettent de formater la couleur d’arrière-plan d’un style particulier. Vous pouvez définir la couleur ou l’image d’arrière-plan de n’importe quel style.
 
 Une fois que vous avez créé le style de caractère intégré, vous devez l’appliquer dans votre contenu. Pour appliquer le style de code intégré, accédez à la vue source et ajoutez le `outputclass` dans le contenu souhaité :
 
@@ -217,17 +234,18 @@ Dans l’exemple suivant, nous allons personnaliser le style de liste numéroté
 1. Ouvrez la feuille de style requise pour la modifier.
 
    >[!NOTE]
+   >
    Voir [Personnalisation d’un style prédéfini ou nouveau](components-pdf-template.md#customize-style) pour ouvrir une feuille de style à des fins de personnalisation ou de modification.
 
 1. Dans le **Styles** , développez la liste **Styles de liste**.
 
-1. Sélectionnez la **ol** style de la liste.
+1. Sélectionnez la variable **ol** style de la liste.
 
    Les propriétés du style ol sont affichées dans le panneau Propriétés avec son aperçu.
 
    <img src="./assets/list-style-default.png" width="500">
 
-1. Sélectionnez la **Formatage avancé** .
+1. Sélectionnez la variable **Formatage avancé** .
 
    Un message de confirmation s’affiche.
 
@@ -235,37 +253,37 @@ Dans l’exemple suivant, nous allons personnaliser le style de liste numéroté
 
    Les propriétés suivantes sont disponibles par défaut :
 
-   * **Niveau**: Par défaut, il existe 6 niveaux de listes numérotées. Le niveau que vous sélectionnez dans cette liste déroulante contrôle les changements de style au niveau sélectionné et à tous les niveaux suivants. Par exemple, si vous sélectionnez le niveau 4, toutes les modifications de style que vous appliquez sont définies sur les niveaux 4, 5 et 6.
+   * **Niveau**: par défaut, il existe 6 niveaux de listes numérotées. Le niveau que vous sélectionnez dans cette liste déroulante contrôle les changements de style au niveau sélectionné et à tous les niveaux suivants. Par exemple, si vous sélectionnez le niveau 4, toutes les modifications de style que vous appliquez sont définies sur les niveaux 4, 5 et 6.
 
-   * **Type de style de liste**: Vous pouvez choisir plusieurs styles de numérotation de listes. La liste contient des styles de numérotation spécifiques aux paramètres régionaux et génériques utilisés pour créer une liste numérotée. Certains types de listes sont arabe, cambodgien, Devanagari, éthiopien, hangul, hébreu, japonais, coréen, chinois simple, ourdou, et plus encore.
+   * **Type de style de liste**: vous pouvez choisir un certain nombre de styles de numérotation de listes. La liste contient des styles de numérotation spécifiques aux paramètres régionaux et génériques utilisés pour créer une liste numérotée. Certains types de listes sont arabe, cambodgien, Devanagari, éthiopien, hangul, hébreu, japonais, coréen, chinois simple, ourdou, et plus encore.
 
    Vous pouvez également utiliser les propriétés de formatage avancé suivantes :
 
-   * **Format du nombre**: Le format par défaut est défini sur `<x>`, dans laquelle la variable `x` est remplacée par le style de numérotation que vous avez sélectionné dans la propriété Type de style de liste. Par exemple, si vous avez sélectionné `decimal` (1) style, puis la valeur de `x` s’incrémente automatiquement pour chaque instance de l’élément de liste et prend la forme 2, 3, etc. Vous pouvez également ajouter du texte personnalisé dans le champ pour mettre en forme le style de la liste. Par exemple, si vous souhaitez que tous les styles de liste de premier niveau aient un suffixe &quot;`)`&quot;, vous devez définir ce champ pour le style de liste de premier niveau sur &quot;`<x>)`&quot;.
+   * **Format du nombre**: le format par défaut est défini sur `<x>`, dans laquelle la variable `x` est remplacée par le style de numérotation que vous avez sélectionné dans la propriété Type de style de liste. Par exemple, si vous avez sélectionné `decimal` (1) style, puis la valeur de `x` s’incrémente automatiquement pour chaque instance de l’élément de liste et prend la forme 2, 3, etc. Vous pouvez également ajouter du texte personnalisé dans le champ pour mettre en forme le style de la liste. Par exemple, si vous souhaitez que tous les styles de liste de premier niveau aient un suffixe &quot;`)`&quot;, vous devez définir ce champ pour le style de liste de premier niveau sur &quot;`<x>)`&quot;.
 
-   * **Insérer un caractère**: Si vous souhaitez ajouter un caractère spécial au format numérique, cliquez sur Insérer un caractère (<img src="./assets/insert-chars.png" width="25">) icône. Sélectionnez le caractère que vous souhaitez ajouter au format de style, puis cliquez sur Insérer. Vous pouvez choisir différents types de caractères spéciaux dans la liste déroulante Sélectionner une catégorie .
+   * **Insérer un caractère**: si vous souhaitez ajouter un caractère spécial au format numérique, cliquez sur Insérer un caractère (<img src="./assets/insert-chars.png" width="25">). Sélectionnez le caractère que vous souhaitez ajouter au format de style, puis cliquez sur Insérer. Vous pouvez choisir différents types de caractères spéciaux dans la liste déroulante Sélectionner une catégorie .
 
-   * **Niveau d’insertion**: Vous pouvez inclure le nombre de n’importe quel niveau précédent au format numérique. Par exemple, si vous souhaitez inclure le format de numéro du 5e niveau dans votre format de numéro du 6e niveau, choisissez 5 dans la liste déroulante Insérer un niveau . Notez que la liste déroulante Insérer un niveau affiche uniquement le nombre de niveaux précédents et non le niveau suivant. Par exemple, lorsque vous êtes au niveau 3, la liste Insérer un niveau n’affiche que les niveaux 1 et 2.
+   * **Niveau d’insertion**: vous pouvez inclure le nombre de n’importe quel niveau précédent au format de votre nombre. Par exemple, si vous souhaitez inclure le format de numéro du 5e niveau dans votre format de numéro du 6e niveau, choisissez 5 dans la liste déroulante Insérer un niveau . Notez que la liste déroulante Insérer un niveau affiche uniquement le nombre de niveaux précédents et non le niveau suivant. Par exemple, lorsque vous êtes au niveau 3, la liste Insérer un niveau n’affiche que les niveaux 1 et 2.
 
-      <img src="./assets/list-insert-level.png" width="400">
+     <img src="./assets/list-insert-level.png" width="400">
 
-      Vous pouvez également modifier le format numérique pour présenter les valeurs de liste selon vos besoins. Par exemple, lorsque vous utilisez un style de numérotation imbriqué pour le niveau 3, vous pouvez le formater en &quot;`<2>.<x>))`&quot;. Elle affiche la liste numéro 2, suivie d’un point, puis la liste numéro 3, et enfin deux crochets, tels que `2.3))`.
+     Vous pouvez également modifier le format numérique pour présenter les valeurs de liste selon vos besoins. Par exemple, lorsque vous utilisez un style de numérotation imbriqué pour le niveau 3, vous pouvez le formater en &quot;`<2>.<x>))`&quot;. Elle affiche la liste numéro 2, suivie d’un point, puis la liste numéro 3, et enfin deux crochets, tels que `2.3))`.
 
-   * **Retrait**: Si vous souhaitez mettre la liste en retrait, vous devez définir la valeur Retrait . Toutes les modifications apportées au retrait peuvent être examinées dans le panneau Aperçu et ajustées.
+   * **Retrait**: si vous souhaitez mettre la liste en retrait, vous devez définir la valeur Retrait . Toutes les modifications apportées au retrait peuvent être examinées dans le panneau Aperçu et ajustées.
 
-      >[!NOTE]
-      Vous pouvez saisir la valeur en px (pixels), pt (points), rem, em, % (pourcentage) ou en unités (pouces).
+     >[!NOTE]
+     >
+     Vous pouvez saisir la valeur en px (pixels), pt (points), rem, em, % (pourcentage) ou en unités (pouces).
 
-   * **Largeur du préfixe**: Il s’agit de la zone occupée par le format numérique. Il est automatiquement défini sur une taille pouvant facilement s’adapter au format sélectionné. Si vous souhaitez augmenter la taille, vous pouvez remplacer la valeur par défaut.
+   * **Largeur du préfixe**: il s’agit de la zone occupée par le format numérique. Il est automatiquement défini sur une taille pouvant facilement s’adapter au format sélectionné. Si vous souhaitez augmenter la taille, vous pouvez remplacer la valeur par défaut.
 
-      Lorsque vous définissez cette valeur manuellement, essayez de modifier les autres propriétés qui auront un impact sur la largeur. Par exemple, modifiez la taille de la police, le format avec un préfixe ou un suffixe et les différentes propriétés de la police pour obtenir une taille optimale.
+     Lorsque vous définissez cette valeur manuellement, essayez de modifier les autres propriétés qui auront un impact sur la largeur. Par exemple, modifiez la taille de la police, le format avec un préfixe ou un suffixe et les différentes propriétés de la police pour obtenir une taille optimale.
 
-   * **Espacement**: Spécifiez l’espacement horizontal entre le format du numéro de liste et le contenu. L’espacement vertical contrôle l’écart entre les deux éléments de la liste.
+   * **Espacement**: spécifiez l’espacement horizontal entre le format du numéro de liste et le contenu. L’espacement vertical contrôle l’écart entre les deux éléments de la liste.
 
-      La capture d’écran suivante montre la liste classée personnalisée pour chaque niveau :
+     La capture d’écran suivante montre la liste classée personnalisée pour chaque niveau :
 
-      <img src="./assets/list-number-format-final.png" width="500">
-
+     <img src="./assets/list-number-format-final.png" width="500">
 
 ## Utilisation du style de tableau {#table-styles}
 
@@ -276,9 +294,10 @@ Dans l’exemple suivant, nous voyons comment créer un style de tableau et les 
 1. Ouvrez la feuille de style requise pour la modifier.
 
    >[!NOTE]
+   >
    Voir [Personnalisation d’un style prédéfini ou nouveau](components-pdf-template.md#customize-style) pour ouvrir une feuille de style à des fins de personnalisation ou de modification.
 
-1. Dans le **Styles** , cliquez avec le bouton droit de la souris sur la liste **Style de tableau** et choisissez **Nouveau style**.
+1. Dans le **Styles** , cliquez avec le bouton droit sur la liste **Style de tableau** et choisissez **Nouveau style**.
 
 1. Dans le *Ajouter un style* , conservez la **Balise** name as `table` et saisissez `double-border` dans le **Classe** champ du nom.
 
@@ -288,27 +307,29 @@ Dans l’exemple suivant, nous voyons comment créer un style de tableau et les 
 
 1. Sélectionner `table.double-border` de la **Styles de tableau** et définissez les propriétés suivantes :
 
-   * **Appliquer la mise en forme à**: Vous pouvez choisir d’appliquer la mise en forme du style à l’ensemble du tableau, aux lignes ou colonnes impaires/pair ou à la première/dernière ligne ou colonne.
+   * **Appliquer la mise en forme à**: vous pouvez choisir d’appliquer la mise en forme du style à l’ensemble du tableau, aux lignes ou colonnes impaires/paires, ou à la première/dernière ligne ou colonne.
 
-      >[!NOTE]
-      Les paramètres suivants sont disponibles sous la variable **Général** lors de la section **Appliquer la mise en forme à** est défini sur **Tableau entier**.
+     >[!NOTE]
+     >
+     Les paramètres suivants sont disponibles sous la variable **Général** lors de **Appliquer la mise en forme à** est défini sur **Tableau entier**.
 
-   * **Habillage de texte**: Choisissez comment placer du texte autour du tableau. Cela s’avère utile lorsque le tableau se trouve dans un autre élément de niveau bloc et qu’il doit être rendu avec d’autres contenus dans l’élément de bloc. Les options d’encapsulage sont les suivantes : *left* ou *right* aligné ou *none*.
+   * **Habillage de texte**: choisissez comment placer du texte autour du tableau. Cela s’avère utile lorsque le tableau se trouve dans un autre élément de niveau bloc et qu’il doit être rendu avec d’autres contenus dans l’élément de bloc. Les options d’encapsulage sont les suivantes : *left* ou *right* aligné ou *none*.
 
-   * **Effondrement de la bordure**: Sélectionnez l’aspect de la bordure du tableau. Si vous sélectionnez Réduire, une seule ligne de bordure est tracée entre les cellules du tableau. Toutefois, pour un style distinct, la bordure est visible autour de chaque cellule avec une marge intérieure supplémentaire.
+   * **Effondrement de la bordure**: sélectionnez l’aspect de la bordure du tableau. Si vous sélectionnez Réduire, une seule ligne de bordure est tracée entre les cellules du tableau. Toutefois, pour un style distinct, la bordure est visible autour de chaque cellule avec une marge intérieure supplémentaire.
 
-      <img src="./assets/table-style-collapse-separate.png" width="500">
+     <img src="./assets/table-style-collapse-separate.png" width="500">
 
-   * **Interlettrage**: Ce paramètre est disponible uniquement lorsque l’option Effacement de la bordure est définie sur Séparer. Ce paramètre permet d’indiquer l’espacement vertical et horizontal entre les bordures des cellules.
+   * **Interlettrage**: ce paramètre est disponible uniquement lorsque l’option Effacement de la bordure est définie sur Séparer. Ce paramètre permet d’indiquer l’espacement vertical et horizontal entre les bordures des cellules.
 
-      <img src="./assets/table-border-spacing.png" width="500">
+     <img src="./assets/table-border-spacing.png" width="500">
 
-      >[!NOTE]
-      Les paramètres suivants sont disponibles sous la variable **Cellule** lors de la section **Appliquer la mise en forme à** est défini sur **Tableau entier**.
+     >[!NOTE]
+     >
+     Les paramètres suivants sont disponibles sous la variable **Cellule** lors de **Appliquer la mise en forme à** est défini sur **Tableau entier**.
 
-   * **Marge intérieure**: Spécifiez la marge intérieure entre les cellules du tableau. Vous pouvez spécifier différentes valeurs de remplissage pour les côtés supérieur, inférieur, gauche et droit.
+   * **Marge intérieure**: spécifiez la marge intérieure entre les cellules du tableau. Vous pouvez spécifier différentes valeurs de remplissage pour les côtés supérieur, inférieur, gauche et droit.
 
-   * **Alignement vertical**: Définissez l’alignement vertical du contenu des cellules. Les options disponibles sont les suivantes : Haut, Milieu et Bas.
+   * **Alignement vertical**: spécifiez l’alignement vertical du contenu des cellules. Les options disponibles sont les suivantes : Haut, Milieu et Bas.
 
    * **Bordure, style, couleur, largeur, rayon :** Spécifiez les propriétés liées aux bordures. Vous pouvez choisir de n’avoir des bordures que sur des côtés spécifiques, comme Gauche ou Droite. Le style de bordure répertorie les styles de bordure disponibles, tels que Plein, Barré, Double ligne, etc. Définissez la couleur de la bordure à l’aide de la palette de couleurs. Vous pouvez spécifier la largeur de la bordure en px, pt, rem, em, % et en unités. Le rayon définit la courbe pour faire des coins circulaires.
 
@@ -320,7 +341,7 @@ Dans l’exemple suivant, nous voyons comment créer un style de tableau et les 
 
 ## Utilisation d’autres styles {#other-styles}
 
-Si vous travaillez avec du contenu structuré (DITA), vous remarquerez que presque tous les éléments DITA ont un mappage de style dans la feuille de style par défaut. Par exemple, un `<shortdesc>` Le style de l’élément est défini sous **Autre style** > **.shortdesc** définition de style. Vous pouvez facilement personnaliser l’un de ces styles et ils sont automatiquement appliqués dans la sortie du PDF générée à partir de votre contenu structuré. Cela signifie que, contrairement aux autres styles personnalisés, vous n’avez pas besoin d’ajouter une `outputclass` sur le contenu pour ces styles.
+Si vous travaillez avec du contenu structuré (DITA), vous remarquerez que presque tous les éléments DITA ont un mappage de style dans la feuille de style par défaut. Par exemple, un `<shortdesc>` Le style de l’élément est défini sous **Autre style** > **.shortdesc** définition de style. Vous pouvez facilement personnaliser l’un de ces styles et ils sont automatiquement appliqués dans la sortie du PDF générée à partir de votre contenu structuré. Cela signifie que, contrairement à d’autres styles personnalisés, vous n’avez pas besoin d’ajouter une `outputclass` sur le contenu pour ces styles.
 
 Si vous souhaitez créer une définition de style pour tout élément qui n’est pas disponible par défaut ou si vous disposez d’un élément personnalisé, vous pouvez facilement le créer dans la feuille de style. Le seul point à prendre en compte est de créer le style avec le même nom que le nom de l’élément structuré.
 
@@ -329,6 +350,7 @@ Dans l’exemple suivant, nous allons créer un titre de fenêtre (`wintitle`) s
 1. Ouvrez la feuille de style requise pour la modifier.
 
    >[!NOTE]
+   >
    Voir [Personnalisation d’un style prédéfini ou nouveau](components-pdf-template.md#customize-style) pour ouvrir une feuille de style à des fins de personnalisation ou de modification.
 
 1. Dans le **Styles** list, expand **Autres styles**.

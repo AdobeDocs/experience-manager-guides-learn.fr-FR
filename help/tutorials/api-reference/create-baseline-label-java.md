@@ -1,13 +1,12 @@
 ---
 title: API Java à utiliser avec les lignes de base et les libellés
 description: Découvrez les API Java à utiliser avec les lignes de base et les libellés
-source-git-commit: fad5049962f258bbe59c7d172436d82b3d6cd68f
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
-
 
 # API Java à utiliser avec les lignes de base et les libellés {#id175UB30E05Z}
 
@@ -50,7 +49,7 @@ LinkedHashMap indirectContext)
 throws GuidesApiException
 ```
 
-**Paramètres**: |Nom|Type|Description| |—|—|—| |`session`|javax.jcr.Session|Une session JCR valide. La session utilisateur doit disposer d’autorisations de lecture et d’écriture pour le mappage DITA et d’autorisations de lecture pour tous les fichiers de référence inclus dans la ligne de base.| |`sourcePath`|Chaîne|Chemin absolu du fichier de mappage DITA dans AEM référentiel.| |`baselineTitle`|Chaîne|Titre unique de la ligne de base.| |`label`|Chaîne|Sélectionnez la version d’une rubrique pour laquelle le libellé indiqué est appliqué.| |`directContext`|LinkedHashMap&lt;string object=&quot;&quot;>|Les configurations sur la base desquelles la rubrique référencée directement \(content\) est sélectionnée, l’ordre mentionné dans la carte est suivi pour résoudre une version. <br> Si, après une itération sur toutes les clés du mappage, aucune version n’est trouvée, le processus de création de ligne de base échoue. <br> Si HashMap est vide \(envoyez une carte vide et non nulle pour la valeur par défaut\), elle est renseignée par défaut comme suit : <br>`directContext.put("label", label);` <br> `directContext.put("latest", true);` <br> Si vous souhaitez que la création de la ligne de base ne sélectionne que la version d’un libellé donné et échoue si cette version n’existe pas, placez la variable `label` et le libellé sur lequel vous souhaitez créer la ligne de base.| |`indirectContext`|LinkedHashMap&lt;string object=&quot;&quot;>|Les configurations sur la base desquelles la rubrique référencée indirectement \(contenu référencé\) est sélectionnée, l’ordre mentionné dans la carte est suivi pour résoudre une version. <br> Si, après une itération sur toutes les clés du mappage, aucune version n’est trouvée, le processus de création de ligne de base échoue. <br> Si HashMap est vide \(envoyez une carte vide et non nulle pour la carte par défaut\), par défaut, elle est renseignée comme suit : <br>`indirectContext.put("label", label);` <br>`indirectContext.put "pickAutomatically", null);` <br> Si vous souhaitez qu’il s’agisse de la dernière version au lieu de récupérer automatiquement une version, remplacez : <br>`indirectContext.put("pickAutomatically", null);` <br> _avec:_ <br>`indirectContext.put("latest", true)`|
+**Paramètres**: |Nom|Type|Description| |—|—|—| |`session`|javax.jcr.Session|Une session JCR valide. La session utilisateur doit disposer d’autorisations de lecture et d’écriture pour le mappage DITA et d’autorisations de lecture pour tous les fichiers de référence inclus dans la ligne de base.| |`sourcePath`|Chaîne|Chemin absolu du fichier de mappage DITA dans AEM référentiel.| |`baselineTitle`|Chaîne|Titre unique de la ligne de base.| |`label`|Chaîne|Sélectionnez la version d’une rubrique pour laquelle le libellé indiqué est appliqué.| |`directContext`|LinkedHashMap&lt;string object=&quot;&quot;>|Les configurations sur la base desquelles la rubrique référencée directement \(content\) est sélectionnée, l’ordre mentionné dans la carte est suivi pour résoudre une version. <br> Si, après une itération sur toutes les clés du mappage, aucune version n’est trouvée, le processus de création de ligne de base échoue. <br> Si HashMap est vide \(envoyez une carte vide et non nulle pour la valeur par défaut\), elle est renseignée par défaut comme suit : <br>`directContext.put("label", label);` <br> `directContext.put("latest", true);` <br> Si vous souhaitez que la création de la ligne de base ne sélectionne que la version d’un libellé donné et échoue si cette version n’existe pas, placez la variable `label` et le libellé sur lequel vous souhaitez créer la ligne de base.| |`indirectContext`|LinkedHashMap&lt;string object=&quot;&quot;>|Les configurations sur la base desquelles la rubrique référencée indirectement \(contenu référencé\) est sélectionnée, l’ordre mentionné dans la carte est suivi pour résoudre une version. <br> Si, après une itération sur toutes les clés du mappage, aucune version n’est trouvée, le processus de création de ligne de base échoue. <br> Si HashMap est vide \(envoyez une carte vide et non nulle pour la carte par défaut\), par défaut, elle est renseignée comme suit : <br>`indirectContext.put("label", label);` <br>`indirectContext.put "pickAutomatically", null);` <br> Si vous souhaitez qu’il s’agisse de la dernière version au lieu de récupérer automatiquement une version, remplacez : <br>`indirectContext.put("pickAutomatically", null);` <br> _par :_ <br>`indirectContext.put("latest", true)`|
 
 **Renvoie**: nom de la ligne de base, qui est le nom de noeud de la ligne de base dans le référentiel JCR. Le titre de la ligne de base nouvellement créée s’affiche pour l’utilisateur sur la page Ligne de base pour le mappage DITA.
 
@@ -109,4 +108,3 @@ String label) throws GuidesApiException
 **Renvoie**: la carte avec *key:value* paire de `path:deletedlabels` pour tous les fichiers de la ligne de base.
 
 **Exception**: renvoie ``RepositoryException`, `VersionException`, `Exception``.
-

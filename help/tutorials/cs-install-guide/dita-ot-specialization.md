@@ -1,13 +1,12 @@
 ---
 title: Utilisation de la spécialisation DITA-OT et DITA personnalisée
 description: Découvrez comment utiliser la spécialisation DITA-OT et DITA personnalisée
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '1697'
 ht-degree: 0%
 
 ---
-
 
 # Utilisation de la spécialisation DITA-OT et DITA personnalisée {#id181GAJ0005Z}
 
@@ -17,7 +16,7 @@ Si vous souhaitez traiter les paramètres Ant lors de la publication d’une sor
 
 >[!NOTE]
 >
-> AEM Guides est fourni avec DITA-OT version 3.3.2. Cependant, AEM Guides prend en charge DITA-OT version 1.7 et ultérieure. Pour obtenir la liste complète des versions de DITA-OT, voir [Versions DITA-OT](http://www.dita-ot.org/download).
+> AEM Guides est fourni avec la version 3.3.2 de DITA-OT. Toutefois, AEM Guides prend en charge DITA-OT version 1.7 et ultérieure. Pour obtenir la liste complète des versions de DITA-OT, voir [Versions DITA-OT](http://www.dita-ot.org/download).
 
 >[!TIP]
 >
@@ -45,7 +44,7 @@ Effectuez les étapes suivantes pour charger le module externe DITA-OT personnal
 
    - Exécutez l’intégrateur \(pour installer le module externe personnalisé\) sur un système d’exploitation Mac/Linux afin d’éviter des problèmes de séparateurs de fichiers. Comme Windows et Linux OS ont des séparateurs de fichiers différents, le module externe intégré à Mac/Linux OS est compatible avec la configuration de Windows et Linux.
    - Assurez-vous que la variable `DITA-OT.ZIP` contient un dossier nommé &quot;DITA-OT&quot; qui contient tous les modules externes et fichiers appropriés.
-   - Vérifiez que `DITA-OT.ZIP` Le fichier que vous créez est de mimeType : &quot;nt:file&quot; \(correspond au type Principal du fichier ZIP lors de son téléchargement vers AEM\). Utilisez un outil WebDAV ou un déploiement de code pour télécharger ce fichier ZIP vers le chemin d’accès souhaité dans AEM. \(N’utilisez pas AEM gestionnaire de packages pour déployer ce fichier ZIP, car ce fichier ZIP n’est pas un module de contenu AEM mais simplement un fichier d’archive.\)
+   - Vérifiez que `DITA-OT.ZIP` Le fichier que vous créez est de type mime : &quot;nt:file&quot; \(il correspond au type principal du fichier ZIP lors de son téléchargement vers AEM\). Utilisez un outil WebDAV ou un déploiement de code pour télécharger ce fichier ZIP vers le chemin d’accès souhaité dans AEM. \(N’utilisez pas AEM gestionnaire de packages pour déployer ce fichier ZIP, car ce fichier ZIP n’est pas un module de contenu AEM mais simplement un fichier d’archive.\)
 
    >[!NOTE]
    >
@@ -64,7 +63,7 @@ Effectuez les étapes suivantes pour charger le module externe DITA-OT personnal
    | **Propriétés du profil** |
    | Nom du profil | Attribuez un nom unique à ce profil. |
    | Réutiliser la sortie | *\(Facultatif\)* Si votre profil est basé sur un profil existant, sélectionnez cette option. Si vous sélectionnez cette option, AEM Guides n’extrait pas à nouveau le contenu du module DITA-OT et réutilise le module DITA-OT existant. |
-   | Chemin d’extraction de profil | *\(Facultatif\)* Spécifiez le chemin d’accès où DITA-OT est conservé sur le disque. Par défaut, AEM Guides regroupe un package DITA-OT dans son référentiel et il est extrait sur le disque à l’emplacement suivant. <br> **REMARQUE** Vous pouvez définir ce chemin à l’aide de n’importe quelle variable ou propriété système existante. Voir la description de la variable [Variables d’environnement DITA-OT](#id181NH0YN0AX) pour plus d’informations. |
+   | Chemin d’extraction de profil | *\(Facultatif\)* Spécifiez le chemin d’accès où DITA-OT est conservé sur le disque. Par défaut, AEM Guides regroupe un package DITA-OT dans son référentiel et il est extrait sur le disque à l’emplacement suivant. <br> **REMARQUE** Vous pouvez définir ce chemin à l’aide de n’importe quelle variable ou propriété système existante. Voir la description de [Variables d’environnement DITA-OT](#id181NH0YN0AX) pour plus d’informations. |
    | Chemin attribué | \(*Facultatif*\) Spécifiez le chemin d’accès dans votre référentiel de contenu pour lequel ce profil est applicable. Vous pouvez spécifier plusieurs emplacements. |
    | **Propriétés DITA-OT** |
    | Délai d’expiration DITA-OT | \(*Facultatif*\) Spécifiez l’heure \(en secondes\) pendant laquelle les Guides d’AEM attendent une réponse du module externe DITA-OT. Si aucune réponse n’est reçue à l’heure indiquée, AEM Guides interrompt la tâche de publication et la tâche est marquée comme en échec. En outre, les logs d’échec sont rendus disponibles dans le fichier journal de génération de sortie. <br> Valeur par défaut : 300 secondes \(5 minutes\) |
@@ -73,7 +72,7 @@ Effectuez les étapes suivantes pour charger le module externe DITA-OT personnal
    | Chemins de la bibliothèque DITA-OT | \(*Facultatif*\) Spécifiez les chemins d’accès aux bibliothèques supplémentaires du module externe DITA-OT. |
    | XML de création DITA-OT | \(*Facultatif*\) Spécifiez le chemin d’accès du script de génération Ant personnalisé fourni avec le module externe DITA-OT personnalisé. Ce chemin d’accès est relatif au répertoire DITA-OT de votre système de fichiers. |
    | Dossier de script Ant DITA-OT | \(Facultatif\) Spécifiez le chemin d’accès du dossier de script Ant DITA-OT. Ce chemin d’accès est relatif au répertoire DITA-OT de votre système de fichiers. |
-   | Variables d’environnement DITA-OT | *\(Facultatif\)* Spécifiez les variables d’environnement à transmettre au processus DITA-OT. Par défaut, les AEM Guides ajoutent quatre variables : `ANT_OPTS`, `ANT_HOME`, `PATH`, et `CLASSPATH`. <br> Vous pouvez réutiliser n’importe laquelle des variables ou propriétés d’environnement système existantes pour créer de nouvelles variables d’environnement. Par exemple, si vous avez `JAVA_HOME` variable système définie dans votre système et que vous souhaitez définir une nouvelle variable d’environnement appelée `JAVA_BIN` qui est créé à l’aide de `JAVA_HOME`. Vous pouvez ensuite ajouter la définition de `JAVA_BIN` comme :`JAVA_BIN= ${JAVA_HOME}/bin` <br> **Remarque :** Vous pouvez également utiliser les propriétés du système Java pour créer des variables d’environnement. Par exemple, si AEM script de démarrage définit une propriété système Java `java.io.tmpdir` dans un répertoire temporaire, vous pouvez utiliser cette propriété pour définir la nouvelle variable comme suit : `${java.io.tmpdir}/fmdita/dita_ot`. <br> **Important :** Pour réutiliser une variable ou une propriété système existante, elle doit être incluse dans `${}`. |
+   | Variables d’environnement DITA-OT | *\(Facultatif\)* Spécifiez les variables d’environnement à transmettre au processus DITA-OT. Par défaut, les AEM Guides ajoutent quatre variables : `ANT_OPTS`, `ANT_HOME`, `PATH`, et `CLASSPATH`. <br> Vous pouvez réutiliser n’importe laquelle des variables ou propriétés d’environnement système existantes pour créer de nouvelles variables d’environnement. Par exemple, si vous avez `JAVA_HOME` variable système définie dans votre système et que vous souhaitez définir une nouvelle variable d’environnement appelée `JAVA_BIN` qui est créé à l’aide de `JAVA_HOME`. Vous pouvez ensuite ajouter la définition de `JAVA_BIN` en tant que :`JAVA_BIN= ${JAVA_HOME}/bin` <br> **Remarque :** Vous pouvez également utiliser les propriétés du système Java pour créer des variables d’environnement. Par exemple, si AEM script de démarrage définit une propriété système Java `java.io.tmpdir` dans un répertoire temporaire, vous pouvez utiliser cette propriété pour définir la nouvelle variable comme suit : `${java.io.tmpdir}/fmdita/dita_ot`. <br> **Important :** Pour réutiliser une variable ou une propriété système existante, elle doit être incluse dans `${}`. |
    | Remplacer la sortie DITA-OT | Indiquez si la sortie DITA-OT doit être écrasée. Conservez cette option sélectionnée. |
    | AEM chemin du fichier zip DITA-OT | Spécifiez le chemin d’accès complet où le fichier DITA-OT.zip personnalisé est stocké dans votre référentiel AEM. |
    | Chemin du module externe DITA-OT | Chemin d’accès du plug-in personnalisé. Ce module externe est automatiquement intégré au module DITA-OT principal. |
@@ -132,7 +131,7 @@ Effectuez les étapes suivantes pour créer un nouveau profil et le configurer a
 
 1. Dans le **Schéma** \> **Catalogue** , spécifiez le chemin d’accès des fichiers DTD et XSD personnalisés. `catalog.xml` dans votre référentiel AEM.
 
-1. Sélectionnez la **Ajout d’un catalogue d’identifiants système** .
+1. Sélectionnez la variable **Ajout d’un catalogue d’identifiants système** .
 
    >[!NOTE]
    >
@@ -141,5 +140,3 @@ Effectuez les étapes suivantes pour créer un nouveau profil et le configurer a
    Pour plus d’informations sur les autres propriétés de la page Profils , voir le tableau des propriétés dans [Étape 6](#id17A9F0D075Z) de [Utilisation des modules externes DITA-OT personnalisés](#id181NH1020L7) .
 
 1. Cliquez sur **Terminé** pour enregistrer le profil.
-
-

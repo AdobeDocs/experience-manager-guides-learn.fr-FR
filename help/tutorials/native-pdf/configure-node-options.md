@@ -1,13 +1,12 @@
 ---
 title: PDF natif | Configuration du processus de noeud pour la publication de PDF natif
 description: Découvrez comment configurer le processus Node pour la publication native de PDF
-source-git-commit: 45974b88a5b1bbbd2d83ea5cc18e0def2f15c51f
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '118'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
-
 
 # Configuration du processus de création de noeuds pour la publication avec PDF natif
 
@@ -17,5 +16,4 @@ Suivez les instructions de la section [Remplacements de configuration](../cs-ins
 
 | PID | Clé de propriété | Valeur de la propriété |
 |---|---|---|
-| `com.adobe.fmdita.config.ConfigManager` | `native.pdf.node.opts` | Valeur de chaîne à définir comme standard `NODE_OPTIONS`.<BR> Valeur par défaut: &quot;&quot; |
-
+| `com.adobe.fmdita.config.ConfigManager` | `native.pdf.node.opts` | Valeur de chaîne à définir comme standard `NODE_OPTIONS`.<BR> Valeur par défaut : &quot;&quot; |

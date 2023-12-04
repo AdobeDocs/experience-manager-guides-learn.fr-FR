@@ -1,9 +1,9 @@
 ---
 title: Configuration des paramètres de génération de sortie
 description: Découvrez comment configurer les paramètres de génération de sortie
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '5761'
+source-wordcount: '5762'
 ht-degree: 1%
 
 ---
@@ -16,9 +16,9 @@ AEM Guides contient de nombreuses options de configuration vous permettant de pe
 
 Vous pouvez configurer et masquer l’onglet Ligne de base disponible dans le tableau de bord de la carte.
 
-Le **Masquer l’onglet Ligne de base** n’est pas activée par défaut et vous devez l’activer à partir de configMgr. Effectuez les étapes suivantes pour activer l’option par défaut dans l’éditeur web :
+La variable **Masquer l’onglet Ligne de base** n’est pas activée par défaut et vous devez l’activer à partir de configMgr. Effectuez les étapes suivantes pour activer l’option par défaut dans l’éditeur web :
 
-1. Ouvrez la page Configuration de la console web Adobe Experience Manager .
+1. Ouvrez la page de configuration de la console web Adobe Experience Manager .
 
    L&#39;URL par défaut pour accéder à la page de configuration est :
 
@@ -26,9 +26,9 @@ Le **Masquer l’onglet Ligne de base** n’est pas activée par défaut et vous
    http://<server name>:<port>/system/console/configMgr
    ```
 
-1. Recherchez et cliquez sur le bouton **com.adobe.fmdita.config.ConfigManager** du lot.
+1. Recherchez et cliquez sur le bouton **com.adobe.config.ConfigManager** du lot.
 
-1. Sélectionnez la **Masquer l’onglet Ligne de base** .
+1. Sélectionnez la variable **Masquer l’onglet Ligne de base** .
 
 1. Cliquez sur **Enregistrer**.
 
@@ -37,9 +37,9 @@ Le **Masquer l’onglet Ligne de base** n’est pas activée par défaut et vous
    > Cette configuration est désactivée par défaut et l’onglet Ligne de base est disponible dans le tableau de bord de la carte.
 
 
-## Configuration de FrameMaker Publishing Server {#id1678G0Z0TN6}
+## Configuration du FrameMaker Publishing Server {#id1678G0Z0TN6}
 
-Vous pouvez utiliser FrameMaker Publishing Server \(FMPS\) pour générer une sortie pour votre contenu DITA. La configuration de FMPS vous permet de générer une sortie dans plusieurs formats pris en charge par FMPS.
+Vous pouvez utiliser le FrameMaker Publishing Server \(FMPS\) pour générer une sortie pour votre contenu DITA. La configuration de FMPS vous permet de générer une sortie dans plusieurs formats pris en charge par FMPS.
 
 >[!NOTE]
 >
@@ -53,14 +53,14 @@ Pour configurer AEM Guides afin d’utiliser FMPS, mettez à jour les propriét�
 
 | Propriété | Description |
 |--------|-----------|
-| Domaine de connexion du serveur de publication FrameMaker | Indiquez le nom de domaine ou de groupe de travail sur lequel FrameMaker Publishing Server est hébergé. Sur la base de la version FMPS, indiquez le nom de domaine comme suit : -   **FMPS 2020**: Adresse IP : 192.168.1.101 <br>- **FMPS 2019 et versions antérieures**: Adresse IP ou nom de domaine |
-| URL du serveur de publication FrameMaker | Spécifiez l’URL du serveur de publication FrameMaker. En fonction de la version FMPS, indiquez l’URL FMPS comme suit :<br>- **FMPS 2020**: `http://<fmps_ip>:<port>` \(http://192.168.1.101:7000\) <br> - **FMPS 2019 et versions antérieures**: `http://<fmps_ip>:<port>/fmserver/v1/` |
-| Version FMPS | Spécifiez le numéro de version de FrameMaker Publishing Server. Sur la base de la version FMPS, fournissez les informations de version comme suit : <br>- **FMPS 2020**: 2020 <br> - **FMPS 2019 et versions antérieures**: 2019 ou 2017 |
-| Nom d’utilisateur et mot de passe du serveur de publication FrameMaker | Indiquez le nom d’utilisateur et le mot de passe pour accéder au serveur de publication FrameMaker. |
-| Délai d’expiration FMPS | \(*Facultatif*\) Spécifiez l’heure \(en secondes\) pendant laquelle AEM Guides attend une réponse de FrameMaker Publishing Server. Si aucune réponse n’est reçue à l’heure indiquée, AEM Guides interrompt la tâche de publication et la tâche est marquée comme en échec. <br> Valeur par défaut : 300 secondes \(5 minutes\) |
-| URL d’AEM externe | *\(Facultatif\)* URL AEM où FrameMaker Publishing Server place les fichiers de sortie générés. Par exemple, `http://<server-name>:<port>/`. |
-| AEM Nom d’utilisateur et mot de passe de l’administrateur | *\(Facultatif\)* Nom d’utilisateur et mot de passe d’un administrateur de votre configuration AEM. FrameMaker Publishing Server l’utilisera pour communiquer avec AEM. |
-| Délai d’attente d’exécution de la tâche FMPS | Ce paramètre s’applique uniquement à FMPS 2020. Spécifiez l’heure \(en secondes\) à l’issue de laquelle FMPS arrêtera d’attendre l’exécution de ce processus. |
+| Domaine de connexion au FrameMaker Publishing Server | Indiquez le nom de domaine ou de groupe de travail sur lequel le FrameMaker Publishing Server est hébergé. Sur la base de la version FMPS, indiquez le nom de domaine comme suit : -   **FMPS 2020**: adresse IP sous la forme 192.168.1.101 <br>- **FMPS 2019 et versions antérieures**: adresse IP ou nom de domaine |
+| URL du FrameMaker Publishing Server | Spécifiez l’URL du FrameMaker Publishing Server. En fonction de la version FMPS, indiquez l’URL FMPS comme suit :<br>- **FMPS 2020**: `http://<fmps_ip>:<port>` \(http://192.168.1.101:7000\) <br> - **FMPS 2019 et versions antérieures**: `http://<fmps_ip>:<port>/fmserver/v1/` |
+| Version FMPS | Spécifiez le numéro de version du FrameMaker Publishing Server. Sur la base de la version FMPS, fournissez les informations de version comme suit : <br>- **FMPS 2020**: 2020 <br> - **FMPS 2019 et versions antérieures**: 2019 ou 2017 |
+| FrameMaker Publishing Server Username et Password | Indiquez le nom d’utilisateur et le mot de passe pour accéder au FrameMaker Publishing Server. |
+| Délai d’expiration FMPS | \(*Facultatif*\) Spécifiez la période \(en secondes\) pendant laquelle AEM Guides attend une réponse du FrameMaker Publishing Server. Si aucune réponse n’est reçue à l’heure indiquée, AEM Guides interrompt la tâche de publication et la tâche est marquée comme en échec. <br> Valeur par défaut : 300 secondes \(5 minutes\) |
+| URL d’AEM externe | *\(Facultatif\)* URL AEM où le FrameMaker Publishing Server place les fichiers de sortie générés. Par exemple, `http://<server-name>:<port>/`. |
+| AEM Nom d’utilisateur et mot de passe de l’administrateur | *\(Facultatif\)* Nom d’utilisateur et mot de passe d’un administrateur de votre configuration AEM. Il sera utilisé par FrameMaker Publishing Server pour communiquer avec AEM. |
+| Délai d’attente d’exécution de la tâche FMPS | Ce paramètre s’applique uniquement à FMPS 2020. Spécifiez l’heure \(en secondes\) après laquelle FMPS arrêtera d’attendre l’exécution de ce processus. |
 
 ## Configuration de la publication mixte dans un site AEM existant {#id1691I0V0MGR}
 
@@ -122,11 +122,11 @@ AEM Guides prend en charge la création de sorties dans les formats suivants :
 
 - PDF
 
-- HTML 5
+- HTML5
 - EPUB
 - Sortie personnalisée via DITA-OT
 
-Pour la sortie Site AEM, vous pouvez affecter différents modèles de conception avec différentes tâches de sortie. Ces modèles de conception peuvent rendre le contenu DITA dans différentes dispositions. Par exemple, vous pouvez spécifier différents modèles de conception pour les audiences internes et externes.
+Pour la sortie Site AEM, vous pouvez affecter différents modèles de conception avec différentes tâches de sortie. Ces modèles de conception peuvent rendre le contenu DITA dans différentes mises en page. Par exemple, vous pouvez spécifier différents modèles de conception pour les audiences internes et externes.
 
 Vous pouvez également utiliser des modules externes DITA Open Toolkit \(DITA-OT\) personnalisés avec AEM Guides. Vous pouvez charger ces modules externes DITA-OT personnalisés pour générer une sortie PDF d’une manière spécifique.
 
@@ -162,11 +162,11 @@ Effectuez les étapes suivantes pour spécifier votre propre modèle de concepti
 
    | Propriété | Description |
    |--------|-----------|
-   | `landingPageTemplate`, `searchPageTemplate`, `topicPageTemplate`, `shadowPageTemplate` | Spécifiez la variable `cq:Template` noeud pour ces pages correspondantes \(entrée, recherche et rubrique\). Par défaut, la variable `cq:Template` Le noeud de ces pages se trouve dans `/libs/fmdita/templates/default/cqtemplates` noeud . Ce noeud définit la structure et les propriétés des pages d’entrée, de recherche et de rubrique. <br>Le `shadowPageTemplate` est utilisé pour optimiser le contenu fragmenté. Vous devez définir la valeur de cette propriété sur : <br> `fmdita/templates/default/cqtemplates/shadowpage` <br> **Remarque** Vous devez spécifier une valeur pour la variable `topicPageTemplate`. Le `landingPageTemplate` et `searchPageTemplate` sont des propriétés facultatives. Si vous ne souhaitez pas que la recherche et les landing pages soient générées, ne spécifiez pas ces propriétés. |
+   | `landingPageTemplate`, `searchPageTemplate`, `topicPageTemplate`, `shadowPageTemplate` | Spécifiez la variable `cq:Template` noeud pour ces pages correspondantes \(entrée, recherche et rubrique\). Par défaut, la variable `cq:Template` Le noeud de ces pages se trouve dans `/libs/fmdita/templates/default/cqtemplates` noeud . Ce noeud définit la structure et les propriétés des pages d’entrée, de recherche et de rubrique. <br>La variable `shadowPageTemplate` est utilisé pour optimiser le contenu fragmenté. Vous devez définir la valeur de cette propriété sur : <br> `fmdita/templates/default/cqtemplates/shadowpage` <br> **Remarque** Vous devez spécifier une valeur pour la variable `topicPageTemplate`. La variable `landingPageTemplate` et `searchPageTemplate` sont des propriétés facultatives. Si vous ne souhaitez pas que la recherche et les landing pages soient générées, ne spécifiez pas ces propriétés. |
    | `title` | Nom descriptif de votre modèle de conception. |
    | `topicContentNode` | Emplacement du noeud qui contiendra le contenu DITA dans une page de rubrique. Le chemin d’accès est relatif à la page de rubrique. |
    | `topicHeadNode` | L’emplacement du noeud qui contiendra les valeurs d’en-tête \(ou metadata\) dérivées du contenu DITA. Le chemin d’accès est relatif à la page de rubrique. |
-   | `tocNode` | Emplacement du noeud qui contiendra la table des matières. Le chemin est relatif à la page d’entrée ou au chemin de destination. |
+   | `tocNode` | Emplacement du noeud qui contiendra la table des matières. Le chemin d’accès est relatif à la page d’entrée ou au chemin de destination. |
    | `basePathProp` | Nom de la propriété pour stocker le chemin d’accès de la racine du site publié. |
    | `indexPathProp` | Nom de la propriété pour le stockage du chemin d’accès à la page d’entrée/d’index du site publié. |
    | `pdfPathProp` | Nom de propriété pour le stockage du chemin du PDF de rubrique, si la génération du PDF de rubrique est activée. |
@@ -181,7 +181,7 @@ Effectuez les étapes suivantes pour spécifier votre propre modèle de concepti
 >
 > Après avoir créé un noeud de modèle de conception personnalisé, vous devez mettre à jour l’option Conception dans les paramètres prédéfinis de sortie AEM Site pour utiliser le noeud de modèle de conception personnalisé.
 
-Pour plus d’informations, voir [Création de votre premier site web Adobe Experience Manager 6.3](https://helpx.adobe.com/experience-manager/using/first_aem63_website.html) et [Principes de base](https://helpx.adobe.com/fr/experience-manager/6-3/sites/developing/using/the-basics.html) de développer votre propre site web sur AEM.
+Pour plus d’informations, voir [Création de votre site web First Adobe Experience Manager 6.3](https://helpx.adobe.com/experience-manager/using/first_aem63_website.html) et [Principes de base](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/the-basics.html) de développer votre propre site web sur AEM.
 
 ### Utiliser le titre du document pour générer AEM sortie du site
 
@@ -195,7 +195,7 @@ Lors de la génération de la sortie AEM site, la manière dont les URL sont gé
 
 Pour configurer la génération des URL dans AEM sortie Site, procédez comme suit :
 
-1. Ouvrez la page Configuration de la console web Adobe Experience Manager .
+1. Ouvrez la page de configuration de la console web Adobe Experience Manager .
 
    L&#39;URL par défaut pour accéder à la page de configuration est :
 
@@ -203,9 +203,9 @@ Pour configurer la génération des URL dans AEM sortie Site, procédez comme su
    http://<server name>:<port>/system/console/configMgr
    ```
 
-1. Recherchez et cliquez sur le bouton **com.adobe.fmdita.config.ConfigManager** du lot.
+1. Recherchez et cliquez sur le bouton **com.adobe.config.ConfigManager** du lot.
 
-1. Sélectionnez la **Utiliser le titre pour AEM noms de page du site** .
+1. Sélectionnez la variable **Utiliser le titre pour AEM noms de page du site** .
 
    >[!NOTE]
    >
@@ -228,7 +228,7 @@ Lorsque vous définissez une liste de caractères valides, n’oubliez pas que c
 
 Pour configurer les caractères spéciaux valides dans les noms de fichier et AEM sortie du site, procédez comme suit :
 
-1. Ouvrez la page Configuration de la console web Adobe Experience Manager .
+1. Ouvrez la page de configuration de la console web Adobe Experience Manager .
 
    L&#39;URL par défaut pour accéder à la page de configuration est :
 
@@ -238,7 +238,7 @@ Pour configurer les caractères spéciaux valides dans les noms de fichier et AE
 
 1. Recherchez et cliquez sur le bouton *com.adobe.fmdita.common.SanitizeNodeNameImpl* du lot.
 
-1. Dans le **Jeu de caractères non autorisé pour la publication sur AEM Sites** , assurez-vous que la propriété est définie sur ```'<>`@$```. Vous pouvez ajouter d’autres caractères spéciaux à cette liste, mais elle doit contenir les caractères spéciaux requis.
+1. Dans le **Jeu de caractères non autorisé pour la publication sur AEM Sites** , vérifiez que la propriété est définie sur ```'<>`@$```. Vous pouvez ajouter d’autres caractères spéciaux à cette liste, mais elle doit contenir les caractères spéciaux requis.
 
    >[!NOTE]
    >
@@ -246,9 +246,9 @@ Pour configurer les caractères spéciaux valides dans les noms de fichier et AE
 
 1. Cliquez sur **Enregistrer**.
 
-1. Recherchez et cliquez sur le bouton **com.adobe.fmdita.config.ConfigManager** du lot.
+1. Recherchez et cliquez sur le bouton **com.adobe.config.ConfigManager** du lot.
 
-1. Dans le **Expression régulière pour les caractères valides** , assurez-vous que la propriété est définie sur `[-a-zA-Z0-9_]`. Vous pouvez ajouter d’autres caractères à cette liste, mais elle doit comporter ces caractères de base et la liste doit commencer par un trait d’union \(`-`\).
+1. Dans le **Expression régulière pour les caractères valides** , vérifiez que la propriété est définie sur `[-a-zA-Z0-9_]`. Vous pouvez ajouter d’autres caractères à cette liste, mais elle doit comporter ces caractères de base et la liste doit commencer par un trait d’union \(`-`\).
 
    >[!NOTE]
    >
@@ -295,7 +295,7 @@ Pour aplatir AEM structure de noeuds de site, procédez comme suit :
 
 1. Activez la configuration d’aplatissement du noeud de site dans configMgr.
 
-   1. Ouvrez la page Configuration de la console web Adobe Experience Manager .
+   1. Ouvrez la page de configuration de la console web Adobe Experience Manager .
 
       L&#39;URL par défaut pour accéder à la page de configuration est :
 
@@ -305,7 +305,7 @@ Pour aplatir AEM structure de noeuds de site, procédez comme suit :
 
    1. Recherchez et cliquez sur le bouton *com.adobe.dxml.flattening.FlatteningConfigurationService* du lot.
 
-   1. Sélectionnez la **Property flattening.enabled** .
+   1. Sélectionnez la variable **Property flattening.enabled** .
 
    1. Cliquez sur **Enregistrer**.
 
@@ -332,7 +332,7 @@ Lorsque vous générez AEM sortie Site avec **Supprimer et** Créer ****sélecti
 
 Effectuez les étapes suivantes pour arrêter la création d’une version de la page\(s\) supprimée :
 
-1. Ouvrez la page Configuration de la console web Adobe Experience Manager .
+1. Ouvrez la page de configuration de la console web Adobe Experience Manager .
 
    L&#39;URL par défaut pour accéder à la page de configuration est :
 
@@ -340,7 +340,7 @@ Effectuez les étapes suivantes pour arrêter la création d’une version de la
    http://<server name>:<port>/system/console/configMgr
    ```
 
-1. Recherchez et cliquez sur le bouton *com.adobe.fmdita.config.ConfigManager* du lot.
+1. Recherchez et cliquez sur le bouton *com.adobe.config.ConfigManager* du lot.
 
 1. Sélectionner **Ne pas créer de version pour les pages supprimées** .
 
@@ -350,7 +350,7 @@ Effectuez les étapes suivantes pour arrêter la création d’une version de la
 
 1. Cliquez sur **Enregistrer**.
 
-## Utilisation de métadonnées pour la publication d’une sortie via DITA-OT {#id191LF0U0TY4}
+## Utilisation de métadonnées pour publier une sortie via DITA-OT {#id191LF0U0TY4}
 
 AEM Guides permet de transmettre des métadonnées personnalisées lors de la publication d’une sortie à l’aide de DITA-OT. En tant qu’administrateur et éditeur, vous devez effectuer les tâches suivantes pour configurer et utiliser des métadonnées personnalisées dans la sortie publiée :
 
@@ -371,9 +371,9 @@ Pour ajouter les métadonnées requises dans le système, procédez comme suit :
 
 1. Cliquez sur le bouton **Schémas de métadonnées** mosaïque.
 
-   La page Formulaires de schéma de métadonnées s’affiche.
+   La page Forms de schéma de métadonnées s’affiche.
 
-1. Sélectionnez la **default** formulaire de la liste.
+1. Sélectionnez la variable **default** formulaire de la liste.
 
    >[!NOTE]
    >
@@ -508,9 +508,9 @@ Présentation générale de la variable `elementmapping.xml` La structure est ex
 
    - COMPOSITE : élément au composant *le mappage se poursuit pour les éléments enfants* ainsi que .
 
-   - STANDALONE : les éléments enfants de l’élément actif sont *mappé plus*.
+   - STANDALONE : les éléments enfants de l’élément actif sont *n’est plus mappé*.
 
-   Dans l’exemple ci-dessus, si la variable `<title>` contient des éléments enfants, ils ne seront mappés à aucun autre composant. Le composant pour `<title>` est responsable du rendu de tous les éléments enfants à l’intérieur de l’élément `<title>` élément .
+   Dans l’exemple ci-dessus, si la variable `<title>` contient des éléments enfants, ils ne seront mappés à aucun autre composant. Le composant pour `<title>` est responsable du rendu de tous les éléments enfants à l’intérieur de la fonction `<title>` élément .
 
 1. S’il existe plusieurs composants mappés à un seul élément DITA, la meilleure correspondance pour l’élément est sélectionnée. Pour sélectionner le meilleur composant de correspondance, la spécialisation du domaine et de la structure des éléments DITA est prise en compte.
 
@@ -548,7 +548,7 @@ Présentation générale de la variable `elementmapping.xml` La structure est ex
    </ditaelement>
    ```
 
-   Le mappage d’élément ci-dessus indique que l’ensemble du balisage XML de l’élément `<svg-container>` sera enregistrée comme valeur d’une propriété nommée `data` sur le noeud output.
+   Le mappage d’élément ci-dessus indique que le balisage XML entier de l’élément `<svg-container>` sera enregistrée comme valeur d’une propriété nommée `data` sur le noeud output.
 
 1. Il existe un mappage d’attributs spécial pour gérer la résolution du chemin dans le processus de génération de sortie. Par exemple :
 
@@ -560,7 +560,7 @@ Présentation générale de la variable `elementmapping.xml` La structure est ex
    </attributemap>
    ```
 
-   Pour ce qui concerne `attributemap`, la variable `href` dans votre élément DITA sera mappé à une propriété node nommée `fileReference`. Maintenant depuis `ispath` est défini sur `true`, le processus de génération de sortie résout ce chemin, puis le définit dans `fileReference` de noeud.
+   Pour ce qui concerne `attributemap`, la variable `href` dans votre élément DITA sera mappé à une propriété de noeud nommée `fileReference`. Maintenant depuis `ispath` est défini sur `true`, le processus de génération de sortie résout ce chemin, puis le définit dans `fileReference` de noeud.
 
    La manière dont cette résolution se produit est déterminée en fonction de la valeur de la variable `rel` dans le mappage des attributs.
 
@@ -597,21 +597,21 @@ Voici un exemple du schéma d’élément DITA dans `elementmapping.xml` fichier
 
 Le tableau suivant décrit les éléments du schéma d’élément DITA :
 
-| Élément | Description |
+| Elément | Description |
 |-------|-----------|
 | `<ditaelement>` | Noeud de niveau supérieur pour chaque élément de mappage. |
 | `<class>` | L’attribut de classe de l’élément DITA cible pour lequel vous écrivez le composant. <br>Par exemple, l’attribut de classe pour la rubrique DITA est : <br>`topic/topic` |
 | `<componentpath>` | Chemin d’accès CRXDE du composant AEM mappé. |
-| `<type>` | Valeurs possibles : <br>- **COMPOSITE**: Traiter également les éléments enfants <br>- **AUTONOME**: Ignore le traitement des éléments enfants |
+| `<type>` | Valeurs possibles : <br>- **COMPOSITE**: traitez également les éléments enfants. <br>- **AUTONOME**: ignore le traitement des éléments enfants |
 | `<attributeprop>` | Utilisé pour mapper les attributs et valeurs DITA sérialisés sur les noeuds AEM en tant que propriété. Par exemple, si vous avez `<note type="Caution">` et que le composant mappé pour cet élément comporte `<attributeprop>attr_t</ attributeprop>`, l’attribut et la valeur du noeud sont sérialisés en `attr_t` propriété du noeud d’AEM correspondant \( `attr_t->type="caution"`\). |
-| `<textprop>propname_t</textprop>` | Enregistrez le `getTextContent()` sortie vers la propriété définie par `propname_t.` **Remarque :**  Il s’agit d’une propriété optimisée. |
-| `<xmlprop>propname_x </xmlprop>` | Enregistrer le XML sérialisé de ce noeud dans la propriété définie par `propname_x.` **Remarque :** Il s’agit d’une propriété optimisée. |
+| `<textprop>propname_t</textprop>` | Enregistrez le `getTextContent()` sortie vers la propriété définie par `propname_t.` **Remarque :**  C’est une propriété optimisée. |
+| `<xmlprop>propname_x </xmlprop>` | Enregistrer le XML sérialisé de ce noeud dans la propriété définie par `propname_x.` **Remarque :** C’est une propriété optimisée. |
 | `<xpath>` | Si l’élément XPath est fourni dans le mappage d’élément, alors avec le nom de l’élément et la classe, la condition XPath doit également être satisfaite pour que le mappage de composant soit utilisé. |
-| `<target>` | Placez l’élément DITA dans le référentiel crx à l’emplacement spécifié. <br>Valeurs possibles :<br>- **head**: Sous le noeud head <br>- **text**: Sous le noeud de paragraphe |
+| `<target>` | Placez l’élément DITA dans le référentiel crx à l’emplacement spécifié. <br>Valeurs possibles :<br>- **head**: sous le noeud head <br>- **text**: sous le noeud de paragraphe |
 | `<wrapelement>` | Elément HTML dans lequel placer le contenu. |
 | `<wrapclass>` | La valeur de l’élément à la propriété `wrapclass.` |
 | `<attributemap>` | Noeud de conteneur contenant un ou plusieurs noeuds `<attribute>` noeuds. |
-| `<attribute from="attrname" to="propname" ispath="true|false" rel="source|target" />` | Mappe les attributs DITA aux propriétés AEM :<br>- **`from`**: Nom d’attribut DITA<br>- **`to`**: AEM nom de la propriété du composant <br>- **`ispath`**: Si l’attribut est une valeur de chemin \(par exemple : *image*\)<br>- **`rel`**: Si le chemin d’accès est la source ou la cible <br>**Remarque :** If `attrname` commence par `%`, puis map `attrname minus '%'` à prop &#39; `propname`&#39;. |
+| `<attribute from="attrname" to="propname" ispath="true|false" rel="source|target" />` | Mappe les attributs DITA aux propriétés AEM :<br>- **`from`**: nom de l’attribut DITA<br>- **`to`**: nom de la propriété du composant AEM <br>- **`ispath`**: si l’attribut est une valeur de chemin \(par exemple : *image*\)<br>- **`rel`**: si le chemin est la source ou la cible <br>**Remarque :** If `attrname` commence par `%`, puis map `attrname minus '%'` à prop &#39; `propname`&#39;. |
 
 **Remarques supplémentaires**
 
@@ -619,7 +619,7 @@ Le tableau suivant décrit les éléments du schéma d’élément DITA :
 
 - Dans le `elementmapping.xml` , il existe de nombreuses entrées de mappage faisant référence au composant fmdita/components/dita/wrapper . Wrapper est un composant générique qui effectue le rendu de constructions DITA relativement simples à l’aide de propriétés sur leur noeud de site pour générer un HTML pertinent. Elle utilise la variable `wrapelement` pour générer des balises englobantes et déléguer le rendu enfant aux composants correspondants. Cela s’avère utile lorsque vous souhaitez uniquement un composant de conteneur. Au lieu de créer un composant qui effectue le rendu d’une balise conteneur spécifique comme `div` ou `p`, vous pouvez utiliser le composant Wrapper avec l’événement `wrapelement` et `wrapclass` pour obtenir le même effet.
 
-- Il n’est pas recommandé d’enregistrer de grandes quantités de texte dans les propriétés JCR de chaîne. Le calcul du type de propriété optimisé dans la génération de sortie garantit que le contenu texte volumineux n’est pas enregistré comme type de chaîne. Au lieu de cela, lorsque le contenu supérieur à un certain seuil doit être enregistré, le type de la propriété est remplacé par binaire. Par défaut, ce seuil est configuré à 512 octets, mais peut être modifié dans Configuration Manager \(*com.adobe.fmdita.config.ConfigManager*\) en modifiant la variable **Enregistrer comme seuil binaire** .
+- Il n’est pas recommandé d’enregistrer de grandes quantités de texte dans les propriétés JCR de chaîne. Le calcul du type de propriété optimisé dans la génération de sortie garantit que le contenu texte volumineux n’est pas enregistré comme type de chaîne. Au lieu de cela, lorsque le contenu supérieur à un certain seuil doit être enregistré, le type de la propriété est remplacé par binaire. Par défaut, ce seuil est configuré à 512 octets, mais peut être modifié dans Configuration Manager \(*com.adobe.config.ConfigManager*\) en modifiant la variable **Enregistrer comme seuil binaire** .
 
 - Si vous envisagez de remplacer certains \(et pas tous\) des mappages d’éléments, il n’est pas nécessaire de répliquer l’intégralité de la variable `elementmapping.xml` fichier . Vous devez créer un nouveau fichier de mappage XML et définir uniquement les éléments que vous remplacez.
 
@@ -634,21 +634,21 @@ AEM Guides vous offre la possibilité d’étendre les fonctionnalités de la co
 >
 > La modification directe aux composants de page n’est pas recommandée, car elle sera écrasée par les nouvelles versions du produit.
 
-AEM Guides fournit les `apps.fmdita.dashboard-extn` catégorie pour la personnalisation de la console de mappage. Chaque fois que la console de mappage est chargée, la fonctionnalité créée sous `apps.fmdita.dashboard-extn` est exécutée et chargée.
+AEM Guides fournit la variable `apps.fmdita.dashboard-extn` catégorie pour personnaliser la console de mappage. Chaque fois que la console de mappage est chargée, la fonctionnalité créée sous `apps.fmdita.dashboard-extn` est exécutée et chargée.
 
 >[!NOTE]
 >
-> Pour plus d’informations sur la création d’AEM bibliothèque cliente, voir [Utilisation de bibliothèques côté client](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/clientlibs.html).
+> Pour plus d’informations sur la création d’AEM bibliothèque cliente, voir [Utilisation de bibliothèques côté client](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/clientlibs.html).
 
-## Gérer le rendu d’image lors de la génération de sortie {#id177BF0G0VY4}
+## Gérer le rendu d’image lors de la génération de la sortie {#id177BF0G0VY4}
 
-AEM est fourni avec un ensemble de workflows et de gestionnaires de médias par défaut pour traiter les ressources. Dans AEM, il existe des workflows prédéfinis pour gérer le traitement des ressources pour les types MIME les plus courants. En règle générale, pour chaque image que vous téléchargez, AEM crée plusieurs rendus du même format binaire. Ces rendus peuvent être de taille différente, avec une résolution différente, avec un filigrane ajouté ou d’autres caractéristiques modifiées. Pour plus d’informations sur la manière dont AEM gère les ressources, voir [Traitement des ressources à l’aide des workflows et des gestionnaires de médias](https://helpx.adobe.com/experience-manager/6-5/assets/using/media-handlers.html) dans AEM documentation.
+AEM est fourni avec un ensemble de workflows et de gestionnaires de médias par défaut pour traiter les ressources. Dans AEM, il existe des workflows prédéfinis pour gérer le traitement des ressources pour les types MIME les plus courants. En règle générale, pour chaque image que vous téléchargez, AEM crée plusieurs rendus du même format binaire. Ces rendus peuvent être de taille différente, avec une résolution différente, avec un filigrane ajouté ou d’autres caractéristiques modifiées. Pour plus d’informations sur la manière dont AEM gère les ressources, voir [Traitement des ressources à l’aide des workflows et des gestionnaires de médias](https://helpx.adobe.com/experience-manager/6-5/assets/using/media-handlers.html) dans la documentation AEM.
 
-AEM Guides vous permet de configurer le rendu d’image à utiliser lors de la génération de la sortie pour vos documents. Par exemple, vous pouvez choisir parmi l’un des rendus d’image par défaut ou en créer un et l’utiliser pour publier vos documents. Le mappage de rendu d’image pour la publication de vos documents est stocké dans la variable `/libs/fmdita/config/ **renditionmap.xml**` fichier . Un fragment de code `renditionmap.xml` est le suivant :
+AEM Guides vous permet de configurer le rendu d’image à utiliser lors de la génération de la sortie pour vos documents. Par exemple, vous pouvez choisir parmi l’un des rendus d’image par défaut ou en créer un et l’utiliser pour publier vos documents. Le mappage de rendu d’image pour la publication de vos documents est stocké dans la variable `/libs/fmdita/config/ **renditionmap.xml**` fichier . Un extrait de code de `renditionmap.xml` se présente comme suit :
 
 >[!NOTE]
 >
-> Il est recommandé de créer une copie du `renditionmap.xml` dans le fichier `apps` pour toutes les personnalisations.
+> Il est recommandé de créer une copie de la variable `renditionmap.xml` dans le fichier `apps` pour toutes les personnalisations.
 
 ```XML
 <renditionmap>
@@ -664,7 +664,7 @@ AEM Guides vous permet de configurer le rendu d’image à utiliser lors de la g
 </renditionmap>
 ```
 
-Le `mimetype` spécifie le type MIME du format de fichier. Le `rendition output` element spécifie le type de format de sortie et le nom du rendu \(par exemple, `cq5dam.web.1280.1280.jpeg`\) qui doit être utilisé pour publier la sortie spécifiée. Vous pouvez spécifier les rendus d’image à utiliser pour tous les formats de sortie pris en charge : AEMSITE, PDF, HTML5, EPUB et PERSONNALISÉ.
+La variable `mimetype` spécifie le type MIME du format de fichier. La variable `rendition output` element spécifie le type de format de sortie et le nom du rendu \(par exemple, `cq5dam.web.1280.1280.jpeg`\) qui doit être utilisé pour publier la sortie spécifiée. Vous pouvez spécifier les rendus d’image à utiliser pour tous les formats de sortie pris en charge : AEMSITE, PDF, HTML5, EPUB et PERSONNALISÉ.
 
 Si le rendu spécifié n’est pas présent, AEM processus de publication Guides commence par rechercher le rendu web de l’image donnée. Si même le rendu web est introuvable, le rendu d’origine de l’image est utilisé.
 
@@ -692,7 +692,7 @@ La configuration de la fonction de purge de l’historique a un impact sur la g�
 
 Effectuez les étapes suivantes pour définir un jour et une heure pour purger l’historique et les journaux de sortie :
 
-1. Ouvrez la page Configuration de la console web Adobe Experience Manager .
+1. Ouvrez la page de configuration de la console web Adobe Experience Manager .
 
    L&#39;URL par défaut pour accéder à la page de configuration est :
 
@@ -700,7 +700,7 @@ Effectuez les étapes suivantes pour définir un jour et une heure pour purger l
    http://<server name>:<port>/system/console/configMgr
    ```
 
-1. Recherchez et cliquez sur le bouton **com.adobe.fmdita.config.ConfigManager** du lot.
+1. Recherchez et cliquez sur le bouton **com.adobe.config.ConfigManager** du lot.
 
 1. Dans le **Période de purge de l’historique de sortie** , indiquez le nombre de jours après lesquels l’historique de sortie avec les journaux de sortie est purgé. Par défaut, elle est définie sur 5 jours. Si vous souhaitez désactiver cette fonction, définissez cette propriété sur 0.
 
@@ -726,4 +726,3 @@ Vous pouvez modifier le nombre maximal de sorties générées qui s’affichent 
 AEM Guides vous permet de configurer la taille du pool des processus de génération de sortie qui contrôle le nombre de processus de génération de sortie qui s’exécutent simultanément. Par défaut, la taille du pool de processus est définie sur le nombre de coeurs de traitement disponibles dans votre système plus un. Vous pouvez définir cette valeur sur 1 si vous souhaitez une publication séquentielle. Dans ce cas, la première tâche de publication est exécutée et la tâche de publication suivante est stockée dans la file d’attente de publication.
 
 Pour modifier la taille du pool de traitement de génération de sortie, mettez à jour la variable **Taille du pool de génération** dans le `com.adobe.fmdita.publish.manager.PublishThreadManagerImpl` du lot.
-

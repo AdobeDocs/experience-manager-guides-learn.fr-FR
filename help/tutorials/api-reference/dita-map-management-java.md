@@ -1,13 +1,12 @@
 ---
 title: API Java pour travailler avec des mappages DITA
 description: En savoir plus sur les API Java à utiliser avec les mappages DITA
-source-git-commit: fad5049962f258bbe59c7d172436d82b3d6cd68f
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1027'
 ht-degree: 0%
 
 ---
-
 
 # API Java pour travailler avec des mappages DITA {#id175UB30E05Z}
 
@@ -154,4 +153,3 @@ public static List
 **Paramètres**: |Nom|Type|Description| |—|—|—| |`rootNode`|javax.jcr.Node|Le noeud racine pour lequel toutes les dépendances doivent être récupérées.|
 
 **Renvoie**: liste de noeuds contenant toutes les dépendances du noeud racine.
-

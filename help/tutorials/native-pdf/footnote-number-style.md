@@ -1,10 +1,9 @@
 ---
 title: Fonction de publication native d’un PDF | Utilisation de styles personnalisés dans les notes de bas de page
 description: Découvrez comment appliquer un style aux numéros dans les notes de bas de page.
-exl-id: f1068f2f-2ace-4bdb-b5a4-46b03d4e43d6
-source-git-commit: cb2aa028330c1e1b8b71e9e928d724cc0d87bf44
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
@@ -24,7 +23,7 @@ Chaque note de bas de page comporte un marqueur de note de bas de page, qui est 
 Vous pouvez modifier les styles des appels de notes de bas de page et des marqueurs et gérer leur aspect dans la sortie du PDF. Ces styles vous permettent d’identifier rapidement les notes de bas de page dans le document.
 
 
-**Exemple 1**:
+**Exemple 1**:
 
 Utilisez l’exemple donné pour ajouter un crochet avant et après l’appel de note de bas de page et le marqueur :
 
@@ -50,7 +49,7 @@ content: "(" counter(footnote, decimal) ")";
 
 *Ajoutez des crochets autour de l’appel de note de bas de page et du marqueur de note de bas de page.*
 
-**Exemple 2**:
+**Exemple 2**:
 
 Vous pouvez également marquer l’appel de note de bas de page et le marqueur avec un astérisque ou un caractère grec inférieur au lieu d’un nombre.
 

@@ -1,15 +1,14 @@
 ---
 title: Utilisation de HTML5
 description: Découvrez comment créer un paramètre prédéfini HTML5 à partir de l’éditeur web et du tableau de bord de mappage. Configurez le paramètre prédéfini de sortie HTML5 dans AEM Guides.
-exl-id: c484289b-92aa-4790-b62b-650ecbe1b86b
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1153'
 ht-degree: 1%
 
 ---
 
-# HTML 5 {#id205BE700XO1}
+# HTML5 {#id205BE700XO1}
 
 La sortie HTML5 est générée dans une hiérarchie de dossiers plate. Cela signifie que la structure de dossiers utilisée par le contenu dans le référentiel n’est pas répliquée dans la sortie HTML5. L’ensemble du contenu est publié au format de sortie HTML5 et enregistré dans un seul dossier. Les noms de fichier sont également remplacés par les UUID des fichiers dans la sortie générée. Le seul fichier qui ne comporte pas de nom basé sur l’UUID est le fichier index.html.
 

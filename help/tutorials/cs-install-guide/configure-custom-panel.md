@@ -1,20 +1,19 @@
 ---
-title: Configuration d’un panneau personnalisé dans le panneau de gauche
+title: Configurer un panneau personnalisé dans le panneau de gauche
 description: Découvrez comment configurer un panneau personnalisé dans le panneau de gauche
-source-git-commit: 6051181e243cf71919901093c1b5590f21832545
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 0%
 
 ---
 
-
-# Configuration d’un panneau personnalisé dans le panneau de gauche {#id224JI200Y6F}
+# Configurer un panneau personnalisé dans le panneau de gauche {#id224JI200Y6F}
 
 Pour ajouter un panneau personnalisé dans le panneau de gauche de l’éditeur Web, procédez comme suit :
 
 1. Créez un *clientlib* et ajoutez votre fichier JavaScript et CSS à ce dossier.
-1. Mettez à jour la propriété categories du *clientlib* en lui attribuant la valeur de *apps.fmdita.xml\_editor.page\_overrides*.
+1. Mettez à jour la propriété categories du *clientlib* en lui attribuant la valeur de *apps.dita.xml\_editor.page\_overrides*.
 
 Exemple de code pour configurer un panneau personnalisé :
 
@@ -56,4 +55,3 @@ tcx.ready(function () { //Ready will call the callback after editor code is set 
 ```
 
 **Rubrique parente :**[ Personnalisation de l’éditeur web](conf-web-editor.md)
-

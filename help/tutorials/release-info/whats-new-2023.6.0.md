@@ -1,15 +1,14 @@
 ---
 title: Notes de mise à jour | Nouveautés des guides Adobe Experience Manager, version de juin 2023
-description: Découvrez les nouvelles fonctionnalités et les fonctionnalités améliorées de la version de juin 2023 des Guides Adobe Experience Manager as a Cloud Service.
-exl-id: ff6ac4a4-76a3-4b41-9da7-6a888de0eca5
-source-git-commit: f1292c94d77b724467d9eede59687bf0041cbce5
+description: Découvrez les nouvelles fonctionnalités et les fonctionnalités améliorées de la version de juin 2023 de Adobe Experience Manager Guides as a Cloud Service
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1212'
 ht-degree: 0%
 
 ---
 
-# Nouveautés de la version de juin 2023 d’Adobe Experience Manager Guides as a Cloud Service
+# Nouveautés de la version de juin 2023 des Guides Adobe Experience Manager as a Cloud Service
 
 Cet article couvre les nouvelles fonctionnalités et les fonctionnalités améliorées de la version de juin 2023 des Guides Adobe Experience Manager (ultérieurement appelée *AEM Guides as a Cloud Service*).
 
@@ -30,7 +29,7 @@ Vous pouvez désormais également renommer ou déplacer un fichier à partir du 
 
 ![](assets/rename-move-assets.png){width="650" align="left"}
 
-Pour plus d’informations sur le menu Options d’un fichier, reportez-vous à la section **Vue Repository** description des fonctionnalités dans la [Panneau gauche](../user-guide/web-editor-features.md#id2051EA0M0HS) .
+Pour plus d’informations sur le menu Options d’un fichier, voir la section **Vue Repository** description des fonctionnalités dans la section [Panneau gauche](../user-guide/web-editor-features.md#id2051EA0M0HS) .
 
 ## Améliorations apportées aux PDF natifs
 
@@ -105,7 +104,7 @@ Vous pouvez désormais facilement accéder à la page d’accueil d’AEM à par
 
 ![](assets/web-editor-launch-page.png){width="800" align="left"}
 
-* Cliquez sur le bouton **Guides** Icône (![](assets/aem-guides-icon.png) ), pour revenir à la page de navigation AEM.
+* Cliquez sur le bouton **Guides** icône (![](assets/aem-guides-icon.png) ), pour revenir à la page de navigation AEM.
 
 
 Pour plus d’informations, voir [Page de navigation AEM](../user-guide/web-editor-launch-editor.md#id2056BG00RZJ).
@@ -115,11 +114,11 @@ Pour plus d’informations, voir [Page de navigation AEM](../user-guide/web-edit
 AEM Guides s’accompagne d’une puissante fonctionnalité permettant de créer des mappages de schéma d’objet qui sont une forme spécialisée de mappages DITA utilisés pour définir des sujets taxonomiques et des valeurs contrôlées. Désormais, AEM Guides vous permet également de définir la définition de l’objet dans un mappage et les définitions d’énumération dans un autre mappage. Vous pouvez ensuite ajouter la référence de carte et utiliser le schéma d’objet.
 Les références de l’énumération objet sont résolues dans le même mappage ou le mappage référencé.
 
-Pour plus d’informations sur la gestion des définitions hiérarchiques des définitions d’objet et des énumérations, voir la section **Modèle d’objet** description des fonctionnalités dans la [Panneau gauche](../user-guide/web-editor-features.md#id2051EA0M0HS) .
+Pour plus d’informations sur la gestion des définitions hiérarchiques des définitions d’objet et des énumérations, voir la section **Modèle d’objet** description des fonctionnalités dans la section [Panneau gauche](../user-guide/web-editor-features.md#id2051EA0M0HS) .
 
 ## Prise en charge du format XLIFF en traduction
 
-AEM Guides fournit également la prise en charge du format XLIFF (XML Localization Interchange File Format) en traduction. Maintenant, vous pouvez également choisir **Création d’un projet de traduction XLIFF** pour convertir le contenu XML au format XLIFF.
+AEM Guides fournit également la prise en charge du format XLIFF (XML Localization Interchange File Format) en traduction. Vous pouvez également choisir de **Créer un projet de traduction XLIFF** pour convertir le contenu XML au format XLIFF.
 Avec ce format, vous pouvez exporter le contenu au format XLIFF standard du secteur, puis fournir la même chose aux fournisseurs de traduction. Pour plus d’informations, voir [Création d’un projet de traduction](../user-guide/translate-documents-web-editor.md#create-translation-project).
 
 ![](assets/translation-project-types.png){width="350" align="left"}
@@ -128,7 +127,7 @@ Avec ce format, vous pouvez exporter le contenu au format XLIFF standard du sect
 
 ## Panneau Favoris amélioré
 
-AEM Guides vous aide à créer une collection ou une liste préférée de vos fichiers et dossiers et à les utiliser facilement. Maintenant **Options** est également disponible dans la **Favoris** du panneau. Vous pouvez renommer la collection sélectionnée ou la supprimer de l’onglet **Options** . Vous pouvez sélectionner la variable **Actualiser** pour obtenir une nouvelle liste de fichiers ou de dossiers à partir du référentiel. Vous pouvez également afficher le contenu du dossier dans l’interface utilisateur d’Assets.
+AEM Guides vous aide à créer une collection ou une liste préférée de vos fichiers et dossiers et à les utiliser facilement. Maintenant **Options** est également disponible dans la **Favoris** du panneau. Vous pouvez renommer la collection sélectionnée ou la supprimer de l’onglet **Options** . Vous pouvez sélectionner la variable **Actualiser** pour obtenir une nouvelle liste de fichiers ou de dossiers du référentiel. Vous pouvez également afficher le contenu du dossier dans l’interface utilisateur d’Assets.
 
 ![](assets/favorites-options.png){width="650" align="left"}
 
@@ -136,12 +135,12 @@ AEM Guides vous aide à créer une collection ou une liste préférée de vos fi
 >
 > Vous pouvez également actualiser la liste à l’aide du **Actualiser** en haut.
 
-Pour plus d’informations sur la variable **Options** d’une collection Favoris, voir **Favoris** description des fonctionnalités dans la [Panneau gauche](../user-guide/web-editor-features.md#id2051EA0M0HS) .
+Pour plus d’informations sur la variable **Options** d’une collection Favoris, voir **Favoris** description des fonctionnalités dans la section [Panneau gauche](../user-guide/web-editor-features.md#id2051EA0M0HS) .
 
-## Basculer vers le thème du système
+## Passer au thème du système
 
 Vous pouvez également désormais utiliser le thème de l’appareil. En utilisant la variable **Préférences utilisateur**, vous pouvez configurer AEM Guides pour basculer automatiquement entre les thèmes clairs et sombres en fonction du thème de votre appareil.
 
 ![](assets/device-theme-user-preferences.png){width="550" align="left"}
 
-Pour plus d’informations, voir **Préférences utilisateur** description des fonctionnalités dans la [Barre d’outils principale](../user-guide/web-editor-features.md#id2051EA0G05Z) .
+Pour plus d’informations, voir **Préférences utilisateur** description des fonctionnalités dans la section [Barre d’outils principale](../user-guide/web-editor-features.md#id2051EA0G05Z) .

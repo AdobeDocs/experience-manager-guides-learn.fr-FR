@@ -1,13 +1,12 @@
 ---
 title: Publication à l’aide de FrameMaker Publishing Server (FMPS) dans AEM Guides
-description: Publication avec FMPS à l’aide des AEM Guides
-source-git-commit: 1d118aeda42d76b0a9f34ca29fdeedb0165739fd
+description: Publication à l’aide de FMPS à l’aide de AEM Guides
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
-
 
 # Publication à l’aide de FrameMaker Publishing Server (FMPS) dans AEM Guides
 
@@ -16,7 +15,7 @@ Cet article vous aide à configurer et à exécuter FMPS avec AEM Guides.
 
 ## Compatibilité de FMPS avec AEM Guides
 
-- Compatibilité avec les AEM Guides 4.1 : [Tableau de compatibilité 4.1 ](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/release-info/release-notes/on-prem-release-notes/release-notes-4.1.html?lang=en/#compatibility-matrix)
+- Compatibilité avec les AEM Guides 4.1 : [Tableau de compatibilité 4.1](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/release-info/release-notes/on-prem-release-notes/release-notes-4.1.html?lang=en/#compatibility-matrix)
 - Compatibilité avec les AEM Guides 4.0 : [Tableau de compatibilité 4.0](https://helpx.adobe.com/xml-documentation-for-experience-manager/release-note/release-notes-xml-documentation-solution-4-0.html/#Compatibility%20matrix)
 - Dernière version : [Dernières informations de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/release-info/latest-release-info.html?lang=en)
 
@@ -26,11 +25,11 @@ Reportez-vous aux guides d’AEM et à la configuration FMPS ci-dessous.
 
 ### Guides d’AEM
 
-Installation et configuration : [ 4.1 installation et configurations ](https://helpx.adobe.com/content/dam/help/en/xml-documentation-solution/4-1-2/Adobe-Experience-Manager-Guides_Installation-Configuration-Guide_EN.pdf)
+Installation et configuration : [4.1 installation et configurations](https://helpx.adobe.com/content/dam/help/en/xml-documentation-solution/4-1-2/Adobe-Experience-Manager-Guides_Installation-Configuration-Guide_EN.pdf)
 
 ### FMPS
 
-Pour l’installation FMPS, reportez-vous aux [Lien YouTube ](https://www.youtube.com/watch?v=2deelyM5VA8&amp;t) ou [Installation et configuration de FMPS ](https://help.adobe.com/en_US/framemaker/server/index.html#t=fmps-user-guide%2Finstall_config_fmps.html%23install_config_fmps&amp;rhtocid=_2)
+Pour l’installation FMPS, reportez-vous aux [Lien YouTube](https://www.youtube.com/watch?v=2deelyM5VA8&amp;t) ou [Installation et configuration de FMPS](https://help.adobe.com/en_US/framemaker/server/index.html#t=fmps-user-guide%2Finstall_config_fmps.html%23install_config_fmps&amp;rhtocid=_2)
 
 ## Configurations requises
 
@@ -38,17 +37,17 @@ FrameMaker Publishing Server (FMPS) peut être utilisé pour générer votre con
 
 Pour ouvrir la console web, accédez à l’URL http://\&lt;server name=&quot;&quot;>:\&lt;port>/system/console/configMgr
 
-**Propriétés de configuration et leur description** [Installation et configuration 4.1 ](https://helpx.adobe.com/content/dam/help/en/xml-documentation-solution/4-1-2/Adobe-Experience-Manager-Guides_Installation-Configuration-Guide_EN.pdf#page=89)
+**Propriétés de configuration et leur description** [Installation et configuration 4.1](https://helpx.adobe.com/content/dam/help/en/xml-documentation-solution/4-1-2/Adobe-Experience-Manager-Guides_Installation-Configuration-Guide_EN.pdf#page=89)
 
 ## Exécution du test :
 
 Avec FMPS, vous pouvez publier automatiquement **PDF, HTML réactif5**, et **Epub** pour vos ressources DITA et FM.
 
-Dans le menu &quot;Générer le PDF à l’aide de&quot;, sélectionnez FrameMaker Publishing Server.
+Dans le menu &quot;Générer le PDF à l’aide de&quot;, choisissez FrameMaker Publishing Server.
 
 L’utilisateur peut fournir &quot;settings File(.sts)&quot; et &quot;ditaval&quot;. Le filtrage est effectué à l’aide de ditaval en fonction des conditions que vous fournissez.
 
-- **Définition du fichier**: Fichier de paramètres FrameMaker/FMPS Publish contenant tous les paramètres que vous souhaitez que FMPS respecte lors de la publication. Par exemple, la création d’une sortie avec un modèle personnalisé, la création de Marques et de Bleeds (PDF) et la création d’un PDF avec la table des matières.
+- **Définition du fichier**: fichier de paramètres de publication /FMPS FrameMaker qui contient tous les paramètres que vous souhaitez que FMPS respecte lors de la publication. Par exemple, la création d’une sortie avec un modèle personnalisé, la création de Marques et de Bleeds (PDF) et la création de PDF avec la table des matières.
 - **Paramètre prédéfini FMPS :** Il s’agit d’une combinaison prédéfinie de ditaval et de fichier de paramètres. Au lieu de fournir des fichiers de paramètres et d’aval distincts, l’utilisateur peut précréer un paramètre prédéfini FMPS qui peut être réutilisé pour les besoins de publication.
 
 **Remarque :** Le paramètre système par défaut est utilisé par FMPS pour la publication si vous ne sélectionnez aucun des paramètres ou paramètre prédéfini FMPS.
@@ -59,7 +58,7 @@ Il s’agit d’un conflit si vous choisissez le paramètre prédéfini FMPS et 
 
 Vous pouvez publier vos lignes de base déjà créées avec FMPS2020.0.2 ou une version ultérieure.
 
-**Exemple de fichier de paramètres FMPS (fichier .sts) pour commencer :** [Exemple de fichier de paramètres FMPS ](https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:ef750752-7a7e-4e51-923e-6b7d9861ed54) (décompressez ce fichier)
+**Exemple de fichier de paramètres FMPS (fichier .sts) pour commencer :** [Exemple de fichier de paramètres FMPS](https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:ef750752-7a7e-4e51-923e-6b7d9861ed54) (décompressez ce fichier)
 
 ## FAQ et dépannage :
 
@@ -69,11 +68,11 @@ Vous pouvez publier vos lignes de base déjà créées avec FMPS2020.0.2 ou une 
 
 - ### Impossible d’obtenir le paramètre prédéfini FMPS dans la liste déroulante
 
->Assurez-vous qu’un paramètre prédéfini FMPS prédéfini est créé sur le serveur et que vos paramètres de connexion sont corrects.
+>Assurez-vous que vous disposez d’un paramètre prédéfini FMPS prédéfini créé sur le serveur et que vos paramètres de connexion sont corrects.
 
-- ### Je reçois des PDF vierges lors de la publication
+- ### Je deviens PDF vierge lors de la publication
 
->Si vous utilisez l’UUID, assurez-vous d’avoir coché &quot;Utiliser le référencement basé sur l’UUID&quot; dans les préférences de modification de FrameMaker et inversement pour les guides d’AEM non UUID.
+>Si vous utilisez l’UUID, assurez-vous d’avoir coché &quot;Utiliser le référencement basé sur l’UUID&quot; dans les préférences d’édition de FrameMaker et inversement pour les guides d’AEM non UUID.
 
 - ### Mes paramètres/ditaval ne sont pas appliqués dans la sortie publiée finale.
 
@@ -82,17 +81,17 @@ Vous pouvez publier vos lignes de base déjà créées avec FMPS2020.0.2 ou une 
 - ### La ligne de base n’est pas publiée à partir de FMPS
 
 >FMPS2020.0.2 ou versions ultérieures sont compatibles avec la publication de base.
->Assurez-vous que votre ligne de base a été correctement créée ; pour vérifier, accédez à Tableau de bord des cartes - Rubriques - Carte de téléchargement et sélectionnez &quot;Utiliser la ligne de base&quot;.
+>Assurez-vous que votre ligne de base a été correctement créée. Pour la vérifier, accédez au Tableau de bord des cartes - Rubriques - Carte de téléchargement et sélectionnez &quot;Utiliser la ligne de base&quot;.
 - ### La publication des tâches à partir de FMPS prend plus de temps que les autres moteurs
 
->Lors de la publication à partir de FMPS, l’heure d’en-tête fixe idéale est comprise entre 3 et 4 minutes ; si vous pensez que ce sera plus long, contactez votre administrateur FMPS ou contactez le support Adobe.
+>Lors de la publication à partir de FMPS, le temps d’en-tête fixe idéal est d’environ 3 à 4 minutes. Si vous pensez que c’est plus long, contactez votre administrateur FMPS ou contactez l’assistance Adobe.
 
-## Autres ressources:
+## Autres ressources :
 
 [Formation et assistance pour FMPS](https://helpx.adobe.com/support/framemaker-publishing-server.html)
 
 [Formation et assistance pour AEM Guides](https://helpx.adobe.com/in/support/xml-documentation-for-experience-manager.html)
 
-[FrameMaker et communauté FMPS](https://community.adobe.com/t5/framemaker/ct-p/ct-framemaker?page=1&amp;sort=latest_replies&amp;lang=all&amp;tabid=all)
+[Communauté FrameMaker et FMPS](https://community.adobe.com/t5/framemaker/ct-p/ct-framemaker?page=1&amp;sort=latest_replies&amp;lang=all&amp;tabid=all)
 
 [Communauté AEM Guides](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/ct-p/aem-xml-documentation)

@@ -1,13 +1,12 @@
 ---
 title: Configuration des filtres pour la boîte de dialogue de navigation dans les fichiers
 description: Découvrez comment configurer des filtres pour la boîte de dialogue de navigation dans les fichiers
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%
 
 ---
-
 
 # Configuration des filtres pour la boîte de dialogue de navigation dans les fichiers {#id20CIL7009GN}
 
@@ -58,12 +57,10 @@ Procédez comme suit pour ajouter vos options de filtrage de fichier personnalis
 
    - **operation :**   Spécifiez &quot;`exists`&quot; pour correspondre à l’existence de la valeur spécifiée dans le paramètre de propriété.
 
-   Le second filtre concerne les fichiers image. Les paramètres sont similaires au premier filtre, à l’exception du filtre `value` . Le `value` prend comme valeur un tableau de types d’image. Tous les types de fichiers spécifiés dans le paramètre de valeur sont recherchés et affichés dans la boîte de dialogue de navigation des fichiers ; tous les autres types de fichiers sont ignorés.
+   Le second filtre concerne les fichiers image. Les paramètres sont similaires au premier filtre, à l’exception du filtre `value` . La variable `value` prend comme valeur un tableau de types d’image. Tous les types de fichiers spécifiés dans le paramètre de valeur sont recherchés et affichés dans la boîte de dialogue de navigation des fichiers ; tous les autres types de fichiers sont ignorés.
 
 1. Enregistrez le *ui\_config.json* et rechargez l’éditeur Web.
 
    Lorsque vous lancez la boîte de dialogue de navigation des fichiers, les options de filtrage configurées dans le fichier ui\_config.json s’affichent.
 
    ![](assets/file-browse-custom-filters.png){width="300" align="left"}
-
-

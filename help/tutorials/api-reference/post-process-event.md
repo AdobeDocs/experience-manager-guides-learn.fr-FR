@@ -1,13 +1,12 @@
 ---
 title: Gestionnaire d’événements de post-traitement
 description: En savoir plus sur le gestionnaire d’événements de post-traitement
-source-git-commit: fad5049962f258bbe59c7d172436d82b3d6cd68f
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '198'
 ht-degree: 1%
 
 ---
-
 
 # Gestionnaire d’événements de post-traitement {#id175UB30E05Z}
 
@@ -33,4 +32,3 @@ com/adobe/fmdita/postprocess/complete
 ```
 
 **Paramètres**: |Nom|Type|Description| |—|—|—| |`path`|String|Le chemin d’accès du fichier qui a déclenché cet événement. En règle générale, il s’agit du fichier sur lequel une opération a été effectuée.| |`status`|String|L’état de retour de l’opération effectuée. Les options possibles sont : - <br>- SUCCESS : l’opération de post-traitement s’est terminée avec succès. <br>- TERMINÉ AVEC DES ERREURS : l’opération de post-traitement s’est terminée, mais avec certaines erreurs. <br>- FAILED : l’opération de post-traitement a échoué en raison d’une erreur fatale.| |`message`|String|Si l’état est TERMINÉ AVEC DES ERREURS ou ÉCHEC, ce paramètre contient les détails sur l’erreur ou la raison de l’échec.| |`operation`|String|L’opération de post-traitement effectuée sur le fichier. Les options possibles sont les suivantes :<br>- Ajout <br>- Mise à niveau <br>- Suppression|
-

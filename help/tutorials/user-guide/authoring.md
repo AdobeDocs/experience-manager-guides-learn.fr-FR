@@ -1,11 +1,10 @@
 ---
 title: Gestion du contenu
 description: Gérez le contenu et identifiez vos rôles et autorisations dans AEM Guides. Découvrez les concepts clés de la gestion de contenu et de l’utilisation des profils globaux ou au niveau des dossiers.
-exl-id: d2fa31a7-a8ce-4d17-bd4e-0f51ea751dca
-source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 11%
+source-wordcount: '717'
+ht-degree: 10%
 
 ---
 
@@ -67,7 +66,7 @@ Le tableau suivant répertorie les différentes tâches et les groupes pouvant e
 | Générer |   |   | Oui |
 | Modifier |   |   | Oui |
 | Dupliquer |   |   | Oui |
-| Création |   |   | Oui |
+| Créer |   |   | Oui |
 | Supprimer le paramètre prédéfini |   |   | Oui |
 | **Fonctionnalités disponibles dans la console de mappage DITA \(onglet Sorties\)** |
 | Afficher la sortie générée | Oui |   | Oui |
@@ -75,7 +74,7 @@ Le tableau suivant répertorie les différentes tâches et les groupes pouvant e
 | Créer une tâche de révision | Oui |   | Oui |
 | Modifier | Oui |   | Oui |
 | **Fonctionnalités disponibles dans la console de mappage DITA \(onglet Lignes de base\)** |
-| Création |   |   | Oui |
+| Créer |   |   | Oui |
 | Modifier |   |   | Oui |
 | Dupliquer |   |   | Oui |
 | Supprimez |   |   | Oui |

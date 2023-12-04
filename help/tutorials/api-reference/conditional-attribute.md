@@ -1,13 +1,12 @@
 ---
 title: API REST pour travailler avec des attributs conditionnels
 description: En savoir plus sur l’API REST pour utiliser les attributs conditionnels
-source-git-commit: fad5049962f258bbe59c7d172436d82b3d6cd68f
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 2%
+source-wordcount: '147'
+ht-degree: 0%
 
 ---
-
 
 # API REST pour travailler avec des attributs conditionnels {#id175UB30E05Z}
 
@@ -17,7 +16,7 @@ L’API REST suivante vous permet d’ajouter des attributs conditionnels dans u
 
 Méthode de POST qui ajoute des attributs conditionnels à un profil donné au niveau du dossier.
 
-**URL de la demande**:\
+**URL de la requête**:\
 http://*&lt;aem-guides-server>*: *&lt;port-number>*/bin/fmdita/folder profiles
 
 **Paramètres**:\
@@ -40,4 +39,3 @@ http://*&lt;aem-guides-server>*: *&lt;port-number>*/bin/fmdita/folder profiles
 
 **Valeurs de réponse**:\
 Renvoie une réponse HTTP 200 \(Succès\).
-

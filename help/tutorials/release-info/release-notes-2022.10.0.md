@@ -1,11 +1,10 @@
 ---
-title: Notes de mise à jour | Adobe Experience Manager Guides as a Cloud Service, version d’octobre 2022
+title: Notes de mise à jour | Guides Adobe Experience Manager as a Cloud Service, version d’octobre 2022
 description: Version d’octobre des guides Adobe Experience Manager as a Cloud Service
-exl-id: 38638080-625c-49c3-9e54-56cc23831546
-source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 4%
+source-wordcount: '491'
+ht-degree: 1%
 
 ---
 
@@ -14,9 +13,9 @@ ht-degree: 4%
 ## Mise à niveau vers la version d’octobre
 
 Mettez à niveau vos guides Adobe Experience Manager actuels as a Cloud Service (plus tard appelés *AEM Guides as a Cloud Service*) en procédant comme suit :
-1. Extrayez le code Git des Cloud Services et passez à la branche configurée dans le pipeline Cloud Services correspondant à l’environnement que vous souhaitez mettre à niveau.
-1. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Services vers 2022.10.183.
-1. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version d’octobre d’AEM Guides as a Cloud Service.
+1. Extrayez le code Git des Cloud Service et passez à la branche configurée dans le pipeline Cloud Service correspondant à l’environnement que vous souhaitez mettre à niveau.
+1. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Service vers la version 2022.10.183.
+1. Validez les modifications et exécutez le pipeline Cloud Service pour effectuer la mise à niveau vers la version d’octobre d’AEM Guides as a Cloud Service.
 
 ## Matrice de compatibilité
 
@@ -27,7 +26,7 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 | FMPS | FrameMaker |
 | --- | --- |
 | Non compatible | Mise à jour 4 et ultérieure 2020 |
-|  |  |
+| | |
 
 *Les conditions de base et créées dans AEM sont prises en charge dans les versions FMPS à partir de 2020.2.
 
@@ -35,7 +34,7 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 
 | AEM Guides as a Cloud | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
 | --- | --- | --- | --- | --- |
-| 2022.10.0 | 2.7.13 | 2.7.13 | 2.3 | 2.3 |
+| 2022.10.0 | 2,7.13 | 2,7.13 | 2,3 | 2,3 |
 |  |  |  |  |
 
 
@@ -62,11 +61,11 @@ Sélectionnez un ou plusieurs paramètres prédéfinis et générez rapidement l
 Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 
 * PDF natif | Une erreur se produit lors de la suppression des rubriques de ressource seule de la sortie du PDF. (10554)
-* PDF natif | Les keyrefs vides apparaissent dans la sortie du PDF. (10553)
-* PDF natif | `navtitle` pour `topichead` n’est pas honorée. (10509)
+* PDF natif | Les keyrefs vides apparaissent dans la sortie du PDF. 10553)
+* PDF natif | `navtitle` pour `topichead` n’est pas honorée. 10509)
 * PDF natif | Prise en charge nécessaire pour les versions du JDK amd64. (10465)
-* PDF natif | Impossible de masquer les rubriques de première ligne de la table des matières. (10355)
-* PDF natif | Le redémarrage du numéro de page dans la mise en page du chapitre commence aléatoirement la numérotation à partir de la fin du chapitre précédent. (10154)
-* Navigateur Chrome | L’écran devient vide lorsque vous faites glisser un élément de l’interface utilisateur. Par exemple, lorsque vous faites glisser une condition à partir du panneau Conditions. (10524)
+* PDF natif | Impossible de masquer les rubriques de première ligne de la table des matières. 10355
+* PDF natif | Le redémarrage du numéro de page dans la mise en page du chapitre commence aléatoirement la numérotation à partir de la fin du chapitre précédent. 10154
+* Navigateur Chrome | L’écran devient vide lorsque vous faites glisser un élément de l’interface utilisateur. Par exemple, lorsque vous faites glisser une condition à partir du panneau Conditions. 10524)
 * Les propriétés de noeud sont supprimées après l’opération de copier-coller d’une ressource. (10053)
 * En cliquant  **Fermer** les utilisateurs étaient redirigés vers les ressources ; l’expérience a été corrigée afin de rediriger les utilisateurs vers la page d’accueil d’AEM. (9654)

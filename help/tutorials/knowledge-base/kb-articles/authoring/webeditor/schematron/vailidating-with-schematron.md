@@ -1,10 +1,9 @@
 ---
 title: Prise en charge des schémas dans l’éditeur web
 description: Utilisation de Schematron dans webeditor
-exl-id: 3e61432f-d81e-446e-b0ad-560f5b9fa91a
-source-git-commit: f3c8ec973d3a6369d6135a33f61584c8bf7d083d
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -18,14 +17,14 @@ Outre la prise en charge des règles DITA, l’éditeur web prend également en 
 
 &quot;*Schéma*&quot; fait référence à un langage de validation basé sur des règles utilisé pour définir des tests pour un fichier XML. Vous pouvez importer les fichiers de schéma et les modifier dans l’éditeur web. À l’aide d’un fichier &quot;Schéma&quot;, vous pouvez définir certaines règles, puis les valider pour une rubrique DITA ou un mappage. Les règles de schéma peuvent assurer la cohérence de la structure XML en imposant des restrictions définies comme règles. Ces restrictions sont motivées par les PME qui détiennent la qualité et la cohérence du contenu.
 
-    REMARQUE : L’éditeur web prend en charge le schéma ISO.
+    REMARQUE : l’éditeur web prend en charge le schéma ISO.
 
 
 ## Fonctionnement de &quot;Schéma&quot; dans l’éditeur web
 
 ### Configuration des règles de schéma
 
-Reportez-vous à la section &quot;Prise en charge des fichiers de schéma&quot; dans la [Guide de l’utilisateur](https://helpx.adobe.com/content/dam/help/en/xml-documentation-solution/4-2/Adobe-Experience-Manager-Guides_UUID_User-Guide_EN.pdf#page=148)
+Reportez-vous à la section &quot;Prise en charge des fichiers de schéma&quot; dans [Guide de l’utilisateur](https://helpx.adobe.com/content/dam/help/en/xml-documentation-solution/4-2/Adobe-Experience-Manager-Guides_UUID_User-Guide_EN.pdf#page=148)
 
 
 ### Application des règles de validation à l’enregistrement du fichier
@@ -56,45 +55,45 @@ La version actuelle des Guides d’AEM prend en charge la validation à l’aide
 
 - Vérifier si un lien est externe et s’il a une portée &quot;externe&quot;
 
-   ```
-   <sch:pattern>
-       <sch:rule context="xref[contains(@href, 'http') or contains(@href, 'https')]">
-           <sch:assert test="@scope = 'external' and @format = 'html'">
-               All external xref links must be with scope='external' and format='html'
-           </sch:assert>
-       </sch:rule>
-   </sch:pattern>
-   ```
+  ```
+  <sch:pattern>
+      <sch:rule context="xref[contains(@href, 'http') or contains(@href, 'https')]">
+          <sch:assert test="@scope = 'external' and @format = 'html'">
+              All external xref links must be with scope='external' and format='html'
+          </sch:assert>
+      </sch:rule>
+  </sch:pattern>
+  ```
 
 - Vérifiez s’il existe au moins un &quot;topicref&quot; sur une carte ou au moins un &quot;li&quot; sous un &quot;ul&quot;
 
-   ```
-   <sch:pattern>
-       <sch:rule context="map">
-           <sch:assert test="count(topicref) > 0">
-               There should be atleast one topicref in map
-           </sch:assert>
-       </sch:rule>
-   
-       <sch:rule context="ul">
-           <sch:assert test="count(li) > 1" >
-               A list must have more than one item.
-           </sch:assert>
-       </sch:rule>
-   </sch:pattern>
-   ```
+  ```
+  <sch:pattern>
+      <sch:rule context="map">
+          <sch:assert test="count(topicref) > 0">
+              There should be atleast one topicref in map
+          </sch:assert>
+      </sch:rule>
+  
+      <sch:rule context="ul">
+          <sch:assert test="count(li) > 1" >
+              A list must have more than one item.
+          </sch:assert>
+      </sch:rule>
+  </sch:pattern>
+  ```
 
 - L’élément &quot;indexterm&quot; doit toujours être présent dans un &quot;prolog&quot;.
 
-   ```
-   <sch:pattern>
-       <sch:rule context="*[contains(@class, ' topic/indexterm ')]">
-           <sch:assert test="ancestor::node()/local-name() = 'prolog'">
-               The indexterm element should be in a prolog.
-           </sch:assert>
-       </sch:rule>
-   </sch:pattern>
-   ```
+  ```
+  <sch:pattern>
+      <sch:rule context="*[contains(@class, ' topic/indexterm ')]">
+          <sch:assert test="ancestor::node()/local-name() = 'prolog'">
+              The indexterm element should be in a prolog.
+          </sch:assert>
+      </sch:rule>
+  </sch:pattern>
+  ```
 
 #### Ressources
 

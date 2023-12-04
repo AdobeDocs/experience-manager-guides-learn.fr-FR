@@ -1,13 +1,12 @@
 ---
 title: Configuration de l’option à modifier dans Oxygen
 description: Découvrez comment configurer l’option à modifier dans le module externe du connecteur Oxygen.
-source-git-commit: a209e46e41055348402292e20c229890cd0c01cf
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 1%
 
 ---
-
 
 # Configuration de l’option à modifier dans Oxygen
 
@@ -26,4 +25,3 @@ Suivez les instructions de la section [Remplacements de configuration](download-
 > Cette configuration est désactivée par défaut et l’option n’est pas disponible dans l’éditeur web.
 
 **Rubrique parente :**[ Personnalisation de l’éditeur web](conf-web-editor.md)
-

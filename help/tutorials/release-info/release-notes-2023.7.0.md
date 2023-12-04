@@ -1,16 +1,16 @@
 ---
 title: Notes de mise à jour | Instructions de mise à niveau et problèmes résolus dans les guides Adobe Experience Manager, version de juillet 2023
-description: Découvrez les correctifs et comment mettre à niveau vers la version de juillet 2023 des Guides Adobe Experience Manager as a Cloud Service
-source-git-commit: 6061d35b86790e24c6f55e4ccac5dbb40c43aae8
+description: Découvrez les correctifs de bogues et comment mettre à niveau vers la version de juillet 2023 de Adobe Experience Manager Guides as a Cloud Service
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 2%
+source-wordcount: '926'
+ht-degree: 1%
 
 ---
 
 # Version de juillet 2023 des Guides Adobe Experience Manager as a Cloud Service
 
-Cette note de mise à jour décrit les instructions de mise à niveau, la matrice de compatibilité et les problèmes résolus dans la version de juillet 2023 des Guides Adobe Experience Manager (ultérieurement appelée *AEM Guides as a Cloud Service*).
+Cette note de mise à jour traite des instructions de mise à niveau, de la matrice de compatibilité et des problèmes résolus dans la version de juillet 2023 des Guides Adobe Experience Manager (ultérieurement appelée *AEM Guides as a Cloud Service*).
 
 Pour plus d’informations sur les nouvelles fonctionnalités et améliorations, voir [Nouveautés de la version de juillet 2023 d’AEM Guides as a Cloud Service](whats-new-2023.7.0.md).
 
@@ -18,9 +18,9 @@ Pour plus d’informations sur les nouvelles fonctionnalités et améliorations,
 
 Mettez à niveau votre configuration as a Cloud Service actuelle AEM Guides en procédant comme suit :
 
-1. Extrayez le code Git des Cloud Services et passez à la branche configurée dans le pipeline Cloud Services correspondant à l’environnement que vous souhaitez mettre à niveau.
-2. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Services vers la version 2023.7.0.314.
-3. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version de juillet 2023 d’AEM Guides as a Cloud Service.
+1. Extrayez le code Git des Cloud Service et passez à la branche configurée dans le pipeline Cloud Service correspondant à l’environnement que vous souhaitez mettre à niveau.
+2. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Service vers la version 2023.7.0.314.
+3. Validez les modifications et exécutez le pipeline Cloud Service pour effectuer la mise à niveau vers la version de juillet 2023 d’AEM Guides as a Cloud Service.
 
 ## Procédure d’activation du déclencheur d’un script via un servlet
 
@@ -28,13 +28,13 @@ Mettez à niveau votre configuration as a Cloud Service actuelle AEM Guides en p
 
 Une fois l’installation terminée, vous pouvez choisir d’ACCÉDER au déclencheur pour lancer la tâche de traduction :
 
-POST:
+POST :
 
 ```
 http://localhost:4503/bin/guides/script/start?jobType=translation-map-upgrade
 ```
 
-Réponse:
+Réponse :
 
 ```
 {
@@ -65,12 +65,12 @@ Effectuez les étapes suivantes pour le post-traitement du contenu existant et l
 
 1. (Facultatif) Si le système contient plus de 100 000 fichiers dita, mettez à jour la variable `queryLimitReads` under `org.apache.jackrabbit.oak.query.QueryEngineSettingsService` à une valeur plus élevée (toute valeur supérieure au nombre de ressources présentes, par exemple 200 000), puis redéployez.
 
-   - Suivez les instructions de la section *Remplacements de configuration* dans la section Installation et configuration des guides Adobe Experience Manager as a Cloud Service pour créer le fichier de configuration.
+   - Suivez les instructions de la section *Remplacements de configuration* dans la section Installation et configuration de Adobe Experience Manager Guides as a Cloud Service pour créer le fichier de configuration.
    - Dans le fichier de configuration, fournissez les détails (propriété) suivants pour configurer l’option queryLimitReads :
 
      | PID | Clé de propriété | Valeur de la propriété |
      |---|---|---|
-     | org.apache.jackrabbit.oak.query.QueryEngineSettingsService | queryLimitReads | Valeur : 200000 Default Value : 100000 |
+     | org.apache.jackrabbit.oak.query.QueryEngineSettingsService | queryLimitReads | Valeur : 200000 Valeur par défaut : 100000 |
 
 1. Exécutez une requête de POST sur le serveur (avec l’authentification correcte) - `http://<server:port>//bin/guides/reports/upgrade`.
 
@@ -87,7 +87,7 @@ Effectuez les étapes suivantes pour le post-traitement du contenu existant et l
 
 Effectuez les étapes suivantes pour indexer le contenu existant et utilisez le nouveau texte de recherche et de remplacement au niveau de la carte et de la liste des rubriques sous l’onglet rapports :
 
-1. Exécutez une requête de POST sur le serveur \(avec l’authentification correcte\) - `http://<server:port\>/bin/guides/map-find/indexing`. (Facultatif) Vous pouvez transmettre des chemins spécifiques des cartes pour les indexer. Par défaut, toutes les cartes seront indexées \|\| Par exemple : `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`)
+1. Exécutez une requête de POST sur le serveur \(avec l’authentification correcte\) - `http://<server:port\>/bin/guides/map-find/indexing`. (Facultatif : vous pouvez transmettre des chemins spécifiques des cartes pour les indexer. Par défaut, toutes les cartes seront indexées \|\| Par exemple : `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`)
 
 1. Vous pouvez également transmettre un dossier racine pour indexer les mappages DITA d’un dossier spécifique (et de ses sous-dossiers). Par exemple, `http://<server:port\>/bin/guides/map-find/indexing?root=/content/dam/test`. Notez que si les paramètres paths et root sont transmis, seul le paramètre paths est pris en compte.
 
@@ -112,7 +112,7 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 
 | AEM Guides as a Cloud | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
 | --- | --- | --- | --- | --- |
-| 2023.07.0 | 2.9-uuid-2 | 2.9-uuid-2 | 2.3 | 2.3 |
+| 2023.07.0 | 2.9-uuid-2 | 2.9-uuid-2 | 2,3 | 2,3 |
 |  |  |  |  |
 
 
@@ -125,13 +125,11 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 - Les attributs intégrés/affichés ne s’affichent pas dans la vue Disposition de l’éditeur web. (12498)
 - Le téléchargement de fichiers dans le module externe Oxygen pour AEM Guides ne fonctionne pas dans les services cloud si vous l’avez fait ! dans le nom du fichier. (12207)
 - La publication de mappage DITA est très lente avec un modèle modifiable. (12075)
-- La configuration de l’interface utilisateur du profil global ne correspond pas au profil du dossier. (11970)
-- Les références au contenu sont rompues lorsque les fichiers DITA sont copiés et collés. (11959)
+- La configuration de l’interface utilisateur du profil global ne correspond pas au profil du dossier. (1970)
+- Les références au contenu sont rompues lorsque les fichiers DITA sont copiés et collés. (1959)
 - Impossible de modifier le fragment de contenu en mode Colonne avec les AEM Guides installés. (7342)
-- Le contenu est perdu lorsqu’un xref non encapsulé se trouve sous des balises de sous-élément. (12532)
+- Le contenu est perdu lorsqu’un xref non encapsulé se trouve sous des balises de sous-élément. 12532
 
 ### Publication
 
 - Le processus d’approbation ne fonctionne pas lorsque la propriété docstate est remplacée par &quot;end state&quot; à partir des propriétés File du panneau de droite. (11026)
-
-

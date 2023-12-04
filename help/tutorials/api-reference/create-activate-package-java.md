@@ -1,13 +1,12 @@
 ---
 title: API Java pour la création et l’activation de packages
 description: En savoir plus sur l’API Java pour la création et l’activation de packages
-source-git-commit: fad5049962f258bbe59c7d172436d82b3d6cd68f
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
-
 
 # API Java pour la création et l’activation de packages {#id175UB30E05Z}
 
@@ -90,4 +89,3 @@ L’exemple de requête JSON se compose des règles suivantes :
 - Seules les images .png, .jpg et .gif sous /content/dam/nested path sont incluses dans le package.
 - Tous les noeuds situés sous /content/output/sites/hierarchy\_ditamap sont inclus dans le package.
 - Les chemins d’accès présents dans la variable `fileReference` La propriété des noeuds sous /content/output/sites/hierarchy\_ditamap est incluse dans le package.
-

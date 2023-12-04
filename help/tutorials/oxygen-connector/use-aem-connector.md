@@ -3,14 +3,12 @@ title: Module externe Oxygen pour les guides Adobe Experience Manager
 description: Découvrez comment utiliser le module externe Oxygen pour les guides Adobe Experience Manager pour créer et gérer votre contenu.
 hide: true
 hidefromtoc: true
-exl-id: 2db9a34e-2efa-47ad-ba6b-02afc5197669
-source-git-commit: 23c1dfb405643bd9f5906807dddc4fff3f2e8535
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '6120'
+source-wordcount: '6101'
 ht-degree: 0%
 
 ---
-
 
 # Module externe Oxygen pour les guides Adobe Experience Manager {#id1645H6010Q5}
 
@@ -36,14 +34,14 @@ Une fois que vous avez installé le programme d’installation, installez-le sur
 
 - Système d’exploitation pris en charge par Oxygen XML Author version 25.1
 
-- Java Development Kit .
+- Java Development Kit
    - Oracle SE 8 JRE 1.8
 
 ### Installation du module externe sous Windows
 
 >[!IMPORTANT]
 >
->Si une ancienne version du module externe est installée sur votre système, assurez-vous de la désinstaller avant de lancer le processus d’installation. Voir **Désinstallation des modules** dans la section [Utilisation de modules](https://helpx.adobe.com/fr/experience-manager/6-4/sites/administering/using/package-manager.html) article pour les instructions de désinstallation.
+>Si une ancienne version du module externe est installée sur votre système, assurez-vous de la désinstaller avant de lancer le processus d’installation. Voir **Désinstallation des modules** dans la section [Utilisation de modules](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/package-manager.html) article pour les instructions de désinstallation.
 
 Effectuez les étapes suivantes sur le système où Oxygen XML Author est installé :
 
@@ -77,7 +75,7 @@ Effectuez les étapes suivantes sur le système où Oxygen XML Author est instal
 
 >[!IMPORTANT]
 >
->Si une ancienne version du module externe est installée sur votre système, assurez-vous de la désinstaller avant de lancer le processus d’installation. Voir **Désinstallation des modules** dans la section [Utilisation de modules](https://helpx.adobe.com/fr/experience-manager/6-4/sites/administering/using/package-manager.html) instructions de désinstallation de l’article.
+>Si une ancienne version du module externe est installée sur votre système, assurez-vous de la désinstaller avant de lancer le processus d’installation. Voir **Désinstallation des modules** dans la section [Utilisation de modules](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/package-manager.html) instructions de désinstallation de l’article.
 
 Effectuez les étapes suivantes sur le système où Oxygen XML Author est installé :
 
@@ -484,7 +482,7 @@ Lorsque vous disposez de plusieurs dossiers, il n’est pas facile de détermine
 - Vous pouvez trier la liste des fichiers en fonction de leur nom de fichier, de leur titre ou de leur chemin d’accès. Si un nouveau fichier est extrait, le fichier s’affiche dans l’ordre de tri dans la vue.
 
 
-### Charger des fichiers et des dossiers {#id195HC03F03J}
+### Chargement de fichiers et de dossiers {#id195HC03F03J}
 
 Effectuez les étapes suivantes pour charger des fichiers ou des dossiers :
 
@@ -749,5 +747,3 @@ Solution : procédez comme suit pour configurer les enregistreurs pour oXygen et
 
 
 Avec les étapes précédentes, les journaux seront activés et vous pouvez les utiliser pour déboguer les problèmes.
-
-

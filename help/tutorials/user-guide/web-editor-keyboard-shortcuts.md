@@ -1,11 +1,10 @@
 ---
 title: Raccourcis clavier dans l’éditeur web
 description: Découvrez les raccourcis clavier permettant d’économiser du temps dans l’éditeur web des Guides d’AEM.
-exl-id: d843c5a9-04f8-44f2-9bf5-60cb4ed7fa38
-source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 2%
+source-wordcount: '353'
+ht-degree: 1%
 
 ---
 
@@ -35,12 +34,12 @@ Il existe de nombreuses opérations dans l’éditeur Web que vous pouvez effect
 | Déplacez le curseur d’un mot vers la droite. | ***Ctrl***+***Flèche vers la droite*** | ***Option***+***Flèche vers la droite*** |
 | Déplacez le curseur au début de la ligne actuelle. | ***Accueil*** | ***Commande***+***Flèche gauche*** |
 | Déplacez le curseur à la fin de la ligne actuelle. | **Fin** | ***Commande***+***Flèche vers la droite*** |
-| Déplacez le curseur au début de l’élément suivant. | ***Tabulation*** | ***Tabulation*** |
-| Retrait de l’élément de liste au niveau suivant. | ***Tabulation*** | ***Tabulation*** |
+| Déplacez le curseur au début de l’élément suivant. | ***Onglet*** | ***Onglet*** |
+| Retrait de l’élément de liste au niveau suivant. | ***Onglet*** | ***Onglet*** |
 | Déplacez le curseur à la fin de l’élément précédent. | ***Maj***+***Onglet*** | ***Maj***+***Onglet*** |
 | Retrait l’élément de liste au niveau précédent. | ***Maj***+***Onglet*** | ***Maj***+***Onglet*** |
 | Retrait automatique du code XML en mode Source | ***Ctrl***+***Alt***+***L*** | ***Commande***+***Option***+***L*** |
-| Fractionner l’élément actif | ***Enter*** | ***Retour*** |
+| Fractionner l’élément actif | ***Entrée*** | ***Retour*** |
 | Copier le texte sélectionné | ***Ctrl***+**C** | ***Commande***+**C** |
 | Coller | ***Ctrl***+**V** | ***Commande***+**V** |
 | Formatage des collages et correspondances | ***Ctrl***+***Maj***+**V** | ***Commande***+***Maj***+**V** |

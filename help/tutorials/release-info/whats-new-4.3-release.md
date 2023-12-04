@@ -1,14 +1,14 @@
 ---
 title: Notes de mise à jour | Nouveautés de la version 4.3.0 des guides Adobe Experience Manager
 description: Découvrez les nouvelles fonctionnalités et les fonctionnalités améliorées de la version 4.3.0 des Guides Adobe Experience Manager
-source-git-commit: 7581085859785c5b8b597ecfeb7dbe58c7c9e2bc
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '2639'
+source-wordcount: '2655'
 ht-degree: 0%
 
 ---
 
-# Nouveautés de la version 4.3.0 des Guides Adobe Experience Manager (juillet 2023)
+# Nouveautés de la version 4.3.0 de Adobe Experience Manager Guides (juillet 2023)
 
 Cet article couvre les nouvelles fonctionnalités et les fonctionnalités améliorées de la version 4.3.0 des Guides Adobe Experience Manager (ultérieurement appelées *Guides d’AEM*).
 
@@ -58,9 +58,9 @@ Capitalisez la puissance des Guides AEM et des fragments de contenu et utilisez 
 
 AEM Guides offre désormais une fonctionnalité de révision améliorée avec les fonctionnalités suivantes :
 
-### Panneau de révision pour afficher les projets de révision et les tâches de révision principales
+### Panneau de révision pour afficher les projets de révision et les tâches de révision actives
 
-Maintenant AEM Guides rend vos révisions plus transparentes. Il fournit le panneau Révisions dans l’éditeur web. Le panneau Révisions affiche tous les projets de révision et les principales tâches de révision dans les projets de révision dont vous faites partie.
+Maintenant AEM Guides rend vos révisions plus transparentes. Il fournit le panneau Révisions dans l’éditeur web. Le panneau Révisions affiche tous les projets de révision et les tâches de révision actives dans les projets de révision dont vous faites partie.
 
 En tant qu’auteur, cette fonctionnalité vous permet d’ouvrir facilement les tâches de révision, d’afficher les commentaires et d’adresser rapidement les commentaires dans une vue centralisée.
 ![](assets/active-review-task-comments.png){width="800" align="left"}

@@ -1,10 +1,9 @@
 ---
 title: Tutorials pour les guides des Experience Manager
 description: Recherchez des tutoriels vidéo pour les guides de Experience Manager (anciennement XML Documentation pour Adobe Experience Manager). Découvrez la prise en charge native de DITA et la création structurée en Experience Manager.
-exl-id: 06dd1b77-1a98-430f-8322-475d4fa4947b
-source-git-commit: 7fa60a962a94ad5011359398cc668f8080859a8c
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '303'
 ht-degree: 2%
 
 ---
@@ -25,16 +24,16 @@ Avec [!DNL AEM Guides] , les entreprises peuvent offrir des expériences personn
 
 * **[[!DNL AEM Guides] Cours de prise en main](../courses/course-1/overview.md)**
 
-   _Découvrez comment créer, organiser, créer et publier du contenu avec [!DNL Adobe Experience Manager Guides]._
+  _Découvrez comment créer, organiser, créer et publier du contenu avec [!DNL Adobe Experience Manager Guides]._
 
 
 * **[[!DNL AEM Guides] Création dans l’éditeur web intégré](../courses/course-3/overview.md)**
 
-   _Découvrez comment créer du contenu à l’aide de l’éditeur web natif dans  [!DNL Adobe Experience Manager Guides]. Comprendre parfaitement les préférences des utilisateurs, les paramètres de l’éditeur, la configuration, les barres d’outils, etc._
+  _Découvrez comment créer du contenu à l’aide de l’éditeur web natif dans  [!DNL Adobe Experience Manager Guides]. Comprendre parfaitement les préférences des utilisateurs, les paramètres de l’éditeur, la configuration, les barres d’outils, etc._
 
 * **[Génération de sortie avec [!DNL AEM Guides]](../courses/course-2/overview.md)**
 
-   _Découvrez comment générer une sortie à l’aide de [!DNL Adobe Experience Manager Guides]. Découvrez les différentes fonctionnalités disponibles pour la génération de sortie : rapports, lignes de base, conditions, dépannage, publication en masse et activation._
+  _Découvrez comment générer une sortie à l’aide de [!DNL Adobe Experience Manager Guides]. Découvrez les différentes fonctionnalités disponibles pour la génération de sortie : rapports, lignes de base, conditions, dépannage, publication en masse et activation._
 
 
 <!--
@@ -94,4 +93,4 @@ Dummy links cause validation to fail
 
 * [[!DNL AEM Guides] Guide de l’utilisateur en ligne](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html)
 * [[!DNL AEM Guides] Guides du PDF](https://helpx.adobe.com/support/xml-documentation-for-experience-manager.html)
-* [Experience League - Explorer AEM](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager)
+* [Experience League - Explorer AEM](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager)

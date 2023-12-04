@@ -1,13 +1,12 @@
 ---
 title: Configuration de noms de fichier valides pour AEM sortie Site
 description: Découvrez comment configurer des noms de fichier valides pour AEM sortie Site
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '146'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
-
 
 # Configuration de noms de fichier valides pour AEM sortie Site {#id214GK0X0KXA}
 
@@ -20,4 +19,3 @@ Suivez les instructions de la section [Remplacements de configuration](download-
 | `com.adobe.fmdita.common.SanitizeNodeNameImpl` | `aemsite.DisallowedFileNameChars` | Ajoutez les caractères que vous souhaitez remplacer par un trait de soulignement dans les noms de fichiers de sortie Site AEM. <br> **Valeur par défaut**: ``'<\>\`@$`` |
 
 **Rubrique parente :**[ Configuration des noms de fichier](conf-file-names.md)
-

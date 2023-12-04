@@ -1,10 +1,9 @@
 ---
 title: Configuration de l’environnement AEM pour la publication de PDF natifs
 description: Configuration de l’environnement AEM pour la publication de PDF natifs
-exl-id: 40266ca0-0b0b-4418-b606-f70270addbaa
-source-git-commit: 45dfe6078039001327e91ae85ea2a5beeacb2d59
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '902'
 ht-degree: 1%
 
 ---
@@ -17,7 +16,7 @@ Il permet de créer différentes mises en page, modèles CSS et de concevoir les
 
 Les étapes de configuration de cet PDF natif dans les Guides d’AEM diffèrent selon le système d’exploitation. Suivez les étapes de configuration ci-dessous en fonction du système d’exploitation sur lequel AEM est installé.
 
-## Conditions préalables
+## Conditions préalables requises
 
 Configuration de l’PDF natif :
 

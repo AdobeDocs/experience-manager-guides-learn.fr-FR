@@ -1,8 +1,7 @@
 ---
 title: Génération de sortie
 description: Générez la sortie sur AEM site, PDF, HTML5, EPUB, personnalisée et JSON par le biais des modules externes DITA-OT, de la publication sur PDF natif et de FMPS dans AEM Guides.
-exl-id: 32fc32f8-16b1-4c3c-a6e2-abfb8fba9e66
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -43,4 +42,3 @@ Les informations des sections suivantes s’adressent aux éditeurs qui utiliser
 >[!IMPORTANT]
 >
 > Les fonctionnalités décrites dans cette rubrique sont disponibles uniquement pour les utilisateurs disposant de droits d’éditeur ou d’administrateur.
-

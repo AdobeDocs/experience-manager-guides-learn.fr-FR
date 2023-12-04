@@ -1,11 +1,10 @@
 ---
 title: Notes de mise à jour d’ [!DNL AEM Guides], version de janvier 2022
 description: Version de janvier [!DNL Adobe Experience Manager Guides] as a Cloud Service
-exl-id: b2da77fa-f17c-440b-be59-acaafcd9a57c
-source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '2429'
-ht-degree: 3%
+source-wordcount: '2441'
+ht-degree: 0%
 
 ---
 
@@ -14,9 +13,9 @@ ht-degree: 3%
 ## Mise à niveau vers la version de janvier
 
 Mettre à niveau votre [!DNL Adobe Experience Manager Guides] as a Cloud Service (plus tard appelé [!DNL AEM Guides] as a Cloud Service) en procédant comme suit :
-1. Extrayez le code Git des Cloud Services et passez à la branche configurée dans le pipeline Cloud Services correspondant à l’environnement que vous souhaitez mettre à niveau.
-1. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Services vers la version 2022.1.78.
-1. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version de janvier de [!DNL AEM Guides] as a Cloud Service.
+1. Extrayez le code Git des Cloud Service et passez à la branche configurée dans le pipeline Cloud Service correspondant à l’environnement que vous souhaitez mettre à niveau.
+1. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Service vers la version 2022.1.78.
+1. Validez les modifications et exécutez le pipeline Cloud Service pour effectuer la mise à niveau vers la version de janvier de [!DNL AEM Guides] as a Cloud Service.
 
 ## Matrice de compatibilité
 
@@ -27,14 +26,14 @@ Cette section répertorie la matrice de compatibilité des applications logiciel
 | FMPS | FrameMaker |
 | --- | --- |
 | Non compatible | Mise à jour 4 et ultérieure 2020 |
-|  |  |
+| | |
 
 
 ### Connecteur Oxygen
 
 | [!DNL AEM Guides] Version cloud | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
 | --- | --- | --- | --- | --- |
-| 2022.1.0 | 2.4.0 | 2.4.0 | 2.2 | 2.2 |
+| 2022.1.0 | 2.4.0 | 2.4.0 | 2,2 | 2,2 |
 |  |  |  |  |  |
 
 
@@ -80,10 +79,10 @@ De nombreuses améliorations et nouvelles fonctionnalités sont introduites dans
 
 ### Création avec FrameMaker
 
-Vous pouvez maintenant créer et publier vos documents dans FrameMaker. FrameMaker est fourni avec un connecteur d’usine à Adobe Experience Manager. FrameMaker offre une interface conviviale qui vous permet de gérer des versions de vos documents dans un environnement collaboratif et distribué.
+Vous pouvez maintenant créer et publier vos documents dans FrameMaker. FrameMaker est livré avec un connecteur d’usine vers Adobe Experience Manager. Dans FrameMaker, vous disposez d’une interface conviviale qui vous permet de gérer des versions de vos documents dans un environnement collaboratif et distribué.
 
 Une fois votre contenu créé, FrameMaker vous permet de publier vos documents dans différents formats (PDF, HTML5, EPUB et DITA). Vous pouvez également effectuer diverses opérations de gestion de fichiers, telles que l’extraction, l’extraction avec dépendances, l’archivage, l’actualisation, etc.
-Pour créer avec FrameMaker dans [!DNL AEM Guides] Utilisation as a Cloud Service de FrameMaker version 2020.4 et ultérieure.
+Pour créer avec FrameMaker dans [!DNL AEM Guides] FrameMaker d’utilisation as a Cloud Service version 2020.4 et ultérieure.
 
 ### Nouveau tableau de bord de traduction
 
@@ -93,7 +92,7 @@ Un nouveau tableau de bord de traduction a été introduit dans l’éditeur web
 * Filtrer le contenu par type de référence : références directes ou indirectes.
 * Navigation facile pour trouver un projet existant tout en initiant une demande de traduction.
 * Ajout d’un mécanisme de traduction multilingue afin d’éviter de créer plusieurs projets pour chaque langue lorsque la demande de traduction est lancée pour plusieurs langues.
-* Introduction d’une configuration pour masquer l’onglet Traduction dans le tableau de bord de carte. Par défaut, il est visible. Vous pouvez choisir de traduire le contenu à l’aide du tableau de bord de mappage ou de l’éditeur web.
+* Introduction d’une configuration pour masquer l’onglet de traduction dans le tableau de bord de carte. Par défaut, il est visible. Vous pouvez choisir de traduire le contenu à l’aide du tableau de bord de mappage ou de l’éditeur web.
 
 ![Tableau de bord des traductions](assets/translation-from-web-editor.png)
 
@@ -101,7 +100,7 @@ Un nouveau tableau de bord de traduction a été introduit dans l’éditeur web
 
 * Les auteurs peuvent désormais transmettre des métadonnées au niveau du mappage et du sujet à la publication DITA-OT. Cela s’avère utile lorsque les modèles de PDF personnalisés sont conçus pour utiliser des propriétés de métadonnées de fichier telles que les balises, l’auteur, l’état du document, etc.
 
-![Métadonnées DITA-OT](assets/custom-meta-data-output-preset.png)
+![métadonnées DITA-OT](assets/custom-meta-data-output-preset.png)
 
 * Une nouvelle configuration a été ajoutée pour permettre aux utilisateurs de conserver ou de supprimer les versions des rubriques supprimées lors de la **Suppression et création** est utilisée dans la génération de sortie de site AEM.
 
@@ -132,7 +131,7 @@ Lorsque vous actualisez des fichiers du serveur AEM dans Oxygen, un message d’
 
 ### Autres améliorations des fonctionnalités
 
-* Vous pouvez maintenant créer une **Projet Dita** sous le **/apps/projects/templates** chemin d’accès.
+* Vous pouvez maintenant créer une **Projet Dita** sous le **/apps/projects/templates** chemin.
 * Téléchargez maintenant la valeur par défaut **ui_config.json** à partir de vos profils de dossier. Vous pouvez l’utiliser pour fusionner des modifications personnalisées à partir des **ui_config.json** lors de la mise à niveau.
 * Vous n’avez pas besoin d’effacer le cache du navigateur même en présence de nouvelles versions des fichiers JS.
 
@@ -150,7 +149,7 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 * Les liens dans la tâche de révision ne sont pas mis à jour lorsque les fichiers en cours de révision sont déplacés. (8080)
 * L’éditeur web n’effectue pas correctement le rendu des images dont la propriété de mise à l’échelle est définie sur 75 % ou plus. (8073)
 * Les images de GIF sont rendues sous la forme d’images statiques dans l’éditeur web. (8024)
-* Un élément conkeyref dans une note ne s’affiche pas dans l’aperçu de l’éditeur web ni dans la sortie. (8006)
+* Une référence conkeyref dans un élément de note ne s’affiche pas dans l’aperçu de l’éditeur web ni dans la sortie. (8006)
 * xref à un élément qui est lui-même un conref n’est pas résolu dans l’éditeur. (7933)
 * Le rendu du titre comportant une clé n’est pas correct dans l’aperçu de l’éditeur et dans le panneau Référentiel. (7909)
 * Les fragments de code contenant des caractères spéciaux ne sont pas stockés correctement. (7908)
@@ -160,10 +159,10 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 * HTML ignore les dimensions définies personnalisées pour les graphiques. (7718)
 * l’attribut conrefend ne se met pas à jour lors du déplacement du fichier source. (7698)
 * L’utilisation de documents de type Référence entraîne plusieurs problèmes d’interface utilisateur. (7656)
-* Les fichiers DITAVAL ne sont pas affichés lorsque l’auteur ajoute ditavalref dans une carte. (7594)
+* Les fichiers DITAVAL ne s’affichent pas lorsque l’auteur ajoute ditavalref dans une carte. (7594)
 * Un espace inattendu est présent dans chaque espace vide. `<entry>` élément lorsque l’attribut outputclass est ajouté à `<tgroup>` élément . (7532)
 * Le bouton Source ne fonctionne pas pour les rubriques ouvertes via le tableau de bord de carte. (7465)
-* Une impression correcte insère des lignes vides et des espaces visibles lors de l’ouverture du fichier dans FrameMaker ou Oxygen. (7408)
+* Une impression correcte insère des lignes vides et des espaces visibles lorsque le fichier est ouvert dans FrameMaker ou Oxygen. (7408)
 * Les mappages avec href=&quot;/&quot; dans l’une des rubriques ne sont pas publiés sur AEM sites. (7405)
 * Problèmes de performances détectés dans l’éditeur lorsque la carte racine contient un grand nombre de clés de base. (7400)
 * L’état du document pour une carte avec modèle personnalisé n’est pas hérité de son profil d’états correspondant. (7359)
@@ -204,14 +203,14 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 ### Publication
 
 * La création du PDF échoue pour la première fois lorsque l’option Activer le contrôle de version est sélectionnée. (8053, 8294)
-* Le caractère espace blanc est automatiquement ajouté après un &quot;tm&quot; ; dans AEM sortie Site. (7964)
+* Le caractère d’espace blanc est automatiquement ajouté après une balise &quot;tm;&quot; dans la sortie AEM site. (7964)
 * Impossible d’afficher les vidéos YouTube dans AEM sortie Site. (7401)
 * Le filtrage par libellé échoue pour le contenu référencé une fois que l’utilisateur a cliqué sur parcourir toutes les rubriques dans l’onglet de ligne de base du tableau de bord de carte. (7388)
 * Publication d’une rubrique avec élément `<tm>` La valeur de propriété SM ou reg s’affiche incorrectement dans la sortie générée. (7239)
 * La publication de ligne de base avec l’image ne sélectionne pas la dernière version de l’image dans la sortie publiée. (7231)
-* Les rubriques référencées relatives s’affichent dans l’onglet Ligne de base. (5424)
+* Les rubriques référencées relatives s’affichent dans l’onglet Ligne de base . (5424)
 * La publication incrémentielle pour une rubrique dont le titre contient conkeyref ne fonctionne pas comme prévu. (4474)
-* Le titre de la page n’est pas utilisé pour la génération des URL de sortie, même si ce paramètre est coché. (8257)
+* Le titre de la page n’est pas utilisé pour la génération de l’URL de sortie, même si ce paramètre est coché. (8257)
 * Publication de ligne de base : sélectionnez la version actuelle des images au lieu du noeud figé. Vous pouvez également vérifier si le nom du fichier contient un espace ou des caractères spéciaux pour une image. (8274, 8322)
 * La publication incrémentielle échoue pour le mappage DITA avec le schéma d’objet de type mapref. (8218)
 * La valeur null est ajoutée chaque fois qu’une carte est ajoutée au tableau de bord de publication en bloc. (8695)
@@ -249,16 +248,16 @@ Adobe a identifié les problèmes connus suivants pour : [!DNL AEM Guides] Versi
 Utilisez la solution donnée pour les problèmes connus suivants :
 
 * L’authentification web ne fonctionne pas pour le connecteur Oxygen sur Mac.
-   **Solution**: Pour l’instant, utilisez le connecteur Oxygen sous Windows.
+  **Solution**: utilisez le connecteur Oxygen sous Windows pour l’instant.
 
 * Dans le navigateur Firefox, les commentaires de révision ne peuvent pas être importés sans ouvrir la vue côte à côte.
-   **Solution**: Utilisez le navigateur Chrome pour l’instant.
+  **Solution**: utilisez le navigateur Chrome pour l’instant.
 
 * Les références s’interrompent lors du déplacement des images ou des fichiers multimédia dont le nom contient un ou plusieurs espaces.
-   **Solution**: Renommez le fichier et supprimez les espaces du nom de fichier avant de les déplacer.
+  **Solution**: renommez le fichier et supprimez les espaces du nom de fichier avant de les déplacer.
 
 * Le tableau de bord de la carte ne se charge pas par intermittence dans la dernière version du navigateur Chrome.
-   **Solution**: Actualisez la page du tableau de bord de la carte.
+  **Solution**: actualisez la page du tableau de bord de la carte.
 
 ### Autres problèmes connus
 

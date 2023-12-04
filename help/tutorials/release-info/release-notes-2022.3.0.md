@@ -1,11 +1,10 @@
 ---
 title: Notes de mise à jour d’ [!DNL AEM Guides], version de mars 2022
 description: Version de mars [!DNL Adobe Experience Manager Guides] as a Cloud Service
-exl-id: 885edbb5-dfe4-4bdc-bb66-0df64addb094
-source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 2%
+source-wordcount: '777'
+ht-degree: 1%
 
 ---
 
@@ -14,9 +13,9 @@ ht-degree: 2%
 ## Mise à niveau vers la version de mars
 
 Mettre à niveau votre [!DNL Adobe Experience Manager Guides] as a Cloud Service (plus tard appelé *[!DNL AEM Guides]as a Cloud Service*) en procédant comme suit :
-1. Extrayez le code Git des Cloud Services et passez à la branche configurée dans le pipeline Cloud Services correspondant à l’environnement que vous souhaitez mettre à niveau.
-1. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Services vers la version 2022.3.123.
-1. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version de mars de [!DNL AEM Guides] as a Cloud Service.
+1. Extrayez le code Git des Cloud Service et passez à la branche configurée dans le pipeline Cloud Service correspondant à l’environnement que vous souhaitez mettre à niveau.
+1. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Service vers la version 2022.3.123.
+1. Validez les modifications et exécutez le pipeline Cloud Service pour effectuer la mise à niveau vers la version de mars de [!DNL AEM Guides] as a Cloud Service.
 
 ## Matrice de compatibilité
 
@@ -27,7 +26,7 @@ Cette section répertorie la matrice de compatibilité des applications logiciel
 | FMPS | FrameMaker |
 | --- | --- |
 | Non compatible | Mise à jour 4 et ultérieure 2020 |
-|  |  |
+| | |
 
 
 ### Connecteur Oxygen
@@ -45,7 +44,7 @@ Cette section répertorie la matrice de compatibilité des applications logiciel
 
 [!DNL AEM Guides] La version de mars as a Cloud Service fournit la fonctionnalité de ligne de base intégrée à l’éditeur web. Vous pouvez désormais créer des lignes de base à partir de l’éditeur Web et les utiliser pour publier ou traduire des rubriques de différentes versions.
 
-Remarque : Pour le système mis à niveau, mettez à jour la dernière version **ui_config.json** pour le profil de dossier.
+Remarque : pour le système mis à niveau, veuillez mettre à jour la dernière version **ui_config.json** pour le profil de dossier.
 
 Utilisez cette fonction pour créer une ligne de base avec une version spécifique des rubriques disponibles à une date et une heure spécifiques. En outre, vous obtenez la prise en charge de l’API pour créer ou mettre à jour une ligne de base avec un libellé défini pour une version de rubriques.
 
@@ -57,7 +56,7 @@ Vous pouvez rechercher les fichiers en fonction de leur nom ou de leur emplaceme
 
 Les performances du processus de création de ligne de base ont été améliorées. Le processus de création des lignes de base est asynchrone. Vous pouvez donc continuer à modifier d’autres fichiers dans l’éditeur web pendant la création de la ligne de base. Pour plus d’informations, voir *Création et gestion des lignes de base à partir de l’éditeur web* dans le Guide de l’utilisateur.
 
-Remarque : L’onglet Ligne de base du tableau de bord de carte est masqué par défaut. Votre administrateur peut activer l’onglet Ligne de base dans le tableau de bord de mappage.
+Remarque : l’onglet Ligne de base du tableau de bord de carte est masqué par défaut. Votre administrateur peut activer l’onglet Ligne de base dans le tableau de bord de mappage.
 
 ### Amélioration du comportement d’actualisation de l’éditeur web
 
@@ -67,15 +66,15 @@ Les améliorations suivantes sont désormais disponibles avec l’opération d�
 
 * Même lors de l’actualisation du navigateur, les vues du panneau de gauche et du panneau de droite sont conservées.
 
-* La rubrique principale ou le mappage DITA est rouvert dans la zone d’édition du contenu.
+* La rubrique active ou le mappage DITA est rouvert dans la zone de modification du contenu.
 
 ### Améliorations apportées à la publication
 
-Le processus de publication a été amélioré avec la version de mars de [!DNL AEM Guides] as a Cloud Service :
+Le processus de publication a été amélioré avec la version de mars de [!DNL AEM Guides] AS A CLOUD SERVICE :
 
 * Les lignes de base ont été respectées pour les métadonnées de la sortie AEM site. Vous pouvez également traiter les propriétés d’une version de ligne de base en tant que métadonnées. Si aucune ligne de base n’est définie, les propriétés de la dernière version sont traitées comme des métadonnées.
 
-* Le **Nom du fichier** et **Arguments de ligne de commande DITA-OT** Des options ont été ajoutées pour les paramètres prédéfinis de sortie HTML5, EPUB et Personnalisé. Vous pouvez maintenant spécifier le nom de fichier avec lequel vous souhaitez enregistrer la sortie. Vous pouvez également spécifier les arguments supplémentaires que DITA-OT doit traiter lors de la génération de la sortie.
+* La variable **Nom du fichier** et **Arguments de ligne de commande DITA-OT** Des options ont été ajoutées pour les paramètres prédéfinis de sortie HTML5, EPUB et Personnalisé. Vous pouvez maintenant spécifier le nom de fichier avec lequel vous souhaitez enregistrer la sortie. Vous pouvez également spécifier les arguments supplémentaires que DITA-OT doit traiter lors de la génération de la sortie.
 
 ## Problèmes résolus
 
@@ -85,7 +84,7 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 * Arborescence de référence après la suppression d’une rubrique et l’exécution d’une opération de déplacement. (8804)
 * Une exception est reçue lors de l’affichage du contenu après le téléchargement d’une ressource. (3638)
 * Une erreur se produit lorsque des fichiers dont le dossier parent contient des caractères spéciaux dans le nom du fichier sont ouverts dans Oxygen (à l’aide de la fonction **Modifier dans Oxygen** ). (8918)
-* Le **Localisation Dans Le Référentiel** ne localise pas et ne met pas en surbrillance le mappage DITA dans l’éditeur XML. (8796)
+* La variable **Localisation Dans Le Référentiel** ne localise pas et ne met pas en surbrillance le mappage DITA dans l’éditeur XML. (8796)
 * Le filtrage n’affiche pas les résultats appropriés lorsque plusieurs attributs sont ajoutés au contenu dans l’éditeur XML. (8795)
 * Une erreur se produit lors de l’ajout d’un utilisateur en tant qu’administrateur dans le profil de dossier lorsque l’ID utilisateur est numérique. (8908)
 

@@ -1,8 +1,7 @@
 ---
 title: Publication basée sur des articles à partir de l’éditeur web
 description: Découvrez comment publier un ou plusieurs articles à partir de l’éditeur web. Générez une sortie pour une ou plusieurs rubriques dans un mappage DITA dans AEM Guides.
-exl-id: b827c606-0d4b-4e7b-8a82-75b375dffe1a
-source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%

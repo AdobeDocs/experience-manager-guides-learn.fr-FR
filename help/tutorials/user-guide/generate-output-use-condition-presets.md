@@ -1,11 +1,10 @@
 ---
 title: Utilisation des paramètres de condition prédéfinis
 description: Découvrez l’utilisation des paramètres prédéfinis de condition dans AEM Guides. Découvrez comment créer, modifier, copier et supprimer des paramètres prédéfinis de condition dans AEM.
-exl-id: f6865a34-abdd-4d23-b903-0211bebd13b7
-source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 2%
+source-wordcount: '1210'
+ht-degree: 1%
 
 ---
 
@@ -43,7 +42,7 @@ Vous pouvez créer un paramètre prédéfini de condition des rubriques en proc�
    >
    > Vous affichez une erreur si le champ nom est vide ou si vous saisissez un caractère non valide ou un nom identique à un paramètre prédéfini de condition existant. Vous pouvez utiliser un trait d’union &quot;-&quot; ou un trait de soulignement &quot;_&quot; comme séparateur.
 
-1. Sélectionnez **Créer**.
+1. Sélectionner **Créer**.
 Le nouveau paramètre prédéfini de condition est ajouté à la liste.
 1. Double-cliquez sur un paramètre prédéfini de condition pour afficher les attributs et les actions.
 La variable **Attributs** affiche tous les attributs ajoutés aux références présentes dans le mappage. Le panneau de droite affiche uniquement les conditions que vous avez ajoutées aux paramètres prédéfinis de condition.
@@ -54,7 +53,7 @@ La variable **Attributs** affiche tous les attributs ajoutés aux références p
    * **Tout sélectionner** pour ajouter tous les attributs et leurs valeurs au paramètre prédéfini de condition.
 Par défaut, l’action d’un attribut est `Include`.
 
-1. Sélectionnez **Ajouter**. Vous pouvez répéter cette étape pour ajouter d’autres attributs. Les attributs que vous ajoutez passent du central au panneau de droite.
+1. Sélectionner **Ajouter**. Vous pouvez répéter cette étape pour ajouter d’autres attributs. Les attributs que vous ajoutez passent du central au panneau de droite.
 1. Sélectionnez Supprimer dans la barre d’actions supérieure pour supprimer les attributs sélectionnés dans le panneau de droite.
 1. (Facultatif) Si nécessaire, vous pouvez remplacer l’action appliquée aux attributs.
 Utilisez l’une des méthodes suivantes :

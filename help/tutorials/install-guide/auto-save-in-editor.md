@@ -1,13 +1,12 @@
 ---
 title: Configuration de l’enregistrement automatique du fichier dans l’éditeur web
 description: Découvrez comment configurer l’enregistrement automatique du fichier dans l’éditeur web
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 1%
 
 ---
-
 
 # Configuration de l’enregistrement automatique du fichier dans l’éditeur web {#id199CC0J0M5Z}
 
@@ -15,7 +14,7 @@ L’une des fonctionnalités les plus courantes de l’éditeur basé sur un nav
 
 La fonction d’enregistrement automatique n’est pas activée par défaut et vous devez l’activer à partir de configMgr. Effectuez les étapes suivantes pour activer la fonction d’enregistrement automatique dans l’éditeur web :
 
-1. Ouvrez la page Configuration de la console web Adobe Experience Manager .
+1. Ouvrez la page de configuration de la console web Adobe Experience Manager .
 
    L&#39;URL par défaut pour accéder à la page de configuration est :
 
@@ -25,7 +24,7 @@ La fonction d’enregistrement automatique n’est pas activée par défaut et v
 
 1. Recherchez et cliquez sur le bouton **com.adobe.fmdita.xmleditor.config.XmlEditorConfig** du lot.
 
-1. Dans le *XmlEditorConfig* , sélectionnez **Enregistrement automatique** .
+1. Dans le *XmlEditorConfig* , sélectionnez la variable **Enregistrement automatique** .
 
 1. Dans le **Intervalle d’enregistrement automatique** , spécifiez l’intervalle en secondes pour déclencher la fonction d’enregistrement automatique.
 
@@ -33,4 +32,3 @@ La fonction d’enregistrement automatique n’est pas activée par défaut et v
 
 
 **Rubrique parente :**[ Personnalisation de l’éditeur web](conf-web-editor.md)
-

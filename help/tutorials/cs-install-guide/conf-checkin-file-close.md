@@ -1,13 +1,12 @@
 ---
 title: Configuration d’une invite pour archiver un fichier à la fermeture
 description: Découvrez comment configurer une invite pour archiver un fichier à la fermeture
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 1%
 
 ---
-
 
 # Configuration d’une invite pour archiver un fichier à la fermeture {#id222HC040PE8}
 
@@ -24,4 +23,3 @@ Lorsque cette configuration est activée, la variable **Déverrouiller le fichie
 Pour plus d’informations, voir *Fermeture du fichier et enregistrement des scénarios* dans le guide as a Cloud Service Utilisation des guides Adobe Experience Manager .
 
 **Rubrique parente :**[ Personnalisation de l’éditeur web](conf-web-editor.md)
-

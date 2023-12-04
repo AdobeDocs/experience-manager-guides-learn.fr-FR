@@ -1,13 +1,12 @@
 ---
 title: API Java pour le workflow de conversion
 description: En savoir plus sur les API Java pour le workflow de conversion
-source-git-commit: fad5049962f258bbe59c7d172436d82b3d6cd68f
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
-
 
 # API Java pour le workflow de conversion {#id175UB30E05Z}
 
@@ -68,4 +67,3 @@ public static void convertWordToDita(Session session,
 **Paramètres**: |Nom|Type|Description| |—|—|—| |`session`|javax.jcr.Session|Une session JCR valide.| |`inputFile`|Chaîne|Chemin absolu des fichiers Word source dans le référentiel AEM.| |`destPath`|Chaîne|Chemin absolu de l’emplacement de destination où les fichiers DITA convertis seront enregistrés.| |`style2tagMap`|String|Chemin absolu du fichier de mappage de style qui sera utilisé pour la conversion.| |`createRev`|Booléen|Indiquez si une révision des fichiers est créée \( `true`\) à la destination spécifiée ou non \( `false`\). Ceci est pris en compte uniquement lorsque l’emplacement de destination contient une version existante des fichiers convertis.|
 
 **Exception**: renvoie `RepositoryException`.
-

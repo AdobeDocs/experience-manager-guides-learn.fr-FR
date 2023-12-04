@@ -1,13 +1,12 @@
 ---
 title: Chargement de contenu DITA existant
 description: Découvrez comment télécharger du contenu DITA existant
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 1%
+source-wordcount: '499'
+ht-degree: 0%
 
 ---
-
 
 # Chargement de contenu DITA existant {#id176FF000JUI}
 
@@ -27,7 +26,7 @@ Suivez les instructions de la section [Remplacements de configuration](download-
 
 Vous pouvez également utiliser des commandes curl pour créer un dossier dans DAM, charger des fichiers et ajouter des métadonnées sur le contenu chargé.
 
-**Créez un dossier**.
+**Création d’un dossier**
 
 Exécutez la commande suivante pour créer un dossier dans AEM référentiel :
 
@@ -37,11 +36,11 @@ curl --user <username>:<password> --data jcr:primaryType=sling:Folder "<server f
 
 Spécifiez les paramètres suivants pour créer un dossier :
 
-- `<username>:<passowrd>`: Indiquez le nom d’utilisateur et le mot de passe pour accéder au référentiel AEM. Cet utilisateur doit disposer des droits de création de dossier.
+- `<username>:<passowrd>`: spécifiez le nom d’utilisateur et le mot de passe pour accéder au référentiel AEM. Cet utilisateur doit disposer des droits de création de dossier.
 
-- `jcr:primaryType=sling:Folder`: Spécifier ce paramètre *as is* pour créer une ressource de type dossier.
+- `jcr:primaryType=sling:Folder`: indiquez ce paramètre *as is* pour créer une ressource de type dossier.
 
-- `<server folder path>`: Chemin d’accès complet au dossier, y compris le nom du nouveau dossier que vous souhaitez créer dans le référentiel AEM. Par exemple, si vous spécifiez le chemin comme `http://192.168.1.1:4502/content/dam/projects/AEM-Guides`, puis le dossier `AEM-Guides` est créé dans la fonction `projects` dans DAM.
+- `<server folder path>`: chemin d’accès complet au dossier, y compris le nom du nouveau dossier que vous souhaitez créer dans le référentiel AEM. Par exemple, si vous spécifiez le chemin comme `http://192.168.1.1:4502/content/dam/projects/AEM-Guides`, puis le dossier `AEM-Guides` est créé dans la fonction `projects` dans DAM.
 
 
 **Chargement d’un fichier**
@@ -54,11 +53,11 @@ curl --user <username>:<password> -T "<local file path>" "<server folder path>"
 
 Spécifiez les paramètres suivants pour télécharger un fichier :
 
-- `<username>:<passowrd>`: Indiquez le nom d’utilisateur et le mot de passe pour accéder au référentiel AEM. Cet utilisateur doit disposer de droits d’écriture sur la variable `server folder path`.
+- `<username>:<passowrd>`: spécifiez le nom d’utilisateur et le mot de passe pour accéder au référentiel AEM. Cet utilisateur doit disposer de droits d’écriture sur la variable `server folder path`.
 
-- ``local file path``: Chemin d’accès au fichier complet sur le système local que vous souhaitez charger.
+- ``local file path``: chemin d’accès au fichier complet sur le système local que vous souhaitez charger.
 
-- `<server folder path>`: Chemin d’accès complet au dossier sur le serveur AEM où vous souhaitez charger le fichier.
+- `<server folder path>`: chemin d’accès au dossier complet sur le serveur AEM où vous souhaitez charger le fichier.
 
 
 **Ajout de métadonnées**
@@ -71,12 +70,11 @@ curl --user <username>:<password> -F<attribute name>=<value> <metadata node path
 
 Spécifiez les paramètres suivants pour ajouter des informations de métadonnées :
 
-- `<username>:<passowrd>`: Indiquez le nom d’utilisateur et le mot de passe pour accéder au référentiel AEM. Cet utilisateur doit disposer de droits d’écriture sur la variable ``metadata node path``.
+- `<username>:<passowrd>`: spécifiez le nom d’utilisateur et le mot de passe pour accéder au référentiel AEM. Cet utilisateur doit disposer de droits d’écriture sur la variable ``metadata node path``.
 
-- ``-F<attribute name>=<value>``: Le `<attribute name>` est le nom de l’attribut de métadonnées, tel que `audience` et le `<value>` pourrait être `internal`. Vous pouvez spécifier plusieurs paires nom-valeur d’attribut séparées par espace.
+- ``-F<attribute name>=<value>``: la variable `<attribute name>` est le nom de l’attribut de métadonnées, tel que `audience` et la variable `<value>` pourrait être `internal`. Vous pouvez spécifier plusieurs paires nom-valeur d’attribut séparées par espace.
 
-- `<metadata node path>`: Chemin d’accès complet au dossier, y compris le nom du fichier et son noeud de métadonnées. Par exemple, si vous spécifiez le chemin comme `http://192.168.1.1:4502/content/dam/projects/AEM-Guides/intro.xml/jcr:content/metadata`, les informations de métadonnées spécifiées sont définies sur `intro.xml` fichier .
+- `<metadata node path>`: chemin d’accès complet au dossier, y compris le nom du fichier et son noeud de métadonnées. Par exemple, si vous spécifiez le chemin comme `http://192.168.1.1:4502/content/dam/projects/AEM-Guides/intro.xml/jcr:content/metadata`, les informations de métadonnées spécifiées sont définies sur `intro.xml` fichier .
 
 
 **Rubrique parente :**[ Migration de contenu existant](migrate-content.md)
-

@@ -1,17 +1,16 @@
 ---
-title: Notes de mise à jour | Adobe Experience Manager Guides as a Cloud Service, version de février 2023
+title: Notes de mise à jour | Guides Adobe Experience Manager as a Cloud Service, version de février 2023
 description: Version de février des guides Adobe Experience Manager as a Cloud Service
-source-git-commit: 4bb9ce2690a2e76a5b2a93b65db7dd452e15d295
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1426'
 ht-degree: 0%
 
 ---
 
-
 # Nouveautés de la version de février 2023 des Guides Adobe Experience Manager as a Cloud Service
 
-Cet article couvre les nouvelles fonctionnalités et les fonctionnalités améliorées de la version de février 2023 des Guides Adobe Experience Manager (ultérieurement appelée *AEM Guides as a Cloud Service*).
+Cet article décrit les nouvelles fonctionnalités et les fonctionnalités améliorées de la version de février 2023 des Guides Adobe Experience Manager (ultérieurement appelée *AEM Guides as a Cloud Service*).
 
 Pour plus d’informations sur les instructions de mise à niveau, la matrice de compatibilité et les problèmes résolus dans cette version, voir la section [Notes de mise à jour](release-notes-2023.2.0.md) article.
 
@@ -44,7 +43,7 @@ Vous pouvez également générer le fichier CSV pour télécharger l’instantan
 Désormais, AEM guides fournit un UX amélioré qui vous aide à passer en revue les rubriques partagées en vue de la révision. Dans la dernière expérience, la fonctionnalité de révision présente les améliorations suivantes :
 
 * Interface utilisateur actualisée
-* Panneau Conditions qui vous permet de mettre en surbrillance le contenu en fonction des conditions disponibles dans la rubrique.
+* Panneau Conditions permettant de mettre en surbrillance le contenu en fonction des conditions disponibles dans la rubrique.
 * Chaque commentaire du panneau des commentaires est associé au texte correspondant dans la rubrique actuelle. Il permet d’identifier le texte commenté.
 * Les commentaires sont affichés dans l’ordre du texte commenté dans le document.
 * Le nom de la tâche de révision s’affiche dans le workflow de révision.
@@ -55,7 +54,7 @@ Désormais, AEM guides fournit un UX amélioré qui vous aide à passer en revue
 * Lorsque vous utilisez les filtres, les commentaires sur le panneau de droite sont filtrés en fonction de la sélection et le nombre de commentaires dans le panneau de gauche est mis à jour en conséquence.
 
 
-   <img alt="tâche de révision" src="assets/comment-pop-up-panel.png" width="600">
+  <img alt="tâche de révision" src="assets/comment-pop-up-panel.png" width="600">
 
 
 
@@ -141,4 +140,3 @@ Vous pouvez maintenant mettre en forme le marqueur de la page dans les notes de 
 AEM Guides vous permet désormais d’identifier rapidement les rubriques modifiées dans la table des matières de la sortie du PDF.  Une barre de modification s’affiche à gauche des rubriques modifiées dans la table des matières. Vous pouvez cliquer sur la rubrique dans la table des matières et afficher les modifications détaillées.
 
 <img src="assets/change-marker-toc.png" alt="Changement de marqueur dans la table des matières " width="500">
-

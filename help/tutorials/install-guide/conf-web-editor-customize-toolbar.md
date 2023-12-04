@@ -1,13 +1,12 @@
 ---
 title: Barre d’outils Personnaliser
 description: Découvrez comment personnaliser la barre d’outils
-source-git-commit: ef2e99db8c298d34af5777baa48886a55ac32590
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 0%
 
 ---
-
 
 # Barre d’outils Personnaliser {#id172FB00L0V6}
 
@@ -22,7 +21,7 @@ La barre d’outils de l’éditeur Web peut être personnalisée de deux façon
 
 ## Ajouter une fonction dans la barre d’outils
 
-L’ajout d’une fonctionnalité à l’éditeur Web implique deux Principales tâches : l’ajout d’une icône pour la fonctionnalité dans la fonction *ui\_config.json* et ajouter la fonctionnalité d’arrière-plan dans JavaScript.
+L’ajout d’une fonctionnalité à l’éditeur Web implique deux tâches principales : l’ajout d’une icône pour la fonctionnalité dans la fonction *ui\_config.json* et ajouter la fonctionnalité d’arrière-plan dans JavaScript.
 
 **Ajouter une icône dans la barre d’outils**
 
@@ -46,22 +45,22 @@ Pour ajouter une fonction à la barre d’outils de l’éditeur web, procédez 
 
    - **extraclass :** Nom de la ou des classes séparées par un espace.
 
-   - **items :** Spécifiez la définition de tous les groupes dans la barre d’outils. Chaque groupe peut contenir une ou plusieurs icônes de barre d’outils. Pour définir des icônes dans un groupe de barres d’outils, vous devez définir à nouveau le `type` dans la fonction `items`, puis définissez sa valeur sur `buttonGroup`. Spécifiez un ou plusieurs noms de classe dans la variable `extraclass` . Spécifiez le nom de la fonction dans le champ `label` . Le fragment de code suivant de la fonction `ui_config.json` affiche la définition du bloc de barre d’outils principal, suivie de la propriété `buttonGroup` définition :
+   - **items :** Spécifiez la définition de tous les groupes dans la barre d’outils. Chaque groupe peut contenir une ou plusieurs icônes de barre d’outils. Pour définir des icônes dans un groupe de barres d’outils, vous devez définir à nouveau le `type` dans l’attribut `items`, puis définissez sa valeur sur `buttonGroup`. Spécifiez un ou plusieurs noms de classe dans la variable `extraclass` . Indiquez le nom de la fonction dans la variable `label` . Le fragment de code suivant de la fonction `ui_config.json` affiche la définition du bloc de barre d’outils principal, suivie de la propriété `buttonGroup` définition :
 
-      ```json
-      "toolbar": {    
-        "type": "blockGroup",    
-        "extraclass": 
-        "toolbar operations",    
-          "items": [      
-            {        
-              "type": "buttonGroup",        
-              "extraclass": "left-controls",        
-              "label": "Left Controls",        
-              "items": [
-      ```
+     ```json
+     "toolbar": {    
+       "type": "blockGroup",    
+       "extraclass": 
+       "toolbar operations",    
+         "items": [      
+           {        
+             "type": "buttonGroup",        
+             "extraclass": "left-controls",        
+             "label": "Left Controls",        
+             "items": [
+     ```
 
-      Dans le `items` , vous devez spécifier la définition d’une ou de plusieurs icônes de barre d’outils.
+     Dans le `items` , vous devez spécifier la définition d’une ou de plusieurs icônes de barre d’outils.
 Pour ajouter une icône de barre d’outils, vous devez définir les propriétés suivantes :
 
    - **type :** Spécifier `button` comme la propriété `type` . Cette valeur indique que vous ajoutez un bouton de barre d’outils.
@@ -74,9 +73,9 @@ Pour ajouter une icône de barre d’outils, vous devez définir les propriété
 
    - **en cliquant :** Spécifiez le nom de commande défini pour la fonction dans le fichier JavaScript. Si votre commande nécessite des paramètres d’entrée, indiquez le nom de la commande comme suit :
 
-      ```JavaScript
-      "on-click": {"name": "AUTHOR_INSERT_ELEMENT", "args": "simpletable"}
-      ```
+     ```JavaScript
+     "on-click": {"name": "AUTHOR_INSERT_ELEMENT", "args": "simpletable"}
+     ```
 
    - **afficher ou masquer :** Si vous définissez la variable `show` , puis spécifiez les modes d’affichage de l’icône. Les valeurs possibles sont : `@isAuthorMode`, `@isSourceMode`, `@isPreviewMode`, `true` \(affichage dans tous les modes\) ou `false` \(masquer dans tous les modes\).
 
@@ -84,7 +83,7 @@ Pour ajouter une icône de barre d’outils, vous devez définir les propriété
 
 1. Créez un *clientlib* et ajoutez votre JavaScript dans ce dossier.
 
-1. Mettez à jour la propriété categories du *clientlib* en lui attribuant la valeur de *apps.fmdita.xml\_editor.page\_overrides*.
+1. Mettez à jour la propriété categories du *clientlib* en lui attribuant la valeur de *apps.dita.xml\_editor.page\_overrides*.
 
 1. Enregistrez le *ui\_config.json* et rechargez l’éditeur Web.
 
@@ -135,7 +134,7 @@ Ajoutez la fonction dans le fichier ui\_config.json en tant que :
   } 
 ```
 
-L’exemple suivant montre comment modifier l’état d’un fichier principal d’un document en &quot;In-Review&quot;.
+L’exemple suivant montre comment modifier l’état d’un fichier actif d’un document en &quot;In-Review&quot;.
 
 ```JavaScript
 /**
@@ -216,7 +215,7 @@ Pour supprimer toute fonction indésirable de la barre d’outils, procédez com
    `/apps/fmdita/xmleditor/ui_config.json`
 
 1. Accédez à et ouvrez le `ui_config.json` dans le fichier `apps` pour la modification.
-Le `ui_config.json` comporte trois sections :
+La variable `ui_config.json` comporte trois sections :
 
 - **barres d’outils :**   Cette section contient la définition de toutes les fonctionnalités disponibles dans la barre d’outils de l’éditeur, telles que Insérer/Supprimer la liste numérotée, \(fichier\) Fermer, Enregistrer, Commentaires, etc.
 
@@ -234,4 +233,3 @@ Le `ui_config.json` comporte trois sections :
 
 
 **Rubrique parente :**[ Personnalisation de l’éditeur web](conf-web-editor.md)
-

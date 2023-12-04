@@ -1,13 +1,12 @@
 ---
 title: Traduction du contenu
 description: Découvrez comment traduire du contenu
-source-git-commit: 4d54c52b8771b0c5a40018cfec3a6586029af2fb
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 21%
+source-wordcount: '651'
+ht-degree: 15%
 
 ---
-
 
 # Traduction du contenu {#id181GB0400UI}
 
@@ -15,22 +14,22 @@ Automatisez la traduction du contenu des pages, des ressources et du contenu cr�
 
 - Traduction humaine : le contenu est envoyé à votre fournisseur de traduction et traduit par des traducteurs professionnels. Une fois la traduction terminée, le contenu traduit est renvoyé et importé dans AEM. Lorsque votre fournisseur de traduction est intégré à AEM, le contenu est automatiquement échangé entre AEM et le fournisseur de traduction.
 
-- Traduction automatique : le service de traduction automatique traduit immédiatement votre contenu
+- Traduction automatique : le service de traduction automatique traduit immédiatement votre contenu.
 
 
 La traduction du contenu implique les étapes suivantes :
 
 1. Connectez AEM à votre [fournisseur de services de traduction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/integration-framework.html?lang=en) et créer des configurations de structure d’intégration de traduction.
 
-1. Associer les pages de votre gabarit de langue au service de traduction et aux configurations de structure.
+1. Associez les pages de votre gabarit de langue aux configurations de structure et de service de traduction.
 
 1. Identifier le type de [contenu à traduire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/rules.html?lang=en).
 
 1. [Préparez le contenu à traduire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/preparation.html?lang=en) en créant le gabarit de langue et les pages racine des copies de langue.
 
-1. Créer [projets de traduction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/managing-projects.html?lang=fr) pour rassembler le contenu à traduire et préparer le processus de traduction.
+1. Créer [projets de traduction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/managing-projects.html?lang=en) pour rassembler le contenu à traduire et préparer le processus de traduction.
 
-1. Utilisez les projets de traduction pour [gestion de la traduction du contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/managing-projects.html?lang=fr) processus.
+1. Utilisez les projets de traduction pour [gestion de la traduction du contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/managing-projects.html?lang=en) processus.
 
 
 Lorsque votre fournisseur de services de traduction ne fournit pas de connecteur pour l’intégration avec AEM, AEM prend en charge l’exportation et l’importation manuelles de contenu traduit au format XML.
@@ -82,4 +81,3 @@ Suivez les instructions de la section [Remplacements de configuration](download-
 | PID | Clé de propriété | Valeur de la propriété |
 |---|------------|--------------|
 | `com.adobe.fmdita.config.ConfigManager` | `postprocess.temporary.langcopies` | Booléen : <br> - Si vous ne souhaitez pas exécuter l’opération de post-traitement sur les fichiers temporaires, *Désactiver* \( false\) la variable **Copies de langue de post-traitement** .<br> - Si vous souhaitez exécuter l’opération de post-traitement sur les fichiers temporaires, *Activer* \( true\) la variable **Copies de langue de post-traitement** .<br> **Valeur par défaut**: false |
-

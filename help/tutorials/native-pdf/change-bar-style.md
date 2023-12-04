@@ -1,7 +1,7 @@
 ---
 title: Fonction de publication native d’un PDF | Utilisation des styles de barres de modification personnalisés
 description: Découvrez comment appliquer des styles aux barres de modification.
-source-git-commit: b6fd82fd09c04a3deefab51b1064a3b6aea73e47
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
@@ -79,7 +79,7 @@ Par exemple, vous pouvez utiliser `-ro-change-bar-color` dans `.inserted-change-
 
 ## Modification de la rubrique dans la table des matières (table des matières)
 
-Vous pouvez également ajouter une barre de modification à gauche des rubriques modifiées dans la table des matières de la sortie du PDF. Vous pouvez utiliser `-ro-change-bar-color` dans le `.changed-topic` style pour ajouter une barre de modification dans la couleur de votre choix pour les rubriques mises à jour dans la liste de la table des matières.
+Vous pouvez également ajouter une barre de modification à gauche des rubriques modifiées dans la table des matières de la sortie du PDF. Vous pouvez utiliser `-ro-change-bar-color` dans la variable `.changed-topic` style pour ajouter une barre de modification dans la couleur de votre choix pour les rubriques mises à jour dans la liste de la table des matières.
 
 Par exemple, vous pouvez ajouter une barre de modification de couleur verte.
 

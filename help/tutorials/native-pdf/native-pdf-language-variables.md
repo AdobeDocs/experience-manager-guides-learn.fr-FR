@@ -1,13 +1,12 @@
 ---
 title: PDF natif | Prise en charge des variables de langue
 description: Utiliser des variables de langue dans les modèles de sortie et de sortie du PDF
-source-git-commit: 6de4b4666d804c678674faa6fe1a54ef9b9dbbe0
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1589'
 ht-degree: 0%
 
 ---
-
 
 # Prise en charge des variables de langue
 
@@ -96,7 +95,7 @@ Il crée un fichier XML au format `language_variable_<ln>` where `<ln>` est le c
 
 >[!NOTE]
 > 
->Si des modifications non enregistrées sont apportées aux variables de langue, vous ne pouvez pas les exporter. Enregistrez les modifications pour afficher la fonction activée. **Exporter** <img src="./assets/language-variable-export-icon.svg" alt="icône d&#39;import" width="25"> icon.
+>Si des modifications non enregistrées sont apportées aux variables de langue, vous ne pouvez pas les exporter. Enregistrez les modifications pour afficher la fonction activée. **Exporter** <img src="./assets/language-variable-export-icon.svg" alt="icône d&#39;import" width="25"> Icône
 
 ### Importation de variables de langue
 
@@ -233,6 +232,3 @@ Les styles CSS vous permettent également de formater les préfixes. Par exemple
 color: red;
 } 
 ```
-
-
-

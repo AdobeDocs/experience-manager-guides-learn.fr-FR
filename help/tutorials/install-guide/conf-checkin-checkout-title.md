@@ -1,7 +1,7 @@
 ---
 title: Configurer le titre des icônes d’archivage et d’extraction
 description: Découvrez comment configurer le titre des icônes d’archivage et d’extraction
-source-git-commit: bb4b875864b31197437a944ded5862bbf937bc29
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 0%
@@ -29,4 +29,3 @@ AEM Guides vous permet de configurer le titre des icônes d’archivage et d’e
    ```
 
 1. Enregistrez le fichier et téléchargez-le.
-

@@ -1,15 +1,14 @@
 ---
-title: Désinstallation des AEM Guides
+title: Désinstallation des guides d’AEM
 description: Découvrez comment désinstaller AEM Guides
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 0%
 
 ---
 
-
-# Désinstallation des AEM Guides {#id21BHG0C0SXA}
+# Désinstallation des guides d’AEM {#id21BHG0C0SXA}
 
 Vous pouvez désinstaller AEM Guides à l’aide du gestionnaire de modules CRX. Lors de la désinstallation, le contenu du référentiel est restauré à l’instantané effectué immédiatement avant l’installation du module.
 
@@ -47,4 +46,3 @@ Pour nettoyer les fichiers résiduels après la désinstallation, procédez comm
 1. Nettoyez le cache du navigateur.
 
 **Rubrique parente :**[ Télécharger et installer](download-install.md)
-

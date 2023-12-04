@@ -1,9 +1,9 @@
 ---
 title: Présentation de la session d’experts
 description: Landing page pour la section session d’experts.
-source-git-commit: 474f9c3079a2b48bd1664469e1d063f14b49e6df
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ Nos sessions mensuelles d’experts sont conçues pour aider nos clients et nos 
 
 Au cours de ces sessions, nos experts discuteront des fonctionnalités détaillées et des avantages de notre produit, et partageront des conseils pratiques et des bonnes pratiques qui vous aideront à en tirer le meilleur parti. Que vous soyez un nouvel utilisateur ou un professionnel chevronné, ces sessions vous fourniront les informations dont vous avez besoin pour optimiser votre utilisation des Guides AEM.
 
-Nous comprenons que votre temps est précieux, et c’est pourquoi nous avons rendu ces sessions d’experts faciles et accessibles pour vous. Vous pouvez vous inscrire à la session à venir en visitant notre [forum communautaire](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/ct-p/aem-xml-documentation) ou par le biais de l’e-mail qui vous a été envoyé.
+Nous comprenons que votre temps est précieux, et c&#39;est pourquoi nous avons rendu ces sessions d&#39;experts faciles et accessibles pour vous. Vous pouvez vous inscrire à la session à venir en visitant notre [forum communautaire](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/ct-p/aem-xml-documentation) ou par le biais de l’e-mail qui vous a été envoyé.
 
 Si vous avez manqué l’une des sessions précédentes, vous pouvez accéder aux enregistrements de cette section.
 

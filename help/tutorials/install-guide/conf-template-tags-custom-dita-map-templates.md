@@ -1,17 +1,16 @@
 ---
-title: Configuration d’un modèle de mappage DITA personnalisé
+title: Configuration du modèle de mappage DITA personnalisé
 description: Découvrez comment configurer le modèle de mappage DITA personnalisé
-exl-id: 2ad0fc50-97fd-437e-94cc-db5f51f3bc3f
-source-git-commit: 0dea2f1d17e7d9b12d07b459a10a00c1dd7460a5
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 1%
 
 ---
 
-# Configuration d’un modèle de mappage DITA personnalisé {#id1774F04F05Z}
+# Configuration du modèle de mappage DITA personnalisé {#id1774F04F05Z}
 
-AEM Guides est fourni avec deux modèles de mappage prêts à l’emploi — carte DITA et carte des livres. Vous pouvez créer des cartes à partir de ces modèles ; ou vous pouvez définir vos propres modèles de carte qui pourront ensuite être utilisés pour créer de nouvelles cartes.
+AEM Guides est fourni avec deux modèles de mappage prêts à l’emploi — carte DITA et carte des livres. Vous pouvez créer des cartes à partir de ces modèles ou définir vos propres modèles de carte qui pourront ensuite être utilisés pour créer de nouvelles cartes.
 
 Effectuez les étapes suivantes pour ajouter vos modèles de mappage personnalisés :
 
@@ -21,7 +20,7 @@ Effectuez les étapes suivantes pour ajouter vos modèles de mappage personnalis
 
    >[!NOTE]
    >
-   > Pour configurer un emplacement personnalisé pour stocker des modèles de rubrique ou de mappage, reportez-vous à la section [Configuration du chemin d’accès au dossier de modèle DITA personnalisé](conf-template-tags-custom-dita-topic-template.md#id191LCF0095Z)
+   > Pour configurer un emplacement personnalisé pour stocker des modèles de rubrique ou de mappage, voir [Configuration du chemin d’accès au dossier de modèle DITA personnalisé](conf-template-tags-custom-dita-topic-template.md#id191LCF0095Z)
 
 1. Cliquez sur **Créer** \> **Modèle DITA**.
 

@@ -1,10 +1,9 @@
 ---
 title: Utilisation de l’éditeur de mappage avancé
 description: Découvrez comment utiliser l’éditeur de mappage avancé dans AEM Guides. Découvrez les fonctionnalités de l’éditeur de cartes avancé. Modifiez les rubriques par le biais d’un mappage DITA et utilisez les modes de mise en page, de création et d’aperçu.
-exl-id: e58e3705-2c3b-48cc-b2c8-2596e9751c85
-source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '3707'
+source-wordcount: '3695'
 ht-degree: 0%
 
 ---
@@ -156,7 +155,7 @@ Cliquez sur les icônes de flèche vers le haut ou vers le bas pour déplacer la
 >
 > Vous pouvez également faire glisser et déposer les références pour les déplacer dans une carte.
 
-**Verrouiller/déverrouiller** - ![](images/LockClosed_icon.svg) / ![](images/LockOpen_icon.svg)
+**Verrouillage/déverrouillage** - ![](images/LockClosed_icon.svg) / ![](images/LockOpen_icon.svg)
 
 Obtient un verrou sur le fichier map et libère le verrou. Si vous avez des modifications non enregistrées dans votre fichier de carte, vous êtes invité à enregistrer le fichier de carte au moment de la publication du verrouillage. Les modifications sont enregistrées dans la version actuelle du fichier de mappage.
 

@@ -1,13 +1,12 @@
 ---
 title: Configuration d’un connecteur de source de données
 description: Découvrez comment configurer un connecteur de source de données
-source-git-commit: fc142d8a6e907fac1321dfd5c2cb9615d523709d
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 1%
+source-wordcount: '454'
+ht-degree: 0%
 
 ---
-
 
 # Configuration d’un connecteur de source de données
 
@@ -274,11 +273,10 @@ Les autres champs sont personnalisés en fonction de la classe de configuration 
 
 Téléchargez le fichier vers un emplacement spécifique dans AEM Assets.
 
-Par exemple, `/content/dam/jira.json`.
+Par exemple :  `/content/dam/jira.json`
 
 ## Créer une configuration à l’aide de l’API REST
 
 Vous pouvez enregistrer la configuration à l’aide de l’API REST. Pour plus d’informations, voir la *API REST pour enregistrer un connecteur de source de données* dans la section Référence d’API pour les guides Adobe Experience Manager.
 
 Une fois la source de données configurée, le connecteur est répertorié sous le panneau Sources de données dans l’éditeur web. Vous pouvez ensuite vous connecter à la source de données et insérer un fragment de contenu dans vos rubriques. Pour plus d’informations, voir [Insertion d’un fragment de contenu à partir de votre source de données](../user-guide/web-editor-content-snippet.md).
-

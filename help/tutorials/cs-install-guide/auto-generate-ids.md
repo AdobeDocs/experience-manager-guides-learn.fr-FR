@@ -1,13 +1,12 @@
 ---
 title: Génération automatique des identifiants d’élément
 description: Découvrez comment générer automatiquement des identifiants d’élément
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 2%
+source-wordcount: '284'
+ht-degree: 1%
 
 ---
-
 
 # Génération automatique des identifiants d’élément {#id20CIL40016I}
 
@@ -25,7 +24,6 @@ Pour configurer un modèle d’identifiant généré automatiquement, créez un 
 
 | PID | Clé de propriété | Valeur de la propriété |
 |---|------------|--------------|
-| `com.adobe.fmdita.xmleditor.config.XmlEditorConfig` | `xmleditor.pattern` | La valeur par défaut de ce champ est définie sur `${elementName}_${id}`. Le `${elementName}` est remplacée par le nom de l’élément . Le `${id}` génère un nombre séquentiel pour l’élément. Par exemple, si vous attribuez à l’élément de paragraphe des identifiants générés automatiquement, le premier paragraphe de la rubrique ou du document reçoit un identifiant comme p\_1, le paragraphe suivant reçoit p\_2, etc. Cependant, dans un autre document, le processus de génération des identifiants redémarre. Cela signifie que dans un autre document, des identifiants comme p\_1 et p\_2 peuvent être affectés aux éléments de paragraphe. **Valeur par défaut**: ``${elementName}_${id}`` |
+| `com.adobe.fmdita.xmleditor.config.XmlEditorConfig` | `xmleditor.pattern` | La valeur par défaut de ce champ est définie sur `${elementName}_${id}`. La variable `${elementName}` est remplacée par le nom de l’élément . La variable `${id}` génère un nombre séquentiel pour l’élément. Par exemple, si vous attribuez à l’élément de paragraphe des identifiants générés automatiquement, le premier paragraphe de la rubrique ou du document reçoit un identifiant comme p\_1, le paragraphe suivant reçoit p\_2, etc. Cependant, dans un autre document, le processus de génération des identifiants redémarre. Cela signifie que dans un autre document, des identifiants comme p\_1 et p\_2 peuvent être affectés aux éléments de paragraphe. **Valeur par défaut**: ``${elementName}_${id}`` |
 
 **Rubrique parente :**[ Personnalisation de l’éditeur web](conf-web-editor.md)
-

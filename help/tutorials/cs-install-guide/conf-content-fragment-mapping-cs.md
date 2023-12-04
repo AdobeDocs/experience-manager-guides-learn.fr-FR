@@ -1,13 +1,12 @@
 ---
 title: Configurez le mappage basé sur JSON entre une rubrique et un modèle de fragment de contenu.
 description: Découvrez comment configurer le mappage basé sur JSON entre une rubrique et un modèle de fragment de contenu.
-source-git-commit: dd677257d94015d888705e4b6a43ae877e58be4b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
 
 ---
-
 
 # Créer un mappage entre une rubrique et un fragment de contenu
 

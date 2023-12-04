@@ -1,13 +1,12 @@
 ---
 title: Fonction de publication native d’un PDF | Ajout d’un signet personnalisé dans la sortie PDF
 description: Découvrez comment créer des feuilles de style et créer des styles pour votre contenu.
-source-git-commit: fb7ffbaefcdca4302e43d8369bc056c1f08a3ed6
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
 
 ---
-
 
 # Ajout d’un signet personnalisé dans la sortie PDF
 
@@ -38,4 +37,3 @@ Dans la sortie du PDF, la variable *Liste de contacts* est ajouté au deuxième 
 >[!NOTE]
 >
 >Vous devez choisir le niveau correct où le signet personnalisé est ajouté. Si vous indiquez un nombre inférieur au signet de la rubrique parente, le signet personnalisé prend la position du signet parent et tous les autres signets sont affichés en tant qu’enfants. Cela peut entraîner une structure de signet inattendue.
-

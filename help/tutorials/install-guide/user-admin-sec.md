@@ -1,13 +1,12 @@
 ---
 title: Administration et sécurité des utilisateurs
 description: Découvrez le fonctionnement de l’administration et de la sécurité des utilisateurs
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 13%
+source-wordcount: '718'
+ht-degree: 10%
 
 ---
-
 
 # Administration et sécurité des utilisateurs {#id181AED00G5Z}
 
@@ -42,7 +41,7 @@ Le tableau suivant répertorie les différentes tâches et les groupes pouvant e
 | Créer une tâche de révision | Oui |   | Oui |
 | Rubrique de révision[1](#fntarg_1) | Oui | Oui | Oui |
 | Résolution des clés | Oui |   | Oui |
-| Ouvrir dans FrameMaker | Oui |   | Oui |
+| Ouvrir dans le FrameMaker | Oui |   | Oui |
 | Extraction/archivage | Oui |   | Oui |
 | Modifier le sujet | Oui |   | Oui |
 | Déplacer la rubrique | Oui |   | Oui |
@@ -57,7 +56,7 @@ Le tableau suivant répertorie les différentes tâches et les groupes pouvant e
 | Générer |   |   | Oui |
 | Modifier |   |   | Oui |
 | Dupliquer |   |   | Oui |
-| Création |   |   | Oui |
+| Créer |   |   | Oui |
 | Supprimer le paramètre prédéfini |   |   | Oui |
 | **Fonctionnalités disponibles dans la console de mappage DITA \(onglet Sorties\)** |
 | Afficher la sortie générée | Oui |   | Oui |
@@ -65,7 +64,7 @@ Le tableau suivant répertorie les différentes tâches et les groupes pouvant e
 | Créer une tâche de révision | Oui |   | Oui |
 | Modifier | Oui |   | Oui |
 | **Fonctionnalités disponibles dans la console de mappage DITA \(onglet Lignes de base\)** |
-| Création |   |   | Oui |
+| Créer |   |   | Oui |
 | Modifier |   |   | Oui |
 | Dupliquer |   |   | Oui |
 | Supprimez |   |   | Oui |
@@ -87,13 +86,13 @@ La liste suivante contient des recommandations et des points relatifs aux groupe
 
 - Par défaut, *Éditeurs* se voient accorder l’accès et les autorisations sur les dossiers suivants dans la gestion des ressources numériques :
 
-   - ``/var/dxml``–\> Lecture et écriture
+   - ``/var/dxml``-\> Lecture et écriture
 
-   - `/content/dam/fmdita-outputs` –\> Lecture et écriture
+   - `/content/dam/fmdita-outputs` -\> Lecture et écriture
 
-   - `/content/output/sites` –\> Lecture et écriture
+   - `/content/output/sites` -\> Lecture et écriture
 
-   Vous devez accorder des autorisations de lecture et d’écriture explicites à votre éditeur si vous utilisez un autre emplacement que les emplacements de publication par défaut mentionnés ci-dessus.
+  Vous devez accorder des autorisations de lecture et d’écriture explicites à votre éditeur si vous utilisez un autre emplacement que les emplacements de publication par défaut mentionnés ci-dessus.
 
 - Tous les utilisateurs sous *Auteurs*, *Réviseurs*, et *Éditeurs* Les groupes disposent d’un accès en lecture à tout le contenu de la gestion des ressources numériques.
 
@@ -105,5 +104,4 @@ La liste suivante contient des recommandations et des points relatifs aux groupe
 
 - Pour accorder à un utilisateur les droits de modifier l’état d’un document, veillez à ajouter l’utilisateur dans la section de transition d’état du profil d’état du document.
 
-[1](#fnsrc_1) If *Auteurs* et *Éditeurs* sont invités à une révision.[2](#fnsrc_2) Selon les droits accordés à l’utilisateur dans le profil d’état du document.
-
+[1](#fnsrc_1) If *Auteurs* et *Éditeurs* sont invités à une révision.[2](#fnsrc_2) En fonction des droits accordés à l’utilisateur dans le profil d’état du document.

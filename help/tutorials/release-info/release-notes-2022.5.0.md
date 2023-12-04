@@ -1,11 +1,10 @@
 ---
 title: Notes de mise à jour | Guides Adobe Experience Manager as a Cloud Service, version de mai 2022
 description: Version de mai des guides Adobe Experience Manager as a Cloud Service
-exl-id: 7928a300-5ec9-492c-b9be-02b6f87638c6
-source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1874'
-ht-degree: 4%
+source-wordcount: '1887'
+ht-degree: 0%
 
 ---
 
@@ -14,9 +13,9 @@ ht-degree: 4%
 ## Mise à niveau vers la version de mai
 
 Mettez à niveau vos guides Adobe Experience Manager actuels as a Cloud Service (plus tard appelés *AEM Guides as a Cloud Service*) en procédant comme suit :
-1. Extrayez le code Git des Cloud Services et passez à la branche configurée dans le pipeline Cloud Services correspondant à l’environnement que vous souhaitez mettre à niveau.
-1. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Services vers la version 2022.5.144.
-1. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version de mai d’AEM Guides as a Cloud Service.
+1. Extrayez le code Git des Cloud Service et passez à la branche configurée dans le pipeline Cloud Service correspondant à l’environnement que vous souhaitez mettre à niveau.
+1. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Service vers la version 2022.5.144.
+1. Validez les modifications et exécutez le pipeline Cloud Service pour effectuer la mise à niveau vers la version de mai d’AEM Guides as a Cloud Service.
 
 ## Matrice de compatibilité
 
@@ -27,7 +26,7 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 | FMPS | FrameMaker |
 | --- | --- |
 | Non compatible | Mise à jour 4 et ultérieure 2020 |
-|  |  |
+| | |
 
 *Les conditions de base et créées dans AEM sont prises en charge dans les versions FMPS à partir de 2020.2.
 
@@ -57,7 +56,7 @@ Vous pouvez également vous référer à d’autres modèles de mappage et de ru
 
 Le modèle de carte personnalisé peut vous aider à répliquer très facilement les modèles de carte et la structure de dossiers référencée entière. Ces modèles personnalisés sont particulièrement utiles pour créer et recréer plusieurs cartes qui comportent des structures et des références récursives.
 
-* Le **Insérer un mot-clé** fonctionnalité a été améliorée. Vous pouvez désormais trouver plus facilement un Mot-clé à insérer lorsque les mots-clés sont répertoriés par ordre alphabétique. Vous pouvez également rechercher des mots-clés en saisissant une chaîne de recherche dans la zone Rechercher.
+* La variable **Insérer un mot-clé** fonctionnalité a été améliorée. Vous pouvez désormais trouver plus facilement un Mot-clé à insérer lorsque les mots-clés sont répertoriés par ordre alphabétique. Vous pouvez également rechercher des mots-clés en saisissant une chaîne de recherche dans la zone Rechercher.
 
 ![mot-clé d&#39;insertion](assets/insert-keyword.png)
 
@@ -72,16 +71,15 @@ Le modèle de carte personnalisé peut vous aider à répliquer très facilement
 ### Processus de traduction amélioré
 
 * **Possibilité de créer un projet de traduction de portée**
-Si vous devez créer uniquement la portée d’un projet à traduire, vous pouvez sélectionner 
-**Création d’un projet de traduction de définition de la portée**. Cela n’enverra pas les copies à traduire et l’état de traduction d’origine des fichiers est conservé.
+Si vous devez créer uniquement la portée d’un projet à traduire, vous pouvez sélectionner **Création d’un projet de traduction d’étendue**. Cela n’enverra pas les copies à traduire et l’état de traduction d’origine des fichiers est conservé.
 
 ![projet de traduction de portée](assets/scoping-translation-project.png)
 
 * Si vous refusez la traduction d’une ou de plusieurs rubriques d’une tâche de traduction, l’état de traduction En cours de toutes les rubriques rejetées revient à leur état d’origine.
 
-* Le **Langues** La liste affiche les dossiers de langue ainsi que leurs codes de langue. Par exemple, Français (fr) et Allemand (de).
+* La variable **Langues** La liste affiche les dossiers de langue ainsi que leurs codes de langue. Par exemple, Français (fr) et Allemand (de).
 
-* La fonctionnalité de traduction prend désormais en charge le code de langue qui inclut le pays et la langue. Par exemple, `fr-fr`, `en-us`.
+* La fonctionnalité de traduction prend désormais en charge le code de langue qui inclut le pays et la langue. Par exemple : `fr-fr`, `en-us`.
 
 ![langue de traduction](assets/translation-languages.png)
 
@@ -92,14 +90,14 @@ Pour plus d’informations sur la traduction, voir *Traduire des documents à pa
 
 ### Publication améliorée
 
-* Vous pouvez également accéder au **Publier le tableau de bord** dans l’onglet Sorties lorsque vous générez une sortie à partir du tableau de bord de mappage. Une liste de toutes les principales tâches de publication est disponible dans le tableau de bord de publication.
+* Vous pouvez également accéder au **Publier le tableau de bord** dans l’onglet Sorties lorsque vous générez une sortie à partir du tableau de bord de mappage. Une liste de toutes les tâches de publication actives est disponible dans le tableau de bord de publication.
 
 ![sorties en file d’attente](assets/queued-output.png)
 
 * Dans le tableau de bord de mappage, vous pouvez sélectionner plusieurs fichiers DITAVAL pour générer du contenu conditionnel. Vous pouvez conserver l’ordre des fichiers en ajoutant ou en supprimant des fichiers. Vous pouvez également survoler le nom du fichier avec la souris pour voir le chemin d’accès dans le référentiel AEM où le fichier est stocké.
 
 * **Fonctionnalité obsolète**
-AEM as a Cloud Service ne prend plus en charge la génération du format de sortie DITA pour les documents FrameMaker. Cette option DITA a également été supprimée des paramètres prédéfinis de sortie du tableau de bord des cartes.
+AEM as a Cloud Service ne prend plus en charge la génération du format de sortie DITA pour les documents de FrameMaker. Cette option DITA a également été supprimée des paramètres prédéfinis de sortie du tableau de bord des cartes.
 
 ### Amélioration de la publication basée sur des articles
 

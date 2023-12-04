@@ -1,13 +1,12 @@
 ---
 title: Gestion des versions
-description: Découvrez comment fonctionne la gestion des versions
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+description: Découvrez le fonctionnement de la gestion des versions
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1662'
 ht-degree: 0%
 
 ---
-
 
 # Gestion des versions {#id181GB000XY4}
 
@@ -25,7 +24,7 @@ Dans un environnement à plusieurs utilisations, il est également important de 
 
 Pour créer une version du fichier chargé, procédez comme suit :
 
-1. Ouvrez la page Configuration de la console web Adobe Experience Manager .
+1. Ouvrez la page de configuration de la console web Adobe Experience Manager .
 
    L&#39;URL par défaut pour accéder à la page de configuration est :
 
@@ -33,13 +32,13 @@ Pour créer une version du fichier chargé, procédez comme suit :
    http://<server name>:<port>/system/console/configMgr
    ```
 
-1. Recherchez et cliquez sur le bouton **com.adobe.fmdita.config.ConfigManager** du lot.
+1. Recherchez et cliquez sur le bouton **com.adobe.config.ConfigManager** du lot.
 
-1. Sélectionnez la **Créer une version pour le fichier téléchargé** .
+1. Sélectionnez la variable **Créer une version pour le fichier téléchargé** .
 
    Par défaut, cette option est désactivée.
 
-   Lorsque l’option est sélectionnée, un nouveau mécanisme de gestion de version est mis en place et remplace le comportement de chargement par défaut pour tout chargement ultérieur. Il enregistre le contenu du fichier chargé en tant que nouvelle version. Si cette option est désélectionnée, AEM Guides utilise le mécanisme de gestion de version par défaut AEM.
+   Lorsque l’option est sélectionnée, un nouveau mécanisme de gestion de version a lieu et remplace le comportement de chargement par défaut pour tout chargement ultérieur ; il enregistre le contenu du fichier chargé en tant que nouvelle version. Si cette option est désélectionnée, AEM Guides utilise le mécanisme de gestion de version par défaut AEM.
 
 1. Cliquez sur **Enregistrer**.
 
@@ -56,7 +55,7 @@ Une autre règle importante consiste à s’assurer que les fichiers qui ont ét
 
 Effectuez les étapes suivantes pour activer ces fonctionnalités :
 
-1. Ouvrez la page Configuration de la console web Adobe Experience Manager .
+1. Ouvrez la page de configuration de la console web Adobe Experience Manager .
 
    L&#39;URL par défaut pour accéder à la page de configuration est :
 
@@ -66,13 +65,13 @@ Effectuez les étapes suivantes pour activer ces fonctionnalités :
 
 1. Recherchez et cliquez sur le bouton **com.adobe.fmdita.xmleditor.config.XmlEditorConfig** du lot.
 
-1. Sélectionnez la **Désactiver la modification sans extraction** .
+1. Sélectionnez la variable **Désactiver la modification sans extraction** .
 
    ![](assets/xml-editor-config.png){width="650" align="left"}
 
    Avec cette option, les utilisateurs ne verront pas l’option Modifier dans la barre d’outils tant qu’ils n’auront pas extrait un fichier.
 
-1. Sélectionnez la **Demander l’archivage à la fermeture** pour afficher un message d’avertissement à chaque fois qu’un fichier extrait est fermé sans être enregistré ou archivé dans le référentiel.
+1. Sélectionnez la variable **Demander l’archivage à la fermeture** pour afficher un message d’avertissement à chaque fois qu’un fichier extrait est fermé sans être enregistré ou archivé dans le référentiel.
 
 1. Cliquez sur **Enregistrer**.
 
@@ -89,7 +88,7 @@ Effectuez les étapes suivantes pour activer ces fonctionnalités :
 
 Pour permettre aux utilisateurs de remplacer le fichier qu’ils ont extrait lors du téléchargement par un autre utilisateur ou un autre, procédez comme suit :
 
-1. Ouvrez la page Configuration de la console web Adobe Experience Manager .
+1. Ouvrez la page de configuration de la console web Adobe Experience Manager .
 
    L&#39;URL par défaut pour accéder à la page de configuration est :
 
@@ -97,9 +96,9 @@ Pour permettre aux utilisateurs de remplacer le fichier qu’ils ont extrait lor
    http://<server name>:<port>/system/console/configMgr
    ```
 
-1. Recherchez et cliquez sur le bouton **com.adobe.fmdita.config.ConfigManager** du lot.
+1. Recherchez et cliquez sur le bouton **com.adobe.config.ConfigManager** du lot.
 
-1. Sélectionnez la **Remplacer le fichier extrait lors du téléchargement** .
+1. Sélectionnez la variable **Remplacer le fichier extrait lors du téléchargement** .
 
    Par défaut, cette option est activée. Lorsque cette option est sélectionnée, les utilisateurs peuvent remplacer les fichiers extraits. Si cette option n’est pas sélectionnée, le fichier ne peut pas être remplacé s’il est extrait par lui ou par un autre utilisateur.
 
@@ -110,7 +109,7 @@ Pour permettre aux utilisateurs de remplacer le fichier qu’ils ont extrait lor
 
 Pour empêcher les utilisateurs de supprimer accidentellement des fichiers extraits par eux ou par un autre utilisateur, procédez comme suit :
 
-1. Ouvrez la page Configuration de la console web Adobe Experience Manager .
+1. Ouvrez la page de configuration de la console web Adobe Experience Manager .
 
    L&#39;URL par défaut pour accéder à la page de configuration est :
 
@@ -120,7 +119,7 @@ Pour empêcher les utilisateurs de supprimer accidentellement des fichiers extra
 
 1. Recherchez et cliquez sur le bouton **com.adobe.fmdita.xmleditor.config.XmlEditorConfig** du lot.
 
-1. Sélectionnez la **Empêcher la suppression du contenu extrait** .
+1. Sélectionnez la variable **Empêcher la suppression du contenu extrait** .
 
    Par défaut, cette option est activée. Lorsque cette option est sélectionnée, les utilisateurs ne pourront pas supprimer les fichiers extraits.
 
@@ -160,7 +159,7 @@ Cette configuration vous permet d’autoriser ou d’interdire à tous les utili
 
 Pour définir qui peut supprimer un fichier contenant des références ou référencé par d’autres fichiers, procédez comme suit :
 
-1. Ouvrez la page Configuration de la console web Adobe Experience Manager .
+1. Ouvrez la page de configuration de la console web Adobe Experience Manager .
 
    L&#39;URL par défaut pour accéder à la page de configuration est :
 
@@ -168,21 +167,21 @@ Pour définir qui peut supprimer un fichier contenant des références ou réfé
    http://<server name>:<port>/system/console/configMgr
    ```
 
-1. Recherchez et cliquez sur le bouton **com.adobe.fmdita.config.ConfigManager** du lot.
+1. Recherchez et cliquez sur le bouton **com.adobe.config.ConfigManager** du lot.
 
 1. Recherchez la variable **Suppression de blocs pour les ressources référencées** .
 
 1. Selon qui vous souhaitez accorder l’accès à la suppression, spécifiez l’une des constantes suivantes :
 
-   - allow\_unsafe\_delete\_for\_all: Donnez l’autorisation à tous les utilisateurs de supprimer des fichiers. Dans ce cas, si le fichier\(s\) contient des références ou est référencé par d’autres fichiers, vous pouvez également supprimer ce(s\) fichier(s\) de manière forcée. Avant de supprimer le fichier, une invite s’affiche avec les références. Vous pouvez annuler l’opération de suppression, supprimer les références, puis supprimer le fichier\(s\). Vous pouvez également supprimer le fichier\(s\) sans supprimer les références.
+   - allow\_unsafe\_delete\_for\_all : autorisez tous les utilisateurs à supprimer des fichiers. Dans ce cas, si le fichier\(s\) contient des références ou est référencé par d’autres fichiers, vous pouvez également supprimer ce(s\) fichier(s\) de manière forcée. Avant de supprimer le fichier, une invite s’affiche avec les références. Vous pouvez annuler l’opération de suppression, supprimer les références, puis supprimer le fichier\(s\). Vous pouvez également supprimer le fichier\(s\) sans supprimer les références.
 
-      ![](assets/allow_unsafe_delete-force-delete.PNG){width="550" align="left"}
+     ![](assets/allow_unsafe_delete-force-delete.PNG){width="550" align="left"}
 
-   - allow\_unsafe\_delete\_for\_delete\_assets\_group: un administrateur ou un utilisateur appartenant à la variable *delete-assets* est autorisé à supprimer des fichiers. Si un autre utilisateur tente de supprimer des fichiers contenant des références, il n’est pas autorisé à les supprimer tant que toutes les références ne sont pas supprimées. La capture d’écran suivante s’affiche lorsqu’un utilisateur, qui ne dispose pas d’autorisations, tente de supprimer des fichiers.
+   - allow\_unsafe\_delete\_for\_delete\_assets\_group : un administrateur ou un utilisateur appartenant à la variable *delete-assets* Le groupe est autorisé à supprimer des fichiers. Si un autre utilisateur tente de supprimer des fichiers contenant des références, il n’est pas autorisé à les supprimer tant que toutes les références ne sont pas supprimées. La capture d’écran suivante s’affiche lorsqu’un utilisateur, qui ne dispose pas d’autorisations, tente de supprimer des fichiers.
 
-      ![](assets/allow_unsafe_delete_for_delete_assets_group.PNG){width="550" align="left"}
+     ![](assets/allow_unsafe_delete_for_delete_assets_group.PNG){width="550" align="left"}
 
-   - block\_unsafe\_delete\_for\_all: Interdire à tous les utilisateurs \(y compris les administrateurs\) de supprimer des fichiers jusqu’à ce que les références au fichier\(s\) soient supprimées.
+   - block\_unsafe\_delete\_for\_all : interdire à tous les utilisateurs \(y compris les administrateurs\) de supprimer des fichiers jusqu’à ce que les références au fichier\(s\) soient supprimées.
 
 1. Cliquez sur **Enregistrer**.
 
@@ -199,7 +198,7 @@ La version d’un fichier DITA qui répond à l’un des critères donnés est c
 
 - Est la première version d’un fichier
 - Est inclus dans une ligne de base
-- Est inclus dans n’importe quel processus de traduction ou de révision
+- Est inclus dans tout processus de traduction ou de révision
 - Est associé à un libellé
 - Respecte l’âge ou le nombre défini de critères de version
 
@@ -210,19 +209,19 @@ Pour purger les anciennes versions, procédez comme suit :
    ![](assets/preview-purge-report.png){width="350" align="left"}
 
 1. 
-   - **Nombre de versions à conserver à partir de la dernière version**: Saisissez le nombre de versions qui doivent être conservées et non purgées. Par exemple, si nous saisissons 5 , les 5 dernières versions sont conservées, et les versions antérieures à peuvent être purgées si d’autres conditions de purge sont remplies.
-- **Conserver Les Versions Créées Dans La Période \(En Jours\)**: Saisissez l’âge maximal d’une version en jours. Les versions antérieures au nombre de jours donné peuvent être purgées si d’autres conditions de purge sont remplies. Par exemple, si nous entrez 100, toutes les versions créées avant 100 jours sont éligibles pour être purgées si d’autres conditions de purge sont remplies.
-- **Chemin**: Sélectionnez le chemin d’accès du fichier ou du dossier dont vous souhaitez purger les fichiers.
+   - **Nombre de versions à conserver à partir de la dernière version**: entrez le nombre de versions qui doivent être conservées et non purgées. Par exemple, si nous saisissons 5 , les 5 dernières versions sont conservées, et les versions antérieures à peuvent être purgées si d’autres conditions de purge sont remplies.
+- **Conserver Les Versions Créées Dans La Période \(En Jours\)**: saisissez la page maximale d’une version en jours. Les versions antérieures au nombre de jours donné peuvent être purgées si d’autres conditions de purge sont remplies. Par exemple, si nous entrez 100, toutes les versions créées avant 100 jours sont éligibles pour être purgées si d’autres conditions de purge sont remplies.
+- **Chemin**: sélectionnez le chemin d’accès du fichier ou du dossier dont vous souhaitez purger les fichiers.
 
-   >[!NOTE]
-   >
-   > Vous pouvez uniquement purger les fichiers DITA.
+  >[!NOTE]
+  >
+  > Vous pouvez uniquement purger les fichiers DITA.
 
 1. Cliquez sur **Aperçu du rapport Purge**.
 
    >[!NOTE]
    >
-   > Il ne peut y avoir qu’une seule tâche de purge à la fois. Vous ne pouvez pas lancer une autre opération de purge de version si une version est en cours de traitement.
+   > Il ne peut y avoir qu’une seule tâche de purge à la fois. Si une version est en cours de traitement, vous ne pouvez pas lancer une autre opération de purge de version.
 
    Le rapport de purge de version est généré.
 
@@ -239,4 +238,3 @@ Pour purger les anciennes versions, procédez comme suit :
 >[!NOTE]
 >
 > Le rapport est téléchargé à l’emplacement suivant : /var/dxml/versionpurge
-

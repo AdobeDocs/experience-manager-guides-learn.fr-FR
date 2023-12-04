@@ -1,10 +1,10 @@
 ---
 title: Notes de mise à jour | Instructions de mise à niveau et problèmes résolus dans les guides Adobe Experience Manager, version de septembre 2023
 description: Découvrez les correctifs et comment mettre à niveau vers la version de septembre 2023 de Adobe Experience Manager Guides as a Cloud Service
-source-git-commit: 3f79dfbc747b3d2efc05608d05df6ba45e53d877
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1458'
-ht-degree: 3%
+source-wordcount: '1486'
+ht-degree: 0%
 
 ---
 
@@ -28,13 +28,13 @@ Mettez à niveau votre configuration as a Cloud Service actuelle AEM Guides en p
 
 Une fois l’installation terminée, vous pouvez choisir d’ACCÉDER au déclencheur pour lancer la tâche de traduction :
 
-POST:
+POST :
 
 ```
 http://localhost:4503/bin/guides/script/start?jobType=translation-map-upgrade
 ```
 
-Réponse:
+Réponse :
 
 ```
 {
@@ -112,7 +112,7 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 
 | AEM Guides as a Cloud | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
 | --- | --- | --- | --- | --- |
-| 2023.09.0 | 3.1-uuid 17 | 3.1-uuid 17 | 2.3 | 2.3 |
+| 2023.09.0 | 3.1-uuid 17 | 3.1-uuid 17 | 2,3 | 2,3 |
 |  |  |  |  |
 
 
@@ -128,11 +128,11 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 
 ### Création
 
-- Le fichier de rubrique n’est pas déverrouillé dans l’éditeur web, bien que les options Déverrouiller le fichier et Ne pas enregistrer soient sélectionnées. (12558)
+- Le fichier de rubrique n’est pas déverrouillé dans l’éditeur web, bien que les options Déverrouiller le fichier et Ne pas enregistrer soient sélectionnées. 12558
 - Impossible d’extraire un fichier dans l’éditeur web, bien que vous ayez choisi l’option NON pour ignorer les modifications avant l’archivage. (12557)
-- Les info-bulles des icônes Verrouiller et déverrouiller le fichier dans la barre d’outils principale de l’éditeur web ne sont pas cohérentes avec les icônes affichées dans la vue Repository.(12555)
-- L’option Annuler l’extraction et Déverrouiller s’affiche pour un fichier dans l’éditeur web qui n’est pas encore extrait en mode Carte. (12556)
-- Impossible de sélectionner les ressources du PDF dans les liens &quot;topicref&quot; existants. (12477).
+- Les info-bulles des icônes Verrouiller et déverrouiller le fichier dans la barre d’outils principale de l’éditeur web ne sont pas cohérentes avec les icônes affichées dans la vue Repository.12555
+- L’option Annuler l’extraction et Déverrouiller s’affiche pour un fichier dans l’éditeur web qui n’est pas encore extrait en mode Carte. 12556
+- Impossible de sélectionner les ressources du PDF dans les liens &quot;topicref&quot; existants. (12477)
 - Dans la vue Repository, les rubriques ou les images ne peuvent pas être glissées après l’utilisation de la fonctionnalité Search/Filter . (12396)
 - Les résultats de recherche sont désactivés dans le panneau Rechercher et remplacer après l’ouverture d’un fichier de recherche. (12142)
 - La touche numérique &quot;8&quot; du clavier latéral ne fonctionne pas dans l’éditeur AEM Guides. (12106)
@@ -149,34 +149,30 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 
 ### Gestion
 
-- Le champ &quot;titre&quot; des propriétés de métadonnées de mappage DITA est remplacé par `<title>` pour la carte. (10702)
+- Le champ &quot;titre&quot; des propriétés de métadonnées de mappage DITA est remplacé par `<title>` pour la carte. 10702
 - La référence au contenu est un fichier DITA copié-collé rompu lorsque l’ID de rubrique n’est pas identique au GUID. (12614)
-- Dans les lignes de base dynamiques, la liste des libellés n’est pas extraite des références directes de la copie de travail d’un mappage DITA. (11917)
+- Dans les lignes de base dynamiques, la liste des libellés n’est pas extraite des références directes de la copie de travail d’un mappage DITA. (1917)
 
 ### Publication
 
-- La publication échoue lors du changement du nom d’un paramètre prédéfini de PDF natif. (12564)
-- La duplication d’un modèle de PDF natif duplique l’emplacement du modèle par défaut au lieu de l’emplacement du modèle personnalisé fourni. (12563)
+- La publication échoue lors du changement du nom d’un paramètre prédéfini de PDF natif. 12564
+- La duplication d’un modèle de PDF natif duplique l’emplacement du modèle par défaut au lieu de l’emplacement du modèle personnalisé fourni. 12563
 
-- PDF natif | L’inclusion de plusieurs xrefs étend le texte au-delà de la largeur de la colonne. (13004)
-- PDF natif | Lorsque la rubrique et le titre ont le même ID, cela entraîne une génération incorrecte de la sortie du PDF. (12644)
+- PDF natif | L’inclusion de plusieurs xrefs étend le texte au-delà de la largeur de la colonne. 13004
+- PDF natif | Lorsque la rubrique et le titre ont le même ID, cela entraîne une génération incorrecte de la sortie du PDF. 12644
 - PDF natif | Lors de l’ajout d’une classe de sortie à un parent `<topicref>` dans un mappage DITA et en appliquant un style personnalisé à la classe outputclass, le style est appliqué aux éléments du corps de la rubrique, y compris les titres des sections.(12166)
 - La publication incrémentielle ne fonctionne pas si un mappage DITA comporte plusieurs attributs ditavalrefs. (12117)
 - AEM site | Lors de la création d’une carte avec keydef pointant vers une rubrique comme variable et l’ajout de processing-role=resource-only crée des pages inattendues. (12099)
 - Si des ressources de la gestion des ressources numériques d’AEM sont utilisées dans une sortie autre que le site AEM, les métadonnées &quot;jcr:createdBy&quot; ne reflètent pas le nom de l’éditeur ou le nom de l’utilisateur qui a modifié la dernière fois le mappage ou la rubrique DITA. (12090)
-- AEM Sites | Le mappage DITA avec le titre de la topique dans le titre de navigation (avec des caractères non pris en charge) entraîne des URL de page incorrectes. (11978)
-- PDF natif | Des problèmes se produisent pour la prise en charge de topichead / topicmeta / navtitle dans les sections Frontmatter et Backmatter. (11969)
+- AEM Sites | Le mappage DITA avec le titre de la topique dans le titre de navigation (avec des caractères non pris en charge) entraîne des URL de page incorrectes. (1978)
+- PDF natif | Des problèmes se produisent pour la prise en charge de topichead / topicmeta / navtitle dans les sections Frontmatter et Backmatter. (1969)
 - PDF natif | La génération de PDF pour les documents volumineux prend du temps. (11955)
 - PDF natif | Le changement de nom d’un paramètre prédéfini renvoie une exception NullPointerException lors de la génération d’une sortie de PDF. (11889)
 - La variable `<conref>` le contenu n’est pas affiché dans la sortie du PDF. (11131)
-- Un espace supplémentaire est ajouté dans la variable `<div>` éléments sur le basculement entre les vues Auteur et Source dans l’éditeur de mise en page. (10750)
+- Un espace supplémentaire est ajouté dans la variable `<div>` éléments sur le basculement entre les vues Auteur et Source dans l’éditeur de mise en page. 10750
 - Le contenu répliqué sur AEM Cloud Manager n’est pas visible sur l’instance de publication. (9564)
 
 ### Traduction
 
 - Le processus d’exportation d’une ligne de base renommée pour une traduction échoue. (12993)
 - Le titre du fichier traduit est affiché à la place du titre du fichier source. (11630)
-
-
-
-

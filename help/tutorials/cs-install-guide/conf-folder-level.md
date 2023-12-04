@@ -1,10 +1,9 @@
 ---
 title: Configuration de profils globaux ou au niveau du dossier
 description: Découvrez comment configurer des profils globaux ou de niveau dossier
-exl-id: 19f63d67-89ef-4c5e-bc9a-cf40dd8d7979
-source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '3961'
+source-wordcount: '3967'
 ht-degree: 0%
 
 ---
@@ -59,7 +58,7 @@ Vous pouvez également déléguer les configurations spécifiques aux dossiers �
 
    - PDF
 
-   - HTML 5
+   - HTML5
 
    - EPUB
 

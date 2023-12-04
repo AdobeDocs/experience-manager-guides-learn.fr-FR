@@ -1,13 +1,12 @@
 ---
 title: API REST pour la gestion de sortie
 description: En savoir plus sur les API REST pour la gestion de sortie
-source-git-commit: 4dcd90422f02f3b45aa74137fe58609962b09b49
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1175'
 ht-degree: 0%
 
 ---
-
 
 # API REST pour la gestion de sortie {#id175UB30E05Z}
 
@@ -24,7 +23,7 @@ Méthode de POST qui récupère tous les paramètres prédéfinis de sortie conf
 
 **Valeurs de réponse**: renvoie un tableau d’objets JSON Output Preset, chaque objet contenant les éléments suivants :
 
-| Élément | Description |
+| Elément | Description |
 |-------|-----------|
 | `outputName` | Nom du paramètre prédéfini de sortie. Les noms de sortie sont uniques dans la portée du mappage DITA dans lequel ils sont définis. |
 | `outputType` | Type de sortie générée à l’aide de ce paramètre prédéfini, par exemple AEM Site, PDF, EPUB ou autre. Les options disponibles sont les suivantes :<br>- AEMSITE <br>- PDF <br>- HTML5 <br>- EPUB <br>- PERSONNALISÉ |
@@ -134,4 +133,3 @@ Méthode de POST qui supprime un paramètre prédéfini de sortie.
 **Paramètres**: |Nom|Type|Obligatoire|Description| |—|—|—|— |`:operation`|String|Yes|Nom de l’opération en cours d’appel. La valeur de ce paramètre est `deleteoutput`.<br> **Remarque :** La valeur n’est pas sensible à la casse.| |`sourcePath`|String|Yes|Chemin absolu du fichier de mappage DITA.| |`outputName`|String|Yes|Nom du paramètre prédéfini de sortie à supprimer.|
 
 **Valeurs de réponse**: renvoie une réponse HTTP 200 \(réussie\).
-

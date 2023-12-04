@@ -2,10 +2,9 @@
 title: Utilisation des clés
 description: Comment créer des clés à utiliser dans le contenu de l’organisation
 role: Admin
-exl-id: b8e3a6d2-ea82-4fdb-bd16-3f4b6594af52
-source-git-commit: c8feab55ed3b8e7b36ec46b21f63155766627e40
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
@@ -14,7 +13,7 @@ ht-degree: 0%
 
 Les entreprises doivent utiliser des clés dans les cas où elles disposent d’un texte réutilisable et commun, comme le nom du produit ou le pitch du produit, qui est utilisé à de nombreux endroits, mais qui est susceptible de changer. L’utilisation de clés pour ce texte réutilisable vous permet de pousser une mise à jour à plusieurs endroits en effectuant la modification à un seul emplacement, par exemple dans la valeur de clé.
 
-## Étape 1 : Créer une carte globale pour stocker vos clés
+## Étape 1 : créer une carte globale pour stocker vos clés
 
 Créez une carte et ajoutez le [!UICONTROL keyref] à cet élément.
 
@@ -52,12 +51,12 @@ Ici, vous avez défini deux définitions, comme illustré ci-dessus, qui vous on
 </map>
 ```
 
-## Étape 3 : Utiliser les clés pour faire référence aux variables définies dans la carte des clés globales
+## Étape 3 : utilisation des clés pour faire référence aux variables définies dans la carte des clés globales
 
 + Modifiez la rubrique et ajoutez la valeur de clé à l’aide du [!UICONTROL keyref].
 + Comme illustré dans la capture d’écran, une petite fenêtre s’affiche à partir de laquelle vous pouvez choisir des mots-clés. Cela s’affiche lorsque vous ajoutez l’élément &quot;mot-clé&quot;.
-   ![Insérer un élément](assets/insert_element.png)
-   ![Référence clé](assets/key_ref.png)
+  ![Insérer un élément](assets/insert_element.png)
+  ![Référence clé](assets/key_ref.png)
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>

@@ -1,11 +1,10 @@
 ---
 title: Mise à niveau des guides Adobe Experience Manager
 description: Découvrez comment mettre à niveau les guides Adobe Experience Manager
-exl-id: f058b39f-7408-4874-942b-693e133886cf
-source-git-commit: 6078cb1856ba45524e46165d546daf4109e9b2b2
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '4349'
-ht-degree: 1%
+source-wordcount: '4470'
+ht-degree: 0%
 
 ---
 
@@ -195,7 +194,7 @@ Après avoir installé Experience Manager Guides, vous pouvez fusionner les diff
 
    - Sélectionner **Avance du gestionnaire**
 
-   - Sélectionnez **Terminé**
+   - Sélectionner **Terminé**
 
 1. Cliquez sur **Synchronisation** en haut à droite après avoir terminé les modifications. Vous recevrez une notification de succès.
 
@@ -243,7 +242,7 @@ Effectuez les étapes suivantes pour indexer le contenu existant et utilisez le 
 
 - L’API renvoie un jobId. Pour vérifier l’état de la tâche, vous pouvez envoyer une demande de GET avec l’ID de la tâche au même point de terminaison :
 
-`http://<server:port\>/bin/guides/map-find/indexing?jobId=\{jobId\}`\(Par exemple: `http://localhost:8080/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42`\)
+`http://<server:port\>/bin/guides/map-find/indexing?jobId=\{jobId\}`\(Par exemple : `http://localhost:8080/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42`\)
 
 - Une fois la tâche terminée, la requête de GET ci-dessus répond avec succès et indique si une correspondance a échoué. Les mappages indexés avec succès peuvent être confirmés à partir des journaux du serveur.
 
@@ -333,13 +332,13 @@ Avant de démarrer le processus de mise à niveau vers Experience Manager Guides
 
 ### Activation du déclencheur de script via une servlet{#enable-trigger-serverlet}
 
-POST:
+POST :
 
 ```
 http://localhost:4503/bin/guides/script/start?jobType=translation-map-upgrade
 ```
 
-Réponse:
+Réponse :
 
 ```
 {
@@ -408,7 +407,7 @@ Après avoir installé Experience Manager Guides, vous pouvez fusionner les diff
 
    - Sélectionner **Avance du gestionnaire**
 
-   - Sélectionnez **Terminé**
+   - Sélectionner **Terminé**
 
 1. Cliquez sur **Synchronisation** en haut à droite après avoir terminé les modifications. Vous recevrez une notification de succès.
 
@@ -565,13 +564,13 @@ Avant de démarrer le processus de mise à niveau vers Experience Manager Guides
 
 ### Activation du déclencheur de script via une servlet{#enable-trigger-serverlet-4-3-1}
 
-POST:
+POST :
 
 ```
 http://localhost:4503/bin/guides/script/start?jobType=translation-map-upgrade
 ```
 
-Réponse:
+Réponse :
 
 ```
 {
@@ -636,7 +635,7 @@ Après avoir installé Experience Manager Guides, vous pouvez fusionner les diff
 
    - Sélectionner **Avance du gestionnaire**
 
-   - Sélectionnez **Terminé**
+   - Sélectionner **Terminé**
 
 1. Cliquez sur **Synchronisation** en haut à droite après avoir terminé les modifications. Vous recevrez une notification de succès.
 

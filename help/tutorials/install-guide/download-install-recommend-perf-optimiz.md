@@ -1,20 +1,19 @@
 ---
 title: Recommendations pour l’optimisation des performances
 description: Découvrez Recommendations pour l’optimisation des performances
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
-
 
 # Recommendations pour l’optimisation des performances {#id213BD0JG0XA}
 
 ## Configurer l’entrepôt de données \(obligatoire\)
 
 **Quel est le changement ?**
-Définissez la variable `minRecordLength` à une valeur de `100` sous la configuration `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.` Pour plus d’informations sur le magasin de dates de fichiers et le magasin de données S3, voir [Configuration des entrepôts de noeuds et de données dans AEM 6](https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/using/data-store-config.html) article.
+Définissez la variable `minRecordLength` à une valeur de `100` sous la configuration `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.` Pour plus d’informations sur le magasin de dates de fichiers et le magasin de données S3, voir [Configuration des entrepôts de noeuds et de données dans AEM 6](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/data-store-config.html) article.
 
 >[!NOTE]
 >
@@ -24,7 +23,7 @@ Définissez la variable `minRecordLength` à une valeur de `100` sous la configu
 Après la configuration initiale, mais avant la migration de tout contenu. Vous devez effectuer cette modification même sur un système existant, qui garantit que tout nouveau contenu est stocké dans l’entrepôt de données au lieu de l’entrepôt de segments.
 
 **Résultat de cette modification**
-Les fichiers DITA sont enregistrés dans l’entrepôt de données plutôt que dans l’entrepôt de segments. La taille de la banque de segments reste ainsi inférieure aux limites recommandées, ce qui améliore la réactivité du système.
+Les fichiers DITA sont enregistrés dans l’entrepôt de données plutôt que dans l’entrepôt de segments. Cela permet de maintenir la taille de la banque de segments sous les limites recommandées, ce qui améliore la réactivité du système.
 
 ## Mise à jour de l’index Lucene \(obligatoire\)
 
@@ -46,7 +45,7 @@ Cette modification empêche le noeud /var/dxml d’être indexé et stocké dans
 **Quel est le changement ?**
 Les paramètres de démarrage de la JVM doivent être soigneusement réglés en fonction de l’infrastructure et de la taille du disque. Il est recommandé de consulter le support Adobe pour obtenir de l’aide afin d’accéder à la configuration idéale. Vous pouvez toutefois essayer vous-même les configurations suivantes :
 
-- Définissez la taille du tas JVM sur un minimum de 1/4 de la mémoire totale disponible. Utilisation du paramètre `-Xmx<size>` pour définir la taille de mémoire du tas. Définissez la valeur de -`Xms` est égal à `-Xmx`.
+- Définissez la taille du tas JVM sur un minimum de 1/4 de la quantité totale de mémoire disponible. Utilisation du paramètre `-Xmx<size>` pour définir la taille de mémoire du tas. Définissez la valeur de -`Xms` est égal à `-Xmx`.
 
 - Activer `-XX:+HeapDumpOnOutOfMemoryError` et définissez le chemin d’accès pour `-XX:HeapDumpPath=</path/to/folder``>`.
 
@@ -66,7 +65,7 @@ Les paramètres de démarrage de la JVM doivent être soigneusement réglés en 
 
 - Utilisation `-XX:NewRatio` pour contrôler la taille de la taille de la mémoire de la jeune génération. La valeur par défaut est 2, ce qui signifie que 1/3 de la mémoire est utilisée pour la jeune génération. Comme de nombreux objets sont rapidement créés et détruits, l’utilisation d’une valeur de 1 allouera 1/2 de la mémoire à la jeune génération.
 
-- Contrôle du nombre d’objets convertis en objets de la génération précédente à l’aide de `-XX:MaxTenuringThreshold`. Utilisez la valeur 15 \(default\) pour retarder la conversion des objets en objets de l’ancienne génération.
+- Contrôle du nombre d’objets convertis en objets de la génération précédente à l’aide de `-XX:MaxTenuringThreshold`. Utilisez la valeur 15 \(default\) pour retarder la conversion d’objets en objets de l’ancienne génération.
 
 **Quand configurer ?**
 Si vous effectuez cette modification sur un système existant, vous devez redémarrer le système. Dans le cas d’une nouvelle installation, cette modification doit être effectuée dans le fichier de script de démarrage \(.bat ou .sh\) avant le démarrage du système.
@@ -109,14 +108,14 @@ Définissez la variable **Limiter AEM pages du site dans le tas** propriété so
 Cela peut être effectué au moment de l’exécution via la console Felix ou via le déploiement du code.
 
 **Résultat de cette modification**
-Un nombre accru de **Limiter AEM pages du site dans le tas** optimise le processus AEM génération de sortie de site.
+Une augmentation du nombre de **Limiter AEM pages du site dans le tas** optimise le processus AEM génération de sortie de site.
 
 ## Optimiser le nombre de threads de post-traitement \(obligatoire, selon le cas d’utilisation\)
 
 **Quel est le changement ?**
 Cette modification est requise si vous téléchargez du contenu DITA en masse.
 
-Définissez la variable **Post-traitement des threads** propriété sous `com.adobe.fmdita.config.ConfigManager` to `1`.
+Définissez la variable **Post-traitement Threads** propriété sous `com.adobe.fmdita.config.ConfigManager` to `1`.
 
 **Quand configurer ?**
 Cela peut être effectué au moment de l’exécution.
@@ -125,4 +124,3 @@ Cela peut être effectué au moment de l’exécution.
 Cette modification réduit le temps de post-traitement lors du téléchargement massif de fichiers DITA.
 
 **Rubrique parente :**[ Télécharger et installer](download-install.md)
-

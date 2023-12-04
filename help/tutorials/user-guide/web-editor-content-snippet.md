@@ -1,10 +1,9 @@
 ---
 title: Insertion d’un fragment de contenu à partir de votre source de données
 description: Utilisez les données de votre source de données dans AEM Guides. Découvrez comment insérer un fragment de contenu de votre source de données. Créez une rubrique à l’aide du générateur de rubriques.
-exl-id: fbd5eff2-451b-49d6-ba77-6eb271e94349
-source-git-commit: f7a0140a274a83dfeb6a1ba70ae9c09297d1754c
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '2060'
+source-wordcount: '2066'
 ht-degree: 0%
 
 ---
@@ -49,7 +48,7 @@ Vous pouvez basculer entre le mode Liste et le mode Mosaïque pour afficher les 
 
 Sélectionnez une source de données pour afficher les générateurs de fragments de contenu et les générateurs de rubrique disponibles pour la source de données sélectionnée.
 
-### Vue Liste  ![](images/data-sources-list-view-icon.svg)
+### Mode Liste  ![](images/data-sources-list-view-icon.svg)
 
 ![](images/data-sources-list-view.png){width="300" align="left"}
 
@@ -180,7 +179,7 @@ Effectuez les étapes suivantes pour créer une rubrique à l’aide du généra
       > 
       > Vous devez respecter la convention d’affectation des noms de fichier pour le nom du nouveau générateur de rubriques. Vous ne pouvez pas avoir d’espace dans le nom du générateur de rubriques. En outre, vous ne pouvez pas enregistrer un nouveau générateur de rubriques avec le nom d’un générateur de rubriques existant. Une erreur se produit.
 
-   **Configuration de la sortie**
+   **Configuration de sortie**
 
    ![](images/topic-generator-output-configuration.png){width="300" align="left"}
 

@@ -1,11 +1,10 @@
 ---
 title: Notes de mise à jour d’ [!DNL AEM Guides], version de février 2022
 description: Version de février [!DNL Adobe Experience Manager Guides] as a Cloud Service
-exl-id: eb7ff475-bb5b-4d32-b291-024147fbfed1
-source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 3%
+source-wordcount: '974'
+ht-degree: 0%
 
 ---
 
@@ -14,9 +13,9 @@ ht-degree: 3%
 ## Mise à niveau vers la version de février
 
 Mettre à niveau votre [!DNL Adobe Experience Manager Guides] as a Cloud Service (plus tard appelé [!DNL AEM Guides] as a Cloud Service) en procédant comme suit :
-1. Extrayez le code Git des Cloud Services et passez à la branche configurée dans le pipeline Cloud Services correspondant à l’environnement que vous souhaitez mettre à niveau.
-1. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Services vers la version 2022.2.114.
-1. Validez les modifications et exécutez le pipeline Cloud Services pour effectuer la mise à niveau vers la version de février de [!DNL AEM Guides] as a Cloud Service.
+1. Extrayez le code Git des Cloud Service et passez à la branche configurée dans le pipeline Cloud Service correspondant à l’environnement que vous souhaitez mettre à niveau.
+1. Mettre à jour `<dox.version>` dans `/dox/dox.installer/pom.xml` du code Git Cloud Service vers la version 2022.2.114.
+1. Validez les modifications et exécutez le pipeline Cloud Service pour effectuer la mise à niveau vers la version de février de [!DNL AEM Guides] as a Cloud Service.
 
 ## Matrice de compatibilité
 
@@ -27,7 +26,7 @@ Cette section répertorie la matrice de compatibilité des applications logiciel
 | FMPS | FrameMaker |
 | --- | --- |
 | Non compatible | Mise à jour 4 et ultérieure 2020 |
-|  |  |
+| | |
 
 
 ### Connecteur Oxygen
@@ -40,7 +39,7 @@ Cette section répertorie la matrice de compatibilité des applications logiciel
 
 ## Nouvelles fonctionnalités et améliorations
 
-### Publication de PDF natifs
+### Publication PDF native
 
 La prise en charge de la création d’un PDF natif a également été ajoutée dans la version de février de [!DNL AEM Guides] as a Cloud Service. Un nouveau moteur de publication a été introduit avec les fonctionnalités suivantes :
 * Création d’un modèle CSS
@@ -117,5 +116,5 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 ### Modifications de la convivialité
 
 * Dans le panneau Révision de l’éditeur web, si un nom d’utilisateur est long, les icônes à accepter/rejeter ne s’affichent pas clairement. (8793)
-* Dans le **Rechercher et remplacer** , une icône indésirable s’affiche lorsque vous pointez sur la souris dans la section de résultat. (8775)
-* L’icône personnalisée n’est pas sélectionnée dans la propriété ; l’icône par défaut s’affiche pour les rapports générés à l’aide du bouton Générer le rapport . (8573)
+* Dans le **Rechercher et remplacer** , une icône non souhaitée s’affiche lorsque vous pointez sur la souris dans la section de résultat. (8775)
+* L’icône personnalisée n’est pas sélectionnée dans la propriété. Au lieu de cela, l’icône par défaut s’affiche pour les rapports générés à l’aide du bouton Générer le rapport . (8573)

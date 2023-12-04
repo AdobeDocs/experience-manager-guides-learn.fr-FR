@@ -1,13 +1,12 @@
 ---
 title: Installation de packages pour la publication basée sur un article
 description: Découvrez comment installer des packages pour la publication basée sur un article
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%
 
 ---
-
 
 # Installation de packages pour la publication basée sur un article {#id21BNL02052Z}
 
@@ -19,4 +18,3 @@ Pour activer la publication basée sur des articles, téléchargez et installez 
 - Package de composants pour la publication basée sur les articles
 
 **Rubrique parente :**[ Personnalisation de l’éditeur web](conf-web-editor.md)
-

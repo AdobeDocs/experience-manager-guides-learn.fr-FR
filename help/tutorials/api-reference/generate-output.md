@@ -1,13 +1,12 @@
 ---
 title: API Java pour travailler avec la génération de sortie
 description: En savoir plus sur l’API Java à utiliser avec la génération de sortie
-source-git-commit: fad5049962f258bbe59c7d172436d82b3d6cd68f
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '160'
 ht-degree: 0%
 
 ---
-
 
 # API Java pour travailler avec la génération de sortie {#id175UB30E05Z}
 
@@ -48,4 +47,3 @@ throws GuidesApiException
 **Paramètres**: |Nom|Type|Description| |—|—|—| |`session`|javax.jcr.Session|Une session JCR valide.| |``sourcePath``|String|Path \(dans le référentiel AEM\) du fichier de mappage DITA pour lequel la sortie doit être générée.| |``outputName``|Chaîne|Nom du paramètre prédéfini de sortie\(s\) à utiliser pour générer la sortie. Plusieurs paramètres prédéfinis de sortie peuvent être spécifiés à l’aide d’un délimiteur barre verticale \(&quot;\|&quot;\), par exemple. `aemsite\|pdfoutput`.
 
 **Exception**: renvoie ``javax.jcr.RepositoryException``, `java.io.IOException`, et `java.lang.Exception`.
-

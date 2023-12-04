@@ -1,11 +1,10 @@
 ---
 title: Notes de mise à jour | Instructions de mise à niveau et problèmes résolus dans les guides Adobe Experience Manager, version d’octobre 2023
 description: Découvrez les correctifs et comment mettre à niveau vers la version d’octobre 2023 des Guides Adobe Experience Manager as a Cloud Service
-exl-id: fb1b74d7-25f2-4a20-9248-44dfdabf553d
-source-git-commit: e8503e1441b7bc365d37c76ab9cf7b5f50374f10
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 2%
+source-wordcount: '1045'
+ht-degree: 1%
 
 ---
 
@@ -29,13 +28,13 @@ Mettez à niveau votre configuration as a Cloud Service actuelle AEM Guides en p
 
 Une fois l’installation terminée, vous pouvez choisir d’ACCÉDER au déclencheur pour lancer la tâche de traduction :
 
-POST:
+POST :
 
 ```
 http://localhost:4503/bin/guides/script/start?jobType=translation-map-upgrade
 ```
 
-Réponse:
+Réponse :
 
 ```
 {
@@ -113,7 +112,7 @@ Cette section répertorie le tableau de compatibilité des applications logiciel
 
 | AEM Guides as a Cloud | Fenêtres du connecteur Oxygen | Mac du connecteur Oxygen | Modifier sous Windows Oxygen | Modifier dans Oxygen Mac |
 | --- | --- | --- | --- | --- |
-| 2023.10.0 | 3.2-uuid 5 | 3.2-uuid 5 | 2.3 | 2.3 |
+| 2023.10.0 | 3.2-uuid 5 | 3.2-uuid 5 | 2,3 | 2,3 |
 |  |  |  |  |
 
 
@@ -145,7 +144,7 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 
 ### Gestion
 
-- L’historique de version ne s’affiche pas même si la variable `dc:format` n’est pas présente pour une ressource. (10463)
+- L’historique de version ne s’affiche pas même si la variable `dc:format` n’est pas présente pour une ressource. 10463
 
 
 ### Révision
@@ -165,4 +164,3 @@ Les bogues résolus dans différentes zones sont répertoriés ci-dessous :
 Adobe a identifié le problème connu suivant pour la version d’octobre 2023.
 
 - La republication du fragment de contenu échoue.
-

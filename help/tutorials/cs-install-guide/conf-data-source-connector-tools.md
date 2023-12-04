@@ -1,10 +1,9 @@
 ---
 title: Configuration d’un connecteur de source de données à l’aide d’outils
 description: Découvrez comment configurer un connecteur de source de données à l’aide des outils.
-exl-id: d7cd412b-89ea-43a5-97b3-09944863bbee
-source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
