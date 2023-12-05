@@ -132,13 +132,13 @@ xpath : il s’agit de la requête XPath qui récupère les éléments ou les at
 
 La requête XPath contient le nom de classe du type de document. La classe &quot;rubrique/rubrique&quot; est utilisée pour les documents DITA de type de rubrique. Si vous souhaitez créer une règle pour d’autres documents DITA, vous devez utiliser les noms de classe suivants :
 
-|Type de document|Nom de classe|
-|----------------|-------------|
-|Rubrique|- rubrique/rubrique|
-|Tâche|- tâche/tâche de rubrique/de rubrique|
-|Concept|- thème/sujet concept/concept|
-|Référence|- Référence/référence de rubrique/de rubrique|
-|Carte|- map/map|
+    |Type de document|Nom de classe|
+    |—|—|
+    |Rubrique|- rubrique/rubrique|
+    |Tâche|- tâche/tâche de rubrique/de rubrique|
+    |Concept|- thème/sujet concept/concept|
+    |Référence|- Référence/référence de rubrique/de rubrique|
+    |Carte|- map/map|
 
 text : si vous souhaitez rechercher le texte dans l’élément spécifié, indiquez la valeur oui. Si vous spécifiez non comme valeur, seuls les attributs de l’élément sont sérialisés. Les attributs que vous souhaitez rechercher doivent être spécifiés dans la section du jeu d’attributs .
 
