@@ -139,7 +139,7 @@ xpath : il s’agit de la requête XPath qui récupère les éléments ou les at
     |Type de document|Nom de classe|
     |—|—|
     |Rubrique|- rubrique/rubrique|
-    |Tâche|- tâche/tâche de rubrique/de rubrique
+    |Tâche|- tâche/tâche de rubrique/de rubrique|
     |Concept|- thème/sujet concept/concept|
     |Référence|- Référence/référence de rubrique/de rubrique|
     |Carte|- map/map|
