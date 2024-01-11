@@ -1,16 +1,16 @@
 ---
 user-guide-title: Tutoriels sur Adobe Experience Manager Guides
 user-guide-description: Ensemble de vidéos pour Adobe Experience Manager Guides.
-breadcrumb-title: Vidéos AEM Guides
-source-git-commit: 6a35536d55bec04d69d1c296b75b55f034f70186
+breadcrumb-title: Tutoriels pour AEM Guides
+source-git-commit: b78894069aa2b1279365d716332b5f6e2e3be865
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 17%
+source-wordcount: '127'
+ht-degree: 18%
 
 ---
 
 
-# [!DNL Adobe Experience Manager Guides] tutoriels {#videos}
+# Tutorials pour [!DNL Adobe Experience Manager Guides] {#videos}
 
 + [[!DNL AEM Guides] Vidéos](overview.md)
 + Prise en main d’ [!DNL AEM Guides] {#getting-started}
