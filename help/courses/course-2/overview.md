@@ -13,11 +13,11 @@ ht-degree: 0%
 
 Dans cet ensemble de tutoriels, vous apprendrez à effectuer les opérations suivantes :
 
-- [Présentation du tableau de bord des cartes](./introduction-to-the-map-dashboard.md)
+- [Comprendre le tableau de bord des cartes](./introduction-to-the-map-dashboard.md)
 - [Utilisation des rapports](./working-with-reports.md)
-- [Création et publication à l’aide des lignes de base](./creating-and-publishing-with-baselines.md)
-- [Publication avec des conditions](./publishing-with-conditions.md)
-- [Présentation des paramètres prédéfinis de sortie](./output-presets.md)
-- [Dépannage des erreurs de publication](./troubleshooting-publishing-errors.md)
-- [Publication en bloc](./bulk-publishing.md)
-- [Récupérer](./recap.md)
+- [Créer et publier avec des lignes de base](./creating-and-publishing-with-baselines.md)
+- [Publish avec des conditions](./publishing-with-conditions.md)
+- [Comprendre les paramètres prédéfinis de sortie](./output-presets.md)
+- [ Résolution des problèmes d’erreurs de publication ](./troubleshooting-publishing-errors.md)
+- [Publication en masse](./bulk-publishing.md)
+- [Recap](./recap.md)

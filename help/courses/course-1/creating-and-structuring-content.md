@@ -5,7 +5,7 @@ exl-id: f7cfc5c8-414f-4480-a9c9-b9920975a55d
 source-git-commit: 6959927315c7afc62a7423e835a36895c76fdc6d
 workflow-type: tm+mt
 source-wordcount: '381'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -17,11 +17,11 @@ Une fois que vous vous êtes familiarisé avec l’interface utilisateur, vous p
 
 ## Création d’un dossier
 
-1. Sélectionnez la **Référentiel** pour afficher vos dossiers et fichiers.
+1. Sélectionnez l’icône **Repository** pour afficher vos dossiers et fichiers.
 
    ![Icône Référentiel](images/common/repository-icon.png)
 
-1. Sélectionnez la **+** et **Dossier**.
+1. Sélectionnez l’icône **+** et **Dossier**.
 
    ![+ icône](images/lesson-3/+-icon.png)
 
@@ -35,24 +35,24 @@ Nous pouvons maintenant créer un dossier dans votre nouveau dossier qui contien
 
 1. Passez la souris sur votre nouveau dossier dans le référentiel et sélectionnez l’icône représentant des points de suspension qui s’affiche.
 
-   ![Icône Ellipse](images/lesson-3/ellipses-icon.png)
+   ![Icône représentant des points de suspension](images/lesson-3/ellipses-icon.png)
 
    Le menu Options s’affiche.
 
-1. Sélectionner **Créer un dossier \>**.
+1. Sélectionnez **Créer \> Dossier**.
    ![Création d’un sous-dossier](images/lesson-3/create-subfolder-with-markings.png)
 
-1. Attribuez un titre au sous-dossier (par exemple, &quot;images&quot;) et sélectionnez **Créer**.
+1. Donnez un titre au sous-dossier (par exemple, &quot;images&quot;) et sélectionnez **Créer**.
 
 ## Créer et renseigner un nouveau concept
 
 1. Passez la souris sur votre dossier parent dans le référentiel et sélectionnez l’icône représentant des points de suspension.
 
-   ![Icône Ellipse](images/lesson-3/ellipses-icon.png)
+   ![Icône représentant des points de suspension](images/lesson-3/ellipses-icon.png)
 
    Le menu Options s’affiche.
 
-1. Sélectionner **Créer une rubrique \>**.
+1. Sélectionnez **Créer \> Rubrique**.
 
    ![Création d’une rubrique](images/lesson-3/create-topic-with-markings.png)
 
@@ -60,9 +60,9 @@ Nous pouvons maintenant créer un dossier dans votre nouveau dossier qui contien
 
 1. Dans le menu déroulant Modèle de la boîte de dialogue, sélectionnez **Concept**.
 
-   ![Liste déroulante Modèle](images/lesson-3/dropdown-with-markings.png)
+   ![Liste déroulante de modèles](images/lesson-3/dropdown-with-markings.png)
 
-1. Attribuez un titre à votre concept et sélectionnez **Créer**.
+1. Donnez un titre à votre concept et sélectionnez **Créer**.
 
    Le nouveau concept s’affiche dans l’éditeur, avec son titre.
 
@@ -76,13 +76,13 @@ Vous pouvez enregistrer votre travail à tout moment à l’aide de l’option E
 
 ### Enregistrement de votre travail sans contrôle de version
 
-1. Sélectionnez la **Enregistrer** icône .
+1. Sélectionnez l&#39;icône **Enregistrer** .
 
    ![Icône Enregistrer](images/common/save.png)
 
 ### Enregistrement d’une nouvelle version
 
-1. Sélectionnez la **Enregistrer comme nouvelle version** à droite de l’icône Enregistrer .
+1. Sélectionnez l&#39;icône **Enregistrer comme nouvelle version** à droite de l&#39;icône Enregistrer.
 
    ![Icône Enregistrer comme nouvelle version](images/common/save-as-new-version.png)
 

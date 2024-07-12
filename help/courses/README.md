@@ -5,6 +5,6 @@ source-wordcount: '20'
 ht-degree: 0%
 
 ---
-# Guides Adobe Experience Manager
+# Adobe Experience Manager Guides
 
-Il s’agit du référentiel permettant de stocker les vidéos et les fichiers Markdown pour les cours &quot;AEM Guides&quot;.
+Il s’agit du référentiel pour stocker les vidéos et les fichiers de markdown pour les cours &quot;AEM Guides&quot;.

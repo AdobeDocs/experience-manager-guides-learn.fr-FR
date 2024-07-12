@@ -4,7 +4,7 @@ description: Présentation du tableau de bord des cartes
 exl-id: c2efa073-15e7-42a0-aaa8-04859b0fdf62
 source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Le tableau de bord des cartes contient plusieurs onglets, notamment des paramèt
 
 ### Paramètres prédéfinis de sortie
 
-L’onglet Paramètres prédéfinis de sortie affiche les paramètres prédéfinis par défaut pour les différents types de sorties : AEM Site, PDF, HTML5, ePub et personnalisé.
+L’onglet Paramètres prédéfinis de sortie affiche les paramètres prédéfinis par défaut pour les différents types de sorties : AEM Site, PDF, HTML5, ePub et Personnalisé.
 
 ![images/output-presets.png](images/output-presets.png)
 
@@ -40,7 +40,7 @@ L’onglet Sorties affiche toutes les sorties générées précédemment et qui 
 
 ![images/generated-outputs.png](images/generated-outputs.png)
 
-Un cercle vert sous la colonne Paramètres de génération indique que la sortie a été générée avec succès. Le texte de cette colonne agit comme un principal lien hypertexte et vous pouvez les sélectionner pour ouvrir la sortie générée. Les entrées situées sous la colonne Type indiquent le type de sortie.
+Un cercle vert sous la colonne Paramètres de génération indique que la sortie a été générée avec succès. Le texte de cette colonne agit comme un lien hypertexte actif. Vous pouvez le sélectionner pour ouvrir la sortie générée. Les entrées situées sous la colonne Type indiquent le type de sortie.
 D’autres informations de génération de sortie sont également affichées ici, notamment le nom de l’utilisateur qui a généré la sortie, la date et l’heure de génération, ainsi que le temps nécessaire à la génération. En cas d’erreur au cours de la génération, vous pouvez sélectionner la date et l’heure de génération sous la colonne Généré à pour ouvrir et consulter le journal des erreurs.
 
 ### Sujets

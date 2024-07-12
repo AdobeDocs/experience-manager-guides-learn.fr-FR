@@ -1,10 +1,10 @@
 ---
 title: Utilisation des rapports
-description: Utilisation des rapports dans [!DNL Adobe Experience Manager Guides]
+description: Utilisation de rapports dans  [!DNL Adobe Experience Manager Guides]
 exl-id: 755506a6-c416-4a8c-8359-8db7e63a90a4
 source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
@@ -21,17 +21,17 @@ Vous pouvez télécharger des fichiers d’exemple pour l’exercice ici.
 
 [Exercise-Download](assets/exercises/working-with-reports.zip)
 
-## Chargement des ressources
+## Téléchargement d’Assets
 
 1. En mode Référentiel, sélectionnez l’icône représentant des points de suspension sur votre dossier principal pour ouvrir le menu Options.
 
    ![ellipses-9.png](images/ellipses-9.png)
 
-1. Sélectionner **[!UICONTROL Chargement de ressources]**.
+1. Sélectionnez **[!UICONTROL Télécharger Assets]**.
 
    ![upload-assets.png](images/upload-assets.png)
 
-1. Sélectionnez les fichiers que vous souhaitez charger dans le dossier, puis sélectionnez **Télécharger**.
+1. Sélectionnez les fichiers que vous souhaitez charger dans le dossier et sélectionnez **Télécharger**.
 
 Les fichiers DITA s’ouvrent et vous devez les examiner pour détecter des problèmes liés à un contenu manquant, à des références croisées ou des références croisées.
 
@@ -41,13 +41,13 @@ Les fichiers DITA s’ouvrent et vous devez les examiner pour détecter des prob
 
    ![ellipses-9.png](images/ellipses-9.png)
 
-1. Sélectionner **Créer > Carte**.
+1. Sélectionnez **Créer > Carte**.
 
    ![create-map.png](images/create-map.png)
 
    La boîte de dialogue Créer une carte s’affiche.
 
-1. Dans le champ Modèle, sélectionnez **Bookmap** (ou **Carte** selon le type de contenu que vous créez) dans le menu déroulant et attribuez un titre à votre carte.
+1. Dans le champ Modèle, sélectionnez **Bookmap** (ou **Map** en fonction du type de contenu que vous créez) dans le menu déroulant et donnez un titre à votre carte.
 
 1. Sélectionnez **Créer**.
 
@@ -73,22 +73,22 @@ L’indicateur de ligne vous indique où sera placée votre rubrique.
 
    ![save-as-new-version.png](images/save-as-new-version.png)
 
-1. Dans le *Commentaires sur la nouvelle version* , saisissez un commentaire descriptif.
+1. Dans le champ *Comments for new Version* , saisissez un commentaire descriptif.
 
 1. Sélectionnez **Enregistrer**.
 
 ## Génération d’une sortie de site AEM
 
-1. Dans le référentiel, sélectionnez l’icône représentant des points de suspension sur votre carte pour ouvrir le menu Options, puis **Ouvrez le tableau de bord de la carte.**
+1. Dans le référentiel, sélectionnez l’icône représentant des points de suspension sur votre carte pour ouvrir le menu Options, puis **Ouvrir le tableau de bord de la carte.**
 
    ![open-map-dashboard.png](images/open-map-dashboard.png)
 
    Le tableau de bord des cartes s’ouvre dans un autre onglet.
-1. Dans l’onglet Paramètres prédéfinis de sortie, sélectionnez **AEM site**.
+1. Dans l’onglet Paramètres prédéfinis de sortie, sélectionnez **AEM Site**.
 
    ![aem-site-checkbox](images/aem-site-checkbox.png)
 
-1. Sélectionner **Générer**.
+1. Sélectionnez **Générer**.
 
 1. Accédez à la page Sorties pour afficher l’état des sorties générées.
 En cas d’erreur, l’onglet Sorties peut afficher un cercle orange sous la colonne Paramètre de génération au lieu de vert, ce qui indique que la génération est terminée.
@@ -104,19 +104,19 @@ Idéalement, après l’importation de contenu, vous devez toujours rechercher u
 
 ![reports.png](images/reports.png)
 
-La colonne Éléments manquants indique le nombre d’images manquantes et de références rompues. Vous pouvez sélectionner la variable **Crayon** pour ouvrir la rubrique dans l’éditeur.
+La colonne Éléments manquants indique le nombre d’images manquantes et de références rompues. Vous pouvez sélectionner l’icône **Crayon** pour ouvrir la rubrique dans l’éditeur.
 
 ## Résolution des images manquantes
 
 Si des images sont manquantes dans vos fichiers, il est possible que le contenu ait été téléchargé, mais pas les images. Si tel est le cas, résolvez les problèmes d’image manquants en chargeant les images dans un dossier spécifique correspondant au chemin et aux noms de fichier attendus par les fichiers.
 
-1. Dans *Repository View*, sélectionnez l’icône représentant des points de suspension dans votre dossier d’images pour ouvrir le menu Options.
+1. Dans la *vue du référentiel*, sélectionnez l’icône représentant des points de suspension dans votre dossier d’images pour ouvrir le menu Options.
 
    ![image-ellipsis.png](images/image-ellipsis.png)
 
-1. Sélectionner **[!UICONTROL Chargement de ressources]**, puis sélectionnez les images manquantes.
+1. Sélectionnez **[!UICONTROL Télécharger Assets]** et sélectionnez les images manquantes.
 
-1. Sélectionner **Télécharger**.
+1. Sélectionnez **Télécharger**.
 
 Les images manquantes ont été téléchargées. Désormais, une nouvelle sortie de site AEM affichera ces images et l’onglet Rapports n’affichera plus les erreurs d’image manquantes.
 
@@ -124,15 +124,15 @@ Les images manquantes ont été téléchargées. Désormais, une nouvelle sortie
 
 Si le contenu référencé ailleurs (une référence) est lié à pour un fichier dans un autre dossier (par exemple, un dossier nommé &quot;réutilisation&quot;). et que le contenu n’est pas téléchargé, une erreur doit être résolue. Par exemple, vous devez créer un sous-dossier nommé &quot;réutilisation&quot; et charger le fichier manquant dans &quot;réutilisation&quot;.
 
-### Chargement d’une ressource avec le [!UICONTROL Ressources] Interface utilisateur
+### Chargement d’une ressource avec l’interface utilisateur [!UICONTROL Assets]
 
-En plus de la variable [!UICONTROL Chargement de ressources] vous pouvez télécharger des ressources en les faisant glisser et en les déposant dans l’interface utilisateur d’Assets.
+Outre l’option [!UICONTROL Télécharger Assets] , vous pouvez charger des ressources en les faisant glisser et en les déposant dans l’interface utilisateur d’Assets.
 
 1. En mode Référentiel, sélectionnez l’icône représentant des points de suspension dans votre dossier de réutilisation pour ouvrir le menu Options.
 
-   ![réutilisation-ellipsis.png](images/reuse-ellipsis.png)
+   ![}reset-ellipsis.png](images/reuse-ellipsis.png)
 
-1. Sélectionner **Affichage dans l’interface utilisateur d’Assets**.
+1. Sélectionnez **Afficher dans l’interface utilisateur d’Assets**.
 
    ![assets_ui.png](images/assets_ui.png)
 

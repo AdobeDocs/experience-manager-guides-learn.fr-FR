@@ -1,6 +1,6 @@
 ---
 title: Clés
-description: Les clés vous permettent d’inclure des informations sur les variables lors de l’utilisation de DITA dans AEM Guides.
+description: Les clés vous permettent d’inclure des informations de variable dans lorsque vous utilisez DITA dans AEM Guides.
 exl-id: cb64e094-fe6d-4a5e-8f0e-25ae58aaa2c6
 source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Différents ensembles de matériaux peuvent contenir des informations similaires qui doivent être personnalisées dans des endroits choisis. Les clés vous permettent d’inclure des informations sur les variables lors de l’utilisation de DITA.
 
-Des exemples de fichiers que vous pouvez choisir d’utiliser pour cette leçon sont fournis dans le fichier . [keys.zip](assets/keys.zip).
+Des exemples de fichiers que vous pouvez choisir d’utiliser pour cette leçon sont fournis dans le fichier [keys.zip](assets/keys.zip).
 
 >[!VIDEO](https://video.tv.adobe.com/v/342756?quality=12&learn=on)
 
@@ -27,9 +27,9 @@ Des exemples de fichiers que vous pouvez choisir d’utiliser pour cette leçon 
 
    c. Sélectionnez le fichier à extraire.
 
-   ![Sélectionner une zone](images/lesson-9/select-zip.png)
+   ![Sélectionner un fichier zip](images/lesson-9/select-zip.png)
 
-   d. Cliquez sur [!UICONTROL **Extraction de l’archive**] dans la barre d’outils supérieure.
+   d. Cliquez sur [!UICONTROL **Extract Archive**] dans la barre d’outils supérieure.
 
    ![Barre d’outils](images/lesson-9/extract-archive.png)
 
@@ -37,11 +37,11 @@ Des exemples de fichiers que vous pouvez choisir d’utiliser pour cette leçon 
 
    f. Cliquez sur [!UICONTROL **Suivant**].
 
-   g. Ignorez les conflits, car ils n’existeront pas pour le contenu qui n’a jamais été chargé auparavant.
+   g. Ignorez les conflits, car ils n’existeront pas pour le contenu qui n’a jamais été transféré auparavant.
 
-   h. Sélectionner [!UICONTROL **Extract**] en haut à droite de l’écran.
+   h. Sélectionnez [!UICONTROL **Extract**] en haut à droite de l’écran.
 
-1. Une fois l’extraction terminée, cliquez sur [!UICONTROL **Accédez au dossier cible**].
+1. Une fois l’extraction terminée, cliquez sur [!UICONTROL **Aller au dossier cible**].
 
    ![Confirmation](images/lesson-9/go-to-target.png)
 
@@ -55,21 +55,21 @@ Pour utiliser correctement les clés, les préférences utilisateur doivent réf
 
    b. Configurez les préférences utilisateur.
 
-   c. Cliquez sur le bouton [!UICONTROL **Préférences utilisateur**] dans la barre d’outils supérieure.
+   c. Cliquez sur l’icône [!UICONTROL **Préférences utilisateur**] dans la barre d’outils supérieure.
 
    ![Barre d’outils supérieure](images/lesson-9/author-view.png)
 
-   d. Cliquez sur l’icône de clé pour spécifier une **Root Map** qui sera utilisé pour résoudre les clés.
+   d. Cliquez sur l’icône de clé pour spécifier une **carte racine** qui sera utilisée pour résoudre les clés.
 
-   e. Cochez les cases correspondant aux ressources de votre choix.
+   e. Cochez les cases correspondant à une Assets souhaitée.
 
-   ![Liste déroulante Ressources](images/lesson-9/select-assets.png)
+   ![Liste déroulante Assets](images/lesson-9/select-assets.png)
 
    f. Cliquez sur [!UICONTROL **Sélectionner**].
 
-   g. **Enregistrer** Préférences utilisateur.
+   g. **Enregistrez** les préférences utilisateur.
 
-1. Accédez au **Vue Carte**.
+1. Accédez à la **vue Carte**.
 
 1. Ouvrez la carte spécifiée.
 
@@ -81,13 +81,13 @@ Les clés sont résolues.
 
 1. Sélectionnez une clé.
 
-   ![Menu déroulant des clés](images/lesson-9/hybrid-key.png)
+   ![Liste déroulante de clés](images/lesson-9/hybrid-key.png)
 
 1. Insérez une nouvelle clé.
 
-   a. Cliquez dans un emplacement valide de la carte.
+   a. Cliquez sur un emplacement valide dans la carte.
 
-   b. Sélectionnez la **Keydef** dans la barre d’outils supérieure.
+   b. Sélectionnez l’icône **Keydef** sur la barre d’outils supérieure.
 
    ![Barre d’outils Keydef](images/lesson-9/key-icon.png)
 
@@ -97,7 +97,7 @@ Les clés sont résolues.
 
 1. Ajoutez topicmeta dans le fichier keydef.
 
-   a. Cliquez sur le bouton [!UICONTROL **Insérer un élément**] dans la barre d’outils supérieure.
+   a. Cliquez sur l’icône [!UICONTROL **Insérer l’élément**] de la barre d’outils supérieure.
 
    ![Barre d’outils Keydef](images/lesson-9/add-icon.png)
 
@@ -105,7 +105,7 @@ Les clés sont résolues.
 
 1. Ajoutez des mots-clés dans la topicmeta.
 
-   a. Cliquez sur le bouton [!UICONTROL **Insérer un élément**] dans la barre d’outils supérieure.
+   a. Cliquez sur l’icône [!UICONTROL **Insérer l’élément**] de la barre d’outils supérieure.
 
    ![Barre d’outils Keydef](images/lesson-9/add-icon.png)
 
@@ -113,23 +113,23 @@ Les clés sont résolues.
 
 1. Ajoutez un mot-clé dans la rubrique .
 
-   a. Cliquez sur le bouton [!UICONTROL **Insérer un élément**] dans la barre d’outils supérieure.
+   a. Cliquez sur l’icône [!UICONTROL **Insérer l’élément**] de la barre d’outils supérieure.
 
    ![Barre d’outils Keydef](images/lesson-9/add-icon.png)
 
-   b. Dans le **Insérer un élément** boîte de dialogue, recherchez et sélectionnez &quot;mot-clé&quot;.
+   b. Dans la boîte de dialogue **Insérer l’élément**, recherchez et sélectionnez &quot;mot-clé&quot;
 
 1. Saisissez la valeur de keydef dans le mot-clé.
 
 Sur la carte, votre clé de sécurité devrait maintenant ressembler à ceci :
 
-![Keydef terminé](images/lesson-9/keydef.png)
+![Keydef Finished](images/lesson-9/keydef.png)
 
 ## Configuration d’une clé comme fragment de code
 
 Les fragments de code sont de petits fragments de contenu qui peuvent être réutilisés dans diverses rubriques de votre projet de documentation. Au lieu de générer manuellement chaque clé, vous pouvez configurer une seule clé comme extrait de code.
 
-1. Sélectionnez un élément keydef dans la carte.
+1. Sélectionnez un élément keydef dans le mappage.
 
 1. Dans le menu contextuel, cliquez sur [!UICONTROL **Créer un fragment de code**].
 

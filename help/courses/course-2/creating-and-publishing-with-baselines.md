@@ -1,6 +1,6 @@
 ---
 title: Création et publication avec des lignes de base
-description: Création et publication avec des lignes de base dans [!DNL Adobe Experience Manager Guides]
+description: Création et publication avec des lignes de base dans  [!DNL Adobe Experience Manager Guides]
 exl-id: 3c229c30-f2e0-4fb0-b60c-7bae60ef1a5b
 source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
@@ -19,12 +19,12 @@ L’utilisation d’une ligne de base vous permet de créer une version de vos r
 
 Vous pouvez accéder à vos lignes de base dans le tableau de bord des cartes.
 
-1. Repository View, sélectionnez l’icône représentant des points de suspension sur votre carte pour ouvrir le menu Options, puis **Ouvrez le tableau de bord de la carte.**
+1. En mode Référentiel, sélectionnez l’icône représentant des points de suspension sur votre carte pour ouvrir le menu Options, puis **Ouvrir le tableau de bord de la carte.**
 
    ![ellipsis-map-dashboard.png](images/ellipsis-map-dashboard.png)
 Le tableau de bord des cartes s’ouvre dans un autre onglet.
 
-1. Sélectionner **Lignes de base**.
+1. Sélectionnez **Lignes de base**.
 
    ![baseline-tab.png](images/baseline-tab.png)
 
@@ -45,7 +45,7 @@ L’onglet Lignes de base s’affiche.
 
    >[!NOTE]
    >
-   >REMARQUE : Le *Utiliser la dernière version si l’étiquette n’est pas présente* est sélectionnée par défaut. Si cette option n’est pas sélectionnée et que des rubriques ou des fichiers multimédias sans le libellé choisi existent dans votre carte, le processus de création de ligne de base échoue.
+   >REMARQUE : la case *Utiliser la dernière version si l’étiquette n’est pas présente* est cochée par défaut. Si cette option n’est pas sélectionnée et que des rubriques ou des fichiers multimédias sans le libellé choisi existent dans votre carte, le processus de création de ligne de base échoue.
 
 1. Saisissez le libellé que vous souhaitez utiliser.
 
@@ -55,7 +55,7 @@ Votre ligne de base est créée. Un tableau de toutes les rubriques et des infor
 
 ### Utilisation de la fonction Parcourir toutes les rubriques
 
-La fonction Parcourir toutes les rubriques vous permet d’afficher les informations de la rubrique, y compris la version et le libellé, ainsi que de spécifier la version utilisée. Vous pouvez y accéder en sélectionnant **Parcourir toutes les rubriques** lors de la création ou de la modification de la ligne de base.
+La fonction Parcourir toutes les rubriques vous permet d’afficher les informations de la rubrique, y compris la version et le libellé, ainsi que de spécifier la version utilisée. Vous pouvez y accéder en sélectionnant **Parcourir toutes les rubriques** lors de la création ou de la modification de votre ligne de base.
 
 ![browse-all-topics.png](images/browse-all-topics.png)
 
@@ -63,7 +63,7 @@ La fonction Parcourir toutes les rubriques vous permet d’afficher les informat
 
 Vous pouvez également créer des lignes de base qui sont un instantané dans le temps.
 
-1. Assurez-vous que l’onglet Lignes de base est ouvert et sélectionnez Créer.
+1. Assurez-vous que l’onglet Lignes de base est ouvert, puis sélectionnez Créer.
 
    ![create-baseline.png](images/create-baseline.png)
 
@@ -87,13 +87,13 @@ Vous pouvez attribuer une nouvelle étiquette en bloc à tout le contenu de votr
 
 1. Sélectionnez la ligne de base pour laquelle vous souhaitez ajouter des libellés.
 
-1. Sélectionner **Ajouter des étiquettes**.
+1. Sélectionnez **Ajouter des étiquettes**.
 
    ![add-libellés.png](images/add-labels.png)
 
    La boîte de dialogue Ajouter un libellé s’affiche.
 
-1. Saisissez le libellé à attribuer, puis sélectionnez **Ajouter**.
+1. Saisissez le libellé que vous souhaitez attribuer, puis sélectionnez **Ajouter**.
 
 Le libellé a été ajouté à toutes les rubriques.
 
@@ -119,7 +119,7 @@ Le libellé a été ajouté à toutes les rubriques.
 
    ![done.png](images/done.png)
 
-1. Sélectionner **Générer**.
+1. Sélectionnez **Générer**.
 
    ![generate.png](images/generate.png)
 
@@ -136,13 +136,13 @@ Le libellé a été ajouté à toutes les rubriques.
 
 1. Dans l’onglet Lignes de base , sélectionnez la ligne de base à supprimer.
 
-1. Sélectionner **Supprimer**.
+1. Sélectionnez **Supprimer**.
 
    ![remove-baseline.png](images/remove-baseline.png)
 
    La boîte de dialogue Supprimer la ligne de base s’affiche.
 
-1. Sélectionner **Supprimer**.
+1. Sélectionnez **Supprimer**.
 
 La ligne de base est supprimée.
 
@@ -150,7 +150,7 @@ La ligne de base est supprimée.
 
 1. Dans l&#39;onglet Lignes de base , sélectionnez la ligne de base que vous souhaitez dupliquer.
 
-1. Sélectionner **Dupliquer**.
+1. Sélectionnez **Dupliquer**.
 
    ![duplicate.png](images/duplicate.png)
 
@@ -169,7 +169,7 @@ Vous pouvez directement spécifier la version d’une rubrique utilisée dans un
 
    ![edit-aem.png](images/edit-aem.png)
 
-1. Sélectionner **Parcourir toutes les rubriques**.
+1. Sélectionnez **Parcourir toutes les rubriques**.
 
    ![browse-all-topics.png](images/browse-all-topics.png)
 

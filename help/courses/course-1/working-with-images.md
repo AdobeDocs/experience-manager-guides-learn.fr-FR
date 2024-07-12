@@ -1,11 +1,11 @@
 ---
 title: Utilisation d’images dans AEM Guides
-description: Utilisation d’images dans les guides Adobe Experience Manager
+description: Utilisation d’images dans Adobe Experience Manager Guides
 exl-id: 8b920a9a-bedb-434c-b6fb-3569ce4b7a81
 source-git-commit: 1f8fe099be2b4123eec6f7c973668b415097ac45
 workflow-type: tm+mt
 source-wordcount: '474'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Vous trouverez ci-dessous des instructions pour télécharger et insérer une image, ainsi que pour enregistrer une nouvelle version d’une rubrique.
 
-Vous pouvez télécharger l’exemple de fichier image à partir de [ici.](assets/working-with-images/SignInScreen.png)
+Vous pouvez télécharger l&#39;exemple de fichier image à partir de [ici.](assets/working-with-images/SignInScreen.png)
 
 >[!VIDEO](https://video.tv.adobe.com/v/336661?quality=12&learn=on)
 
@@ -21,15 +21,15 @@ Vous pouvez télécharger l’exemple de fichier image à partir de [ici.](asset
 
 1. Passez la souris sur votre sous-dossier et sélectionnez l’icône représentant des points de suspension pour ouvrir le menu Options.
 
-   ![Icône Ellipse](images/lesson-4/ellipses.png)
+   ![Icône représentant des points de suspension](images/lesson-4/ellipses.png)
 
-1. Sélectionner **[!UICONTROL Chargement de ressources]**.
+1. Sélectionnez **[!UICONTROL Télécharger Assets]**.
 
-   ![Télécharger les éléments](images/lesson-4/upload-assets.png)
+   ![Télécharger Assets](images/lesson-4/upload-assets.png)
 
-1. Sélectionnez l’image que vous souhaitez télécharger depuis votre système local, puis sélectionnez **Ouvrir**.
+1. Sélectionnez l&#39;image que vous souhaitez télécharger depuis votre système local, puis sélectionnez **Ouvrir**.
 
-   Le [!UICONTROL Chargement de ressources] s’affiche.
+   La boîte de dialogue [!UICONTROL Télécharger Assets] s’affiche.
 
 1. Sélectionnez **Télécharger**.
 
@@ -49,7 +49,7 @@ Pour ce qui suit, assurez-vous que votre rubrique est ouverte dans l’éditeur 
 
 ### Insérer une image à l’aide du bouton Insérer une image
 
-1. Sélectionnez la **Insérer une image** icône .
+1. Sélectionnez l&#39;icône **Insérer l&#39;image** .
 
    ![Icône Insérer une image](images/lesson-4/insert-image.png)
 
@@ -58,18 +58,18 @@ Pour ce qui suit, assurez-vous que votre rubrique est ouverte dans l’éditeur 
 1. Sélectionnez l’icône de dossier en regard du champ Sélectionner un fichier pour rechercher votre image ou accédez à son emplacement dans le référentiel.
 1. Sélectionnez l’icône de l’image, puis **Sélectionner**.
 
-   ![Sélectionner une image](images/lesson-4/select-image-with-markings.png)
+   ![Sélection d’une image.](images/lesson-4/select-image-with-markings.png)
 
    La boîte de dialogue Insérer une image s’affiche avec les informations de l’image choisie.
 
 1. Saisissez du texte dans les champs Titre de la figure et Texte secondaire si nécessaire.
-1. Sélectionner **Insérer**.
+1. Sélectionnez **Insérer**.
 
-   Votre image s’affiche dans l’éditeur, ainsi que son titre.
+   Votre image s’affiche dans l’éditeur, avec son titre de figure.
 
 ## Suppression d’une image d’une rubrique
 
-1. Sélectionnez l’image dans l’éditeur de document et appuyez sur la touche **Supprimer** clé.
+1. Sélectionnez l&#39;image dans l&#39;éditeur de document et appuyez sur la touche **Supprimer** .
 
 ## Enregistrement d’une nouvelle version d’une rubrique
 
@@ -77,11 +77,11 @@ Le contrôle de version vous permet de passer en revue et de comparer différent
 
 Comme vous avez apporté une modification importante à votre rubrique, il vous sera peut-être utile d’enregistrer votre travail actuel en tant que nouvelle version.
 
-1. Sélectionnez la **Enregistrer comme nouvelle version** icône .
+1. Sélectionnez l&#39;icône **Enregistrer comme nouvelle version** .
 
    ![Icône Enregistrer comme nouvelle version](images/common/save-as-new-version.png)
 
-   Le **Enregistrer comme nouvelle version** s’affiche.
+   La boîte de dialogue **Enregistrer comme nouvelle version** s’affiche.
 
 1. Dans le champ Commentaires pour la nouvelle version , saisissez un résumé bref mais clair des modifications.
 1. Dans le champ Libellés de version , saisissez les libellés appropriés.

@@ -1,6 +1,6 @@
 ---
 title: Publication avec conditions
-description: Publication avec des conditions avec les guides Adobe Experience Manager
+description: Publication avec des conditions avec Adobe Experience Manager Guides
 exl-id: ea94824a-884b-447f-9562-e6c629b8133b
 source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
@@ -39,27 +39,27 @@ Vous pouvez télécharger des fichiers d’exemple pour l’exercice ici.
 
 1. Attribuez une valeur à l’attribut . Les mises à jour de l’affichage du contenu pour afficher les balises conditionnelles ont été appliquées.
 
-   ![Spécifier un modèle](images/specify-template.png)
+   ![Specify-Template](images/specify-template.png)
 
 ## Prévisualiser du contenu conditionnel
 
-1. Cliquez sur **Aperçu**. 
+1. Cliquez sur **Prévisualisation**.
 
 1. Sous **Filtres**, sélectionnez ou désélectionnez les conditions à afficher ou masquer.
 
-1. Sélectionner ou désélectionner **Texte des conditions de mise en surbrillance**.
+1. Sélectionnez ou désélectionnez le texte **Conditions de mise en surbrillance**.
 
-   ![Aperçu-Conditionnel-Content](images/preview-conditional-content.png)
+   ![ {Preview-Conditionnel-Content](images/preview-conditional-content.png)
 
 ## Création d’un paramètre prédéfini de condition
 
 Un paramètre prédéfini de condition est un ensemble de propriétés qui définissent ce qui doit être inclus ou exclu, ou autrement marqué, pendant la génération de la sortie.
 
-1. Dans le tableau de bord des cartes, sélectionnez la variable **Paramètres prédéfinis de condition** .
+1. Dans le tableau de bord des cartes, sélectionnez l’onglet **Paramètres prédéfinis de condition** .
 
 1. Cliquez sur **Créer**.
 
-1. Sélectionner **Ajouter** (ou **Tout ajouter**).
+1. Sélectionnez **Ajouter** (ou **Ajouter tout**).
 
 1. Attribuez un nom à la condition.
 
@@ -77,25 +77,25 @@ Une fois les conditions appliquées au contenu, il peut être généré en tant 
 
 ## Génération d’une sortie conditionnelle à l’aide d’un paramètre prédéfini de condition
 
-1. Sélectionnez la **Paramètres prédéfinis de sortie** .
+1. Sélectionnez l’onglet **Paramètres prédéfinis de sortie** .
 
 1. Sélectionnez un paramètre prédéfini de sortie.
 
 1. Cliquez sur **Modifier**.
 
-1. Sous **Appliquer la condition en utilisant** sélectionnez un paramètre prédéfini de condition.
+1. Sous **Appliquer la condition à l’aide de**, sélectionnez un paramètre prédéfini de condition.
 
-   ![Générer une sortie conditionnelle](images/generate-conditional-output.png)
+   ![Générer-Conditionnel-Output](images/generate-conditional-output.png)
 
 1. Cliquez sur **Terminé**.
 
 1. Générez le paramètre prédéfini de sortie et passez en revue le contenu.
 
-## Génération d’une sortie conditionnelle à l’aide d’un fichier DITAval
+## Générer une sortie conditionnelle à l’aide d’un fichier DITAval
 
 Le fichier DITAval peut être utilisé pour publier du contenu conditionnel. Pour ce faire, un fichier doit être créé ou chargé, puis référencé lors de la publication.
 
-1. Sélectionnez la **Paramètres prédéfinis de sortie** .
+1. Sélectionnez l’onglet **Paramètres prédéfinis de sortie** .
 
 1. Sélectionnez un paramètre prédéfini de sortie.
 

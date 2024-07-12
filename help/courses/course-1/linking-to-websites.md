@@ -21,25 +21,25 @@ Les liens Web redirigent les lecteurs vers des sites Web pour plus d’informati
 1. Ajoutez une chaîne de texte à votre concept et mettez-le en surbrillance ou mettez en surbrillance le texte existant de votre choix.
 
    Le texte en surbrillance indique l’endroit où votre lien sera inséré.
-1. Sélectionnez la **Insérer une référence croisée** dans la barre d’outils.
+1. Sélectionnez le bouton **Insérer une référence croisée** dans la barre d’outils.
 
    ![Icône Insérer une référence croisée](images/lesson-5/insert-crossref-icon.png)
 
    La boîte de dialogue Référence s’affiche.
 
 
-1. Sélectionner **Lien Web** dans le menu de gauche.
+1. Sélectionnez **Lien Web** dans le menu de gauche.
 1. Collez l’URL de votre choix, puis cliquez sur **Sélectionner**.
 
    Le lien est fonctionnel et ouvre une page web dans un nouvel onglet du navigateur lorsque vous cliquez dessus.
 
 ## Utilisation de l’aperçu pour tester les liens
 
-Le bouton Aperçu permet d’afficher un aperçu d’une rubrique. Vous pouvez ici tester vos liens et les afficher comme le ferait votre audience.
+Le bouton Aperçu permet d’afficher un aperçu d’une rubrique. Ici, vous pouvez tester vos liens et les afficher comme le ferait votre audience.
 
-1. Sélectionner **Aperçu** dans la barre de menu noire supérieure.
+1. Sélectionnez **Aperçu** dans la barre de menu noire supérieure.
 
-   ![Bouton Aperçu](images/common/select-preview.png)
+   ![Bouton Aperçu.](images/common/select-preview.png)
 
    Votre concept s’ouvre dans Aperçu.
 
@@ -47,14 +47,14 @@ Le bouton Aperçu permet d’afficher un aperçu d’une rubrique. Vous pouvez i
 La destination du lien s’ouvre dans un autre onglet.
 1. Revenez à la vue Auteur en sélectionnant **Auteur** dans la barre de menu noire supérieure.
 
-   ![Bouton Créer](images/lesson-5/author-map.png)
+   ![Bouton Auteur](images/lesson-5/author-map.png)
 
 
 ## Enregistrement d’une nouvelle version
 
 Maintenant que vous avez ajouté plus de contenu à votre concept, vous pouvez enregistrer votre travail en tant que nouvelle version et enregistrer vos modifications.
 
-1. Sélectionnez la **Enregistrer comme nouvelle version** icône .
+1. Sélectionnez l&#39;icône **Enregistrer comme nouvelle version** .
 
    ![Icône Enregistrer comme nouvelle version](images/common/save-as-new-version.png)
 

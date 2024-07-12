@@ -5,13 +5,13 @@ exl-id: b277e846-ef71-47ec-a66c-ac9d392d53e0
 source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '371'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
 # Publication en bloc
 
-Lors de la publication, plusieurs types de documentation sont souvent nécessaires. À l’aide des collections de cartes, vous pouvez contrôler le nombre et les types de sorties qui seront assemblés et générés et déclencher la publication en bloc. Le tableau de bord de publication vous permet d’afficher les tâches de publication principales. Le tableau de bord Publication en bloc permet d’activer les collections en bloc.
+Lors de la publication, plusieurs types de documentation sont souvent nécessaires. À l’aide des collections de cartes, vous pouvez contrôler le nombre et les types de sorties qui seront assemblés et générés et déclencher la publication en bloc. Le tableau de bord Publish vous permet d’afficher les tâches de publication actives. Le tableau de bord Publish en bloc permet d’activer les collections en bloc.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338985?quality=12&learn=on)
 
@@ -21,7 +21,7 @@ Lors de la publication, plusieurs types de documentation sont souvent nécessair
 
 ### Création de collections de cartes
 
-1. Dans le menu Navigation, cliquez sur **Ressources**.
+1. Dans le menu de navigation, cliquez sur **Assets**.
 
 1. Sélectionnez Mapper les collections.
 
@@ -29,7 +29,7 @@ Lors de la publication, plusieurs types de documentation sont souvent nécessair
 
 1. Saisissez un Titre de collection.
 
-   ![Mappage-Collection](images/map-collection.png)
+   ![Map-Collection](images/map-collection.png)
 
 1. Cliquez sur **Créer**.
 1. Fermez le message de réussite.
@@ -40,14 +40,14 @@ Lors de la publication, plusieurs types de documentation sont souvent nécessair
 
 1. Ajoutez des mappages selon les besoins.
 
-1. Sélectionner ou désélectionner **Paramètres prédéfinis de sortie** pour chaque carte.
+1. Sélectionnez ou désélectionnez **Paramètres prédéfinis de sortie** pour chaque mappage.
 1. Cliquez sur **Terminé**.
 
 ### Filtrage des paramètres prédéfinis de carte
 
 1. Ouvrez un paramètre prédéfini de carte.
 
-1. Sous **Filtrer** développez et sélectionnez des options selon les besoins.
+1. Sous **Filtre**, développez et sélectionnez des options selon vos besoins.
 
 ### Génération de contenu dans une collection de cartes
 
@@ -55,38 +55,39 @@ Lors de la publication, plusieurs types de documentation sont souvent nécessair
 
 1. Si vous le souhaitez, cliquez sur **Générer tout**.
 
-1. OU, sélectionnez les mappages et les types de sortie à générer, puis cliquez sur **Générer la sélection**.
+1. Ou, sélectionnez les mappages et les types de sortie à générer, puis cliquez sur **Générer la sélection**.
 
 1. Si nécessaire, passez à l’onglet Sorties .
 
 1. Vérifiez la sortie.
 
-## Affichage des tâches de publication principales dans le tableau de bord de publication
+## Affichage des tâches de publication actives dans le tableau de bord Publish
 
-Le tableau de bord de publication vous permet d’afficher les tâches de publication principales. Elle affiche une liste dynamique des cartes et leur état actuel. Vous pouvez effectuer le suivi, gérer ou annuler les workflows de publication.
+Le tableau de bord Publish vous permet d’afficher les
+tâches de publication. Elle affiche une liste dynamique des cartes et leur état actuel. Vous pouvez effectuer le suivi, gérer ou annuler les workflows de publication.
 
-1. Dans la vue Navigation, cliquez sur le bouton **Outils** icône .
+1. Dans la vue Navigation, cliquez sur l’icône **Outils**.
 
 1. Cliquez sur **[!DNL Guides]**.
 
-1. Sélectionnez la **Publier le tableau de bord** mosaïque.
+1. Sélectionnez la mosaïque **Tableau de bord Publish** .
 
        Si le tableau de bord est vide, aucune tâche de publication n’est en cours d’exécution.
        
    
 1. Filtrez le tableau de bord selon les besoins pour afficher toutes les tâches de publication.
 
-### Utilisation du tableau de bord de publication en bloc
+### Utilisation du tableau de bord Publish en bloc
 
-Le tableau de bord Publication en bloc vous permet d’utiliser des collections d’activation en bloc et de contrôler plusieurs types de sortie.
+Le tableau de bord Publish en bloc vous permet d’utiliser des collections d’activation en bloc et de contrôler plusieurs types de sorties.
 
 ### Création d’une collection d’activation en bloc
 
-1. Dans la vue Navigation, cliquez sur le bouton **Outils** icône .
+1. Dans la vue Navigation, cliquez sur l’icône **Outils**.
 
 1. Cliquez sur **[!DNL Guides]**.
 
-1. Sélectionnez la **Tableau de bord de publication en bloc** mosaïque.
+1. Sélectionnez la mosaïque **Tableau de bord Publish en bloc** .
 
 1. Saisissez un Titre de collection.
 
@@ -100,13 +101,13 @@ Le tableau de bord Publication en bloc vous permet d’utiliser des collections 
 
 1. Ajoutez des mappages selon les besoins.
 
-1. Sélectionner ou désélectionner **Paramètres prédéfinis de sortie** pour chaque carte.
+1. Sélectionnez ou désélectionnez **Paramètres prédéfinis de sortie** pour chaque mappage.
 1. Cliquez sur **Terminé**.
 1. Fermez la collection de cartes lorsque vous avez terminé.
 
-### Publication rapide d’une collection d’activation en bloc
+### Publish rapide : collection d’activation en bloc
 
 1. Sélectionnez une mosaïque Collection d’activation en bloc .
 1. Cliquez sur **Ouvrir**.
 1. Sélectionnez une ou plusieurs cartes.
-1. Cliquez sur **Publication rapide**.
+1. Cliquez sur **Quick Publish**.

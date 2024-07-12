@@ -4,7 +4,7 @@ description: Création de références croisées et de liens dans AEM Guides
 exl-id: bee7d50f-cbdd-4ac8-b15b-101febc4ae80
 source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -28,19 +28,19 @@ Il est possible de créer une référence croisée externe en faisant glisser un
 
    a. Cliquez à l’intérieur de l’élément .
 
-   b. Dans le panneau Propriétés du contenu, choisissez **ID** dans la liste déroulante Attribut .
+   b. Dans le panneau Propriétés du contenu, sélectionnez **ID** dans la liste déroulante Attribut.
 
    c. Saisissez un nom logique dans le champ Valeur .
 
-   d. Afficher l’élément et sa valeur dans **Mode plan** si vous le souhaitez.
+   d. Affichez l’élément et sa valeur dans la **vue hiérarchique** si vous le souhaitez.
 
-1. **Enregistrer** Consultez la rubrique pour vous assurer que le référentiel dispose de l’identifiant mis à jour.
+1. **Enregistrez** la rubrique pour vous assurer que le référentiel dispose de l’ID mis à jour.
 
-1. Cliquez sur le bouton [!UICONTROL **Référence**] dans la barre d’outils supérieure.
+1. Cliquez sur l’icône [!UICONTROL **Référence**] dans la barre d’outils supérieure.
 
    ![Barre d’outils](images/lesson-7/references-icon.png)
 
-1. Dans la **Référence de contenu** , sélectionnez l’identifiant et l’association d’éléments à insérer comme référence croisée.
+1. Dans l’onglet **Référence du contenu**, sélectionnez l’association de l’ID et de l’élément à insérer comme référence croisée.
 
 1. Cliquez sur [!UICONTROL **Sélectionner**].
 
@@ -48,19 +48,19 @@ La référence croisée a été ajoutée à la rubrique.
 
 ## Lien vers un site web
 
-Vous pouvez insérer un lien vers un site web dans n’importe quelle rubrique. Pour plus d’informations, reportez-vous à la vidéo AEM Guides Course 1 sur la liaison aux sites web .
+Vous pouvez insérer un lien vers un site web dans n’importe quelle rubrique. Pour plus d’informations, visionnez la vidéo du cours AEM Guides 1 sur la liaison à des sites web .
 
 
 ## Afficher les liens rompus
 
-Certaines modifications peuvent entraîner des références croisées rompues. Il s’agit notamment de supprimer une rubrique, de réorganiser une section contenant une référence croisée ou de modifier un identifiant une fois la référence croisée insérée. Notez qu’un exemple de rubrique _crossreferencesandlinks.zip_ est fourni avec cette leçon qui provoquera l’arrêt de plusieurs références croisées à puces au contenu interne.
+Certaines modifications peuvent entraîner des références croisées rompues. Il s’agit notamment de supprimer une rubrique, de réorganiser une section contenant une référence croisée ou de modifier un identifiant une fois la référence croisée insérée. Notez qu’un exemple de rubrique _crossreferencesandlinks.zip_ est fourni avec cette leçon qui provoquera la rupture de plusieurs des références croisées à puces au contenu interne.
 
-1. Accédez au **Mode plan** dans le panneau de gauche.
+1. Accédez à la **vue Plan** dans le panneau de gauche.
 
-1. Cliquez sur le bouton [!UICONTROL **Filtrer**] icône .
+1. Cliquez sur l&#39;icône [!UICONTROL **Filtre**] .
 
-1. Sélectionner **Liens rompus**.
+1. Sélectionnez **Liens rompus**.
 
-   ![Liste déroulante Filtre](images/lesson-7/broken-links.png)
+   ![Liste déroulante de filtres](images/lesson-7/broken-links.png)
 
 Les liens rompus s’affichent sous forme d’objets cliquables. Vous pouvez les identifier en rouge dans la rubrique.

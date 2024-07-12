@@ -43,7 +43,7 @@ Les paramètres prédéfinis de sortie sont prédéfinis, mais peuvent être per
 
 1. Ouvrez le tableau de bord des cartes.
 
-1. Sélectionnez la **Paramètres prédéfinis de sortie** .
+1. Sélectionnez l’onglet **Paramètres prédéfinis de sortie** .
 
 1. Sélectionnez un paramètre prédéfini de sortie.
 

@@ -4,7 +4,7 @@ description: Contrôle de version du contenu dans [!DNL Adobe Experience Manager
 exl-id: 766af002-d17b-4d27-b4d1-baaacc4579ca
 source-git-commit: 97254946f5ee732fe3b93ff60dd9ef51a379b9f4
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '350'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ La création de versions d’un document crée un instantané de son état actue
 
 >[!VIDEO](https://video.tv.adobe.com/v/336724?quality=12&learn=on)
 
-## Créer une nouvelle version
+## Création d’une version
 
 1. Sélectionnez l’icône Enregistrer comme nouvelle version .
 
@@ -42,7 +42,7 @@ Une fois que vous disposez de plusieurs versions de votre contenu, vous pouvez e
 
 1. Sélectionnez l’icône Historique de version dans la barre d’outils.
 
-   ![Icône Historique des versions](images/lesson-7/version-history.png)
+   ![Icône Historique de version](images/lesson-7/version-history.png)
 
    La boîte de dialogue Historique des versions s’affiche.
 
@@ -55,26 +55,26 @@ Une fois que vous disposez de plusieurs versions de votre contenu, vous pouvez e
 Si nécessaire, vous pouvez sélectionner une version et y revenir. Vous pouvez ainsi ignorer la version actuelle et revenir à l’utilisation d’une version antérieure.
 
 1. Dans la boîte de dialogue Historique des versions , sélectionnez la version à restaurer dans la liste déroulante.
-1. Sélectionner **Revenir à la version sélectionnée**.
+1. Sélectionnez **Revenir à la version sélectionnée**.
 
 La boîte de dialogue Rétablir la version s’affiche.
 
 1. Ajoutez un commentaire descriptif sur la raison pour laquelle vous revenez à une version précédente.
-1. Sélectionner **Confirmer**.
+1. Sélectionnez **Confirmer**.
 
-   Votre rubrique est revenue à la version spécifique.
+   La version spécifique de votre rubrique a été rétablie.
 
 ## Utilisation de filtres pour comparer des versions
 
 Vous pouvez également afficher les différences de version dans l’aperçu à l’aide des filtres Tracking et Afficher l’écart dans le rail de droite.
 
-1. Sélectionner **Aperçu** dans la barre de menu supérieure.
+1. Sélectionnez **Aperçu** dans la barre de menu supérieure.
 
-   ![Bouton Aperçu](images/common/select-preview.png)
+   ![Bouton Aperçu.](images/common/select-preview.png)
 
    Votre rubrique s’ouvre dans Aperçu.
 
-1. Dans la liste déroulante Suivi située sur le rail de droite, sélectionnez **Afficher le balisage**.
+1. Dans la liste déroulante Suivi sur le rail de droite, sélectionnez **Afficher le balisage**.
 1. Dans la liste déroulante Afficher l’outil de comparaison, sélectionnez la version à comparer.
 
    Vos modifications s’affichent sous forme de contenu formaté.

@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # LES FICHIERS ONT DÉPLACÉ
 
-Les fichiers de la section &quot;tutoriels&quot; se trouvent désormais dans la section `experience-manager-guides.en` repo :
+Les fichiers de la section &quot;tutoriels&quot; se trouvent maintenant dans le référentiel `experience-manager-guides.en` :
 
 <https://git.corp.adobe.com/AdobeDocs/experience-manager-guides.en>
 

@@ -1,6 +1,6 @@
 ---
 title: Mode plan
-description: Utilisation de la vue de plan dans AEM guides
+description: Utilisation de la vue hiérarchique dans AEM Guides
 exl-id: 300f550f-dc79-4971-b8ba-43fe8499ea02
 source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
@@ -31,7 +31,7 @@ La vue de contour bascule de développée à réduite.
 
 1. Cliquez sur un élément pour accéder à cet emplacement.
 
-1. Cliquez sur le bouton [!UICONTROL **Ellipse**] en regard d’un élément pour accéder aux options de raccourci.
+1. Cliquez sur l’icône [!UICONTROL **Ellipse**] en regard d’un élément pour accéder aux options de raccourci.
 
    ![Menu contextuel](images/lesson-6/shortcut-options.png)
 
@@ -39,11 +39,11 @@ La vue de contour bascule de développée à réduite.
 
 Un nouvel ID peut être généré automatiquement en fonction de la configuration du système. À l’aide des propriétés du contenu, l’identifiant et sa valeur peuvent également être mis à jour si nécessaire.
 
-1. Cliquez sur le bouton [!UICONTROL **Ellipse**] en regard d’un élément.
+1. Cliquez sur les [!UICONTROL **points de suspension**] en regard de n’importe quel élément.
 
-1. Choisir **Générer des identifiants**.
+1. Sélectionnez **Générer les identifiants**.
 
-   ![Menu contextuel Ellipse](images/lesson-6/ellipsis-popup.png)
+   ![Menu contextuel Ellipsis](images/lesson-6/ellipsis-popup.png)
 
 L’ID est attribué. Les mises à jour des propriétés de contenu et les informations sur les éléments et les attributs s’affichent.
 
@@ -55,7 +55,7 @@ Les éléments peuvent être réorganisés dans la vue Ligne.
 
 1. Déposez l’élément au-dessus d’un autre élément pour le remplacer. Cette action est indiquée par un carré autour de l’élément à remplacer.
 
-   OU
+   Ou
 
    Déposez l’élément entre deux autres éléments pour en modifier l’emplacement. Cette action est indiquée par une ligne entre les éléments où le nouvel élément sera déposé.
 
@@ -63,9 +63,9 @@ Les éléments peuvent être réorganisés dans la vue Ligne.
 
 1. Sélectionnez l’élément .
 
-1. Cliquez sur le bouton [!UICONTROL **Ellipse**].
+1. Cliquez sur le bouton [!UICONTROL **Ellipsis**].
 
-1. Sélectionner **Renommer l’élément**.
+1. Sélectionnez **Renommer l’élément**.
 
    ![Renommer le menu contextuel de l’élément](images/lesson-6/rename-before.png)
 
@@ -77,19 +77,19 @@ L’élément a maintenant été renommé.
 
 1. Sélectionnez l’élément que vous souhaitez renvoyer à la ligne.
 
-1. Cliquez sur le bouton [!UICONTROL **Ellipse**].
+1. Cliquez sur le bouton [!UICONTROL **Ellipsis**].
 
-1. Sélectionner [!UICONTROL **Extraire l’élément**].
+1. Sélectionnez [!UICONTROL **Unwrap element**].
 
 Le contenu reste mais la structure a été supprimée.
 
 ## Filtrage du contenu à l’aide de la vue Plan
 
-1. Cliquez sur le bouton [!UICONTROL **Filtrer**] en regard de la barre de recherche dans la vue Plan.
+1. Cliquez sur l’icône [!UICONTROL **Filtre**] en regard de la barre de recherche dans la vue Plan.
 
    ![Filtres](images/lesson-6/filter-icon.png)
 
-1. Choisissez l’une **Tous** pour afficher tous les éléments ou **Liens rompus** pour rechercher et corriger des références rompues.
+1. Choisissez **Tous** pour afficher tous les éléments ou **Liens rompus** pour rechercher et corriger les références rompues.
 
 ## Recherche avec la vue Plan
 

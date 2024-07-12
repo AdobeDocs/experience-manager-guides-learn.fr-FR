@@ -1,11 +1,11 @@
 ---
 title: Réutilisation de contenu
-description: Utilisation récurrente de fonctionnalités dans les AEM Guides
+description: Utilisation récurrente de fonctionnalités dans AEM Guides
 exl-id: 453c5a09-0bcf-4760-87fc-df3ea4a3a30a
 source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 3%
+source-wordcount: '357'
+ht-degree: 2%
 
 ---
 
@@ -19,11 +19,11 @@ L’une des principales fonctionnalités de DITA est la possibilité de réutili
 
 Lorsqu’une modification est apportée à une rubrique source réutilisable, les informations sont mises à jour partout où le contenu est utilisé.
 
-1. Accédez au **Référentiel**.
+1. Accédez au **référentiel**.
 
-1. Cliquez sur le bouton **menu contextuel** en regard du dossier de réutilisation.
+1. Cliquez sur le **menu contextuel** en regard du dossier de réutilisation.
 
-1. Choisir **Créer > Rubrique Dita**.
+1. Sélectionnez **Créer > Rubrique Dita**.
 
 1. Renseignez les champs de la boîte de dialogue Créer une nouvelle rubrique . Par exemple :
 
@@ -41,11 +41,11 @@ Il existe plusieurs méthodes pour ajouter des éléments réutilisables. Ici, l
 
 1. Cliquez sur dans la rubrique à un emplacement valide.
 
-1. Sélectionnez la **Insérer du contenu réutilisable** dans la barre d’outils supérieure.
+1. Sélectionnez l’icône **Insérer du contenu réutilisable** sur la barre d’outils supérieure.
 
    ![Confirmation](images/lesson-8/insert-reuse-icon.png)
 
-1. Dans la boîte de dialogue Réutiliser le contenu, cliquez sur le bouton [!UICONTROL **Dossier**] icône .
+1. Dans la boîte de dialogue Réutiliser le contenu, cliquez sur l’icône [!UICONTROL **Dossier**] .
 
 1. Accédez au dossier requis.
 
@@ -66,7 +66,7 @@ L’élément réutilisable a maintenant été inséré dans la rubrique.
 
 1. Accédez à **Contenu réutilisable** dans le panneau de gauche.
 
-1. Cliquez sur le bouton [!UICONTROL **Ajouter**] dans le panneau Contenu réutilisable .
+1. Cliquez sur l’icône [!UICONTROL **Ajouter**] dans le panneau Contenu réutilisable .
 
    ![Confirmation](images/lesson-8/reuse-contents-icon.png)
 
@@ -76,7 +76,7 @@ L’élément réutilisable a maintenant été inséré dans la rubrique.
 
 1. Cliquez sur [!UICONTROL **Ajouter**].
 
-1. Dans le panneau Contenu réutilisable , développez **Présentation des éléments**.
+1. Dans le panneau Contenu réutilisable, développez **Présentation des éléments**.
 
 1. Faites glisser et déposez un élément dans la rubrique à un emplacement valide.
 
@@ -86,11 +86,11 @@ L’élément réutilisable a maintenant été inséré dans la rubrique.
 
 Le dlentry que vous venez de créer est un élément réutilisable. Par conséquent, il nécessite un identifiant et une valeur.
 
-1. Cliquez dans la entrée.
+1. Cliquez dans le créneau.
 
 1. Dans le panneau Propriétés du contenu, cliquez sur la liste déroulante sous Attribut.
 
-1. Sélectionner **ID**.
+1. Sélectionnez **ID**.
 
 1. Saisissez un nom logique pour la valeur.
 

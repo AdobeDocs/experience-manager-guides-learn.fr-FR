@@ -9,7 +9,7 @@ ht-degree: 1%
 
 ---
 
-# Utilisation de listes
+# Utiliser les listes
 
 Vous pouvez avoir besoin de listes à puces et numérotées pour organiser vos informations. Ce qui suit vous explique comment insérer et utiliser des listes dans un concept existant.
 
@@ -21,7 +21,7 @@ Une liste à puces ou non ordonnée doit être utilisée lorsque les composants 
 
 ### Insérer une liste à puces
 
-1. Sélectionnez la **Insérer une liste à puces** dans la barre d’outils.
+1. Sélectionnez l’icône **Insérer une liste à puces** dans la barre d’outils.
 
    ![Icône Insérer une liste à puces](images/lesson-6/insert-bulleted-list.png)
 
@@ -37,7 +37,7 @@ Une liste numérotée doit être utilisée lorsque les composants de liste doive
 
 ### Insérer une liste ordonnée
 
-1. Sélectionnez la **Insérer une liste numérotée** dans la barre d’outils.
+1. Sélectionnez l’icône **Insérer une liste numérotée** dans la barre d’outils.
 
    ![Icône Insérer une liste numérotée](images/lesson-6/insert-numbered-list.png)
 
@@ -51,7 +51,7 @@ Une liste numérotée doit être utilisée lorsque les composants de liste doive
 
 Maintenant que vous avez ajouté plus de contenu à votre concept, vous pouvez enregistrer votre travail en tant que nouvelle version et enregistrer vos modifications.
 
-1. Sélectionnez la **Enregistrer comme nouvelle version** icône .
+1. Sélectionnez l&#39;icône **Enregistrer comme nouvelle version** .
 
    ![Icône Enregistrer comme nouvelle version](images/common/save-as-new-version.png)
 

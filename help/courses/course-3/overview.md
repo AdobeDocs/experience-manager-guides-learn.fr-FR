@@ -1,5 +1,5 @@
 ---
-title: Cours 3 de l’éditeur de guides Adobe Experience Manager
+title: Cours de l’éditeur Adobe Experience Manager Guides 3
 description: Guide d’utilisation avancé pour l’éditeur web d’AEM Guides
 exl-id: f73a11ae-07e4-42c6-a803-7bdffe08de6d
 source-git-commit: 6a35536d55bec04d69d1c296b75b55f034f70186
@@ -19,7 +19,7 @@ Dans cet ensemble de tutoriels, vous apprendrez à travailler avec les élément
 - [Profils de dossier](folder-profiles.md)
 - [Configuration de l’éditeur](editor-configuration.md)
 - [Panneaux](panels.md)
-- [Mode plan](outline-view.md)
+- [Vue synchrone](outline-view.md)
 - [Références croisées et liens](cross-references-and-links.md)
 - [Réutilisation de contenu](content-reuse.md)
 - [Clés](keys.md)
