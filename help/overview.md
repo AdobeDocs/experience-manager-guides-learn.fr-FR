@@ -43,5 +43,5 @@ Avec la solution [!DNL AEM Guides], les entreprises peuvent offrir des expérien
 ## Ressources supplémentaires
 
 * [[!DNL AEM Guides] Guide de l’utilisateur en ligne](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html)
-* [[!DNL AEM Guides] Guides du PDF](https://helpx.adobe.com/support/xml-documentation-for-experience-manager.html)
-* [Experience League - Explorer AEM](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager)
+* [[!DNL AEM Guides] Guides du PDF](https://helpx.adobe.com/fr/support/xml-documentation-for-experience-manager.html)
+* [Experience League - Explorer AEM](https://experienceleague.adobe.com/fr?lang=fr#recommended/solutions/experience-manager)
