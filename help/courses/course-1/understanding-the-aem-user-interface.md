@@ -26,7 +26,7 @@ Dans la barre latérale, vous pouvez choisir parmi plusieurs vues pour l’édit
 
 La vue par défaut affiche vos [!UICONTROL Favoris]. Vous pouvez le personnaliser davantage à l’aide de raccourcis si nécessaire. Inversement, la [!UICONTROL vue du référentiel] affiche une structure de dossiers plus traditionnelle.
 
-### Basculer vers la [!UICONTROL  vue du référentiel ] depuis la vue par défaut
+### Basculer vers la [!UICONTROL &#x200B; vue du référentiel &#x200B;] depuis la vue par défaut
 
 1. Dans le rail de gauche, sélectionnez **[!UICONTROL Repository View]**.
 

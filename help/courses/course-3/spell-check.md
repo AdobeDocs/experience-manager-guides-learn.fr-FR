@@ -67,7 +67,7 @@ L’administrateur peut modifier les paramètres afin que le dictionnaire d’AE
 
    ![Création d’un fichier de dictionnaire](images/lesson-11/new-dictionary-file.png)
 
-   c. Nommez le fichier _**user_dictionary.txt**_.
+   c. Nommez le fichier _&#x200B;**user_dictionary.txt**&#x200B;_.
 
    ![Texte du dictionnaire utilisateur](images/lesson-11/user-dictionary.png)
 

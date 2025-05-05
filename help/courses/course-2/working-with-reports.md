@@ -130,7 +130,7 @@ Outre l’option [!UICONTROL Télécharger Assets] , vous pouvez charger des res
 
 1. En mode Référentiel, sélectionnez l’icône représentant des points de suspension dans votre dossier de réutilisation pour ouvrir le menu Options.
 
-   ![}reset-ellipsis.png](images/reuse-ellipsis.png)
+   ![&rbrace;reset-ellipsis.png](images/reuse-ellipsis.png)
 
 1. Sélectionnez **Afficher dans l’interface utilisateur d’Assets**.
 

@@ -222,7 +222,7 @@ Propriétés du fichier affiche des informations supplémentaires sur l’ensemb
 
 1. Ouvrez une rubrique dans l’éditeur.
 
-1. Cliquez sur l’icône [!UICONTROL  **Propriétés du fichier**] dans le panneau de droite.
+1. Cliquez sur l’icône [!UICONTROL &#x200B; **Propriétés du fichier**] dans le panneau de droite.
 
    ![Icône Propriétés du fichier](images/lesson-5/file-properties-icon.png)
 
