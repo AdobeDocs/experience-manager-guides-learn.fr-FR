@@ -1,9 +1,10 @@
 ---
 title: Configuration de l’éditeur d’AEM Guides
 description: Personnalisation des configurations JSON et conversion des configurations d’interface utilisateur pour le nouvel éditeur AEM Guides.
-source-git-commit: ec6f5685d690e53e5c6eb29d6b61436833f62c68
+exl-id: bb047962-0e2e-4b3a-90c1-052a2a449628
+source-git-commit: efdb02d955e223783fc1904eda8d41942c1c9ccf
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '1197'
 ht-degree: 0%
 
 ---
@@ -12,6 +13,9 @@ ht-degree: 0%
 
 Lors de la migration de l’ancienne interface utilisateur vers la nouvelle interface utilisateur d’AEM Guides, les mises à jour de **ui_config** doivent être converties en configurations d’interface utilisateur plus flexibles et modulaires. Ce framework permet d’adopter facilement des modifications dans **editor_toolbar** et [autres barres d’outils](/help/courses/course-3/conver-ui-config.md#editing-json-for-different-screens). Le processus prend également en charge la modification d’autres vues et widgets dans l’application.
 
+>[!NOTE]
+>
+>Les personnalisations appliquées à des boutons spécifiques peuvent rencontrer des problèmes lors de la transition vers la structure d’extension. Si cela se produit, vous pouvez créer un ticket d’assistance avec référence à cette page pour une assistance et une résolution rapides.
 
 ## Modification de JSON pour différents écrans
 
@@ -38,24 +42,34 @@ Les fichiers JSON peuvent être ajoutés à la section Configuration de l’inte
 
 Chaque fichier JSON suit une structure cohérente :
 
-1. **id** : indique le widget dans lequel le composant est personnalisé.
-1. **targetEditor** : définit quand afficher ou masquer un bouton à l’aide de l’éditeur et des propriétés de mode :
+1. `id` : indique le widget dans lequel le composant est personnalisé.
+1. `targetEditor` : définit quand afficher ou masquer un bouton à l’aide des propriétés d’éditeur et de mode :
 
-   Actuellement, nous avons ces **éditeur** et **mode** dans notre système.
+   Les options suivantes sont prises en charge sous `targetEditor` :
 
-   **editor** : ditamap, bookmap, subjectScheme, xml, css, traduction, préréglage, pdf_preset
+   - `mode`
+   - `displayMode`
+   - `editor`
+   - `documentType`
+   - `documentSubType`
+   - `flag`
 
-   **mode** : auteur, source, aperçu, table des matières, partage
+   Pour plus d’informations, consultez la section [Présentation des propriétés de targetEditor](#understanding-targeteditor-properties)
 
-   (Remarque : le mode table des matières s&#39;applique au mode Mise en page.)
+   >[!NOTE]
+   >
+   > La version 2506 de Experience Manager Guides introduit de nouvelles propriétés : `displayMode`, `documentType`, `documentSubType` et `flag`. Ces propriétés sont prises en charge uniquement à partir de la version 2506. De même, le passage de `toc` à `layout` dans la propriété mode s’applique également à partir de cette version.
+   >
+   > Un nouveau champ, `documentType`, est désormais disponible avec le champ `editor` existant.  Les deux champs sont pris en charge et peuvent être utilisés si nécessaire. Toutefois, il est recommandé d’utiliser `documentType` pour garantir la cohérence entre les implémentations, en particulier lorsque vous utilisez la propriété `documentSubType` . Le champ `editor` reste valide pour prendre en charge la rétrocompatibilité et les intégrations existantes.
 
-1. **target** : indique l’emplacement où le nouveau composant sera ajouté. Cette méthode utilise des paires clé-valeur ou des index pour une identification unique. Les états d’affichage incluent :
 
-   * **append** : ajoutez à la fin.
+1. `target` : indique l’emplacement où le nouveau composant sera ajouté. Cette méthode utilise des paires clé-valeur ou des index pour une identification unique. Les états d’affichage incluent :
 
-   * **prepend** : ajoutez au début.
+   - **append** : ajoutez à la fin.
 
-   * **replace** : permet de remplacer un composant existant.
+   - **prepend** : ajoutez au début.
+
+   - **replace** : permet de remplacer un composant existant.
 
 Exemple de structure JSON :
 
@@ -87,6 +101,140 @@ Exemple de structure JSON :
 ```
 
 <br>
+
+## Compréhension des propriétés `targetEditor`
+
+Vous trouverez ci-dessous une répartition de chaque propriété, son objectif et les valeurs prises en charge.
+
+### `mode`
+
+Définit le mode de fonctionnement de l’éditeur.
+
+**Valeurs prises en charge** : `author`, `source`, `preview`, `layout` (précédemment `toc`), `split`
+
+### `displayMode` *(facultatif)*
+
+Contrôle la visibilité ou l’interactivité des composants de l’interface utilisateur. La valeur par défaut est définie sur `show` si elle n’est pas spécifiée.
+
+**Valeurs prises en charge** : `show`, `hide`, `enabled`, `disabled`
+
+Exemple :
+
+```
+ {
+        "icon": "textBulleted",
+        "title": "Custom Insert Bulleted",
+        "on-click": "$$AUTHOR_INSERT_REMOVE_BULLETED_LIST",
+        "key": "$$AUTHOR_INSERT_REMOVE_BULLETED_LIST",
+        "targetEditor": {
+          "documentType": [
+            "ditamap"
+          ],
+          "mode": [
+            "author"
+          ],
+          "displayMode": "hide"
+        }
+      },
+```
+
+### `editor`
+
+Spécifie le type de document principal dans l&#39;éditeur.
+
+**Valeurs prises en charge** : `ditamap`, `bookmap`, `subjectScheme`, `xml`, `css`, `translation`, `preset`, `pdf_preset`
+
+### `documentType`
+
+Indique le type de document principal.
+
+**Valeurs prises en charge** : `dita`, `ditamap`, `bookmap`, `subjectScheme`, `css`, `preset`, `ditaval`, `reports`, `baseline`, `translation`, `html`, `markdown`, `conditionPresets`,
+
+> Des valeurs supplémentaires peuvent être prises en charge pour des cas d’utilisation spécifiques.
+
+Exemple :
+
+```
+ {
+        "icon": "textNumbered",
+        "title": "Custom Numbered List",
+        "on-click": "$$AUTHOR_INSERT_REMOVE_NUMBERED_LIST",
+        "key": "$$AUTHOR_INSERT_REMOVE_NUMBERED_LIST",
+        "targetEditor": {
+          "documentType": [
+            "dita",
+            "ditamap"
+          ],
+          "mode": [
+            "author",
+            "source"
+          ]
+
+        }
+      },
+```
+
+### `documentSubType`
+
+Classe ensuite le document en fonction des `documentType`.
+
+- **Par`preset`** : `pdf`, `html5`, `aemsite`, `nativePDF`, `json`, `custom`, `kb`
+- **Par`dita`** : `topic`, `reference`, `concept`, `glossary`, `task`, `troubleshooting`
+
+> Des valeurs supplémentaires peuvent être prises en charge pour des cas d’utilisation spécifiques.
+
+Exemple :
+
+```
+ {
+        "icon": "rename",
+        "title": "Custom Rename",
+        "on-click": "$$PUBLISH_PRESETS_RENAME",
+        "label": "Custom Rename",
+        "key": "$$PUBLISH_PRESETS_RENAME",
+        "targetEditor": {
+          "documentType": [
+            "preset"
+          ],
+          "documentSubType": [
+            "nativePDF",
+            "aemsite",
+            "json"
+          ]
+
+        }
+      },
+```
+
+### `flag`
+
+Indicateurs booléens pour l’état ou les fonctionnalités du document.
+
+**Valeurs prises en charge** : `isOutputGenerated`, `isTemporaryFileDownloadable`, `isPDFDownloadable`, `isLocked`, `isUnlocked`, `isDocumentOpen`
+
+De plus, vous pouvez également créer un indicateur personnalisé à l’intérieur de `extensionMap` qui est utilisé comme indicateur dans `targetEditor`. Ici, `extensionMap` est une variable globale utilisée pour ajouter des clés personnalisées ou des valeurs observables.
+
+Exemple :
+
+```
+ {
+        "icon": "filePDF",
+        "title": "Custom Export pdf",
+        "on-click": "$$DOWNLOAD_TOPIC_PDF",
+        "key": "$$DOWNLOAD_TOPIC_PDF",
+        "targetEditor": {
+          "documentType": [
+            "markdown"
+          ],
+          "mode": [
+            "preview"
+          ],
+          "flag": ["isPDFDownloadable"]
+
+        }
+      },
+```
+
 
 ## Exemples
 
@@ -188,6 +336,75 @@ Remplacement du bouton **Multimédia** de la barre d’outils par le bouton d’
 ![bouton Youtube](images/reuse/youtube-button.png)
 
 <br>
+
+### Ajout d&#39;un bouton en mode aperçu
+
+Conformément à la conception, la visibilité des boutons est gérée séparément pour les modes verrouillé et déverrouillé (lecture seule) afin de conserver une expérience utilisateur claire et contrôlée. Par défaut, tout nouveau bouton ajouté est masqué lorsque l’interface est en mode lecture seule.
+Pour rendre un bouton visible en mode **lecture seule** vous devez indiquer une cible qui le place dans une sous-section de la barre d’outils qui reste accessible même lorsque l’interface est verrouillée.
+Par exemple, en spécifiant la cible en tant que **Télécharger sous forme de PDF**, vous pouvez vous assurer que le bouton apparaît dans la même section qu’un bouton visible existant, ce qui le rend accessible en mode déverrouillé.
+
+```json
+"target": {
+  "key": "label",
+  "value": "Download as PDF",
+  "viewState": "prepend"
+}
+```
+
+Ajout d’un bouton **Exporter en tant que PDF** en mode **Aperçu** qui sera visible à la fois en mode verrouillé et en mode déverrouillé.
+
+```json
+{
+  "id": "editor_toolbar",
+  "view": {
+    "items": [
+      {
+        "icon": "filePDF",
+        "title": "Export as PDF",
+        "on-click": "$$DOWNLOAD_TOPIC_PDF",
+        "key": "$$DOWNLOAD_TOPIC_PDF",
+        "targetEditor": {
+          "editor": [
+            "ditamap",
+            "xml"
+          ],
+          "mode": [
+            "preview"
+          ]
+        },
+        "target": {
+          "key": "label",
+          "value": "Download as PDF",
+          "viewState": "prepend"
+        }
+      },
+      {
+        "icon": "filePDF",
+        "title": "Export as PDF",
+        "on-click": "$$DOWNLOAD_TOPIC_PDF",
+        "key": "$$DOWNLOAD_TOPIC_PDF",
+        "targetEditor": {
+          "editor": [
+            "ditamap",
+            "xml"
+          ],
+          "mode": [
+            "preview"
+          ]
+        }
+      }
+    ]
+  }
+}
+```
+
+Le fragment suivant présente le bouton **Exporter en tant que PDF** avec le scénario de verrouillage.
+
+![Exporter sous PDF](images/reuse/lock.png)
+
+En outre, le bouton **Exporter en tant que PDF** avec le scénario de déverrouillage est visible dans le fragment de code ci-dessous.
+
+![Exporter sous PDF](images/reuse/unlock.png)
 
 ## Comment charger des fichiers JSON personnalisés
 
