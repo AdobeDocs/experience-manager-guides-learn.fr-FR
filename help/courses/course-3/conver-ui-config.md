@@ -2,9 +2,9 @@
 title: Configuration de l’éditeur d’AEM Guides
 description: Personnalisation des configurations JSON et conversion des configurations d’interface utilisateur pour le nouvel éditeur AEM Guides.
 exl-id: bb047962-0e2e-4b3a-90c1-052a2a449628
-source-git-commit: efdb02d955e223783fc1904eda8d41942c1c9ccf
+source-git-commit: 1ed48d543161be88becad9c0cd58014323aeda47
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1303'
 ht-degree: 0%
 
 ---
@@ -405,6 +405,94 @@ Le fragment suivant présente le bouton **Exporter en tant que PDF** avec le sc�
 En outre, le bouton **Exporter en tant que PDF** avec le scénario de déverrouillage est visible dans le fragment de code ci-dessous.
 
 ![Exporter sous PDF](images/reuse/unlock.png)
+
+### Personnaliser les options affichées dans la liste déroulante Menu de la barre d’outils de l’éditeur
+
+Vous pouvez ajouter, masquer, remplacer et ajouter des options personnalisées dans la liste déroulante Menu à l’aide des exemples suivants.
+
+#### Appendice
+
+Ajout d’une option dans le menu déroulant Menu . Ici, nous ajoutons **Bouton de menu personnalisé** dans les options de menu
+
+```json
+{
+        "icon": "specialCharacter",
+        "title": "Custom menu button",
+        "on-click": "$$AUTHOR_INSERT_SYMBOL",
+        "targetEditor": {
+          "editor": [
+            "ditamap"
+          ],
+          "mode": [
+            "author"
+          ]
+        },
+        "target": {
+          "key": "label",
+          "value": "Version label",
+          "viewState": "append"
+        }
+      }
+```
+
+#### Remplacement de
+
+Remplacement d’une option qui s’affiche dans le menu déroulant. Ici, nous remplaçons **Créer une tâche de révision** par **Bouton de menu personnalisé 3**.
+
+```json
+{
+        "icon": "specialCharacter",
+        "title": "Custom menu button 3",
+        "on-click": "$$AUTHOR_INSERT_SYMBOL",
+        "target": {
+          "key": "label",
+          "value": "Create review task",
+          "viewState": "replace"
+        }
+
+      }
+```
+
+#### Masquage
+
+Masquage d’une option qui s’affiche dans la liste déroulante Menu. Ici, nous masquons l’option **Rechercher et remplacer** du menu.
+
+```json
+{
+        "hide": true,
+        "target": {
+          "key": "label",
+          "value": "Find and replace",
+          "viewState": "replace"
+        }
+      }
+```
+
+#### Ajout d&#39;une option personnalisée dans le sous-menu
+
+Ajout d&#39;une option dans le sous-menu de la liste déroulante Menu .
+
+```json
+{
+        "icon": "viewAllTags",
+        "title": "Toggle Tags View Goziamasu",
+        "key": "AUTHOR_TOGGLE_TAG_VIEW",
+        "target": {
+          "key": "label",
+          "value": "Track changes",
+          "viewState": "replace"
+        },
+        "targetEditor": {
+          "documentType": [
+            "dita"
+          ],
+          "mode": [
+            "author"
+          ]
+        }
+
+      }
+```
 
 ## Comment charger des fichiers JSON personnalisés
 
