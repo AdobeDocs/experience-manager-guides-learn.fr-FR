@@ -557,7 +557,7 @@ Pour une ancienne classe, vous pouvez inspecter l’élément et modifier égale
 Nous ajoutons ici un nouveau bouton **Insérer un tableau personnalisé** dans **editor_toolbar** pour ajouter un tableau simple visible uniquement en mode aperçu et y appliquer un CSS personnalisé.
 Ce css modifie l’arrière-plan du bouton et la taille de police de son titre.
 
-![ Exemple CSS ](images/reuse/css-customization.png)
+![&#x200B; Exemple CSS &#x200B;](images/reuse/css-customization.png)
 
 
 ```css
@@ -591,7 +591,7 @@ Ce css modifie l’arrière-plan du bouton et la taille de police de son titre.
 
 1. Dans l’écran de navigation, cliquez sur l’icône [!UICONTROL **Outils**].
 
-   ![ Icône Outils ](images/reuse/tools.png)
+   ![&#x200B; Icône Outils &#x200B;](images/reuse/tools.png)
 
 1. Sélectionnez **Guides** dans le panneau de gauche.
 

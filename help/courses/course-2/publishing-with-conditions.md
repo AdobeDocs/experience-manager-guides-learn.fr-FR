@@ -49,7 +49,7 @@ Vous pouvez télécharger des fichiers d’exemple pour l’exercice ici.
 
 1. Sélectionnez ou désélectionnez le texte **Conditions de mise en surbrillance**.
 
-   ![ &lbrace;Preview-Conditionnel-Content](images/preview-conditional-content.png)
+   ![&#x200B; &lbrace;Preview-Conditionnel-Content](images/preview-conditional-content.png)
 
 ## Création d’un paramètre prédéfini de condition
 

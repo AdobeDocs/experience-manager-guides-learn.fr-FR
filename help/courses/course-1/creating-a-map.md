@@ -15,7 +15,7 @@ Une carte est un outil organisationnel qui vous permet d’ajouter et d’organi
 
 Vous pouvez télécharger des exemples de fichiers DITA à partir d’ici :
 
-* [ Documents-with-Visual-Content.dita](assets/working-with-maps/Documents-with-Visual-Content.dita)
+* [&#x200B; Documents-with-Visual-Content.dita](assets/working-with-maps/Documents-with-Visual-Content.dita)
 * [Working-with-Tables.dita](assets/working-with-maps/Working-with-Tables.dita)
 
 >[!VIDEO](https://video.tv.adobe.com/v/336725?quality=12&learn=on)

@@ -18,6 +18,6 @@ Dans cet ensemble de tutoriels, vous apprendrez à effectuer les opérations sui
 - [Créer et publier avec des lignes de base](./creating-and-publishing-with-baselines.md)
 - [Publish avec des conditions](./publishing-with-conditions.md)
 - [Comprendre les paramètres prédéfinis de sortie](./output-presets.md)
-- [ Résolution des problèmes d’erreurs de publication ](./troubleshooting-publishing-errors.md)
+- [&#x200B; Résolution des problèmes d’erreurs de publication &#x200B;](./troubleshooting-publishing-errors.md)
 - [Publication en masse](./bulk-publishing.md)
 - [Recap](./recap.md)

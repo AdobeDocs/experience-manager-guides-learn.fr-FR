@@ -23,7 +23,7 @@ Vous pouvez toujours télécharger la configuration par défaut de l’interface
 
 1. Dans l’écran de navigation, cliquez sur l’icône [!UICONTROL **Outils**].
 
-   ![ Icône Outils ](images/reuse/tools-icon.png)
+   ![&#x200B; Icône Outils &#x200B;](images/reuse/tools-icon.png)
 
 1. Sélectionnez **Guides** dans le panneau de gauche.
 
@@ -65,7 +65,7 @@ Comme pour la configuration de l’interface utilisateur, vous pouvez téléchar
 
 1. Dans l’écran de navigation, cliquez sur l’icône [!UICONTROL **Outils**].
 
-   ![ Icône Outils ](images/reuse/tools-icon.png)
+   ![&#x200B; Icône Outils &#x200B;](images/reuse/tools-icon.png)
 
 1. Sélectionnez **Guides** dans le panneau de gauche.
 
@@ -106,7 +106,7 @@ Les fragments de code sont des éléments de contenu réutilisables qui peuvent 
 
 1. Dans l’écran de navigation, cliquez sur l’icône [!UICONTROL **Outils**].
 
-   ![ Icône Outils ](images/reuse/tools-icon.png)
+   ![&#x200B; Icône Outils &#x200B;](images/reuse/tools-icon.png)
 
 1. Sélectionnez **Guides** dans le panneau de gauche.
 
@@ -136,7 +136,7 @@ Par défaut, les auteurs sont autorisés à créer les libellés de leur choix e
 
 1. Dans l’écran de navigation, cliquez sur l’icône [!UICONTROL **Outils**].
 
-   ![ Icône Outils ](images/reuse/tools-icon.png)
+   ![&#x200B; Icône Outils &#x200B;](images/reuse/tools-icon.png)
 
 1. Sélectionnez **Guides** dans le panneau de gauche.
 
