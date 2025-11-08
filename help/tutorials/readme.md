@@ -9,6 +9,6 @@ ht-degree: 0%
 
 Les fichiers de la section &quot;tutoriels&quot; se trouvent maintenant dans le référentiel `experience-manager-guides.en` :
 
-<https://git.corp.adobe.com/AdobeDocs/experience-manager-guides.en>
+<https://git.corp.adobe.com/AdobeDocs/experience-manager-guides.fr-FR>
 
 Ce référentiel -learn ne doit inclure que le contenu vidéo. Toute la documentation du produit figure désormais dans l’autre référentiel.
