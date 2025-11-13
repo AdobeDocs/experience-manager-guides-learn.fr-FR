@@ -2,7 +2,7 @@
 title: Créez un mappage dans  [!DNL AEM Guides]
 description: Découvrez comment créer une carte dans  [!DNL Adobe Experience Manager Guides]
 exl-id: e38a7fd5-2a29-4248-8e8f-e6a87e1eae9c
-source-git-commit: 9e3650f4711ca49b923baf445c36d5b460daf70b
+source-git-commit: 66d6cfd4a73459f70dd33e86bd41c8b311fe7f8a
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 1%
@@ -10,8 +10,6 @@ ht-degree: 1%
 ---
 
 # Création d’une carte
-
-{{test}}
 
 Une carte est un outil d&#39;organisation qui permet d&#39;ajouter et d&#39;organiser des informations dans une structure hiérarchique. Cette tâche vous montre comment créer une carte et organiser le contenu dans la carte.
 
@@ -33,7 +31,7 @@ Si vous le souhaitez, vous pouvez charger des fichiers d’exemple locaux dans A
 
 1. Pour ouvrir le menu [!UICONTROL Options], sélectionnez l’icône représentant des points de suspension dans votre dossier principal.
 
-   ![&#x200B; Icône représentant des points de suspension &#x200B;](images/lesson-8/ellipses-9.png)
+   ![ Icône représentant des points de suspension ](images/lesson-8/ellipses-9.png)
 
 1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Carte]**.
 
