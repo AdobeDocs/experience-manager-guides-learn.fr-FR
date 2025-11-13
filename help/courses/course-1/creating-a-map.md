@@ -31,7 +31,7 @@ Si vous le souhaitez, vous pouvez charger des fichiers d’exemple locaux dans A
 
 1. Pour ouvrir le menu [!UICONTROL Options], sélectionnez l’icône représentant des points de suspension dans votre dossier principal.
 
-   ![ Icône représentant des points de suspension ](images/lesson-8/ellipses-9.png)
+   ![&#x200B; Icône représentant des points de suspension &#x200B;](images/lesson-8/ellipses-9.png)
 
 1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Carte]**.
 
