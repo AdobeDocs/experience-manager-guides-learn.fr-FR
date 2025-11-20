@@ -5,7 +5,7 @@ breadcrumb-title: Tutoriels pour AEM Guides
 source-git-commit: 2f11a068afaa2941e437ee8b0a735a8c7e69784c
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 17%
+ht-degree: 22%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 17%
 # Tutoriels pour [!DNL Adobe Experience Manager Guides] {#videos}
 
 + [Vidéos [!DNL AEM Guides]](overview.md)
-+ Prise en main de [!DNL AEM Guides] {#getting-started}
++ Prise en main d’[!DNL AEM Guides] {#getting-started}
    + [Présentation de la prise en main](./course-1/overview.md)
    + [Comprendre l’interface utilisateur d’AEM](./course-1/understanding-the-aem-user-interface.md)
    + [Création et structure du contenu](./course-1/creating-and-structuring-content.md)
@@ -24,7 +24,7 @@ ht-degree: 17%
    + [Créer un mappage](./course-1/creating-a-map.md)
    + [Publier la sortie par défaut](./course-1/publishing-default-output.md)
    + [Récapituler](./course-1/recap.md)
-+ Génération de sortie avec [!DNL AEM Guides] {#output-generation}
++ Génération de sorties avec [!DNL AEM Guides] {#output-generation}
    + [Présentation de la génération de sortie](./course-2/overview.md)
    + [Présentation du tableau de bord des cartes](./course-2/introduction-to-the-map-dashboard.md)
    + [Utilisation des rapports](./course-2/working-with-reports.md)
