@@ -17,7 +17,7 @@ Dans cet ensemble de tutoriels, vous apprendrez à travailler avec les élément
 
 - [Préférences utilisateur, paramètres de l’éditeur et barres d’outils de l’éditeur](user-settings-preferences-toolbars.md)
 - [Profils de dossier](folder-profiles.md)
-- [ Configuration de l’éditeur ](editor-configuration.md)
+- [&#x200B; Configuration de l’éditeur &#x200B;](editor-configuration.md)
 - [Panneaux](panels.md)
 - [Mode Plan](outline-view.md)
 - [Renvois et liens](cross-references-and-links.md)
