@@ -21,7 +21,7 @@ Lors de la publication, plusieurs types de documentation sont souvent nécessair
 
 ### Créer des collections de cartes
 
-1. Dans le menu Navigation , cliquez sur ****.
+1. Dans le menu Navigation , cliquez sur **&#x200B;**.
 
 1. Sélectionnez Mapper les collections.
 
