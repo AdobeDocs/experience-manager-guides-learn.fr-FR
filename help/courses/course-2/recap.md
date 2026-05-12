@@ -1,24 +1,30 @@
 ---
-title: Récapitulatif de la génération de sortie avec [!DNL AEM Guides]
-description: Récapitulatif de la génération de sortie avec [!DNL Adobe Experience Manager Guides]
+title: Récapitulatif de la génération de sortie avec  [!DNL AEM Guides]
+description: Récapitulatif de la génération de sortie avec  [!DNL Adobe Experience Manager Guides]
 exl-id: 624b53a4-a5c3-4066-a7b9-9a913ccde93d
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+TQID: https://experienceleague.adobe.com/4ffqEmQFGnkig7hoHJou4lxmfHC3mbEE5YMqOvdPixg
+product_v2: id: fae5e35a-80c9-4b94-9352-1a060a6aab1did: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: a3bd6397-2eb2-4908-a61c-226e26855dcaid: ab01a588-7dea-43f2-a699-0b3f128465d6id: d90290ec-3e61-4ebd-8649-bcafe0836803
+subfeature_v2: id: fd6cc9e1-e5e5-494e-b7b1-a32f2d6cd7c9
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 27ffc636d63300fb2e99903d92cab12f0cfcbb25
 workflow-type: tm+mt
-source-wordcount: '40'
+source-wordcount: 40
 ht-degree: 0%
 
 ---
 
-# Récupérer
+# Récapituler
 
-Dans ce cours, vous en savez plus sur les éléments suivants :
+Ce cours vous a permis d’en savoir plus sur les éléments suivants :
 
 - Tableau de bord des cartes
 - Utilisation des rapports
-- Création et publication avec des lignes de base
+- Création et publication avec des niveaux de référence
 - Publication avec des conditions
 - Paramètres prédéfinis de sortie
-- Dépannage des erreurs de publication
-- Publication en bloc
+- Résolution des erreurs de publication
+- Publication en masse
 
 >[!VIDEO](https://video.tv.adobe.com/v/338987?quality=12&learn=on)
