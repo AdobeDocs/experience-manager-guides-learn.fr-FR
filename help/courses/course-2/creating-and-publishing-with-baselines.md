@@ -1,107 +1,116 @@
 ---
-title: Création et publication avec des lignes de base
-description: Création et publication avec des lignes de base dans  [!DNL Adobe Experience Manager Guides]
+title: Création et publication avec des niveaux de référence
+description: Création et publication avec des références dans  [!DNL Adobe Experience Manager Guides]
 exl-id: 3c229c30-f2e0-4fb0-b60c-7bae60ef1a5b
-source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
+TQID: https://experienceleague.adobe.com/P2NbWdOXSWFs40gpSWNrtDLR3VKofXymN5FlZSQRJ7Y
+product_v2:
+  - id: fae5e35a-80c9-4b94-9352-1a060a6aab1d
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: a3bd6397-2eb2-4908-a61c-226e26855dca
+  - id: d90290ec-3e61-4ebd-8649-bcafe0836803
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 27ffc636d63300fb2e99903d92cab12f0cfcbb25
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: 764
 ht-degree: 2%
 
 ---
 
-# Création et publication avec des lignes de base
+# Création et publication avec des niveaux de référence
 
-L’utilisation d’une ligne de base vous permet de créer une version de vos rubriques de mappage et du contenu de référence associé. Cela peut être basé sur une date, une heure ou des étiquettes spécifiques.
+L’utilisation d’une ligne de base vous permet de créer une version de vos rubriques de carte et du contenu de référence associé. Elle peut être basée sur une date ou une heure spécifique, ou sur des libellés.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338993?quality=12&learn=on)
 
-## Accès à l’onglet Lignes de base dans le tableau de bord des cartes
+## Accès à l&#39;onglet Lignes de base dans le tableau de bord des cartes
 
 Vous pouvez accéder à vos lignes de base dans le tableau de bord des cartes.
 
-1. En mode Référentiel, sélectionnez l’icône représentant des points de suspension sur votre carte pour ouvrir le menu Options, puis **Ouvrir le tableau de bord de la carte.**
+1. Vue du référentiel, sélectionnez l’icône représentant des points de suspension sur votre carte pour ouvrir le menu Options, puis **Ouvrir le tableau de bord de la carte**.
 
    ![ellipsis-map-dashboard.png](images/ellipsis-map-dashboard.png)
 Le tableau de bord des cartes s’ouvre dans un autre onglet.
 
-1. Sélectionnez **Lignes de base**.
+1. Sélectionnez **Références**.
 
    ![baseline-tab.png](images/baseline-tab.png)
 
-L’onglet Lignes de base s’affiche.
+L&#39;onglet Lignes de base s&#39;affiche.
 
-## Création d’une ligne de base à partir de libellés
+## Créer une ligne de base basée sur des libellés
 
-1. Dans l’onglet Lignes de base , sélectionnez **Créer**.
+1. Dans l&#39;onglet Lignes de base, sélectionnez **Créer**.
 
    ![create-baseline.png](images/create-baseline.png)
 
-   Les informations de la nouvelle ligne de base s’affichent. Son nom par défaut dépend de sa date de création.
+   Les informations de la nouvelle ligne de base s&#39;affichent. Son nom par défaut est basé sur sa date de création.
 
-1. Si nécessaire, donnez un nouveau nom à votre ligne de base.
+1. Donnez un nouveau nom à votre ligne de base, si nécessaire.
 
-1. Sous l’en-tête &quot;Définir la version sur&quot;, sélectionnez le cercle correspondant au libellé.
+1. Sous l’en-tête « Définir la version en fonction de », sélectionnez le cercle pour le libellé.
    ![set-the-version.png](images/set-the-version.png)
 
    >[!NOTE]
    >
-   >REMARQUE : la case *Utiliser la dernière version si l’étiquette n’est pas présente* est cochée par défaut. Si cette option n’est pas sélectionnée et que des rubriques ou des fichiers multimédias sans le libellé choisi existent dans votre carte, le processus de création de ligne de base échoue.
+   >REMARQUE : la case *Utiliser la dernière version si le libellé n’est pas présent* est cochée par défaut. Si cette option n&#39;est pas sélectionnée et que des rubriques ou des fichiers multimédias sans le libellé choisi existent dans votre mappage, le processus de création de ligne de base échouera.
 
 1. Saisissez le libellé que vous souhaitez utiliser.
 
 1. Sélectionnez **Enregistrer**.
 
-Votre ligne de base est créée. Un tableau de toutes les rubriques et des informations associées s’affiche.
+Votre base est créée. Un tableau de toutes les rubriques et des informations associées s’affiche.
 
 ### Utilisation de la fonction Parcourir toutes les rubriques
 
-La fonction Parcourir toutes les rubriques vous permet d’afficher les informations de la rubrique, y compris la version et le libellé, ainsi que de spécifier la version utilisée. Vous pouvez y accéder en sélectionnant **Parcourir toutes les rubriques** lors de la création ou de la modification de votre ligne de base.
+La fonction Parcourir toutes les rubriques vous permet d’afficher des informations sur la rubrique, notamment la version et le libellé, ainsi que de spécifier la version utilisée. Vous pouvez y accéder en sélectionnant **Parcourir toutes les rubriques** lors de la création ou de la modification de votre ligne de base.
 
 ![browse-all-topics.png](images/browse-all-topics.png)
 
-## Création d’une ligne de base basée sur la date et l’heure
+## Créer une ligne de base basée sur la date et l&#39;heure
 
 Vous pouvez également créer des lignes de base qui sont un instantané dans le temps.
 
-1. Assurez-vous que l’onglet Lignes de base est ouvert, puis sélectionnez Créer.
+1. Assurez-vous que l&#39;onglet Niveaux de référence est ouvert, puis sélectionnez Créer.
 
    ![create-baseline.png](images/create-baseline.png)
 
-1. Sous l’en-tête &quot;Définir la version sur&quot;, sélectionnez le cercle correspondant à &quot;Version activée&quot;.
+1. Sous l’en-tête « Définir la version en fonction de », sélectionnez le cercle correspondant à « Version activée ».
 
    ![version-on.png](images/version-on.png)
 
-1. Sélectionnez l’icône du calendrier et indiquez la date et l’heure de votre choix.
+1. Sélectionnez l’icône de calendrier et indiquez la date et l’heure de votre choix.
 
    ![calendar.png](images/calendar.png)
 
-1. Si nécessaire, donnez un nouveau nom à votre ligne de base.
+1. Attribuez un nouveau nom à votre ligne de base, le cas échéant.
 
 1. Sélectionnez **Enregistrer**.
 
-Votre ligne de base est créée. Un tableau de toutes les rubriques et des informations associées s’affiche.
+Votre base est créée. Un tableau de toutes les rubriques et des informations associées s’affiche.
 
-### Ajout de libellés à votre ligne de base
+### Ajouter des libellés à votre ligne de base
 
-Vous pouvez attribuer une nouvelle étiquette en bloc à tout le contenu de votre carte.
+Vous pouvez attribuer un nouveau libellé en bloc à tout le contenu de votre carte.
 
 1. Sélectionnez la ligne de base pour laquelle vous souhaitez ajouter des libellés.
 
-1. Sélectionnez **Ajouter des étiquettes**.
+1. Sélectionnez **Ajouter des libellés**.
 
-   ![add-libellés.png](images/add-labels.png)
+   ![add-labels.png](images/add-labels.png)
 
    La boîte de dialogue Ajouter un libellé s’affiche.
 
-1. Saisissez le libellé que vous souhaitez attribuer, puis sélectionnez **Ajouter**.
+1. Saisissez le libellé à attribuer, puis sélectionnez **Ajouter**.
 
 Le libellé a été ajouté à toutes les rubriques.
 
 ## Génération d’une sortie de site AEM à l’aide d’une ligne de base
 
-1. Accédez à l’onglet Paramètres prédéfinis de sortie dans le tableau de bord des cartes.
+1. Accédez à l’onglet Paramètres prédéfinis de sortie dans le tableau de bord de mappage.
 
-1. Cochez la case AEM site .
+1. Cochez la case Site AEM .
 
    ![aem-site-checkbox.png](images/aem-site-checkbox.png)
 
@@ -111,7 +120,7 @@ Le libellé a été ajouté à toutes les rubriques.
 
    Une nouvelle page s’affiche.
 
-1. Cochez la case Utiliser la ligne de base , puis sélectionnez la ligne de base que vous souhaitez utiliser dans la liste déroulante.
+1. Cochez la case Utiliser niveau de référence et choisissez dans la liste déroulante le niveau de référence à utiliser.
 
    ![baseline.png](images/baseline.png)
 
@@ -127,28 +136,28 @@ Le libellé a été ajouté à toutes les rubriques.
 
 ## Affichage de la sortie générée
 
-1. Accédez à l’onglet Sorties du tableau de bord des cartes.
+1. Accédez à l’onglet Sorties dans le tableau de bord Carte.
 
-1. Sélectionnez le texte de la colonne Paramètre de génération pour ouvrir la sortie.
+1. Sélectionnez le texte dans la colonne Paramètre de génération pour ouvrir la sortie.
    ![aem-site-link.png](images/aem-site-link.png)
 
 ## Suppression d’une ligne de base
 
-1. Dans l’onglet Lignes de base , sélectionnez la ligne de base à supprimer.
+1. Dans l&#39;onglet Lignes de base, sélectionnez la ligne de base à supprimer.
 
 1. Sélectionnez **Supprimer**.
 
    ![remove-baseline.png](images/remove-baseline.png)
 
-   La boîte de dialogue Supprimer la ligne de base s’affiche.
+   La boîte de dialogue Supprimer niveau de référence s&#39;affiche.
 
 1. Sélectionnez **Supprimer**.
 
 La ligne de base est supprimée.
 
-## Duplication d’une ligne de base
+## Duplication d&#39;une ligne de base
 
-1. Dans l&#39;onglet Lignes de base , sélectionnez la ligne de base que vous souhaitez dupliquer.
+1. Dans l&#39;onglet Lignes de base, sélectionnez la ligne de base à dupliquer.
 
 1. Sélectionnez **Dupliquer**.
 
@@ -160,11 +169,11 @@ La ligne de base est supprimée.
 
 La ligne de base en double est créée.
 
-## Modification d’une ligne de base
+## Modification d&#39;une ligne de base
 
-Vous pouvez directement spécifier la version d’une rubrique utilisée dans une ligne de base.
+Vous pouvez spécifier directement la version d&#39;une rubrique utilisée dans une ligne de base.
 
-1. Dans l&#39;onglet Lignes de base , sélectionnez la ligne de base que vous souhaitez modifier.
+1. Dans l&#39;onglet Lignes de base, sélectionnez la ligne de base à modifier.
 1. Sélectionnez **Modifier**.
 
    ![edit-aem.png](images/edit-aem.png)
@@ -181,24 +190,24 @@ Vous pouvez directement spécifier la version d’une rubrique utilisée dans un
 
 1. Sélectionnez **Enregistrer**.
 
-Vos modifications ont été enregistrées. Votre ligne de base utilise désormais les versions de la rubrique que vous avez spécifiée.
+Vos modifications ont été enregistrées. Votre ligne de base utilisera désormais les versions de la rubrique que vous avez spécifiées.
 
 ## Création d’un paramètre prédéfini de sortie de site AEM personnalisé
 
-Il est difficile de faire la distinction entre les sorties par défaut du même type dans l’onglet Sorties . L’utilisation d’un paramètre prédéfini de sortie personnalisé avec un nom unique et convivial vous permet de résoudre ce problème.
+Il est difficile de distinguer les sorties par défaut du même type dans l’onglet Sorties . L’utilisation d’un paramètre prédéfini de sortie personnalisé avec un nom unique et convivial vous permet de résoudre ce problème.
 
 Dans ce cas, nous créons un paramètre prédéfini de sortie basé sur une ligne de base.
 
-1. Accédez à l’onglet Paramètres prédéfinis de sortie dans le tableau de bord des cartes.
+1. Accédez à l’onglet Paramètres prédéfinis de sortie dans le tableau de bord de mappage.
 
 1. Sélectionnez **Créer**.
 
    ![create-output-preset.png](images/create-output-preset.png)
 
-   Une nouvelle page de paramètres prédéfinis de sortie s’affiche, appelée Nouvelle sortie.
-1. Dans le champ Nom du paramètre , saisissez un nom convivial.
+   Une nouvelle page de paramètre prédéfini de sortie s’affiche, appelée Nouvelle sortie.
+1. Dans le champ Nom du paramètre, saisissez un nom convivial.
 
-1. Cochez la case Utiliser la ligne de base , puis sélectionnez la ligne de base souhaitée dans le menu déroulant.
+1. Cochez la case Utiliser niveau de référence , puis sélectionnez le niveau de référence souhaité dans le menu déroulant.
 
    ![baseline.png](images/baseline.png)
 
