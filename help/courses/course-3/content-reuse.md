@@ -13,8 +13,8 @@ topic_v2:
   - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
 source-git-commit: 27ffc636d63300fb2e99903d92cab12f0cfcbb25
 workflow-type: tm+mt
-source-wordcount: 357
-ht-degree: 3%
+source-wordcount: 355
+ht-degree: 2%
 
 ---
 
@@ -59,7 +59,7 @@ Il existe plusieurs méthodes pour ajouter des éléments réutilisables. Ici, l
 1. Accédez au dossier requis.
 
 1. Choisissez une rubrique avec des composants réutilisables.
-Par exemple :
+Par exemple :
 
    ![Confirmation &#x200B;](images/lesson-8/reusable-topic.png)
 
