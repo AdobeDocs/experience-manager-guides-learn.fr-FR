@@ -3,9 +3,14 @@ title: Réutilisation du contenu
 description: Utilisation récurrente des fonctionnalités dans AEM Guides
 exl-id: 453c5a09-0bcf-4760-87fc-df3ea4a3a30a
 TQID: https://experienceleague.adobe.com/MJKB2oOi8SQbB6L8059wvMpFkwQ3M9iH2Jpxo3g9R0U
-product_v2: id: fae5e35a-80c9-4b94-9352-1a060a6aab1did: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: f5c2a4bb-71ca-4d7e-8efd-442250e6ba48id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+product_v2:
+  - id: fae5e35a-80c9-4b94-9352-1a060a6aab1d
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: f5c2a4bb-71ca-4d7e-8efd-442250e6ba48
+  - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
 source-git-commit: 27ffc636d63300fb2e99903d92cab12f0cfcbb25
 workflow-type: tm+mt
 source-wordcount: 355
@@ -31,7 +36,7 @@ Lorsqu’une modification est apportée à une rubrique source réutilisable, le
 
 1. Renseignez les champs de la boîte de dialogue Créer une rubrique . Par exemple :
 
-   ![Confirmation ](images/lesson-8/new-topic-dialog.png)
+   ![Confirmation &#x200B;](images/lesson-8/new-topic-dialog.png)
 
 1. Cliquez sur [!UICONTROL **Créer**].
 
@@ -47,7 +52,7 @@ Il existe plusieurs méthodes pour ajouter des éléments réutilisables. Ici, l
 
 1. Sélectionnez l’icône **Insérer du contenu réutilisable** dans la barre d’outils supérieure.
 
-   ![Confirmation ](images/lesson-8/insert-reuse-icon.png)
+   ![Confirmation &#x200B;](images/lesson-8/insert-reuse-icon.png)
 
 1. Dans la boîte de dialogue Réutiliser le contenu , cliquez sur l’icône [!UICONTROL **Dossier**].
 
@@ -56,7 +61,7 @@ Il existe plusieurs méthodes pour ajouter des éléments réutilisables. Ici, l
 1. Choisissez une rubrique avec des composants réutilisables.
 Par exemple :
 
-   ![Confirmation ](images/lesson-8/reusable-topic.png)
+   ![Confirmation &#x200B;](images/lesson-8/reusable-topic.png)
 
 1. Cliquez sur [!UICONTROL **Sélectionner**].
 
@@ -72,7 +77,7 @@ L’élément réutilisable a maintenant été inséré dans la rubrique.
 
 1. Cliquez sur l’icône [!UICONTROL **Ajouter**] dans le panneau Contenu réutilisable .
 
-   ![Confirmation ](images/lesson-8/reuse-contents-icon.png)
+   ![Confirmation &#x200B;](images/lesson-8/reuse-contents-icon.png)
 
 1. Accédez à un dossier.
 
