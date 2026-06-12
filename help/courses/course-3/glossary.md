@@ -3,11 +3,8 @@ title: Glossaire
 description: Utilisation du panneau Glossaire dans AEM Guides
 exl-id: 509880b1-852f-44f0-b4a9-09fee8bcb954
 TQID: https://experienceleague.adobe.com/VqIj9UM41zQz4LfSwvmijVvKM3zFsOqzoYKdKPFUBZQ
-product_v2:
-  - id: fae5e35a-80c9-4b94-9352-1a060a6aab1d
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: fae5e35a-80c9-4b94-9352-1a060a6aab1did: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 27ffc636d63300fb2e99903d92cab12f0cfcbb25
 workflow-type: tm+mt
 source-wordcount: 386
@@ -39,7 +36,7 @@ La carte racine appropriée doit être sélectionnée pour fonctionner correctem
 
 1. Cliquez sur l’icône [!UICONTROL **Préférences utilisateur**] dans la barre d’outils supérieure.
 
-   ![&#x200B; Icône Préférences utilisateur &#x200B;](images/reuse/user-prefs-icon.png)
+   ![ Icône Préférences utilisateur ](images/reuse/user-prefs-icon.png)
 
 1. Cliquez sur l’icône clé pour spécifier la carte racine appropriée pour l’utilisation du glossaire.
 
@@ -55,7 +52,7 @@ Le panneau Glossaire est automatiquement mis à jour.
 
 1. Sélectionnez le mappage qui a été préconfiguré pour fonctionner avec le glossaire.
 
-   ![&#x200B; Icône de mappage de préconfiguration &#x200B;](images/lesson-10/preconfig-map.png)
+   ![ Icône de mappage de préconfiguration ](images/lesson-10/preconfig-map.png)
 
 1. Choisissez la [!UICONTROL **vue Carte**].
 

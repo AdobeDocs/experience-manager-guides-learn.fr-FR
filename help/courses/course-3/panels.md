@@ -3,15 +3,10 @@ title: Panneaux
 description: Utilisation des panneaux dans AEM Guides
 exl-id: 24ecfc93-3540-4efa-ae85-afb346454b7f
 TQID: https://experienceleague.adobe.com/MU1L4hdbwXSlViTzqKYrCUI0pWqE78V7C2ZYxbjttgg
-product_v2:
-  - id: fae5e35a-80c9-4b94-9352-1a060a6aab1d
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cb8c6a2a-3c38-4e40-867c-756f8c36bb0e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: f5c2a4bb-71ca-4d7e-8efd-442250e6ba48
+product_v2: id: fae5e35a-80c9-4b94-9352-1a060a6aab1did: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cb8c6a2a-3c38-4e40-867c-756f8c36bb0e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: f5c2a4bb-71ca-4d7e-8efd-442250e6ba48
 source-git-commit: 27ffc636d63300fb2e99903d92cab12f0cfcbb25
 workflow-type: tm+mt
 source-wordcount: 1455
@@ -131,7 +126,7 @@ Le filtre amélioré du référentiel vous permet de rechercher du texte avec un
 
 1. Cliquez sur l’icône [!UICONTROL **Filtrer la recherche**].
 
-   ![&#x200B; Icône Filtre du référentiel &#x200B;](images/lesson-5/repository-filter-icon.png)
+   ![ Icône Filtre du référentiel ](images/lesson-5/repository-filter-icon.png)
 
 1. Saisissez du texte dans le chemin d’accès sélectionné ou choisissez un nouveau chemin d’accès, le cas échéant.
 
@@ -202,7 +197,7 @@ Le fragment de code est ajouté à la liste des fragments de code disponibles. V
 
 Grâce au panneau Modèles , les administrateurs peuvent facilement créer et gérer des modèles à l’intention des auteurs. Par défaut, les modèles sont classés en tant que types Carte et Rubrique.
 
-Pour plus d’informations sur la configuration et l’application de modèles[&#128279;](./folder-profiles.md) reportez-vous aux leçons intitulées Profils de dossier et [Workflows de création de contenu simple](simple-content-creation-workflows.md) de ce cours.
+Pour plus d’informations sur la configuration et l’application de modèles](./folder-profiles.md) reportez-vous aux leçons intitulées [Profils de dossier et [Workflows de création de contenu simple](simple-content-creation-workflows.md) de ce cours.
 
 ## Rechercher des fichiers avec Rechercher et remplacer
 
@@ -232,7 +227,7 @@ Propriétés du fichier affiche des informations supplémentaires sur l’ensemb
 
 1. Ouvrez une rubrique dans l’éditeur.
 
-1. Cliquez sur l’icône [!UICONTROL &#x200B; **Propriétés du fichier**] dans le panneau de droite.
+1. Cliquez sur l’icône [!UICONTROL  **Propriétés du fichier**] dans le panneau de droite.
 
    ![Icône Propriétés du fichier](images/lesson-5/file-properties-icon.png)
 
