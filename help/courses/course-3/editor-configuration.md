@@ -3,18 +3,13 @@ title: Configuration de l’éditeur d’AEM Guides
 description: Configuration de l’éditeur pour AEM Guides
 exl-id: 437d9598-4afc-431f-81bd-6762e22656b7
 TQID: https://experienceleague.adobe.com/CI-uq6AoY0Jtdz6LZ4zoWNYmYO1qkRgxiqsGNu7YRds
-product_v2:
-  - id: fae5e35a-80c9-4b94-9352-1a060a6aab1d
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cb8c6a2a-3c38-4e40-867c-756f8c36bb0e
-subfeature_v2:
-  - id: b1ef4d86-3917-4b76-a0bc-4a4771f9b3b0
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: fae5e35a-80c9-4b94-9352-1a060a6aab1did: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cb8c6a2a-3c38-4e40-867c-756f8c36bb0e
+subfeature_v2: id: b1ef4d86-3917-4b76-a0bc-4a4771f9b3b0
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 27ffc636d63300fb2e99903d92cab12f0cfcbb25
 workflow-type: tm+mt
-source-wordcount: 793
+source-wordcount: 784
 ht-degree: 0%
 
 ---
@@ -33,7 +28,7 @@ Vous pouvez toujours télécharger la configuration par défaut de l’interface
 
 1. Dans l’écran de navigation, cliquez sur l’icône [!UICONTROL **Outils**].
 
-   ![&#x200B; Icône Outils &#x200B;](images/reuse/tools-icon.png)
+   ![ Icône Outils ](images/reuse/tools-icon.png)
 
 1. Sélectionnez **Guides** dans le panneau de gauche.
 
@@ -75,7 +70,7 @@ Comme pour la configuration de l’interface utilisateur, vous pouvez téléchar
 
 1. Dans l’écran de navigation, cliquez sur l’icône [!UICONTROL **Outils**].
 
-   ![&#x200B; Icône Outils &#x200B;](images/reuse/tools-icon.png)
+   ![ Icône Outils ](images/reuse/tools-icon.png)
 
 1. Sélectionnez **Guides** dans le panneau de gauche.
 
@@ -116,7 +111,7 @@ Les fragments de code sont des éléments de contenu réutilisables qui peuvent 
 
 1. Dans l’écran de navigation, cliquez sur l’icône [!UICONTROL **Outils**].
 
-   ![&#x200B; Icône Outils &#x200B;](images/reuse/tools-icon.png)
+   ![ Icône Outils ](images/reuse/tools-icon.png)
 
 1. Sélectionnez **Guides** dans le panneau de gauche.
 
@@ -146,7 +141,7 @@ Par défaut, les auteurs sont autorisés à créer les libellés de leur choix e
 
 1. Dans l’écran de navigation, cliquez sur l’icône [!UICONTROL **Outils**].
 
-   ![&#x200B; Icône Outils &#x200B;](images/reuse/tools-icon.png)
+   ![ Icône Outils ](images/reuse/tools-icon.png)
 
 1. Sélectionnez **Guides** dans le panneau de gauche.
 

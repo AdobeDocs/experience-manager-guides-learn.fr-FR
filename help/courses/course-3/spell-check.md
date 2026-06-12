@@ -3,11 +3,8 @@ title: Vérification orthographique et recherche/remplacement
 description: Utilisation de la vérification orthographique et de la fonction rechercher/remplacer dans AEM Guides
 exl-id: 5f39618d-a919-4d3c-a4de-2896f2d1bf20
 TQID: https://experienceleague.adobe.com/cSdhulSc30KrwsGh1ldB2yn-8eSLccHBpyD-0S1x1M0
-product_v2:
-  - id: fae5e35a-80c9-4b94-9352-1a060a6aab1d
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: fae5e35a-80c9-4b94-9352-1a060a6aab1did: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 27ffc636d63300fb2e99903d92cab12f0cfcbb25
 workflow-type: tm+mt
 source-wordcount: 443
@@ -57,13 +54,13 @@ L’administrateur peut modifier les paramètres afin que le dictionnaire AEM re
 
 1. Accédez au volet **Outils**.
 
-1. Connectez-vous à **&#x200B;**.
+1. Connectez-vous à ****.
 
    ![Icône de CRXDE Lite de l’interface utilisateur d’AEM](images/lesson-11/crxde-lite.png)
 
 1. Accédez au nœud **_/apps/fmdita/config_**.
 
-   ![Nœud de configuration &#x200B;](images/lesson-11/config-node.png)
+   ![Nœud de configuration ](images/lesson-11/config-node.png)
 
 1. Créez un fichier .
 
@@ -73,7 +70,7 @@ L’administrateur peut modifier les paramètres afin que le dictionnaire AEM re
 
    ![Création d’un fichier de dictionnaire](images/lesson-11/new-dictionary-file.png)
 
-   c. Nommez le fichier _&#x200B;**user_dictionary.txt**&#x200B;_.
+   c. Nommez le fichier _**user_dictionary.txt**_.
 
    ![Texte du dictionnaire utilisateur](images/lesson-11/user-dictionary.png)
 

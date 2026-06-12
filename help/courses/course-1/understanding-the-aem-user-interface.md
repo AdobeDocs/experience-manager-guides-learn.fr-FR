@@ -3,14 +3,11 @@ title: Présentation de l’interface utilisateur d’AEM dans  [!DNL AEM Guides
 description: Présentation de l’interface utilisateur d’AEM dans  [!DNL Adobe Experience Manager Guides]
 exl-id: 955a05ed-92d3-480e-9c6b-a0ff362cc464
 TQID: https://experienceleague.adobe.com/k69iwbiqIEyFjgOMiBC2gMm1QWqxddSTC1xoRQmJmKQ
-product_v2:
-  - id: fae5e35a-80c9-4b94-9352-1a060a6aab1d
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: fae5e35a-80c9-4b94-9352-1a060a6aab1did: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 27ffc636d63300fb2e99903d92cab12f0cfcbb25
 workflow-type: tm+mt
-source-wordcount: 361
+source-wordcount: 347
 ht-degree: 2%
 
 ---
@@ -50,7 +47,7 @@ Vous pouvez effectuer des actions supplémentaires avec votre contenu. L’une d
 
 1. Pointez sur un dossier ou une rubrique dans le référentiel et sélectionnez l’icône représentant des points de suspension qui s’affiche.
 
-   ![&#x200B; Icône représentant des points de suspension &#x200B;](images/lesson-2/options-menu-with-markings.png)
+   ![ Icône représentant des points de suspension ](images/lesson-2/options-menu-with-markings.png)
 
    Le menu Options s’affiche.
 
