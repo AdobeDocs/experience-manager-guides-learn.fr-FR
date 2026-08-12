@@ -10,10 +10,10 @@ feature_v2:
   - id: a3bd6397-2eb2-4908-a61c-226e26855dca
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 27ffc636d63300fb2e99903d92cab12f0cfcbb25
+source-git-commit: 961580a797f22e35f48a0dc72537f67c9a43677e
 workflow-type: tm+mt
 source-wordcount: 381
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,7 @@ Une fois que vous vous êtes familiarisé avec l’interface utilisateur, vous p
 
 1. Sélectionnez l’icône **+** et **Dossier**.
 
-   Icône ![+ &#x200B;](images/lesson-3/+-icon.png)
+   Icône ![+ &#x200B;](images/lesson-3/plus-icon.png)
 
 1. Donnez un titre au dossier.
 1. Sélectionnez **Créer**.
@@ -103,7 +103,7 @@ Vous pouvez enregistrer votre travail à tout moment en sélectionnant Enregistr
 
    >[!NOTE]
    > 
-   >Si votre programme est configuré avec des libellés prédéfinis, vous pouvez en choisir parmi ceux-ci pour garantir un étiquetage cohérent.
+   > Si votre programme est configuré avec des libellés prédéfinis, vous pouvez en choisir parmi ceux-ci pour garantir un étiquetage cohérent.
 
 1. Sélectionnez **Enregistrer**.
 
