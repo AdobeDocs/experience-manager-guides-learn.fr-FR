@@ -3,8 +3,11 @@ title: Conditions
 description: Utilisation de conditions dans les guides AEM
 exl-id: 2cb670d9-1a22-47c6-8409-52d1d526010a
 TQID: https://experienceleague.adobe.com/RmYnleEQKJitdoHoBKuBDRR1LdFcqmMm4lEDqF3E-vY
-product_v2: id: fae5e35a-80c9-4b94-9352-1a060a6aab1did: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: fae5e35a-80c9-4b94-9352-1a060a6aab1d
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 27ffc636d63300fb2e99903d92cab12f0cfcbb25
 workflow-type: tm+mt
 source-wordcount: 498
@@ -44,7 +47,7 @@ Des exemples de fichiers que vous pouvez choisir d’utiliser pour cette leçon 
 
 >[!NOTE]
 >
-REMARQUE : la configuration d’un profil global peut être un moyen précoce et efficace de contrôler l’utilisation des attributs et des valeurs afin de suivre un guide de style cohérent.
+>REMARQUE : la configuration d’un profil global peut être un moyen précoce et efficace de contrôler l’utilisation des attributs et des valeurs afin de suivre un guide de style cohérent.
 
 ## Attribution d’attributs aux éléments
 
@@ -68,7 +71,7 @@ Le panneau Conditions permet l’affectation contrôlée des paires Attribut et 
 
    a. Cliquez sur l’icône Préférences utilisateur .
 
-   ![ Icône Préférences utilisateur ](images/lesson-13/user-prefs-icon.png)
+   ![&#x200B; Icône Préférences utilisateur &#x200B;](images/lesson-13/user-prefs-icon.png)
 
    b. Renseignez les champs requis de la boîte de dialogue **Préférences utilisateur**. Par exemple :
 
@@ -106,7 +109,7 @@ Les cartes de schéma d&#39;objet sont une forme spécialisée de ditamap et son
 
    >[!IMPORTANT]
    >
-   Important : la carte racine sélectionnée doit être celle qui contient le schéma d&#39;objet.
+   >Important : la carte racine sélectionnée doit être celle qui contient le schéma d&#39;objet.
 
    ![Préférences utilisateur](images/lesson-13/user-preferences-2.png)
 

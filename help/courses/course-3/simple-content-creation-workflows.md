@@ -3,8 +3,11 @@ title: Workflows de création de contenu simples
 description: Création de contenu dans AEM Guides
 exl-id: e4b8e512-0688-44f7-b981-78af33b57b08
 TQID: https://experienceleague.adobe.com/fLMRJWYDwHU-0ZbbUQ2kFZ1ZUM4vIwHccPV3q-pkn0I
-product_v2: id: fae5e35a-80c9-4b94-9352-1a060a6aab1did: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: fae5e35a-80c9-4b94-9352-1a060a6aab1d
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 27ffc636d63300fb2e99903d92cab12f0cfcbb25
 workflow-type: tm+mt
 source-wordcount: 720
@@ -82,9 +85,9 @@ Les utilisateurs peuvent vouloir télécharger un PDF de la rubrique actuelle po
 
 1. Cliquez sur [!UICONTROL **Aperçu**] en haut à droite de l’écran.
 
-1. Cliquez sur l&#39;icône [!UICONTROL ****] au-dessus de la rubrique. Une boîte de dialogue s’affiche.
+1. Cliquez sur l&#39;icône [!UICONTROL **&#x200B;**] au-dessus de la rubrique. Une boîte de dialogue s’affiche.
 
-   ![Exportation ](images/lesson-15/pdf-export.png)
+   ![Exportation &#x200B;](images/lesson-15/pdf-export.png)
 
 1. Renseignez les informations relatives aux arguments de ligne de commande **Nom de la transformation** ou **DITA-OT** si nécessaire. Notez qu’un PDF est toujours généré si tous les champs ne sont pas renseignés.
 
@@ -110,11 +113,11 @@ Les utilisateurs peuvent vouloir télécharger un PDF de la rubrique actuelle po
 
 1. Cliquez sur l’icône **Référentiel** dans le menu supérieur gauche.
 
-   ![ Icône de référentiel ](images/lesson-15/repository-icon.png)
+   ![&#x200B; Icône de référentiel &#x200B;](images/lesson-15/repository-icon.png)
 
 1. Dans la boîte de dialogue, ajoutez **Commentaires pour la nouvelle version**.
 
-   ![ Boîte de dialogue Nouvelle version ](images/lesson-15/version-dialog.png)
+   ![&#x200B; Boîte de dialogue Nouvelle version &#x200B;](images/lesson-15/version-dialog.png)
 
 1. Cliquez sur [!UICONTROL **Enregistrer**].
 
@@ -180,7 +183,7 @@ Le numéro de version est mis à jour.
 
 1. Sélectionnez [!UICONTROL **Afficher dans l’interface utilisateur d’Assets**].
 
-   ![Interface utilisateur ](images/lesson-15/view-assets-ui.png)
+   ![Interface utilisateur &#x200B;](images/lesson-15/view-assets-ui.png)
 
    - L’historique des versions avec les libellés s’affiche à gauche.
 
