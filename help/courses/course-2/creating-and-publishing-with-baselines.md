@@ -31,7 +31,7 @@ Vous pouvez accéder à vos lignes de base dans le tableau de bord des cartes.
 1. Vue du référentiel, sélectionnez l’icône représentant des points de suspension sur votre carte pour ouvrir le menu Options, puis **Ouvrir le tableau de bord de la carte**.
 
    ![ellipsis-map-dashboard.png](images/ellipsis-map-dashboard.png)
-Le tableau de bord des cartes s’ouvre dans un autre onglet.
+   Le tableau de bord des cartes s’ouvre dans un autre onglet.
 
 1. Sélectionnez **Références**.
 
